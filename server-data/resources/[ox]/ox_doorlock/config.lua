@@ -19,18 +19,12 @@ Config.Pin = {
     zOffset  = 0.0,
 }
 
+-- Prompt look matches my-hud; labels/colours live in tools/hud/render.html (rebuild with: node tools/hud/build.mjs)
 Config.HUD = {
     enabled      = true,
-    labels       = { [0] = 'UNLOCKED', [1] = 'LOCKED' },
-    colors       = { [0] = { 255, 255, 255, 255 }, [1] = { 255, 255, 255, 255 } },
-    keyColor     = { 255, 255, 255, 255 },
-    keySize      = 0.0125,
-    textSize     = 0.0115,
-    textGap      = 0.0045,
-    tracking     = -3,
-    spaceWidth   = 12,
-    ringSize     = 0.0095,
-    ringAlpha    = 195,
+    promptScale  = 0.75, -- 1.0 = same size as my-hud's controls bar
+    ringScale    = 0.75,
+    ringAlpha    = 230,
     centerSize   = 0.0035,
     ringDistance = 6.0,
     zOffset      = 0.0,

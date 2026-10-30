@@ -14,7 +14,7 @@ shared_scripts {
 }
 
 client_scripts {
-	'client/hud_font.lua',
+	'client/hud_assets.lua',
 	'client/hud.lua',
 	'client/main.lua',
 	'client/utils.lua',
