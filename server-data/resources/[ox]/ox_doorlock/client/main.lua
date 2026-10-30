@@ -37,6 +37,34 @@ end
 local nearbyDoors = {}
 local Entity = Entity
 
+-- Local-space point on the door model (bbox centre at the door's z), so prompts follow the door as it swings/slides
+local function getEntityAnchor(entity, model, z)
+	local min, max = GetModelDimensions(model)
+	return vec3((min.x + max.x) / 2, (min.y + max.y) / 2, z - GetEntityCoords(entity).z)
+end
+
+local function getAnchorCoords(entity, offset)
+	return GetOffsetFromEntityInWorldCoords(entity, offset.x, offset.y, offset.z)
+end
+
+local function updateDrawCoords(door)
+	local double = door.doors
+
+	if double then
+		local a, b = double[1], double[2]
+
+		if a.offset and b.offset and DoesEntityExist(a.entity) and DoesEntityExist(b.entity) then
+			door.drawCoords = (getAnchorCoords(a.entity, a.offset) + getAnchorCoords(b.entity, b.offset)) / 2
+			return
+		end
+	elseif door.offset and door.entity and DoesEntityExist(door.entity) then
+		door.drawCoords = getAnchorCoords(door.entity, door.offset)
+		return
+	end
+
+	door.drawCoords = door.coords
+end
+
 lib.callback('ox_doorlock:getDoors', false, function(data)
 	doors = data
 
@@ -60,6 +88,7 @@ lib.callback('ox_doorlock:getDoors', false, function(data)
 
 							if entity ~= 0 then
 								double[i].entity = entity
+								double[i].offset = getEntityAnchor(entity, double[i].model, door.coords.z)
 								Entity(entity).state.doorId = door.id
 							end
 						end
@@ -71,6 +100,7 @@ lib.callback('ox_doorlock:getDoors', false, function(data)
 				else
 					for i = 1, 2 do
 						double[i].entity = nil
+						double[i].offset = nil
 					end
 				end
 			elseif door.distance < 80 then
@@ -99,6 +129,7 @@ lib.callback('ox_doorlock:getDoors', false, function(data)
 						centroid = centroid / 8
 						door.coords = vec3(centroid.x, centroid.y, door.coords.z)
 						door.entity = entity
+						door.offset = getEntityAnchor(entity, door.model, door.coords.z)
 						Entity(entity).state.doorId = door.id
 					end
 				end
@@ -108,6 +139,7 @@ lib.callback('ox_doorlock:getDoors', false, function(data)
 				end
 			elseif door.entity then
 				door.entity = nil
+				door.offset = nil
 			end
 		end
 
@@ -327,6 +359,8 @@ CreateThread(function()
 			local ratio = (drawSprite or pin) and GetAspectRatio(true)
 			for i = 1, num do
 				local door = nearbyDoors[i]
+				updateDrawCoords(door)
+				local drawCoords = door.drawCoords
 
 				if door.distance < door.maxDistance then
 					if not ClosestDoor or door.distance < ClosestDoor.distance then
@@ -339,7 +373,7 @@ CreateThread(function()
 						local sprite = drawSprite[door.state]
 
 						if sprite then
-							SetDrawOrigin(door.coords.x, door.coords.y, door.coords.z)
+							SetDrawOrigin(drawCoords.x, drawCoords.y, drawCoords.z)
 							DrawSprite(sprite[1], sprite[2], sprite[3], sprite[4], sprite[5], sprite[6] * ratio, sprite[7], sprite[8], sprite[9], sprite[10], sprite[11])
 							ClearDrawOrigin()
 						end
@@ -348,7 +382,7 @@ CreateThread(function()
 					DoorHud.drawRing(door)
 				elseif pin and not door.hideUi and door.distance <= pin.distance then
 
-					SetDrawOrigin(door.coords.x, door.coords.y, door.coords.z + (pin.zOffset or 0.0), 0)
+					SetDrawOrigin(drawCoords.x, drawCoords.y, drawCoords.z + (pin.zOffset or 0.0), 0)
 					DrawSprite('ox_doorlock_pin', 'pin', 0.0, 0.0, pin.size, pin.size * ratio, 0.0, 255, 255, 255, 255)
 					ClearDrawOrigin()
 				end

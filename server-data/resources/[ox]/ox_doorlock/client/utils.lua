@@ -72,15 +72,24 @@ local function pickLock(entity)
 	PickingLock = false
 end
 
-exports('pickClosestDoor', function()
+-- DreamRP: double doors keep their entities under door.doors, not door.entity
+local function getClosestDoorEntity()
 	if not ClosestDoor then return end
 
-	pickLock(ClosestDoor.entity)
+	return ClosestDoor.entity or (ClosestDoor.doors and ClosestDoor.doors[1].entity)
+end
+
+exports('pickClosestDoor', function()
+	local entity = getClosestDoorEntity()
+	if not entity then return end
+
+	pickLock(entity)
 end)
 
 -- DreamRP: lets lockpick_minigame send a used lockpick here only when there's a door to pick
 exports('canPickClosestDoor', function()
-	return ClosestDoor and canPickLock(ClosestDoor.entity) or false
+	local entity = getClosestDoorEntity()
+	return entity and canPickLock(entity) or false
 end)
 
 local tempData = {}

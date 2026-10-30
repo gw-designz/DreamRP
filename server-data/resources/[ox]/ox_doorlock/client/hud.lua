@@ -3,82 +3,40 @@ DoorHud = { enabled = false }
 local cfg = Config.HUD
 if not cfg or not cfg.enabled then return end
 
+-- Sprites are rendered from tools/hud/render.html (node tools/hud/build.mjs) to match my-hud
 local TXD = 'ox_doorlock_hud'
-local glyphs = HudFont.glyphs
 local txd = CreateRuntimeTxd(TXD)
 
-for _, name in ipairs({ 'key_e', 'font', 'dot', 'crosshair' }) do
+for name in pairs(HudAssets) do
     CreateRuntimeTextureFromImage(txd, name, ('assets/hud/%s.png'):format(name))
 end
 
+CreateRuntimeTextureFromImage(txd, 'crosshair', 'assets/hud/crosshair.png')
+
 local DrawSprite = DrawSprite
-local DrawSpriteUv = DrawSpriteUv
 local SetDrawOrigin = SetDrawOrigin
 local ClearDrawOrigin = ClearDrawOrigin
 local GetAspectRatio = GetAspectRatio
 
-local k = cfg.textSize / HudFont.lineHeight
+-- Draws a sprite centred on the door, sized from its 1080p pixel size
+local function drawAtDoor(door, name, scale, alpha)
+    local size = HudAssets[name]
+    if not size then return end
 
-local function measure(str)
-    local w = 0.0
-    for i = 1, #str do
-        local ch = str:sub(i, i)
-        if ch == ' ' then
-            w = w + cfg.spaceWidth
-        else
-            local g = glyphs[ch]
-            if g then w = w + (g[5] - cfg.tracking) end
-        end
-    end
-    return w + cfg.tracking
-end
+    local coords = door.drawCoords or door.coords
+    local h = size[2] / 1080 * scale
 
-local function drawText(str, x, y, ratio, c)
-    local baseline = y + (HudFont.lineHeight * 0.5) * k * ratio
-
-    for i = 1, #str do
-        local ch = str:sub(i, i)
-
-        if ch == ' ' then
-            x = x + cfg.spaceWidth * k
-        else
-            local g = glyphs[ch]
-
-            if g then
-                local w, h = g[5] * k, g[6] * k * ratio
-                local cy = baseline + (g[7] - g[6] * 0.5) * k * ratio
-
-                DrawSpriteUv(TXD, 'font', x + w * 0.5, cy, w, h, g[1], g[2], g[3], g[4], 0.0, c[1], c[2], c[3], c[4])
-                x = x + (g[5] - cfg.tracking) * k
-            end
-        end
-    end
+    SetDrawOrigin(coords.x, coords.y, coords.z + (cfg.zOffset or 0.0), 0)
+    DrawSprite(TXD, name, 0.0, 0.0, h * size[1] / size[2] / GetAspectRatio(true), h, 0.0, 255, 255, 255, alpha or 255)
+    ClearDrawOrigin()
 end
 
 function DoorHud.drawPrompt(door)
-    local ratio = GetAspectRatio(true)
-    local label = cfg.labels[door.state] or ''
-    local color = cfg.colors[door.state] or { 255, 255, 255, 255 }
-    local keySize = cfg.keySize
-    local keyColor = cfg.keyColor
-
-    SetDrawOrigin(door.coords.x, door.coords.y, door.coords.z + (cfg.zOffset or 0.0), 0)
-
-    DrawSprite(TXD, 'key_e', 0.0, 0.0, keySize, keySize * ratio, 0.0, keyColor[1], keyColor[2], keyColor[3], keyColor[4])
-
-    drawText(label, keySize * 0.5 + cfg.textGap, 0.0, ratio, color)
-
-    ClearDrawOrigin()
+    drawAtDoor(door, ('prompt_%d'):format(door.state), cfg.promptScale)
 end
 
 function DoorHud.drawRing(door)
-    local ratio = GetAspectRatio(true)
-    local size = cfg.ringSize
-
-    SetDrawOrigin(door.coords.x, door.coords.y, door.coords.z + (cfg.zOffset or 0.0), 0)
-    local a = cfg.ringAlpha or 255
-    DrawSprite(TXD, 'dot', 0.0, 0.0, size, size * ratio, 0.0, 255, 255, 255, a)
-    ClearDrawOrigin()
+    drawAtDoor(door, ('ring_%d'):format(door.state), cfg.ringScale, cfg.ringAlpha)
 end
 
 function DoorHud.drawCenter()
