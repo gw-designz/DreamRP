@@ -1,0 +1,364 @@
+{
+    "knobTurning": {
+        "hard": {
+            "text": "",
+            "time": 15000
+        },
+        "easy": {
+            "text": "",
+            "time": 15000
+        },
+        "medium": {
+            "text": "",
+            "time": 15000
+        }
+    },
+    "cableConnect": {
+        "hard": {
+            "text": "",
+            "time": 15000
+        },
+        "easy": {
+            "text": "",
+            "time": 15000
+        },
+        "medium": {
+            "text": "",
+            "time": 15000
+        }
+    },
+    "simonSays": {
+        "hard": {
+            "flashInterval": 200,
+            "sequenceLen": 4,
+            "flashTime": 500
+        },
+        "easy": {
+            "flashInterval": 200,
+            "sequenceLen": 4,
+            "flashTime": 500
+        },
+        "medium": {
+            "flashInterval": 200,
+            "sequenceLen": 4,
+            "flashTime": 500
+        }
+    },
+    "arrowClicker": {
+        "hard": {
+            "text": "",
+            "gameCount": 1,
+            "time": 4000,
+            "arrowCount": 5
+        },
+        "easy": {
+            "text": "",
+            "gameCount": 1,
+            "time": 4000,
+            "arrowCount": 5
+        },
+        "medium": {
+            "text": "",
+            "gameCount": 1,
+            "time": 4000,
+            "arrowCount": 5
+        }
+    },
+    "shopLockpick": {
+        "hard": {
+            "bounce": false,
+            "speed": 2.09439510239319,
+            "holeCount": 12
+        },
+        "easy": {
+            "bounce": false,
+            "speed": 2.09439510239319,
+            "holeCount": 12
+        },
+        "medium": {
+            "bounce": false,
+            "speed": 2.09439510239319,
+            "holeCount": 12
+        }
+    },
+    "rythmArrows": {
+        "hard": {
+            "arrowCount": 4,
+            "time": 4000,
+            "threshold": 7.0,
+            "speed": 120
+        },
+        "easy": {
+            "arrowCount": 4,
+            "time": 4000,
+            "threshold": 7.0,
+            "speed": 120
+        },
+        "medium": {
+            "arrowCount": 4,
+            "time": 4000,
+            "threshold": 7.0,
+            "speed": 120
+        }
+    },
+    "signMemory": {
+        "hard": {
+            "questionCount": 3,
+            "time": 10000,
+            "imageSet": "standard",
+            "hardMode": false,
+            "questionTime": 5000
+        },
+        "easy": {
+            "questionCount": 3,
+            "time": 10000,
+            "imageSet": "standard",
+            "hardMode": false,
+            "questionTime": 5000
+        },
+        "medium": {
+            "questionCount": 3,
+            "time": 10000,
+            "imageSet": "standard",
+            "hardMode": false,
+            "questionTime": 5000
+        }
+    },
+    "jigsawPuzzle": {
+        "hard": {
+            "text": "",
+            "pieceCount": 5,
+            "presetName": "hand",
+            "time": 10000
+        },
+        "easy": {
+            "text": "",
+            "pieceCount": 5,
+            "presetName": "hand",
+            "time": 10000
+        },
+        "medium": {
+            "text": "",
+            "pieceCount": 5,
+            "presetName": "hand",
+            "time": 10000
+        }
+    },
+    "cableJigsaw": {
+        "hard": {
+            "time": 5000,
+            "y": 3,
+            "x": 4,
+            "inventorySize": 6
+        },
+        "easy": {
+            "time": 5000,
+            "y": 3,
+            "x": 4,
+            "inventorySize": 6
+        },
+        "medium": {
+            "time": 5000,
+            "y": 3,
+            "x": 4,
+            "inventorySize": 6
+        }
+    },
+    "lettersFall": {
+        "hard": {
+            "text": "",
+            "time": 30000,
+            "difficulty": 5,
+            "speed": 0.1
+        },
+        "easy": {
+            "text": "",
+            "time": 30000,
+            "difficulty": 5,
+            "speed": 0.1
+        },
+        "medium": {
+            "text": "",
+            "time": 30000,
+            "difficulty": 5,
+            "speed": 0.1
+        }
+    },
+    "mineSweeper": {
+        "hard": {
+            "y": 9,
+            "x": 9,
+            "mineCount": 10
+        },
+        "easy": {
+            "y": 9,
+            "x": 9,
+            "mineCount": 10
+        },
+        "medium": {
+            "y": 9,
+            "x": 9,
+            "mineCount": 10
+        }
+    },
+    "pipeDodge": {
+        "hard": {
+            "time": 30000
+        },
+        "easy": {
+            "time": 30000
+        },
+        "medium": {
+            "time": 30000
+        }
+    },
+    "colorCount": {
+        "hard": {
+            "maxCount": 6,
+            "answerTime": 5000,
+            "amount": 5,
+            "time": 5000,
+            "y": 10,
+            "x": 10
+        },
+        "easy": {
+            "maxCount": 6,
+            "answerTime": 5000,
+            "amount": 5,
+            "time": 5000,
+            "y": 10,
+            "x": 10
+        },
+        "medium": {
+            "maxCount": 6,
+            "answerTime": 5000,
+            "amount": 5,
+            "time": 5000,
+            "y": 10,
+            "x": 10
+        }
+    },
+    "flappyBird": {
+        "hard": {
+            "text": "",
+            "time": 7500,
+            "acceleration": 0.00001,
+            "speed": 0.2
+        },
+        "easy": {
+            "text": "",
+            "time": 7500,
+            "acceleration": 0.00001,
+            "speed": 0.2
+        },
+        "medium": {
+            "text": "",
+            "time": 7500,
+            "acceleration": 0.00001,
+            "speed": 0.2
+        }
+    },
+    "pairMatch": {
+        "hard": {
+            "pairCount": 8,
+            "allowedErrors": -1,
+            "displayTime": 5000,
+            "text": "",
+            "y": 6,
+            "x": 6,
+            "time": 120000
+        },
+        "easy": {
+            "pairCount": 8,
+            "allowedErrors": -1,
+            "displayTime": 5000,
+            "text": "",
+            "y": 6,
+            "x": 6,
+            "time": 120000
+        },
+        "medium": {
+            "pairCount": 8,
+            "allowedErrors": -1,
+            "displayTime": 5000,
+            "text": "",
+            "y": 6,
+            "x": 6,
+            "time": 120000
+        }
+    },
+    "rythmClick": {
+        "hard": {
+            "targetCount": 10,
+            "interval": 300
+        },
+        "easy": {
+            "targetCount": 10,
+            "interval": 300
+        },
+        "medium": {
+            "targetCount": 10,
+            "interval": 300
+        }
+    },
+    "codeFind": {
+        "hard": {
+            "changeInterval": 5000,
+            "amount": 1,
+            "time": 25000,
+            "y": 8,
+            "x": 8,
+            "signSet": 0
+        },
+        "easy": {
+            "changeInterval": 5000,
+            "amount": 1,
+            "time": 25000,
+            "y": 8,
+            "x": 8,
+            "signSet": 0
+        },
+        "medium": {
+            "changeInterval": 5000,
+            "amount": 1,
+            "time": 25000,
+            "y": 8,
+            "x": 8,
+            "signSet": 0
+        }
+    },
+    "lockpick": {
+        "hard": {
+            "speed": 10,
+            "holeCount": 5
+        },
+        "easy": {
+            "speed": 10,
+            "holeCount": 5
+        },
+        "medium": {
+            "speed": 10,
+            "holeCount": 5
+        }
+    },
+    "holeMatch": {
+        "hard": {
+            "time": 45000,
+            "radialSpeed": 0.00174532925199,
+            "maxErrors": 2,
+            "objCount": 5
+        },
+        "easy": {
+            "time": 45000,
+            "radialSpeed": 0.00174532925199,
+            "maxErrors": 2,
+            "objCount": 5
+        },
+        "medium": {
+            "time": 45000,
+            "radialSpeed": 0.00174532925199,
+            "maxErrors": 2,
+            "objCount": 5
+        }
+    }
+}

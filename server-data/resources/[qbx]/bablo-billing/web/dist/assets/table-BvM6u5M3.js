@@ -1,0 +1,11 @@
+import{c as r,r as t,j as s,d as o}from"./index-CWaDjG2k.js";/**
+ * @license lucide-react v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const p=r("CircleAlert",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["line",{x1:"12",x2:"12",y1:"8",y2:"12",key:"1pkeuh"}],["line",{x1:"12",x2:"12.01",y1:"16",y2:"16",key:"4dfq90"}]]);/**
+ * @license lucide-react v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const N=r("Clock",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 16 14",key:"68esgv"}]]),c=t.forwardRef(({className:e,...a},l)=>s.jsx("div",{className:"relative w-full overflow-auto",children:s.jsx("table",{ref:l,className:o("w-full caption-bottom text-sm",e),...a})}));c.displayName="Table";const d=t.forwardRef(({className:e,...a},l)=>s.jsx("thead",{ref:l,className:o("[&_tr]:border-b",e),...a}));d.displayName="TableHeader";const m=t.forwardRef(({className:e,...a},l)=>s.jsx("tbody",{ref:l,className:o("[&_tr:last-child]:border-0",e),...a}));m.displayName="TableBody";const b=t.forwardRef(({className:e,...a},l)=>s.jsx("tfoot",{ref:l,className:o("border-t bg-muted/50 font-medium [&>tr]:last:border-b-0",e),...a}));b.displayName="TableFooter";const i=t.forwardRef(({className:e,...a},l)=>s.jsx("tr",{ref:l,className:o("border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted",e),...a}));i.displayName="TableRow";const n=t.forwardRef(({className:e,...a},l)=>s.jsx("th",{ref:l,className:o("h-10 px-2 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]",e),...a}));n.displayName="TableHead";const x=t.forwardRef(({className:e,...a},l)=>s.jsx("td",{ref:l,className:o("p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]",e),...a}));x.displayName="TableCell";const f=t.forwardRef(({className:e,...a},l)=>s.jsx("caption",{ref:l,className:o("mt-4 text-sm text-muted-foreground",e),...a}));f.displayName="TableCaption";export{p as C,c as T,d as a,i as b,n as c,m as d,x as e,N as f};

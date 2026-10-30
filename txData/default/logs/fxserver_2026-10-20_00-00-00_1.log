@@ -1,0 +1,1014 @@
+================================================================
+======== Log Rotated - 10/20/2026, 12:43:28 AM                  
+================================================================
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [25832] FXServer Starting - 10/20/2026, 12:43:37 AM    
+║             TXADMIN║ ================================================================
+[                 cmd] Argument count mismatch (passed 1, wanted 2)
+[           resources] Scanning resources.
+[           resources] Found 167 resources.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.1.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[                 cmd] Argument count mismatch (passed 1, wanted 2)
+[    c-scripting-core] Creating script environments for platenet
+[     script:platenet] ==================================================
+[     script:platenet] ==================================================
+[     script:platenet] 
+[     script:platenet]  ____  _          _       _   _      _   
+[     script:platenet] |  _ \| |    __ _| |_ ___| \ | | ___| |_ 
+[     script:platenet] | |_) | |   / _` | __/ _ \  \| |/ _ \ __|
+[     script:platenet] |  __/| |__| (_| | ||  __/ |\  |  __/ |_ 
+[     script:platenet] |_|   |_____\__,_|\__\___|_| \_|\___|\__|
+[     script:platenet] 
+[     script:platenet]               ......:::....:::......              
+[     script:platenet]          ....::...:-=*#%%%%#*=-::..::....         
+[     script:platenet]         .:..-+%@@@@@@@@@@@@@@@@@@@@%+-:.:.        
+[     script:platenet]         ..-@@@@@@@@@@@@%%%%@@@@@@@@@@@@=.:        
+[     script:platenet]         :.-@@@@@@@@+-:......:-+@@@@@@@@*.:        
+[     script:platenet]         :.-@@@@@%:..-#@@@@@@%-..:#@@@@@*.:        
+[     script:platenet]         :.-@@@#:.:+@@@%-:::#@@@*:.:#@@@*.:        
+[     script:platenet]         :.-@@-.:+@@@@*:.....+@@@@*:.-%@*.:        
+[     script:platenet]         :.-@%-.:#@@@@+......=@@@@%:.:#@*.:        
+[     script:platenet]         ..-@@@*:.-#@@@+::::+@@@#-.:+@@@*.:        
+[     script:platenet]         .::@@@@@*:.:+%@@@@@@%+:.:+@@@@@-..        
+[     script:platenet]         ...:@@@@@@@:..........:%@@@@@@-.:.        
+[     script:platenet]          ...:*@@@@@@@@%*++*#@@@@@@@@#-.:.         
+[     script:platenet]           ..:.:+@@@@@@@@@@@@@@@@@@*:.:..          
+[     script:platenet]              .:..-%@@@@@@@@@@@@@-..:.             
+[     script:platenet]                ..:.:+@@@@@@@@*:.:..               
+[     script:platenet]                  ...::-*@@#=:.:..                 
+[     script:platenet]                     ..:....::.                    
+[     script:platenet]                        ....                       
+[     script:platenet]   ____    _    ____        __  __ ____ _____ 
+[     script:platenet]  / ___|  / \  |  _ \      |  \/  |  _ \_   _|
+[     script:platenet] | |     / _ \ | | | |_____| |\/| | | | || |  
+[     script:platenet] | |___ / ___ \| |_| |_____| |  | | |_| || |  
+[     script:platenet]  \____/_/   \_\____/      |_|  |_|____/ |_|   
+[     script:platenet] 
+[     script:platenet] ==================================================
+[     script:platenet] ==================================================
+[     script:platenet] [platenet] v1.8.3 ready.
+[           resources] Started resource platenet
+[    c-scripting-core] Creating script environments for mapmanager
+[           resources] Started resource mapmanager
+[    c-scripting-core] Creating script environments for chat
+[           resources] Started resource chat
+[           resources] Started resource spawnmanager
+[    c-scripting-core] Creating script environments for sessionmanager
+[           resources] Started resource sessionmanager
+[    c-scripting-core] Creating script environments for hardcap
+[           resources] Started resource hardcap
+[    c-scripting-core] Creating script environments for baseevents
+[           resources] Started resource baseevents
+[    c-scripting-core] Creating script environments for oxmysql
+[           resources] Started resource oxmysql
+[    c-scripting-core] Creating script environments for ox_lib
+[           resources] Started resource ox_lib
+[    c-scripting-core] Creating script environments for qbx_core
+[     script:qbx_core] [qbx_core] [INFO] Stopping hardcap...
+[           resources] Stopping resource hardcap
+[           resources] Started resource qbx_core
+[    c-scripting-core] Creating script environments for ox_target
+[           resources] Started resource ox_target
+[    c-scripting-core] Creating script environments for ox_inventory
+[           resources] Started resource ox_inventory
+[    c-scripting-core] Creating script environments for ox_doorlock
+[resources:ox_doorloc] Warning: could not find file `assets/pin.png` (defined in fxmanifest.lua:32)
+[           resources] Started resource ox_doorlock (1 warning)
+[    c-scripting-core] Creating script environments for prp-bridge
+[           resources] Started resource prp-bridge
+[ citizen-server-impl] You lack the required entitlement to use prp-scanner-assets
+[ citizen-server-impl] Couldn't start resource prp-scanner-assets.
+[ citizen-server-impl] You lack the required entitlement to use prp-scanner
+[ citizen-server-impl] Couldn't start resource prp-scanner.
+[ citizen-server-impl] You lack the required entitlement to use prp-policeutils-assets
+[ citizen-server-impl] Couldn't start resource prp-policeutils-assets.
+[ citizen-server-impl] You lack the required entitlement to use prp-policeutils
+[ citizen-server-impl] Couldn't start resource prp-policeutils.
+[    c-scripting-core] Creating script environments for illenium-appearance
+[           resources] Started resource illenium-appearance
+[ citizen-server-impl] You lack the required entitlement to use prp-housing-loader
+[ citizen-server-impl] Couldn't start resource prp-housing-loader.
+[ citizen-server-impl] You lack the required entitlement to use prp-housing-main
+[ citizen-server-impl] Couldn't start resource prp-housing-main.
+[ citizen-server-impl] You lack the required entitlement to use prp-housing
+[ citizen-server-impl] Couldn't start resource prp-housing.
+[ citizen-server-impl] You lack the required entitlement to use prp-apartments
+[ citizen-server-impl] Couldn't start resource prp-apartments.
+[ citizen-server-impl] Couldn't find resource prp-property.
+[    c-scripting-core] Creating script environments for PolyZone
+[           resources] Started resource PolyZone
+[    c-scripting-core] Creating script environments for codera-hud
+[resources:codera-hud] Warning: could not find file `assets/radar-mask.png` (defined in fxmanifest.lua:28)
+[resources:codera-hud] Warning: could not find file `audiodirectory/seatbelt_sounds.awc` (defined in fxmanifest.lua:28)
+[           resources] Started resource codera-hud (2 warnings)
+[    c-scripting-core] Creating script environments for codera-radialmenu
+[           resources] Started resource codera-radialmenu
+[    c-scripting-core] Creating script environments for interact
+[           resources] Started resource interact
+[    c-scripting-core] Creating script environments for karma-admin
+[           resources] Started resource karma-admin
+[           resources] Started resource karma-progressbar
+[    c-scripting-core] Creating script environments for ox_fuel
+[           resources] Started resource ox_fuel
+[    c-scripting-core] Creating script environments for xeno-adminmenu
+[           resources] Started resource xeno-adminmenu
+[    c-scripting-core] Creating script environments for xeno-scriptcreator
+[           resources] Started resource xeno-scriptcreator
+[    c-scripting-core] Creating script environments for bablo-billing
+[script:bablo-billing] [BILLING] Using native qbx_core exports
+[           resources] Started resource bablo-billing
+[    c-scripting-core] Creating script environments for codera-adminmenu
+[           resources] Started resource codera-adminmenu
+[    c-scripting-core] Creating script environments for codera_shops
+[ script:codera_shops] [codera_shops] framework=qbx inventory=ox_inventory target=interact
+[           resources] Started resource codera_shops
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[    c-scripting-core] Creating script environments for qbx_medical
+[           resources] Started resource qbx_medical
+[    c-scripting-core] Creating script environments for qbx_ambulancejob
+[           resources] Started resource qbx_ambulancejob
+[    c-scripting-core] Creating script environments for qbx_bankrobbery
+[           resources] Started resource qbx_bankrobbery
+[    c-scripting-core] Creating script environments for qbx_binoculars
+[           resources] Started resource qbx_binoculars
+[    c-scripting-core] Creating script environments for qbx_busjob
+[           resources] Started resource qbx_busjob
+[    c-scripting-core] Creating script environments for qbx_carwash
+[           resources] Started resource qbx_carwash
+[    c-scripting-core] Creating script environments for qbx_chat_theme
+[           resources] Started resource qbx_chat_theme
+[    c-scripting-core] Creating script environments for qbx_cityhall
+[           resources] Started resource qbx_cityhall
+[    c-scripting-core] Creating script environments for qbx_customs
+[           resources] Started resource qbx_customs
+[           resources] Started resource qbx_density
+[    c-scripting-core] Creating script environments for qbx_divegear
+[           resources] Started resource qbx_divegear
+[    c-scripting-core] Creating script environments for qbx_diving
+[           resources] Started resource qbx_diving
+[    c-scripting-core] Creating script environments for qbx_drugs
+[           resources] Started resource qbx_drugs
+[    c-scripting-core] Creating script environments for qbx_fireworks
+[           resources] Started resource qbx_fireworks
+[    c-scripting-core] Creating script environments for qbx_garages
+[           resources] Started resource qbx_garages
+[    c-scripting-core] Creating script environments for qbx_garbagejob
+[           resources] Started resource qbx_garbagejob
+[    c-scripting-core] Creating script environments for qbx_houserobbery
+[           resources] Started resource qbx_houserobbery
+[           resources] Started resource MugShotBase64
+[    c-scripting-core] Creating script environments for qbx_idcard
+[           resources] Started resource qbx_idcard
+[    c-scripting-core] Creating script environments for qbx_jewelery
+[           resources] Started resource qbx_jewelery
+[    c-scripting-core] Creating script environments for qbx_lapraces
+[           resources] Started resource qbx_lapraces
+[    c-scripting-core] Creating script environments for qbx_management
+[           resources] Started resource qbx_management
+[    c-scripting-core] Creating script environments for qbx_mechanicjob
+[           resources] Started resource qbx_mechanicjob
+[    c-scripting-core] Creating script environments for qbx_newsjob
+[           resources] Started resource qbx_newsjob
+[    c-scripting-core] Creating script environments for qbx_pawnshop
+[           resources] Started resource qbx_pawnshop
+[    c-scripting-core] Creating script environments for qbx_properties
+[           resources] Started resource qbx_properties
+[    c-scripting-core] Creating script environments for qbx_radialmenu
+[script:qbx_radialmen] [qbx_radialmenu] [WARN] This resource is still using the deprecated qbx_core utils!
+[script:qbx_radialmen] [qbx_radialmenu] [WARN] If you are the author, please update to use the new lib module. If you are not, please tell them to update!
+[           resources] Started resource qbx_radialmenu
+[    c-scripting-core] Creating script environments for qbx_recyclejob
+[           resources] Started resource qbx_recyclejob
+[    c-scripting-core] Creating script environments for qbx_scoreboard
+[           resources] Started resource qbx_scoreboard
+[    c-scripting-core] Creating script environments for qbx_scrapyard
+[           resources] Started resource qbx_scrapyard
+[    c-scripting-core] Creating script environments for qbx_seatbelt
+[           resources] Started resource qbx_seatbelt
+[    c-scripting-core] Creating script environments for qbx_smallresources
+[script:qbx_smallreso] [qbx_smallresources] [WARN] [qbx_entitiesblacklist] You have entity blacklist enabled, this means that any entity that is blacklisted in config.lua will not be able to spawn, you can change this in qbx_smallresource/qbx_entitiesblacklist/config.lua
+[           resources] Started resource qbx_smallresources
+[    c-scripting-core] Creating script environments for qbx_spawn
+[           resources] Started resource qbx_spawn
+[    c-scripting-core] Creating script environments for qbx_storerobbery
+[           resources] Started resource qbx_storerobbery
+[    c-scripting-core] Creating script environments for qbx_streetraces
+[           resources] Started resource qbx_streetraces
+[    c-scripting-core] Creating script environments for qbx_taxijob
+[           resources] Started resource qbx_taxijob
+[    c-scripting-core] Creating script environments for qbx_towjob
+[           resources] Started resource qbx_towjob
+[    c-scripting-core] Creating script environments for qbx_truckerjob
+[           resources] Started resource qbx_truckerjob
+[    c-scripting-core] Creating script environments for qbx_truckrobbery
+[           resources] Started resource qbx_truckrobbery
+[    c-scripting-core] Creating script environments for qbx_vehiclekeys
+[           resources] Started resource qbx_vehiclekeys
+[    c-scripting-core] Creating script environments for qbx_vehicles
+[           resources] Started resource qbx_vehicles
+[    c-scripting-core] Creating script environments for qbx_vehiclesales
+[           resources] Started resource qbx_vehiclesales
+[    c-scripting-core] Creating script environments for qbx_vehicleshop
+[           resources] Started resource qbx_vehicleshop
+[    c-scripting-core] Creating script environments for qbx_vineyard
+[           resources] Started resource qbx_vineyard
+[    c-scripting-core] Creating script environments for qbx_weed
+[           resources] Started resource qbx_weed
+[ citizen-server-impl] Couldn't find resource sd-phone-props.
+[ citizen-server-impl] Couldn't find resource sd-tablet-props.
+[ citizen-server-impl] Couldn't find resource sd-phone.
+[ citizen-server-impl] Couldn't find resource sd-tablet.
+[    c-scripting-core] Creating script environments for Codera-dispatch
+[           resources] Started resource Codera-dispatch
+[    c-scripting-core] Creating script environments for av_laptop
+[           resources] Started resource av_laptop
+[    c-scripting-core] Creating script environments for bablo-multicharacter
+[           resources] Started resource bablo-multicharacter
+[    c-scripting-core] Creating script environments for xsound
+[           resources] Started resource xsound
+[    c-scripting-core] Creating script environments for bablo-pettycrimes
+[           resources] Started resource bablo-pettycrimes
+[    c-scripting-core] Creating script environments for business-creator
+[           resources] Started resource business-creator
+[           resources] Started resource cfx_como_davis
+[    c-scripting-core] Creating script environments for cfx_onx_gov_clothing
+[           resources] Started resource cfx_onx_gov_clothing
+[    c-scripting-core] Creating script environments for cloud-shop
+[           resources] Started resource cloud-shop
+[    c-scripting-core] Creating script environments for codem-mechanic
+[           resources] Started resource codem-mechanic
+[    c-scripting-core] Creating script environments for df_crafting
+[           resources] Started resource df_crafting
+[           resources] Started resource karma-climbing
+[           resources] Started resource karma-loadscreen
+[    c-scripting-core] Creating script environments for meteo-adminmenu
+[           resources] Started resource meteo-adminmenu
+[    c-scripting-core] Creating script environments for meteo-apartments
+[           resources] Started resource meteo-apartments
+[    c-scripting-core] Creating script environments for meteo-furnishing
+[           resources] Started resource meteo-furnishing
+[           resources] Started resource bob74_ipl
+[    c-scripting-core] Creating script environments for screencapture
+[script:screencapture] [screencapture] Sentry enabled
+[           resources] Started resource screencapture
+[ citizen-server-impl] You lack the required entitlement to use nolag_properties
+[ citizen-server-impl] Couldn't start resource nolag_properties.
+[    c-scripting-core] Creating script environments for np-quickmenu
+[           resources] Started resource np-quickmenu
+[    c-scripting-core] Creating script environments for object_gizmo
+[           resources] Started resource object_gizmo
+[    c-scripting-core] Creating script environments for p_bridge
+[           resources] Started resource p_bridge
+[    c-scripting-core] Creating script environments for p_itemclothes
+[           resources] Started resource p_itemclothes
+[    c-scripting-core] Creating script environments for p_policejob
+[           resources] Started resource p_policejob
+[           resources] Started resource phone-render
+[    c-scripting-core] Creating script environments for prism-emotemenu
+[           resources] Started resource prism-emotemenu
+[    c-scripting-core] Creating script environments for prism_uipack
+[           resources] Started resource prism_uipack
+[ citizen-server-impl] You lack the required entitlement to use prp-boosting
+[ citizen-server-impl] Couldn't start resource prp-boosting.
+[ citizen-server-impl] You lack the required entitlement to use prp-boosting-assets
+[ citizen-server-impl] Couldn't start resource prp-boosting-assets.
+[ citizen-server-impl] You lack the required entitlement to use prp-minigames
+[ citizen-server-impl] Couldn't start resource prp-minigames.
+[ citizen-server-impl] You lack the required entitlement to use prp-policeutils
+[ citizen-server-impl] Couldn't start resource prp-policeutils.
+[ citizen-server-impl] You lack the required entitlement to use prp-policeutils-assets
+[ citizen-server-impl] Couldn't start resource prp-policeutils-assets.
+[ citizen-server-impl] You lack the required entitlement to use prp-scanner
+[ citizen-server-impl] Couldn't start resource prp-scanner.
+[ citizen-server-impl] You lack the required entitlement to use prp-scanner-assets
+[ citizen-server-impl] Couldn't start resource prp-scanner-assets.
+[ citizen-server-impl] You lack the required entitlement to use prp-scenes
+[ citizen-server-impl] Couldn't start resource prp-scenes.
+[ citizen-server-impl] You lack the required entitlement to use prp-staffevents
+[ citizen-server-impl] Couldn't start resource prp-staffevents.
+[    c-scripting-core] Creating script environments for qb-doorcreator
+[           resources] Started resource qb-doorcreator
+[    c-scripting-core] Creating script environments for royal-groups
+[           resources] Started resource royal-groups
+[    c-scripting-core] Creating script environments for royal-health
+[           resources] Started resource royal-health
+[    c-scripting-core] Creating script environments for sd-policeradar
+[           resources] Started resource sd-policeradar
+[    c-scripting-core] Creating script environments for sd_lib
+[       script:sd_lib] Checking for updates for sd_lib...
+[           resources] Started resource sd_lib
+[ citizen-server-impl] You lack the required entitlement to use tgg-hud
+[ citizen-server-impl] Couldn't start resource tgg-hud.
+[    c-scripting-core] Creating script environments for yseries
+[      script:yseries] [WARNING]: shared:resourceDetection.lua: No banking resource found. Certain features may not work.
+[      script:yseries] [WARNING]: shared:resourceDetection.lua: No housing resource found. Certain features may not work.
+[           resources] Started resource yseries
+[           resources] Started resource yseries-props
+[    c-scripting-core] Creating script environments for Renewed-Banking
+[script:Renewed-Banki] [Renewed-Banking][INFO][framework_ready] {"framework":"qbx"}
+[           resources] Started resource Renewed-Banking
+[    c-scripting-core] Creating script environments for Renewed-Weathersync
+[           resources] Started resource Renewed-Weathersync
+[           resources] Started resource karma-notify
+[    c-scripting-core] Creating script environments for mana_audio
+[           resources] Started resource mana_audio
+[           resources] Started resource mhacking
+[           resources] Started resource safecracker
+[    c-scripting-core] Creating script environments for ultra-voltlab
+[           resources] Started resource ultra-voltlab
+[    c-scripting-core] Creating script environments for yarn
+[           resources] Started resource yarn
+[    c-scripting-core] Creating script environments for uz_AutoShot
+[resources:uz_AutoSho] Warning: could not find file `shots/**/*` (defined in fxmanifest.lua:27)
+[           resources] Started resource uz_AutoShot (1 warning)
+[    c-scripting-core] Creating script environments for vehiclehandler
+[           resources] Started resource vehiclehandler
+[    c-scripting-core] Creating script environments for xt-prison
+[           resources] Started resource xt-prison
+[    c-scripting-core] Creating script environments for pma-voice
+[           resources] Started resource pma-voice
+[    c-scripting-core] Creating script environments for mm_radio
+[           resources] Started resource mm_radio
+[           resources] Started resource mz3d_NEWPDMV5
+[           resources] Started resource nikez_sounds
+[           resources] Started resource nopixel4_emergency_sounds
+[resources:nopixel4_v] Asset nopixel4_vehicles_addon_polbuffalo4/polbuffalo4.ytd uses 17.0 MiB of physical memory.
+[           resources] Started resource nopixel4_vehicles_addon_polbuffalo4 (1 warning)
+[           resources] Started resource nopixel4_vehicles_addon_polcaracara
+[           resources] Started resource nopixel4_vehicles_addon_polcoquette
+[resources:nopixel4_v] Asset nopixel4_vehicles_addon_polpenumbra/polpenumbra.ytd uses 24.0 MiB of physical memory.
+[           resources] Started resource nopixel4_vehicles_addon_polpenumbra (1 warning)
+[           resources] Started resource nopixel4_vehicles_addon_polscout2
+[           resources] Started resource nopixel4_vehicles_addon_polvstr
+[           resources] Started resource nopixel4_vehicles_emergency
+[           resources] Started resource nopixel_sounds
+[           resources] Started resource pillbox
+[ citizen-server-impl] You lack the required entitlement to use prompt_mrpd
+[ citizen-server-impl] Couldn't start resource prompt_mrpd.
+[ citizen-server-impl] You lack the required entitlement to use prompt_mrpd_scripts
+[ citizen-server-impl] Couldn't start resource prompt_mrpd_scripts.
+[ citizen-server-impl] You lack the required entitlement to use prp-apartments
+[ citizen-server-impl] Couldn't start resource prp-apartments.
+[ citizen-server-impl] You lack the required entitlement to use prp-housing
+[ citizen-server-impl] Couldn't start resource prp-housing.
+[ citizen-server-impl] You lack the required entitlement to use prp-housing-loader
+[ citizen-server-impl] Couldn't start resource prp-housing-loader.
+[ citizen-server-impl] You lack the required entitlement to use prp-housing-main
+[ citizen-server-impl] Couldn't start resource prp-housing-main.
+[ citizen-server-impl] You lack the required entitlement to use prp-housing-mirrorpark
+[ citizen-server-impl] Couldn't start resource prp-housing-mirrorpark.
+[ citizen-server-impl] Couldn't find resource category [npwd-apps].
+[ citizen-server-impl] Couldn't find resource qbx_npwd.
+[ citizen-server-impl] Couldn't find resource npwd.
+[    script:av_laptop] [DEBUG]	registerStash(name, label, slots, weight, resource)	uwu_station	Charging Station	10	50000	nil
+[    script:av_laptop] [DEBUG]	registerStash(name, label, slots, weight, resource)	digital_den	Reset Station	1	10000	nil
+[script:business-crea] [qbx-businesscreator] Initializing...
+[  script:df_crafting] 
+[  script:df_crafting] ██████╗ ███████╗███████╗ ██████╗██████╗ ██╗██████╗ ████████╗███████╗
+[  script:df_crafting] ██╔══██╗██╔════╝██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
+[  script:df_crafting] ██║  ██║█████╗  ███████╗██║     ██████╔╝██║██████╔╝   ██║   ███████╗
+[  script:df_crafting] ██║  ██║██╔══╝  ╚════██║██║     ██╔══██╗██║██╔═══╝    ██║   ╚════██║
+[  script:df_crafting] ██████╔╝██║     ███████║╚██████╗██║  ██║██║██║        ██║   ███████║
+[  script:df_crafting] ╚═════╝ ╚═╝     ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝   ╚══════╝
+[  script:df_crafting] DFScripts — Product: Crafting | Version: 2026.08.09 | Framework: QBox
+[  script:df_crafting] 
+[script:p_itemclothes] SCRIPT ERROR: @p_itemclothes/server/clothes.lua:80: No such export getPlayerInvSlots in resource ox_inventory
+[      script:oxmysql] [12.3.2-MariaDB] Database server connection established!
+[    script:xt-prison] [xt-prison] [INFO] Initializing Table: xt_prison
+[    script:xt-prison] [xt-prison] [INFO] Initializing Table: xt_prison_items
+[script:bablo-multich] [bablo-multicharacter] migration ok — `bablo_multicharacter_unlockedslots` ensured
+[      script:oxmysql] Warning: ox_doorlock executed a query with an oversized result set (1445 results)!
+[      script:oxmysql] SELECT `id`, `name`, `data` FROM `ox_doorlock`
+[script:illenium-appe] [illenium-appearance] Database table 'management_outfits' verified successfully.
+[script:illenium-appe] [illenium-appearance] Database table 'playerskins' verified successfully.
+[script:illenium-appe] [illenium-appearance] Database table 'player_outfits' verified successfully.
+[script:illenium-appe] [illenium-appearance] Database table 'player_outfit_codes' verified successfully.
+[script:cfx_onx_gov_c] ===================================================
+[script:cfx_onx_gov_c] ONX.GG
+[script:cfx_onx_gov_c] cfx_onx_gov_clothing is outdated. Please update to 3.0.0.
+[script:cfx_onx_gov_c] Patch Notes: International Airport Police Department Uniforms
+[script:cfx_onx_gov_c] ===================================================
+[       script:ox_lib] An update is available for ox_lib (current version: 3.39.0)
+[       script:ox_lib] https://github.com/overextended/ox_lib/releases/tag/v3.40.3
+[script:business-crea] [qbx-businesscreator] Database connected.
+[script:business-crea] [qbx-businesscreator] Loaded 1 businesses.
+[script:business-crea] [qbx-businesscreator] Registered 1 QBox jobs.
+[script:qb-doorcreato] [qb-doorcreator] Loaded 2 door(s) from the database.
+[script:qbx_propertie] SCRIPT ERROR: @qbx_properties/server/property.lua:516: qbx_properties was unable to execute a query!
+[script:qbx_propertie] Query: ALTER TABLE `properties` ADD COLUMN IF NOT EXISTS `garage` JSON DEFAULT NULL AFTER `stash_options`;
+[script:qbx_propertie] []
+[script:qbx_propertie] Unknown column 'stash_options' in 'properties'
+[script:qbx_propertie] > new StackDumpError (D:\FiveMServer\server\citizen/scripting/v8/main.js:416)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:436)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:97)
+[script:qbx_propertie] > Number.__cfx_wrap_475 (D:\FiveMServer\server\citizen/scripting/v8/main.js:24)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:30)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:94)
+[script:qbx_propertie] > logError (@oxmysql/dist/build.js:26864)
+[script:qbx_propertie] > rawQuery (@oxmysql/dist/build.js:27047)
+[script:qbx_propertie] > process.processTicksAndRejections (node:internal/process/task_queues:105)
+[script:business-crea] [qbx-businesscreator] Registered 1 business storage stashes.
+[script:business-crea] [qbx-businesscreator] Business Creator ready.
+[  script:df_crafting] [df_crafting] Loaded 0 benches, 0 recipes.
+[    script:npv_admin] [npv_admin] database ready
+[script:Renewed-Banki] [Renewed-Banking][WARN][legacy_migration_required] {"command":"banking_migrate_v3 dry-run"}
+[script:Renewed-Banki] [Renewed-Banking][INFO][resource_ready] {"migrationRequired":true,"version":"3.0.0-rc.1","framework":"qbx"}
+[     script:platenet] [platenet] Version 1.8.3 is current.
+[       script:sd_lib] sd_lib is up-to-date with version 1.2.0.
+[       script:ox_lib] An update is available for p_bridge (current version: 1.2.5)
+[       script:ox_lib] https://github.com/PiotreeQ/p_bridge/releases/tag/v1.3.7
+[       script:ox_lib] An update is available for ox_doorlock (current version: 1.14.4)
+[       script:ox_lib] https://github.com/overextended/ox_doorlock/releases/tag/v1.23.0
+[    script:npv_admin] [npv_admin] started
+[     script:qbx_core] [qbx_core] [INFO] Removed invalid groups from player_groups table
+[       script:ox_lib] An update is available for vehiclehandler (current version: 1.4.5)
+[       script:ox_lib] https://github.com/QuantumMalice/vehiclehandler/releases/tag/v1.4.7
+[       script:ox_lib] An update is available for ox_inventory (current version: 2.47.9)
+[       script:ox_lib] https://github.com/overextended/ox_inventory/releases/tag/v2.48.0
+[       script:ox_lib] An update is available for object_gizmo (current version: 2.1.0)
+[       script:ox_lib] https://github.com/DemiAutomatic/object_gizmo/releases/tag/v3.1.0
+[       script:ox_lib] An update is available for qbx_core (current version: 1.23.0)
+[       script:ox_lib] https://github.com/Qbox-project/qbx_core/releases/tag/v1.24.0
+[    script:av_laptop] Framework: qbox	Inventory: ox_inventory	Target?: 	ox_target	Phone?: 	false
+[    script:av_laptop] [DEBUG]	registerItem(name)	laptop
+[     script:qbx_core] 
+[     script:qbx_core] Welcome to Qbox!
+[     script:qbx_core] To learn more, please check out the documentation at https://docs.qbox.re/.
+[     script:qbx_core] To turn this message off, set the qbx:acknowledge convar to true in your server.cfg file.
+[     script:qbx_core] 
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 218 items
+[      script:oxmysql] An update is available for oxmysql (current version: 2.14.1)
+[      script:oxmysql] https://github.com/overextended/oxmysql/releases/tag/v2.14.3
+[     script:platenet] [platenet] Connection failed. Check the PlateNet setup.
+[  script:uz_AutoShot] [uz_AutoShot] Up to date (v2.1.0)
+[   script:codera-hud] [codera-hud] Seatbelt resource "qb-smallresources" is not started; seatbelt icon will use statebags only.
+[   script:codera-hud] [codera-hud] Started. Framework: qbcore
+[script:codem-mechani] codem-mechanic::Framework object found : 	qb
+[script:bablo-billing] [CHECKING UPDATES] bablo-billing
+[script:bablo-multich] [bablo-multicharacter] - Checking for updates...
+[script:bablo-pettycr] [CHECKING UPDATES] bablo-pettycrimes
+[script:p_itemclothes] [Version Check] Checking for updates...
+[script:p_itemclothes] [Version Check] Current version: 1.0.3
+[script:bablo-billing] 
+[script:bablo-billing] [UP TO DATE] bablo-billing - Version 1.0.7
+[script:bablo-billing] 
+[script:bablo-multich] [bablo-multicharacter] - You are using the latest version.
+[script:bablo-pettycr] 
+[script:bablo-pettycr] [UP TO DATE] bablo-pettycrimes - Version 2.0.5
+[script:bablo-pettycr] 
+[script:p_itemclothes] [Version Check] You are running the latest version!
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 stashes (30.0110 ms)
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 178 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 153 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 141 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 132 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 128 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 219 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 198 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 110 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[script:xeno-adminmen] SCRIPT ERROR: @xeno-adminmenu/server/framework.lua:184: No such export Shared in resource qbx_core
+[script:qbx_propertie] SCRIPT ERROR: @qbx_properties/server/property.lua:139: qbx_properties was unable to execute a query!
+[script:qbx_propertie] Query: SELECT coords FROM properties GROUP BY coords
+[script:qbx_propertie] []
+[script:qbx_propertie] Unknown column 'coords' in 'SELECT'
+[script:qbx_propertie] > callbackResponse (@ox_lib/imports/callback/server.lua:101)
+[script:qbx_propertie] > handler (@ox_lib/imports/callback/server.lua:122)
+[script:qbx_propertie] > new StackDumpError (D:\FiveMServer\server\citizen/scripting/v8/main.js:416)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:436)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:97)
+[script:qbx_propertie] > Number.__cfx_wrap_2433 (D:\FiveMServer\server\citizen/scripting/v8/main.js:24)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:30)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:94)
+[script:qbx_propertie] > logError (@oxmysql/dist/build.js:26864)
+[script:qbx_propertie] > rawQuery (@oxmysql/dist/build.js:27047)
+[script:qbx_propertie] > process.processTicksAndRejections (node:internal/process/task_queues:105)
+[script:qbx_propertie] 
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ stop "qbx_radialmenu"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource qbx_radialmenu
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ stop "meteo-adminmenu"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource meteo-adminmenu
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ stop "codera-adminmenu"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource codera-adminmenu
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ stop "karma-admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource karma-admin
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ stop "xeno-adminmenu"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource xeno-adminmenu
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[script:bablo-multich] event QBCore:Server:OnPlayerLoaded was not safe for net
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[   script:codera-hud] [codera-hud] Seatbelt resource "qb-smallresources" is not started; seatbelt icon will use statebags only.
+[   script:codera-hud] [codera-hud] Started. Framework: qbcore
+[   script:codera-hud] [codera-hud] Seatbelt resource "qb-smallresources" is not started; seatbelt icon will use statebags only.
+[   script:codera-hud] [codera-hud] Started. Framework: qbcore
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (47.0536 ms)
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 218 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ stop "p_itemclothes"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource p_itemclothes
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ stop "p_bridge"
+[           resources] Stopping resource p_policejob
+[           resources] Stopping resource p_bridge
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "ox_inventory"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource business-creator
+[           resources] Stopping resource ox_fuel
+[           resources] Stopping resource qbx_ambulancejob
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[           resources] Stopping resource ox_inventory
+[    c-scripting-core] Creating script environments for ox_inventory
+[           resources] Started resource ox_inventory
+[ citizen-server-impl] server thread hitch warning: timer interval of 160 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 218 items
+[       script:ox_lib] An update is available for ox_inventory (current version: 2.47.9)
+[       script:ox_lib] https://github.com/overextended/ox_inventory/releases/tag/v2.48.0
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/163 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/163 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+║            realscrp║ stop "np-quickmenu"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource np-quickmenu
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 1/163 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 498 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 2 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 stashes (31.5596 ms)
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (31.7868 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 stashes (31.0352 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] server thread hitch warning: timer interval of 217 milliseconds
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 2 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (31.6597 ms)
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 stashes (31.8900 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 1 new resources, and refreshed 0/163 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "cortex-minigames"
+║             TXADMIN║ txaReportResources 
+[    c-scripting-core] Creating script environments for cortex-minigames
+[           resources] Started resource cortex-minigames
+[ citizen-server-impl] server thread hitch warning: timer interval of 214 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[script:cortex-miniga] [cortex-minigames] Version 1.1.0 is up to date.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 403 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 stashes (30.5574 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 stashes (30.9550 ms)
+[    script:av_laptop] [DEBUG]	ox_inventory:usedItem	WEAPON_MACHETE
+[    script:av_laptop] [DEBUG]	Item used, Config.LaptopItem	WEAPON_MACHETE	laptop
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[    script:av_laptop] [DEBUG]	ox_inventory:usedItem	WEAPON_COMBATPISTOL
+[    script:av_laptop] [DEBUG]	Item used, Config.LaptopItem	WEAPON_COMBATPISTOL	laptop
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 406 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 284 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 129 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 129 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+║             TXADMIN║ txaReportResources 
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 304 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] sync thread hitch warning: timer interval of 112 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 295 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 1/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 418 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (46.1009 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 425 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (30.6125 ms)
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 282 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (30.5236 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] server thread hitch warning: timer interval of 177 milliseconds
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (30.6678 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 464 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 119 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 103 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 132 milliseconds
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 1/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 449 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 120 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 138 milliseconds
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 474 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "ox_inventory"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource ox_inventory
+[    c-scripting-core] Creating script environments for ox_inventory
+[           resources] Started resource ox_inventory
+[ citizen-server-impl] server thread hitch warning: timer interval of 589 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[       script:ox_lib] An update is available for ox_inventory (current version: 2.47.9)
+[       script:ox_lib] https://github.com/overextended/ox_inventory/releases/tag/v2.48.0
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 219 items
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] server thread hitch warning: timer interval of 290 milliseconds
+[       script:ox_lib] An update is available for ox_inventory (current version: 2.47.9)
+[       script:ox_lib] https://github.com/overextended/ox_inventory/releases/tag/v2.48.0
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 219 items
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "ox_inventory"
+║             TXADMIN║ txaReportResources 
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[           resources] Stopping resource ox_inventory
+[    c-scripting-core] Creating script environments for ox_inventory
+[           resources] Started resource ox_inventory
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[       script:ox_lib] An update is available for ox_inventory (current version: 2.47.9)
+[       script:ox_lib] https://github.com/overextended/ox_inventory/releases/tag/v2.48.0
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 219 items
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (32.5035 ms)
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (31.8913 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (30.9977 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 424 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (2.9912 ms)
+[ citizen-server-impl] server thread hitch warning: timer interval of 163 milliseconds
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] server thread hitch warning: timer interval of 166 milliseconds
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+[    script:npv_admin] [npv_admin] door Map door opening: map door, angle 90
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (14.5512 ms)
+[    script:npv_admin] [npv_admin] trolley Diamond trolley pays unknown item "diamond"
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[    script:npv_admin] [npv_admin] door Fleeca vault door opening: placed prop, angle -90
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (31.5109 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ stop "qbx_bankrobbery"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource qbx_bankrobbery
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] door Map door opening: map door, angle 90
+║            realscrp║ refresh 
+[           resources] Scanning resources.
+║             TXADMIN║ txaReportResources 
+[           resources] Found 0 new resources, and refreshed 0/164 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "npv_admin"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource npv_admin
+[    c-scripting-core] Creating script environments for npv_admin
+[           resources] Started resource npv_admin
+[ citizen-server-impl] server thread hitch warning: timer interval of 426 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[    script:npv_admin] [npv_admin] database ready
+[    script:npv_admin] [npv_admin] started
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[    script:npv_admin] [npv_admin] door Map door opening: map door, angle -90
+[    script:npv_admin] [npv_admin] door Map door opening: map door, angle -90
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (46.7373 ms)

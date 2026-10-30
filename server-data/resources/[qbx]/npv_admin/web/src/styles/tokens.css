@@ -1,0 +1,68 @@
+/* Design tokens measured from the reference screenshots (designed at 1920x1080, scaled via JS zoom). */
+:root {
+  /* surfaces */
+  --bg-scrim: transparent;   /* full-screen layer behind the panels; raise alpha to dim the game */
+  --bg-panel: #0a0e11;
+  --bg-panel-2: #0e1317;
+  --bg-row: rgba(14, 19, 23, 0.9);
+  --bg-row-hover: rgba(22, 30, 36, 0.95);
+  --bg-input: #10161a;
+  --bg-input-light: #f1f4f5;
+  --bg-solid: #080b0d;
+
+  /* text */
+  --text: #f1f5f6;
+  --text-dim: #aeb8bd;
+  --text-muted: #7d8a91;
+  --text-on-light: #0b0f12;
+
+  /* lines */
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.18);
+
+  /* accent (cyan used for selection, run buttons, active tabs) */
+  --accent: #2ed3f1;
+  --accent-strong: #3fdcf7;
+  --accent-ink: #04161b;
+  --accent-soft: rgba(46, 211, 241, 0.14);
+  --accent-line: rgba(46, 211, 241, 0.55);
+
+  --ok: #3ddc84;
+  --warn: #f2b84b;
+  --danger: #ff4d5e;
+  --danger-soft: rgba(255, 77, 94, 0.16);
+
+  /* block / group colours (script editor + DM actions) */
+  --g-control: #cfa23a;
+  --g-vars: #c77d36;
+  --g-world: #3b7fa6;
+  --g-objects: #3aa660;
+  --g-player: #7a5bc2;
+  --g-npc: #c24e57;
+  --g-vehicle: #a9a32e;
+  --g-dm: #2ea58a;
+
+  /* type */
+  --font-display: 'Barlow Condensed', 'Oswald', 'Arial Narrow', Impact, sans-serif;
+  --font-body: 'Barlow', 'Segoe UI', Roboto, Arial, sans-serif;
+
+  --fs-title: 52px;
+  --fs-h1: 28px;
+  --fs-h2: 20px;
+  --fs-row: 21px;
+  --fs-body: 14px;
+  --fs-small: 12px;
+  --fs-tiny: 10.5px;
+
+  /* spacing + shape (the reference is square-cornered) */
+  --gap: 12px;
+  --pad: 16px;
+  --radius: 0px;
+  --radius-sm: 2px;
+  --rail-w: 216px;
+  --row-h: 52px;
+  --input-h: 44px;
+
+  --dur: 140ms;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}

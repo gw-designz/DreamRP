@@ -1,0 +1,46 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 10/19/2026, 7:58:25 PM
+================================================================
+================================================================
+======== Log Rotated - 10/19/2026, 7:58:28 PM                   
+================================================================
+[20:00:35][realscrp] logged in from 127.0.0.1 via password auth
+[20:00:37][realscrp] Refreshed resources
+[20:02:36][realscrp] Stopped resource "meteo-adminmenu"
+[20:02:38][realscrp] Stopped resource "codera-adminmenu"
+[20:02:41][realscrp] Stopped resource "karma-admin"
+[20:02:42][realscrp] Stopped resource "xeno-adminmenu"
+[20:02:44][realscrp] Refreshed resources
+[20:02:45][realscrp] Ensured resource "npv_admin"
+[20:05:20][realscrp] Refreshed resources
+[20:06:37][realscrp] Refreshed resources
+[20:06:42][realscrp] Ensured resource "ox_doorlock"
+[20:20:46][realscrp] Refreshed resources
+[20:20:51][realscrp] Ensured resource "interact"
+[20:20:56][realscrp] Stopped resource "qbx_radialmenu"
+[20:21:01][realscrp] Ensured resource "codera-radialmenu"
+[20:22:36][realscrp] Refreshed resources
+[20:22:40][realscrp] Ensured resource "npv_admin"
+[20:25:06][realscrp] Refreshed resources
+[20:25:07][realscrp] Ensured resource "npv_admin"
+[20:29:43][realscrp] Refreshed resources
+[20:32:00][realscrp] Refreshed resources
+[20:32:03][realscrp] Ensured resource "codera-hud"
+[20:32:50][realscrp] Refreshed resources
+[20:32:52][realscrp] Stopped resource "qbx_chat_theme"
+[20:40:06][realscrp] Refreshed resources
+[20:40:08][realscrp] Ensured resource "npv_admin"
+[21:04:45][realscrp] Refreshed resources
+[21:04:47][realscrp] Ensured resource "npv_admin"
+[21:24:07][realscrp] Refreshed resources
+[21:24:14][realscrp] Stopped resource "cloud-shop"
+[21:24:17][realscrp] Ensured resource "codera_shops"
+[21:24:34][realscrp] Stopped resource "np-quickmenu"
+[21:44:25][realscrp] Refreshed resources
+[21:44:27][realscrp] Ensured resource "npv_admin"
+[21:48:02][realscrp] Refreshed resources
+[21:48:05][realscrp] Ensured resource "bablo-multicharacter"
+[22:34:20][realscrp] Refreshed resources
+[22:34:23][realscrp] Ensured resource "npv_admin"
+[22:39:47][realscrp] Refreshed resources
+[22:39:49][realscrp] Ensured resource "npv_admin"

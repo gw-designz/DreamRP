@@ -1,0 +1,146 @@
+{
+    "resourceName": "K4MB1-GaragesPack",
+    "creator": "K4MB1 Garages Pack",
+    "interiors": {
+        "Garage 1": {
+            "label": "Garage 1",
+            "doorOffset": {
+                "x": -0.201569,
+                "y": 14.128174,
+                "z": -0.937195,
+                "h": 173.779678,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "./images/shells/GaragesPack/k4_garage1_shell.webp"
+                }
+            ],
+            "model": "k4_garage1_shell"
+        },
+        "Garage 2": {
+            "label": "Garage 2",
+            "ddoorOffset": {
+                "x": -3.66861,
+                "y": -0.344116,
+                "z": -0.6847,
+                "h": 268.634735,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "./images/shells/GaragesPack/k4_garage2_shell.webp"
+                }
+            ],
+            "model": "k4_garage2_shell"
+        },
+        "Garage 3": {
+            "label": "Garage 3",
+            "doorOffset": {
+                "x": -3.579742,
+                "y": -0.179321,
+                "z": -0.686516,
+                "h": 271.577362,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "./images/shells/GaragesPack/k4_garage3_shell.webp"
+                }
+            ],
+            "model": "k4_garage3_shell"
+        },
+        "Garage 4": {
+            "label": "Garage 4",
+            "doorOffset": {
+                "x": 8.817535,
+                "y": 1.578125,
+                "z": -0.75,
+                "h": 91.919441,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "./images/shells/GaragesPack/k4_garage4_shell.webp"
+                }
+            ],
+            "model": "k4_garage4_shell"
+        },
+        "Garage Low End": {
+            "label": "Garage Low End",
+            "doorOffset": {
+                "x": 5.745209,
+                "y": 3.649414,
+                "z": -0.5,
+                "h": 184.022202,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "./images/shells/GaragesPack/k4_garage5_shell.webp"
+                }
+            ],
+            "model": "k4_garage5_shell"
+        },
+        "Garage": {
+            "label": "Garage",
+            "doorOffset": {
+                "x": 13.695572,
+                "y": 1.6297,
+                "z": -0.750023,
+                "h": 94.825325,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "./images/shells/GaragesPack/k4_garage6_shell.webp"
+                }
+            ],
+            "model": "k4_garage6_shell"
+        },
+        "Garage High End": {
+            "label": "Garage High End",
+            "doorOffset": {
+                "x": 12.249466,
+                "y": -14.443787,
+                "z": -0.999924,
+                "h": 86.852631,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "./images/shells/GaragesPack/k4_garage7_shell.webp"
+                }
+            ],
+            "model": "k4_garage7_shell"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/27/2026, 11:33:03 PM
+================================================================
+================================================================
+======== Log Rotated - 8/27/2026, 11:33:07 PM                   
+================================================================
+[23:34:12][realscrp] logged in from 127.0.0.1 via password auth
+[23:35:26][realscrp] executed "RESTART SERVER"
+[23:39:15][realscrp] Stopped resource "prism_pausemenuv2"
+[23:43:43][realscrp] Stopped resource "qbx_properties"
+[23:56:06][realscrp] Refreshed resources
+[23:57:06][realscrp] Refreshed resources
+[23:57:07][realscrp] Ensured resource "ox_inventory"
+[23:57:18][realscrp] Ensured resource "sd-itemspawner"
+[23:57:19][realscrp] Ensured resource "qbx_ambulancejob"
+[23:57:21][realscrp] Ensured resource "ox_fuel"
+[00:11:35][realscrp] Refreshed resources
+[00:14:24][realscrp] Refreshed resources

@@ -1,0 +1,65 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 10/20/2026, 12:43:24 AM
+================================================================
+================================================================
+======== Log Rotated - 10/20/2026, 12:43:28 AM                  
+================================================================
+[00:45:12][realscrp] logged in from 127.0.0.1 via password auth
+[00:46:07][realscrp] Stopped resource "qbx_radialmenu"
+[00:46:10][realscrp] Stopped resource "meteo-adminmenu"
+[00:46:13][realscrp] Stopped resource "codera-adminmenu"
+[00:46:15][realscrp] Stopped resource "karma-admin"
+[00:46:16][realscrp] Stopped resource "xeno-adminmenu"
+[00:52:07][realscrp] Stopped resource "p_itemclothes"
+[00:52:13][realscrp] Stopped resource "p_bridge"
+[00:52:18][realscrp] Ensured resource "ox_inventory"
+[00:52:20][realscrp] Refreshed resources
+[00:52:38][realscrp] Refreshed resources
+[00:52:42][realscrp] Ensured resource "npv_admin"
+[00:52:55][realscrp] Stopped resource "np-quickmenu"
+[00:54:15][realscrp] Refreshed resources
+[00:54:17][realscrp] Ensured resource "npv_admin"
+[01:13:07][realscrp] Refreshed resources
+[01:13:12][realscrp] Ensured resource "cortex-minigames"
+[01:16:48][realscrp] Refreshed resources
+[01:16:49][realscrp] Ensured resource "npv_admin"
+[01:30:55][realscrp] Refreshed resources
+[01:30:57][realscrp] Ensured resource "npv_admin"
+[01:34:46][realscrp] Refreshed resources
+[01:34:48][realscrp] Ensured resource "npv_admin"
+[01:36:57][realscrp] Refreshed resources
+[01:36:58][realscrp] Ensured resource "npv_admin"
+[01:40:00][realscrp] Refreshed resources
+[01:40:01][realscrp] Ensured resource "npv_admin"
+[01:59:11][realscrp] Refreshed resources
+[01:59:13][realscrp] Ensured resource "npv_admin"
+[02:09:20][realscrp] Refreshed resources
+[02:09:21][realscrp] Ensured resource "npv_admin"
+[02:12:30][realscrp] Refreshed resources
+[02:12:32][realscrp] Ensured resource "npv_admin"
+[02:14:21][realscrp] Refreshed resources
+[02:14:22][realscrp] Ensured resource "npv_admin"
+[02:16:43][realscrp] Refreshed resources
+[02:16:44][realscrp] Ensured resource "npv_admin"
+[02:24:09][realscrp] Refreshed resources
+[02:24:11][realscrp] Ensured resource "npv_admin"
+[02:33:34][realscrp] Refreshed resources
+[02:33:35][realscrp] Ensured resource "npv_admin"
+[02:38:34][realscrp] Refreshed resources
+[02:38:35][realscrp] Ensured resource "npv_admin"
+[02:41:52][realscrp] Refreshed resources
+[02:41:56][realscrp] Ensured resource "ox_inventory"
+[02:41:58][realscrp] Ensured resource "npv_admin"
+[02:43:18][realscrp] Refreshed resources
+[02:43:24][realscrp] Ensured resource "ox_inventory"
+[02:43:32][realscrp] Ensured resource "npv_admin"
+[02:52:05][realscrp] Refreshed resources
+[02:52:06][realscrp] Ensured resource "npv_admin"
+[03:01:40][realscrp] Refreshed resources
+[03:01:41][realscrp] Ensured resource "npv_admin"
+[03:02:54][realscrp] Refreshed resources
+[03:02:55][realscrp] Refreshed resources
+[03:02:57][realscrp] Ensured resource "npv_admin"
+[03:15:53][realscrp] Stopped resource "qbx_bankrobbery"
+[03:18:28][realscrp] Refreshed resources
+[03:18:30][realscrp] Ensured resource "npv_admin"

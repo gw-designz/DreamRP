@@ -1,0 +1,349 @@
+/* iPhone Duo home screen. 1em = 1/52.75 of the screen height (see Phone.jsx). */
+.duo-home {
+    --duo-icon: 3.75em;
+
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    padding: calc(var(--safe-top) + 0.5em) 0 0;
+    font-family: 'Inter', -apple-system, 'SF Pro Text', 'Segoe UI', sans-serif;
+    color: #fff;
+    animation: duo-home-in 0.32s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes duo-home-in {
+    from {
+        opacity: 0;
+        transform: scale(1.06);
+    }
+}
+
+/* ---------- pages ---------- */
+.duo-home__pager {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    cursor: default;
+}
+
+.duo-home__pager.is-dragging {
+    scroll-snap-type: none;
+    cursor: grabbing;
+}
+
+.duo-page {
+    flex: 0 0 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr);
+    grid-auto-flow: row dense;
+    padding: 0 1.15em;
+}
+
+.phone.is-unfolded .duo-page {
+    padding: 0 2.6em;
+}
+
+/* ---------- app tile ---------- */
+.duo-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.4em;
+    padding-top: 0.35em;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    min-width: 0;
+}
+
+.duo-tile__icon {
+    position: relative;
+    display: block;
+    width: var(--duo-icon);
+    height: var(--duo-icon);
+    flex: 0 0 auto;
+    transition:
+        transform 0.18s cubic-bezier(0.3, 0.7, 0.3, 1),
+        filter 0.18s ease;
+}
+
+.duo-tile:hover .duo-tile__icon {
+    filter: brightness(1.06);
+}
+
+.duo-tile:active .duo-tile__icon {
+    transform: scale(0.9);
+    filter: brightness(0.82);
+}
+
+.duo-tile__label {
+    font-size: 0.72em;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.005em;
+    color: #fff;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 0.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 0.05em 0.3em rgba(0, 0, 0, 0.45);
+}
+
+.duo-tile__badge {
+    position: absolute;
+    top: -0.4em;
+    right: -0.45em;
+    min-width: 1.45em;
+    height: 1.45em;
+    padding: 0 0.42em;
+    border-radius: 0.75em;
+    background: #ff3b30;
+    color: #fff;
+    font-size: 0.78em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.duo-tile.is-downloading .duo-icon {
+    filter: brightness(0.5) saturate(0.4);
+}
+
+.duo-tile__dl {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
+    height: 0.26em;
+    border-radius: 0.2em;
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+.duo-tile__dl span {
+    display: block;
+    height: 100%;
+    background: #fff;
+    transition: width 0.1s linear;
+}
+
+/* ---------- icon (iOS continuous-corner squircle) ---------- */
+.duo-icon {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 23%;
+    overflow: hidden;
+    box-shadow: 0 0.12em 0.45em rgba(0, 0, 0, 0.22);
+}
+
+.duo-icon::after {
+    /* hairline edge that every iOS icon has */
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 0.04em rgba(255, 255, 255, 0.14);
+    pointer-events: none;
+}
+
+.duo-icon--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.duo-icon .np-icon {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.duo-icon .np-icon::after {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 50%);
+}
+
+/* ---------- widgets ---------- */
+.duo-widget-cell {
+    grid-column: span 2;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.4em;
+    padding-top: 0.35em;
+    min-width: 0;
+    min-height: 0;
+}
+
+.duo-widget {
+    position: relative;
+    height: calc(100% - 2em);
+    aspect-ratio: 1;
+    max-width: calc(100% - 0.9em);
+    border-radius: 1.35em;
+    padding: 0.95em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: inherit;
+    font-family: inherit;
+    overflow: hidden;
+    box-shadow: 0 0.2em 0.8em rgba(0, 0, 0, 0.22);
+    transition: transform 0.18s cubic-bezier(0.3, 0.7, 0.3, 1);
+}
+
+.duo-widget:not(:disabled):active {
+    transform: scale(0.95);
+}
+
+.duo-widget:disabled {
+    cursor: default;
+}
+
+.duo-widget--calendar {
+    background: #fff;
+    color: #111;
+}
+
+.duo-cal__weekday {
+    font-size: 0.78em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ff3b30;
+}
+
+.duo-cal__day {
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-top: 0.02em;
+}
+
+.duo-cal__empty {
+    margin-top: auto;
+    font-size: 0.74em;
+    font-weight: 500;
+    color: #8e8e93;
+}
+
+.duo-widget--clock {
+    background: linear-gradient(170deg, #2b6fd6 0%, #4a9bf0 55%, #78bdf7 100%);
+    color: #fff;
+}
+
+.duo-clk__city {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    font-size: 0.82em;
+    font-weight: 600;
+}
+
+.duo-clk__arrow {
+    width: 0.8em;
+    height: 0.8em;
+    fill: currentColor;
+}
+
+.duo-clk__time {
+    font-size: 2.35em;
+    font-weight: 300;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-top: 0.1em;
+    white-space: nowrap;
+}
+
+.duo-clk__time small {
+    font-size: 0.38em;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-left: 0.25em;
+}
+
+.duo-clk__zone {
+    margin-top: auto;
+    max-width: 100%;
+    font-size: 0.74em;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+}
+
+/* ---------- page dots ---------- */
+.duo-home__dots {
+    flex: 0 0 auto;
+    height: 1.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.duo-home__dot {
+    width: 0.44em;
+    height: 0.44em;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.38);
+    font-size: inherit;
+    transition: background 0.2s ease;
+}
+
+.duo-home__dot.is-active {
+    background: #fff;
+}
+
+/* ---------- dock ---------- */
+.duo-dock {
+    flex: 0 0 auto;
+    align-self: stretch;
+    height: 5.75em;
+    margin: 0 0.7em 1.1em;
+    padding: 0 0.6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 2.2em;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(1.4em) saturate(1.7);
+    backdrop-filter: blur(1.4em) saturate(1.7);
+    box-shadow: inset 0 0.05em 0 rgba(255, 255, 255, 0.18);
+}
+
+.duo-dock .duo-tile {
+    padding: 0;
+}
+
+/* five dock apps on the narrow cover screen: slightly smaller icons so they breathe */
+.phone.is-folded .duo-dock .duo-tile:first-child:nth-last-child(n + 5) .duo-tile__icon,
+.phone.is-folded .duo-dock .duo-tile:first-child:nth-last-child(n + 5) ~ .duo-tile .duo-tile__icon {
+    width: 3.4em;
+    height: 3.4em;
+}
+
+.phone.is-unfolded .duo-dock {
+    align-self: center;
+    gap: 1.6em;
+    padding: 0 1.4em;
+    margin-bottom: 1.3em;
+}

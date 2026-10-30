@@ -1,0 +1,380 @@
+/* NoPixel home screen. 1em = 1/52.75 of the screen height (see Phone.jsx). */
+.np-home {
+    --np-icon: 4.15em;
+    --np-col: 5.6em;
+    --np-row: 6.55em;
+
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.75em;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    animation: np-home-in 0.26s ease-out both;
+}
+
+@keyframes np-home-in {
+    from {
+        opacity: 0;
+        transform: scale(1.025);
+    }
+}
+
+/* ---------- clock ---------- */
+.np-home__clock {
+    position: relative;
+    height: 4.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.np-home__time {
+    position: relative;
+    font-size: 3.85em;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    color: #fff;
+    text-shadow: 0 0.04em 0.12em rgba(0, 0, 0, 0.35);
+}
+
+.np-home__ghost {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 5.3em;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.045);
+    transform: translate(-56%, -64%);
+}
+
+/* ---------- location band ---------- */
+.np-home__zone {
+    width: 100%;
+    height: 2.15em;
+    margin-top: 0.15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.32) 14%,
+        rgba(0, 0, 0, 0.32) 86%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    pointer-events: none;
+}
+
+.np-home__zone span {
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.28em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}
+
+.np-home__zone--empty {
+    background: none;
+}
+
+/* ---------- app grid ---------- */
+.np-home__grid {
+    margin-top: 1.15em;
+    display: grid;
+    grid-template-columns: repeat(4, var(--np-col));
+    grid-auto-rows: var(--np-row);
+    justify-content: center;
+    align-content: start;
+    flex: 0 1 auto;
+    min-height: 0;
+    /* five rows are visible, as on the reference phone; extra apps scroll into view */
+    max-height: calc(var(--np-row) * 5);
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.np-home__grid > * {
+    scroll-snap-align: start;
+}
+
+.np-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.28em;
+    cursor: pointer;
+    border-radius: 0.9em;
+    padding-top: 0.05em;
+}
+
+.np-app__icon {
+    position: relative;
+    display: block;
+    width: var(--np-icon);
+    height: var(--np-icon);
+    flex: 0 0 auto;
+    transition: transform 0.12s ease;
+}
+
+.np-app:hover .np-app__icon {
+    transform: translateY(-0.06em);
+}
+
+.np-app:active .np-app__icon {
+    transform: scale(0.93);
+}
+
+.np-app__label {
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #ecedee;
+    text-align: center;
+    max-width: 6.6em;
+    text-shadow: 0 0.06em 0.18em rgba(0, 0, 0, 0.45);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.np-app__badge {
+    position: absolute;
+    top: -0.35em;
+    right: -0.35em;
+    min-width: 1.35em;
+    height: 1.35em;
+    padding: 0 0.35em;
+    border-radius: 0.7em;
+    background: #ff3b30;
+    color: #fff;
+    font-size: 0.78em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.4);
+}
+
+.np-app.is-downloading .np-icon {
+    filter: brightness(0.55) saturate(0.5);
+}
+
+.np-app__dl {
+    position: absolute;
+    left: 18%;
+    right: 18%;
+    bottom: 18%;
+    height: 0.28em;
+    border-radius: 0.2em;
+    background: rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+}
+
+.np-app__dl span {
+    display: block;
+    height: 100%;
+    background: #fff;
+    transition: width 0.1s linear;
+}
+
+/* ---------- icon tile ---------- */
+.np-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 22%;
+    overflow: hidden;
+    box-shadow:
+        0 0.22em 0.5em rgba(0, 0, 0, 0.38),
+        inset 0 0.06em 0 rgba(255, 255, 255, 0.12);
+}
+
+.np-icon::after {
+    /* soft top sheen, like the reference tiles */
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 45%);
+    pointer-events: none;
+}
+
+.np-icon__glyph {
+    width: calc(var(--glyph, 0.56) * 100%);
+    height: calc(var(--glyph, 0.56) * 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.np-icon__glyph > svg,
+.np-icon__glyph .fa-svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0.05em 0.08em rgba(0, 0, 0, 0.18));
+}
+
+.np-glyph-svg--news {
+    filter: none !important;
+}
+
+.np-socials-glyph {
+    width: 100%;
+    height: 100%;
+    border-radius: 18%;
+    background: #33b1f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.np-socials-glyph .fa-svg {
+    width: 62%;
+    height: 62%;
+}
+
+.np-icon--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.np-icon__letter {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #cfd3d7;
+}
+
+/* ---------- dock ---------- */
+.np-dock {
+    position: absolute;
+    left: 50%;
+    bottom: 2.05em;
+    transform: translateX(-50%);
+    height: 3.45em;
+    padding: 0 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+    border-radius: 1.75em;
+    background: rgba(24, 25, 27, 0.92);
+    box-shadow:
+        0 0.3em 0.9em rgba(0, 0, 0, 0.28),
+        inset 0 0.05em 0 rgba(255, 255, 255, 0.04);
+    z-index: 2;
+}
+
+.np-dock__btn {
+    position: relative;
+    width: 2.45em;
+    height: 2.45em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a3a7ab;
+    border-radius: 0.8em;
+    transition:
+        color 0.12s ease,
+        background 0.12s ease;
+}
+
+.np-dock__btn .fa-svg {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.np-dock__btn:hover {
+    color: #d4d7da;
+}
+
+.np-dock__btn:active {
+    transform: scale(0.92);
+}
+
+.np-dock__letter {
+    font-weight: 700;
+}
+
+.np-dock__badge {
+    position: absolute;
+    top: 0.35em;
+    right: 0.35em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background: #ff3b30;
+}
+
+/* <button> defaults to 13.33px in Chromium; NoPixel buttons scale with the screen instead. */
+.np-app,
+.np-dock__btn {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* two glyphs side by side (Property) / glyph with corner badge (Events) */
+.np-dual {
+    display: flex;
+    align-items: flex-end;
+    gap: 6%;
+    width: 100%;
+    height: 100%;
+}
+
+.np-dual .fa-svg:first-child {
+    width: 58% !important;
+    height: 58% !important;
+}
+
+.np-dual .fa-svg:last-child {
+    width: 40% !important;
+    height: 80% !important;
+}
+
+.np-badged {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.np-badged > .fa-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.np-badged__b {
+    position: absolute;
+    right: -14%;
+    bottom: -14%;
+    width: 56%;
+    height: 56%;
+    border-radius: 50%;
+    background: #6a43ee;
+    padding: 6%;
+    display: flex;
+}
+
+.np-badged__b .fa-svg {
+    width: 100%;
+    height: 100%;
+}

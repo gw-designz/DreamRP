@@ -1,0 +1,25 @@
+/* The printer's radial menu, drawn like codera-radialmenu. */
+.radial-stage { position: fixed; inset: 0; cursor: default; user-select: none;
+  --radial-dark: rgba(10, 11, 13, 0.54); --radial-line: rgba(4, 5, 7, 0.28); --radial-outer: rgba(4, 5, 7, 0.2);
+  --radial-white: #f5f6f3; --radial-black: #111516;
+  font-family: 'Barlow Semi Condensed', 'Barlow Condensed', Impact, sans-serif; font-style: italic; font-weight: 800; }
+.radial-holder { position: absolute; top: 24%; left: 71%; width: 400px; height: 400px; transform: translateX(-50%); animation: radial-in 180ms cubic-bezier(.2, .8, .2, 1); }
+@media (max-width: 1500px) { .radial-holder { top: 23%; left: 69%; transform: translateX(-50%) scale(0.9); transform-origin: top center; } }
+.radial-menu { position: absolute; inset: 0; overflow: visible; }
+.radial-sector > path { fill: var(--radial-dark); stroke: var(--radial-line); stroke-width: 1.2; stroke-linejoin: round; vector-effect: non-scaling-stroke; transition: fill 90ms ease; cursor: pointer; }
+.radial-sector > text { fill: var(--radial-white); font-size: 3.05px; letter-spacing: 0.1px; paint-order: stroke fill; stroke: rgba(0, 0, 0, 0.72); stroke-width: 0.18px; pointer-events: none; }
+.radial-icon { width: 8px; height: 8px; display: flex; color: var(--radial-white); filter: drop-shadow(0 0.3px 0 rgba(0, 0, 0, 0.82)) drop-shadow(0 0 0.3px rgba(0, 0, 0, 0.88)); pointer-events: none; }
+.radial-sector.selected > path { fill: var(--radial-white); }
+.radial-sector.selected > text { fill: var(--radial-black); stroke: none; }
+.radial-sector.selected .radial-icon { color: var(--radial-black); filter: none; }
+.radial-ring { fill: none; stroke: var(--radial-outer); stroke-width: 4.6; opacity: 0.82; vector-effect: non-scaling-stroke; pointer-events: none; }
+.radial-selection, .radial-centre-selection { fill: none; stroke: #fff; stroke-width: 4; vector-effect: non-scaling-stroke; pointer-events: none; }
+.radial-centre-selection { stroke-width: 4.5; }
+.radial-centre > circle { fill: var(--radial-dark); stroke: var(--radial-line); stroke-width: 2; vector-effect: non-scaling-stroke; cursor: pointer; transition: fill 100ms ease; }
+.radial-centre:hover > circle { fill: rgba(10, 11, 13, 0.92); }
+.radial-centre > text { fill: var(--radial-white); font-size: 5.15px; letter-spacing: 0.12px; paint-order: stroke fill; stroke: rgba(0, 0, 0, 0.65); stroke-width: 0.16px; pointer-events: none; }
+.radial-controls { position: absolute; top: calc(105% + 50px); left: 50%; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; gap: 4px;
+  min-width: 235px; height: 44px; padding: 0 16px; color: var(--radial-black); background: var(--radial-white); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.17); font-size: 16px; letter-spacing: 0.25px; white-space: nowrap; }
+.radial-mouse { width: 28px; height: 28px; margin-right: 2px; }
+.radial-divider { width: 1px; height: 21px; margin: 0 17px; background: rgba(17, 21, 22, 0.2); transform: skewX(-17deg); }
+@keyframes radial-in { from { opacity: 0; transform: translateX(-50%) scale(0.92) rotate(-6deg); } to { opacity: 1; transform: translateX(-50%) scale(1) rotate(0); } }

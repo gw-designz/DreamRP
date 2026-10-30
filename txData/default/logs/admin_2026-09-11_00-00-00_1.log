@@ -1,0 +1,24 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/11/2026, 1:11:56 AM
+================================================================
+================================================================
+======== Log Rotated - 9/11/2026, 1:11:59 AM                    
+================================================================
+[01:16:04][realscrp] logged in from 127.0.0.1 via password auth
+[01:16:06][realscrp] executed "RESTART SERVER"
+[01:17:35][realscrp] Refreshed resources
+[01:23:17][realscrp] Refreshed resources
+[01:23:19][realscrp] Stopped resource "meteo-adminmenu"
+[01:23:20][realscrp] Refreshed resources
+[01:23:21][realscrp] Ensured resource "karma-admin"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/11/2026, 11:29:46 PM
+================================================================
+[23:35:52][realscrp] logged in from 127.0.0.1 via password auth
+[23:35:56][realscrp] Stopped resource "meteo-adminmenu"
+[23:36:09][realscrp] Refreshed resources
+[23:36:12][realscrp] Refreshed resources
+[23:36:41][realscrp] Refreshed resources
+[23:36:47][realscrp] Ensured resource "np-quickmenu"
+[23:55:45][realscrp] Refreshed resources
+[23:55:47][realscrp] Ensured resource "np-quickmenu"

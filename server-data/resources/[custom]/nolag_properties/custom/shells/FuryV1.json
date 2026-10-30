@@ -1,0 +1,348 @@
+{
+    "resourceName": "fury_shells",
+    "creator": "Fury V1",
+    "interiors": {
+        "Loft Apartment": {
+            "label": "Loft Apartment",
+            "doorOffset": {
+                "x": 2.1,
+                "y": -8.57,
+                "z": 0.8,
+                "h": 359.88,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/7882adac600f386c3bf2d13ceb889682f635a4f0.png",
+                "label": "Loft Apartment"
+            }],
+            "model": "loft_shell"
+        },
+        "Skyview Loft Unfurnished": {
+            "label": "Skyview Loft Unfurnished",
+            "doorOffset": {
+                "x": 7.51,
+                "y": 3.38,
+                "z": 0.61,
+                "h": 177.18,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/ec77392ceab7c66a78e7985559071ca9044794bf.png",
+                "label": "Skyview Apartment"
+            }],
+            "model": "skyview_shell_u"
+        },
+        "Skyview Loft Furnished": {
+            "label": "Skyview Loft Furnished",
+            "doorOffset": {
+                "x": 7.51,
+                "y": 3.38,
+                "z": 0.61,
+                "h": 177.18,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/ec77392ceab7c66a78e7985559071ca9044794bf.png",
+                "label": "Skyview Apartment"
+            }],
+            "model": "skyview_shell_f"
+        },
+        "Cozy Shell Unfurnished": {
+            "label": "Cozy Shell Unfurnished",
+            "doorOffset": {
+                "x": 2.23,
+                "y": -8.37,
+                "z": 0.72,
+                "h": 2.02,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/71953a3c3787cf0104256c1340c9272744a1f8ae.png",
+                "label": "Cozy Apartment"
+            }],
+            "model": "cozy_shell_u"
+        },
+        "Cozy Shell Furnished": {
+            "label": "Cozy Shell Furnished",
+            "doorOffset": {
+                "x": 2.23,
+                "y": -8.37,
+                "z": 0.72,
+                "h": 2.02,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/71953a3c3787cf0104256c1340c9272744a1f8ae.png",
+                "label": "Cozy Apartment"
+            }],
+            "model": "cozy_shell_f"
+        },
+        "Japanese Loft Unfurnished": {
+            "label": "Japanese Loft Unfurnished",
+            "doorOffset": {
+                "x": 5.15,
+                "y": 0.86,
+                "z": 0.82,
+                "h": 93.2,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/9bdf99bfd0beee86868639a74d5eaf02188e117f.png",
+                "label": "Japanese Apartment"
+            }],
+            "model": "jap_shell_u"
+        },
+        "Japanese Loft Furnished": {
+            "label": "Japanese Loft Furnished",
+            "doorOffset": {
+                "x": 5.155713,
+                "y": 0.86,
+                "z": 0.82,
+                "h": 93.2,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/9bdf99bfd0beee86868639a74d5eaf02188e117f.png",
+                "label": "Japanese Apartment"
+            }],
+            "model": "jap_shell_f"
+        },
+        "Starter Apartment Unfurnished": {
+            "label": "Starter Apartment Unfurnished",
+            "doorOffset": {
+                "x": 3.72,
+                "y": -4.16,
+                "z": 1.01,
+                "h": 357.59,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/ded3c4b6b3663ef335597b351e7700256c98ff80.png",
+                "label": "Starter Apartment"
+            }],
+            "model": "starter_shell_u"
+        },
+        "Starter Apartment Furnished": {
+            "label": "Starter Apartment Furnished",
+            "doorOffset": {
+                "x": 3.72,
+                "y": -4.16,
+                "z": 1.01,
+                "h": 357.59,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/ded3c4b6b3663ef335597b351e7700256c98ff80.png",
+                "label": "Starter Apartment"
+            }],
+            "model": "starter_shell_f"
+        },
+        "MidTier Apartment Unfurnished": {
+            "label": "MidTier Apartment Unfurnished",
+            "doorOffset": {
+                "x": 4.09,
+                "y": -3.6,
+                "z": 1.05,
+                "h": 270.4,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/e92a2e448842b521c01f42472ff46440c9545002.png",
+                "label": "Midtier Apartment"
+            }],
+            "model": "midshell1_u"
+        },
+        "MidTier Apartment Furnished": {
+            "label": "MidTier Apartment Furnished",
+            "doorOffset": {
+                "x": 4.09,
+                "y": -3.6,
+                "z": 1.05,
+                "h": 270.4,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/e92a2e448842b521c01f42472ff46440c9545002.png",
+                "label": "Midtier Apartment"
+            }],
+            "model": "midshell1_f"
+        },
+        "Midland Apartment Unfurnished": {
+            "label": "Midland Apartment Unfurnished",
+            "doorOffset": {
+                "x": 6.98,
+                "y": -7.96,
+                "z": 1.01,
+                "h": 3.11,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/3d8be62126fb789ec2b9c4109debbed6cdfba31f.png",
+                "label": "Midland Apartment"
+            }],
+            "model": "midshell2_u"
+        },
+        "Midland Apartment Furnished": {
+            "label": "Midland Apartment Furnished",
+            "doorOffset": {
+                "x": 6.98,
+                "y": -7.96,
+                "z": 1.01,
+                "h": 3.11,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/3d8be62126fb789ec2b9c4109debbed6cdfba31f.png",
+                "label": "Midland Apartment"
+            }],
+            "model": "midshell2_f"
+        },
+        "High-End Mansion 1": {
+            "label": "High-End Mansion 1",
+            "doorOffset": {
+                "x": -17.11,
+                "y": -6.05,
+                "z": 2.81,
+                "h": 271.89,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/58e21b0125ceb144d42183cf20f373ac51f540b4.png",
+                "label": "High End Mansion"
+            }],
+            "model": "fury_shell04"
+        },
+        "High-End Mansion 2": {
+            "label": "High-End Mansion 2",
+            "doorOffset": {
+                "x": -17.11,
+                "y": -5.97,
+                "z": 2.41,
+                "h": 269.74,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/59c9b38749a033478c4d18252d9e55d3f61c7b02.png",
+                "label": "High End Mansion"
+            }],
+            "model": "fury_shell06"
+        },
+        "High-End Mansion 3": {
+            "label": "High-End Mansion 3",
+            "doorOffset": {
+                "x": -7.68,
+                "y": -1.11,
+                "z": 1.21,
+                "h": 178.8,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/d47c3661dba110aa16508d1d6c26a77d291b79df.png",
+                "label": "High End Mansion"
+            }],
+            "model": "fury_shell09"
+        },
+        "High-End Mansion 4": {
+            "label": "High-End Mansion 4",
+            "doorOffset": {
+                "x": -14.29,
+                "y": -1.96,
+                "z": 7.21,
+                "h": 270.8,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/bc00e952d5d6834c678c82f0d02ff9d0140717ad.png",
+                "label": "High End Mansion"
+            }],
+            "model": "fury_shell08"
+        },
+        "High-End Apartment 1": {
+            "label": "High-End Apartment 1",
+            "doorOffset": {
+                "x": -3.46,
+                "y": 18.03,
+                "z": 1.02,
+                "h": 181.74,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 200000,
+                "slots": 50
+            },
+            "imgs": [{
+                "url": "https://dunb17ur4ymx4.cloudfront.net/wysiwyg/1221848/a7d1e0961697039047d09b3c8c9a57638f0555cb.png",
+                "label": "High End Apartment"
+            }],
+            "model": "fury_shell07"
+        }
+    }
+}

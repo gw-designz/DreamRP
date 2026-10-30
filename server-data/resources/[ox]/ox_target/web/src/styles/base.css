@@ -1,0 +1,62 @@
+/* Root scale + tokens taken verbatim from prp-hud/ui/assets/index.css.
+   The font-size rule is what makes every rem measurement resolution-independent -
+   without it the interface does not match the original 1:1. */
+
+@font-face {
+  font-family: 'Quantico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Quantico-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quantico';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/Quantico-Bold.ttf') format('truetype');
+}
+
+:root {
+  font-size: min(0.83333333vw, 1.48148148vh);
+
+  --primary: 87 83% 67%;
+
+  --target-height: 2.5rem;
+  --target-dent-size: 1rem;
+  --target-border-width: 2px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-style: solid;
+}
+
+/* line-height 1.5 comes from the original stylesheet's reset and decides the
+   option pill height - dropping it makes every pill a pixel short. */
+html,
+:host {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  line-height: inherit;
+  font-family: Quantico, sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}

@@ -1,0 +1,46 @@
+{
+    "resourceName": "CUBANS_LAAPT_1",
+    "creator": "Cubans LA Shells",
+    "interiors": {
+        "Cubans LA APT Shell": {
+            "label": "Cubans LA APT Shell",
+            "doorOffset": {
+                "x": -5.36499,
+                "y": 2.269653,
+                "z": 1.1716,
+                "h": 179.008087,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 80000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/bZTHZQFgddhUQAaeWZU2c/LA.png"
+                }
+            ],
+            "model": "cubansla_shell"
+        },
+        "Cubans LA APT Shell NO WINDOWS": {
+            "label": "Cubans LA APT Shell NO WINDOWS",
+            "doorOffset": {
+                "x": -5.36499,
+                "y": 2.269653,
+                "z": 1.1716,
+                "h": 179.008087,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 80000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/bZTHZQFgddhUQAaeWZU2c/LA.png"
+                }
+            ],
+            "model": "cubanslanw_shell"
+        }
+    }
+}

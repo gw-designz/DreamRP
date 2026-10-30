@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Server Logo</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 1024px;
+        height: 1024px;
+        overflow: hidden;
+        background: transparent;
+      }
+      #logo {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        user-select: none;
+        -webkit-user-drag: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="logo" alt="" />
+
+    <script>
+      const img = document.getElementById("logo");
+
+      window.addEventListener("message", (event) => {
+        const data = event.data;
+        if (!data || data.action !== "bablo-multicharacter:logo") return;
+
+        const src = data.data && data.data.image;
+        if (typeof src === "string" && src.length > 0) {
+          img.src = src;
+        }
+      });
+    </script>
+  </body>
+</html>

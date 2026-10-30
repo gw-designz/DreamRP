@@ -1,0 +1,330 @@
+{
+    "resourceName": "dc_housingshells",
+    "creator": "DCCustomz V1",
+    "interiors": {
+        "DC Apartment 1": {
+            "label": "DC Apartment 1",
+            "doorOffset": {
+                "x": 1.540771,
+                "y": -2.907349,
+                "z": -0.363182,
+                "h": 0.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/apt1.png"
+            }],
+            "model": "bk_apartmentone"
+        },
+        "DC Apartment 2": {
+            "label": "DC Apartment 2",
+            "doorOffset": {
+                "x": -7.216675,
+                "y": -0.77063,
+                "z": -0.364571,
+                "h": 270.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/apt2.png"
+            }],
+            "model": "bk_apartmenttwo"
+        },
+        "DC Apartment 3": {
+            "label": "DC Apartment 3",
+            "doorOffset": {
+                "x": 1.931152,
+                "y": -5.933044,
+                "z": -0.35503,
+                "h": 0.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/apt3.png"
+            }],
+            "model": "dc_apartmentthree"
+        },
+        "DC Apartment 4": {
+            "label": "DC Apartment 4",
+            "doorOffset": {
+                "x": -1.951172,
+                "y": -6.115295,
+                "z": -0.439957,
+                "h": 4.787943,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/apt41.png"
+            }],
+            "model": "dc_apartmentfour"
+        },
+        "DC House 1": {
+            "label": "DC House 1",
+            "doorOffset": {
+                "x": 3.395996,
+                "y": -3.424683,
+                "z": -2.146027,
+                "h": 0.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/house1.png"
+            }],
+            "model": "bk_houseone"
+        },
+        "DC House 2": {
+            "label": "DC House 2",
+            "doorOffset": {
+                "x": 0.893555,
+                "y": -6.557922,
+                "z": -1.797283,
+                "h": 0.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/house2.png"
+            }],
+            "model": "dc_housetwoshell"
+        },
+        "DC House 3": {
+            "label": "DC House 3",
+            "doorOffset": {
+                "x": -8.373047,
+                "y": -2.479431,
+                "z": -0.497375,
+                "h": 0.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/house3.png"
+            }],
+            "model": "dc_housethree"
+        },
+        "DC House 4": {
+            "label": "DC House 4",
+            "doorOffset": {
+                "x": 8.334991,
+                "y": 4.599335,
+                "z": -1.882324,
+                "h": 90.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/house4.png"
+            }],
+            "model": "dc_housefour"
+        },
+        "DC House 5": {
+            "label": "DC House 5",
+            "doorOffset": {
+                "x": 5.62146,
+                "y": -2.730499,
+                "z": -0.123283,
+                "h": 0.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/house5.png"
+            }],
+            "model": "dc_housefive"
+        },
+        "DC House 6": {
+            "label": "DC House 6",
+            "doorOffset": {
+                "x": -4.25708,
+                "y": 13.136597,
+                "z": -1.848206,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/house6.png"
+            }],
+            "model": "dc_housesix"
+        },
+        "DC House 7": {
+            "label": "DC House 7",
+            "doorOffset": {
+                "x": 0.608521,
+                "y": 1.78479,
+                "z": -0.451202,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/h71.png"
+            }],
+            "model": "dc_houseseven"
+        },
+        "DC House 8": {
+            "label": "DC House 8",
+            "doorOffset": {
+                "x": -3.575073,
+                "y": -11.641693,
+                "z": -1.987724,
+                "h": 356.258514,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/h81.png"
+            }],
+            "model": "dc_houseeight"
+        },
+        "DC Trap 1": {
+            "label": "DC Trap 1",
+            "doorOffset": {
+                "x": 0.246094,
+                "y": 3.146912,
+                "z": -0.238735,
+                "h": 90.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/trap1.png"
+            }],
+            "model": "dc_trapshellone"
+        },
+        "DC Trap 2": {
+            "label": "DC Trap 2",
+            "doorOffset": {
+                "x": 1.418213,
+                "y": 3.788696,
+                "z": -0.265732,
+                "h": 90.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/trap2.png"
+            }],
+            "model": "dc_trapshelltwo"
+        },
+        "DC Trap 3": {
+            "label": "DC Trap 3",
+            "doorOffset": {
+                "x": -0.000122,
+                "y": -6.097412,
+                "z": -0.837967,
+                "h": 0.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/trap3.png"
+            }],
+            "model": "dc_trapshellthree"
+        },
+        "DC Hotel Shell": {
+            "label": "DC Hotel Shell",
+            "doorOffset": {
+                "x": 0.040527,
+                "y": 4.387962,
+                "z": -0.403328,
+                "h": 90.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/images/hotel1.png"
+            }],
+            "model": "dchotel_shell"
+        },
+        "DC Townhouse 1": {
+            "label": "DC Townhouse 1",
+            "doorOffset": {
+                "x": 3.735229,
+                "y": -5.845581,
+                "z": -1.967209,
+                "h": 0.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/th1.png"
+            }],
+            "model": "dc_townhouseone"
+        },
+        "DC Townhouse 2": {
+            "label": "DC Townhouse 2",
+            "doorOffset": {
+                "x": 3.735229,
+                "y": -5.845581,
+                "z": -1.967209,
+                "h": 0.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/s9nylBx2i81FdGej13LAs/th21.png"
+            }],
+            "model": "dc_townhousetwo"
+        }
+    }
+}

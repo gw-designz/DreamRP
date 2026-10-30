@@ -1,0 +1,332 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/11/2026, 11:39:14 PM
+================================================================
+================================================================
+======== Log Rotated - 8/11/2026, 11:39:18 PM                   
+================================================================
+[23:39:29][realscrp] logged in from 127.0.0.1 via password auth
+[23:43:43][realscrp] Refreshed resources
+[23:43:51][realscrp] Stopped resource "qbx_hud"
+[23:43:52][realscrp] Ensured resource "prp-hud"
+[23:44:18][realscrp] Stopped resource "qbx_chat_theme"
+[23:44:24][realscrp] Stopped resource "chat"
+[23:54:29][realscrp] Refreshed resources
+[23:54:37][realscrp] Stopped resource "qbx_adminmenu"
+[23:54:38][realscrp] Refreshed resources
+[23:54:39][realscrp] Ensured resource "prp-adminmenu"
+[23:59:22][realscrp] Refreshed resources
+[23:59:24][realscrp] Ensured resource "prp-adminmenu"
+[00:00:35][realscrp] Refreshed resources
+[00:00:37][realscrp] Ensured resource "prp-adminmenu"
+[00:05:49][realscrp] Refreshed resources
+[00:05:52][realscrp] Ensured resource "prp-adminmenu"
+[00:12:37][realscrp] Refreshed resources
+[00:12:40][realscrp] Ensured resource "prp-adminmenu"
+[00:16:24][realscrp] Refreshed resources
+[00:16:25][realscrp] Ensured resource "prp-adminmenu"
+[00:18:56][realscrp] Refreshed resources
+[00:18:59][realscrp] Ensured resource "prp-adminmenu"
+[00:22:12][realscrp] Refreshed resources
+[00:22:14][realscrp] Ensured resource "prp-bridge"
+[00:22:22][realscrp] Ensured resource "prp-pettycrime-assets"
+[00:22:25][realscrp] Ensured resource "prp-pettycrime"
+[00:23:44][realscrp] Refreshed resources
+[00:23:46][realscrp] Ensured resource "prp-minigames"
+[00:23:50][realscrp] Ensured resource "prp-pettycrime"
+[00:30:27][realscrp] Refreshed resources
+[00:30:32][realscrp] Ensured resource "prp-adminmenu"
+[00:33:07][realscrp] Refreshed resources
+[00:33:10][realscrp] Ensured resource "prp-adminmenu"
+[00:35:43][realscrp] Refreshed resources
+[00:35:45][realscrp] Ensured resource "prp-adminmenu"
+[00:37:11][realscrp] Refreshed resources
+[00:37:13][realscrp] Ensured resource "prp-adminmenu"
+[00:38:01][realscrp] executed "refresh"
+[00:38:07][realscrp] executed "restart prp-adminmenu"
+[00:41:55][realscrp] Refreshed resources
+[00:42:01][realscrp] Ensured resource "prp-adminmenu"
+[00:56:09][realscrp] Refreshed resources
+[00:56:12][realscrp] Ensured resource "prp-adminmenu"
+[01:00:05][realscrp] Refreshed resources
+[01:00:10][realscrp] Ensured resource "prp-adminmenu"
+[01:04:06][realscrp] Refreshed resources
+[01:04:08][realscrp] Ensured resource "prp-adminmenu"
+[01:26:27][realscrp] Refreshed resources
+[01:26:29][realscrp] Ensured resource "pn-mdt"
+[01:46:25][realscrp] Refreshed resources
+[01:46:29][realscrp] Ensured resource "prp-adminmenu"
+[01:47:16][realscrp] Refreshed resources
+[01:47:19][realscrp] Stopped resource "prp-adminmenu"
+[01:47:21][realscrp] Refreshed resources
+[01:47:23][realscrp] Ensured resource "prp-adminmenu"
+[01:48:15][realscrp] Refreshed resources
+[01:48:18][realscrp] Stopped resource "prp-adminmenu"
+[01:48:20][realscrp] Ensured resource "prp-adminmenu"
+[01:48:51][realscrp] Refreshed resources
+[01:48:53][realscrp] Ensured resource "prp-adminmenu"
+[01:52:31][realscrp] Refreshed resources
+[01:52:32][realscrp] Ensured resource "prp-adminmenu"
+[01:54:01][realscrp] Refreshed resources
+[01:54:07][realscrp] Ensured resource "prp-adminmenu"
+[01:57:14][realscrp] Refreshed resources
+[01:57:17][realscrp] Ensured resource "prp-adminmenu"
+[01:57:44][realscrp] Refreshed resources
+[01:57:45][realscrp] Ensured resource "prp-adminmenu"
+[02:01:19][realscrp] Refreshed resources
+[02:07:36][realscrp] Refreshed resources
+[02:07:39][realscrp] Ensured resource "prp-adminmenu"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/12/2026, 7:36:54 PM
+================================================================
+[19:37:58][realscrp] logged in from 127.0.0.1 via password auth
+[19:38:57][realscrp] Refreshed resources
+[19:38:58][realscrp] Stopped resource "qbx_adminmenu"
+[19:40:16][realscrp] Stopped resource "qbx_chat_theme"
+[19:41:44][realscrp] Stopped resource "chat"
+[20:00:44][realscrp] Refreshed resources
+[20:00:48][realscrp] Ensured resource "prp-adminmenu"
+[20:02:52][realscrp] Refreshed resources
+[20:02:53][realscrp] Ensured resource "prp-adminmenu"
+[20:09:33][realscrp] Refreshed resources
+[20:09:36][realscrp] Ensured resource "prp-adminmenu"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/12/2026, 8:43:07 PM
+================================================================
+[20:46:06][realscrp] logged in from 127.0.0.1 via password auth
+[20:46:10][realscrp] Refreshed resources
+[20:46:12][realscrp] Stopped resource "prp-adminmenu"
+[20:46:14][realscrp] Ensured resource "LST_Admin"
+[20:46:19][realscrp] Stopped resource "qbx_radialmenu"
+[20:46:21][realscrp] Ensured resource "LST_RadialMenu"
+[20:48:54][realscrp] Refreshed resources
+[20:49:04][realscrp] Refreshed resources
+[20:51:55][realscrp] Refreshed resources
+[20:51:58][realscrp] Stopped resource "LST_Admin"
+[20:52:00][realscrp] Ensured resource "admin"
+[20:57:59][realscrp] Refreshed resources
+[20:58:03][realscrp] Stopped resource "LST_RadialMenu"
+[20:58:05][realscrp] Ensured resource "codem-supreme-radialmenu"
+[20:58:25][realscrp] Refreshed resources
+[20:58:27][realscrp] Ensured resource "codem-supreme-radialmenu"
+[21:00:06][realscrp] Refreshed resources
+[21:00:07][realscrp] Ensured resource "codem-supreme-radialmenu"
+[21:02:46][realscrp] Refreshed resources
+[21:02:50][realscrp] Stopped resource "prp-hud"
+[21:02:52][realscrp] Ensured resource "prism-hudv2"
+[21:03:11][realscrp] Ensured resource "chat"
+[21:06:56][realscrp] Refreshed resources
+[21:07:00][realscrp] Stopped resource "prism-hudv2"
+[21:07:02][realscrp] Refreshed resources
+[21:07:08][realscrp] Refreshed resources
+[21:07:32][realscrp] Refreshed resources
+[21:07:34][realscrp] Ensured resource "izzy-hudv7"
+[21:08:11][realscrp] Refreshed resources
+[21:08:14][realscrp] Ensured resource "xsound"
+[21:08:18][realscrp] Ensured resource "izzy-hudv7"
+[21:09:12][realscrp] Refreshed resources
+[21:09:13][realscrp] Ensured resource "izzy-hudv7"
+[21:13:42][realscrp] Refreshed resources
+[21:13:46][realscrp] Stopped resource "Renewed-Banking"
+[21:13:47][realscrp] Ensured resource "prism_banking"
+[21:20:53][realscrp] Refreshed resources
+[21:20:57][realscrp] Ensured resource "ox_inventory"
+[21:28:29][realscrp] Refreshed resources
+[21:28:33][realscrp] Ensured resource "0r-animmenu"
+[21:31:11][realscrp] Refreshed resources
+[21:31:14][realscrp] Ensured resource "plt_mdt"
+[21:31:16][realscrp] Ensured resource "plt_cad"
+[21:42:24][realscrp] Refreshed resources
+[21:42:28][realscrp] Ensured resource "ox_inventory"
+[21:42:33][realscrp] Ensured resource "pinkFrog_inventoryAddon"
+[21:42:40][realscrp] Ensured resource "ox_inventory"
+[21:45:21][realscrp] Refreshed resources
+[21:45:27][realscrp] Ensured resource "lation_shops"
+[21:45:39][realscrp] Stopped resource "prism_banking"
+[21:45:41][realscrp] Ensured resource "Renewed-Banking"
+[21:45:47][realscrp] Ensured resource "lation_shops"
+[21:51:08][realscrp] Refreshed resources
+[21:52:18][realscrp] executed "RESTART SERVER"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/12/2026, 10:57:55 PM
+================================================================
+[22:59:06][realscrp] logged in from 127.0.0.1 via password auth
+[22:59:12][realscrp] executed "STOP SERVER"
+[22:59:12][realscrp] Config changes: server.dataPath
+[22:59:12][realscrp] Resetting server data settings.
+[22:59:24][realscrp] Config changes: general.serverName
+[22:59:24][realscrp] Changing global settings via setup stepper and started Deployer.
+[23:00:06][realscrp] Setting recipe.
+[23:00:09][realscrp] Running recipe.
+[23:15:48][realscrp] Config changes: server.dataPath
+[23:15:48][realscrp] Completed and committed server deploy.
+[23:16:43][realscrp] Refreshed resources
+[23:18:36][realscrp] Refreshed resources
+[23:18:39][realscrp] executed "RESTART SERVER"
+[23:21:31][realscrp] Refreshed resources
+[23:22:13][realscrp] executed "RESTART SERVER"
+[23:23:30][realscrp] executed "RESTART SERVER"
+[23:25:28][realscrp] Refreshed resources
+[23:25:31][realscrp] Ensured resource "0r-multicharacterv2"
+[23:33:12][realscrp] Refreshed resources
+[23:33:16][realscrp] Ensured resource "kiiya_elveator"
+[23:33:18][realscrp] Ensured resource "kiiya_mrpd"
+[23:33:31][realscrp] Refreshed resources
+[23:34:14][realscrp] Refreshed resources
+[23:34:19][realscrp] Ensured resource "p_policejob"
+[23:36:09][realscrp] Refreshed resources
+[23:36:16][realscrp] Stopped resource "kiiya_elveator"
+[23:38:33][realscrp] Refreshed resources
+[23:38:38][realscrp] Stopped resource "qbx_police"
+[23:38:39][realscrp] Refreshed resources
+[23:38:48][realscrp] Ensured resource "p_policejob"
+[23:41:29][realscrp] Refreshed resources
+[23:41:35][realscrp] Ensured resource "p_policejob"
+[23:42:48][realscrp] Refreshed resources
+[23:42:54][realscrp] Ensured resource "ox_inventory"
+[23:42:59][realscrp] Ensured resource "p_policejob"
+[23:47:55][realscrp] Ensured resource "p_policejob"
+[23:49:51][realscrp] Refreshed resources
+[23:49:56][realscrp] Ensured resource "p_policejob"
+[23:50:17][realscrp] Refreshed resources
+[23:50:18][realscrp] Ensured resource "p_policejob"
+[23:51:22][realscrp] Refreshed resources
+[23:51:23][realscrp] Ensured resource "p_policejob"
+[23:52:09][realscrp] Refreshed resources
+[23:52:11][realscrp] Ensured resource "p_policejob"
+[00:01:34][realscrp] Refreshed resources
+[00:01:37][realscrp] Ensured resource "lb-tablet-prop"
+[00:01:39][realscrp] Ensured resource "lb-tablet"
+[00:02:30][realscrp] Refreshed resources
+[00:02:33][realscrp] Ensured resource "lb-tablet"
+[00:06:16][realscrp] Refreshed resources
+[00:06:21][realscrp] Ensured resource "wasabi_bridge"
+[00:06:28][realscrp] Ensured resource "object_gizmo"
+[00:06:48][realscrp] Refreshed resources
+[00:06:50][realscrp] Ensured resource "wasabi_mdt"
+[00:07:01][realscrp] Refreshed resources
+[00:07:03][realscrp] Ensured resource "wasabi_mdt"
+[00:07:14][realscrp] Refreshed resources
+[00:07:17][realscrp] Stopped resource "lb-tablet"
+[00:07:18][realscrp] Stopped resource "lb-tablet-prop"
+[00:20:05][realscrp] Refreshed resources
+[00:20:13][realscrp] Ensured resource "wasabi_mdt"
+[00:27:33][realscrp] Refreshed resources
+[00:27:37][realscrp] Ensured resource "p_policejob"
+[00:32:45][realscrp] Refreshed resources
+[00:32:49][realscrp] Stopped resource "npwd_qbx_garages"
+[00:32:51][realscrp] Stopped resource "npwd_qbx_mail"
+[00:32:53][realscrp] Stopped resource "qbx_npwd"
+[00:32:54][realscrp] Stopped resource "npwd"
+[00:32:58][realscrp] Ensured resource "z-phone"
+[00:37:05][realscrp] Refreshed resources
+[00:37:07][realscrp] Stopped resource "z-phone"
+[00:37:09][realscrp] Refreshed resources
+[00:37:10][realscrp] Ensured resource "codem-phone-props"
+[00:37:12][realscrp] Ensured resource "codem-phone"
+[00:37:35][realscrp] Ensured resource "codem-phone"
+[00:38:06][realscrp] Refreshed resources
+[00:38:07][realscrp] Ensured resource "codem-phone"
+[00:40:39][realscrp] Refreshed resources
+[00:40:41][realscrp] Stopped resource "qbx_adminmenu"
+[00:41:04][realscrp] Refreshed resources
+[00:41:05][realscrp] Ensured resource "wasabi_adminmenu"
+[00:44:55][realscrp] Refreshed resources
+[00:44:58][realscrp] Ensured resource "prism_crafting"
+[00:50:47][realscrp] Refreshed resources
+[00:55:27][realscrp] Refreshed resources
+[00:55:30][realscrp] Ensured resource "ox_fuel"
+[00:55:34][realscrp] Ensured resource "qbx_ambulancejob"
+[00:55:40][realscrp] Ensured resource "p_itemclothes"
+[00:55:43][realscrp] Ensured resource "luxu_admin"
+[00:55:52][realscrp] Stopped resource "wasabi_adminmenu"
+[00:58:23][realscrp] Refreshed resources
+[00:58:25][realscrp] Ensured resource "luxu_admin"
+[01:14:30][realscrp] Refreshed resources
+[01:14:34][realscrp] Stopped resource "qbx_hud"
+[01:14:35][realscrp] Ensured resource "izzy-hudv6"
+[01:18:20][realscrp] Refreshed resources
+[01:18:25][realscrp] Ensured resource "ox_target"
+[01:18:55][realscrp] Refreshed resources
+[01:19:01][realscrp] executed "RESTART SERVER"
+[01:22:20][realscrp] Refreshed resources
+[01:30:45][realscrp] Stopped resource "kiiya_elveator"
+[01:30:56][realscrp] Refreshed resources
+[01:31:00][realscrp] Stopped resource "wasabi_adminmenu"
+[01:31:18][realscrp] Refreshed resources
+[01:31:19][realscrp] Refreshed resources
+[01:31:25][realscrp] executed "RESTART SERVER"
+[01:32:01][realscrp] executed "RESTART SERVER"
+[01:32:26][realscrp] Refreshed resources
+[01:41:15][realscrp] Refreshed resources
+[01:41:18][realscrp] Stopped resource "qbx_garages"
+[01:41:20][realscrp] Ensured resource "op-garages"
+[01:47:20][realscrp] Refreshed resources
+[01:47:24][realscrp] Ensured resource "bablo-animations"
+[01:48:35][realscrp] executed "restart bablo-animations"
+[01:51:00][realscrp] Refreshed resources
+[01:51:15][realscrp] Refreshed resources
+[01:51:17][realscrp] Ensured resource "bablo-atm"
+[01:51:19][realscrp] Ensured resource "bablo-banking"
+[01:51:30][realscrp] Stopped resource "Renewed-Banking"
+[01:53:42][realscrp] Refreshed resources
+[01:53:45][realscrp] Ensured resource "ox_inventory"
+[01:53:52][realscrp] Ensured resource "qbx_ambulancejob"
+[01:53:54][realscrp] Ensured resource "p_itemclothes"
+[01:53:56][realscrp] Ensured resource "ox_fuel"
+[01:54:04][realscrp] Ensured resource "bablo-banking"
+[01:58:03][realscrp] Refreshed resources
+[01:58:05][realscrp] Ensured resource "bablo-banking"
+[02:03:42][realscrp] Refreshed resources
+[02:03:45][realscrp] Stopped resource "qbx_mechanicjob"
+[02:03:47][realscrp] Ensured resource "nn_mechanic_props"
+[02:03:49][realscrp] Ensured resource "nn_mechanic"
+[02:03:59][realscrp] Ensured resource "community_bridge"
+[02:04:10][realscrp] Ensured resource "nn_mechanic"
+[02:06:54][realscrp] Refreshed resources
+[02:06:55][realscrp] Ensured resource "nn_mechanic"
+[02:08:17][realscrp] Refreshed resources
+[02:08:26][realscrp] Ensured resource "nn_mechanic"
+[02:12:34][realscrp] Stopped resource "qbx_customs"
+[02:18:12][realscrp] Refreshed resources
+[02:18:17][realscrp] Ensured resource "nn_mechanic"
+[02:20:56][realscrp] Refreshed resources
+[02:20:58][realscrp] Ensured resource "nn_mechanic"
+[02:22:50][realscrp] Refreshed resources
+[02:22:51][realscrp] Ensured resource "nn_mechanic"
+[02:28:24][realscrp] Refreshed resources
+[02:28:26][realscrp] Ensured resource "nn_mechanic"
+[02:28:36][realscrp] Refreshed resources
+[02:28:37][realscrp] Ensured resource "nn_mechanic"
+[02:32:32][realscrp] Refreshed resources
+[02:32:47][realscrp] Ensured resource "nn_bridge"
+[02:32:49][realscrp] Ensured resource "nn_lib"
+[02:32:51][realscrp] Ensured resource "nn_mechanic"
+[02:35:45][realscrp] Refreshed resources
+[02:35:47][realscrp] Ensured resource "nn_mechanic"
+[02:36:45][realscrp] Refreshed resources
+[02:36:48][realscrp] Ensured resource "nn_mechanic"
+[02:39:18][realscrp] Refreshed resources
+[02:39:20][realscrp] Ensured resource "PolyZone"
+[02:39:23][realscrp] Ensured resource "nn_mechanic"
+[02:45:35][realscrp] Refreshed resources
+[02:45:36][realscrp] Ensured resource "nn_mechanic"
+[02:46:39][realscrp] executed "RESTART SERVER"
+[02:49:20][realscrp] Refreshed resources
+[02:50:45][realscrp] Stopped resource "qbx_customs"
+[02:57:08][realscrp] Refreshed resources
+[02:57:11][realscrp] Ensured resource "nn_mechanic"
+[03:03:10][realscrp] Refreshed resources
+[03:03:14][realscrp] Ensured resource "community_bridge"
+[03:03:18][realscrp] Ensured resource "nn_mechanic"
+[03:05:55][realscrp] Refreshed resources
+[03:05:58][realscrp] Ensured resource "lation_ui"
+[03:07:30][realscrp] Refreshed resources
+[03:08:45][realscrp] Refreshed resources
+[03:08:49][realscrp] Ensured resource "community_bridge"
+[03:09:00][realscrp] Ensured resource "nn_mechanic"
+[03:10:31][realscrp] Stopped resource "nn_lib"
+[03:10:37][realscrp] Ensured resource "community_bridge"
+[03:10:44][realscrp] Stopped resource "nn_bridge"
+[03:10:47][realscrp] Ensured resource "nn_mechanic"
+[03:12:30][realscrp] Refreshed resources
+[03:12:31][realscrp] Ensured resource "nn_mechanic"

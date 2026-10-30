@@ -1,0 +1,186 @@
+{
+    "resourceName": "JamaringMaps_ShellsV3",
+    "creator": "Jamaring V3",
+    "interiors": {
+        "jamaring_shellv3_1": {
+            "label": "jamaring_shellv3_1",
+            "doorOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/NmXl928isHcRzikCZxrdo/9h.jpg"
+            }],
+            "model": "jamaring_shellv3_1"
+        },
+        "jamaring_shellv3_2": {
+            "label": "jamaring_shellv3_2",
+            "doorOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/NmXl928isHcRzikCZxrdo/9b.jpg"
+            }],
+            "model": "jamaring_shellv3_2"
+        },
+        "jamaring_shellv3_3": {
+            "label": "jamaring_shellv3_3",
+            "doorOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/NmXl928isHcRzikCZxrdo/8b.jpg"
+            }],
+            "model": "jamaring_shellv3_3"
+        },
+        "jamaring_shellv3_4": {
+            "label": "jamaring_shellv3_4",
+            "doorOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/NmXl928isHcRzikCZxrdo/7b.jpg"
+            }],
+            "model": "jamaring_shellv3_4"
+        },
+        "jamaring_shellv3_5": {
+            "label": "jamaring_shellv3_5",
+            "doorOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/NmXl928isHcRzikCZxrdo/1d.jpg"
+            }],
+            "model": "jamaring_shellv3_5"
+        },
+        "jamaring_shellv3_6": {
+            "label": "jamaring_shellv3_6",
+            "doorOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/NmXl928isHcRzikCZxrdo/2a.jpg"
+            }],
+            "model": "jamaring_shellv3_6"
+        },
+        "jamaring_shellv3_7": {
+            "label": "jamaring_shellv3_7",
+            "doorOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/NmXl928isHcRzikCZxrdo/3a.jpg"
+            }],
+            "model": "jamaring_shellv3_7"
+        },
+        "jamaring_shellv3_8": {
+            "label": "jamaring_shellv3_8",
+            "doorOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/NmXl928isHcRzikCZxrdo/4a.jpg"
+            }],
+            "model": "jamaring_shellv3_8"
+        },
+        "jamaring_shellv3_9": {
+            "label": "jamaring_shellv3_9",
+            "doorOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/NmXl928isHcRzikCZxrdo/5c.jpg"
+            }],
+            "model": "jamaring_shellv3_9"
+        },
+        "jamaring_shellv3_10": {
+            "label": "jamaring_shellv3_10",
+            "doorOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "h": 180.0,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "https://r2.fivemanage.com/NmXl928isHcRzikCZxrdo/6d.jpg"
+            }],
+            "model": "jamaring_shellv3_10"
+        }
+    }
+}

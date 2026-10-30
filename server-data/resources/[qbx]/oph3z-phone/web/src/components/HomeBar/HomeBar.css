@@ -1,0 +1,27 @@
+.homebar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    height: 1.35em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.homebar__pill {
+    width: 7.8em;
+    height: 0.2em;
+    border-radius: 0.2em;
+    background: #fff;
+    opacity: 0.92;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.homebar--light .homebar__pill {
+    background: #111;
+    opacity: 0.85;
+}

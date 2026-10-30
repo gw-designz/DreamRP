@@ -1,0 +1,28 @@
+:root, [data-theme='light'] {
+  --text: #233348; --muted: #8190a1; --surface: #f7f9fc; --card: #fff;
+  --sidebar: #f2f5f9; --titlebar: #edf2f8; --editor: #fff; --input: #ffffffc7;
+  --line: #e7ecf2; --border-strong: #d8dfe8; --window-border: #f8fbffb0;
+  --hover: #718eac13; --selected: #e5edf6; --scroll: #70849850; --placeholder: #b1bdcc;
+  --taskbar: #e8f0fbe8; --task-selected: #ffffffb3; --search-bg: #ffffff7a;
+  --glass: #f4f8fcf0; --footer-glass: #e7eff7b3; --calc-operator: #f8fafc;
+  --accent: #267de0; --accent-hover: #196dcd; --accent-soft: #e7f0ff; --accent-border: #bcd8fa;
+  --menubar: #eceef2e0; --menubar-text: #1b2230; --dock: #e4e7ecb8; --dock-border: #ffffff90;
+  --menu-bg: #f4f5f7f2; --chrome-text: #fff;
+}
+[data-theme='dark'] {
+  --text: #e0e7f1; --muted: #8c9aae; --surface: #202a39; --card: #293445;
+  --sidebar: #1c2635; --titlebar: #253144; --editor: #222d3d; --input: #1b2636;
+  --line: #ffffff0d; --border-strong: #41516a; --window-border: #ffffff20;
+  --hover: #e0edff0d; --selected: #344258; --scroll: #bacbe650; --placeholder: #607187;
+  --taskbar: #152339e8; --task-selected: #ffffff12; --search-bg: #ffffff0c;
+  --glass: #243247ef; --footer-glass: #14223860; --calc-operator: #253040;
+  --accent: #60a8ff; --accent-hover: #4696f9; --accent-soft: #283e5b; --accent-border: #405f88;
+  --menubar: #1d2330d9; --menubar-text: #e9edf3; --dock: #2a3140b0; --dock-border: #ffffff26;
+  --menu-bg: #262d3af2; --chrome-text: #fff;
+}
+[data-accent='red'] { --accent: #d0213a; --accent-hover: #b81a31; --accent-soft: #fde8eb; --accent-border: #f5bcc5; }
+[data-accent='violet'] { --accent: #8964d2; --accent-hover: #7952c4; --accent-soft: #eee8fb; --accent-border: #d6c7ef; }
+[data-accent='mint'] { --accent: #239c85; --accent-hover: #188e78; --accent-soft: #e2f2ed; --accent-border: #b3dfd2; }
+[data-theme='dark'][data-accent='red'] { --accent: #e3354b; --accent-hover: #cf283e; --accent-soft: #46222b; --accent-border: #7a3340; }
+[data-theme='dark'][data-accent='violet'] { --accent: #ae8af4; --accent-hover: #9d73e8; --accent-soft: #3a3053; --accent-border: #5e4885; }
+[data-theme='dark'][data-accent='mint'] { --accent: #50c4ab; --accent-hover: #39b89e; --accent-soft: #233f40; --accent-border: #3c6760; }

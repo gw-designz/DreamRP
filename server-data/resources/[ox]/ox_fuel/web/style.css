@@ -1,0 +1,563 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+html,
+body {
+	width: 1400px;
+	height: 650px;
+	overflow: hidden;
+	background: var(--plate);
+	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+button {
+	font: inherit;
+	border: 0;
+	cursor: pointer;
+}
+
+/* Faceplate */
+
+#plate {
+	position: relative;
+	width: 1400px;
+	height: 650px;
+	overflow: hidden;
+	border-top: 4px solid var(--plate-light);
+	background:
+		repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.012) 0 2px, transparent 2px 6px),
+		radial-gradient(ellipse at 50% 0%, var(--plate-light) 0%, transparent 70%),
+		var(--plate);
+	box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.45);
+}
+
+.screw {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: radial-gradient(circle at 35% 35%, #8a7a7c, #3c3032 70%);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.reader {
+	position: absolute;
+	left: 113px;
+	top: 57px;
+	width: 124px;
+	height: 120px;
+	border-radius: 14px;
+	background: var(--reader);
+	border: 2px solid var(--plate-edge);
+	box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5), 0 1px 0 var(--plate-light);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--reader-icon);
+}
+
+.reader svg {
+	width: 52px;
+	height: 52px;
+}
+
+.keypad {
+	position: absolute;
+	left: 40px;
+	top: 205px;
+	width: 278px;
+	height: 203px;
+	padding: 13px 13px;
+	border-radius: 12px;
+	background: var(--plate-dark);
+	box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.6);
+	display: grid;
+	grid-template-columns: 44px 44px 44px 1fr;
+	grid-template-rows: repeat(4, 1fr);
+	gap: 10px 11px;
+}
+
+.keypad button {
+	border-radius: 6px;
+	background: linear-gradient(180deg, var(--key), var(--key-shade));
+	color: var(--key-text);
+	font-size: 22px;
+	font-weight: 600;
+	box-shadow: 0 3px 0 rgba(0, 0, 0, 0.45);
+	transition: transform 0.05s, filter 0.1s;
+}
+
+.keypad button.wide {
+	font-size: 17px;
+}
+
+.keypad .cancel {
+	background: linear-gradient(180deg, #e2454c, var(--key-cancel));
+}
+
+.keypad .clear {
+	background: linear-gradient(180deg, #e8b843, var(--key-clear));
+}
+
+.keypad .enter {
+	background: linear-gradient(180deg, #4fb361, var(--key-enter));
+}
+
+.keypad button:hover,
+.side button:hover {
+	filter: brightness(1.12);
+}
+
+.keypad button:active,
+.side button:active,
+.keypad button.pressed,
+.side button.pressed {
+	transform: translateY(2px);
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+
+.cardslot {
+	position: absolute;
+	left: 62px;
+	top: 480px;
+	width: 228px;
+	height: 50px;
+	border-radius: 10px;
+	background: linear-gradient(180deg, var(--slot), #9c7b80);
+	box-shadow: 0 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cardslot div {
+	position: absolute;
+	left: 13px;
+	right: 13px;
+	top: 18px;
+	height: 14px;
+	border-radius: 3px;
+	background: #070506;
+}
+
+.side button {
+	position: absolute;
+	width: 58px;
+	height: 52px;
+	border-radius: 8px;
+	background: linear-gradient(180deg, var(--side-key), var(--side-key-shade));
+	color: var(--side-key-text);
+	font-size: 24px;
+	font-weight: 600;
+	box-shadow: 0 3px 0 rgba(0, 0, 0, 0.45);
+	transition: transform 0.05s, filter 0.1s;
+}
+
+.side.left button {
+	left: 380px;
+}
+
+.side.right button {
+	left: 1205px;
+}
+
+.side [data-slot$="1"] {
+	top: 165px;
+}
+
+.side [data-slot$="2"] {
+	top: 248px;
+}
+
+.side [data-slot$="3"] {
+	top: 331px;
+}
+
+.side [data-slot$="4"] {
+	top: 436px;
+}
+
+.sign {
+	position: absolute;
+	left: 987px;
+	top: 37px;
+	width: 223px;
+	height: 44px;
+	border-radius: 3px;
+	background: var(--sign);
+	color: var(--sign-text);
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.no-smoke {
+	position: absolute;
+	left: 1245px;
+	top: 33px;
+	width: 105px;
+	height: 105px;
+}
+
+.tile {
+	position: absolute;
+	left: 1233px;
+	top: 533px;
+	width: 87px;
+	height: 86px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	font-size: 34px;
+	font-style: italic;
+	color: var(--tile-text);
+}
+
+.tile div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#tile-1 { background: var(--tile-1); }
+#tile-2 { background: var(--tile-2); }
+#tile-3 { background: var(--tile-3); }
+#tile-4 { background: var(--tile-4); }
+
+/* LCD */
+
+.lcd-frame {
+	position: absolute;
+	left: 465px;
+	top: 105px;
+	width: 712px;
+	height: 412px;
+	padding: 13px 15px 14px;
+	border-radius: 10px;
+	background: var(--lcd-frame);
+	box-shadow: 0 2px 0 var(--plate-light), inset 0 0 6px #000;
+}
+
+.lcd {
+	position: relative;
+	width: 682px;
+	height: 385px;
+	background: var(--lcd);
+	color: var(--lcd-text);
+	overflow: hidden;
+	box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.12);
+}
+
+.lcd-title {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	font-style: italic;
+	border-bottom: 1px solid var(--lcd-line);
+}
+
+.lcd-body {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 36px;
+	height: 246px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.lcd-body.narrow {
+	padding: 0 272px 0 20px;
+	align-items: stretch;
+}
+
+.lcd-body.narrow-both {
+	padding: 0 272px;
+}
+
+.lcd-hint {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 282px;
+	height: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-style: italic;
+	color: var(--lcd-dim);
+	border-top: 1px solid var(--lcd-line);
+	border-bottom: 1px solid var(--lcd-line);
+	background: var(--lcd-soft);
+}
+
+.lcd-bottom {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 304px;
+	bottom: 0;
+}
+
+/* Soft key labels, lined up with the side buttons */
+
+.lcd-slots {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+.lcd-slots .soft {
+	pointer-events: auto;
+}
+
+.soft {
+	position: absolute;
+	height: 44px;
+	width: 314px;
+	display: flex;
+	align-items: stretch;
+	border: 1px solid var(--lcd-line);
+	background: var(--lcd-soft);
+	font-size: 19px;
+	font-style: italic;
+	cursor: pointer;
+}
+
+.soft .text {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 10px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.soft .arrow {
+	width: 42px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-style: normal;
+	border-color: inherit;
+}
+
+.soft.left {
+	left: 20px;
+}
+
+.soft.left .arrow {
+	border-right: 1px solid var(--lcd-line);
+}
+
+.soft.right {
+	right: 20px;
+}
+
+.soft.right .arrow {
+	border-left: 1px solid var(--lcd-line);
+}
+
+.soft.row1, .soft.row2, .soft.row3 {
+	width: 246px;
+}
+
+.soft.row1 { top: 51px; }
+.soft.row2 { top: 134px; }
+.soft.row3 { top: 217px; }
+.soft.row4 { top: 322px; }
+
+.soft.dark {
+	background: var(--lcd-dark);
+	border-color: var(--lcd-dark);
+	color: var(--lcd-dark-text);
+}
+
+.soft.dark .arrow {
+	border-color: #3c4049;
+}
+
+.soft.empty {
+	cursor: default;
+	opacity: 0.6;
+}
+
+.soft:not(.empty):hover {
+	filter: brightness(0.94);
+}
+
+.soft.dark:hover {
+	filter: brightness(1.3);
+}
+
+.soft .price {
+	margin-left: auto;
+	color: var(--lcd-dim);
+	font-size: 17px;
+}
+
+.soft .swatch {
+	width: 12px;
+	height: 12px;
+	margin-right: 8px;
+	border-radius: 50%;
+	flex: none;
+}
+
+/* Body content */
+
+.big {
+	font-size: 40px;
+	font-style: italic;
+	line-height: 1;
+}
+
+.mid {
+	font-size: 24px;
+	font-style: italic;
+}
+
+.small {
+	font-size: 16px;
+	font-style: italic;
+	color: var(--lcd-dim);
+}
+
+.blocks {
+	width: 392px;
+	height: 42px;
+	padding: 5px;
+	border: 2px solid var(--lcd-text);
+	display: flex;
+	gap: 5px;
+}
+
+.blocks i {
+	width: 29px;
+	flex: none;
+	background: var(--lcd-block);
+}
+
+.blocks i.next {
+	animation: blink 0.8s steps(2) infinite;
+}
+
+.readout {
+	width: 100%;
+	border: 1px solid var(--lcd-line);
+	background: var(--lcd-soft);
+	padding: 8px 14px;
+	text-align: left;
+}
+
+.readout .k {
+	font-size: 14px;
+	color: var(--lcd-dim);
+	font-style: italic;
+}
+
+.readout .v {
+	font-size: 34px;
+	font-style: italic;
+	line-height: 1.05;
+	font-variant-numeric: tabular-nums;
+}
+
+.readout.flash {
+	animation: flash 0.35s 2;
+}
+
+.rows {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.rows div {
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	font-style: italic;
+	border-bottom: 1px dashed var(--lcd-line);
+	padding-bottom: 4px;
+}
+
+.rows span:last-child {
+	font-variant-numeric: tabular-nums;
+}
+
+.gauge {
+	width: 100%;
+	height: 22px;
+	border: 2px solid var(--lcd-text);
+	padding: 3px;
+}
+
+.gauge div {
+	height: 100%;
+	background: var(--lcd-block);
+}
+
+.good {
+	color: var(--lcd-good);
+}
+
+.bad {
+	color: var(--lcd-bad);
+}
+
+.blink {
+	animation: blink 1s steps(2) infinite;
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0.2;
+	}
+}
+
+@keyframes flash {
+	50% {
+		background: var(--lcd-line);
+	}
+}
+
+.lcd-toast {
+	position: absolute;
+	left: 50%;
+	top: 46px;
+	transform: translateX(-50%);
+	padding: 6px 18px;
+	background: var(--lcd-bad);
+	color: #fff;
+	font-size: 18px;
+	font-style: italic;
+	white-space: nowrap;
+	opacity: 0;
+	transition: opacity 0.15s;
+	pointer-events: none;
+}
+
+.lcd-toast.show {
+	opacity: 1;
+}

@@ -1,0 +1,73 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/20/2026, 10:29:48 PM
+================================================================
+================================================================
+======== Log Rotated - 8/20/2026, 10:29:51 PM                   
+================================================================
+[22:32:16][realscrp] logged in from 127.0.0.1 via cfxre auth
+[22:48:33][realscrp] executed "RESTART SERVER"
+[22:59:34][realscrp] executed "RESTART SERVER"
+[23:02:24][realscrp] executed "RESTART SERVER"
+[23:02:43][realscrp] Stopped resource "qs-smartphone-pro"
+[23:03:19][realscrp] executed "RESTART SERVER"
+[23:03:46][realscrp] Stopped resource "qs-smartphone-pro"
+[23:05:37][realscrp] Stopped resource "prp-characters"
+[23:09:18][realscrp] Refreshed resources
+[23:09:21][realscrp] Ensured resource "sd_lib"
+[23:09:23][realscrp] Ensured resource "sd-itemspawner"
+[23:31:53][realscrp] Refreshed resources
+[23:32:00][realscrp] Ensured resource "sd-itemspawner"
+[23:32:01][realscrp] Ensured resource "ox_fuel"
+[23:32:03][realscrp] Ensured resource "qbx_ambulancejob"
+[23:34:55][realscrp] Refreshed resources
+[23:34:57][realscrp] Ensured resource "ox_target"
+[23:35:17][realscrp] Ensured resource "Renewed-Banking"
+[23:37:52][realscrp] Refreshed resources
+[23:37:54][realscrp] Ensured resource "sd-policeradar"
+[23:45:47][realscrp] Refreshed resources
+[23:45:50][realscrp] Stopped resource "ps-adminmenu"
+[23:45:51][realscrp] Refreshed resources
+[23:45:56][realscrp] Refreshed resources
+[23:45:57][realscrp] Ensured resource "mumle_admin"
+[23:46:42][realscrp] Refreshed resources
+[23:46:43][realscrp] Ensured resource "mumle_admin"
+[23:47:11][realscrp] Refreshed resources
+[23:53:49][realscrp] Refreshed resources
+[23:54:36][realscrp] Ensured resource "rcore_guidebook"
+[23:58:51][realscrp] Refreshed resources
+[23:58:52][realscrp] Refreshed resources
+[23:58:54][realscrp] Stopped resource "rcore_guidebook"
+[23:58:55][realscrp] Ensured resource "mato-guidebook"
+[23:58:56][realscrp] Ensured resource "mato-guidebook"
+[23:59:20][realscrp] Stopped resource "mato-guidebook"
+[00:12:41][realscrp] Refreshed resources
+[00:12:48][realscrp] Ensured resource "cloud-shop"
+[00:14:51][realscrp] Refreshed resources
+[00:14:52][realscrp] Ensured resource "cloud-shop"
+[00:15:20][realscrp] Refreshed resources
+[00:15:20][realscrp] Ensured resource "cloud-shop"
+[00:16:51][realscrp] Refreshed resources
+[00:26:21][realscrp] Refreshed resources
+[00:26:25][realscrp] Ensured resource "codem-mechanic"
+[00:29:01][realscrp] Refreshed resources
+[00:29:02][realscrp] Ensured resource "codem-mechanic"
+[00:29:33][realscrp] Refreshed resources
+[00:29:47][realscrp] Stopped resource "mumle_admin"
+[00:29:48][realscrp] Ensured resource "ps-adminmenu"
+[00:29:49][realscrp] Ensured resource "ps-adminmenu"
+[00:30:31][realscrp] Stopped resource "qbx_mechanicjob"
+[00:30:45][realscrp] Stopped resource "qbx_customs"
+[00:32:01][realscrp] Ensured resource "codem-mechanic"
+[00:35:29][MONITOR] Restarting server: Server process close detected.
+[00:35:30][MONITOR] Restarting server: Server process close detected.
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/21/2026, 11:29:54 AM
+================================================================
+[11:34:45][realscrp] logged in from 127.0.0.1 via cfxre auth
+[11:34:51][realscrp] Refreshed resources
+[11:37:22][realscrp] executed "RESTART SERVER"
+[14:11:40][realscrp] Refreshed resources
+[14:11:44][realscrp] Ensured resource "prp-apartments"
+[14:11:45][realscrp] Ensured resource "prp-apartments"
+[14:11:50][realscrp] executed "RESTART SERVER"
+[14:48:52][realscrp] Refreshed resources

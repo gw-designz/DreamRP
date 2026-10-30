@@ -1,0 +1,32 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 10/25/2026, 2:14:27 AM
+================================================================
+================================================================
+======== Log Rotated - 10/25/2026, 2:14:31 AM                   
+================================================================
+[02:15:57][realscrp] logged in from 127.0.0.1 via password auth
+[02:16:12][realscrp] Stopped resource "codera-hud"
+[02:16:14][realscrp] Ensured resource "my-hud"
+[02:16:30][realscrp] Ensured resource "bablo-multicharacter"
+[02:19:08][realscrp] Refreshed resources
+[02:19:09][realscrp] Ensured resource "bablo-multicharacter"
+[02:22:28][realscrp] Refreshed resources
+[02:22:29][realscrp] Ensured resource "bablo-multicharacter"
+[02:24:53][realscrp] Refreshed resources
+[02:24:55][realscrp] Ensured resource "bablo-multicharacter"
+[02:27:57][realscrp] Refreshed resources
+[02:27:58][realscrp] Ensured resource "bablo-multicharacter"
+[02:33:03][realscrp] Refreshed resources
+[02:33:05][realscrp] Ensured resource "bablo-multicharacter"
+[02:33:54][realscrp] Stopped resource "yseries"
+[02:36:31][realscrp] Refreshed resources
+[02:43:09][realscrp] Refreshed resources
+[02:43:12][realscrp] Ensured resource "bablo-multicharacter"
+[02:44:00][realscrp] Refreshed resources
+[02:44:01][realscrp] Ensured resource "bablo-multicharacter"
+[02:48:21][realscrp] Refreshed resources
+[02:48:26][realscrp] Ensured resource "bablo-multicharacter"
+[02:51:32][realscrp] Refreshed resources
+[02:51:33][realscrp] Ensured resource "bablo-multicharacter"
+[02:54:07][realscrp] Refreshed resources
+[02:54:08][realscrp] Ensured resource "bablo-multicharacter"

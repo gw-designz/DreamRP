@@ -1,0 +1,340 @@
+/*
+ * iPhone Duo skin: titanium foldable. Folded = iPhone cover screen, unfolded = near-square
+ * inner display with a crease down the middle. Measurements are fractions of --ph (the phone
+ * height) like the base frame in Phone.css; everything here is scoped to .phone.duo-skin.
+ */
+.phone.duo-skin {
+    --aspect: 0.488;
+    --band: calc(0.0062 * var(--ph));
+    --bezel: calc(0.0165 * var(--ph));
+    --frame-radius: calc(0.072 * var(--ph));
+    --screen-radius: calc(0.0555 * var(--ph));
+    --np-fold-ms: 420ms;
+}
+
+.phone.duo-skin.is-unfolded {
+    --aspect: 0.9;
+}
+
+/* ---------- titanium finishes (Config.UI.Finish) ---------- */
+.phone.duo-finish--natural {
+    --ti-hi: #e4e0d8;
+    --ti-mid: #a8a399;
+    --ti-lo: #6f6b64;
+}
+
+.phone.duo-finish--black {
+    --ti-hi: #8a8a8e;
+    --ti-mid: #4a4a4e;
+    --ti-lo: #232326;
+}
+
+.phone.duo-finish--white {
+    --ti-hi: #ffffff;
+    --ti-mid: #dcdbd6;
+    --ti-lo: #a9a8a3;
+}
+
+.phone.duo-finish--desert {
+    --ti-hi: #f0e0cb;
+    --ti-mid: #bfa98f;
+    --ti-lo: #85725f;
+}
+
+/* ---------- frame ---------- */
+.phone.duo-skin .phone__frame {
+    background: linear-gradient(
+        135deg,
+        var(--ti-hi) 0%,
+        var(--ti-mid) 16%,
+        var(--ti-lo) 40%,
+        var(--ti-mid) 58%,
+        var(--ti-hi) 78%,
+        var(--ti-mid) 100%
+    );
+    box-shadow:
+        inset 0 0 0 calc(0.0011 * var(--ph)) rgba(255, 255, 255, 0.5),
+        inset 0 0 calc(0.004 * var(--ph)) rgba(0, 0, 0, 0.35),
+        0 1.6vh 4vh rgba(0, 0, 0, 0.55),
+        0 0.3vh 0.8vh rgba(0, 0, 0, 0.35);
+}
+
+/* black glass border between the titanium band and the display */
+.phone.duo-skin .phone__frame::before {
+    content: '';
+    position: absolute;
+    inset: var(--band);
+    border-radius: calc(var(--frame-radius) - var(--band));
+    background: #030304;
+    box-shadow: inset 0 0 0 calc(0.0009 * var(--ph)) rgba(255, 255, 255, 0.07);
+}
+
+.phone.duo-skin .phone__screen {
+    box-shadow: none;
+    background: #000;
+    font-family: 'Inter', -apple-system, 'SF Pro Text', 'Segoe UI', sans-serif;
+}
+
+/* the crease: a soft light/shadow line where the inner display folds */
+.phone.duo-skin .phone__screen::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1.6em;
+    transform: translateX(-50%);
+    z-index: 499;
+    pointer-events: none;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(255, 255, 255, 0.045) 32%,
+        rgba(0, 0, 0, 0.16) 50%,
+        rgba(255, 255, 255, 0.045) 68%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.phone.duo-skin.is-unfolded .phone__screen::after {
+    opacity: 1;
+    transition-delay: var(--np-fold-ms);
+}
+
+/* ---------- side buttons + hinge ---------- */
+.duo-hw {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.duo-hw__btn {
+    position: absolute;
+    width: calc(0.0058 * var(--ph));
+    border-radius: calc(0.003 * var(--ph));
+    background: linear-gradient(90deg, var(--ti-lo), var(--ti-hi) 45%, var(--ti-mid));
+    box-shadow: 0 0.2vh 0.4vh rgba(0, 0, 0, 0.35);
+}
+
+.duo-hw__btn--action,
+.duo-hw__btn--volup,
+.duo-hw__btn--voldown {
+    left: calc(-0.0036 * var(--ph));
+}
+
+.duo-hw__btn--power,
+.duo-hw__btn--capture {
+    right: calc(-0.0036 * var(--ph));
+    background: linear-gradient(270deg, var(--ti-lo), var(--ti-hi) 45%, var(--ti-mid));
+}
+
+.duo-hw__btn--action {
+    top: 17%;
+    height: 3.4%;
+}
+
+.duo-hw__btn--volup {
+    top: 23.5%;
+    height: 6.2%;
+}
+
+.duo-hw__btn--voldown {
+    top: 31%;
+    height: 6.2%;
+}
+
+.duo-hw__btn--power {
+    top: 25%;
+    height: 9.5%;
+}
+
+/* Camera Control: flush sapphire button */
+.duo-hw__btn--capture {
+    top: 58%;
+    height: 5.4%;
+    width: calc(0.0046 * var(--ph));
+    right: calc(-0.0024 * var(--ph));
+    background: linear-gradient(270deg, #1c1c1e, #5a5a5e 50%, #2c2c2e);
+}
+
+.duo-hw__hinge {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    width: calc(0.06 * var(--ph));
+    height: var(--band);
+    transform: translateX(-50%);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.45) 20%,
+        rgba(0, 0, 0, 0.6) 50%,
+        rgba(0, 0, 0, 0.45) 80%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.duo-hw__hinge--top {
+    top: 0;
+}
+
+.duo-hw__hinge--bottom {
+    bottom: 0;
+}
+
+.phone.duo-skin.is-unfolded .duo-hw__hinge {
+    opacity: 1;
+}
+
+/* ---------- status bar + Dynamic Island ---------- */
+.phone.duo-skin .statusbar {
+    height: 3.3em;
+    padding: 0 1.1em;
+    column-gap: 8.4em;
+    font-family: inherit;
+}
+
+.phone.duo-skin .statusbar__left,
+.phone.duo-skin .statusbar__right {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone.duo-skin .statusbar__left {
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.phone.duo-skin .statusbar__cc {
+    gap: 0.36em;
+}
+
+.phone.duo-skin .statusbar__icon {
+    height: 0.78em;
+}
+
+.phone.duo-skin .statusbar__battery {
+    height: 0.84em;
+}
+
+.phone.duo-skin .statusbar__island {
+    top: 0.62em;
+    width: 7.6em;
+    height: 2.2em;
+    border-radius: 1.1em;
+    background: #000;
+    box-shadow: none;
+    padding-right: 0.62em;
+    transition:
+        width 0.3s ease,
+        height 0.3s ease,
+        left 0.3s ease,
+        top 0.3s ease,
+        padding 0.3s ease;
+}
+
+/* Unfolded: iPad-style bar (time left, icons right); the inner display has a punch-hole camera. */
+.phone.duo-skin.is-unfolded .statusbar {
+    column-gap: 0;
+    padding: 0 1.8em;
+}
+
+.phone.duo-skin.is-unfolded .statusbar__left {
+    justify-content: flex-start;
+}
+
+.phone.duo-skin.is-unfolded .statusbar__right {
+    justify-content: flex-end;
+}
+
+.phone.duo-skin.is-unfolded .statusbar__island {
+    left: 75%;
+    top: 1.05em;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 0;
+    justify-content: center;
+}
+
+.phone.duo-skin.is-unfolded .statusbar__lens {
+    width: 0.7em;
+    height: 0.7em;
+}
+
+/* ---------- home indicator ---------- */
+.phone.duo-skin .homebar {
+    height: 1.1em;
+}
+
+.phone.duo-skin .homebar__pill {
+    width: 8.4em;
+    height: 0.31em;
+    border-radius: 0.2em;
+}
+
+.phone.duo-skin.is-unfolded .homebar__pill {
+    width: 10.5em;
+}
+
+/* ---------- key prompts beside the phone ---------- */
+.phone.duo-skin .np-legend {
+    right: calc(100% + 0.03 * var(--ph));
+    gap: calc(0.009 * var(--ph));
+    font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+}
+
+.phone.duo-skin .np-legend__row {
+    height: calc(0.046 * var(--ph));
+    gap: calc(0.01 * var(--ph));
+    padding: 0 calc(0.018 * var(--ph)) 0 calc(0.008 * var(--ph));
+    border-radius: calc(0.023 * var(--ph));
+    background: rgba(30, 30, 32, 0.78);
+    -webkit-backdrop-filter: blur(1.2vh) saturate(1.6);
+    backdrop-filter: blur(1.2vh) saturate(1.6);
+    box-shadow:
+        inset 0 0 0 0.1vh rgba(255, 255, 255, 0.1),
+        0 0.4vh 1.2vh rgba(0, 0, 0, 0.3);
+}
+
+.phone.duo-skin .np-legend__cap {
+    min-width: calc(0.03 * var(--ph));
+    height: calc(0.03 * var(--ph));
+    border-radius: calc(0.015 * var(--ph));
+    background: rgba(255, 255, 255, 0.94);
+    color: #111;
+    font-weight: 600;
+    font-size: calc(0.016 * var(--ph));
+}
+
+.phone.duo-skin .np-legend__cap--wide {
+    padding: 0 calc(0.009 * var(--ph));
+    font-size: calc(0.014 * var(--ph));
+}
+
+.phone.duo-skin .np-legend__svg {
+    width: calc(0.019 * var(--ph));
+    height: calc(0.019 * var(--ph));
+}
+
+.phone.duo-skin .np-legend__label {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.0175 * var(--ph));
+    letter-spacing: 0;
+    color: #fff;
+    padding-top: 0;
+    text-transform: lowercase;
+}
+
+.phone.duo-skin .np-legend__label::first-letter {
+    text-transform: uppercase;
+}

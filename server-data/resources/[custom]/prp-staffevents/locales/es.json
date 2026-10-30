@@ -1,0 +1,283 @@
+{
+    "EVENTS_COMMAND_HELP": "Abrir el menú de eventos",
+    "NO_ACCESS": "No tienes acceso al menú de eventos.",
+    "SEARCHING": "Buscando...",
+    "STASH_LABEL": "Alijo",
+    "INVALID_STATE_ID": "ID de estado no válido",
+    "INVALID_STASH_ID": "ID de alijo no válido",
+    "INVALID_SCENE_ID": "ID de escena no válido",
+    "INVALID_OBJECT_ID": "ID de objeto no válido",
+    "INVALID_LOADOUT_ID": "ID de equipamiento no válido",
+    "INVALID_NAME": "El nombre no puede estar vacío",
+    "INVALID_NAME_2": "El nombre no puede estar vacío ni superar los 250 caracteres",
+    "INVALID_PLAYER_ENTITY": "Entidad de jugador no válida",
+    "FAILED_TO_SET_ACCESS": "Error al establecer el acceso",
+    "FAILED_TO_CREATE_EVENT_STASH": "Error al crear el alijo del evento",
+    "FAILED_TO_CREATE_EVENT_LOADOUT": "Error al crear el equipamiento del evento",
+    "SCENE_DOES_NOT_EXIST": "La escena del evento no existe",
+    "OBJECT_DOES_NOT_EXIST": "El objeto del evento no existe",
+    "STASH_DOES_NOT_EXIST": "El alijo del evento no existe",
+    "LOADOUT_DOES_NOT_EXIST": "El equipamiento del evento no existe",
+    "TELEPORT_DOES_NOT_EXIST": "El teletransporte no existe",
+    "FAILED_TO_REMOVE_ACCESS": "Error al eliminar el acceso",
+    "FAILED_TO_PREPARE_INVENTORY": "Error al preparar el inventario",
+    "NO_PERM_CREATE_SCENE": "No tienes permiso para crear escenas de eventos",
+    "NO_PERM_ADD_OBJECT": "No tienes permiso para añadir objetos a las escenas de eventos",
+    "NO_PERM_REMOVE_OBJECT": "No tienes permiso para eliminar objetos de las escenas de eventos",
+    "NO_PERM_ASSIGN_STASH": "No tienes permiso para asignar alijos a los objetos",
+    "NO_PERM_ASSIGN_LOADOUT": "No tienes permiso para asignar equipamientos a los objetos",
+    "NO_PERM_SET_EVENT_ACCESS": "No tienes permiso para establecer el acceso al evento",
+    "NO_PERM_REMOVE_EVENT_ACCESS": "No tienes permiso para eliminar el acceso al evento",
+    "NO_PERM_CREATE_EVENT_STASH": "No tienes permiso para crear alijos de eventos",
+    "NO_PERM_REMOVE_EVENT_STASH": "No tienes permiso para eliminar alijos de eventos",
+    "NO_PERM_EDIT_EVENT_STASH_ITEMS": "No tienes permiso para editar objetos del alijo de eventos",
+    "NO_PERM_REFILL_EVENT_STASH": "No tienes permiso para rellenar alijos de eventos",
+    "NO_PERM_CREATE_EVENT_LOADOUT": "No tienes permiso para crear equipamientos de eventos",
+    "NO_PERM_REMOVE_EVENT_LOADOUT": "No tienes permiso para eliminar equipamientos de eventos",
+    "NO_PERM_EDIT_EVENT_LOADOUT_ITEMS": "No tienes permiso para editar objetos del equipamiento de eventos",
+    "NO_PERM_REFILL_EVENT_LOADOUT": "No tienes permiso para rellenar equipamientos de eventos",
+    "YOU_ARE_NOT_EDITOR": "No eres editor de esta escena de evento",
+    "TO_FAR_AWAY_FROM_STASH": "Estás demasiado lejos del alijo",
+    "CANCELED_SEARCHING_STASH": "Has cancelado la búsqueda en el alijo",
+    "MINIGAME_FAILED": "Has fallado",
+    "OPEN_STASH": "Abrir alijo",
+    "USE": "Usar",
+    "GET_LOADOUT": "Obtener equipamiento",
+    "RETURN_LOADOUT": "Devolver equipamiento",
+    "TO_FAR_AWAY": "Estás demasiado lejos",
+    "INVALID_TELEPORT_COORDS": "Coordenadas de teletransporte no válidas",
+    "ROTATE": "Rotar",
+    "INVENTORY_NOT_FOUND": "Inventario no encontrado",
+    "CONFIRM": "Confirmar",
+    "SOMETHING_WENT_WRONG": "Algo salió mal",
+    "YOU_ALREADY_HAVE_EQUIPMENT": "Ya tienes equipamiento del evento. Devuélvelo primero.",
+    "YOU_DONT_HAVE_EQUIPMENT": "No tienes equipamiento del evento.",
+    "CHARACTER_NOT_ONLINE": "El personaje no está conectado",
+    "LOADOUT_EQUIPPED": "Equipamiento equipado",
+    "LOADOUT_RETURNED": "Equipamiento devuelto",
+    "YOUR_EQUIPMENT_WAS_RETURNED": "Tu equipamiento de evento ha sido devuelto",
+    "MINUTES": "%s minutos",
+    "HOUR": "%s hora",
+    "HOURS": "%s horas",
+    "WEEK": "Semana",
+    "WEEKS": "%s semanas",
+    "MONTH": "Mes",
+    "MONTHS": "%s meses",
+    "NO_PERM_IMPORT_SCENE": "No tienes permiso para importar escenas de eventos",
+    "IMPORT_CODE_NOT_FOUND": "Código de importación no encontrado",
+    "IMPORT_CODE_FAILED": "El código de importación no es válido",
+    "IMPORT_CODE_UNKNOWN_ERROR": "Error desconocido",
+    "NO_PERM_EXPORT_SCENE": "No tienes permiso para exportar escenas de eventos",
+    "EXPORT_CODE_UNKNOWN_ERROR": "Error desconocido durante la exportación",
+    "MODEL_FAILED_TO_LOAD": "Error al cargar el modelo",
+    "ui": {
+        "common": {
+            "cancel": "Cancelar",
+            "save": "Guardar",
+            "delete": "Eliminar",
+            "edit": "Editar",
+            "close": "Cerrar",
+            "createNew": "Crear Nuevo",
+            "import": "Importar",
+            "export": "Exportar",
+            "new": "Nuevo"
+        },
+        "sidebar": {
+            "scenes": "Escenas",
+            "stashes": "Almacenes",
+            "users": "Usuarios"
+        },
+        "scenes": {
+            "title": "Escenas",
+            "createdBy": "Creado por:",
+            "createdAt": "Creado el:",
+            "lastUpdated": "Última actualización:",
+            "numObjects": "Número de objetos:",
+            "active": "Activo",
+            "disabled": "Desactivado",
+            "disable": "Desactivar",
+            "enable": "Activar",
+            "searchPlaceholder": "Buscar escenas...",
+            "noScenes": "No hay escenas disponibles.",
+            "createDialog": {
+                "title": "Crear nueva Escena",
+                "namePlaceholder": "Ingrese nombre...",
+                "createButton": "Crear Escena"
+            },
+            "importDialog": {
+                "title": "Importar Escena",
+                "codePlaceholder": "Código de Importación...",
+                "importing": "Importando...",
+                "importButton": "Importar Escena"
+            },
+            "exportDialog": {
+                "title": "Exportar Escena",
+                "codePlaceholder": "Código de Exportación...",
+                "copyButton": "Copiar Código",
+                "copied": "Código de exportación copiado al portapapeles"
+            },
+            "renameDialog": {
+                "title": "Cambiar nombre",
+                "namePlaceholder": "Ingrese nombre...",
+                "saveButton": "Guardar"
+            },
+            "deleteDialog": {
+                "title": "Eliminar Escena",
+                "message": "¿Está seguro de que desea eliminar esta escena? Esta acción no se puede deshacer."
+            }
+        },
+        "stashes": {
+            "title": "Almacenes",
+            "noStashes": "No hay almacenes disponibles.",
+            "createDialog": {
+                "title": "Crear Nuevo Almacén",
+                "namePlaceholder": "Ingrese nombre...",
+                "createButton": "Crear Almacén"
+            },
+            "deleteDialog": {
+                "title": "Eliminar Almacén",
+                "message": "¿Está seguro de que desea eliminar este almacén? Esta acción no se puede deshacer."
+            }
+        },
+        "users": {
+            "title": "Usuarios",
+            "addUser": "Agregar usuario",
+            "searchPlaceholder": "Buscar...",
+            "noCharacters": "No hay personajes disponibles.",
+            "removeAccess": "Quitar Acceso",
+            "addDialogTitle": "Agregar acceso de usuario",
+            "editDialogTitle": "Editar acceso de usuario",
+            "targetId": "ID del Objetivo",
+            "targetPlaceholder": "Ingrese el ID de servidor del objetivo...",
+            "loading": "Cargando...",
+            "foundUser": "Usuario encontrado: {{firstName}} {{lastName}} ({{username}})",
+            "notFound": "No se encontró ningún usuario",
+            "removeDialog": {
+                "title": "Quitar acceso del usuario",
+                "message": "¿Está seguro de que desea quitar el acceso a este usuario? Esta acción no se puede deshacer."
+            }
+        },
+        "inventoryEditor": {
+            "stash": "Almacén",
+            "loadout": "Equipamiento",
+            "notFound": "{{type}} no encontrado/a...",
+            "editingTitle": "Editando {{type}} ({{name}})",
+            "deleteButton": "Eliminar {{type}}",
+            "nameLabel": "Nombre del/de la {{type}}",
+            "stashItemsLabel": "Objetos agregados al Almacén",
+            "loadoutItemsLabel": "Objetos en el Equipamiento",
+            "addItem": "Agregar objeto",
+            "editItem": "Editar objeto",
+            "item": "Objeto",
+            "selectItem": "Seleccionar Objeto",
+            "searchItems": "Buscar objetos...",
+            "noItems": "No se encontraron objetos.",
+            "count": "Cantidad",
+            "overrideDecay": "Anular Caducidad (por defecto {{default}}) en segundos",
+            "selectDecayTime": "Seleccionar Tiempo de Caducidad",
+            "addItemButton": "Agregar Objeto",
+            "saveChanges": "Guardar Cambios",
+            "deleteDialog": {
+                "title": "Eliminar Objeto",
+                "message": "¿Está seguro de que desea eliminar esto? Esta acción no se puede deshacer.",
+                "confirm": "Eliminar"
+            }
+        },
+        "sceneEditor": {
+            "title": "MODO EDICIÓN DE ESCENA",
+            "close": "Cerrar",
+            "renderDistance": "DISTANCIA DE RENDERIZADO",
+            "changeCameraPosition": "CAMBIAR POSICIÓN DE CÁMARA",
+            "coordsPlaceholder": "Coordenadas (0.0, 0.0, 0.0)",
+            "changePosition": "Cambiar posición",
+            "objects": {
+                "title": "OBJETOS EN ESCENA",
+                "searchPlaceholder": "Buscar objetos...",
+                "noMatch": "Ningún objeto coincide con su búsqueda",
+                "enabled": "Habilitado",
+                "disabled": "Deshabilitado",
+                "teleportLabel": "TELEPORTE",
+                "teleportTo": "Teletransportarse a",
+                "deleteDialog": {
+                    "title": "Eliminar Objeto",
+                    "message": "¿Está seguro de que desea eliminar este objeto? Esta acción no se puede deshacer.",
+                    "confirm": "Eliminar"
+                }
+            },
+            "objectTypes": {
+                "prop": "Prop",
+                "ped": "Ped",
+                "teleport": "Teleporte"
+            },
+            "editor": {
+                "editTitle": "EDITAR {{label}}",
+                "selectModel": "Seleccionar modelo...",
+                "customModel": "Modelo Personalizado",
+                "searchModel": "Buscar modelo...",
+                "noModel": "No se encontró el modelo.",
+                "deleteButton": "Eliminar {{label}}",
+                "name": "Nombre",
+                "namePlaceholder": "Ingrese nombre personalizado",
+                "deleteDialog": {
+                    "title": "Eliminar Objeto",
+                    "message": "¿Está seguro de que desea eliminar esto? Esta acción no se puede deshacer.",
+                    "confirm": "Eliminar"
+                }
+            },
+            "creator": {
+                "noItemsInCategory": "No hay objetos en esta categoría",
+                "noPedModels": "No hay modelos de ped disponibles",
+                "searchPed": "Buscar modelo de ped...",
+                "createTeleport": "Crear Teleporte",
+                "customModelDialog": {
+                    "title": "Ingrese Modelo Personalizado",
+                    "placeholder": "prop_chair_01a",
+                    "createButton": "Crear Prop"
+                }
+            },
+            "ped": {
+                "health": "Salud",
+                "armor": "Armadura",
+                "weapon": "Arma",
+                "accuracy": "Precisión (0-100)",
+                "animation": "Animación",
+                "godMode": "Modo Dios",
+                "frozen": "Congelado",
+                "aggresionType": "Tipo de Agresión",
+                "passive": "Pasivo",
+                "aggressive": "Agresivo con todos",
+                "hostile": "Hostil con todos",
+                "networked": "Sincronizado",
+                "networkedTooltip": "Si el NPC se sincronizará para todos los jugadores (úsalo para guardias, etc.)"
+            },
+            "prop": {
+                "animDict": "Dict de anim. personalizado",
+                "animName": "Nombre de anim. personalizado",
+                "loopAnim": "Animación en bucle"
+            },
+            "teleport": {
+                "label": "Etiqueta",
+                "coords": "Coords de teleporte (x, y, z, r)",
+                "coordsPlaceholder": "200.1, -314.44921, 25.3, 12.0",
+                "labelPlaceholder": "Ingrese etiqueta de interacción...",
+                "addDestination": "Agregar Destino"
+            },
+            "inventory": {
+                "stash": "Almacén",
+                "stashName": "Nombre del Almacén",
+                "refillTooltip": "Recargar objetos del almacén",
+                "stashCommon": "Almacén Común",
+                "stashCommonTooltip": "Si se deshabilita, cada jugador tendrá su propia copia del almacén",
+                "progressBar": "Usar barra de progreso al buscar en el almacén",
+                "progressBarDuration": "Duración de la barra de progreso (ms)",
+                "progressBarAnim": "Animación de la barra de progreso",
+                "minigames": "Minijuegos",
+                "minigameType": "Tipo de Minijuego",
+                "options": "Opciones",
+                "addMinigame": "Agregar Minijuego",
+                "refillSuccess": "Objetos del almacén recargados",
+                "refillFailed": "Error al recargar objetos del almacén"
+            }
+        }
+    }
+}

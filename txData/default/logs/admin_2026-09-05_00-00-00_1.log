@@ -1,0 +1,29 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/5/2026, 1:17:18 AM
+================================================================
+================================================================
+======== Log Rotated - 9/5/2026, 1:17:19 AM                     
+================================================================
+[01:17:55][realscrp] logged in from 127.0.0.1 via password auth
+[01:18:04][realscrp] executed "STOP SERVER"
+[01:18:04][realscrp] Config changes: server.dataPath
+[01:18:04][realscrp] Resetting server data settings.
+[01:18:33][realscrp] Config changes: server.dataPath
+[01:18:33][realscrp] Changing global/fxserver settings via setup stepper.
+[01:19:08][realscrp] executed "RESTART SERVER"
+[01:21:16][realscrp] Refreshed resources
+[01:21:20][realscrp] Refreshed resources
+[01:21:21][realscrp] Ensured resource "business-creator"
+[01:21:45][realscrp] Refreshed resources
+[01:21:46][realscrp] Ensured resource "business-creator"
+[01:22:12][realscrp] executed "RESTART SERVER"
+[01:26:23][realscrp] Refreshed resources
+[01:26:24][realscrp] Ensured resource "business-creator"
+[01:40:10][realscrp] Refreshed resources
+[01:40:11][realscrp] Ensured resource "business-creator"
+[02:28:28][realscrp] Refreshed resources
+[02:28:30][realscrp] Ensured resource "business-creator"
+[03:07:22][realscrp] Refreshed resources
+[03:07:23][realscrp] Ensured resource "business-creator"
+[03:11:23][realscrp] Refreshed resources
+[03:11:33][realscrp] Ensured resource "ox_inventory"

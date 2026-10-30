@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fuel Pump</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="colors.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="plate">
+		<i class="screw" style="left:16px;top:16px"></i>
+		<i class="screw" style="right:16px;top:16px"></i>
+		<i class="screw" style="left:16px;bottom:16px"></i>
+		<i class="screw" style="right:16px;bottom:16px"></i>
+
+		<div class="reader">
+			<svg viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.4" fill="currentColor"/><path d="M4 11.5a8.5 8.5 0 0 1 8.5 8.5M4 6a14 14 0 0 1 14 14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+		</div>
+
+		<div class="keypad">
+			<button data-pad="1">1</button><button data-pad="2">2</button><button data-pad="3">3</button><button class="wide" data-pad="back">&lt;&lt;</button>
+			<button data-pad="4">4</button><button data-pad="5">5</button><button data-pad="6">6</button><button class="wide cancel" data-pad="cancel"></button>
+			<button data-pad="7">7</button><button data-pad="8">8</button><button data-pad="9">9</button><button class="wide clear" data-pad="clear">CLEAR</button>
+			<button data-pad="minus">-</button><button data-pad="0">0</button><button data-pad="plus">+</button><button class="wide enter" data-pad="enter">ENTER</button>
+		</div>
+
+		<div class="cardslot"><div></div></div>
+
+		<div class="side left">
+			<button data-slot="L1">&gt;</button>
+			<button data-slot="L2">&gt;</button>
+			<button data-slot="L3">&gt;</button>
+			<button data-slot="L4">&gt;</button>
+		</div>
+
+		<div class="side right">
+			<button data-slot="R1">&lt;</button>
+			<button data-slot="R2">&lt;</button>
+			<button data-slot="R3">&lt;</button>
+			<button data-slot="R4">&lt;</button>
+		</div>
+
+		<div class="lcd-frame">
+			<div class="lcd">
+				<div class="lcd-title" id="title"></div>
+				<div class="lcd-body" id="body"></div>
+				<div class="lcd-slots" id="slots"></div>
+				<div class="lcd-hint" id="hint"></div>
+				<div class="lcd-toast" id="toast"></div>
+			</div>
+		</div>
+
+		<div class="sign">NO SMOKING</div>
+
+		<div class="no-smoke">
+			<svg viewBox="0 0 100 100">
+				<circle cx="50" cy="50" r="46" fill="#fff"/>
+				<rect x="22" y="52" width="50" height="9" fill="#555"/>
+				<rect x="72" y="52" width="7" height="9" fill="#999"/>
+				<path d="M76 46c0-6 6-6 6-12s-5-7-5-11" fill="none" stroke="#777" stroke-width="2.5"/>
+				<circle cx="50" cy="50" r="41" fill="none" stroke="#d7313b" stroke-width="9"/>
+				<line x1="21" y1="21" x2="79" y2="79" stroke="#d7313b" stroke-width="9"/>
+			</svg>
+		</div>
+
+		<div class="tile">
+			<div id="tile-1">1</div><div id="tile-2">3</div>
+			<div id="tile-3"></div><div id="tile-4">0</div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>

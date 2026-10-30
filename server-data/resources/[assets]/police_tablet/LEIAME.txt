@@ -1,0 +1,52 @@
+╔══════════════════════════════════════════════════════════════╗
+║   THE ORB STUDIO — 3D Model → FiveM                          ║
+║   Free tools for FiveM creators                              ║
+╠══════════════════════════════════════════════════════════════╣
+║   Studio    https://app.theorb.tech                          ║
+║   Store     https://theorb.tech                              ║
+║   Discord   https://discord.gg/4m8es2VJN8                    ║
+╚══════════════════════════════════════════════════════════════╝
+
+RESOURCE DE FIVEM: police_tablet
+Convertido com o THE ORB Studio (Blender + Sollumz, no servidor).
+
+== CONTEÚDO ==
+  police_tablet/
+    fxmanifest.lua
+    stream/
+      police_tablet.ydr
+      police_tablet.ytyp
+
+== INSTALAÇÃO ==
+  1) Coloque esta pasta na pasta resources/ do seu servidor
+  2) Adicione ao server.cfg:   ensure police_tablet
+  3) Reinicie o servidor (ou: refresh; ensure police_tablet)
+
+== CRIAR NO JOGO (Lua, lado do cliente) ==
+local model = `police_tablet`
+RequestModel(model)
+while not HasModelLoaded(model) do Wait(0) end
+-- 7th arg (dynamic) must be true for a prop that moves with real physics.
+local obj = CreateObject(model, x, y, z, true, false, true)
+SetModelAsNoLongerNeeded(model)
+
+(O 7º argumento, dynamic, precisa ser true se o prop se move com física real.)
+
+== SE ELE FOR ARREMESSADO ==
+SetEntityDynamic(obj, true)
+ActivatePhysics(obj)
+SetEntityHasGravity(obj, true)
+
+NOTA: props personalizados usam colisão de malha (BVH), que o GTA trata como
+colisão fixa do mundo: um prop dinâmico em alta velocidade pode atravessá-la.
+Para props arremessados, dê ao prop uma colisão primitiva no Blender ou resolva
+o impacto com o mundo por script com um shape test de varredura.
+
+O nome do modelo "police_tablet" é o que o GetHashKey resolve: não repita esse nome em outro modelo.
+
+────────────────────────────────────────────────────────────────
+Feito com o THE ORB Studio — https://app.theorb.tech
+Precisa de ajuda ou quer que a gente faça para você? Entre no nosso Discord:
+  https://discord.gg/4m8es2VJN8
+Scripts de FiveM prontos para usar: https://theorb.tech
+────────────────────────────────────────────────────────────────

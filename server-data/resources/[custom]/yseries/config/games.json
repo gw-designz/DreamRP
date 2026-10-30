@@ -1,0 +1,58 @@
+{
+  "apps": [
+    {
+      "INFO": "Games are removed by default from the phone due to customers being concerned about FiveM's TOS.",
+      "INFO2": "If you want to still have the games on your RESPONSIBILITY you can copy the objects below and paste them into the config/config.json - apps object."
+    },
+
+    {
+      "key": "2048",
+      "name": "2048",
+      "game": true,
+      "description": "Puzzle • Merge • Strategy",
+      "defaultApp": false
+    },
+    {
+      "key": "tictactoe",
+      "name": "TicTacToe",
+      "game": true,
+      "description": "Puzzle • Board",
+      "defaultApp": false
+    },
+    {
+      "key": "ludodash",
+      "name": "Ludo Dash",
+      "game": true,
+      "description": "Board • Strategy",
+      "defaultApp": false
+    },
+    {
+      "name": "Subway Surfers",
+      "key": "subwaysurfers",
+      "game": true,
+      "description": "Action",
+      "defaultApp": false
+    },
+    {
+      "key": "angryBirds",
+      "name": "Angry Birds",
+      "game": true,
+      "description": "Puzzle • Action",
+      "defaultApp": false
+    },
+    {
+      "key": "pacman",
+      "name": "PAC-MAN",
+      "game": true,
+      "description": "Arcade",
+      "defaultApp": false
+    },
+    {
+      "key": "tetris",
+      "name": "Tetris",
+      "game": true,
+      "description": "Arcade",
+      "defaultApp": false
+    }
+  ]
+}

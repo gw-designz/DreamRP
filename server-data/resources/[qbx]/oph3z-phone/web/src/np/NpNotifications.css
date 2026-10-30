@@ -1,0 +1,145 @@
+.npn {
+    position: absolute;
+    inset: 0;
+    z-index: 60;
+    background: rgba(0, 0, 0, 0.35);
+    animation: npn-fade 0.18s ease both;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes npn-fade {
+    from {
+        opacity: 0;
+    }
+}
+
+.npn__panel {
+    position: absolute;
+    top: 2.65em;
+    left: 0.6em;
+    right: 0.6em;
+    max-height: calc(100% - 9.2em);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background: rgba(38, 40, 43, 0.97);
+    box-shadow: 0 0.6em 1.6em rgba(0, 0, 0, 0.45);
+    color: #fff;
+    animation: npn-down 0.24s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    overflow: hidden;
+}
+
+@keyframes npn-down {
+    from {
+        transform: translateY(-1.5em);
+        opacity: 0;
+    }
+}
+
+.npn__head {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 1em 0.9em 0.55em 1em;
+}
+
+.npn__head span {
+    flex: 1 1 auto;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.npn__btn {
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.09);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.npn__btn .fa-svg {
+    width: 0.75em;
+    height: 0.75em;
+}
+
+.npn__btn.is-on {
+    color: #ff8a80;
+}
+
+.npn__list {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 0 0.8em 0.4em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.npn__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7em;
+    padding: 0.7em 0.75em;
+    border-radius: 0.45em;
+    background: rgba(255, 255, 255, 0.06);
+    text-align: left;
+    color: #fff;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.npn__item:hover {
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.npn__icon {
+    width: 1.9em;
+    height: 1.9em;
+    flex: 0 0 auto;
+    font-size: 1em;
+}
+
+.npn__main {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.npn__title {
+    font-size: 0.82em;
+    font-weight: 700;
+}
+
+.npn__body {
+    font-size: 0.74em;
+    line-height: 1.35;
+    color: #e4e6e8;
+}
+
+.npn__time {
+    flex: 0 0 auto;
+    font-size: 0.64em;
+    color: #a6a9ad;
+    padding-top: 0.1em;
+}
+
+.npn__empty {
+    padding: 1.6em 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: #a6a9ad;
+}
+
+.npn__grab {
+    width: 3em;
+    height: 0.2em;
+    border-radius: 0.2em;
+    margin: 0.4em auto 0.6em;
+    background: rgba(255, 255, 255, 0.25);
+}

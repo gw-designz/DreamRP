@@ -1,0 +1,50 @@
+╔══════════════════════════════════════════════════════════════╗
+║   THE ORB STUDIO — 3D Model → FiveM                          ║
+║   Free tools for FiveM creators                              ║
+╠══════════════════════════════════════════════════════════════╣
+║   Studio    https://app.theorb.tech                          ║
+║   Store     https://theorb.tech                              ║
+║   Discord   https://discord.gg/4m8es2VJN8                    ║
+╚══════════════════════════════════════════════════════════════╝
+
+FIVEM RESOURCE: police_tablet
+Converted with THE ORB Studio (Blender + Sollumz, server-side).
+
+== CONTENTS ==
+  police_tablet/
+    fxmanifest.lua
+    stream/
+      police_tablet.ydr
+      police_tablet.ytyp
+
+== INSTALL ==
+  1) Drop this folder into your server's resources/
+  2) Add to server.cfg:   ensure police_tablet
+  3) Restart the server (or: refresh; ensure police_tablet)
+
+== SPAWN (Lua, client-side) ==
+local model = `police_tablet`
+RequestModel(model)
+while not HasModelLoaded(model) do Wait(0) end
+-- 7th arg (dynamic) must be true for a prop that moves with real physics.
+local obj = CreateObject(model, x, y, z, true, false, true)
+SetModelAsNoLongerNeeded(model)
+
+== IF IT GETS THROWN ==
+SetEntityDynamic(obj, true)
+ActivatePhysics(obj)
+SetEntityHasGravity(obj, true)
+
+NOTE: custom props use a mesh (BVH) collision, which GTA treats as static world
+collision — a fast-moving dynamic prop can tunnel through it. For thrown props,
+either give the prop a primitive bound in Blender or resolve the world hit in
+script with a swept shape test.
+
+Model name "police_tablet" is what GetHashKey resolves to — keep it unique.
+
+────────────────────────────────────────────────────────────────
+Made with THE ORB Studio — https://app.theorb.tech
+Need help, or want it built for you? Join our Discord:
+  https://discord.gg/4m8es2VJN8
+Ready-made FiveM scripts: https://theorb.tech
+────────────────────────────────────────────────────────────────

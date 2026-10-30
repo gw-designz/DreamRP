@@ -1,0 +1,528 @@
+{
+    "resourceName": "K4MB1-MiscPack",
+    "creator": "K4MB1 Misc Pack",
+    "interiors": {
+        "Furnished Office 1": {
+            "label": "Furnished Office 1",
+            "doorOffset": {
+                "x": 3.425217,
+                "y": -1.947266,
+                "z": -0.919563,
+                "h": 93.299072,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_office1_shell.webp"
+            }],
+            "model": "k4_office1_shell"
+        },
+        "Furnished Office 2": {
+            "label": "Furnished Office 2",
+            "doorOffset": {
+                "x": 4.416412,
+                "y": 3.573181,
+                "z": -0.746124,
+                "h": 173.837341,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_office2_shell.webp"
+            }],
+            "model": "k4_office2_shell"
+        },
+        "Furnished Office 3": {
+            "label": "Furnished Office 3",
+            "doorOffset": {
+                "x": -0.48497,
+                "y": -0.172302,
+                "z": -0.694687,
+                "h": 92.602959,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_office3_shell.webp"
+            }],
+            "model": "k4_office3_shell"
+        },
+        "Furnished Office 4": {
+            "label": "Furnished Office 4",
+            "doorOffset": {
+                "x": 8.827576,
+                "y": -2.25592,
+                "z": -1.546211,
+                "h": 97.13546,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_office4_shell.webp"
+            }],
+            "model": "k4_office4_shell"
+        },
+        "Furnished Office 5": {
+            "label": "Furnished Office 5",
+            "doorOffset": {
+                "x": 0.08577,
+                "y": -13.922485,
+                "z": -3.073944,
+                "h": 358.938171,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_office5_shell.webp"
+            }],
+            "model": "k4_office5_shell"
+        },
+        "Office": {
+            "label": "Office",
+            "doorOffset": {
+                "x": 1.19072,
+                "y": 5.026306,
+                "z": -0.725456,
+                "h": 181.861404,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 30
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_office6_shell.webp"
+            }],
+            "model": "k4_office6_shell"
+        },
+        "Office 2": {
+            "label": "Office 2",
+            "doorOffset": {
+                "x": 3.596313,
+                "y": -1.861633,
+                "z": -0.874458,
+                "h": 88.170555,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_office7_shell.webp"
+            }],
+            "model": "k4_office7_shell"
+        },
+        "Office Big": {
+            "label": "Office Big",
+            "doorOffset": {
+                "x": -8.485199,
+                "y": -3.419678,
+                "z": -0.39843,
+                "h": 359.730072,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_office8_shell.webp"
+            }],
+            "model": "k4_office8_shell"
+        },
+        "Store": {
+            "label": "Store",
+            "doorOffset": {
+                "x": -2.791595,
+                "y": 4.445557,
+                "z": -0.619499,
+                "h": 181.964401,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_store1_shell.webp"
+            }],
+            "model": "k4_store1_shell"
+        },
+        "Store 1": {
+            "label": "Store 1",
+            "doorOffset": {
+                "x": -0.629761,
+                "y": -5.069031,
+                "z": -1.153366,
+                "h": 8.992056,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_store2_shell.webp"
+            }],
+            "model": "k4_store2_shell"
+        },
+        "Store 2": {
+            "label": "Store 2",
+            "doorOffset": {
+                "x": -0.044922,
+                "y": -7.713013,
+                "z": -0.300995,
+                "h": 3.347297,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_store3_shell.webp"
+            }],
+            "model": "k4_store3_shell"
+        },
+        "Gunstore": {
+            "label": "Gunstore",
+            "doorOffset": {
+                "x": -1.002228,
+                "y": -5.324463,
+                "z": -0.736542,
+                "h": 2.645791,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_store4_shell.webp"
+            }],
+            "model": "k4_store4_shell"
+        },
+        "Barber": {
+            "label": "Barber",
+            "doorOffset": {
+                "x": 1.584122,
+                "y": 5.428528,
+                "z": -0.557167,
+                "h": 180.395828,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_store5_shell.webp"
+            }],
+            "model": "k4_store5_shell"
+        },
+        "Container": {
+            "label": "Container",
+            "doorOffset": {
+                "x": -0.042252,
+                "y": -5.402466,
+                "z": -0.213661,
+                "h": 1.775326,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_container_shell.webp"
+            }],
+            "model": "k4_container_shell"
+        },
+        "Stash House 1": {
+            "label": "Stash House 1",
+            "doorOffset": {
+                "x": 21.444626,
+                "y": -0.337341,
+                "z": -2.070694,
+                "h": 90.185539,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_stashhouse1_shell.webp"
+            }],
+            "model": "k4_stashhouse1_shell"
+        },
+        "Stash House 2": {
+            "label": "Stash House 2",
+            "doorOffset": {
+                "x": -1.796478,
+                "y": 2.201355,
+                "z": -1.016602,
+                "h": 261.602936,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_stashhouse2_shell.webp"
+            }],
+            "model": "k4_stashhouse2_shell"
+        },
+        "Warehouse": {
+            "label": "Warehouse",
+            "doorOffset": {
+                "x": -8.839645,
+                "y": 0.077393,
+                "z": -0.949265,
+                "h": 273.723816,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_warehouse1_shell.webp"
+            }],
+            "model": "k4_warehouse1_shell"
+        },
+        "Warehouse 2": {
+            "label": "Warehouse 2",
+            "doorOffset": {
+                "x": -12.539124,
+                "y": 5.473999,
+                "z": -2.058945,
+                "h": 274.229858,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_warehouse2_shell.webp"
+            }],
+            "model": "k4_warehouse2_shell"
+        },
+        "Warehouse 3": {
+            "label": "Warehouse 3",
+            "doorOffset": {
+                "x": 2.454865,
+                "y": -1.578125,
+                "z": -0.942886,
+                "h": 95.432266,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_warehouse3_shell.webp"
+            }],
+            "model": "k4_warehouse3_shell"
+        },
+        "Warehouse Shell": {
+            "label": "Warehouse Shell",
+            "doorOffset": {
+                "x": 8.534912,
+                "y": -3.219482,
+                "z": -1.4944,
+                "h": 88.660812,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_warehouse4_shell.webp"
+            }],
+            "model": "k4_warehouse4_shell"
+        },
+        "Warehouse New": {
+            "label": "Warehouse New",
+            "doorOffset": {
+                "x": 13.524292,
+                "y": -7.290894,
+                "z": -2.072266,
+                "h": 86.359673,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_warehouse5_shell.webp"
+            }],
+            "model": "k4_warehouse5_shell"
+        },
+        "New Biker 1": {
+            "label": "New Biker 1",
+            "doorOffset": {
+                "x": 7.62,
+                "y": -11.1,
+                "z": 0.25,
+                "h": 182.14,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_biker1_shell.webp"
+            }],
+            "model": "k4_biker1_shell"
+        },
+        "New Biker 2": {
+            "label": "New Biker 2",
+            "doorOffset": {
+                "x": -10.6,
+                "y": 3.48,
+                "z": 1.0,
+                "h": 0.58,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_biker2_shell.webp"
+            }],
+            "model": "k4_biker2_shell"
+        },
+        "New Biker 3": {
+            "label": "New Biker 3",
+            "doorOffset": {
+                "x": -8.44,
+                "y": -0.55,
+                "z": -1.09,
+                "h": 177.14,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_biker3_shell.webp"
+            }],
+            "model": "k4_biker3_shell"
+        },
+        "Basement 1": {
+            "label": "Basement 1",
+            "doorOffset": {
+                "x": -4.640793,
+                "y": -4.886963,
+                "z": 1.602577,
+                "h": 91.282089,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_basement1_shell.webp"
+            }],
+            "model": "k4_basement1_shell"
+        },
+        "Basement 2": {
+            "label": "Basement 2",
+            "doorOffset": {
+                "x": -4.479523,
+                "y": -4.918091,
+                "z": 1.602501,
+                "h": 84.461037,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_basement2_shell.webp"
+            }],
+            "model": "k4_basement2_shell"
+        },
+        "Basement 3": {
+            "label": "Basement 3",
+            "doorOffset": {
+                "x": -4.577423,
+                "y": -4.858826,
+                "z": 1.602478,
+                "h": 92.12355,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_basement3_shell.webp"
+            }],
+            "model": "k4_basement3_shell"
+        },
+        "Basement 4": {
+            "label": "Basement 4",
+            "doorOffset": {
+                "x": -4.506607,
+                "y": -4.919128,
+                "z": 1.60257,
+                "h": 91.260101,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_basement4_shell.webp"
+            }],
+            "model": "k4_basement4_shell"
+        },
+        "Basement 5": {
+            "label": "Basement 5",
+            "doorOffset": {
+                "x": -4.422546,
+                "y": -4.96051,
+                "z": 1.597351,
+                "h": 85.357796,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_basement5_shell.webp"
+            }],
+            "model": "k4_basement5_shell"
+        }
+    }
+}

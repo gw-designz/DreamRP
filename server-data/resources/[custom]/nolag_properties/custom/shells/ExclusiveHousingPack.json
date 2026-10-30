@@ -1,0 +1,672 @@
+{
+    "resourceName": "K4MB1-ExclusiveHousingPack",
+    "creator": "K4MB1 Exclusive Housing Pack",
+    "interiors": {
+        "New Motel 1": {
+            "label": "New Motel 1",
+            "doorOffset": {
+                "x": -0.112152,
+                "y": -0.164978,
+                "z": 0.994972,
+                "h": 269.040253,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house1_shell.webp"
+            }],
+            "model": "k4_house1_shell"
+        },
+        "Trap House 1": {
+            "label": "Trap House 1",
+            "doorOffset": {
+                "x": -7.089584,
+                "y": -1.431763,
+                "z": -0.251877,
+                "h": 182.746445,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house2_shell.webp"
+            }],
+            "model": "k4_house2_shell"
+        },
+        "Apartment Shell": {
+            "label": "Apartment Shell",
+            "doorOffset": {
+                "x": 2.963623,
+                "y": -3.584229,
+                "z": -0.244308,
+                "h": 89.077797,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house3_shell.webp"
+            }],
+            "model": "k4_house3_shell"
+        },
+        "Empty House": {
+            "label": "Empty House",
+            "doorOffset": {
+                "x": -0.725784,
+                "y": -2.468689,
+                "z": 1.000084,
+                "h": 271.51593,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house4_shell.webp"
+            }],
+            "model": "k4_house4_shell"
+        },
+        "Sandy House": {
+            "label": "Sandy House",
+            "doorOffset": {
+                "x": 1.619858,
+                "y": -4.858887,
+                "z": 0.085587,
+                "h": 2.043587,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house5_shell.webp"
+            }],
+            "model": "k4_house5_shell"
+        },
+        "Hood House": {
+            "label": "Hood House",
+            "doorOffset": {
+                "x": -2.320831,
+                "y": -7.276611,
+                "z": 0.999977,
+                "h": 82.778473,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house6_shell.webp"
+            }],
+            "model": "k4_house6_shell"
+        },
+        "Paleto House": {
+            "label": "Paleto House",
+            "doorOffset": {
+                "x": -0.729965,
+                "y": 5.552246,
+                "z": -1.663368,
+                "h": 97.534866,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house7_shell.webp"
+            }],
+            "model": "k4_house7_shell"
+        },
+        "New House 1": {
+            "label": "New House 1",
+            "doorOffset": {
+                "x": -3.046021,
+                "y": -4.709045,
+                "z": -0.460999,
+                "h": 1.324592,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house8_shell.webp"
+            }],
+            "model": "k4_house8_shell"
+        },
+        "New House 2": {
+            "label": "New House 2",
+            "doorOffset": {
+                "x": -8.480972,
+                "y": 1.053711,
+                "z": -3.176567,
+                "h": 282.19751,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house9_shell.webp"
+            }],
+            "model": "k4_house9_shell"
+        },
+        "New House 4": {
+            "label": "New House 4",
+            "doorOffset": {
+                "x": -2.264587,
+                "y": -2.767578,
+                "z": -1.987015,
+                "h": 358.395172,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house10_shell.webp"
+            }],
+            "model": "k4_house10_shell"
+        },
+        "Farm House": {
+            "label": "Farm House",
+            "doorOffset": {
+                "x": -7.612244,
+                "y": 5.855957,
+                "z": -1.24173,
+                "h": 180.397614,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house11_shell.webp"
+            }],
+            "model": "k4_house11_shell"
+        },
+        "Hood House 2": {
+            "label": "Hood House 2",
+            "doorOffset": {
+                "x": -3.120605,
+                "y": 4.033691,
+                "z": -0.500214,
+                "h": 267.202148,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house12_shell.webp"
+            }],
+            "model": "k4_house12_shell"
+        },
+        "House1 Paleto 2 Shell": {
+            "label": "House1 Paleto 2 Shell",
+            "doorOffset": {
+                "x": 10.146118,
+                "y": -3.64978,
+                "z": -1.071075,
+                "h": 91.40535,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house13_shell.webp"
+            }],
+            "model": "k4_house13_shell"
+        },
+        "Villa1 Shell": {
+            "label": "Villa1 Shell",
+            "doorOffset": {
+                "x": 2.510498,
+                "y": 4.023193,
+                "z": -0.530594,
+                "h": 183.465363,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house14_shell.webp"
+            }],
+            "model": "k4_house14_shell"
+        },
+        "Loft 1": {
+            "label": "Loft 1",
+            "doorOffset": {
+                "x": 6.564682,
+                "y": -2.972961,
+                "z": 0.995033,
+                "h": 82.43116,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_loft1_shell.webp"
+            }],
+            "model": "k4_loft1_shell"
+        },
+        "Loft 2": {
+            "label": "Loft 2",
+            "doorOffset": {
+                "x": 8.440002,
+                "y": 0.981812,
+                "z": 0.995087,
+                "h": 87.750458,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_loft2_shell.webp"
+            }],
+            "model": "k4_loft2_shell"
+        },
+        "Loft 3": {
+            "label": "Loft 3",
+            "doorOffset": {
+                "x": 5.725525,
+                "y": -0.330688,
+                "z": 0.995041,
+                "h": 89.029221,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_loft3_shell.webp"
+            }],
+            "model": "k4_loft3_shell"
+        },
+        "New Apartment 1": {
+            "label": "New Apartment 1",
+            "doorOffset": {
+                "x": -19.241943,
+                "y": -0.611389,
+                "z": 1.794807,
+                "h": 179.391418,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_apa1_shell.webp"
+            }],
+            "model": "k4_apa1_shell"
+        },
+        "New Apartment 2": {
+            "label": "New Apartment 2",
+            "doorOffset": {
+                "x": -20.760864,
+                "y": -2.504883,
+                "z": 1.794785,
+                "h": 269.228729,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_apa2_shell.webp"
+            }],
+            "model": "k4_apa2_shell"
+        },
+        "New Apartment 3": {
+            "label": "New Apartment 3",
+            "doorOffset": {
+                "x": -20.763428,
+                "y": -2.354126,
+                "z": 1.794823,
+                "h": 265.977417,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_apa3_shell.webp"
+            }],
+            "model": "k4_apa3_shell"
+        },
+        "Luxury House 1": {
+            "label": "Luxury House 1",
+            "doorOffset": {
+                "x": -6.263123,
+                "y": -1.043945,
+                "z": -0.70015,
+                "h": 271.59433,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_modern1_shell.webp"
+            }],
+            "model": "k4_modern1_shell"
+        },
+        "Luxury House 2": {
+            "label": "Luxury House 2",
+            "doorOffset": {
+                "x": -6.248718,
+                "y": -1.0448,
+                "z": -0.70015,
+                "h": 271.63443,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_modern2_shell.webp"
+            }],
+            "model": "k4_modern2_shell"
+        },
+        "New House 3": {
+            "label": "New House 3",
+            "doorOffset": {
+                "x": 8.946243,
+                "y": -7.615601,
+                "z": -2.788254,
+                "h": 357.425385,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_modern3_shell.webp"
+            }],
+            "model": "k4_modern3_shell"
+        },
+        "Banham Shell": {
+            "label": "Banham Shell",
+            "doorOffset": {
+                "x": -1.880493,
+                "y": -5.199707,
+                "z": 1.083832,
+                "h": 87.632317,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_modern4_shell.webp"
+            }],
+            "model": "k4_modern4_shell"
+        },
+        "Banham2 Shell": {
+            "label": "Banham2 Shell",
+            "doorOffset": {
+                "x": -1.723389,
+                "y": -5.176147,
+                "z": 1.083878,
+                "h": 92.1408,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_modern5_shell.webp"
+            }],
+            "model": "k4_modern5_shell"
+        },
+        "Beach House": {
+            "label": "Beach House",
+            "doorOffset": {
+                "x": -11.200562,
+                "y": 1.888916,
+                "z": 1.166977,
+                "h": 270.843628,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_modern6_shell.webp"
+            }],
+            "model": "k4_modern6_shell"
+        },
+        "Beachhouse2 Shell": {
+            "label": "Beachhouse2 Shell",
+            "doorOffset": {
+                "x": -11.32019,
+                "y": 1.879517,
+                "z": 1.167023,
+                "h": 270.956604,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_modern7_shell.webp"
+            }],
+            "model": "k4_modern7_shell"
+        },
+        "Mansion1 Modern Shell": {
+            "label": "Mansion1 Modern Shell",
+            "doorOffset": {
+                "x": -7.147339,
+                "y": 5.877319,
+                "z": -0.456879,
+                "h": 304.737183,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_modern8_shell.webp"
+            }],
+            "model": "k4_modern8_shell"
+        },
+        "Modern Shell": {
+            "label": "Modern Shell",
+            "doorOffset": {
+                "x": -8.092957,
+                "y": 3.845215,
+                "z": -0.600998,
+                "h": 269.412842,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_modern9_shell.webp"
+            }],
+            "model": "k4_modern9_shell"
+        },
+        "VWHouse4 Shell": {
+            "label": "VW House4 Shell",
+            "doorOffset": {
+                "x": 6.868286,
+                "y": -8.683105,
+                "z": -1.537598,
+                "h": 92.829018,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_modern10_shell.webp"
+            }],
+            "model": "k4_modern10_shell"
+        },
+        "Manor House": {
+            "label": "Manor House",
+            "doorOffset": {
+                "x": 6.835602,
+                "y": -8.946777,
+                "z": -4.971199,
+                "h": 357.205017,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_manor1_shell.webp"
+            }],
+            "model": "k4_manor1_shell"
+        },
+        "Manor2 Shell": {
+            "label": "Manor 2 Shell",
+            "doorOffset": {
+                "x": 6.91748,
+                "y": -8.900024,
+                "z": -4.97551,
+                "h": 359.267731,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_manor2_shell.webp"
+            }],
+            "model": "k4_manor2_shell"
+        },
+        "Penthouse Shell": {
+            "label": "Penthouse Shell",
+            "doorOffset": {
+                "x": 11.327332,
+                "y": -11.660645,
+                "z": 1.081619,
+                "h": 86.644089,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_penthouse_shell.webp"
+            }],
+            "model": "k4_penthouse_shell"
+        },
+        "Penthouse2 Shell": {
+            "label": "Penthouse2 Shell",
+            "doorOffset": {
+                "x": 4.770081,
+                "y": -12.244629,
+                "z": -1.178268,
+                "h": 0.077078,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_penthouse2_shell.webp"
+            }],
+            "model": "k4_penthouse2_shell"
+        },
+        "Mansion Shell": {
+            "label": "Mansion Shell",
+            "doorOffset": {
+                "x": -10.754944,
+                "y": 6.116211,
+                "z": 4.609848,
+                "h": 274.931702,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_vwmansion2a_shell.webp"
+            }],
+            "model": "k4_vwmansion2a_shell"
+        },
+        "Mansion2 Shell": {
+            "label": "Mansion 2 Shell",
+            "doorOffset": {
+                "x": -10.813721,
+                "y": 6.01709,
+                "z": 4.609634,
+                "h": 279.441559,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_vwmansion2b_shell.webp"
+            }],
+            "model": "k4_vwmansion2b_shell"
+        },
+        "Mansion3 Shell": {
+            "label": "Mansion 3 Shell",
+            "doorOffset": {
+                "x": 1.122437,
+                "y": 20.70874,
+                "z": -2.639496,
+                "h": 273.192474,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_vwmansion3_shell.webp"
+            }],
+            "model": "k4_vwmansion3_shell"
+        }
+    }
+}

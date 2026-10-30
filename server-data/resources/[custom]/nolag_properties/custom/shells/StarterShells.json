@@ -1,0 +1,271 @@
+{
+    "resourceName": "K4MB1-StarterShells",
+    "creator": "K4MB1 Starter",
+    "interiors": {
+        "Standard Motel": {
+            "label": "Standard Motel",
+            "model": "k4_motel2_furn",
+            "doorOffset": {
+                "x": -0.333969,
+                "y": -2.507812,
+                "z": -0.556450,
+                "h": 268.611572,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/StarterShells/k4_motel2_furn.webp"
+            }]
+        },
+
+        "Modern Hotel": {
+            "label": "Modern Hotel",
+            "model": "k4_hotel4_furn",
+            "doorOffset": {
+                "x": 4.983124,
+                "y": 4.242126,
+                "z": -0.817879,
+                "h": 175.733047,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 80000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/StarterShells/k4_hotel4_furn.webp"
+            }]
+        },
+
+        "Apartment Furnished": {
+            "label": "Apartment Furnished",
+            "model": "k4_house4_furn",
+            "doorOffset": {
+                "x": 1.381714,
+                "y": -10.131531,
+                "z": -0.521873,
+                "h": 2.176380,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/StarterShells/k4_house4_furn.webp"
+            }]
+        },
+
+        "Apartment Unfurnished": {
+            "label": "Apartment Unfurnished",
+            "model": "k4_v16mid1_shell",
+            "doorOffset": {
+                "x": 1.436569,
+                "y": -14.037476,
+                "z": -0.492447,
+                "h": 350.256744,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/StarterShells/k4_v16mid1_shell.webp"
+            }]
+        },
+
+        "Apartment 2 Unfurnished": {
+            "label": "Apartment 2 Unfurnished",
+            "model": "k4_v16low1_shell",
+            "doorOffset": {
+                "x": -1.398575,
+                "y": 0.084961,
+                "z": 0.345619,
+                "h": 359.888092,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/StarterShells/k4_v16low1_shell.webp"
+            }]
+        },
+
+        "Garage": {
+            "label": "Garage",
+            "model": "k4_garage6_shell",
+            "doorOffset": {
+                "x": 13.695572,
+                "y": 1.629700,
+                "z": -0.750023,
+                "h": 94.825325,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/StarterShells/k4_garage6_shell.webp"
+            }]
+        },
+
+        "Office": {
+            "label": "Office",
+            "model": "k4_office6_shell",
+            "doorOffset": {
+                "x": 1.190720,
+                "y": 5.026306,
+                "z": -0.725456,
+                "h": 181.861404,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 30
+            },
+            "imgs": [{
+                "url": "./images/shells/StarterShells/k4_office6_shell.webp"
+            }]
+        },
+
+        "Store": {
+            "label": "Store",
+            "model": "k4_store1_shell",
+            "doorOffset": {
+                "x": -2.791595,
+                "y": 4.445557,
+                "z": -0.619499,
+                "h": 181.964401,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/StarterShells/k4_store1_shell.webp"
+            }]
+        },
+
+        "Warehouse": {
+            "label": "Warehouse",
+            "model": "k4_warehouse1_shell",
+            "doorOffset": {
+                "x": -8.839645,
+                "y": 0.077393,
+                "z": -0.949265,
+                "h": 273.723816,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/StarterShells/k4_warehouse1_shell.webp"
+            }]
+        },
+
+        "Container": {
+            "label": "Container",
+            "model": "k4_container_shell",
+            "doorOffset": {
+                "x": -0.042252,
+                "y": -5.402466,
+                "z": -0.213661,
+                "h": 1.775326,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/StarterShells/k4_container_shell.webp"
+            }]
+        },
+
+        "Apartment Shell": {
+            "label": "Apartment Shell",
+            "doorOffset": {
+                "x": 2.963623,
+                "y": -3.584229,
+                "z": -0.244308,
+                "h": 89.077797,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house3_shell.webp"
+            }],
+            "model": "k4_house3_shell"
+        },
+
+        "Farm House": {
+            "label": "Farm House",
+            "doorOffset": {
+                "x": -7.612244,
+                "y": 5.855957,
+                "z": -1.24173,
+                "h": 180.397614,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_house11_shell.webp"
+            }],
+            "model": "k4_house11_shell"
+        },
+
+        "Modern Shell": {
+            "label": "Modern Shell",
+            "doorOffset": {
+                "x": -8.092957,
+                "y": 3.845215,
+                "z": -0.600998,
+                "h": 269.412842,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/ExclusiveHousingPack/k4_modern9_shell.webp"
+            }],
+            "model": "k4_modern9_shell"
+        },
+
+        "Warehouse Shell": {
+            "label": "Warehouse Shell",
+            "doorOffset": {
+                "x": 8.534912,
+                "y": -3.219482,
+                "z": -1.4944,
+                "h": 88.660812,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [{
+                "url": "./images/shells/MiscPack/k4_warehouse4_shell.webp"
+            }],
+            "model": "k4_warehouse4_shell"
+        }
+    }
+}

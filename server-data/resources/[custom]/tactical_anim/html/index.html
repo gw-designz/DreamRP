@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tactical_anim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- /tacanim menu, built to match my-hud's /hud settings menu -->
+    <div id="settings" class="off">
+        <div class="menu">
+            <header class="menu-head">
+                <div class="menu-title"><i class="ico i-gun"></i><h1>Tactical Animations</h1></div>
+                <button type="button" class="menu-x" id="menu-close" aria-label="Close"><i class="ico i-close"></i></button>
+            </header>
+            <div class="menu-body">
+                <nav class="menu-tabs" id="menu-tabs"></nav>
+                <div class="menu-main">
+                    <div class="menu-left" id="menu-content"></div>
+                    <footer class="menu-foot">
+                        <span class="foot-saved" id="menu-saved">Saved locally for your character.</span>
+                        <button type="button" class="mbtn" id="reset-all"><i class="ico i-reset"></i><span>Reset to default</span></button>
+                        <button type="button" class="mbtn light" id="save-close"><i class="ico i-save"></i><span>Save settings</span></button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

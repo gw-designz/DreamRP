@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	min-width: 320px;
+	min-height: 100vh;
+	overflow: hidden;
+	font-family: var(--font-main);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: geometricPrecision;
+	font-feature-settings: "kern" 1, "liga" 1;
+	-webkit-tap-highlight-color: transparent;
+}
+
+#app {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+
+*::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.04);
+	border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.18);
+	border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: rgba(var(--accent-rgb), 0.6);
+}
+
+*::-webkit-scrollbar-corner {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	outline: none;
+}
+
+select {
+	background-color: var(--card-dark-bg);
+	border: 1px solid var(--border-secondary);
+	border-radius: 6px;
+	padding: 6px 28px 6px 10px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 12px;
+	cursor: pointer;
+	outline: none;
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+	background-position: right 6px center;
+	background-repeat: no-repeat;
+	background-size: 14px;
+	transition: border-color 0.15s ease;
+}
+
+select:hover {
+	border-color: var(--border-hover);
+}
+
+select:focus {
+	border-color: var(--accent);
+	outline: none;
+}
+
+select option {
+	background: var(--dark-bg);
+	color: rgba(255, 255, 255, 0.9);
+	padding: 8px;
+}
+
+button:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* Bundled Iconify (Solar) icons rendered inside .material-icons spans — sized by font-size */
+.material-icons > svg.ico {
+	width: 1em;
+	height: 1em;
+	display: block;
+}
+
+/* Former inline SVG icons, now Solar icons sized by font-size */
+.material-icons.svg-ico {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	vertical-align: middle;
+	line-height: 1;
+}
+
+/* leaflet.css sets its own font on the dispatch map (popups, zone and patrol labels) */
+.leaflet-container {
+	font-family: var(--font-main);
+}

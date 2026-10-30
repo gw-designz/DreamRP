@@ -1,0 +1,26 @@
+{
+    "resourceName": "cubanschristmasshell",
+    "creator": "Cubans Cristmas Shells",
+    "interiors": {
+        "Cubans Christmas Shell": {
+            "label": "Cubans Christmas Shell",
+            "doorOffset": {
+                "x": -0.879761,
+                "y": 0.206909,
+                "z": 1.022308,
+                "h": 358.685333,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/bZTHZQFgddhUQAaeWZU2c/4.png"
+                }
+            ],
+            "model": "cubanschristmas_shell"
+        }
+    }
+}

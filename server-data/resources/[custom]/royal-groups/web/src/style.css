@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #BFFF74;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quantico', sans-serif;
+  color: #fff;
+  overflow: hidden;
+  user-select: none;
+  background: transparent;
+}
+
+@layer components {
+  .gg-heading {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+  }
+
+  .gg-panel {
+    background: rgba(14, 14, 14, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+  }
+
+  .gg-card {
+    background: rgba(24, 24, 24, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+  }
+
+  .gg-row {
+    background: rgba(40, 40, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    transition: border-color 150ms ease, background-color 150ms ease;
+  }
+  .gg-row:hover {
+    background: rgba(48, 48, 48, 0.8);
+  }
+  .gg-row.self {
+    background: linear-gradient(90deg, rgba(162, 202, 49, 0.10), rgba(40, 40, 40, 0.75) 60%);
+    border-color: rgba(191, 255, 116, 0.75);
+  }
+
+  .gg-pill {
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    transition: 150ms ease;
+  }
+  .gg-pill:hover:not(:disabled) {
+    border-color: var(--main-color);
+    background: rgba(162, 202, 49, 0.12);
+  }
+  .gg-pill.active {
+    border-color: rgba(191, 255, 116, 0.7);
+    color: var(--main-color);
+  }
+
+  .gg-pill-danger {
+    background: linear-gradient(145deg, rgba(190, 45, 45, 0.9), rgba(140, 28, 28, 0.9));
+    border: 1px solid rgba(231, 76, 60, 0.45);
+    border-radius: 999px;
+    transition: 150ms ease;
+  }
+  .gg-pill-danger:hover:not(:disabled) {
+    border-color: rgba(255, 120, 110, 0.8);
+  }
+
+  .gg-btn {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #404040;
+    border-radius: 6px;
+    transition: 150ms ease;
+  }
+  .gg-btn:hover:not(:disabled) {
+    background: rgba(162, 202, 49, 0.12);
+    border-color: var(--main-color);
+  }
+
+  .gg-btn-primary {
+    background: linear-gradient(145deg, rgba(162, 202, 49, 0.32), rgba(0, 0, 0, 0.6));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    transition: 150ms ease;
+  }
+  .gg-btn-primary:hover:not(:disabled) {
+    border-color: rgba(162, 202, 49, 0.65);
+  }
+
+  .gg-field {
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    transition: border-color 150ms ease;
+  }
+  .gg-field:focus-within {
+    border-color: rgba(191, 255, 116, 0.6);
+  }
+
+  .gg-icon-btn {
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 150ms ease;
+  }
+  .gg-icon-btn:hover:not(:disabled) {
+    color: #fff;
+  }
+}
+
+.gg-scroll::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+.gg-scroll::-webkit-scrollbar-thumb {
+  background: rgb(162, 202, 49);
+  border-radius: 3px;
+}
+.gg-scroll::-webkit-scrollbar-track {
+  background: #161616bb;
+  border-radius: 3px;
+}

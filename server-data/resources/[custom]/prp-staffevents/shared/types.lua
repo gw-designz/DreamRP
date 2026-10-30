@@ -1,0 +1,11 @@
+---@meta
+
+---@class Object
+---@field id number
+---@field model string
+---@field coords vector3
+---@field rotation vector3
+---@field enabled boolean
+---@field netId number?
+---@field type string `ped` | `prop` | `teleport`
+---@field settings table<string, any>

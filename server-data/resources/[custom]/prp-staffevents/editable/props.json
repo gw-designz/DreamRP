@@ -1,0 +1,2912 @@
+{
+    "lamp": {
+        "items": [
+            {
+                "object": "v_res_fa_lamp1on",
+                "label": "Lamp Koti"
+            },
+            {
+                "object": "v_57_lavalamp",
+                "label": "Lava Lamp"
+            },
+            {
+                "object": "mmsd_furn_tri_light_01a",
+                "label": "Red Tri Light"
+            },
+            {
+                "object": "mmsd_furn_tri_light_01b",
+                "label": "Purple Tri Light"
+            },
+            {
+                "object": "mmsd_furn_tri_light_01c",
+                "label": "Purple Tri Light"
+            },
+            {
+                "object": "mmsd_furn_tri_light_01d",
+                "label": "Cyan Tri Light"
+            },
+            {
+                "object": "mmsd_furn_tri_light_01e",
+                "label": "Bright Green Tri Light"
+            },
+            {
+                "object": "mmsd_furn_tri_light_01f",
+                "label": "Light Green Tri Light"
+            },
+            {
+                "object": "mmsd_furn_tri_light_01g",
+                "label": "Yellow Tri Light"
+            },
+            {
+                "object": "mmsd_furn_tri_light_01h",
+                "label": "Orange Tri Light"
+            },
+            {
+                "object": "mmsd_furn_tri_light_01i",
+                "label": "Pink Tri Light"
+            }
+        ],
+        "label": "Lamps"
+    },
+    "tv": {
+        "items": [
+            {
+                "object": "v_res_tre_remote",
+                "label": "TV Remote Red"
+            },
+            {
+                "object": "v_res_tt_tvremote",
+                "label": "TV Remote Blue"
+            },
+            {
+                "object": "v_res_tre_dvdplayer",
+                "label": "DVD Player"
+            },
+            {
+                "object": "prop_tv_05",
+                "label": "Retro TV"
+            },
+            {
+                "object": "prop_tv_04",
+                "label": "Old Box TV Off"
+            },
+            {
+                "object": "prop_tv_03",
+                "label": "Large Box TV"
+            },
+            {
+                "object": "prop_tv_flat_03",
+                "label": "Small Flatscreen"
+            },
+            {
+                "object": "prop_tv_flat_02b",
+                "label": "Large Flatscreen"
+            },
+            {
+                "object": "prop_tv_flat_01",
+                "label": "Wall Mounted Flatscreen"
+            },
+            {
+                "object": "apa_mp_h_str_avunitm_03",
+                "label": "TV with Speakers"
+            },
+            {
+                "object": "apa_mp_h_str_avunits_01",
+                "label": "Fancy TV Setup"
+            },
+            {
+                "object": "hei_heist_str_avunitl_03",
+                "label": "Luxury TV Setup"
+            },
+            {
+                "object": "hei_heist_str_avunitl_01",
+                "label": "Dark Wood TV Setup"
+            }
+        ],
+        "label": "TV"
+    },
+    "computer": {
+        "items": [
+            {
+                "object": "v_res_pcheadset",
+                "label": "Headphones"
+            },
+            {
+                "object": "prop_cs_keyboard_01",
+                "label": "Keyboard"
+            },
+            {
+                "object": "prop_mouse_01b",
+                "label": "Mouse"
+            },
+            {
+                "object": "v_res_mousemat",
+                "label": "Mouse pad"
+            },
+            {
+                "object": "v_res_fh_speakerdock",
+                "label": "Phone Speaker"
+            },
+            {
+                "object": "v_res_mm_audio",
+                "label": "Phone Speaker"
+            },
+            {
+                "object": "v_res_pcspeaker",
+                "label": "PC Speaker"
+            },
+            {
+                "object": "prop_speaker_03",
+                "label": "Speaker Putki"
+            },
+            {
+                "object": "prop_speaker_01",
+                "label": "Speaker Pöytä"
+            },
+            {
+                "object": "v_serv_ct_monitor02",
+                "label": "BSOD Monitor"
+            },
+            {
+                "object": "prop_ld_monitor_01",
+                "label": "LCD screen"
+            },
+            {
+                "object": "v_res_pctower",
+                "label": "PC Purjehtija"
+            },
+            {
+                "object": "hei_prop_heist_pc_01",
+                "label": "PC Purkki"
+            },
+            {
+                "object": "v_res_lest_monitor",
+                "label": "PC Monitor"
+            },
+            {
+                "object": "prop_dyn_pc_02",
+                "label": "PC Purku"
+            }
+        ],
+        "label": "Computer Electronics"
+    },
+    "air_conditioning": {
+        "items": [
+            {
+                "object": "v_ind_ss_deskfan",
+                "label": "Fan Liikenne"
+            },
+            {
+                "object": "v_res_fh_towerfan",
+                "label": "Fan Liikunta"
+            },
+            {
+                "object": "v_ret_fh_radiator",
+                "label": "Radiator Liiketoiminta"
+            }
+        ],
+        "label": "Air Conditioning"
+    },
+    "clock": {
+        "items": [
+            {
+                "object": "v_ret_gc_clock",
+                "label": "Clock Puhelinluettelo"
+            },
+            {
+                "object": "prop_game_clock_01",
+                "label": "Clock Puisto"
+            },
+            {
+                "object": "prop_game_clock_02",
+                "label": "Clock Puolikas"
+            },
+            {
+                "object": "prop_sports_clock_01",
+                "label": "Clock Puolustusvoimat"
+            }
+        ],
+        "label": "Clocks"
+    },
+    "tables": {
+        "items": [
+            {
+                "object": "prop_rub_table_02",
+                "label": "Table Omaisuus"
+            },
+            {
+                "object": "v_res_tre_table001",
+                "label": "Table Onnellisuus"
+            },
+            {
+                "object": "v_ret_csr_table",
+                "label": "Table Opettaja"
+            },
+            {
+                "object": "prop_table_08",
+                "label": "Table Opiskelu"
+            },
+            {
+                "object": "prop_table_05",
+                "label": "Table Opiskelija"
+            },
+            {
+                "object": "prop_table_06",
+                "label": "Table Paahtoleipä"
+            },
+            {
+                "object": "v_res_tre_table2",
+                "label": "Table Paikka"
+            },
+            {
+                "object": "prop_table_01",
+                "label": "Table Pallo"
+            },
+            {
+                "object": "prop_chateau_table_01",
+                "label": "Table Pannukakku"
+            },
+            {
+                "object": "prop_proxy_chateau_table",
+                "label": "Table Paperi"
+            },
+            {
+                "object": "v_res_m_dinetble_replace",
+                "label": "Table Paperipyyhe"
+            },
+            {
+                "object": "prop_table_04",
+                "label": "Table Pappi"
+            },
+            {
+                "object": "prop_table_02",
+                "label": "Table Parkkipaikka"
+            },
+            {
+                "object": "v_res_m_dinetble",
+                "label": "Table Pata"
+            },
+            {
+                "object": "apa_mp_h_yacht_side_table_02",
+                "label": "Circular Yacht Table"
+            },
+            {
+                "object": "vw_prop_vw_table_casino_short_01",
+                "label": "Large Circular Table"
+            },
+            {
+                "object": "vw_prop_vw_table_casino_tall_01",
+                "label": "White Circular Modern Table"
+            },
+            {
+                "object": "v_res_tre_bedsidetableb",
+                "label": "Wooden Antique Bedside"
+            },
+            {
+                "object": "prop_table_03b",
+                "label": "Plastic Outdoor Table"
+            },
+            {
+                "object": "ex_mp_h_din_table_05",
+                "label": "Modern Sleek Office Table"
+            },
+            {
+                "object": "v_res_fh_coftablea",
+                "label": "Modern Wireframe Table"
+            },
+            {
+                "object": "prop_table_02",
+                "label": "Wooden Parasol Table"
+            },
+            {
+                "object": "prop_rub_table_01",
+                "label": "Painters Table"
+            },
+            {
+                "object": "h4_prop_int_edgy_table_02",
+                "label": "Tall Casino Table"
+            },
+            {
+                "object": "v_res_j_lowtable",
+                "label": "Square Wooden Table"
+            },
+            {
+                "object": "prop_picnictable_01",
+                "label": "Picnic Bench"
+            },
+            {
+                "object": "h4_prop_int_trad_table",
+                "label": "Tall Metal Table"
+            },
+            {
+                "object": "prop_yacht_table_02",
+                "label": "Outdoor Blue Table"
+            },
+            {
+                "object": "v_res_tre_table001",
+                "label": "Blue Cover Table"
+            },
+            {
+                "object": "sf_mp_h_yacht_side_table_01",
+                "label": "Yacht Large Square Table"
+            },
+            {
+                "object": "h4_prop_int_glam_table",
+                "label": "Circular Inset Table"
+            },
+            {
+                "object": "sum_mp_h_yacht_coffee_table_02",
+                "label": "Low Modern Coffee Table"
+            },
+            {
+                "object": "prop_table_01",
+                "label": "Coffee on Table"
+            },
+            {
+                "object": "v_ret_fh_dinetable",
+                "label": "Antique Long Wooden Table"
+            },
+            {
+                "object": "v_med_bedtable",
+                "label": "Hospital Bed Table"
+            },
+            {
+                "object": "apa_mp_h_din_table_01",
+                "label": "Curve Metal Long Table"
+            },
+            {
+                "object": "apa_mp_h_din_table_04",
+                "label": "Metal Leg Long Table"
+            },
+            {
+                "object": "v_ind_cftable",
+                "label": "Tall Bolted Table"
+            },
+            {
+                "object": "prop_tablesmall_01",
+                "label": "Small Low Wooden Table"
+            },
+            {
+                "object": "v_club_vu_table",
+                "label": "Red Cover Restaurant Table"
+            },
+            {
+                "object": "v_res_fh_coftablea",
+                "label": "Coffee table Peltirasia"
+            },
+            {
+                "object": "v_res_fh_coftableb",
+                "label": "Coffee table Peltivati"
+            },
+            {
+                "object": "v_res_mbbedtable",
+                "label": "Coffee table Perhonen"
+            },
+            {
+                "object": "v_res_msidetblemod",
+                "label": "Coffee table Periaate"
+            },
+            {
+                "object": "v_ind_rc_lowtable",
+                "label": "Coffee table Peruna"
+            },
+            {
+                "object": "v_res_j_coffeetable",
+                "label": "Coffee table Perusopetus"
+            },
+            {
+                "object": "prop_fbi3_coffee_table",
+                "label": "Coffee table Pesukone"
+            },
+            {
+                "object": "ex_mp_h_tab_sidelrg_07",
+                "label": "Metal Slim Glass Table"
+            },
+            {
+                "object": "v_res_d_coffeetable",
+                "label": "Wooden Glass Coffee Table"
+            },
+            {
+                "object": "prop_t_coffe_table",
+                "label": "Modern Sleek Coffee Table"
+            },
+            {
+                "object": "v_res_m_console",
+                "label": "Darkwood Elder Console"
+            },
+            {
+                "object": "apa_mp_h_tab_coffee_08",
+                "label": "Rounded White Coffee Table"
+            },
+            {
+                "object": "apa_mp_h_tab_coffee_07",
+                "label": "Rounded Chique Glass Table"
+            },
+            {
+                "object": "apa_mp_h_tab_sidelrg_02",
+                "label": "Chique Glass Table"
+            },
+            {
+                "object": "v_res_m_h_console",
+                "label": "Antique Wooden Console"
+            },
+            {
+                "object": "v_res_mddesk",
+                "label": "Dressing tables Ponnahdusik"
+            },
+            {
+                "object": "v_res_d_dressingtable",
+                "label": "Dressing tables Pontikka"
+            },
+            {
+                "object": "v_res_m_sidetable",
+                "label": "Dressing tables Poraus"
+            },
+            {
+                "object": "v_res_mddresser",
+                "label": "Dressing tables Portaat"
+            }
+        ],
+        "label": "Tables"
+    },
+    "chairs": {
+        "items": [
+            {
+                "object": "prop_yaught_sofa_01",
+                "label": "Outdoor Couch Harakka"
+            },
+            {
+                "object": "v_res_d_sofa",
+                "label": "Plastic Wrap Couch"
+            },
+            {
+                "object": "hei_heist_stn_sofa3seat_01",
+                "label": "Couch K├ñ├ñrme"
+            },
+            {
+                "object": "hei_heist_stn_sofa3seat_06",
+                "label": "Couch Lisko"
+            },
+            {
+                "object": "hei_heist_stn_sofa3seat_02",
+                "label": "Couch Sammakko"
+            },
+            {
+                "object": "bkr_prop_clubhouse_sofa_01a",
+                "label": "Couch Sikailla"
+            },
+            {
+                "object": "prop_rub_couch04",
+                "label": "Sofa Karhu"
+            },
+            {
+                "object": "v_res_tre_sofa",
+                "label": "Sofa Kettu"
+            },
+            {
+                "object": "prop_couch_lg_02",
+                "label": "Sofa Hirvi"
+            },
+            {
+                "object": "v_res_j_sofa",
+                "label": "Sofa Jänis"
+            },
+            {
+                "object": "prop_couch_03",
+                "label": "Sofa Orava"
+            },
+            {
+                "object": "apa_mp_h_stn_sofa2seat_02",
+                "label": "Sofa Ahma"
+            },
+            {
+                "object": "prop_couch_lg_06",
+                "label": "Sofa Ilves"
+            },
+            {
+                "object": "prop_couch_lg_07",
+                "label": "Sofa Kärppä"
+            },
+            {
+                "object": "apa_mp_h_stn_sofacorn_01",
+                "label": "Corner sofa Hylje"
+            },
+            {
+                "object": "apa_mp_h_stn_sofacorn_05",
+                "label": "Corner sofa Majava"
+            },
+            {
+                "object": "apa_mp_h_stn_sofacorn_06",
+                "label": "Corner sofa Saukko"
+            },
+            {
+                "object": "apa_mp_h_stn_sofacorn_08",
+                "label": "Corner sofa Mato"
+            },
+            {
+                "object": "apa_mp_h_stn_sofacorn_07",
+                "label": "Corner sofa Etana"
+            },
+            {
+                "object": "apa_mp_h_stn_sofacorn_09",
+                "label": "Corner sofa Joutsen"
+            },
+            {
+                "object": "v_res_mp_sofa",
+                "label": "Corner sofa P├Âll├Â"
+            },
+            {
+                "object": "apa_mp_h_stn_sofacorn_10",
+                "label": "Corner sofa Varis"
+            },
+            {
+                "object": "p_v_med_p_sofa_s",
+                "label": "Sofa Mäyrä"
+            },
+            {
+                "object": "hei_heist_stn_sofa2seat_03",
+                "label": "Sofa Nöntö"
+            },
+            {
+                "object": "prop_t_sofa",
+                "label": "Sofa Supikoira"
+            },
+            {
+                "object": "prop_t_sofa_02",
+                "label": "Sofa Hiiri"
+            },
+            {
+                "object": "ex_mp_h_off_sofa_01",
+                "label": "Sofa Kala"
+            },
+            {
+                "object": "ex_mp_h_off_sofa_02",
+                "label": "Sofa Lohi"
+            },
+            {
+                "object": "ex_mp_h_off_sofa_003",
+                "label": "Sofa Ankerias"
+            },
+            {
+                "object": "v_res_m_h_sofa_sml",
+                "label": "Sofa Simpukka"
+            },
+            {
+                "object": "v_res_r_sofa",
+                "label": "Sofa Jokirapu"
+            },
+            {
+                "object": "sum_mp_h_yacht_sofa_01",
+                "label": "Sofa Valas"
+            },
+            {
+                "object": "v_res_j_stool",
+                "label": "Chair Pinnsvin"
+            },
+            {
+                "object": "prop_chair_02",
+                "label": "Chair Valp"
+            },
+            {
+                "object": "prop_chateau_chair_01",
+                "label": "Chair Neshorn"
+            },
+            {
+                "object": "prop_chair_01b",
+                "label": "Chair Snegl"
+            },
+            {
+                "object": "prop_table_02_chr",
+                "label": "Chair Ekorn"
+            },
+            {
+                "object": "prop_chair_03",
+                "label": "Chair Hale"
+            },
+            {
+                "object": "prop_table_01_chr_b",
+                "label": "Chair Skilpadde"
+            },
+            {
+                "object": "v_res_fh_dineeamesa",
+                "label": "Chair V├ªsel"
+            },
+            {
+                "object": "v_res_fh_dineeamesb",
+                "label": "Chair Zorilla"
+            },
+            {
+                "object": "v_res_fh_dineeamesc",
+                "label": "Chair Valkoinen"
+            },
+            {
+                "object": "apa_mp_h_din_chair_12",
+                "label": "Chair Musta"
+            },
+            {
+                "object": "prop_cs_office_chair",
+                "label": "Chair Punainen"
+            },
+            {
+                "object": "prop_chair_04a",
+                "label": "Chair Sininen"
+            },
+            {
+                "object": "prop_chair_04b",
+                "label": "Chair Keltainen"
+            },
+            {
+                "object": "xm_lab_chairarm_02",
+                "label": "Chair Vihre├ñ"
+            },
+            {
+                "object": "prop_waiting_seat_01",
+                "label": "Chair Oranssi"
+            },
+            {
+                "object": "v_ilev_m_dinechair",
+                "label": "Chair Pinkki"
+            },
+            {
+                "object": "hei_heist_din_chair_01",
+                "label": "Chair Miskiir"
+            },
+            {
+                "object": "v_club_ch_briefchair",
+                "label": "Chair Genava"
+            },
+            {
+                "object": "hei_heist_din_chair_05",
+                "label": "Chair Woka"
+            },
+            {
+                "object": "hei_heist_din_chair_03",
+                "label": "Chair Blyrsh"
+            },
+            {
+                "object": "hei_heist_din_chair_06",
+                "label": "Chair Nyrbs"
+            },
+            {
+                "object": "hei_heist_din_chair_08",
+                "label": "Chair Fiirby"
+            }
+        ],
+        "label": "Seating"
+    },
+    "armchairs": {
+        "items": [
+            {
+                "object": "prop_off_chair_01",
+                "label": "Armchair Violetti"
+            },
+            {
+                "object": "v_corp_offchair",
+                "label": "Armchair Harmaa"
+            },
+            {
+                "object": "v_club_officechair",
+                "label": "Armchair V├ñrit"
+            },
+            {
+                "object": "v_ilev_leath_chr",
+                "label": "Armchair S├ñvy"
+            },
+            {
+                "object": "bkr_prop_biker_chairstrip_02",
+                "label": "Armchair Vaalea"
+            },
+            {
+                "object": "v_res_d_armchair",
+                "label": "Armchair Tumma"
+            },
+            {
+                "object": "prop_rub_couch03",
+                "label": "Armchair Oransje"
+            },
+            {
+                "object": "v_res_mp_stripchair",
+                "label": "Armchair Roosa"
+            },
+            {
+                "object": "v_ilev_p_easychair",
+                "label": "Armchair Svart"
+            },
+            {
+                "object": "apa_mp_h_stn_chairstrip_01",
+                "label": "Armchair Brun"
+            },
+            {
+                "object": "apa_mp_h_stn_chairstrip_04",
+                "label": "Armchair Hvit"
+            },
+            {
+                "object": "prop_couch_sm_05",
+                "label": "Armchair Gr├©nn"
+            },
+            {
+                "object": "apa_mp_h_stn_chairstrip_05",
+                "label": "Armchair H├Ábedane"
+            },
+            {
+                "object": "apa_mp_h_stn_chairstrip_08",
+                "label": "Armchair Kuldne"
+            },
+            {
+                "object": "apa_mp_h_stn_chairstrip_02",
+                "label": "Armchair Oran┼¥"
+            },
+            {
+                "object": "prop_couch_sm_07",
+                "label": "Armchair Roheline"
+            },
+            {
+                "object": "apa_mp_h_stn_chairstrip_07",
+                "label": "Armchair Sinine"
+            },
+            {
+                "object": "apa_mp_h_stn_chairstrip_03",
+                "label": "Armchair Kaelkirjak"
+            },
+            {
+                "object": "v_res_fh_singleseat",
+                "label": "Armchair Nippu"
+            },
+            {
+                "object": "v_res_m_armchair",
+                "label": "Armchair Nuotio"
+            },
+            {
+                "object": "apa_mp_h_stn_sofa_daybed_01",
+                "label": "Armchair Nuotti"
+            },
+            {
+                "object": "prop_sol_chair",
+                "label": "Armchair Nyrkkeily"
+            },
+            {
+                "object": "apa_mp_h_stn_sofa_daybed_02",
+                "label": "Armchair N├ñytt├Â"
+            },
+            {
+                "object": "bkr_prop_clubhouse_armchair_01a",
+                "label": "Armchair Oksa"
+            },
+            {
+                "object": "sf_mp_h_yacht_strip_chair_01",
+                "label": "Armchair Hugudugu"
+            },
+            {
+                "object": "hei_heist_stn_chairstrip_01",
+                "label": "Armchair Yuksi"
+            },
+            {
+                "object": "hei_heist_stn_chairarm_04",
+                "label": "Armchair Yyrfigildir"
+            },
+            {
+                "object": "bkr_int_02_strip_chair",
+                "label": "Armchair Hyrlda"
+            },
+            {
+                "object": "ex_mp_h_stn_chairstrip_010",
+                "label": "Armchair Bygyggir"
+            },
+            {
+                "object": "v_med_p_easychair",
+                "label": "Armchair Jougym"
+            },
+            {
+                "object": "v_ret_ps_chair",
+                "label": "Armchair Flugelarm"
+            },
+            {
+                "object": "p_armchair_01_s",
+                "label": "Armchair Hiirik"
+            },
+            {
+                "object": "ex_mp_h_off_chairstrip_01",
+                "label": "Armchair Haglyn"
+            },
+            {
+                "object": "sum_mp_h_yacht_armchair_01",
+                "label": "Armchair Ojikyr"
+            },
+            {
+                "object": "bkr_prop_biker_chairstrip_01",
+                "label": "Armchair Flicc"
+            },
+            {
+                "object": "mp_b_stn_chairarm_04",
+                "label": "Armchair Vyrisika"
+            },
+            {
+                "object": "apa_mp_h_stn_chairarm_23",
+                "label": "Armchair Bhiryyt"
+            },
+            {
+                "object": "apa_mp_h_stn_chairarm_03",
+                "label": "Armchair Lokosa"
+            },
+            {
+                "object": "sf_mp_h_yacht_armchair_03",
+                "label": "Armchair Mirrin"
+            },
+            {
+                "object": "mp_b_stn_chairarm_01",
+                "label": "Armchair Cyrit"
+            },
+            {
+                "object": "apa_mp_h_stn_chairarm_25",
+                "label": "Armchair Kitty l"
+            }
+        ],
+        "label": "Armchairs"
+    },
+    "shelves": {
+        "items": [
+            {
+                "object": "v_ret_fh_displayc",
+                "label": "Shelf Sjakal"
+            },
+            {
+                "object": "v_res_tre_smallbookshelf",
+                "label": "Shelf Kattunge"
+            },
+            {
+                "object": "v_res_tre_woodunit",
+                "label": "Shelf Langur"
+            },
+            {
+                "object": "apa_mp_h_str_shelfwallm_01",
+                "label": "Shelf Ogle"
+            },
+            {
+                "object": "apa_mp_h_str_shelffreel_01",
+                "label": "Shelf Hoppe"
+            },
+            {
+                "object": "v_res_msoncabinet",
+                "label": "Shelf Mygg"
+            },
+            {
+                "object": "apa_mp_h_str_avunitl_04",
+                "label": "TV Shelf Muldyr"
+            },
+            {
+                "object": "apa_mp_h_str_avunitl_01_b",
+                "label": "Shelf Oter"
+            },
+            {
+                "object": "ch_prop_ch_blueprint_board_01a",
+                "label": "Blueprint Storage"
+            }
+        ],
+        "label": "Shelves"
+    },
+    "cabinets": {
+        "items": [
+            {
+                "object": "prop_devin_box_closed",
+                "label": "Cabinet Hjort"
+            },
+            {
+                "object": "prop_rub_cabinet02",
+                "label": "Cabinet Elegant"
+            },
+            {
+                "object": "prop_fbibombfile",
+                "label": "Cabinet Fisk"
+            },
+            {
+                "object": "v_res_tre_bedsidetable",
+                "label": "Cabinet Hest"
+            },
+            {
+                "object": "prop_rub_cabinet03",
+                "label": "Cabinet Papeg├©je"
+            },
+            {
+                "object": "prop_cabinet_02b",
+                "label": "Cabinet Gris"
+            },
+            {
+                "object": "prop_rub_cabinet01",
+                "label": "Cabinet Kanin"
+            },
+            {
+                "object": "p_cs_locker_01_s",
+                "label": "Cabinet Hane"
+            },
+            {
+                "object": "v_res_d_sideunit",
+                "label": "Cabinet Laks"
+            },
+            {
+                "object": "v_res_mdbedtable",
+                "label": "Cabinet Slange"
+            },
+            {
+                "object": "v_res_tre_tvstand",
+                "label": "Cabinet Edderkop"
+            },
+            {
+                "object": "v_res_mconsolemod",
+                "label": "Cabinet Skildpadde"
+            },
+            {
+                "object": "prop_cabinet_01",
+                "label": "Cabinet Sommerfugl"
+            },
+            {
+                "object": "v_res_tre_storageunit",
+                "label": "Cabinet Myre"
+            },
+            {
+                "object": "prop_cabinet_01b",
+                "label": "Modern White Drawer"
+            },
+            {
+                "object": "v_med_p_sideboard",
+                "label": "Retro Drawer"
+            },
+            {
+                "object": "v_res_tre_sideboard",
+                "label": "Ugly Shelf Drawer"
+            },
+            {
+                "object": "v_res_tre_tvstand_tall",
+                "label": "Ugly Drawer"
+            },
+            {
+                "object": "prop_tv_cabinet_03",
+                "label": "Lightwood Drawer"
+            },
+            {
+                "object": "apa_mp_h_str_sideboardl_11",
+                "label": "70s Drawer"
+            },
+            {
+                "object": "hei_heist_bed_chestdrawer_04",
+                "label": "Cabinet Sjimpanse"
+            },
+            {
+                "object": "hei_heist_str_sideboardl_03",
+                "label": "Cabinet Esel"
+            },
+            {
+                "object": "apa_mp_h_bed_chestdrawer_02",
+                "label": "Modern Drawer"
+            },
+            {
+                "object": "apa_mp_h_str_sideboardl_14",
+                "label": "Wooden Drawer"
+            },
+            {
+                "object": "v_res_fh_sidebrdlngb",
+                "label": "Frame Modern Drawer"
+            },
+            {
+                "object": "hei_heist_str_sideboardl_02",
+                "label": "Cabinet Sjiraff"
+            },
+            {
+                "object": "apa_mp_h_str_sideboardl_13",
+                "label": "Cabinet Geit"
+            },
+            {
+                "object": "apa_mp_h_str_sideboardm_02",
+                "label": "Dark Wooden Drawer"
+            },
+            {
+                "object": "apa_mp_h_str_sideboards_01",
+                "label": "Two Tone Drawer Mini"
+            },
+            {
+                "object": "v_res_fh_sidebrddine",
+                "label": "Two Tone Drawer"
+            },
+            {
+                "object": "apa_mp_h_str_sideboardl_06",
+                "label": "Smooth Modern Drawer"
+            }
+        ],
+        "label": "Cabinets"
+    },
+    "cabinets-visual": {
+        "items": [
+            {
+                "object": "prop_devin_box_closed",
+                "label": "Cabinet Hjort"
+            },
+            {
+                "object": "prop_rub_cabinet02",
+                "label": "Cabinet Elegant"
+            },
+            {
+                "object": "prop_fbibombfile",
+                "label": "Cabinet Fisk"
+            },
+            {
+                "object": "v_res_tre_bedsidetable",
+                "label": "Cabinet Hest"
+            },
+            {
+                "object": "prop_rub_cabinet03",
+                "label": "Cabinet Papeg├©je"
+            },
+            {
+                "object": "prop_cabinet_02b",
+                "label": "Cabinet Gris"
+            },
+            {
+                "object": "prop_rub_cabinet01",
+                "label": "Cabinet Kanin"
+            },
+            {
+                "object": "p_cs_locker_01_s",
+                "label": "Cabinet Hane"
+            },
+            {
+                "object": "v_res_d_sideunit",
+                "label": "Cabinet Laks"
+            },
+            {
+                "object": "v_res_mdbedtable",
+                "label": "Cabinet Slange"
+            },
+            {
+                "object": "v_res_tre_tvstand",
+                "label": "Cabinet Edderkop"
+            },
+            {
+                "object": "v_res_mconsolemod",
+                "label": "Cabinet Skildpadde"
+            },
+            {
+                "object": "prop_cabinet_01",
+                "label": "Cabinet Sommerfugl"
+            },
+            {
+                "object": "v_res_tre_storageunit",
+                "label": "Cabinet Myre"
+            },
+            {
+                "object": "prop_cabinet_01b",
+                "label": "Modern White Drawer"
+            },
+            {
+                "object": "v_med_p_sideboard",
+                "label": "Retro Drawer"
+            },
+            {
+                "object": "v_res_tre_sideboard",
+                "label": "Ugly Shelf Drawer"
+            },
+            {
+                "object": "v_res_tre_tvstand_tall",
+                "label": "Ugly Drawer"
+            },
+            {
+                "object": "prop_tv_cabinet_03",
+                "label": "Lightwood Drawer"
+            },
+            {
+                "object": "apa_mp_h_str_sideboardl_11",
+                "label": "70s Drawer"
+            },
+            {
+                "object": "hei_heist_bed_chestdrawer_04",
+                "label": "Cabinet Sjimpanse"
+            },
+            {
+                "object": "hei_heist_str_sideboardl_03",
+                "label": "Cabinet Esel"
+            },
+            {
+                "object": "apa_mp_h_bed_chestdrawer_02",
+                "label": "Modern Drawer"
+            },
+            {
+                "object": "apa_mp_h_str_sideboardl_14",
+                "label": "Wooden Drawer"
+            },
+            {
+                "object": "v_res_fh_sidebrdlngb",
+                "label": "Frame Modern Drawer"
+            },
+            {
+                "object": "hei_heist_str_sideboardl_02",
+                "label": "Cabinet Sjiraff"
+            },
+            {
+                "object": "apa_mp_h_str_sideboardl_13",
+                "label": "Cabinet Geit"
+            },
+            {
+                "object": "apa_mp_h_str_sideboardm_02",
+                "label": "Dark Wooden Drawer"
+            },
+            {
+                "object": "apa_mp_h_str_sideboards_01",
+                "label": "Two Tone Drawer Mini"
+            },
+            {
+                "object": "v_res_fh_sidebrddine",
+                "label": "Two Tone Drawer"
+            },
+            {
+                "object": "apa_mp_h_str_sideboardl_06",
+                "label": "Smooth Modern Drawer"
+            }
+        ],
+        "label": "Decorative Cabinets"
+    },
+    "curtains": {
+        "items": [
+            {
+                "object": "v_39_curtain002",
+                "label": "Yellow Curtain"
+            }
+        ],
+        "label": "Curtains & Blinds"
+    },
+    "bar": {
+        "items": [
+            {
+                "object": "prop_glass_stack_07",
+                "label": "Stack of Glasses"
+            },
+            {
+                "object": "prop_whiskey_glasses",
+                "label": "Whiskey Glasses"
+            },
+            {
+                "object": "v_ret_neon_baracho",
+                "label": "Neon Baracho"
+            },
+            {
+                "object": "v_ret_neon_logger",
+                "label": "Neon Logger"
+            },
+            {
+                "object": "prop_cockneon",
+                "label": "Neon Cocktail"
+            },
+            {
+                "object": "prop_beerneon",
+                "label": "Neon Beer"
+            },
+            {
+                "object": "prop_patriotneon",
+                "label": "Neon Patriot"
+            },
+            {
+                "object": "prop_barrachneon",
+                "label": "Neon Barrach"
+            }
+        ],
+        "label": "Bar"
+    },
+    "kitchen_appliances": {
+        "items": [
+            {
+                "object": "prop_microwave_1",
+                "label": "Microwave"
+            },
+            {
+                "object": "prop_micro_01",
+                "label": "Microwave oven Seimi"
+            },
+            {
+                "object": "prop_micro_04",
+                "label": "Microwave oven Shakki"
+            },
+            {
+                "object": "prop_cs_toaster",
+                "label": "Toaster Sanakirja"
+            },
+            {
+                "object": "prop_toaster_01",
+                "label": "Toaster Savuke"
+            },
+            {
+                "object": "prop_kettle_01",
+                "label": "Kettle sateenvarjo"
+            },
+            {
+                "object": "prop_kettle",
+                "label": "Kettle Seikkailu"
+            },
+            {
+                "object": "prop_kitch_juicer",
+                "label": "Juicer Sein├ñ"
+            },
+            {
+                "object": "v_res_tre_mixer",
+                "label": "Mixer Sein├ñkello"
+            },
+            {
+                "object": "prop_foodprocess_01",
+                "label": "Mixer Sekoitus"
+            },
+            {
+                "object": "prop_coffee_mac_02",
+                "label": "Coffee machine"
+            },
+            {
+                "object": "prop_cooker_03",
+                "label": "Large Metal Oven"
+            },
+            {
+                "object": "prop_bar_ice_01",
+                "label": "Large Open Freezer"
+            },
+            {
+                "object": "v_res_pestle",
+                "label": "Mortar and Pestle"
+            }
+        ],
+        "label": "Kitchen Appliances"
+    },
+    "fridges": {
+        "items": [
+            {
+                "object": "v_res_tt_fridge",
+                "label": "Fridge Kylpy"
+            },
+            {
+                "object": "v_ret_ml_fridge02",
+                "label": "Fridge Kylpyamme"
+            },
+            {
+                "object": "v_res_tre_fridge",
+                "label": "Fridge Kylpyhuone"
+            },
+            {
+                "object": "prop_trailr_fridge",
+                "label": "Fridge Kyn├ñ"
+            },
+            {
+                "object": "prop_fridge_03",
+                "label": "Fridge K├ñvely"
+            },
+            {
+                "object": "prop_fridge_01",
+                "label": "Fridge K├ñvelylenkki"
+            }
+        ],
+        "label": "Fridges"
+    },
+    "food": {
+        "items": [
+            {
+                "object": "v_res_tt_doughnut01",
+                "label": "Chewed doughnut"
+            },
+            {
+                "object": "v_res_tt_doughnuts",
+                "label": "Doughnuts"
+            },
+            {
+                "object": "v_res_tt_milk",
+                "label": "Milk"
+            },
+            {
+                "object": "v_res_tre_banana",
+                "label": "Banana"
+            },
+            {
+                "object": "v_res_tre_pineapple",
+                "label": "Pineapple"
+            },
+            {
+                "object": "v_res_tt_can03",
+                "label": "Sprunk can"
+            },
+            {
+                "object": "v_ret_fh_emptybot1",
+                "label": "Bottle \"Stronzo\""
+            },
+            {
+                "object": "prop_pizza_box_02",
+                "label": "Pizza box"
+            },
+            {
+                "object": "v_res_fa_ketchup",
+                "label": "Ketchup"
+            },
+            {
+                "object": "v_res_fa_tincorn",
+                "label": "Tin corn"
+            },
+            {
+                "object": "v_res_fa_cereal02",
+                "label": "Cereal \"Crackles\""
+            },
+            {
+                "object": "v_res_fa_cereal01",
+                "label": "Cereal \"Rails\""
+            },
+            {
+                "object": "prop_cs_plate_01",
+                "label": "Plate Kuviointi"
+            },
+            {
+                "object": "v_res_plate_dec",
+                "label": "Green Decor Plate"
+            },
+            {
+                "object": "prop_bowl_crisps",
+                "label": "Bowl Chips├│w"
+            },
+            {
+                "object": "v_res_fh_fruitbowl",
+                "label": "Bowl Owoc├│w"
+            },
+            {
+                "object": "v_res_mbowlornate",
+                "label": "Deluxe Fruit Bowl"
+            },
+            {
+                "object": "prop_bar_fruit",
+                "label": "Tray of fruits"
+            },
+            {
+                "object": "v_res_m_woodbowl",
+                "label": "Wood bowl of fruits"
+            },
+            {
+                "object": "v_res_mbowl",
+                "label": "Ceramic Ring Bowl"
+            },
+            {
+                "object": "ex_mp_h_acc_bowl_ceramic_01",
+                "label": "Dark Blue Ceramic Bowl"
+            },
+            {
+                "object": "v_res_cakedome",
+                "label": "Plate with cookies"
+            },
+            {
+                "object": "prop_mug_04",
+                "label": "Beige Mug"
+            },
+            {
+                "object": "prop_mug_03",
+                "label": "I Heart VB Mug"
+            },
+            {
+                "object": "prop_mug_02",
+                "label": "Plain White Mug"
+            },
+            {
+                "object": "prop_mug_01",
+                "label": "Plain Black Mug"
+            },
+            {
+                "object": "v_club_vu_coffeemug2",
+                "label": "Vanilla Unicorn Mug"
+            },
+            {
+                "object": "v_res_mcofcup",
+                "label": "Tea Cup"
+            },
+            {
+                "object": "v_res_fa_pottea",
+                "label": "Tea Container"
+            },
+            {
+                "object": "v_res_fa_potsug",
+                "label": "Sugar Container"
+            },
+            {
+                "object": "v_res_tt_pizzaplate",
+                "label": "Leftover Pizza"
+            },
+            {
+                "object": "ng_proc_pizza01a",
+                "label": "Leftover Pizza Box"
+            }
+        ],
+        "label": "Food"
+    },
+    "pots": {
+        "items": [
+            {
+                "object": "prop_wine_white",
+                "label": "White Wine"
+            },
+            {
+                "object": "prop_beer_blr",
+                "label": "Irish Beer"
+            },
+            {
+                "object": "prop_bottle_macbeth",
+                "label": "Macbeth Beer"
+            },
+            {
+                "object": "prop_wine_red",
+                "label": "Red Wine"
+            },
+            {
+                "object": "prop_daiquiri",
+                "label": "Daiquiri"
+            },
+            {
+                "object": "prop_bottle_cognac",
+                "label": "Cognac"
+            },
+            {
+                "object": "prop_cocktail",
+                "label": "Cocktail"
+            },
+            {
+                "object": "prop_champset",
+                "label": "Champagne Set"
+            },
+            {
+                "object": "prop_champ_cool",
+                "label": "Champagne Iced"
+            },
+            {
+                "object": "prop_tequila",
+                "label": "Tequila"
+            },
+            {
+                "object": "prop_drink_champ",
+                "label": "Champagne Glass"
+            },
+            {
+                "object": "prop_lime_jar",
+                "label": "Jar of Limes"
+            },
+            {
+                "object": "prop_pot_rack",
+                "label": "Hanging Pot Rack"
+            },
+            {
+                "object": "v_res_tt_pot02",
+                "label": "Frying pan K├ñytt├ñj├ñ"
+            },
+            {
+                "object": "v_ret_fh_fry02",
+                "label": "Frying pan K├ñ├ñnn├Âs"
+            },
+            {
+                "object": "prop_pot_05",
+                "label": "Frying pan K├ñ├ñpi├Â"
+            },
+            {
+                "object": "v_res_tt_pot03",
+                "label": "Pot Laadukas"
+            },
+            {
+                "object": "v_res_tt_pot01",
+                "label": "Pot Laaja"
+            },
+            {
+                "object": "v_ret_fh_pot01",
+                "label": "Pot Laatu"
+            },
+            {
+                "object": "v_ret_fh_pot05",
+                "label": "Pot Lamppu"
+            },
+            {
+                "object": "v_ret_fh_pot02",
+                "label": "Pot Lapsi"
+            },
+            {
+                "object": "prop_copper_pan",
+                "label": "Pot Lautapeli"
+            },
+            {
+                "object": "prop_pot_03",
+                "label": "Pot Lehm├ñ"
+            }
+        ],
+        "label": "Pots and Pans"
+    },
+    "cleaning": {
+        "items": [
+            {
+                "object": "v_ind_rc_brush",
+                "label": "Broom"
+            },
+            {
+                "object": "prop_f_duster_02",
+                "label": "Wide broom"
+            },
+            {
+                "object": "prop_cleaning_trolly",
+                "label": "Cleaning trolley"
+            },
+            {
+                "object": "v_res_vacuum",
+                "label": "Vacuum cleaner"
+            }
+        ],
+        "label": "Cleaning"
+    },
+    "trashcans": {
+        "items": [
+            {
+                "object": "prop_bin_delpiero",
+                "label": "Del Perro Trash"
+            },
+            {
+                "object": "vw_prop_vw_casino_bin_01a",
+                "label": "Cigar Trash Can"
+            },
+            {
+                "object": "prop_bin_10a",
+                "label": "Mini Trash Can"
+            },
+            {
+                "object": "v_serv_tc_bin2_",
+                "label": "Paper Trash Can"
+            },
+            {
+                "object": "prop_bin_12a",
+                "label": "Dirty Cigar Trash Can"
+            },
+            {
+                "object": "v_serv_waste_bin1",
+                "label": "Red Small Trash Can"
+            },
+            {
+                "object": "prop_bin_09a",
+                "label": "Giant Trash Can"
+            },
+            {
+                "object": "v_ind_bin_01",
+                "label": "Bloody Trash Can"
+            },
+            {
+                "object": "prop_bin_08a",
+                "label": "Rolly Trash Can"
+            },
+            {
+                "object": "v_serv_metro_wallbin",
+                "label": "Empty Black Trash Can"
+            },
+            {
+                "object": "xm3_prop_xm3_med_wastebin_01a",
+                "label": "Medical Waste Can"
+            },
+            {
+                "object": "prop_bin_08open",
+                "label": "Open Rolley Trash Can"
+            },
+            {
+                "object": "prop_cs_bin_02",
+                "label": "Dirty Silver Trash Can"
+            },
+            {
+                "object": "prop_fbibombbin",
+                "label": "FIB Trash Can"
+            },
+            {
+                "object": "prop_cs_bin_01_skinned",
+                "label": "Rolly Brown Trash Can"
+            },
+            {
+                "object": "v_ret_csr_bin",
+                "label": "Office Trash Can"
+            },
+            {
+                "object": "prop_gas_smallbin01",
+                "label": "Square Trash Box"
+            },
+            {
+                "object": "prop_bin_04a",
+                "label": "Tall Black Trash Can"
+            },
+            {
+                "object": "prop_recyclebin_01a",
+                "label": "Blue Recycling Can"
+            },
+            {
+                "object": "v_serv_metro_floorbin",
+                "label": "White Trash Can"
+            },
+            {
+                "object": "prop_recyclebin_03_a",
+                "label": "Open Silver Trash Can"
+            },
+            {
+                "object": "v_serv_tc_bin1_",
+                "label": "Drink Recycing"
+            },
+            {
+                "object": "prop_bin_delpiero_b",
+                "label": "Del Perro Trash 2"
+            },
+            {
+                "object": "prop_bin_05a",
+                "label": "Park Trash Can"
+            },
+            {
+                "object": "prop_bin_01a",
+                "label": "Grated Trash Can"
+            },
+            {
+                "object": "prop_bin_07c",
+                "label": "Slight Open Trash Can"
+            },
+            {
+                "object": "prop_bin_07a",
+                "label": "Open Trash Can Silver"
+            },
+            {
+                "object": "prop_bin_beach_01d",
+                "label": "Trash Barrel Can"
+            },
+            {
+                "object": "prop_bin_beach_01a",
+                "label": "Trash Beach Can"
+            },
+            {
+                "object": "prop_bin_03a",
+                "label": "Plastic Brown Trash"
+            },
+            {
+                "object": "prop_recyclebin_02b",
+                "label": "Cans Recycling"
+            },
+            {
+                "object": "prop_bin_06a",
+                "label": "Blue Grated Trash"
+            },
+            {
+                "object": "prop_bin_02a",
+                "label": "Dirty Blue Trash"
+            },
+            {
+                "object": "xm3_prop_xm3_med_bin_01a",
+                "label": "Wheely Hospital Waste"
+            }
+        ],
+        "label": "Trash Cans"
+    },
+    "bathtub": {
+        "items": [
+            {
+                "object": "v_res_mbath",
+                "label": "Bath Ristikko"
+            },
+            {
+                "object": "apa_mp_h_bathtub_01",
+                "label": "Bath Ristikkoaita"
+            },
+            {
+                "object": "prop_ld_toilet_01",
+                "label": "Toilet P├Âyt├ñtennis"
+            },
+            {
+                "object": "prop_toilet_01",
+                "label": "Toilet Riisi"
+            },
+            {
+                "object": "prop_toilet_02",
+                "label": "Toilet Ripustus"
+            }
+        ],
+        "label": "Bath Tubs & Toilets"
+    },
+    "bathroomsinks": {
+        "items": [
+            {
+                "object": "v_res_mbtaps",
+                "label": "Metal Tap For Two"
+            },
+            {
+                "object": "prop_sink_05",
+                "label": "Sink Raaka-aine"
+            },
+            {
+                "object": "prop_sink_06",
+                "label": "Sink Rannekoru"
+            },
+            {
+                "object": "v_res_mbsink",
+                "label": "Sink Ranta"
+            },
+            {
+                "object": "prop_sink_02",
+                "label": "Sink Reitti"
+            },
+            {
+                "object": "v_res_m_sinkunit",
+                "label": "Sink Reppu"
+            }
+        ],
+        "label": "Bathroom Sinks"
+    },
+    "bathroomdecor": {
+        "items": [
+            {
+                "object": "prop_washer_01",
+                "label": "Washing machine P├Âyt├ñliina"
+            },
+            {
+                "object": "prop_washer_03",
+                "label": "Washing machine Raikas"
+            },
+            {
+                "object": "prop_washer_02",
+                "label": "Washing machine Ravintola"
+            },
+            {
+                "object": "v_ret_fh_washmach",
+                "label": "Washing machine Reik├ñ"
+            },
+            {
+                "object": "v_ret_fh_dryer",
+                "label": "Dryer Rakennus"
+            },
+            {
+                "object": "v_res_r_cottonbuds",
+                "label": "Q Tips"
+            },
+            {
+                "object": "prop_toilet_soap_02",
+                "label": "Soap Dish"
+            },
+            {
+                "object": "prop_toilet_soap_03",
+                "label": "Premium Soap"
+            },
+            {
+                "object": "prop_toilet_soap_04",
+                "label": "Pink Soap Bottle"
+            },
+            {
+                "object": "v_ret_hd_prod4_",
+                "label": "Shampoo Bottle"
+            },
+            {
+                "object": "v_ret_hd_prod3_",
+                "label": "Hair Gel"
+            },
+            {
+                "object": "v_res_tissues",
+                "label": "Cloud Tissues"
+            },
+            {
+                "object": "v_res_tt_tissues",
+                "label": "Tissues Ruokakauppa"
+            },
+            {
+                "object": "v_ret_hd_prod2_",
+                "label": "Air Freshener"
+            },
+            {
+                "object": "v_ret_hd_prod5_",
+                "label": "Shower gel"
+            },
+            {
+                "object": "v_res_d_lube",
+                "label": "Lube Bottle"
+            },
+            {
+                "object": "v_res_r_perfume",
+                "label": "Perfume Ruokasali"
+            },
+            {
+                "object": "v_res_tt_plunger",
+                "label": "Toilet Plunger"
+            },
+            {
+                "object": "prop_toilet_brush_01",
+                "label": "Toilet Brush"
+            },
+            {
+                "object": "v_res_m_wctoiletroll",
+                "label": "Toilet paper"
+            },
+            {
+                "object": "prop_toilet_roll_02",
+                "label": "Toilet Roll Holder"
+            },
+            {
+                "object": "prop_toilet_roll_05",
+                "label": "Business Toilet Roll"
+            },
+            {
+                "object": "v_res_mbtowel",
+                "label": "Dirty Towel"
+            },
+            {
+                "object": "v_res_mbtowelfld",
+                "label": "Folded Towel"
+            },
+            {
+                "object": "v_res_fh_towelstack",
+                "label": "Stacked Folded Towels"
+            },
+            {
+                "object": "v_res_mlaundry",
+                "label": "Fancy Laundry Basket"
+            },
+            {
+                "object": "v_res_tre_washbasket",
+                "label": "Wicker Laundry Basket"
+            }
+        ],
+        "label": "Bathroom Decor"
+    },
+    "beds": {
+        "items": [
+            {
+                "object": "v_res_tt_bed",
+                "label": "Messy Bed"
+            },
+            {
+                "object": "gr_prop_gr_campbed_01",
+                "label": "Camping Bed"
+            },
+            {
+                "object": "v_res_msonbed",
+                "label": "Unmade Red Bed"
+            },
+            {
+                "object": "v_res_tre_bed2",
+                "label": "Unmade Blue Bed"
+            },
+            {
+                "object": "ex_prop_exec_bed_01",
+                "label": "Executive Office"
+            },
+            {
+                "object": "gr_prop_bunker_bed_01",
+                "label": "Simple Metal Bed"
+            },
+            {
+                "object": "hei_heist_bed_double_08",
+                "label": "Modern Black Bed"
+            },
+            {
+                "object": "v_res_d_bed",
+                "label": "Fancy Tiger Bed"
+            },
+            {
+                "object": "sum_mp_h_yacht_bed_02",
+                "label": "Modern Gray Queen Bed"
+            },
+            {
+                "object": "sum_mp_h_yacht_bed_01",
+                "label": "Modern Beige Queen Bed"
+            },
+            {
+                "object": "apa_mp_h_bed_with_table_02",
+                "label": "Modern Bed Unit"
+            },
+            {
+                "object": "v_res_mdbed",
+                "label": "Red Princess Bed"
+            },
+            {
+                "object": "v_res_mbbed",
+                "label": "Wooden Antique Bed"
+            },
+            {
+                "object": "v_res_tre_bed1_messy",
+                "label": "Messy Cottage Bed"
+            },
+            {
+                "object": "apa_mp_h_bed_double_09",
+                "label": "Modern Millenial Grey Bed"
+            },
+            {
+                "object": "p_lestersbed_s",
+                "label": "Halfmade Basement Bed"
+            },
+            {
+                "object": "v_res_tre_cushiona",
+                "label": "Pillow Liima"
+            },
+            {
+                "object": "v_res_tre_cushionb",
+                "label": "Pillow Lika"
+            },
+            {
+                "object": "v_res_tre_cushionc",
+                "label": "Pillow Lippu"
+            },
+            {
+                "object": "v_res_tre_cushiond",
+                "label": "Pillow Listaus"
+            }
+        ],
+        "label": "Beds"
+    },
+    "boxes": {
+        "items": [
+            {
+                "object": "v_res_filebox01",
+                "label": "Box for documents"
+            },
+            {
+                "object": "v_res_smallplasticbox",
+                "label": "Plastic box"
+            },
+            {
+                "object": "v_res_tre_storagebox",
+                "label": "Box Hyene"
+            }
+        ],
+        "label": "Boxes"
+    },
+    "wardrobes": {
+        "items": [
+            {
+                "object": "prop_clothes_rail_01",
+                "label": "Wardrobe Hanger"
+            },
+            {
+                "object": "bkr_prop_biker_garage_locker_01",
+                "label": "Red Storage Wardrobe"
+            },
+            {
+                "object": "v_res_tre_wardrobe",
+                "label": "Tall White Wardrobe"
+            },
+            {
+                "object": "apa_mp_h_str_shelffloorm_02",
+                "label": "Modern Wooden Wardrobe"
+            },
+            {
+                "object": "v_res_mcupboard",
+                "label": "Dark Antique Wardrobe"
+            },
+            {
+                "object": "v_res_m_armoire",
+                "label": "Light Antique Wardrobe"
+            },
+            {
+                "object": "v_res_m_armoirmove",
+                "label": "Light Antique Wardrobe Open"
+            }
+        ],
+        "label": "Wardrobes"
+    },
+    "desks": {
+        "items": [
+            {
+                "object": "v_med_p_desk",
+                "label": "Simple Wood Desk"
+            },
+            {
+                "object": "xm_base_cia_desk1",
+                "label": "Wood Desk T-Leg White 1"
+            },
+            {
+                "object": "m23_2_prop_m32_desk_01a",
+                "label": "Wood Desk T-Leg 2"
+            },
+            {
+                "object": "m23_1_base_cia_desk1",
+                "label": "Wood Desk T-Leg 3"
+            },
+            {
+                "object": "m24_1_prop_m41_desk_drawer_01a",
+                "label": "Full Wood Desk"
+            },
+            {
+                "object": "v_corp_officedesk_5",
+                "label": "Wood Desk Black 3"
+            },
+            {
+                "object": "xm_prop_lab_desk_02",
+                "label": "Lab Desk Black"
+            },
+            {
+                "object": "h4_prop_office_desk_01",
+                "label": "Fancy Black Desk"
+            },
+            {
+                "object": "ch_chint02_flat_desk",
+                "label": "Sit Stand Desk"
+            },
+            {
+                "object": "tr_prop_tr_desk_main_01a",
+                "label": "White Desk"
+            },
+            {
+                "object": "prop_office_desk_01",
+                "label": "White Wood Double Pedestal Desk"
+            }
+        ],
+        "label": "Desks"
+    },
+    "flowers": {
+        "items": [
+            {
+                "object": "v_res_fa_plant01",
+                "label": "Plant Narikka"
+            },
+            {
+                "object": "apa_mp_h_acc_vase_flowers_01",
+                "label": "Plant Neuvosto"
+            },
+            {
+                "object": "apa_mp_h_acc_vase_flowers_02",
+                "label": "Plant Niitty"
+            },
+            {
+                "object": "apa_mp_h_acc_vase_flowers_03",
+                "label": "Plant Nimik"
+            },
+            {
+                "object": "v_res_mvasechinese",
+                "label": "Plant Talvi"
+            },
+            {
+                "object": "prop_plant_int_04b",
+                "label": "Plant Lumi"
+            },
+            {
+                "object": "v_ret_j_flowerdisp",
+                "label": "Plant Aurinko"
+            },
+            {
+                "object": "v_ret_j_flowerdisp_white",
+                "label": "Plant Koulu"
+            },
+            {
+                "object": "v_res_fh_flowersa",
+                "label": "Plant Kahvi"
+            },
+            {
+                "object": "prop_plant_int_03a",
+                "label": "Plant Laiva"
+            },
+            {
+                "object": "prop_plant_int_03b",
+                "label": "Plant Koira"
+            },
+            {
+                "object": "apa_mp_h_acc_vase_flowers_04",
+                "label": "Plant Mets├ñ"
+            },
+            {
+                "object": "prop_plant_int_01a",
+                "label": "Plant Sade"
+            },
+            {
+                "object": "v_res_tre_plant",
+                "label": "Plant Uusi"
+            },
+            {
+                "object": "v_res_tre_tree",
+                "label": "Plant Tietokone"
+            },
+            {
+                "object": "v_res_mplanttongue",
+                "label": "Plant Kaupunki"
+            },
+            {
+                "object": "p_int_jewel_plant_01",
+                "label": "Plant Shinik"
+            },
+            {
+                "object": "p_int_jewel_plant_02",
+                "label": "Plant Izakki"
+            },
+            {
+                "object": "prop_peyote_lowland_02",
+                "label": "Plant Novekkot"
+            },
+            {
+                "object": "v_corp_potplant2",
+                "label": "Plant Potuyyr"
+            },
+            {
+                "object": "prop_windowbox_a",
+                "label": "Plant Flugiytt"
+            },
+            {
+                "object": "prop_windowbox_b",
+                "label": "Plant Musiikki"
+            },
+            {
+                "object": "prop_pot_plant_04a",
+                "label": "Plant Gryfik"
+            },
+            {
+                "object": "v_res_ivy",
+                "label": "Plant Slynikot"
+            },
+            {
+                "object": "prop_plant_int_01b",
+                "label": "Plant Bryn"
+            },
+            {
+                "object": "h4_prop_int_plants_04",
+                "label": "Plant Aloyn"
+            },
+            {
+                "object": "vw_prop_casino_art_plant_12a",
+                "label": "Plant Crayn"
+            },
+            {
+                "object": "vw_prop_casino_art_plant_11a",
+                "label": "Plant Craynik"
+            },
+            {
+                "object": "v_med_p_planter",
+                "label": "Plant Siliai"
+            },
+            {
+                "object": "prop_plant_int_05b",
+                "label": "Plant Vyriikki"
+            },
+            {
+                "object": "prop_pot_plant_01d",
+                "label": "Plant Fliir"
+            },
+            {
+                "object": "h4_prop_int_plants_01b",
+                "label": "Plant Dryri"
+            },
+            {
+                "object": "v_ret_gc_plant1",
+                "label": "Plant Myskir"
+            },
+            {
+                "object": "prop_pot_plant_01c",
+                "label": "Plant Pottyr"
+            },
+            {
+                "object": "prop_plant_int_02b",
+                "label": "Plant Hiikyr"
+            },
+            {
+                "object": "prop_pot_plant_02c",
+                "label": "Plant Yyirg"
+            },
+            {
+                "object": "prop_plant_int_03c",
+                "label": "Plant Sul Sul"
+            },
+            {
+                "object": "v_res_tre_plant",
+                "label": "Plant Shpansa"
+            },
+            {
+                "object": "vw_prop_casino_art_plant_01a",
+                "label": "Plant Jadosi"
+            }
+        ],
+        "label": "Flowers"
+    },
+    "art": {
+        "items": [
+            {
+                "object": "apa_mp_h_acc_artwallm_02",
+                "label": "Au Rouge De Le"
+            },
+            {
+                "object": "apa_mp_h_acc_artwallm_03",
+                "label": "Le Vert Line"
+            },
+            {
+                "object": "apa_mp_h_acc_artwallm_04",
+                "label": "Loud Rouge Magnificent"
+            },
+            {
+                "object": "apa_mp_h_acc_artwalll_01",
+                "label": "Louder Rouge Magnificient"
+            },
+            {
+                "object": "apa_mp_h_acc_artwalll_03",
+                "label": "the finest BLEU"
+            },
+            {
+                "object": "hei_heist_acc_artwalll_01",
+                "label": "Contemporary Red"
+            },
+            {
+                "object": "vw_prop_vw_wallart_10a",
+                "label": "World of Meow"
+            },
+            {
+                "object": "vw_prop_vw_wallart_142a",
+                "label": "3 Piece Diagram"
+            },
+            {
+                "object": "vw_prop_vw_wallart_124a",
+                "label": "Scene Print"
+            },
+            {
+                "object": "vw_prop_vw_wallart_90a",
+                "label": "Illum Smol"
+            },
+            {
+                "object": "ex_p_h_acc_artwalll_01",
+                "label": "Bleust Contemporary"
+            },
+            {
+                "object": "vw_prop_vw_wallart_77a",
+                "label": "Modern Maze"
+            },
+            {
+                "object": "vw_prop_vw_wallart_51a",
+                "label": "San Andreas Sunset"
+            },
+            {
+                "object": "apa_mp_h_acc_artwallm_04",
+                "label": "San Andreas Noir"
+            },
+            {
+                "object": "vw_prop_vw_wallart_43a",
+                "label": "Froot Rollup"
+            },
+            {
+                "object": "h4_mp_h_acc_artwalll_02",
+                "label": "Cliffe o Despair"
+            },
+            {
+                "object": "vw_prop_vw_wallart_33a",
+                "label": "3 Piece odeu Plant"
+            },
+            {
+                "object": "vw_prop_vw_wallart_172a",
+                "label": "Modern Pilate"
+            },
+            {
+                "object": "h4_p_h_acc_artwallm_04",
+                "label": "Abstract Oryo"
+            },
+            {
+                "object": "vw_prop_vw_wallart_117a",
+                "label": "You Eff Oh"
+            },
+            {
+                "object": "vw_prop_vw_wallart_116a",
+                "label": "Self Portrait"
+            },
+            {
+                "object": "vw_prop_vw_wallart_40a",
+                "label": "Pop Bang"
+            },
+            {
+                "object": "vw_prop_vw_wallart_01a",
+                "label": "Eggplant"
+            },
+            {
+                "object": "vw_prop_vw_wallart_138a",
+                "label": "LSPD's Dream"
+            }
+        ],
+        "label": "Art"
+    },
+    "misc_decor": {
+        "items": [
+            {
+                "object": "prop_dart_bd_cab_01",
+                "label": "Dartboard Cabinent"
+            },
+            {
+                "object": "v_res_fa_candle04",
+                "label": "Candle Lisuke"
+            },
+            {
+                "object": "v_res_fa_candle03",
+                "label": "Candle Lisäosa"
+            },
+            {
+                "object": "v_res_fa_candle01",
+                "label": "Candle Lohikäärme"
+            },
+            {
+                "object": "v_res_fa_candle02",
+                "label": "Candle Loma"
+            },
+            {
+                "object": "v_res_m_candle",
+                "label": "Candle Lovi"
+            },
+            {
+                "object": "v_res_m_candlelrg",
+                "label": "Candle Luettelo"
+            },
+            {
+                "object": "apa_mp_h_acc_scent_sticks_01",
+                "label": "Incense sticks Lumiukko"
+            },
+            {
+                "object": "prop_ashtray_01",
+                "label": "Ashtray Lusikka"
+            },
+            {
+                "object": "v_res_mp_ashtrayb",
+                "label": "Ashtray Luukku"
+            },
+            {
+                "object": "v_ret_ml_papers",
+                "label": "Stack of documents"
+            },
+            {
+                "object": "v_res_cherubvase",
+                "label": "Vase Luonto"
+            },
+            {
+                "object": "v_ret_ta_hero",
+                "label": "Figurine Luottamus"
+            },
+            {
+                "object": "v_res_r_fighorsestnd",
+                "label": "Figurine Lähde"
+            },
+            {
+                "object": "v_res_r_figcat",
+                "label": "Figurine Lähetyssaarnaaja"
+            },
+            {
+                "object": "v_res_m_horsefig",
+                "label": "Figurine Lämpömittari"
+            },
+            {
+                "object": "v_res_r_figpillar",
+                "label": "Figurine Länke"
+            },
+            {
+                "object": "v_res_r_figfemale",
+                "label": "Figurine Länkäri"
+            },
+            {
+                "object": "v_res_r_figclown",
+                "label": "Figurine Länketiede"
+            },
+            {
+                "object": "v_res_sculpt_decf",
+                "label": "Figurine Maaalue"
+            },
+            {
+                "object": "v_res_r_figdancer",
+                "label": "Figurine Maito"
+            },
+            {
+                "object": "v_res_fh_bedsideclock",
+                "label": "Alarm Mehu"
+            },
+            {
+                "object": "v_res_fa_magtidy",
+                "label": "Basket Menestys"
+            },
+            {
+                "object": "prop_cs_gunrack",
+                "label": "Weapon rack"
+            },
+            {
+                "object": "apa_mp_h_acc_tray_01",
+                "label": "Vases Merenneito"
+            },
+            {
+                "object": "v_res_mplinth",
+                "label": "Pillar Metsästäjä"
+            },
+            {
+                "object": "v_res_fa_book01",
+                "label": "How To Yoga"
+            },
+            {
+                "object": "v_res_fa_book03",
+                "label": "The Kama Sutra"
+            },
+            {
+                "object": "prop_cs_stock_book",
+                "label": "Financial Crisis"
+            },
+            {
+                "object": "v_ret_ta_book2",
+                "label": "Celtic Book"
+            },
+            {
+                "object": "v_res_fa_book02",
+                "label": "Healing Crystals"
+            },
+            {
+                "object": "vw_prop_book_stack_03b",
+                "label": "Stack Of Books 1"
+            },
+            {
+                "object": "vw_prop_book_stack_03a",
+                "label": "Stack Of Books 2"
+            },
+            {
+                "object": "vw_prop_book_stack_03c",
+                "label": "Stack Of Books 3"
+            },
+            {
+                "object": "prop_weight_rack_02",
+                "label": "Weight Rack"
+            },
+            {
+                "object": "prop_weight_rack_01",
+                "label": "Weight Wall Rack"
+            },
+            {
+                "object": "prop_weight_squat",
+                "label": "Weight Squat"
+            },
+            {
+                "object": "prop_weight_bench_02",
+                "label": "Weight Bench"
+            },
+            {
+                "object": "v_ret_ta_skull",
+                "label": "Skull Loma"
+            },
+            {
+                "object": "p_num_plate_01",
+                "label": "License Plate BR4D"
+            },
+            {
+                "object": "p_num_plate_02",
+                "label": "License Plate S1NDY"
+            },
+            {
+                "object": "p_num_plate_04",
+                "label": "License Plate TYLER"
+            },
+            {
+                "object": "p_num_plate_03",
+                "label": "License Plate L1LY"
+            },
+            {
+                "object": "prop_cs_ironing_board",
+                "label": "Ironing board Loma"
+            },
+            {
+                "object": "v_ret_fh_ironbrd",
+                "label": "Ironing board Mitali"
+            },
+            {
+                "object": "v_ilev_fos_mic",
+                "label": "Microphone Stand"
+            },
+            {
+                "object": "prop_acc_guitar_01",
+                "label": "Acoustic Guitar"
+            },
+            {
+                "object": "prop_dart_bd_01",
+                "label": "Dartboard"
+            },
+            {
+                "object": "v_res_d_dressdummy",
+                "label": "Mannequin"
+            },
+            {
+                "object": "v_res_skateboard",
+                "label": "Skateboard Mopo"
+            },
+            {
+                "object": "p_planning_board_04",
+                "label": "Heist Whiteboard"
+            },
+            {
+                "object": "ch_chint02_carcrash_neon",
+                "label": "Neon Carcrash"
+            },
+            {
+                "object": "ch_chint02_fantasy_neon",
+                "label": "Neon Fantasy"
+            },
+            {
+                "object": "ch_chint02_motorcycle_neon",
+                "label": "Neon Motorcycle"
+            },
+            {
+                "object": "ch_chint02_vinewood_neon",
+                "label": "Neon Vinewood"
+            },
+            {
+                "object": "prop_watercooler",
+                "label": "Water cooler"
+            },
+            {
+                "object": "prop_strip_pole_01",
+                "label": "Strip pole"
+            },
+            {
+                "object": "v_corp_bk_bust",
+                "label": "Figure Muistio"
+            },
+            {
+                "object": "prop_exercisebike",
+                "label": "Exercise bike"
+            },
+            {
+                "object": "apa_p_apdlc_treadmill_s",
+                "label": "Treadmill"
+            },
+            {
+                "object": "bkr_prop_clubhouse_jukebox_02a",
+                "label": "Jukebox"
+            },
+            {
+                "object": "prop_airhockey_01",
+                "label": "AirHockey table"
+            },
+            {
+                "object": "prop_arcade_01",
+                "label": "Arcade machine"
+            },
+            {
+                "object": "prop_bball_arcade_01",
+                "label": "Basketball Arcade Machine"
+            },
+            {
+                "object": "prop_pooltable_02",
+                "label": "Pool Table"
+            },
+            {
+                "object": "p_tv_cam_02_s",
+                "label": "Studio Camera"
+            },
+            {
+                "object": "prop_pool_rack_01",
+                "label": "Pool Rack Large"
+            },
+            {
+                "object": "ng_proc_litter_plasbot3",
+                "label": "Litter"
+            },
+            {
+                "object": "v_res_tt_litter1",
+                "label": "Litter"
+            },
+            {
+                "object": "v_res_tt_litter3",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_rub_litter_8",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_rub_litter_06",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_rub_litter_09",
+                "label": "Litter"
+            },
+            {
+                "object": "v_res_tt_litter2",
+                "label": "Litter"
+            },
+            {
+                "object": "ng_proc_food_chips01b",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_ld_binbag_01",
+                "label": "Litter"
+            },
+            {
+                "object": "bkr_meet_room_cash2",
+                "label": "Litter"
+            },
+            {
+                "object": "ng_proc_paper_news_rag",
+                "label": "Litter"
+            },
+            {
+                "object": "ng_proc_paper_news_meteor",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_cs_street_binbag_01",
+                "label": "Litter"
+            },
+            {
+                "object": "ch_chint02_hobo_stove",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_rub_matress_02",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_rub_binbag_06",
+                "label": "Litter"
+            },
+            {
+                "object": "ch_prop_collectibles_garbage_01a",
+                "label": "Litter"
+            },
+            {
+                "object": "v_ret_fh_pizza01",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_rub_scrap_02",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_rub_scrap_03",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_rub_scrap_04",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_rub_scrap_05",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_rub_scrap_06",
+                "label": "Litter"
+            },
+            {
+                "object": "prop_ld_scrap",
+                "label": "Litter"
+            },
+            {
+                "object": "v_res_tre_cuprack",
+                "label": "Hanger Sarvi"
+            },
+            {
+                "object": "v_ret_hd_hooks_",
+                "label": "Hanger Siipi"
+            },
+            {
+                "object": "mssd_prop_furn_desk_01a",
+                "label": "Music Desk 01"
+            },
+            {
+                "object": "mssd_prop_furn_desk_02a",
+                "label": "Music Desk 02"
+            },
+            {
+                "object": "mssd_prop_furn_drum_kit_01a",
+                "label": "Drum Kit"
+            },
+            {
+                "object": "mssd_prop_furn_drum_stick_01a",
+                "label": "Drum Sticks"
+            },
+            {
+                "object": "mssd_prop_furn_drums_01a",
+                "label": "Drums"
+            },
+            {
+                "object": "mssd_prop_furn_flightcase_01a",
+                "label": "Flight Case A"
+            },
+            {
+                "object": "mssd_prop_furn_flightcase_01b",
+                "label": "Flight Case B"
+            },
+            {
+                "object": "mssd_prop_furn_flightcase_01c",
+                "label": "Flight Case C"
+            },
+            {
+                "object": "mssd_prop_furn_guitar_01a",
+                "label": "Guitar 01"
+            },
+            {
+                "object": "mssd_prop_furn_guitar_01b",
+                "label": "Guitar 02"
+            },
+            {
+                "object": "mssd_prop_furn_guitar_02a",
+                "label": "Guitar 03"
+            },
+            {
+                "object": "mssd_prop_furn_guitar_03a",
+                "label": "Guitar 04"
+            },
+            {
+                "object": "mssd_prop_furn_guitar_stand_01",
+                "label": "Guitar Stand"
+            },
+            {
+                "object": "mssd_prop_furn_guitars_rack_01a",
+                "label": "Guitar Rack A"
+            },
+            {
+                "object": "mssd_prop_furn_guitars_rack_01b",
+                "label": "Guitar Rack B"
+            },
+            {
+                "object": "mssd_prop_furn_keyboard_01a",
+                "label": "Electric Keyboard"
+            },
+            {
+                "object": "mssd_prop_furn_mic_01a",
+                "label": "Microphone"
+            },
+            {
+                "object": "mssd_prop_furn_mixconsole_01a",
+                "label": "Mix Console"
+            },
+            {
+                "object": "mssd_prop_furn_mixer_01a",
+                "label": "Mixer A"
+            },
+            {
+                "object": "mssd_prop_furn_mixer_01b",
+                "label": "Mixer B"
+            },
+            {
+                "object": "mssd_prop_furn_mixer_02a",
+                "label": "Mixer C"
+            },
+            {
+                "object": "mssd_prop_furn_mixer_02b",
+                "label": "Mixer D"
+            },
+            {
+                "object": "mssd_prop_furn_mixer_03a",
+                "label": "Stand Mixer"
+            },
+            {
+                "object": "mssd_prop_furn_mobile_panel_01a",
+                "label": "Sound Proof Panel"
+            },
+            {
+                "object": "mssd_prop_furn_rack_audio_01a",
+                "label": "Audio Rack"
+            },
+            {
+                "object": "mssd_prop_furn_speaker_l_01a",
+                "label": "Large Speaker"
+            },
+            {
+                "object": "mssd_prop_furn_mic_bl_01b",
+                "label": "Standing Mic 01"
+            },
+            {
+                "object": "mssd_prop_furn_mic_bl_01a",
+                "label": "Standing Mic 02"
+            },
+            {
+                "object": "mssd_prop_furn_mic_bl_01b",
+                "label": "Standing Mic 03"
+            },
+            {
+                "object": "mssd_prop_furn_mic_bl_02a",
+                "label": "Desk Microphone"
+            }
+        ],
+        "label": "Misc Decor"
+    },
+    "drugs": {
+        "items": [
+            {
+                "object": "v_res_tt_lighter",
+                "label": "Steel Lighter"
+            },
+            {
+                "object": "v_res_tt_cigs01",
+                "label": "Pack of cigarettes"
+            },
+            {
+                "object": "prop_meth_bag_01",
+                "label": "Meth bag"
+            },
+            {
+                "object": "prop_coke_block_01",
+                "label": "Coke bag"
+            },
+            {
+                "object": "ex_office_swag_drugbags",
+                "label": "Drug bags"
+            },
+            {
+                "object": "prop_drug_package",
+                "label": "Drug package"
+            },
+            {
+                "object": "prop_bong_01",
+                "label": "Bong"
+            },
+            {
+                "object": "p_cs_papers_01",
+                "label": "Rolling Paper"
+            },
+            {
+                "object": "xm3_prop_xm3_bag_weed_01a",
+                "label": "Weed Bag"
+            },
+            {
+                "object": "ex_office_swag_drugbag2",
+                "label": "Drug bags 2"
+            }
+        ],
+        "label": "Unlawful"
+    },
+    "pumpkin": {
+        "items": [
+            {
+                "object": "prop_skelhands_books",
+                "label": "Skeleton Hand books"
+            },
+            {
+                "object": "prop_skelhands_candles",
+                "label": "Skeleton Hand Candles"
+            },
+            {
+                "object": "prop_skelhands_candles_b",
+                "label": "Skeleton Hand Candles"
+            },
+            {
+                "object": "v_res_rosevasedead",
+                "label": "Dead Roses"
+            },
+            {
+                "object": "prop_coffin_02",
+                "label": "Real Old Coffin"
+            },
+            {
+                "object": "prop_coffin_02b",
+                "label": "Real New Coffin"
+            }
+        ],
+        "label": "Halloween"
+    },
+    "doors": {
+        "items": [
+            {
+                "object": "apa_heist_apart2_door",
+                "label": "Basic Wooden Door"
+            }
+        ],
+        "label": "Doors"
+    },
+    "rugs": {
+        "items": [
+            {
+                "object": "apa_mp_h_acc_rugwools_03",
+                "label": "Carpet Muuttoauto"
+            },
+            {
+                "object": "ex_mp_h_acc_rugwoolm_04",
+                "label": "Carpet Mäkihyppy"
+            },
+            {
+                "object": "apa_mp_h_acc_rugwoolm_03",
+                "label": "Carpet Mänty"
+            },
+            {
+                "object": "apa_mp_h_acc_rugwoolm_04",
+                "label": "Carpet Märkä"
+            },
+            {
+                "object": "apa_mp_h_acc_rugwoolm_01",
+                "label": "Carpet Naapuri"
+            },
+            {
+                "object": "apa_mp_h_acc_rugwoolm_02",
+                "label": "Carpet Nainen"
+            },
+            {
+                "object": "apa_mp_h_acc_rugwooll_04",
+                "label": "Carpet Nalle"
+            }
+        ],
+        "label": "Rugs"
+    },
+    "shop": {
+        "items": [
+            {
+                "object": "prop_till_01",
+                "label": "Cash Register 1"
+            },
+            {
+                "object": "prop_till_02",
+                "label": "Cash Register 2"
+            }
+        ],
+        "label": "Shop"
+    }
+}

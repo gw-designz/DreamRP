@@ -1,0 +1,167 @@
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Avatar from '../components/Avatar';
+import { InfoIcon, VideoIcon } from '../components/icons';
+import { fetchNui } from '../../../utils/fetchNui';
+import { pad2 } from '../../../utils/misc';
+import { useT } from '../../../i18n/useT';
+import { deleteRecent, clearRecents } from '../../../store/slices/contactsSlice';
+import { openDialog } from '../../../store/slices/dialogSlice';
+
+const digitsOnly = (s) => String(s || '').replace(/\D/g, '');
+
+function formatTime(ts, t) {
+    if (!ts) return '';
+    const d = new Date(ts * 1000);
+    const now = new Date();
+    const sameDay = d.toDateString() === now.toDateString();
+    if (sameDay) return `${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+    const yest = new Date(now);
+    yest.setDate(now.getDate() - 1);
+    if (d.toDateString() === yest.toDateString()) return t('phone.yesterday');
+    return `${d.getMonth() + 1}/${d.getDate()}`;
+}
+
+export default function RecentsView({ onProfile }) {
+    const t = useT();
+    const dispatch = useDispatch();
+    const recents = useSelector((s) => s.contacts.recents);
+    const contacts = useSelector((s) => s.contacts.contacts);
+    const [filter, setFilter] = useState('all');
+    const [editing, setEditing] = useState(false);
+
+    const list = filter === 'missed' ? recents.filter((r) => r.missed) : recents;
+
+    const resolve = (r) => {
+        const c = contacts.find((x) => digitsOnly(x.number) === digitsOnly(r.number));
+        return { name: (c && c.name) || r.name || '', img: (c && c.img) || r.img || '' };
+    };
+
+    const call = (number) => fetchNui('phone:call:start', { number }, {});
+
+    const clearScoped = async () => {
+        const scope = filter === 'missed' ? 'missed' : 'all';
+        const ok = await dispatch(
+            openDialog({
+                title:
+                    scope === 'missed' ? t('phone.clearMissedTitle') : t('phone.clearRecentsTitle'),
+                message:
+                    scope === 'missed' ? t('phone.clearMissedMsg') : t('phone.clearRecentsMsg'),
+                buttons: [
+                    { text: t('common.cancel'), style: 'cancel', value: false },
+                    { text: t('phone.clear'), style: 'destructive', value: true },
+                ],
+            }),
+        );
+        if (ok) {
+            dispatch(clearRecents(scope));
+            setEditing(false);
+        }
+    };
+
+    return (
+        <>
+            <div className="pa-topbar">
+                <button
+                    className="pa-actionbtn"
+                    onClick={() => setEditing((e) => !e)}
+                    style={{ visibility: recents.length || editing ? 'visible' : 'hidden' }}
+                >
+                    {editing ? t('phone.done') : t('phone.edit')}
+                </button>
+                <div className="pa-segment" style={{ margin: 0, width: '45%' }}>
+                    <button
+                        className={filter === 'all' ? 'is-active' : ''}
+                        onClick={() => setFilter('all')}
+                    >
+                        {t('phone.all')}
+                    </button>
+                    <button
+                        className={filter === 'missed' ? 'is-active' : ''}
+                        onClick={() => setFilter('missed')}
+                    >
+                        {t('phone.missed')}
+                    </button>
+                </div>
+                {editing && list.length ? (
+                    <button
+                        className="pa-actionbtn"
+                        style={{ color: '#ff453a' }}
+                        onClick={clearScoped}
+                    >
+                        {t('phone.clear')}
+                    </button>
+                ) : (
+                    <span style={{ width: '3em' }} />
+                )}
+            </div>
+            <div className="pa-title">{t('phone.recents')}</div>
+
+            <div className="pa-scroll">
+                {list.length === 0 ? (
+                    <div className="pa-empty">
+                        <div className="pa-empty__title">{t('phone.noRecents')}</div>
+                        <div>{t('phone.noRecentsHint')}</div>
+                    </div>
+                ) : (
+                    <div className="pa-list">
+                        {list.map((r, i) => {
+                            const who = resolve(r);
+                            return (
+                                <button
+                                    key={r.id}
+                                    className="pa-row pa-row--in"
+                                    style={{ animationDelay: `${Math.min(i, 12) * 0.03}s` }}
+                                    onClick={() => !editing && call(r.number)}
+                                >
+                                    {editing && (
+                                        <span
+                                            className="pa-fav-remove"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                dispatch(deleteRecent(r.id));
+                                            }}
+                                        >
+                                            –
+                                        </span>
+                                    )}
+                                    <Avatar name={who.name} img={who.img} />
+                                    <span className="pa-row__main">
+                                        <span
+                                            className={`pa-row__name${r.missed ? ' pa-row__name--missed' : ''}`}
+                                        >
+                                            {who.name || r.number}
+                                        </span>
+                                        <span className="pa-row__sub">
+                                            {r.video ? <VideoIcon className="pa-row__vid" /> : null}
+                                            <span>
+                                                {r.direction === 'out'
+                                                    ? `↗ ${t('phone.outgoing')}`
+                                                    : r.missed
+                                                      ? `↙ ${t('phone.missedLower')}`
+                                                      : `↙ ${t('phone.incoming')}`}
+                                                {r.video ? ` · ${t('phone.videoTag')}` : ''}
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span className="pa-row__time">{formatTime(r.ts, t)}</span>
+                                    {!editing && (
+                                        <span
+                                            className="pa-row__info"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                onProfile(r.number);
+                                            }}
+                                        >
+                                            <InfoIcon />
+                                        </span>
+                                    )}
+                                </button>
+                            );
+                        })}
+                    </div>
+                )}
+            </div>
+        </>
+    );
+}

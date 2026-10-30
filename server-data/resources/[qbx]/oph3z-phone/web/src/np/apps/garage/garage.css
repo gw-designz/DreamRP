@@ -1,0 +1,259 @@
+.ngr .npk-panel,
+.nlc .npk-panel {
+    bottom: 0;
+}
+
+.ngr-car {
+    border-radius: 0.45em;
+    background: #353739;
+    overflow: hidden;
+}
+
+.ngr-car__head {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    width: 100%;
+    padding: 0.7em 0.8em;
+    text-align: left;
+    cursor: pointer;
+}
+
+.ngr-car__ico {
+    width: 2.45em;
+    height: 2.45em;
+    border-radius: 0.45em;
+    background: #1d1f21;
+    color: #7fb0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.ngr-car__ico .fa-svg {
+    width: 1.1em !important;
+    height: 1.1em !important;
+}
+
+.ngr-car__name {
+    display: block;
+    font-size: 0.95em;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ngr-car__sub {
+    display: block;
+    font-size: 0.7em;
+    color: var(--muted);
+}
+
+.ngr-car .npk-pill {
+    background: rgba(74, 143, 224, 0.2);
+    color: #6fb0ff;
+}
+
+.ngr-car .npk-pill--ok {
+    background: rgba(61, 214, 140, 0.15);
+    color: #3dd68c;
+}
+
+.ngr-car .npk-pill--bad {
+    background: rgba(229, 72, 77, 0.16);
+    color: #ff6b70;
+}
+
+.ngr-car__body {
+    padding: 0 0.8em 0.8em;
+}
+
+.ngr-bars {
+    display: flex;
+    gap: 0.7em;
+}
+
+.ngr-actions {
+    display: flex;
+    gap: 0.45em;
+    margin-top: 0.7em;
+}
+
+.ngr-actions button {
+    flex: 1 1 0;
+    height: 2.1em;
+    border-radius: 0.3em;
+    background: #1d1f21;
+    font-size: 0.76em !important;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45em;
+    cursor: pointer;
+}
+
+.ngr-actions button:disabled {
+    opacity: 0.45;
+    cursor: default;
+}
+
+.ngr-actions .fa-svg {
+    width: 0.8em !important;
+    height: 0.8em !important;
+}
+
+/* licenses */
+.nlc-id {
+    padding: 0.85em 0.9em 0.9em;
+    border-radius: 0.5em;
+    background: linear-gradient(135deg, #2c3f5c 0%, #22324a 60%, #283a55 100%);
+    border: 0.06em solid rgba(140, 180, 240, 0.25);
+}
+
+.nlc-id__top {
+    display: flex;
+    align-items: center;
+    font-size: 0.66em;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #cfe0f7;
+}
+
+.nlc-id__top span {
+    flex: 1 1 auto;
+}
+
+.nlc-id__star {
+    color: #f5c542;
+    cursor: pointer;
+}
+
+.nlc-id__star .fa-svg {
+    width: 1.2em !important;
+    height: 1.2em !important;
+}
+
+.nlc-id__row {
+    display: flex;
+    gap: 0.8em;
+    margin-top: 0.7em;
+}
+
+.nlc-id__photo {
+    width: 4.3em;
+    height: 4.6em;
+    border-radius: 0.3em;
+    background: #1b2638;
+    color: #4f6788;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.nlc-id__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nlc-id__photo .fa-svg {
+    width: 1.8em !important;
+    height: 1.8em !important;
+}
+
+.nlc-id__fields {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35em 0.6em;
+    align-content: start;
+}
+
+.nlc-id__f span {
+    display: block;
+    font-size: 0.56em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: #9fb4d0;
+    text-transform: uppercase;
+}
+
+.nlc-id__f b {
+    display: block;
+    font-size: 0.82em;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nlc-id__f--wide {
+    grid-column: 1 / -1;
+}
+
+.nlc-id__f--wide b {
+    font-size: 1em;
+}
+
+.nlc-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    padding: 0.7em 0.8em;
+    border-radius: 0.45em;
+    background: #353739;
+}
+
+.nlc-row__ico {
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 0.4em;
+    background: #26282a;
+    color: #7fb0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.nlc-row.is-off .nlc-row__ico {
+    color: #6b6e72;
+}
+
+.nlc-row__title {
+    font-size: 0.92em;
+    font-weight: 700;
+}
+
+.nlc-row__sub {
+    font-size: 0.68em;
+    color: #3dd68c;
+}
+
+.nlc-row.is-off .nlc-row__sub {
+    color: var(--muted);
+}
+
+.nlc-show {
+    height: 1.95em;
+    padding: 0 0.85em;
+    border-radius: 0.3em;
+    background: #4a8fe0;
+    color: #fff;
+    font-size: 0.72em !important;
+    font-weight: 700;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.nlc-show:disabled {
+    background: #2a2c2e;
+    color: #6b6e72;
+    cursor: default;
+}

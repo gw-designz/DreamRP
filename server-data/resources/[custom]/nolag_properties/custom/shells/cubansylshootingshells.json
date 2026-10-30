@@ -1,0 +1,26 @@
+{
+    "resourceName": "CUBANS_SHOOTING_1",
+    "creator": "Cubans Shooting Range",
+    "interiors": {
+        "Cubans Yl Shooting Shell": {
+            "label": "Cubans Yl Shooting Shell",
+            "doorOffset": {
+                "x": -0.645752,
+                "y": -8.521851,
+                "z": 1.007721,
+                "h": 353.865448,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 150000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/bZTHZQFgddhUQAaeWZU2c/YL.png"
+                }
+            ],
+            "model": "cubansyl_shell"
+        }
+    }
+}

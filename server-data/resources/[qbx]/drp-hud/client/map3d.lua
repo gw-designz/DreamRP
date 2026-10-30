@@ -1,0 +1,534 @@
+-- The drawn 3D minimap's game side (Config.Map3D), taken from vice_hud's
+-- client_map3d.lua (CC BY-NC-SA 4.0, see html/map3d/LICENSE). The world it draws
+-- comes from "GTA VI MiniMap (3D Buildings)" by loneeps, used with their permission.
+--
+-- Changed for my-hud: whether it is wanted is the per-player "3D minimap" setting
+-- (/hud > Minimap) instead of a KVP and a /hudmap3d command, and client/main.lua's
+-- visibility loop is what calls owns() / show().
+--
+-- html/map3d.js paints the island in flat colour with its buildings standing,
+-- where the engine's radar would be. This file decides when it stands in for
+-- the radar, and feeds it what the engine would have drawn on its own: where
+-- the player is and which way the camera looks, the GPS line, and the blips.
+--
+-- What crosses to client/main.lua is two calls, both made from its visibility loop:
+--
+--   ViceMap3D.owns()            could the drawn map stand in for the radar
+--                               right now? (not inside a building's interior,
+--                               where the engine's floor plan is the better
+--                               map; not before the page has its world; not
+--                               after its feed has failed)
+--   ViceMap3D.show(on, north)   draw it or do not, and whether north is marked
+--
+-- and one from its status loop, which already knows whether the player is
+-- spending stamina:
+--
+--   ViceMap3D.ripple(on)        rings going out from the player's marker
+--
+-- ViceMap3D.police(state) ('contact', 'searching', 'red' or nil) floods the map
+-- while wanted; my-hud has no wanted readout, so nothing calls it yet.
+--
+-- Loaded after client/settings.lua (it reads Hud.settings) and before
+-- client/main.lua so the table exists by the time the visibility loop runs.
+--
+-- The engine's radar is only ever hidden by client/main.lua, through DisplayRadar,
+-- and only while owns() is true: switch the setting off (or the page failing to
+-- load its world) and the next pass puts the real one back.
+
+ViceMap3D = {}
+
+local C = Config.Map3D or {}
+
+-- The player's own choice, from the /hud settings (Config.Defaults.map3d).
+local function chosen() return Hud.settings.map3d == true end
+
+local broken = false        -- the feed below has failed: hand the map back
+local pageUp = false        -- the page is listening
+local pageOk = false        -- the page has loaded its world and can draw
+local pageWhy = nil         -- and if it cannot, what it said
+local drawing = false       -- what the page was last told
+local policeState = nil     -- what the police know, as client.lua last said
+local rippling = false      -- the player is spending stamina, likewise
+local north = true
+local configSent = false
+local routeDirty = true
+
+local function say(action, data)
+    data = data or {}
+    data.action = action
+    SendNUIMessage(data)
+end
+
+local function round(v, places)
+    local m = 10 ^ (places or 0)
+    return math.floor(v * m + 0.5) / m
+end
+
+function ViceMap3D.owns()
+    if not chosen() or not pageOk or broken then return false end
+    if C.engineIndoors ~= false and GetInteriorFromEntity(PlayerPedId()) ~= 0 then return false end
+    return true
+end
+
+--- `on` is "draw it": client.lua has already asked owns(), so this does not
+--- ask again (and cannot disagree with what the engine's radar was told).
+function ViceMap3D.show(on, showNorth)
+    local want = on and true or false
+    if showNorth ~= nil and (showNorth and true or false) ~= north then
+        north = showNorth and true or false
+        configSent = false
+    end
+    if want == drawing and configSent then return end
+    drawing = want
+
+    local msg = { show = drawing }
+    if not configSent then
+        configSent = true
+        local view = {}
+        for k, v in pairs(C.view or {}) do view[k] = v end
+        view.north = north and view.north ~= false
+        view.buildings = C.buildings ~= false
+        if C.altitude == false then view.altitude = false end
+        msg.config = { view = view, paint = C.paint, paintNight = C.paintNight,
+                       police = type(C.police) == 'table' and C.police or nil,
+                       ripple = type(C.ripple) == 'table' and C.ripple or nil }
+    end
+    -- Said again with every "draw": the page may have been reloaded, or the
+    -- map may have been down while the police found or lost the player.
+    if drawing then
+        msg.police = policeState or false
+        msg.ripple = rippling
+    end
+    say('map3d', msg)
+    if drawing then routeDirty = true end
+end
+
+--- What the police know, in client.lua's own words for it (see wantedState()
+--- there). The reference puts no police on its minimap: it floods the map red
+--- while they can see the player and blue while they are looking, and that is
+--- all this passes on.
+function ViceMap3D.police(state)
+    if C.police == false then state = nil end
+    if state ~= 'contact' and state ~= 'searching' and state ~= 'red' then state = nil end
+    if state == policeState then return end
+    policeState = state
+    if drawing then say('map3d', { police = state or false }) end
+end
+
+--- Whether the player is spending stamina. While they are, the reference
+--- sends rings out from their marker; the page does the drawing and the
+--- timing, this only says when it starts and stops.
+function ViceMap3D.ripple(on)
+    on = on == true and C.ripple ~= false
+    if on == rippling then return end
+    rippling = on
+    if drawing then say('map3d', { ripple = on }) end
+end
+
+-- The page says hello each time it loads, which is also each time it
+-- RE-loads: everything it was told before is gone. It fetches nothing until
+-- asked, so a player who has the drawn map off never downloads its world.
+RegisterNUICallback('map3dHello', function(_, cb)
+    pageUp, pageOk, pageWhy = true, false, nil
+    drawing, configSent = false, false
+    if chosen() then say('map3d', { load = true }) end
+    cb({})
+end)
+
+RegisterNUICallback('map3dReady', function(d, cb)
+    pageOk = d and d.ok == true
+    pageWhy = d and d.why or nil
+    drawing, configSent = false, false
+    routeDirty = true
+    if not pageOk and chosen() then
+        print(('^3[my-hud]^7 the 3D minimap is off, the engine\'s radar stays: %s')
+            :format(tostring(pageWhy or 'the page gave no reason')))
+    end
+    cb({})
+end)
+
+-- Turned on from the menu after the page said hello: fetch the world now.
+-- (Turning it off needs nothing here: owns() goes false and main.lua hands
+-- the radar back on its next pass.)
+Hud.onSettings(function(new, old)
+    if new.map3d and not old.map3d and pageUp and not pageOk then say('map3d', { load = true }) end
+end)
+
+exports('IsMap3D', function() return drawing end)
+
+-- Each of the three feeds below runs in its own thread, and none of them is
+-- allowed to fail quietly. If the position feed stops, the drawn map would sit
+-- frozen over a hidden radar, so that one hands the map back to the engine.
+local function feed(name, fn)
+    CreateThread(function()
+        local okay, err = pcall(fn)
+        if okay then return end
+        print(('^1[my-hud]^7 3D minimap: the %s feed stopped: %s'):format(name, tostring(err)))
+        if name == 'position' then
+            broken = true
+            print('^3[my-hud]^7 the engine\'s radar is back in its place.')
+        end
+    end)
+end
+
+-- ---- where the player is -----------------------------------------------------
+-- Every frame while the map is up, and only what changed: a parked player
+-- costs four native calls a frame and no messages at all.
+-- How high the player is, for the camera that rides at their height. Two
+-- readings, because neither is right alone (the page puts them together, with
+-- what it knows of the building under the player; see altitudeWanted() in
+-- html/map3d.js):
+--
+--   over what is beneath them    nothing at all on a roof; everything in the air
+--   over the nearest street      right on a roof; anything at all on a hillside
+--
+-- An entity's own origin is about a metre off the ground it stands on, which
+-- is taken off. No street found is nil, and the page goes without it.
+local function heightOf(ent, p)
+    local over = math.max(0.0, (GetEntityHeightAboveGround(ent) or 0.0) - 1.0)
+    local street = nil
+    local found, node = GetClosestVehicleNode(p.x, p.y, p.z, 1, 3.0, 0)
+    if found and node then street = p.z - node.z end
+    return over, street
+end
+
+feed('position', function()
+    local lx, ly, lc, lh, ls = 0.0, 0.0, 0.0, 0.0, -1.0
+    local over, street, lo, lst = 0.0, nil, -1.0, nil
+    local heightAt = 0
+    local sentFor = false
+    while true do
+        if not drawing then
+            sentFor = false
+            Wait(200)
+        else
+            local ped = PlayerPedId()
+            local veh = GetVehiclePedIsIn(ped, false)
+            local ent = veh ~= 0 and veh or ped
+            local p = GetEntityCoords(ent)
+            local cam = GetFinalRenderedCamRot(2).z
+            local head = GetEntityHeading(ent)
+            -- Only a vehicle's speed pulls the view back, as on the radar.
+            local speed = veh ~= 0 and GetEntitySpeed(veh) or 0.0
+            -- Height is asked for five times a second, not every frame: the
+            -- street lookup is a search, and the page eases between answers.
+            local now = GetGameTimer()
+            if C.altitude ~= false and (not sentFor or now - heightAt >= 200) then
+                heightAt = now
+                over, street = heightOf(ent, p)
+            end
+            if not sentFor
+                or math.abs(p.x - lx) + math.abs(p.y - ly) > 0.03
+                or math.abs(cam - lc) > 0.05 or math.abs(head - lh) > 0.4
+                or math.abs(speed - ls) > 0.4
+                or math.abs(over - lo) > 0.4 or (street == nil) ~= (lst == nil)
+                or (street ~= nil and math.abs(street - lst) > 0.4) then
+                sentFor = true
+                lx, ly, lc, lh, ls, lo, lst = p.x, p.y, cam, head, speed, over, street
+                say('map3dPos', { x = round(p.x, 2), y = round(p.y, 2), c = round(cam, 2), h = round(head, 1), s = round(speed, 1),
+                                  g = round(over, 1), a = street and round(street, 1) or nil })
+            end
+            Wait(0)
+        end
+    end
+end)
+
+-- ---- day and night ---------------------------------------------------------------
+-- The map has a daytime look and a night one, and the page mixes between them
+-- by a number from 0 to 1. This is that number, off the game's own clock: fully
+-- night from `dark` to `dawn`, changing gradually either side of it.
+local function nightNow()
+    if C.night == false then return 0.0 end
+    if C.night == 'always' then return 1.0 end
+    local h = C.nightHours or {}
+    local dusk, dark, dawn, light = h.dusk or 19.5, h.dark or 21.0, h.dawn or 5.0, h.light or 6.5
+    local t = GetClockHours() + GetClockMinutes() / 60.0
+    if t >= dark or t < dawn then return 1.0 end
+    if t >= dusk then return (t - dusk) / (dark - dusk) end
+    if t < light then return 1.0 - (t - dawn) / (light - dawn) end
+    return 0.0
+end
+
+feed('clock', function()
+    local sent = -1.0
+    while true do
+        if drawing then
+            local n = nightNow()
+            if math.abs(n - sent) > 0.01 then
+                sent = n
+                say('map3d', { night = round(n, 3) })
+            end
+        else
+            sent = -1.0
+        end
+        Wait(2000)
+    end
+end)
+
+-- ---- the GPS line --------------------------------------------------------------
+-- The engine will not hand a route over, but it will say where a point so many
+-- metres along it is. Walk that out to routeLength and there is the line.
+-- Slot 0 is the player's own waypoint, slot 1 a blip some script gave a route.
+local ROUTE_LENGTH = (C.route and C.route.length) or 500.0
+
+local function stepAt(d)
+    if d < 150.0 then return 3.0 elseif d < 300.0 then return 5.0 end
+    return 8.0
+end
+
+--- One slot's route as runs of x,y pairs. More than one run when the route
+--- jumps (a ferry, a tunnel the road network does not connect across).
+---
+--- All of it in one frame, on purpose: the game re-plans the route as the
+--- player turns, and a walk spread over several frames could come back with
+--- the front of one plan joined to the back of another -- a line with a step
+--- in it. It is about a hundred cheap calls.
+local function walkRoute(slot)
+    local runs, run = {}, {}
+    local dist, same = 0.0, 0
+    local lastx, lasty
+    while dist <= ROUTE_LENGTH do
+        local ok, pos = GetPosAlongGpsTypeRoute(true, dist, slot)
+        if not ok or not pos then break end
+        dist = dist + stepAt(dist)
+        if lastx then
+            local dx, dy = pos.x - lastx, pos.y - lasty
+            local d2 = dx * dx + dy * dy
+            if d2 < 0.25 then
+                -- The same point twice running, past the start: the route's end.
+                if dist > 12.0 then
+                    same = same + 1
+                    if same >= 2 then break end
+                end
+                goto continue
+            end
+            same = 0
+            if d2 > 2025.0 then                 -- 45 m in one step: a jump
+                if #run >= 4 then runs[#runs + 1] = run end
+                run = {}
+            end
+        end
+        run[#run + 1] = round(pos.x, 1)
+        run[#run + 1] = round(pos.y, 1)
+        lastx, lasty = pos.x, pos.y
+        ::continue::
+    end
+    if #run >= 4 then runs[#runs + 1] = run end
+    return runs
+end
+
+local function hudRgb(index)
+    local r, g, b = GetHudColour(index)
+    return { r, g, b }
+end
+
+-- Both set by the blip scan further down.
+local routedBlip = nil      -- the blip some script has given a route
+local places = {}           -- every still blip, as the page gets them
+
+--- The still blip a point is on, if any. A waypoint set on a place in the
+--- pause map lands on that place's blip, so "is the waypoint on a place?" is
+--- "is there a blip within a few metres of it?".
+local function placeAt(x, y)
+    local best, bestD = nil, 36.0
+    for i = 1, #places do
+        local b = places[i]
+        local dx, dy = b[1] - x, b[2] - y
+        local d = dx * dx + dy * dy
+        if d < bestD then best, bestD = b, d end
+    end
+    return best
+end
+
+feed('route', function()
+    if C.route == false then return end
+    local hadRoute = false
+    while true do
+        if not drawing then
+            Wait(500)
+        else
+            -- Each route ends in a ring: four arcs in the route's light
+            -- colour. What sits in the ring is the page's business, from what
+            -- it is told here -- the picture of the place the route ends at,
+            -- or, for a waypoint dropped on open ground, nothing but colour.
+            local routes, ends = {}, {}
+            if IsWaypointActive() then
+                -- 142 / 150 are the waypoint's own purple and its light, which
+                -- client.lua has already repainted in the HUD's accent.
+                local fill, light = hudRgb(142), hudRgb(150)
+                for i, run in ipairs(walkRoute(0)) do
+                    routes[#routes + 1] = { pts = run, rgb = fill, rim = light, head = i == 1 }
+                end
+                -- The stock waypoint sprite is left out of the blips: this is it.
+                local blip = GetFirstBlipInfoId(8)
+                if DoesBlipExist(blip) then
+                    local at = GetBlipInfoIdCoord(blip)
+                    local e = { x = round(at.x, 1), y = round(at.y, 1), rgb = fill, ring = light }
+                    local place = placeAt(at.x, at.y)
+                    if place then
+                        e.icon = place[3]
+                        e.iconRgb = { place[4], place[5], place[6] }
+                    end
+                    ends[#ends + 1] = e
+                end
+            end
+            local routed = routedBlip
+            if routed and DoesBlipExist(routed.blip) then
+                for i, run in ipairs(walkRoute(1)) do
+                    routes[#routes + 1] = { pts = run, rgb = routed.rgb, head = i == 1 }
+                end
+                local at = GetBlipInfoIdCoord(routed.blip)
+                ends[#ends + 1] = { x = round(at.x, 1), y = round(at.y, 1), rgb = routed.rgb,
+                                    icon = routed.sprite, iconRgb = routed.rgb }
+            end
+            if #routes > 0 or #ends > 0 or hadRoute or routeDirty then
+                routeDirty = false
+                hadRoute = #routes > 0 or #ends > 0
+                say('map3dRoute', { routes = routes, ends = ends })
+            end
+            -- The page finds the player on the line every frame, so the line
+            -- itself only has to be fetched often enough to follow a re-plan.
+            local ped = PlayerPedId()
+            Wait(GetEntitySpeed(ped) > 5.0 and 250 or 600)
+        end
+    end
+end)
+
+-- ---- blips -----------------------------------------------------------------------
+-- The engine keeps no list a script can read; it can only be asked, sprite by
+-- sprite, for the blips wearing that sprite. So: ask for all of them every two
+-- seconds, a slice a frame, and in between only follow the ones that move.
+local SPRITE_MAX = 1000
+local SPRITES_PER_FRAME = 150
+-- 4, 5, 9: radius and area shapes. 6, 7: the player and north, which the page
+-- draws itself. 8: the waypoint, which the page draws as the route's end.
+local SKIP_SPRITE = { [4] = true, [5] = true, [6] = true, [7] = true, [8] = true, [9] = true }
+-- SET_BLIP_DISPLAY values that keep a blip off the radar: 0, 1 and 7 hide it
+-- everywhere, 3 is the pause map only. NOT 4. FiveM's documentation lists 4 as
+-- "main map only", but it is what almost every script passes
+-- (SetBlipDisplay(blip, 4)) and the engine's radar shows those blips; leaving
+-- 4 in this list threw away nearly every blip on a real server.
+local NOT_ON_MINIMAP = { [0] = true, [1] = true, [3] = true, [7] = true }
+-- Config.Map3D.hiddenBlips, as a set. A hidden blip still counts for the
+-- route's end ring below, it just isn't drawn.
+local HIDDEN_SPRITE = {}
+for _, sprite in ipairs(C.hiddenBlips or {}) do HIDDEN_SPRITE[sprite] = true end
+local BLIP_CAP = 400
+
+-- Police are not drawn. The reference shows none on its minimap, only the
+-- flood of colour (see ViceMap3D.police above), so the blips the game hangs
+-- on officers, their cars and their helicopters are left out: by sprite, and
+-- for a blip riding a ped or a vehicle, by who that is. Stations are places,
+-- not police, and stay. So does another player, whatever their job.
+local POLICE_SPRITE = { [3] = true, [15] = true, [16] = true, [41] = true, [42] = true,
+                        [43] = true, [56] = true, [672] = true }
+local POLICE_PED = { [6] = true, [27] = true, [29] = true }     -- cop, SWAT, army
+
+local function isPolice(blip, sprite, kind)
+    if C.policeBlips == true then return false end
+    if POLICE_SPRITE[sprite] then return true end
+    if kind ~= 1 and kind ~= 2 then return false end
+    local ent = GetBlipInfoIdEntityIndex(blip)
+    if not ent or ent == 0 or not DoesEntityExist(ent) then return false end
+    if IsEntityAVehicle(ent) then ent = GetPedInVehicleSeat(ent, -1) end
+    if not ent or ent == 0 or not IsEntityAPed(ent) or IsPedAPlayer(ent) then return false end
+    return POLICE_PED[GetPedType(ent)] == true
+end
+
+local colourCache = {}
+local function blipColour(blip)
+    local index = GetBlipHudColour(blip)
+    local c = colourCache[index]
+    if not c then
+        local r, g, b = GetHudColour(index)
+        c = { r, g, b }
+        colourCache[index] = c
+    end
+    return c
+end
+
+local function describe(blip, sprite)
+    local p = GetBlipInfoIdCoord(blip)
+    local c = blipColour(blip)
+    -- Nothing about which way the blip is turned: the radar draws every icon
+    -- upright, and turning them with the camera made them spin on the map.
+    local flags = IsBlipShortRange(blip) and 0 or 1
+    return { round(p.x, 1), round(p.y, 1), sprite, c[1], c[2], c[3], GetBlipAlpha(blip), flags }
+end
+
+local moving = {}       -- blip handle -> sprite, for blips riding an entity
+
+feed('blip', function()
+    if C.blips == false then return end
+    while true do
+        if not drawing then
+            Wait(500)
+        else
+            local static, found, routed = {}, {}, nil
+            local mine = GetMainPlayerBlipId()
+            for sprite = 0, SPRITE_MAX do
+                if not SKIP_SPRITE[sprite] then
+                    local blip = GetFirstBlipInfoId(sprite)
+                    while DoesBlipExist(blip) do
+                        if blip ~= mine and GetBlipAlpha(blip) > 0
+                            and not NOT_ON_MINIMAP[GetBlipInfoIdDisplay(blip)] then
+                            local kind = GetBlipInfoIdType(blip)
+                            if HIDDEN_SPRITE[sprite] or isPolice(blip, sprite, kind) then
+                                -- not drawn
+                            elseif kind == 1 or kind == 2 or kind == 3 then
+                                found[blip] = sprite
+                            elseif kind ~= 7 then
+                                static[#static + 1] = describe(blip, sprite)
+                            end
+                            if DoesBlipHaveGpsRoute(blip) then
+                                routed = { blip = blip, sprite = sprite, rgb = blipColour(blip) }
+                            end
+                        end
+                        blip = GetNextBlipInfoId(sprite)
+                    end
+                end
+                if sprite % SPRITES_PER_FRAME == SPRITES_PER_FRAME - 1 then Wait(0) end
+            end
+            moving = found
+            routedBlip = routed
+            places = static
+
+            local shown = static
+            if #static > BLIP_CAP then
+                -- Too many to be worth drawing: the nearest are drawn. (All of
+                -- them are still places a waypoint can be on.)
+                local me = GetEntityCoords(PlayerPedId())
+                shown = {}
+                for i = 1, #static do shown[i] = static[i] end
+                table.sort(shown, function(a, b)
+                    return (a[1] - me.x) ^ 2 + (a[2] - me.y) ^ 2 < (b[1] - me.x) ^ 2 + (b[2] - me.y) ^ 2
+                end)
+                for i = #shown, BLIP_CAP + 1, -1 do shown[i] = nil end
+            end
+            if drawing then
+                say('map3dBlips', { list = shown })
+            end
+            Wait(2000)
+        end
+    end
+end)
+
+feed('moving blip', function()
+    if C.blips == false then return end
+    local had = false
+    while true do
+        if not drawing then
+            Wait(500)
+        else
+            local list = {}
+            for blip, sprite in pairs(moving) do
+                if DoesBlipExist(blip) then list[#list + 1] = describe(blip, sprite) end
+            end
+            if #list > 0 or had then
+                had = #list > 0
+                say('map3dMoving', { list = list })
+            end
+            Wait(120)
+        end
+    end
+end)

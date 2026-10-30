@@ -1,0 +1,256 @@
+.nnw {
+    --bg: #f2f2f3;
+    --accent: #d42a2a;
+}
+
+.nnw-splash .npk-splash__title {
+    font-size: 3.3em;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    line-height: 0.95;
+}
+
+.nnw-splash .npk-splash__tag {
+    font-style: italic;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.nnw-splash__top {
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 0.3em;
+}
+
+.nnw-bar {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    padding: 3.2em 1em 0.7em;
+    background: #fff;
+    border-bottom: 0.14em solid #b81f1f;
+}
+
+.nnw-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+    font-weight: 800;
+    font-size: 1.35em;
+    letter-spacing: 0.01em;
+}
+
+.nnw-logo i {
+    font-style: normal;
+    font-size: 0.48em;
+    padding: 0.25em 0.45em;
+    background: #d42a2a;
+    color: #fff;
+    letter-spacing: 0.08em;
+}
+
+.nnw-live {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    font-size: 0.56em;
+    font-weight: 700;
+    color: #d42a2a;
+}
+
+.nnw-live span {
+    width: 0.55em;
+    height: 0.55em;
+    border-radius: 50%;
+    background: #d42a2a;
+    animation: nnw-blink 1.4s ease-in-out infinite;
+}
+
+@keyframes nnw-blink {
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.nnw-pen {
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+    background: #d42a2a;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nnw-pen .fa-svg {
+    width: 0.75em !important;
+    height: 0.75em !important;
+}
+
+.nnw-bar--sub {
+    border-bottom-width: 0.12em;
+}
+
+.nnw-bar--sub .nnw-logo {
+    flex: 1 1 auto;
+}
+
+.nnw-title {
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+.nnw-chips {
+    flex: 0 0 auto;
+    padding: 0.8em 1em 0.4em;
+}
+
+.nnw-chips .npk-chip {
+    background: #fff;
+    border: 0.08em solid #cfd1d4;
+    font-weight: 600;
+}
+
+.nnw-chips .npk-chip.is-on {
+    background: #d42a2a;
+    border-color: #d42a2a;
+    color: #fff !important;
+}
+
+.nnw-chips--wrap {
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.nnw-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.55em;
+    background: #fff;
+    border-radius: 0.35em;
+    overflow: hidden;
+    box-shadow: 0 0.08em 0.25em rgba(0, 0, 0, 0.06);
+    text-align: left;
+    cursor: pointer;
+}
+
+.nnw-img {
+    display: block;
+    height: 7.8em;
+    background: linear-gradient(180deg, #8996a6 0%, #3e4652 100%) center / cover no-repeat;
+}
+
+.nnw-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15em;
+    padding: 0.65em 0.8em 0.7em;
+}
+
+.nnw-card__body em {
+    font-style: normal;
+    font-size: 0.56em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #b81f1f;
+}
+
+.nnw-breaking {
+    margin-right: 0.5em;
+    padding: 0 0.3em;
+    background: #d42a2a;
+    color: #fff;
+}
+
+.nnw-card__body b {
+    font-size: 0.86em;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.nnw-card.is-lead .nnw-card__body b {
+    font-size: 1em;
+}
+
+.nnw-card__body small {
+    font-size: 0.62em;
+    color: #666;
+}
+
+.nnw-article img {
+    width: 100%;
+    border-radius: 0.35em;
+    margin-bottom: 0.6em;
+}
+
+.nnw-article em {
+    font-style: normal;
+    font-size: 0.62em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #b81f1f;
+}
+
+.nnw-article h1 {
+    margin: 0.2em 0;
+    font-size: 1.3em;
+    line-height: 1.2;
+}
+
+.nnw-article small {
+    font-size: 0.68em;
+    color: #666;
+}
+
+.nnw-article p {
+    margin-top: 0.8em;
+    font-size: 0.86em;
+    line-height: 1.55;
+    white-space: pre-wrap;
+}
+
+.nnw-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55em;
+    padding-top: 0.8em !important;
+}
+
+.nnw-story textarea {
+    min-height: 12em !important;
+}
+
+.nnw-breakrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6em 0.75em;
+    background: #fff;
+    border: 0.08em solid #d9dbde;
+    border-radius: 0.3em;
+    font-size: 0.82em;
+}
+
+.nnw-publish {
+    height: 2.35em;
+    border-radius: 0.3em;
+    background: #d42a2a;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 0.85em !important;
+    cursor: pointer;
+}
+
+.nnw-publish:disabled {
+    background: #e8a1a1;
+    cursor: default;
+}
+
+.nnw .npk-toggle.is-on {
+    background: #d42a2a;
+}

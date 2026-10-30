@@ -1,0 +1,222 @@
+{
+    "lspd_mrpd:1": {
+        "WEAPON_PISTOL": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_CARBINERIFLE": {
+            "limits": [],
+            "stock": 50
+        },
+        "bodycam": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_COMBATPISTOL": {
+            "limits": [],
+            "stock": 50
+        },
+        "radio": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_NIGHTSTICK": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_FLASHLIGHT": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_PUMPSHOTGUN": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_STUNGUN": {
+            "limits": [],
+            "stock": 50
+        },
+        "handcuffs": {
+            "limits": [],
+            "stock": 50
+        }
+    },
+    "fm-mrpd:1": {
+        "evidence_reconstructor": {
+            "limits": [],
+            "stock": 50
+        },
+        "vest_strong": {
+            "limits": [],
+            "stock": 50
+        },
+        "nightvision": {
+            "limits": [],
+            "stock": 50
+        },
+        "evidence_kit": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_STUNGUN": {
+            "limits": [],
+            "stock": 50
+        },
+        "thermalvision": {
+            "limits": [],
+            "stock": 50
+        },
+        "police_shield": {
+            "limits": [],
+            "stock": 50
+        },
+        "broom": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_COMBATPISTOL": {
+            "limits": [],
+            "stock": 50
+        },
+        "tracking_band": {
+            "limits": [],
+            "stock": 50
+        },
+        "camera": {
+            "limits": [],
+            "stock": 50
+        },
+        "consign": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_FLASHBANG": {
+            "limits": [],
+            "stock": 50
+        },
+        "bodycam": {
+            "limits": [],
+            "stock": 50
+        },
+        "cable_ties": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_NIGHTSTICK": {
+            "limits": [],
+            "stock": 50
+        },
+        "swab_kit": {
+            "limits": [],
+            "stock": 50
+        },
+        "megaphone": {
+            "limits": [],
+            "stock": 50
+        },
+        "rappel_kit": {
+            "limits": [],
+            "stock": 50
+        },
+        "tracking_vehicle": {
+            "limits": [],
+            "stock": 50
+        },
+        "fingerprint_scanner": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_PISTOL": {
+            "limits": [],
+            "stock": 49
+        },
+        "WEAPON_RADAR": {
+            "limits": [],
+            "stock": 50
+        },
+        "barrier": {
+            "limits": [],
+            "stock": 50
+        },
+        "roadcone": {
+            "limits": [],
+            "stock": 50
+        },
+        "vest_normal": {
+            "limits": [],
+            "stock": 50
+        },
+        "fingerprint_kit": {
+            "limits": [],
+            "stock": 50
+        },
+        "handcuffs": {
+            "limits": [],
+            "stock": 50
+        },
+        "radio": {
+            "limits": [],
+            "stock": 50
+        },
+        "breathalyzer": {
+            "limits": [],
+            "stock": 50
+        },
+        "mouthtape": {
+            "limits": [],
+            "stock": 50
+        },
+        "spikestrip": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_PUMPSHOTGUN": {
+            "limits": [],
+            "stock": 50
+        },
+        "battering_ram": {
+            "limits": [],
+            "stock": 50
+        },
+        "police_diving_suit": {
+            "limits": [],
+            "stock": 50
+        },
+        "headbag": {
+            "limits": [],
+            "stock": 50
+        },
+        "cleaning_kit": {
+            "limits": [],
+            "stock": 50
+        },
+        "wheel_clamp": {
+            "limits": [],
+            "stock": 50
+        },
+        "cuffs_key": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_FLASHLIGHT": {
+            "limits": [],
+            "stock": 50
+        },
+        "body_cam": {
+            "limits": [],
+            "stock": 50
+        },
+        "drug_test_kit": {
+            "limits": [],
+            "stock": 50
+        },
+        "WEAPON_CARBINERIFLE": {
+            "limits": [],
+            "stock": 50
+        },
+        "gps": {
+            "limits": [],
+            "stock": 50
+        }
+    }
+}

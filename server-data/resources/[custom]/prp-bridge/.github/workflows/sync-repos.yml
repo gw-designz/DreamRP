@@ -1,0 +1,26 @@
+name: Update submodule
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-submodule:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout prp-tebex-resources
+        uses: actions/checkout@v4
+        with:
+          repository: ProdigyPRP/prp-tebex-resources
+          ssh-key: ${{ secrets.PARENT_REPO_DEPLOY_KEY }}
+          submodules: recursive
+
+      - name: Update prp-bridge submodule pointer
+        run: |
+          git submodule update --remote "[bridge]/prp-bridge"
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add "[bridge]/prp-bridge"
+          git diff --staged --quiet && echo "No changes to commit" || git commit -m "chore(prp-bridge): update submodule"
+          git push

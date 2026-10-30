@@ -1,0 +1,1 @@
+LogWebhookUrl = "" -- Webhook URL for logging staff events actions, leave empty to disable logging

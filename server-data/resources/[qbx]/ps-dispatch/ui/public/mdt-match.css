@@ -1,0 +1,45 @@
+@font-face { font-family: 'Inter Variable'; src: url('./inter-latin.woff2') format('woff2'); font-style: normal; font-weight: 100 900; font-display: swap; }
+html, body { font-family: 'Inter Variable', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; text-rendering: geometricPrecision; }
+/* Matches the selected-call card in ps-mdt's map. */
+.pd-panel { background: rgba(17,17,17,.96); border: 1px solid rgba(255,255,255,.08); border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,.5); }
+.pd-head { gap: 7px; padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,.06); }
+.pd-title { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.9); }
+.pd-ctl { border: 1px solid rgba(255,255,255,.06); border-radius: 3px; color: rgba(255,255,255,.35); }
+.pd-ctl:hover { color: rgba(255,255,255,.8); border-color: rgba(255,255,255,.14); }
+.pd-row { background: transparent; border-color: rgba(255,255,255,.07); border-radius: 3px; }
+.pd-row:hover, .pd-row--open { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.14); }
+.pd-row-msg { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.9); }
+.pd-detail { background: rgba(255,255,255,.02); border-color: rgba(255,255,255,.07); }
+.pd-kv-label { font-size: 8px; font-weight: 700; letter-spacing: .5px; color: rgba(255,255,255,.35); }
+.pd-kv-value { font-size: 11px; color: rgba(255,255,255,.85); }
+.pd-badge { border-radius: 3px; background: rgba(255,255,255,.04); color: rgba(255,255,255,.75); }
+.pd-tabs { border-bottom-color: rgba(255,255,255,.06); }
+.pd-tab--active { color: #93c5fd; border-bottom-color: rgb(59,130,246); }
+.pd-scroll::-webkit-scrollbar { width: 4px; }
+.pd-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,.08); border-radius: 2px; }
+.pd-modal { background: rgba(17,17,17,.96); border: 1px solid rgba(255,255,255,.08); border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,.5); }
+/* Dashboard panel and angled controls from ps-mdt Dashboard.svelte. */
+.pd-panel { background: rgb(11,14,26); border: 1px solid rgba(148,163,200,.14); border-radius: 8px; }
+.pd-head { gap: 14px; padding: 12px 16px; border-bottom: 1px solid rgba(148,163,200,.14); }
+.pd-title { font-size: 14px; font-weight: 700; color: #fff; }
+.pd-icon { position: relative; isolation: isolate; width: 38px; height: 34px; background: none; border: 0; color: rgba(147,197,253,.95); font-size: 16px; overflow: visible; }
+.pd-icon::before { content: ''; position: absolute; inset: 0; transform: skewX(-14deg); background: rgba(59,130,246,.16); border: 1px solid rgba(59,130,246,.4); border-radius: 3px; z-index: -1; }
+.pd-icon--priority::before { background: rgba(239,68,68,.16); border-color: rgba(239,68,68,.4); }
+.pd-icon--green::before { background: rgba(16,185,129,.16); border-color: rgba(16,185,129,.4); }
+.pd-ctl, .pd-btn { position: relative; isolation: isolate; background: none; border: 0; border-radius: 0; color: rgba(255,255,255,.87); overflow: visible; }
+.pd-ctl::before, .pd-btn::before { content: ''; position: absolute; inset: 0; transform: skewX(-14deg); background: rgba(255,255,255,.05); border: 1px solid rgba(148,163,200,.24); border-radius: 3px; z-index: -1; transition: background .12s, border-color .12s; }
+.pd-ctl:hover, .pd-btn:hover { background: none; color: #fff; }
+.pd-ctl:hover::before, .pd-btn:hover::before { background: rgba(59,130,246,.2); border-color: rgba(59,130,246,.55); }
+.pd-btn--green::before { background: rgba(16,185,129,.2); border-color: rgba(16,185,129,.45); }
+.pd-btn--red::before, .pd-ctl--active::before { background: rgba(239,68,68,.16); border-color: rgba(239,68,68,.45); }
+.pd-tabs { position: relative; isolation: isolate; margin: 10px 16px 0; padding: 4px; border: 0; }
+.pd-tabs::before { content: ''; position: absolute; inset: 0; transform: skewX(-14deg); background: rgba(0,0,0,.25); border: 1px solid rgba(148,163,200,.14); border-radius: 3px; z-index: -1; pointer-events: none; }
+.pd-tab { position: relative; isolation: isolate; flex: 1; justify-content: center; height: 30px; margin: 0; padding: 0 8px; border: 0; text-transform: none; letter-spacing: 0; font-size: 13px; font-weight: 600; color: rgba(255,255,255,.87); }
+.pd-tab::before { content: ''; position: absolute; inset: 0; transform: skewX(-14deg); border-radius: 3px; z-index: -1; }
+.pd-tab:hover::before { background: rgba(255,255,255,.04); }
+.pd-tab--active { color: rgba(147,197,253,.95); }
+.pd-tab--active::before { background: rgba(59,130,246,.2); box-shadow: inset 0 0 0 1px rgba(59,130,246,.45); }
+.pd-row { padding: 10px 12px; background: none; border: 0; border-bottom: 1px solid rgba(148,163,200,.14); border-radius: 4px; }
+.pd-row:hover, .pd-row--open { background: rgba(255,255,255,.05); }
+.pd-row-msg { font-size: 14px; font-weight: 600; color: #fff; }
+.pd-modal { background: rgb(11,14,26); border: 1px solid rgba(148,163,200,.14); border-radius: 8px; }

@@ -1,0 +1,74 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/23/2026, 5:10:26 PM
+================================================================
+================================================================
+======== Log Rotated - 8/23/2026, 5:10:30 PM                    
+================================================================
+[17:11:08][realscrp] logged in from 127.0.0.1 via password auth
+[17:12:15][realscrp] Refreshed resources
+[17:24:04][realscrp] executed "RESTART SERVER"
+[17:26:59][realscrp] executed "RESTART SERVER"
+[17:36:02][realscrp] Refreshed resources
+[17:36:06][realscrp] executed "RESTART SERVER"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/23/2026, 8:32:31 PM
+================================================================
+[20:32:57][realscrp] logged in from 127.0.0.1 via password auth
+[20:33:02][realscrp] executed "STOP SERVER"
+[20:33:02][realscrp] Config changes: server.dataPath
+[20:33:02][realscrp] Resetting server data settings.
+[20:33:14][realscrp] Config changes: server.dataPath
+[20:33:14][realscrp] Changing global/fxserver settings via setup stepper.
+[20:33:59][MONITOR] Restarting server: Server boot timed out (P:45s|HB:--|HC:--).
+[20:34:51][MONITOR] Restarting server: Server boot timed out (P:45s|HB:--|HC:--).
+[20:35:02][MONITOR] Restarting server: Server process close detected.
+[20:39:46][realscrp] executed "RESTART SERVER"
+[20:40:39][realscrp] executed "RESTART SERVER"
+[20:41:21][realscrp] Ensured resource "rcore_arm_wrestling"
+[20:41:23][realscrp] Ensured resource "rcore_bowling"
+[20:41:31][realscrp] Ensured resource "news"
+[20:41:36][realscrp] Ensured resource "karma-ramadan"
+[20:41:42][realscrp] Ensured resource "tgiann-fallouthacker"
+[20:41:45][realscrp] Ensured resource "shops"
+[20:41:51][realscrp] Ensured resource "flawws-debug"
+[20:41:53][realscrp] Ensured resource "handling-editor"
+[20:41:55][realscrp] Ensured resource "handlingfix"
+[20:41:56][realscrp] Ensured resource "pun_idgun"
+[20:41:59][realscrp] Ensured resource "karma-animalark"
+[20:42:02][realscrp] Ensured resource "karma-ramadan"
+[20:42:04][realscrp] Ensured resource "uj_vesp_ipl"
+[20:42:07][realscrp] Ensured resource "uj_VESP_v2"
+[20:42:09][realscrp] Ensured resource "uj_VESP_v2"
+[20:42:15][realscrp] Ensured resource "karma-avshells1"
+[20:42:43][realscrp] Refreshed resources
+[20:42:50][realscrp] Ensured resource "int_highhouse"
+[20:42:53][realscrp] Ensured resource "karma-avshells1"
+[20:42:54][realscrp] Ensured resource "karma-avshells2"
+[20:42:55][realscrp] Ensured resource "karma-richardshells"
+[20:42:57][realscrp] Ensured resource "DP_Motel"
+[20:42:58][realscrp] Ensured resource "DP_Motel"
+[20:42:59][realscrp] Ensured resource "cfx_gn_von_hotel"
+[20:43:00][realscrp] Ensured resource "cfx_gn_von_lobby"
+[20:44:13][realscrp] executed "RESTART SERVER"
+[20:46:01][realscrp] Refreshed resources
+[20:46:19][realscrp] Stopped resource "karma-alamoroad"
+[20:46:21][realscrp] Stopped resource "karma-alley"
+[20:46:21][realscrp] Stopped resource "karma-autoexotic"
+[20:46:23][realscrp] Stopped resource "karma-autoexotic"
+[20:46:24][realscrp] Stopped resource "karma-beekers"
+[20:46:25][realscrp] Stopped resource "karma-bikesrus"
+[20:46:26][realscrp] Stopped resource "karma-blackwoods"
+[20:46:28][realscrp] Stopped resource "karma-burgershotmap"
+[20:46:29][realscrp] Stopped resource "karma-chichis"
+[20:46:30][realscrp] Stopped resource "karma-cnc"
+[20:46:32][realscrp] Stopped resource "karma-committee"
+[20:46:33][realscrp] Stopped resource "karma-devilsdoor"
+[20:46:34][realscrp] Stopped resource "karma-gocart"
+[20:46:35][realscrp] Stopped resource "karma-goodvibestaco"
+[20:46:37][realscrp] Stopped resource "karma-harmony"
+[20:46:39][realscrp] Stopped resource "karma-jewelry"
+[20:46:41][realscrp] Stopped resource "karma-legacystudio"
+[20:46:43][realscrp] Stopped resource "karma-legion"
+[20:46:45][realscrp] Stopped resource "karma-louies"
+[20:46:46][realscrp] Stopped resource "karma-luxuryautos"
+[20:50:16][realscrp] executed "RESTART SERVER"

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-hud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+    <div id="hud" class="hidden">
+
+        <!-- The 3D minimap (map3d.js): drawn over the minimap rectangle, under its frame, while
+             client/map3d.lua says it stands in for the game radar. Placed by applyMinimap(). -->
+        <canvas id="map3d" class="hidden" aria-hidden="true"></canvas>
+
+        <!-- Bottom left, under the minimap: one icon per stat with its bar underneath.
+             Voice, stress, oxygen, radio and dev only show while they have something to say. -->
+        <section id="w-status" class="widget anchor-bl" data-widget="status" data-label="Player Status">
+            <div class="status-row" id="strip">
+                <div class="st" data-stat="health"><i class="ico i-heart-solid"></i></div>
+                <div class="st" data-stat="armor"><i class="ico i-shield"></i></div>
+                <div class="st need" data-stat="hunger"><i class="ico i-food"></i></div>
+                <div class="st need" data-stat="thirst"><i class="ico i-glass"></i></div>
+                <div class="st" data-stat="stamina"><i class="ico i-runner"></i></div>
+                <div class="st off" data-stat="stress"><i class="ico i-brain"></i></div>
+                <div class="st off" data-stat="oxygen"><i class="ico i-lungs"></i></div>
+                <div class="st off" id="voice" data-stat="voice" data-range="2"><i class="ico i-mic"></i></div>
+                <div class="st off" data-stat="radio"><i class="ico i-radio"></i></div>
+                <div class="st off" data-stat="dev"><i class="ico i-code"></i></div>
+            </div>
+        </section>
+
+        <!-- Top center: direction, street, zone, waypoint -->
+        <section id="w-location" class="widget anchor-tc" data-widget="location" data-label="Location">
+            <!-- compass location style only: a heading tape with the waypoint marked on it -->
+            <div class="compass" id="compass">
+                <div class="cmp-window">
+                    <div class="cmp-strip" id="cmp-strip"></div>
+                    <i class="cmp-wp off" id="cmp-wp"></i>
+                    <span class="cmp-deg" id="cmp-deg">0</span>
+                </div>
+            </div>
+            <div class="loc-item" id="loc-dir"><i class="ico i-compass"></i><span id="heading">N</span></div>
+            <div class="loc-item" id="loc-street"><i class="ico i-pin"></i><span id="street"></span><span class="loc-cross" id="loc-cross"><b>x</b><span id="cross"></span></span></div>
+            <div class="loc-item" id="loc-zone"><i class="ico i-map"></i><span id="zone"></span></div>
+            <div class="loc-item off" id="mm-waypoint"><i class="ico i-arrow wp-arrow"></i><span id="wp-dist">0.00 mi</span></div>
+        </section>
+
+        <!-- Top right: item / weapon toasts -->
+        <section id="w-toasts" class="widget anchor-tr" data-widget="toasts" data-label="Item Toasts">
+            <div id="toast-list"></div>
+        </section>
+
+        <!-- Bottom right: controls bar (key prompts from every script, vehicle key hints) -->
+        <section id="w-controls" class="widget anchor-br" data-widget="controls" data-label="Key Hints">
+            <div id="control-bar" class="off"></div>
+        </section>
+
+        <!-- Bottom left: frame around the game's radar, placed by client/minimap.lua -->
+        <section id="w-minimap" class="widget off" data-widget="minimap" data-label="Minimap">
+            <div class="mm-frame"></div>
+        </section>
+
+        <!-- Top right: weapon chip (gun + rounds in the clip) -->
+        <section id="w-ammo" class="widget anchor-tr off" data-widget="ammo">
+            <div class="chip chip-weapon"><i class="ico i-gun"></i><span id="ammo-clip">0</span></div>
+        </section>
+
+        <!-- Player info: voice + avatar and job + clock top left; money, ID and radio channel top right -->
+        <section id="w-voicebox" class="widget anchor-tl" data-widget="voicebox">
+            <div class="vbox" data-range="2">
+                <div class="vb-voice"><span class="vb-wave"><i></i><i></i><i></i><i></i><i></i></span><span class="vb-range"><i></i><i></i><i></i></span></div>
+                <div class="vb-avatar"><i class="ico i-user"></i><img id="vb-avatar" alt=""></div>
+            </div>
+        </section>
+        <section id="w-job" class="widget anchor-tl" data-widget="job">
+            <div class="chip chip-job"><i class="ico i-briefcase"></i><span id="job-label"></span></div>
+            <div class="chip"><i class="ico i-clock"></i><span id="clock"></span></div>
+        </section>
+        <section id="w-money" class="widget anchor-tr" data-widget="money">
+            <div class="chip"><i class="ico i-bank"></i><span id="bank"></span></div>
+            <div class="chip"><i class="ico i-cash"></i><span id="cash"></span></div>
+        </section>
+        <section id="w-pid" class="widget anchor-tr" data-widget="pid">
+            <div class="chip"><i class="ico i-idcard"></i><span id="pid"></span></div>
+        </section>
+        <section id="w-radio" class="widget anchor-tr off" data-widget="radio">
+            <div class="chip"><i class="ico i-radio-s"></i><span id="radio-ch"></span></div>
+        </section>
+
+        <!-- Right side: speed limit of the road (US sign or minimal chip) -->
+        <section id="w-limit" class="widget anchor-tr off" data-widget="limit">
+            <div class="sign-us"><small>SPEED<br>LIMIT</small><b id="limit-us">35</b></div>
+            <div class="sign-min"><b id="limit-min">35</b><small id="limit-unit">mph</small></div>
+        </section>
+
+        <!-- Above the minimap: boat heading + trim, aircraft attitude / altitude / heading -->
+        <section id="w-boat" class="widget anchor-bl off" data-widget="boat">
+            <div class="pn pn-heading" id="boat-heading-box"><i class="ico i-compass-o"></i><div><b id="boat-deg">0°</b><small id="boat-dir">N</small></div></div>
+            <div class="pn pn-trim" id="boat-trim-box">
+                <div class="trim-ind"><span class="trim-track"></span><span class="trim-bar" id="trim-bar"><i></i></span></div>
+                <div><b id="trim-label">LEVEL</b><small id="trim-deg">0°</small></div>
+            </div>
+        </section>
+        <section id="w-air" class="widget anchor-bl off" data-widget="air">
+            <div class="pn pn-att" id="air-att">
+                <div class="att-view"><div class="att-horizon" id="att-horizon"></div><i class="att-mark"></i><i class="att-wings"></i></div>
+                <div class="att-read"><span id="att-p">P: 0°</span><span id="att-r">R: 0°</span></div>
+            </div>
+            <div class="pn-row">
+                <div class="pn pn-alt" id="air-alt"><i class="ico i-arrow-up"></i><div><b id="alt-val">0 ft</b><small id="alt-rate">0 ft/m</small></div></div>
+                <div class="pn pn-hdg" id="air-hdg"><i class="ico i-compass-o"></i><b id="air-deg">0°</b></div>
+            </div>
+        </section>
+
+        <!-- Bottom center: vehicle control panel (opened with Config.VehicleControls) -->
+        <section id="w-vcontrols" class="widget anchor-bc off" data-widget="vcontrols">
+            <div class="vc" id="vc-panel"><button type="button" class="vc-x" id="vc-close"><i class="ico i-x"></i></button></div>
+        </section>
+
+        <!-- Bottom center: stamina and oxygen, only while draining -->
+        <section id="w-bars" class="widget anchor-bc off" data-widget="bars" data-label="Stamina">
+            <div class="sbar-track main" id="bar-stamina"><div class="sbar-fill"></div></div>
+            <div class="sbar-track sub" id="bar-oxygen"><div class="sbar-fill"></div></div>
+        </section>
+
+        <!-- Bottom right: fuel arc on the left, then per style: circuit = RPM arc 0-9 around digital
+             speed, classic = red wedge swept by a needle over a tick ring -->
+        <section id="w-speedo" class="widget anchor-br off" data-widget="speedo" data-label="Speedometer">
+            <div class="gauge">
+                <svg class="gauge-svg" viewBox="-145 -145 290 250" xmlns="http://www.w3.org/2000/svg">
+                    <path id="fuel-track" class="g-fuel-track"></path>
+                    <path id="fuel-fill" class="g-fuel-fill" pathLength="100"></path>
+                    <defs>
+                        <radialGradient id="cl-glow" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="118">
+                            <stop offset="0" stop-color="#3a0a10" stop-opacity=".05"></stop>
+                            <stop offset=".65" stop-color="#b3121f" stop-opacity=".28"></stop>
+                            <stop offset="1" stop-color="#ff2a3d" stop-opacity=".62"></stop>
+                        </radialGradient>
+                    </defs>
+                    <g class="g-circuit">
+                        <path id="rpm-inner" class="g-inner"></path>
+                        <g id="rpm-ticks" class="g-ticks"></g>
+                        <path id="rpm-track" class="g-rpm-track"></path>
+                        <path id="rpm-fill" class="g-rpm-fill" pathLength="100"></path>
+                        <g id="rpm-segs" class="g-nums"></g>
+                    </g>
+                    <g class="g-classic">
+                        <path id="cl-wedge" class="cl-wedge"></path>
+                        <path id="cl-track" class="cl-track"></path>
+                        <g id="cl-ticks" class="cl-ticks"></g>
+                        <path id="cl-edge" class="cl-edge"></path>
+                        <line id="cl-needle" class="cl-needle"></line>
+                        <circle id="cl-tip" class="cl-tip" r="5"></circle>
+                    </g>
+                    <!-- Speedometer styles. data-arc="r from to" paths and data-scale tick groups are
+                         drawn by buildStyleGauges(); .ndl needles turn with --nv (0-100). -->
+                    <defs>
+                        <linearGradient id="ev-fill" gradientUnits="userSpaceOnUse" x1="0" y1="-110" x2="100" y2="80">
+                            <stop offset="0" stop-color="#ff9aa4"></stop>
+                            <stop offset="1" stop-color="#ff2a3d"></stop>
+                        </linearGradient>
+                        <linearGradient id="ndl-fade" x1="0" y1="1" x2="0" y2="0">
+                            <stop offset="0" stop-color="#8d929b"></stop>
+                            <stop offset="1" stop-color="#ff2a3d"></stop>
+                        </linearGradient>
+                    </defs>
+                    <g class="g-modern">
+                        <circle class="mp-ring" r="112"></circle>
+                        <path class="sx-fill fill-rpm mp-rpm" data-arc="103 -128 128" pathLength="100"></path>
+                        <g class="sx-ticks mp-ticks" data-scale="mp" data-r="112" data-len="14" data-num-r="82" data-from="-116" data-to="116"></g>
+                    </g>
+                    <g class="g-analog">
+                        <g transform="translate(40 20)">
+                            <g class="sx-ticks an-ticks" data-scale="an" data-r="88" data-len="13" data-num-r="64" data-from="-127" data-to="127" data-red-from="7"></g>
+                            <g class="ndl an-ndl" style="--a0: -158.75; --span: 285.75; --nv: var(--rpm)"><path d="M -1.3 0 L 0 -76 L 1.3 0 Z"></path></g>
+                            <circle class="an-hub" r="7"></circle>
+                        </g>
+                        <g transform="translate(-101 72)">
+                            <g class="sx-ticks an-fuel-ticks" data-scale="anf" data-r="33" data-len="7" data-from="-95" data-to="95"></g>
+                            <g class="ndl an-ndl" style="--a0: -95; --span: 190; --nv: var(--fuel)"><path d="M -1 0 L 0 -29 L 1 0 Z"></path></g>
+                            <circle class="an-hub" r="4"></circle>
+                        </g>
+                    </g>
+                    <g class="g-dual">
+                        <g transform="translate(-74 30)">
+                            <circle class="dd-face" r="69"></circle>
+                            <g class="sx-ticks" data-scale="dd" data-r="66" data-len="9" data-from="-125" data-to="125"></g>
+                            <path class="dd-track" data-arc="56 40 150"></path>
+                            <path class="sx-fill fill-rpm dd-pwr" data-arc="56 40 150" pathLength="100"></path>
+                            <text class="dd-text" x="-37" y="-27">ECO</text>
+                            <text class="dd-text" x="34" y="-27">PWR</text>
+                            <text class="dd-text" x="-37" y="22">CHG</text>
+                            <circle class="dd-bolt" cy="21" r="8"></circle>
+                            <g class="ndl dd-ndl" style="--a0: -125; --span: 250; --nv: var(--rpm)"><path d="M -1.5 0 L 0 -52 L 1.5 0 Z"></path></g>
+                            <circle class="dd-hub" r="5"></circle>
+                        </g>
+                        <g transform="translate(74 28)">
+                            <circle class="dd-face" r="70"></circle>
+                            <path class="dd-red" data-arc="64 105 135"></path>
+                            <g class="sx-ticks dd-speed-ticks" data-scale="speed" data-r="66" data-len="9" data-num-r="50"></g>
+                            <g class="ndl dd-ndl" style="--a0: -135; --span: 270; --nv: var(--spd)"><path d="M -1.5 0 L 0 -58 L 1.5 0 Z"></path></g>
+                            <circle class="dd-hub" r="6"></circle>
+                        </g>
+                        <g transform="translate(0 -58)">
+                            <circle class="dd-face" r="33"></circle>
+                            <g class="sx-ticks" data-scale="dd" data-r="30" data-len="5" data-from="-60" data-to="60"></g>
+                            <g class="ndl dd-ndl" style="--a0: -60; --span: 120; --nv: var(--fuel)"><path d="M -1 0 L 0 -23 L 1 0 Z"></path></g>
+                            <circle class="dd-hub" r="3.5"></circle>
+                        </g>
+                    </g>
+                    <g class="g-linear">
+                        <g id="ln-bar" class="ln-bar"></g>
+                    </g>
+                    <g class="g-ev">
+                        <path class="ev-side ev-track" data-arc="137 -124 -40"></path>
+                        <path class="ev-side sx-fill fill-fuel ev-fill-side" data-arc="137 -124 -40" pathLength="100"></path>
+                        <path class="ev-side ev-track" data-arc="137 124 40"></path>
+                        <path class="ev-side sx-fill fill-engine ev-fill-side" data-arc="137 124 40" pathLength="100"></path>
+                        <path class="ev-rpm ev-track" data-arc="108 -135 135"></path>
+                        <path class="ev-rpm sx-fill ev-power" data-arc="108 0 135" pathLength="100"></path>
+                        <path class="ev-mark" d="M 0 -100 V -118 M 95.1 -30.9 L 112.2 -36.5"></path>
+                        <text class="ev-label" x="-66" y="-37">ECO</text>
+                        <text class="ev-label" x="65" y="-37">PWR</text>
+                        <text class="ev-label" x="-71" y="48">CHG</text>
+                        <circle class="ev-bolt-bg" cy="-64" r="12"></circle>
+                    </g>
+                    <g class="g-watch">
+                        <rect class="wt-crown" x="99" y="-95" width="9" height="30" rx="3"></rect>
+                        <rect class="wt-body" x="-101" y="-141" width="202" height="244" rx="36"></rect>
+                        <rect class="wt-screen" x="-94" y="-134" width="188" height="230" rx="30"></rect>
+                        <path class="wt-rule" d="M -94 -60 H 94 M -94 24 H 94 M 0 24 V 96"></path>
+                    </g>
+                </svg>
+                <div class="g-center">
+                    <div class="g-gear" id="g-gear"><span class="g-label" id="g-label">Alt</span> <span id="gear">N</span></div>
+                    <div class="g-speed"><span id="speed-dim">000</span><span id="speed"></span></div>
+                    <div class="g-unit" id="speed-unit">MP/H</div>
+                </div>
+                <i class="ico i-fuel g-fuel-ico" id="fuel-ico"></i>
+                <div class="g-mid">
+                    <span class="gi" id="ico-belt"><i class="ico i-seatbelt"></i></span>
+                    <span class="gi" id="ico-lock"><i class="ico i-lock"></i></span>
+                </div>
+                <span class="g-dashes" id="ico-lights"><b></b><b></b><b></b></span>
+                <div class="train-flags"><span id="tf-brake">BRAKE</span><span id="tf-doors">DOORS</span></div>
+                <!-- text and icons of the styles, centered on --x / --y; [data-bind] is filled by renderVehicle -->
+                <div class="sx sx-modern">
+                    <i class="ico i-gear mp-cog" style="--x: 145px; --y: 108px"></i>
+                    <span class="mp-gear" data-bind="gear" style="--x: 145px; --y: 126px"></span>
+                    <span class="mp-speed" data-bind="speed" style="--x: 145px; --y: 162px"></span>
+                    <span class="mp-unit" data-bind="unit" style="--x: 145px; --y: 199px"></span>
+                    <i class="ico i-engine mp-ico" style="--x: 115px; --y: 236px"></i>
+                    <i class="ico i-fuel sx-fuel-ico mp-ico" style="--x: 175px; --y: 236px"></i>
+                    <b class="mp-bar bar-engine" style="--x: 115px; --y: 249px"></b>
+                    <b class="mp-bar bar-fuel" style="--x: 175px; --y: 249px"></b>
+                </div>
+                <div class="sx sx-analog">
+                    <span class="an-unit" data-bind="unit" style="--x: 185px; --y: 202px"></span>
+                    <span class="an-speed" data-bind="speed" style="--x: 185px; --y: 224px"></span>
+                    <i class="ico i-fuel sx-fuel-ico an-fuel-ico" style="--x: 44px; --y: 234px"></i>
+                </div>
+                <div class="sx sx-dual">
+                    <i class="ico i-fuel sx-fuel-ico dd-ico" style="--x: 145px; --y: 100px"></i>
+                    <i class="ico i-bolt dd-ico" style="--x: 71px; --y: 196px"></i>
+                    <span class="dd-gear" data-bind="gear" style="--x: 71px; --y: 221px"></span>
+                    <span class="dd-unit" data-bind="unit" style="--x: 219px; --y: 199px"></span>
+                    <span class="dd-odo" data-bind="odo5" style="--x: 219px; --y: 216px"></span>
+                </div>
+                <div class="sx sx-linear">
+                    <span class="ln-gear" data-bind="gear" style="--x: 107px; --y: 51px"></span>
+                    <span class="ln-speed" style="--x: 180px; --y: 51px"><span class="dim" data-bind="speedDim"></span><span data-bind="speedLit"></span></span>
+                    <span class="ln-chip" style="--x: 261px; --y: 52px"><i class="ico i-fuel sx-fuel-ico"></i><b data-bind="fuelPct"></b></span>
+                    <span class="ln-chip ln-engine" style="--x: 261px; --y: 112px"><i class="ico i-engine"></i><b data-bind="enginePct"></b></span>
+                    <span class="sx-odo" style="--x: 144px; --y: 163px"><b data-bind="odo5"></b> <span data-bind="odoUnit"></span></span>
+                    <div class="ln-strip" style="--x: 145px; --y: 197px">
+                        <i class="ico i-turn fl-left"></i><i class="ico i-cruise fl-cruise"></i><i class="ico i-hazard fl-hazard"></i>
+                        <i class="ico i-seatbelt fl-belt"></i><i class="ico i-lights fl-lights"></i><i class="ico i-lock fl-lock"></i>
+                        <i class="ico i-turn fl-right"></i>
+                    </div>
+                    <b class="ln-tab ln-tab-left" style="--x: 69px; --y: 221px"></b>
+                    <b class="ln-tab ln-tab-right" style="--x: 221px; --y: 221px"></b>
+                </div>
+                <div class="sx sx-ev">
+                    <i class="ico i-fuel sx-fuel-ico ev-ico ev-fuel-ico" style="--x: 80px; --y: 31px"></i>
+                    <i class="ico i-engine ev-ico ev-engine-ico" style="--x: 212px; --y: 32px"></i>
+                    <i class="ico i-bolt ev-bolt" style="--x: 145px; --y: 81px"></i>
+                    <span class="ev-speed" data-bind="speed" style="--x: 145px; --y: 129px"></span>
+                    <span class="ev-gear" data-bind="gear" style="--x: 145px; --y: 170px"></span>
+                    <span class="ev-unit" data-bind="unitLower" style="--x: 145px; --y: 196px"></span>
+                    <span class="sx-odo" style="--x: 145px; --y: 231px"><b data-bind="odo6"></b> <span data-bind="odoUnit"></span></span>
+                    <span class="ev-pct" data-bind="fuelPct" style="--x: 50px; --y: 240px"></span>
+                    <span class="ev-pct" data-bind="enginePct" style="--x: 240px; --y: 240px"></span>
+                </div>
+                <div class="sx sx-watch">
+                    <span class="wt-title" style="--x: 145px; --y: 38px">Train</span>
+                    <i class="ico i-bike wt-bike" style="--x: 145px; --y: 62px"></i>
+                    <span class="wt-label" style="--x: 145px; --y: 103px">Speed</span>
+                    <span class="wt-speed" style="--x: 145px; --y: 135px"><b data-bind="speed1"></b><span class="wt-unit" data-bind="unit"></span></span>
+                    <span class="wt-label" style="--x: 101px; --y: 190px">Heart</span>
+                    <span class="wt-val" style="--x: 101px; --y: 211px"><b data-bind="heart"></b><i class="ico i-heart-solid wt-heart"></i></span>
+                    <span class="wt-label" style="--x: 189px; --y: 190px">Cadence</span>
+                    <span class="wt-val" style="--x: 189px; --y: 211px"><b data-bind="cadence"></b><small>RPM</small></span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Edit mode, built by ui.js -->
+    <div id="editor" class="off"></div>
+
+    <!-- Minimap calibration -->
+    <div id="calibrate" class="off">
+        <div class="ed-panel cal-panel">
+            <div class="ed-eyebrow">Minimap calibration</div>
+            <h3 class="ed-heading">Center the map</h3>
+            <p class="ed-sub">Move the game map until it sits centered inside the ring.</p>
+            <div class="cal-read"><span>X</span><b id="cal-x">0</b><span>Y</span><b id="cal-y">0</b></div>
+            <button type="button" class="ed-btn" id="cal-reset">Reset</button>
+            <button type="button" class="ed-btn light" id="cal-done">Done</button>
+        </div>
+        <div class="ed-hint">Arrow keys: move / Shift: faster / Enter or Esc: done</div>
+    </div>
+
+    <!-- Compact dev panel: Dev tab > Open dev panel, or the DEV button in the browser preview -->
+    <div id="devpanel" class="off">
+        <div class="ed-panel dp-panel">
+            <div class="dp-head">
+                <div>
+                    <div class="ed-eyebrow">Dev tools</div>
+                    <h3 class="ed-heading">Dev panel</h3>
+                </div>
+                <button type="button" class="dp-close" id="dp-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="dp-body" id="dp-body"></div>
+            <button type="button" class="ed-btn light" id="dp-menu">Back to menu</button>
+        </div>
+    </div>
+    <button type="button" id="dev-fab" class="off">Dev</button>
+
+    <!-- /hud settings menu, built by ui.js -->
+    <div id="settings" class="off"></div>
+
+    <script src="script.js"></script>
+    <script src="ui.js"></script>
+    <script src="demo.js"></script>
+    <script src="map3d.js"></script>
+</body>
+</html>

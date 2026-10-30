@@ -1,0 +1,1 @@
+Config.debug = true

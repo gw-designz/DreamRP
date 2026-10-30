@@ -1,0 +1,647 @@
+.ngb {
+    --accent: #3b8ff0;
+    --bg: #eef0f2;
+}
+
+.ngb.npk--dark {
+    --bg: #161718;
+}
+
+/* splash / role picker */
+.ngb-splash {
+    position: absolute;
+    inset: 0;
+    background: #3d8ef0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.2em;
+    animation: npk-splash 0.3s ease both;
+}
+
+.ngb-splash__grid {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.08) 0.06em, transparent 0.06em),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0.06em, transparent 0.06em);
+    background-size: 7.5em 9.4em;
+    pointer-events: none;
+}
+
+.ngb-splash__car {
+    position: relative;
+    width: 4.4em !important;
+    height: 3.6em !important;
+}
+
+.ngb-splash h1 {
+    position: relative;
+    margin: 0;
+    font-size: 3.4em;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    line-height: 1.05;
+}
+
+.ngb-splash p {
+    position: relative;
+    margin: 0.3em 0 1.6em;
+    font-size: 0.86em;
+    font-weight: 500;
+}
+
+.ngb-role {
+    position: relative;
+    width: 100%;
+    height: 2.4em;
+    margin-bottom: 0.6em;
+    border-radius: 0.2em;
+    border: 0.08em solid #fff;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 0.9em !important;
+    cursor: pointer;
+}
+
+.ngb-role--solid {
+    background: #fff;
+    color: #3b74c9 !important;
+}
+
+.ngb-role:disabled {
+    opacity: 0.45;
+    cursor: default;
+}
+
+/* top pill */
+.ngb-top {
+    position: absolute;
+    top: 3em;
+    left: 0.9em;
+    right: 0.9em;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    height: 2.75em;
+    padding: 0 0.4em;
+    border-radius: 1.5em;
+    background: #fff;
+    box-shadow: 0 0.2em 0.6em rgba(0, 0, 0, 0.15);
+    color: #222;
+}
+
+.ngb-top > button {
+    flex: 1 1 0;
+    height: 2em;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45em;
+    font-size: 0.78em !important;
+    color: #555 !important;
+    cursor: pointer;
+}
+
+.ngb-top > button .fa-svg {
+    width: 0.95em !important;
+    height: 0.95em !important;
+}
+
+.ngb-top > button.is-on {
+    background: #e8e9ec;
+    color: #111 !important;
+}
+
+.ngb-top__exit {
+    flex: 0 0 2em !important;
+}
+
+.ngb-online {
+    border: 0.12em solid transparent;
+}
+
+.ngb-online span {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background: #9a9da2;
+}
+
+.ngb-online.is-on {
+    border-color: #111;
+    color: #111 !important;
+}
+
+.ngb-online.is-on span {
+    background: #2fbf63;
+}
+
+/* map + panels */
+.ngb-mapwrap {
+    position: absolute;
+    inset: 0;
+}
+
+.npm {
+    position: absolute;
+    inset: 0;
+    z-index: 0; /* own stacking context so Leaflet panes stay under the panels */
+    background: #a9cfe0;
+}
+
+.npm-pin span {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.npm-pin--player span {
+    background: rgba(70, 70, 70, 0.55);
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.25);
+}
+
+.npm-pin--pickup span {
+    background: #2fbf63;
+    border: 3px solid #fff;
+}
+
+.npm-pin--dropoff span {
+    background: #d9343c;
+    border: 3px solid #fff;
+}
+
+.ngb-panel {
+    position: absolute;
+    left: 0.9em;
+    right: 0.9em;
+    bottom: 1.6em;
+    z-index: 10;
+    max-height: 62%;
+    overflow-y: auto;
+    padding: 0 0 0.8em;
+    border-radius: 0.5em;
+    background: #fff;
+    color: #111;
+    box-shadow: 0 0.3em 1em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.ngb-panel > *:not(.ngb-panel__head) {
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+}
+
+.ngb-panel__head {
+    padding: 0.75em 0.9em 0.6em;
+    border-bottom: 0.0625em solid #e5e6e9;
+    font-weight: 600;
+    font-size: 0.86em;
+}
+
+.ngb-dests {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45em;
+}
+
+.ngb-dest {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    padding: 0.5em 0.6em;
+    border-radius: 0.3em;
+    background: #f0f1f3;
+    border: 0.08em solid #e1e2e5;
+    text-align: left;
+    cursor: pointer;
+}
+
+.ngb-dest.is-on {
+    border-color: #3b8ff0;
+    background: #eaf3fe;
+}
+
+.ngb-dest__ico {
+    width: 2em;
+    height: 2em;
+    border-radius: 0.25em;
+    background: #5a1a24;
+    color: #ff4b55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.ngb-dest__ico--wp {
+    background: #18324f;
+    color: #6fb0ff;
+}
+
+.ngb-dest__ico .fa-svg {
+    width: 0.85em !important;
+    height: 0.85em !important;
+}
+
+.ngb-dest__main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.ngb-dest__main b {
+    font-size: 0.76em;
+    font-weight: 700;
+}
+
+.ngb-dest__main em {
+    font-style: normal;
+    font-size: 0.58em;
+    color: #666;
+}
+
+.ngb-dest__fare {
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.ngb-request {
+    height: 2.2em;
+    border-radius: 0.25em;
+    background: #3b8ff0;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 0.82em !important;
+    cursor: pointer;
+}
+
+.ngb-request:disabled {
+    background: #b6d6f8;
+    cursor: default;
+}
+
+.ngb-decline,
+.ngb-cancel {
+    height: 2.1em;
+    border-radius: 0.25em;
+    border: 0.08em solid #7a1f2b;
+    color: #7a1f2b !important;
+    font-size: 0.8em !important;
+    cursor: pointer;
+}
+
+.ngb-route {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+}
+
+.ngb-stop {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    padding: 0.5em 0.6em;
+    border-radius: 0.3em;
+    background: #f0f1f3;
+    border: 0.08em solid #e1e2e5;
+}
+
+.ngb-stop span:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.ngb-stop b {
+    font-size: 0.78em;
+}
+
+.ngb-stop em {
+    font-style: normal;
+    font-size: 0.58em;
+    color: #666;
+}
+
+.ngb-stop__ico {
+    width: 2em;
+    height: 2em;
+    border-radius: 0.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.ngb-stop__ico--pickup {
+    background: #1b4d2c;
+    color: #4be07f;
+}
+
+.ngb-stop__ico--dropoff {
+    background: #5a1a24;
+    color: #ff4b55;
+}
+
+.ngb-offer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ngb-offer b {
+    font-size: 1.3em;
+}
+
+.ngb-offer span {
+    color: #3b8ff0;
+    font-weight: 700;
+    font-size: 1.05em;
+}
+
+.ngb-fare {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.ngb-fare b {
+    color: #111;
+}
+
+.ngb-session {
+    position: absolute;
+    top: 6.6em;
+    right: 0.9em;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 0.7em 0.85em;
+    min-width: 10em;
+    border-radius: 0.25em;
+    background: #fff;
+    color: #111;
+    box-shadow: 0 0.2em 0.6em rgba(0, 0, 0, 0.15);
+}
+
+.ngb-session em {
+    font-style: normal;
+    font-size: 0.66em;
+    font-weight: 600;
+}
+
+.ngb-session b {
+    font-size: 1.45em;
+    font-weight: 800;
+}
+
+.ngb-session span {
+    font-size: 0.56em;
+    color: #555;
+}
+
+.ngb-hint {
+    position: absolute;
+    left: 0.9em;
+    right: 0.9em;
+    bottom: 1.8em;
+    z-index: 10;
+    padding: 0.8em;
+    border-radius: 0.4em;
+    background: #fff;
+    color: #333;
+    font-size: 0.78em;
+    text-align: center;
+    box-shadow: 0 0.2em 0.6em rgba(0, 0, 0, 0.15);
+}
+
+/* profile */
+.ngb-profile {
+    position: absolute;
+    inset: 0;
+    overflow-y: auto;
+    padding: 6.4em 0.9em 1.5em;
+}
+
+.ngb-profile--customer {
+    color: #111;
+}
+
+.ngb-profile__me {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    padding-bottom: 1em;
+    border-bottom: 0.0625em solid rgba(127, 127, 127, 0.2);
+}
+
+.ngb-profile__av {
+    width: 3.2em;
+    height: 3.2em;
+    border-radius: 50%;
+    background: #232426;
+    color: #e9eaec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ngb-profile--customer .ngb-profile__av {
+    background: #e2e3e6;
+    color: #333;
+}
+
+.ngb-profile__av .fa-svg {
+    width: 1.2em !important;
+    height: 1.2em !important;
+}
+
+.ngb-profile__me b {
+    display: block;
+    font-size: 1.15em;
+    font-weight: 400;
+    color: #b8babe;
+}
+
+.ngb-profile--customer .ngb-profile__me b {
+    color: #222;
+}
+
+.ngb-profile__me em {
+    font-style: normal;
+    font-size: 0.85em;
+}
+
+.ngb-profile__me em .fa-svg {
+    color: #3b8ff0;
+}
+
+.ngb-seg {
+    display: flex;
+    margin: 1em 0 0.7em;
+    border: 0.0625em solid rgba(127, 127, 127, 0.35);
+}
+
+.ngb-seg button {
+    flex: 1;
+    height: 2em;
+    font-size: 0.78em !important;
+    cursor: pointer;
+}
+
+.ngb-seg button.is-on {
+    background: #fff;
+    color: #111 !important;
+}
+
+.ngb-profile--customer .ngb-seg button.is-on {
+    background: #111;
+    color: #fff !important;
+}
+
+.ngb-profile__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.ngb-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+}
+
+.ngb-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    padding: 0.6em;
+    background: #1f2022;
+    border: 0.0625em solid rgba(255, 255, 255, 0.06);
+}
+
+.ngb-stat.is-wide {
+    grid-column: 1 / -1;
+}
+
+.ngb-stat__ico {
+    width: 1.8em;
+    height: 1.8em;
+    background: #2b2c2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ngb-stat__ico .fa-svg {
+    width: 0.8em !important;
+    height: 0.8em !important;
+}
+
+.ngb-stat em {
+    display: block;
+    font-style: normal;
+    font-size: 0.6em;
+    color: #a3a6aa;
+}
+
+.ngb-stat b {
+    font-size: 0.86em;
+}
+
+.ngb-label {
+    margin-top: 0.6em;
+    font-size: 0.66em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #a3a6aa;
+}
+
+.ngb-feedback {
+    padding: 0.6em 0.7em;
+    background: #1f2022;
+    border: 0.0625em solid rgba(255, 255, 255, 0.06);
+}
+
+.ngb-feedback p {
+    margin: 0;
+    font-size: 0.74em;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.ngb-feedback p .fa-svg {
+    color: #3b8ff0;
+    width: 0.7em !important;
+    height: 0.7em !important;
+}
+
+.ngb-feedback div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.45em;
+    font-size: 0.6em;
+}
+
+.ngb-feedback em {
+    font-style: normal;
+    color: #8d9095;
+    margin-left: 0.3em;
+}
+
+.ngb-stars {
+    color: #3b8ff0;
+    font-weight: 700;
+}
+
+.ngb-hist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.6em;
+    padding: 0.6em 0.7em;
+    border-radius: 0.25em;
+    background: rgba(127, 127, 127, 0.12);
+}
+
+.ngb-hist span {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.ngb-hist b {
+    font-size: 0.78em;
+}
+
+.ngb-hist em {
+    font-style: normal;
+    font-size: 0.62em;
+    color: #8d9095;
+}
+
+.ngb-rate {
+    display: flex;
+    justify-content: center;
+    gap: 0.4em;
+}
+
+.ngb-rate button {
+    color: #c9cbd0;
+    cursor: pointer;
+}
+
+.ngb-rate button .fa-svg {
+    width: 1.5em !important;
+    height: 1.5em !important;
+}
+
+.ngb-rate button.is-on {
+    color: #f5b81c;
+}

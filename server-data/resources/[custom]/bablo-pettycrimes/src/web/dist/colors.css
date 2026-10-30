@@ -1,0 +1,19 @@
+:root {
+  --primary: rgba(29, 30, 49, 0.95);
+  --secondary: rgba(29, 31, 47, 0.5);
+  --secondary-hover: linear-gradient(0deg, rgba(122, 173, 255, 0.15) 0%, rgba(122, 173, 255, 0.15) 100%), radial-gradient(50% 50% at 50% 50%, rgba(122, 173, 255, 0.00) 0%, rgba(122, 173, 255, 0.21) 100%);
+  --border: rgba(255, 255, 255, 0.1);
+  --accent: rgba(122, 173, 255, 0.7);
+  --accent-foreground: rgba(122, 173, 255, 1);
+  --accent-10: rgba(122, 173, 255, 0.1);
+  --accent-50: rgba(122, 173, 255, 0.5);
+  --accent-05: rgba(122, 173, 255, 0.05);
+
+  --header-color: rgba(122, 173, 255, 1);
+  --header-glow: 10px;
+
+  --text-dark: rgb(29, 30, 49);
+
+	--danger: #F45B69;
+	--danger-foreground: #FFFFFF;
+}

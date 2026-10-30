@@ -1,0 +1,41 @@
+---@meta
+
+-- Source: https://coxdocs.dev/ox_target/Functions/Client
+-- https://coxdocs.dev/ox_target/TargetOptions
+
+---@class TargetOptions
+---@field label string
+---@field name string An identifier used when removing an option.
+---@field icon string? Name of a Font Awesome icon.
+---@field iconColor string?
+---@field distance number?
+---@field offset vector3?
+---@field offsetAbsolute vector3?
+---@field offsetSize vector3?
+---@field groups string | string[] | table <string, number> | nil A group, array of groups, or pairs of groups-grades required to show the option.
+---@field items? string
+---@field anyItem boolean? Only require a single item from the items table to exist.
+---@field canInteract? fun(entity: number, distance: number, coords: vector3, name: string, bone: any): boolean
+---@field menuName string? The option is only displayed when a menu has been set with openMenu.
+---@field openMenu string? The name of the menu to open when this option is selected.
+---@field onSelect? fun(data: { entity: number?, distance: number, coords: vector3, zone: number | string }) A callback function that is called when the option is selected.
+---@field export string?
+---@field event string?
+---@field serverEvent string?
+
+---@class TargetBoxZone
+---@field coords vector3
+---@field name string Required for qb-target compatibility.
+---@field size vector3?
+---@field rotation number?
+---@field debug boolean?
+---@field drawSprite boolean? Defaults to `true`.
+---@field options TargetOptions[]
+
+---@class TargetSphereZone
+---@field coords vector3
+---@field name string Required for qb-target compatibility.
+---@field radius number?
+---@field debug boolean?
+---@field drawSprite boolean? Defaults to `true`.
+---@field options TargetOptions[]

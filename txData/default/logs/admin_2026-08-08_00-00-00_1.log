@@ -1,0 +1,33 @@
+================================================================
+======== txAdmin v8.0.1 atop fxserver 25770 Starting - 8/7/2026, 10:50:45 PM
+================================================================
+[22:51:33][realscrp] created admins file
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/7/2026, 10:52:47 PM
+================================================================
+[22:53:02][realscrp] logged in from 127.0.0.1 via password auth
+[22:53:19][realscrp] Config changes: 
+[22:53:19][realscrp] Changing global settings via setup stepper and started Deployer.
+[22:53:38][realscrp] Setting recipe.
+[22:53:40][realscrp] Running recipe.
+[23:07:04][realscrp] Config changes: server.dataPath
+[23:07:04][realscrp] Completed and committed server deploy.
+[23:08:10][realscrp] executed "RESTART SERVER"
+[23:11:17][realscrp] Refreshed resources
+[23:11:22][realscrp] Refreshed resources
+[23:11:27][realscrp] Ensured resource "pulsar_assets"
+[23:11:31][realscrp] Ensured resource "pulsar_weapons"
+[23:13:50][realscrp] executed "RESTART SERVER"
+[23:16:13][realscrp] executed "RESTART SERVER"
+[01:39:57][realscrp] executed "STOP SERVER"
+[01:39:57][realscrp] Config changes: server.dataPath
+[01:39:57][realscrp] Resetting server data settings.
+[01:40:08][realscrp] Config changes: 
+[01:40:08][realscrp] Changing global settings via setup stepper and started Deployer.
+[01:40:09][realscrp] Setting recipe.
+[01:40:25][realscrp] Running recipe.
+[01:54:33][realscrp] Config changes: server.dataPath
+[01:54:33][realscrp] Completed and committed server deploy.
+[01:54:53][realscrp] Refreshed resources
+[02:03:02][realscrp] Refreshed resources
+[02:03:06][realscrp] Ensured resource "fw-rentals"

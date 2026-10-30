@@ -1,0 +1,223 @@
+/* NoPixel skin for built-in apps that keep their original logic (Calculator, Camera, Maps,
+   Clock, Mail, App Store). Scoped to the NoPixel phone so HomeStyle = 'ios' is untouched. */
+
+/* ---------- Calculator ---------- */
+.phone.np-skin .calcapp {
+    background: #232527;
+    font-family: 'Poppins', sans-serif;
+    --calc-pad: 22.2em;
+}
+
+.phone.np-skin .calc__result {
+    font-weight: 300;
+    font-size: 4em;
+}
+
+.phone.np-skin .calc__pad {
+    gap: 0.55em 0.6em;
+    padding: 0.4em 0.9em 0.8em;
+    max-width: none;
+}
+
+.phone.np-skin .calc__key {
+    aspect-ratio: auto;
+    height: 3.45em;
+    border-radius: 1.75em;
+    font-size: 1.15em;
+    font-weight: 500;
+    animation: none;
+}
+
+.phone.np-skin .calc__key--fn {
+    background: #a6a8ab;
+    color: #1b1b1b;
+}
+
+.phone.np-skin .calc__key--num {
+    background: #3a3c40;
+    font-weight: 600;
+}
+
+.phone.np-skin .calc__key--op {
+    background: #4a8fe0;
+    font-size: 1.45em;
+}
+
+.phone.np-skin .calc__key--op.is-active {
+    background: #fff;
+    color: #4a8fe0;
+}
+
+.phone.np-skin .calc__histbtn {
+    color: #a6a8ab;
+}
+
+.phone.np-skin .calc-hist {
+    background: #232527;
+}
+
+/* ---------- Camera ---------- */
+.phone.np-skin .camera,
+.phone.np-skin .camera__topbar,
+.phone.np-skin .camera__bottombar {
+    background: #151618;
+    font-family: 'Poppins', sans-serif;
+}
+
+.phone.np-skin .camera__bottombar {
+    border-radius: 0;
+}
+
+.phone.np-skin .camera__modes button.is-active {
+    color: #6fa8f5;
+}
+
+.phone.np-skin .camera__thumb {
+    border-radius: 50%;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.phone.np-skin .camera__flip {
+    background: #2b2d30;
+    border-radius: 50%;
+}
+
+/* camera toolbar pill + grid (NoPixel camera) */
+.phone .camera__tools {
+    position: absolute;
+    top: 3.1em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    display: flex;
+    gap: 0.35em;
+    padding: 0.3em 0.45em;
+    border-radius: 1.2em;
+    background: rgba(40, 42, 45, 0.85);
+}
+
+.phone .camera__tools button {
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.phone .camera__tools button.is-on {
+    background: #9ec4f2;
+    color: #0e1a2a;
+}
+
+.phone .camera__grid,
+.np-camfull__grid {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    background-image: linear-gradient(90deg, transparent calc(33.33% - 0.5px), rgba(255, 255, 255, 0.55) calc(33.33% - 0.5px), rgba(255, 255, 255, 0.55) calc(33.33% + 0.5px), transparent calc(33.33% + 0.5px), transparent calc(66.66% - 0.5px), rgba(255, 255, 255, 0.55) calc(66.66% - 0.5px), rgba(255, 255, 255, 0.55) calc(66.66% + 0.5px), transparent calc(66.66% + 0.5px)),
+        linear-gradient(180deg, transparent calc(33.33% - 0.5px), rgba(255, 255, 255, 0.55) calc(33.33% - 0.5px), rgba(255, 255, 255, 0.55) calc(33.33% + 0.5px), transparent calc(33.33% + 0.5px), transparent calc(66.66% - 0.5px), rgba(255, 255, 255, 0.55) calc(66.66% - 0.5px), rgba(255, 255, 255, 0.55) calc(66.66% + 0.5px), transparent calc(66.66% + 0.5px));
+}
+
+/* fullscreen camera: phone hidden, controls over the live game view */
+body.np-camfull-on .phone,
+body.np-camfull-on .np-legend {
+    visibility: hidden !important;
+}
+
+.np-camfull {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    cursor: crosshair;
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    color: #fff;
+}
+
+.np-camfull__flash {
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.np-camfull__side {
+    position: absolute;
+    right: 2.4vh;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.6vh;
+    cursor: default;
+}
+
+.np-camfull__side--left {
+    right: auto;
+    left: 2.4vh;
+}
+
+.np-camfull__side button {
+    width: 3.6vh;
+    height: 3.6vh;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.np-camfull__side button.is-on {
+    background: #9ec4f2;
+    color: #0e1a2a;
+}
+
+.np-camfull__shutter {
+    width: 6.4vh !important;
+    height: 6.4vh !important;
+    background: #fff !important;
+    box-shadow: 0 0 0 0.45vh rgba(255, 255, 255, 0.35);
+}
+
+.np-camfull__shutter.is-rec {
+    background: #ff3b30 !important;
+}
+
+.np-camfull__legend {
+    position: absolute;
+    left: 50%;
+    bottom: 2.6vh;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1.4vh;
+    padding: 0.7vh 1.4vh;
+    background: rgba(0, 0, 0, 0.45);
+    font-size: 1.6vh;
+    font-weight: 700;
+    font-style: italic;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.np-camfull__legend span {
+    display: flex;
+    align-items: center;
+    gap: 0.6vh;
+}
+
+.np-camfull__legend i {
+    font-style: normal;
+    padding: 0.1vh 0.5vh;
+    border-radius: 0.3vh;
+    background: #fff;
+    color: #0b0b0b;
+    font-size: 1.4vh;
+}

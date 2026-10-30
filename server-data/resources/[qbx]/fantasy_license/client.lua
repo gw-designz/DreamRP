@@ -1,0 +1,1 @@
+-- Makes clients download fantasy_license's shared files (crypto.lua, loader.lua).

@@ -1,0 +1,11 @@
+{
+  "version": "1.0.3",
+  "changes": [
+    "Fixed a bug where scenes went out of focus during graffiti painting."
+  ],
+  "filesAffected": [
+    "fxmanifest.lua",
+    "client/creator.lua",
+    "editable/cl_nui.lua"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+    "resourceName": "CUBANS_DORM_1",
+    "creator": "Cubans Dorm Shells",
+    "interiors": {
+        "Cubans Dorm Shell 1": {
+            "label": "Cubans Dorm Shell",
+            "doorOffset": {
+                "x": -1.858521,
+                "y": -4.067596,
+                "z": 0.829117,
+                "h": 3.782151,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 80000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/bZTHZQFgddhUQAaeWZU2c/DORM-LOGO1.jpg"
+                }
+            ],
+            "model": "cubansdorm1_shell"
+        },
+        "Cubans Dorm Shell 2": {
+            "label": "Cubans Dorm Shell",
+            "doorOffset": {
+                "x": -1.858521,
+                "y": -4.067596,
+                "z": 0.829117,
+                "h": 3.782151,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 80000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/bZTHZQFgddhUQAaeWZU2c/DORM-LOGO1.jpg"
+                }
+            ],
+            "model": "cubansdorm2_shell"
+        },
+        "Cubans Dorm Shell 1 NO WINDOWS": {
+            "label": "Cubans Dorm Shell NO WINDOWS",
+            "doorOffset": {
+                "x": -1.858521,
+                "y": -4.067596,
+                "z": 0.829117,
+                "h": 3.782151,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 80000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/bZTHZQFgddhUQAaeWZU2c/DORM-LOGO1.jpg"
+                }
+            ],
+            "model": "cubansdormshellnw1_shell"
+        },
+        "Cubans Dorm Shell 2 NO WINDOWS": {
+            "label": "Cubans Dorm Shell NO WINDOWS",
+            "doorOffset": {
+                "x": -1.858521,
+                "y": -4.067596,
+                "z": 0.829117,
+                "h": 3.782151,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 80000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/bZTHZQFgddhUQAaeWZU2c/DORM-LOGO1.jpg"
+                }
+            ],
+            "model": "cubansdormshellnw2_shell"
+        }
+    }
+}

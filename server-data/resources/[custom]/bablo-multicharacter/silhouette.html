@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Empty Slot Silhouette</title>
+    <!--
+      Texture for empty character slots (client/studio.lua), 512 x 1024.
+      A standing figure with crossed arms; the viewBox is 200 x 400 units,
+      drawn in-world as a 0.96 m x 1.92 m cut-out standing on the floor.
+    -->
+    <style>
+      html, body { margin: 0; width: 512px; height: 1024px; overflow: hidden; background: transparent; }
+      svg { display: block; width: 512px; height: 1024px; }
+    </style>
+  </head>
+  <body>
+    <svg viewBox="0 0 200 400" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1c1f24" />
+          <stop offset=".5" stop-color="#14161a" />
+          <stop offset="1" stop-color="#0c0d10" />
+        </linearGradient>
+        <!-- Faint vertical seams, like a body suit catching a little light. -->
+        <pattern id="seams" width="3.2" height="400" patternUnits="userSpaceOnUse">
+          <rect width="3.2" height="400" fill="url(#fill)" />
+          <rect x="2.6" width=".6" height="400" fill="rgba(255,255,255,.035)" />
+        </pattern>
+        <g id="figure">
+          <!-- head + neck -->
+          <ellipse cx="100" cy="33" rx="19" ry="24" />
+          <rect x="89" y="50" width="22" height="20" rx="6" />
+          <!-- shoulders and torso -->
+          <path d="M72 68 Q48 71 43 92 L39 138 Q40 156 58 158 L66 160 L65 214 L135 214 L134 160 L142 158 Q160 156 161 138 L157 92 Q152 71 128 68 Z" />
+          <!-- crossed forearms -->
+          <rect x="33" y="112" width="134" height="40" rx="19" />
+          <!-- legs in a wide A-stance -->
+          <path d="M65 206 L100 206 L100 222 L84 300 L70 386 L42 388 L52 290 Z" />
+          <path d="M100 206 L135 206 L148 290 L158 388 L130 386 L116 300 L100 222 Z" />
+          <!-- feet -->
+          <ellipse cx="56" cy="389" rx="15" ry="7" />
+          <ellipse cx="144" cy="389" rx="15" ry="7" />
+        </g>
+        <!-- Grow the whole figure's outline by a couple of units, so the rim
+             only traces the outside edge (no seams where shapes overlap). -->
+        <filter id="rim" x="-5%" y="-5%" width="110%" height="110%">
+          <feMorphology in="SourceAlpha" operator="dilate" radius="1.6" result="grown" />
+          <feFlood flood-color="#3fdcf2" flood-opacity=".22" />
+          <feComposite in2="grown" operator="in" />
+        </filter>
+      </defs>
+      <!-- soft cyan rim from the backdrop light, then the solid figure -->
+      <use href="#figure" filter="url(#rim)" />
+      <use href="#figure" fill="url(#seams)" />
+    </svg>
+  </body>
+</html>

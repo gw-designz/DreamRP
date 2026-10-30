@@ -1,0 +1,17 @@
+/* The key hints in the bottom right, drawn like my-hud's controls bar
+   (its #control-bar, .prompt and .glyph). Sizes are 1080p px, scaled by --u. */
+@font-face { font-family: 'Barlow Condensed'; src: url('./fonts/BarlowCondensed-BoldItalic.ttf') format('truetype'); font-weight: 700; font-style: italic; }
+@font-face { font-family: 'Barlow Condensed'; src: url('./fonts/BarlowCondensed-ExtraBoldItalic.ttf') format('truetype'); font-weight: 800; font-style: italic; }
+
+.kh-bar { --u: calc(100vh / 1080); position: fixed; right: calc(var(--u) * 28); bottom: calc(var(--u) * 28); z-index: 9999;
+  display: flex; align-items: center; gap: calc(var(--u) * 26); padding: calc(var(--u) * 8) calc(var(--u) * 18);
+  background: rgba(20, 20, 25, 0.65); border-radius: calc(var(--u) * 3);
+  font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-style: italic; font-size: calc(var(--u) * 16);
+  letter-spacing: 0.015em; text-transform: uppercase; line-height: 1; white-space: nowrap; color: #fff; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  pointer-events: none; user-select: none; -webkit-font-smoothing: antialiased; animation: kh-in 0.35s cubic-bezier(.2, .8, .2, 1); }
+.kh-prompt { display: flex; align-items: center; gap: calc(var(--u) * 8); }
+.kh-label { padding-top: 1px; }
+.kh-glyph { display: inline-flex; align-items: center; justify-content: center; flex: none; min-width: calc(var(--u) * 20); height: calc(var(--u) * 20);
+  padding: 0 calc(var(--u) * 5); border-radius: calc(var(--u) * 4); background: #fff; color: #0d0d10;
+  font-size: calc(var(--u) * 12); font-weight: 800; line-height: 1; text-shadow: none; letter-spacing: 0; }
+@keyframes kh-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }

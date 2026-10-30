@@ -1,0 +1,59 @@
+/* Extracted verbatim from prp-hud/ui/assets/index.css - do not hand-edit the polygons. */
+
+@property --targetColor {
+  syntax: "<color>";
+   inherits: false;
+   initial-value: #0C0F14A6;
+}
+
+.target {
+  transition:--targetColor .2s ease;
+  background:radial-gradient(circle at var(--targetX) var(--targetY),var(--targetColor) 0%,#0C0F14A6 40%);
+}
+
+.target.hovered {
+  --targetColor: #B5FF5980;
+}
+
+.target-border {
+  transition:--targetColor .2s ease;
+  --targetColor: transparent;
+  background:radial-gradient(circle at var(--targetX) var(--targetY),var(--targetColor) 0%,transparent 20%);
+}
+
+.target.target-bottom,.target.target-top {
+  background:radial-gradient(circle at var(--targetX) var(--targetY),var(--targetColor) 0%,#0C0F14A6 60%);
+}
+
+.target-border.target-bottom,.target-border.target-top {
+  background:radial-gradient(circle at var(--targetX) var(--targetY),var(--targetColor) 0%,transparent 40%);
+}
+
+.target-border.hovered {
+  --targetColor: hsl(var(--primary));
+}
+
+.target-left {
+  --clip: polygon( 0 0, 0 calc(100% - var(--target-dent-size) + 1px), calc(var(--target-dent-size) - 1px) 100%, calc(100% - var(--target-height)/2) 100%, 100% calc(100% - var(--target-height)/2), calc(100% - var(--target-height)/2) 0, 100% 0 );
+  --clip-border: polygon( var(--target-border-width) 0, 0 0, 0 calc(100% - var(--target-dent-size)), var(--target-dent-size) 100%, calc(100% - var(--target-height)/2) 100%, 100% 50%, calc(100% - var(--target-height)/2) 0, 0 0, 0 var(--target-border-width), calc(100% - var(--target-height)/2 - .7071 * var(--target-border-width)) var(--target-border-width), calc(100% - 1.41 * var(--target-border-width)) 50%, calc(100% - var(--target-height)/2 - .7071 * var(--target-border-width)) calc(100% - var(--target-border-width)), calc(var(--target-dent-size) + .7071 * var(--target-border-width)) calc(100% - var(--target-border-width)), var(--target-border-width) calc(100% - var(--target-dent-size) - .7071 * var(--target-border-width)) );
+}
+
+.target-right {
+  --clip: polygon( calc(var(--target-height)/2) 0, 0 calc(var(--target-height)/2), calc(var(--target-height)/2) 100%, calc(100% - var(--target-dent-size) + 1px) 100%, 100% calc(100% - var(--target-dent-size) + 1px), 100% 0 );
+  --clip-border: polygon( 0 50%, calc(var(--target-height)/2) 100%, calc(100% - var(--target-dent-size)) 100%, 100% calc(100% - var(--target-dent-size)), 100% 0, calc(var(--target-height)/2) 0, 0 50%, calc(1.41 * var(--target-border-width)) 50%, calc(var(--target-height)/2 + .7071 * var(--target-border-width)) var(--target-border-width), calc(100% - var(--target-border-width)) var(--target-border-width), calc(100% - var(--target-border-width)) calc(100% - .7071 * var(--target-border-width) - var(--target-dent-size)), calc(100% - .7071 * var(--target-border-width) - var(--target-dent-size)) calc(100% - var(--target-border-width)), calc(var(--target-height)/2 + .7071 * var(--target-border-width)) calc(100% - var(--target-border-width)), calc(1.41 * var(--target-border-width)) 50% );
+}
+
+.target-top {
+  height:calc(100% + var(--target-height)/2);
+  --clip: polygon( 0 0, 0 calc(100% - var(--target-height)/2 - var(--target-dent-size)), var(--target-dent-size) calc(100% - var(--target-height)/2), calc(50% - var(--target-height)/2) calc(100% - var(--target-height)/2), 50% 100%, calc(50% + var(--target-height)/2) calc(100% - var(--target-height)/2), calc(100% - var(--target-dent-size)) calc(100% - var(--target-height)/2), 100% calc(100% - var(--target-height)/2 - var(--target-dent-size)), 100% 0 );
+  --clip-border: polygon( 0 0, 0 calc(100% - var(--target-height)/2 - var(--target-dent-size)), var(--target-dent-size) calc(100% - var(--target-height)/2), calc(50% - var(--target-height)/2) calc(100% - var(--target-height)/2), 50% 100%, calc(50% + var(--target-height)/2) calc(100% - var(--target-height)/2), calc(100% - var(--target-dent-size)) calc(100% - var(--target-height)/2), 100% calc(100% - var(--target-height)/2 - var(--target-dent-size)), 100% 0, 0 0, 0 var(--target-border-width), calc(100% - var(--target-border-width)) var(--target-border-width), calc(100% - var(--target-border-width)) calc(100% - var(--target-height)/2 - var(--target-dent-size) - .7071 * var(--target-border-width)), calc(100% - var(--target-dent-size) - .7071 * var(--target-border-width)) calc(100% - var(--target-height)/2 - var(--target-border-width)), calc(50% + var(--target-height)/2 - .7071 * var(--target-border-width)) calc(100% - var(--target-height)/2 - var(--target-border-width)), 50% calc(100% - 1.41 * var(--target-border-width)), calc(50% - var(--target-height)/2 + .7071 * var(--target-border-width)) calc(100% - var(--target-height)/2 - var(--target-border-width)), calc(var(--target-dent-size) + .7071 * var(--target-border-width)) calc(100% - var(--target-height)/2 - var(--target-border-width)), var(--target-border-width) calc(100% - var(--target-height)/2 - var(--target-dent-size) - .7071 * var(--target-border-width)), var(--target-border-width) 0 );
+}
+
+.target-bottom {
+  height:calc(100% + var(--target-height)/2);
+  bottom:0;
+  top:unset;
+  --clip: polygon( 50% 0, calc(50% - var(--target-height)/2) calc(var(--target-height)/2), var(--target-dent-size) calc(var(--target-height)/2), 0 calc(var(--target-height)/2 + var(--target-dent-size)), 0 100%, 100% 100%, 100% calc(var(--target-height)/2 + var(--target-dent-size)), calc(100% - var(--target-dent-size)) calc(var(--target-height)/2), calc(50% + var(--target-height)/2) calc(var(--target-height)/2), 50% 0 );
+  --clip-border: polygon( 50% 0, calc(50% - var(--target-height)/2) calc(var(--target-height)/2), var(--target-dent-size) calc(var(--target-height)/2), 0 calc(var(--target-height)/2 + var(--target-dent-size)), 0 100%, 100% 100%, 100% calc(var(--target-height)/2 + var(--target-dent-size)), calc(100% - var(--target-dent-size)) calc(var(--target-height)/2), calc(50% + var(--target-height)/2) calc(var(--target-height)/2), 50% 0, 50% calc(1.41 * var(--target-border-width)), calc(50% + var(--target-height)/2 - .7071 * var(--target-border-width)) calc(var(--target-height)/2 + var(--target-border-width)), calc(100% - .7101 * var(--target-border-width) - var(--target-dent-size)) calc(var(--target-height)/2 + var(--target-border-width)), calc(100% - var(--target-border-width) ) calc(var(--target-height)/2 + var(--target-dent-size) + .7071 * var(--target-border-width)), calc(100% - var(--target-border-width) ) calc(100% - var(--target-border-width)), var(--target-border-width) calc(100% - var(--target-border-width)), var(--target-border-width) calc(var(--target-height)/2 + var(--target-dent-size) + .7071 * var(--target-border-width)), calc(var(--target-dent-size) + .7071 * var(--target-border-width)) calc(var(--target-height)/2 + var(--target-border-width)), calc(50% - var(--target-height)/2 + .7071 * var(--target-border-width)) calc(var(--target-height)/2 + var(--target-border-width)), 50% calc(1.41 * var(--target-border-width)) );
+}
+

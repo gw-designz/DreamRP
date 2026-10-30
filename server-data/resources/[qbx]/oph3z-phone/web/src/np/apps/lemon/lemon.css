@@ -1,0 +1,134 @@
+.nll {
+    --bg: #1c1d1f;
+    --panel: #232426;
+    --card: #2e2f32;
+    --card2: #393a3d;
+    --accent: #f5c518;
+    --accent-ink: #1a1a1a;
+}
+
+.nll .npk-panel {
+    bottom: 0;
+}
+
+.nll-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55em;
+    padding: 0 1em 0.65em;
+}
+
+.nll-chips .npk-chip {
+    background: #3a3b3e;
+}
+
+.nll-chips .npk-chip.is-on {
+    background: rgba(245, 197, 24, 0.12);
+    border-color: #f5c518;
+    color: #f5c518 !important;
+}
+
+.nll-chips--wrap {
+    flex-wrap: wrap;
+}
+
+.nll-ad {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    padding: 0.75em 0.85em;
+    border-radius: 0.45em;
+    background: var(--card);
+    border: 0.0625em solid rgba(255, 255, 255, 0.06);
+    text-align: left;
+    cursor: pointer;
+}
+
+.nll-ad__top {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5em;
+}
+
+.nll-ad__top b {
+    flex: 1 1 auto;
+    font-weight: 800;
+    font-size: 0.92em;
+}
+
+.nll-ad__top em {
+    font-style: normal;
+    font-size: 0.64em;
+    color: #c4c6c9;
+}
+
+.nll-ad__text {
+    font-size: 0.8em;
+    color: #e2e3e5;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.nll-ad__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.7em;
+    font-weight: 700;
+    margin-top: 0.2em;
+}
+
+.nll-ad__bottom .fa-svg {
+    width: 0.8em !important;
+    height: 0.8em !important;
+}
+
+.nll-ad__bottom i {
+    font-style: normal;
+    padding: 0.15em 0.6em;
+    border-radius: 0.25em;
+    background: rgba(245, 197, 24, 0.15);
+    color: #f5c518;
+    font-size: 0.9em;
+}
+
+.nll-ad__bottom small {
+    font-weight: 400;
+    color: var(--muted);
+}
+
+.nll-post {
+    margin: 0.4em 1em 1.6em;
+    height: 2.3em;
+    border-radius: 0.35em;
+    border: 0.08em solid rgba(245, 197, 24, 0.45);
+    background: rgba(245, 197, 24, 0.14);
+    color: #f5c518;
+    font-size: 0.78em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    cursor: pointer;
+}
+
+.nll-post .fa-svg {
+    width: 0.8em !important;
+    height: 0.8em !important;
+}
+
+.nll-full {
+    font-size: 0.9em;
+    line-height: 1.45;
+    white-space: pre-wrap;
+}
+
+.nll-actions {
+    display: flex;
+    gap: 0.5em;
+}
+
+.nll-actions .npk-btn {
+    flex: 1;
+}

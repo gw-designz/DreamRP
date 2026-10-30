@@ -1,0 +1,820 @@
+================================================================
+======== Log Rotated - 10/24/2026, 12:00:00 AM                  
+================================================================
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ refresh 
+[           resources] Scanning resources.
+║             TXADMIN║ txaReportResources 
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 1/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 3 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (31.6598 ms)
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 2/2 stashes (31.8477 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] server thread hitch warning: timer interval of 182 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 3 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (31.1129 ms)
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/2 stashes (31.3216 ms)
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 3 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (16.0979 ms)
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 2/2 stashes (31.2504 ms)
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ ensure "ox_inventory"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource ox_inventory
+[    c-scripting-core] Creating script environments for ox_inventory
+[           resources] Started resource ox_inventory
+[ citizen-server-impl] server thread hitch warning: timer interval of 313 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 222 items
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] server thread hitch warning: timer interval of 153 milliseconds
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 222 items
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 3 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 2/2 stashes (31.6423 ms)
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (31.8211 ms)
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 1/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "interact"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource interact
+[    c-scripting-core] Creating script environments for interact
+[           resources] Started resource interact
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[script:screencapture] [screencapture] Uploading file to remote URL: https://api.fivemanage.com/api/v3/file with headers: {
+[script:screencapture]   "User-Agent": "screencapture/0.16.0",
+[script:screencapture]   "X-Screencapture-Server-Name": "[Qbox Project] Test Server",
+[script:screencapture]   "X-Screencapture-Upload-Host": "api.fivemanage.com",
+[script:screencapture]   "X-Screencapture-Resource": "screencapture",
+[script:screencapture]   "Authorization": "4hDHMy96SSQqyOakYjB5XUfG4PrbSI13"
+[script:screencapture] }
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 3 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (30.0314 ms)
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/2 stashes (30.2366 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] server thread hitch warning: timer interval of 186 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "codera-radialmenu"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource codera-radialmenu
+[    c-scripting-core] Creating script environments for codera-radialmenu
+[           resources] Started resource codera-radialmenu
+[ citizen-server-impl] server thread hitch warning: timer interval of 221 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 1/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] server thread hitch warning: timer interval of 228 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 3 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (31.2743 ms)
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/2 stashes (31.4950 ms)
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ ensure "interact"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource interact
+[    c-scripting-core] Creating script environments for interact
+[           resources] Started resource interact
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] server thread hitch warning: timer interval of 193 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ ensure "oph3z-phone"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource oph3z-phone
+[    c-scripting-core] Creating script environments for oph3z-phone
+[           resources] Started resource oph3z-phone
+[ citizen-server-impl] server thread hitch warning: timer interval of 447 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[script:Renewed-Banki] [Renewed-Banking][INFO][resource_ready] {"migrationRequired":false,"framework":"qbx","version":"3.0.0-rc.1"}
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "oph3z-phone"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource oph3z-phone
+[    c-scripting-core] Creating script environments for oph3z-phone
+[           resources] Started resource oph3z-phone
+[ citizen-server-impl] server thread hitch warning: timer interval of 728 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 1/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "oph3z-phone"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource oph3z-phone
+[    c-scripting-core] Creating script environments for oph3z-phone
+║             TXADMIN║ txaReportResources 
+║             TXADMIN║ txaReportResources 
+║             TXADMIN║ txaReportResources 
+[           resources] Started resource oph3z-phone
+[ citizen-server-impl] server thread hitch warning: timer interval of 7741 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 104 milliseconds
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "oph3z-phone"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource oph3z-phone
+[    c-scripting-core] Creating script environments for oph3z-phone
+[           resources] Started resource oph3z-phone
+[ citizen-server-impl] server thread hitch warning: timer interval of 539 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 116 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 140 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 114 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 138 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 124 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 125 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 134 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 130 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 135 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 155 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 110 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 164 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 162 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 107 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 160 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 129 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 113 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 130 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 103 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 109 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 114 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 112 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 107 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 114 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 107 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 103 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 238 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 107 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 262 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 108 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 107 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 151 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 124 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 116 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 147 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 103 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 168 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 179 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 107 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 127 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 142 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 155 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 134 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 108 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 117 milliseconds
+║            realscrp║ refresh 
+[           resources] Scanning resources.
+║             TXADMIN║ txaReportResources 
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+║             TXADMIN║ txaReportResources 
+[           resources] Found 0 new resources, and refreshed 1/167 resources.
+[ citizen-server-impl] server thread hitch warning: timer interval of 4272 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 116 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "oph3z-phone"
+║             TXADMIN║ txaReportResources 
+[    c-scripting-core] Creating script environments for oph3z-phone
+[ citizen-server-impl] sync thread hitch warning: timer interval of 112 milliseconds
+║             TXADMIN║ txaReportResources 
+[           resources] Started resource oph3z-phone
+[ citizen-server-impl] server thread hitch warning: timer interval of 3147 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 142 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 135 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 160 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 123 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 108 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 143 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 218 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 163 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 103 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 140 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 154 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 293 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 137 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 142 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 215 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 124 milliseconds
+[      script:oxmysql] [12.3.2-MariaDB] oph3z-phone took 229.9995ms to execute a query!
+[      script:oxmysql] SELECT `id`, `payload` FROM `oph3z_phone_airdrops` WHERE `citizenid` = ? ORDER BY `id` ASC ["KLH82788"]
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 124 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 160 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 151 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 195 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 108 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 186 milliseconds
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[ citizen-server-impl] server thread hitch warning: timer interval of 332 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "interact"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource interact
+[    c-scripting-core] Creating script environments for interact
+[           resources] Started resource interact
+[ citizen-server-impl] server thread hitch warning: timer interval of 624 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] server thread hitch warning: timer interval of 2322 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 113 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 165 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 110 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 148 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 186 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 118 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 153 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 110 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 141 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 115 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 109 milliseconds
+║            realscrp║ refresh 
+[           resources] Scanning resources.
+║             TXADMIN║ txaReportResources 
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[ citizen-server-impl] server thread hitch warning: timer interval of 286 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] server thread hitch warning: timer interval of 666 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 114 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 138 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 121 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 158 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 140 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 121 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 158 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 104 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 109 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 121 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 104 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 121 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 110 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 118 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 178 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 118 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 176 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 112 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 165 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 121 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 116 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 134 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 154 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 103 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 108 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 104 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 112 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 114 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 155 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 196 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 103 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 123 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 126 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 135 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 117 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 134 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 190 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 228 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 110 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 104 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 114 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 147 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 173 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 224 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 163 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 618 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 168 milliseconds
+[      script:oxmysql] [12.3.2-MariaDB] qbx_management took 219.9546ms to execute a query!
+[      script:oxmysql] INSERT INTO `player_jobs_activity` (`citizenid`, `job`, `last_checkin`, `last_checkout`) VALUES (?, ?, ?, ?) ["KLH82788","reporter",1792807912,1792829869]
+[      script:oxmysql] [12.3.2-MariaDB] qbx_core took 240.4353ms to execute a query!
+[      script:oxmysql] INSERT INTO players (userId, citizenid, cid, license, name, money, charinfo, job, gang, position, metadata, last_logged_out) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE userId = ?, name = ?, money = ?, charinfo = ?, job = ?, gang = ?, position = ?, metadata = ?, last_logged_out = ? [1,"KLH82788",1,"license2:0dea0f02583678f7c8461d76011c24352442e76a","Frank Taylor","{\"crypto\":0,\"bank\":3541303,\"cash\":177973}","{\"account\":\"559691\",\"cid\":1,\"backstory\":\"\",\"gender\":0,\"birthdate\":\"08-19-1998\",\"firstname\":\"Frank\",\"lastname\":\"Taylor\",\"nationality\":\"American\",\"height\":176,\"phone\":\"6996191\"}","{\"isboss\":false,\"bankAuth\":false,\"grade\":{\"name\":\"Journalist\",\"level\":0},\"name\":\"reporter\",\"label\":\"Reporter\",\"payment\":50,\"onduty\":true}","{\"isboss\":false,\"bankAuth\":false,\"name\":\"none\",\"label\":\"No Gang\",\"grade\":{\"name\":\"Unaffiliated\",\"level\":0}}","{\"x\":-1.015380859375,\"y\":6513.54736328125,\"z\":31.874755859375,\"w\":133.22833251953126}","{\"phone\":[],\"isdead\":false,\"jobrep\":{\"taxi\":0,\"tow\":0,\"hotdog\":0,\"trucker\":0},\"optin\":true,\"injail\":0,\"armor\":0,\"licences\":{\"driver\":true,\"weapon\":true,\"id\":true},\"criminalrecord\":{\"hasRecord\":false},\"status\":[],\"callsign\":\"NO CALLSIGN\",\"fingerprint\":\"B7Y6N5Z2QRU73HK\",\"thirst\":81.00000000000002,\"phonedata\":{\"SerialNumber\":72044124,\"InstalledApps\":[]},\"stress\":0,\"tracker\":false,\"bloodtype\":\"B+\",\"walletid\":\"QB-56358736\",\"inlaststand\":false,\"jailitems\":[],\"ishandcuffed\":false,\"dealerrep\":0,\"inside\":{\"apartment\":[]},\"health\":200,\"craftingrep\":0,\"hunger\":78.99999999999999,\"attachmentcraftingrep\":0}","2026-10-24 04:17:49",1,"Frank Taylor","{\"crypto\":0,\"bank\":3541303,\"cash\":177973}","{\"account\":\"559691\",\"cid\":1,\"backstory\":\"\",\"gender\":0,\"birthdate\":\"08-19-1998\",\"firstname\":\"Frank\",\"lastname\":\"Taylor\",\"nationality\":\"American\",\"height\":176,\"phone\":\"6996191\"}","{\"isboss\":false,\"bankAuth\":false,\"grade\":{\"name\":\"Journalist\",\"level\":0},\"name\":\"reporter\",\"label\":\"Reporter\",\"payment\":50,\"onduty\":true}","{\"isboss\":false,\"bankAuth\":false,\"name\":\"none\",\"label\":\"No Gang\",\"grade\":{\"name\":\"Unaffiliated\",\"level\":0}}","{\"x\":-1.015380859375,\"y\":6513.54736328125,\"z\":31.874755859375,\"w\":133.22833251953126}","{\"phone\":[],\"isdead\":false,\"jobrep\":{\"taxi\":0,\"tow\":0,\"hotdog\":0,\"trucker\":0},\"optin\":true,\"injail\":0,\"armor\":0,\"licences\":{\"driver\":true,\"weapon\":true,\"id\":true},\"criminalrecord\":{\"hasRecord\":false},\"status\":[],\"callsign\":\"NO CALLSIGN\",\"fingerprint\":\"B7Y6N5Z2QRU73HK\",\"thirst\":81.00000000000002,\"phonedata\":{\"SerialNumber\":72044124,\"InstalledApps\":[]},\"stress\":0,\"tracker\":false,\"bloodtype\":\"B+\",\"walletid\":\"QB-56358736\",\"inlaststand\":false,\"jailitems\":[],\"ishandcuffed\":false,\"dealerrep\":0,\"inside\":{\"apartment\":[]},\"health\":200,\"craftingrep\":0,\"hunger\":78.99999999999999,\"attachmentcraftingrep\":0}","2026-10-24 04:17:49"]
+[      script:oxmysql] [12.3.2-MariaDB] xt-prison took 284.1709ms to execute a query!
+[      script:oxmysql] INSERT INTO xt_prison (identifier, jailtime) VALUES (?, ?) ON DUPLICATE KEY UPDATE jailtime = VALUES(jailtime) ["KLH82788",0]
+[      script:oxmysql] [12.3.2-MariaDB] qbx_vehicleshop took 292.1029ms to execute a query!
+[      script:oxmysql] SELECT vf.* FROM vehicle_financing AS vf INNER JOIN player_vehicles AS pv ON pv.citizenid = ? WHERE vf.vehicleId = pv.id AND vf.balance > 0 ["KLH82788"]
+[ citizen-server-impl] server thread hitch warning: timer interval of 279 milliseconds
+[      script:oxmysql] [12.3.2-MariaDB] ox_inventory took 315.9788ms to execute a query!
+[      script:oxmysql] UPDATE `players` SET inventory = ? WHERE `citizenid` = ? ["[{\"slot\":1,\"name\":\"laptop\",\"count\":1},{\"slot\":2,\"name\":\"magazine\",\"metadata\":{\"label\":\"LifeInvader Vol. 3\",\"description\":\"First Article\",\"issue\":3},\"count\":1},{\"slot\":3,\"name\":\"money\",\"count\":177973},{\"slot\":4,\"name\":\"magazine\",\"metadata\":{\"label\":\"LifeInvader Vol. 2\",\"description\":\"Issue 2\",\"issue\":2},\"count\":1},{\"slot\":5,\"name\":\"magazine\",\"metadata\":{\"label\":\"LifeInvader Vol. 3\",\"issue\":3,\"description\":\"First Article\"},\"count\":1}]","KLH82788"]
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] network thread hitch warning: timer interval of 229 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 136 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 151 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 190 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 228 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 114 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 164 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 141 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 140 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 117 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 133 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 149 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 109 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[ citizen-server-impl] server thread hitch warning: timer interval of 159 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] server thread hitch warning: timer interval of 204 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "interact"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource interact
+[    c-scripting-core] Creating script environments for interact
+[           resources] Started resource interact
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 167 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 471 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 296 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[script:qbx_propertie] SCRIPT ERROR: @qbx_properties/server/property.lua:139: qbx_properties was unable to execute a query!
+[script:qbx_propertie] Query: SELECT coords FROM properties GROUP BY coords
+[script:qbx_propertie] []
+[script:qbx_propertie] Unknown column 'coords' in 'SELECT'
+[script:qbx_propertie] > callbackResponse (@ox_lib/imports/callback/server.lua:101)
+[script:qbx_propertie] > handler (@ox_lib/imports/callback/server.lua:122)
+[script:qbx_propertie] > new StackDumpError (D:\FiveMServer\server\citizen/scripting/v8/main.js:416)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:436)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:97)
+[script:qbx_propertie] > Number.__cfx_wrap_638291 (D:\FiveMServer\server\citizen/scripting/v8/main.js:24)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:30)
+[script:qbx_propertie] > <unknown> (D:\FiveMServer\server\citizen/scripting/v8/main.js:94)
+[script:qbx_propertie] > logError (@oxmysql/dist/build.js:26864)
+[script:qbx_propertie] > rawQuery (@oxmysql/dist/build.js:27047)
+[script:qbx_propertie] > process.processTicksAndRejections (node:internal/process/task_queues:105)
+[script:qbx_propertie] 
+[script:bablo-multich] event QBCore:Server:OnPlayerLoaded was not safe for net
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (45.9947 ms)
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 108 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 127 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 110 milliseconds
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 113 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 153 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 128 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 102 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 157 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 131 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 118 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 133 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 104 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 143 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[ citizen-server-impl] server thread hitch warning: timer interval of 986 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] server thread hitch warning: timer interval of 230 milliseconds
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 115 milliseconds
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "interact"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource interact
+[    c-scripting-core] Creating script environments for interact
+[           resources] Started resource interact
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 110 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 158 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 133 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 149 milliseconds
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 128 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 103 milliseconds
+║            realscrp║ refresh 
+║             TXADMIN║ txaReportResources 
+[           resources] Scanning resources.
+[           resources] Found 0 new resources, and refreshed 0/167 resources.
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+║            realscrp║ ensure "nova_laptop"
+║             TXADMIN║ txaReportResources 
+[           resources] Stopping resource nova_laptop
+[    c-scripting-core] Creating script environments for nova_laptop
+[           resources] Started resource nova_laptop
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[  script:nova_laptop] [nova_laptop] Ready. Framework: qbox. Command: /laptop
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 24.128.245.2:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.

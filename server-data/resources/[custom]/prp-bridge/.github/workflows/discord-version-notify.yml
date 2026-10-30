@@ -1,0 +1,69 @@
+name: Discord Version Notify
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'versions/*.json'
+
+jobs:
+  notify:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get changed version files
+        id: changed
+        shell: bash
+        run: |
+          changed=$(git diff --name-only HEAD~1 HEAD -- 'versions/*.json')
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$changed" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Send Discord notifications
+        shell: bash
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+
+            name=$(basename "$file" .json)
+            version=$(jq -r '.version' "$file")
+
+            changes=$(jq -r '.changes[]' "$file" | sed 's/^/- /' | tr '\n' '\n')
+            changes_value=$(jq -r '[.changes[] | "- " + .] | join("\n")' "$file")
+
+            files_value=$(jq -r '[.filesAffected[] | "- " + .] | join("\n")' "$file")
+
+            payload=$(jq -n \
+              --arg title "$name" \
+              --arg version "$version" \
+              --arg changes "$changes_value" \
+              --arg files "$files_value" \
+              '{
+                content: null,
+                embeds: [{
+                  title: $title,
+                  color: 9885556,
+                  fields: [
+                    { name: "Version", value: $version },
+                    { name: "Changes", value: $changes },
+                    { name: "Files Affected", value: $files }
+                  ]
+                }],
+                attachments: []
+              }')
+
+            curl -s -o /dev/null -w "%{http_code}" \
+              -H "Content-Type: application/json" \
+              -d "$payload" \
+              "$DISCORD_WEBHOOK"
+
+          done <<< "${{ steps.changed.outputs.files }}"

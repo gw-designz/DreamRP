@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* NoPixel-style look: one condensed italic face everywhere, near-black glass panels, teal money. */
+:root {
+  --font-title: 'Barlow Condensed', sans-serif;
+  --font-body: 'Barlow Condensed', sans-serif;
+  --font-barlow: 'Barlow Condensed', sans-serif;
+  --accent-color: #2fe0f5;
+  --np-panel: rgba(12, 12, 12, 0.82);
+  --np-panel-hover: rgba(48, 48, 48, 0.9);
+  --np-cash: #10f6b7;
+  --np-bank: #3ee5f6;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+.font-bebas,
+.font-oswald,
+.font-barlow,
+.font-np {
+  font-family: var(--font-body);
+}
+
+.np-panel {
+  background: var(--np-panel);
+}
+
+/* Big grey section title ("APPAREL", "CUSTOMIZATION") */
+.np-title {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-style: italic;
+  color: rgba(225, 225, 225, 0.72);
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* Studio-grey item thumbnail card */
+.np-card {
+  background: radial-gradient(120% 95% at 50% 30%, rgba(74, 79, 89, 0.94) 0%, rgba(51, 54, 61, 0.94) 55%, rgba(36, 38, 44, 0.94) 100%);
+}
+
+.np-total {
+  background: linear-gradient(90deg, #2fd6fe 0%, #0fd9df 50%, #01dcba 100%);
+}
+
+.styled-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+.styled-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.styled-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 0;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 0;
+  background: #ffffff;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}

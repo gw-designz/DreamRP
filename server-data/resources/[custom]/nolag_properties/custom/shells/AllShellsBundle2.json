@@ -1,0 +1,487 @@
+{
+    "resourceName": "K4MB1-AllShellsBundle2",
+    "creator": "K4MB1 All Shells Bundle 2",
+    "interiors": {
+        "Apartment Shell": {
+            "label": "Apartment Shell",
+            "doorOffset": {
+                "x": 2.963623,
+                "y": -3.584229,
+                "z": -0.244308,
+                "h": 89.077797,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/images/tzsX80JAMwSm.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/1IpAdJSNBMKw.jpg"
+                }
+            ],
+            "model": "k4mb1_apartment_shell"
+        },
+        "Banham": {
+            "label": "Banham",
+            "doorOffset": {
+                "x": -1.880493,
+                "y": -5.199707,
+                "z": 1.083832,
+                "h": 87.632317,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/images/wh5eIMJm4XHa.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/bvfxc0ixPsDE.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/WwP9L5xe2jNM.jpg"
+                }
+            ],
+            "model": "k4mb1_banham_shell"
+        },
+        "Beach House": {
+            "label": "Beach House",
+            "doorOffset": {
+                "x": -11.200562,
+                "y": 1.888916,
+                "z": 1.166977,
+                "h": 270.843628,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/images/X8nKTekVHkmB.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/VoZEB4Ic9dN7.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/84SqXW1y23g9.jpg"
+                }
+            ],
+            "model": "k4mb1_beachhouse_shell"
+        },
+        "Farm House": {
+            "label": "Farm House",
+            "doorOffset": {
+                "x": -7.612244,
+                "y": 5.855957,
+                "z": -1.24173,
+                "h": 180.397614,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/images/hAmc6IMBNDp8.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/lHVaooxoaDNL.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/wlWIHENIdZMc.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/nA8c0C6JAbVn.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/FWamC3uwHqb9.jpg"
+                }
+            ],
+            "model": "k4mb1_farmhouse_shell"
+        },
+        "Hood House": {
+            "label": "Hood House",
+            "doorOffset": {
+                "x": -3.120605,
+                "y": 4.033691,
+                "z": -0.500214,
+                "h": 267.202148,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/images/Z2jm1fBG0VQi.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/cervgXZCcMSg.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/tvpxsBrO2mIf.jpg"
+                }
+            ],
+            "model": "k4mb1_hoodhouse2_shell"
+        },
+        "Mansion Shell": {
+            "label": "Mansion Shell",
+            "doorOffset": {
+                "x": -10.754944,
+                "y": 6.116211,
+                "z": 4.609848,
+                "h": 274.931702,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/images/xGuou0ZWjd2A.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/E2Op1DeGwbPz.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/HqUz0ezjPenJ.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/jZdIO9TGzyZ6.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/PUo7XgG6tk6m.jpg"
+                }
+            ],
+            "model": "k4mb1_mansion_shell"
+        },
+        "Modern Shell": {
+            "label": "Modern Shell",
+            "doorOffset": {
+                "x": -8.092957,
+                "y": 3.845215,
+                "z": -0.600998,
+                "h": 269.412842,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/images/0JmBtIZCdh3f.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/zKwgRzlfX4NU.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/Vo77UYsY3HS8.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/lEH0DtVT8SKs.jpg"
+                }
+            ],
+            "model": "k4mb1_modern_shell"
+        },
+        "Penthouse Shell": {
+            "label": "Penthouse Shell",
+            "doorOffset": {
+                "x": 11.327332,
+                "y": -11.660645,
+                "z": 1.081619,
+                "h": 86.644089,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/images/z7rjJ4I3sbGm.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/yWy5auAqU0G1.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/rSFbq9viJ3VT.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/mKmSafUu7sx6.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/yjq0qWyCRfU9.jpg"
+                }
+            ],
+            "model": "k4mb1_penthouse_shell"
+        },
+        "Penthouse2 Shell": {
+            "label": "Penthouse2 Shell",
+            "doorOffset": {
+                "x": 4.770081,
+                "y": -12.244629,
+                "z": -1.178268,
+                "h": 0.077078,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/images/VXNVAbMlz76l.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/PajAFLUgrb4r.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/6mEIVSZjwVYt.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/BgE1qrUwrLec.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/oIPwKqMAFNWG.jpg"
+                }
+            ],
+            "model": "k4mb1_penthouse2_shell"
+        },
+        "Warehouse Shell": {
+            "label": "Warehouse Shell",
+            "doorOffset": {
+                "x": 8.534912,
+                "y": -3.219482,
+                "z": -1.4944,
+                "h": 88.660812,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/images/PkJmGac0pUA4.jpg"
+                },
+                {
+                    "url": "https://r2.fivemanage.com/images/3wHkjhMWmuiO.jpg"
+                }
+            ],
+            "model": "k4mb1_warehouse_shell"
+        },
+        "Banham2 Shell": {
+            "label": "Banham2 Shell",
+            "doorOffset": {
+                "x": -1.723389,
+                "y": -5.176147,
+                "z": 1.083878,
+                "h": 92.1408,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/KnnZX0U1LuTwJqegk6EyJ/banham2.png"
+                }
+            ],
+            "model": "k4mb1_banham2_shell"
+        },
+        "Beachhouse2 Shell": {
+            "label": "Beachhouse2 Shell",
+            "doorOffset": {
+                "x": -11.32019,
+                "y": 1.879517,
+                "z": 1.167023,
+                "h": 270.956604,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/KnnZX0U1LuTwJqegk6EyJ/beachhouse2.png"
+                }
+            ],
+            "model": "k4mb1_beachhouse2_shell"
+        },
+        "Bunkersilo Shell": {
+            "label": "Bunkersilo Shell",
+            "doorOffset": {
+                "x": -0.169434,
+                "y": 0.021484,
+                "z": 2.510483,
+                "h": 269.095215,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/KnnZX0U1LuTwJqegk6EyJ/bunkersilo.png"
+                }
+            ],
+            "model": "k4mb1_bunkersilo_shell"
+        },
+        "House1 Paleto Shell": {
+            "label": "House1 Paleto Shell",
+            "doorOffset": {
+                "x": 10.146118,
+                "y": -3.64978,
+                "z": -1.071075,
+                "h": 91.40535,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/KnnZX0U1LuTwJqegk6EyJ/house1paleto.png"
+                }
+            ],
+            "model": "k4mb1_house1paleto_shell"
+        },
+        "Mansion1 Modern Shell": {
+            "label": "Mansion1 Modern Shell",
+            "doorOffset": {
+                "x": -7.147339,
+                "y": 5.877319,
+                "z": -0.456879,
+                "h": 304.737183,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/KnnZX0U1LuTwJqegk6EyJ/mansion1modern.png"
+                }
+            ],
+            "model": "k4mb1_mansion1modern_shell"
+        },
+        "VWHouse4 Shell": {
+            "label": "VW House4 Shell",
+            "doorOffset": {
+                "x": 6.868286,
+                "y": -8.683105,
+                "z": -1.537598,
+                "h": 92.829018,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/KnnZX0U1LuTwJqegk6EyJ/vwhouse4.png"
+                }
+            ],
+            "model": "k4mb1_vw_house4_shell"
+        },
+        "Villa1 Shell": {
+            "label": "Villa1 Shell",
+            "doorOffset": {
+                "x": 2.510498,
+                "y": 4.023193,
+                "z": -0.530594,
+                "h": 183.465363,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/KnnZX0U1LuTwJqegk6EyJ/Villa1.png"
+                }
+            ],
+            "model": "k4mb1_villa1_shell"
+        },
+        "Mansion2 Shell": {
+            "label": "Mansion 2 Shell",
+            "doorOffset": {
+                "x": -10.813721,
+                "y": 6.01709,
+                "z": 4.609634,
+                "h": 279.441559,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/KnnZX0U1LuTwJqegk6EyJ/Mansion3.png"
+                }
+            ],
+            "model": "k4mb1_mansion2_shell"
+        },
+        "Mansion3 Shell": {
+            "label": "Mansion 3 Shell",
+            "doorOffset": {
+                "x": 1.122437,
+                "y": 20.70874,
+                "z": -2.639496,
+                "h": 273.192474,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/KnnZX0U1LuTwJqegk6EyJ/Mansion2.png"
+                }
+            ],
+            "model": "k4mb1_mansion3_shell"
+        },
+        "Manor2 Shell": {
+            "label": "Manor 2 Shell",
+            "doorOffset": {
+                "x": 6.91748,
+                "y": -8.900024,
+                "z": -4.97551,
+                "h": 359.267731,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 8000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/KnnZX0U1LuTwJqegk6EyJ/manor2.png"
+                }
+            ],
+            "model": "k4mb1_manor2_shell"
+        }
+    }
+}

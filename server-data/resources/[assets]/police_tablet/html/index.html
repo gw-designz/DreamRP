@@ -1,0 +1,109 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>THE ORB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--cyan:#00f0ff;--ink:#e8f6f8;--dim:rgba(232,246,248,.62);--glass:rgba(9,12,17,.78);--line:rgba(0,240,255,.28)}
+  html,body{margin:0;height:100%;background:transparent;overflow:hidden;font-family:Inter,Arial,sans-serif;color:var(--ink)}
+  .off{display:none!important}
+  #hud{position:fixed;inset:0;pointer-events:none;animation:in .35s ease-out}
+  @keyframes in{from{opacity:0}to{opacity:1}}
+  #vignette{position:absolute;inset:0;background:radial-gradient(ellipse 62% 66% at 50% 48%,transparent 55%,rgba(3,6,10,.55) 78%,rgba(3,6,10,.88) 100%)}
+  .corner{position:absolute;width:44px;height:44px;border-color:var(--line);border-style:solid;border-width:0}
+  .tl{top:26px;left:26px;border-top-width:2px;border-left-width:2px;border-top-left-radius:10px}
+  .tr{top:26px;right:26px;border-top-width:2px;border-right-width:2px;border-top-right-radius:10px}
+  .bl{bottom:26px;left:26px;border-bottom-width:2px;border-left-width:2px;border-bottom-left-radius:10px}
+  .br{bottom:26px;right:26px;border-bottom-width:2px;border-right-width:2px;border-bottom-right-radius:10px}
+  #brand{position:absolute;top:44px;left:48px;display:flex;align-items:center;gap:14px}
+  .orb{width:38px;height:38px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#bffcff 0,#2ff3ff 18%,#0092a8 52%,#03222b 78%);box-shadow:0 0 22px rgba(0,240,255,.55),inset -4px -6px 10px rgba(0,0,0,.45);position:relative}
+  .orb:after{content:"";position:absolute;inset:-7px -11px;border:2px solid rgba(0,240,255,.55);border-radius:50%;transform:rotate(-18deg) scaleY(.32)}
+  .word{font-family:"Space Grotesk",Arial,sans-serif;font-weight:700;letter-spacing:.32em;font-size:19px;line-height:1}
+  .word small{display:block;margin-top:5px;font-size:10px;letter-spacing:.42em;color:var(--cyan);font-weight:500}
+  #name{position:absolute;top:96px;left:48px;font-family:"Space Grotesk",Arial,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+  #name b{color:var(--ink);font-weight:700}
+  #keys{position:absolute;left:50%;bottom:44px;transform:translateX(-50%);display:flex;gap:22px;align-items:center;padding:12px 22px;border-radius:16px;background:var(--glass);border:1px solid var(--line);box-shadow:0 10px 40px rgba(0,0,0,.45)}
+  .k{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--dim);white-space:nowrap}
+  kbd{font-family:"Space Grotesk",Arial,sans-serif;font-weight:700;font-size:11px;letter-spacing:.06em;color:var(--ink);padding:5px 8px;border-radius:7px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-bottom-width:2px}
+  .k.cyan kbd{color:#041014;background:var(--cyan);border-color:var(--cyan)}
+  #panel{position:fixed;inset:7vh 9vw;border-radius:20px;background:rgba(9,12,17,.96);border:1px solid var(--line);box-shadow:0 30px 100px rgba(0,0,0,.7);overflow:hidden}
+  #panel canvas{display:block;width:100%;height:100%}
+  #bar{position:absolute;left:0;right:0;top:0;display:flex;align-items:center;gap:14px;padding:16px 20px;background:linear-gradient(rgba(9,12,17,.95),rgba(9,12,17,0))}
+  #bar .orb{width:24px;height:24px}
+  #bar .t{font-family:"Space Grotesk",Arial,sans-serif;font-weight:700;letter-spacing:.12em;font-size:14px}
+  #bar .t span{color:var(--cyan)}
+  #bar .s{flex:1;font-size:12.5px;color:var(--dim)}
+  button{font-family:"Space Grotesk",Arial,sans-serif;font-weight:700;letter-spacing:.06em;background:var(--cyan);color:#041014;border:0;border-radius:11px;padding:9px 16px;cursor:pointer}
+  #msg{position:absolute;inset:0;display:grid;place-items:center;color:var(--dim);font-size:14px;pointer-events:none}
+</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
+</head><body>
+<div id="hud" class="off">
+  <div id="vignette"></div>
+  <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
+  <div id="brand"><div class="orb"></div><div class="word">THE ORB<small>STUDIO</small></div></div>
+  <div id="name">Viewing <b id="prop"></b></div>
+  <div id="keys">
+    <div class="k"><kbd>LMB</kbd>drag to rotate</div>
+    <div class="k"><kbd>W A S D</kbd>rotate</div>
+    <div class="k"><kbd>WHEEL</kbd>zoom</div>
+    <div class="k cyan off" id="kglb"><kbd>G</kbd>web model</div>
+    <div class="k"><kbd>ESC</kbd>exit</div>
+  </div>
+</div>
+<div id="panel" class="off">
+  <div id="bar"><div class="orb"></div><div class="t">THE ORB <span>·</span> <span id="glbname">model</span>.glb</div><div class="s">Web model: drag to rotate, wheel to zoom. The game draws one side of each face; this view draws both.</div><button id="back">Back to the game</button></div>
+  <div id="msg">Loading…</div>
+</div>
+<script type="module">
+const $ = (id) => document.getElementById(id);
+const hud = $("hud"), panel = $("panel"), msg = $("msg");
+let montado = null;
+async function montar() {
+  const THREE = await import("three");
+  const { GLTFLoader } = await import("three/addons/loaders/GLTFLoader.js");
+  const { OrbitControls } = await import("three/addons/controls/OrbitControls.js");
+  const { RoomEnvironment } = await import("three/addons/environments/RoomEnvironment.js");
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setPixelRatio(window.devicePixelRatio);
+  panel.appendChild(renderer.domElement);
+  const scene = new THREE.Scene();
+  scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+  const camera = new THREE.PerspectiveCamera(40, 1, 0.001, 1000);
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  const gltf = await new GLTFLoader().loadAsync("model.glb");
+  scene.add(gltf.scene);
+  const box = new THREE.Box3().setFromObject(gltf.scene), size = box.getSize(new THREE.Vector3()).length(), c = box.getCenter(new THREE.Vector3());
+  controls.target.copy(c);
+  camera.position.copy(c).add(new THREE.Vector3(0.6, 0.35, 1).normalize().multiplyScalar(size * 1.3));
+  controls.minDistance = size * 0.15; controls.maxDistance = size * 8;
+  msg.classList.add("off");
+  const tam = () => { const r = panel.getBoundingClientRect(); renderer.setSize(r.width, r.height, false); camera.aspect = r.width / Math.max(1, r.height); camera.updateProjectionMatrix(); };
+  new ResizeObserver(tam).observe(panel); tam();
+  renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
+}
+function cerrarPanel() {
+  panel.classList.add("off");
+  hud.classList.remove("off");
+  fetch("https://" + GetParentResourceName() + "/close", { method: "POST", body: "{}" }).catch(() => {});
+}
+$("back").onclick = cerrarPanel;
+window.addEventListener("keydown", (e) => { if (!panel.classList.contains("off") && (e.key === "Escape" || e.key === "Backspace")) cerrarPanel(); });
+window.addEventListener("message", (e) => {
+  const d = e.data || {};
+  if (d.action === "hud") {
+    $("prop").textContent = d.name || "";
+    $("glbname").textContent = d.name || "model";
+    $("kglb").classList.toggle("off", !d.glb);
+    hud.classList.remove("off");
+  } else if (d.action === "hud_off") {
+    hud.classList.add("off");
+    panel.classList.add("off");
+  } else if (d.action === "open") {
+    hud.classList.add("off");
+    panel.classList.remove("off");
+    if (!montado) montado = montar().catch((err) => { msg.textContent = "Could not load the web model: " + err.message; });
+  }
+});
+</script>
+</body></html>

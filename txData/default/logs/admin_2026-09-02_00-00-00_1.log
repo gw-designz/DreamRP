@@ -1,0 +1,25 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 9/2/2026, 12:22:20 PM
+================================================================
+================================================================
+======== Log Rotated - 9/2/2026, 12:22:24 PM                    
+================================================================
+[12:24:06][realscrp] logged in from 127.0.0.1 via password auth
+[12:25:02][realscrp] Refreshed resources
+[12:25:06][realscrp] Stopped resource "prp-hud"
+[12:33:17][realscrp] Refreshed resources
+[12:33:22][realscrp] Ensured resource "bablo-billing"
+[12:35:16][realscrp] Refreshed resources
+[12:37:40][realscrp] Refreshed resources
+[12:37:42][realscrp] Stopped resource "prism_pausemenuv2"
+[12:37:43][realscrp] Ensured resource "bablo-pausemenu"
+[12:39:07][realscrp] Refreshed resources
+[12:39:18][realscrp] Stopped resource "cylex_multichar"
+[12:39:19][realscrp] Ensured resource "bablo-multicharacter"
+[12:39:48][realscrp] Ensured resource "bablo-pausemenu"
+[12:43:29][realscrp] Refreshed resources
+[12:43:31][realscrp] Ensured resource "ox_inventory"
+[12:43:40][realscrp] Ensured resource "sd-itemspawner"
+[12:43:41][realscrp] Ensured resource "qbx_ambulancejob"
+[12:43:42][realscrp] Ensured resource "ox_fuel"
+[12:43:45][realscrp] Ensured resource "bablo-pettycrimes"

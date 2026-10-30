@@ -1,0 +1,27 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 10/6/2026, 12:39:41 AM
+================================================================
+================================================================
+======== Log Rotated - 10/6/2026, 12:39:45 AM                   
+================================================================
+[00:40:31][realscrp] logged in from 127.0.0.1 via password auth
+[00:41:12][realscrp] Refreshed resources
+[00:41:16][realscrp] Stopped resource "meteo-adminmenu"
+[00:41:21][realscrp] Ensured resource "xeno-scriptcreator"
+[00:42:34][realscrp] Refreshed resources
+[00:42:44][realscrp] Refreshed resources
+[00:42:48][realscrp] Ensured resource "PolyZone"
+[00:42:52][realscrp] Ensured resource "xeno-scriptcreator"
+[00:47:04][realscrp] Refreshed resources
+[00:47:06][realscrp] Ensured resource "xeno-scriptcreator"
+[00:48:45][realscrp] Refreshed resources
+[00:56:59][realscrp] Ensured resource "xeno-scriptcreator"
+[01:00:30][realscrp] Refreshed resources
+[01:00:33][realscrp] Refreshed resources
+[01:00:38][realscrp] Stopped resource "karma-admin"
+[01:00:40][realscrp] Stopped resource "codera-adminmenu"
+[01:00:41][realscrp] Ensured resource "xeno-adminmenu"
+[01:01:50][realscrp] executed "xeno_make_owner 2"
+[01:05:07][realscrp] Refreshed resources
+[01:05:11][realscrp] Ensured resource "xeno-scriptcreator"
+[01:07:09][realscrp] executed "RESTART SERVER"

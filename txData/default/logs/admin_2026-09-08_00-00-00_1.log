@@ -1,0 +1,52 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/7/2026, 1:45:31 AM
+================================================================
+================================================================
+======== Log Rotated - 9/7/2026, 1:45:34 AM                     
+================================================================
+[01:47:30][realscrp] logged in from 127.0.0.1 via password auth
+[01:49:25][realscrp] Ensured resource "bablo-hud"
+[01:56:43][realscrp] Refreshed resources
+[01:56:46][realscrp] Ensured resource "business-creator"
+[02:08:35][realscrp] Refreshed resources
+[02:08:36][realscrp] Ensured resource "business-creator"
+[02:17:38][realscrp] Refreshed resources
+[02:17:39][realscrp] Ensured resource "business-creator"
+[02:19:40][realscrp] Refreshed resources
+[02:19:41][realscrp] Ensured resource "business-creator"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/7/2026, 11:45:08 PM
+================================================================
+[23:46:04][realscrp] logged in from 127.0.0.1 via password auth
+[23:47:13][realscrp] Refreshed resources
+[23:47:17][realscrp] Stopped resource "bablo-hud"
+[23:49:20][realscrp] Ensured resource "minimap"
+[23:51:02][realscrp] Refreshed resources
+[23:51:05][realscrp] Ensured resource "Codera-dispatch"
+[23:55:52][realscrp] Refreshed resources
+[23:55:54][realscrp] Ensured resource "mantle"
+[00:01:51][realscrp] Refreshed resources
+[00:01:53][realscrp] Stopped resource "mantle"
+[00:02:13][realscrp] Ensured resource "mantle_script"
+[00:05:19][realscrp] Refreshed resources
+[00:05:20][realscrp] Ensured resource "mantle_script"
+[00:11:33][realscrp] Refreshed resources
+[00:11:34][realscrp] Ensured resource "mantle_script"
+[01:42:40][realscrp] Refreshed resources
+[01:42:47][realscrp] Stopped resource "sd-phone"
+[01:42:49][realscrp] Stopped resource "sd-phone-props"
+[01:42:50][realscrp] Ensured resource "qbx-phone"
+[01:43:12][realscrp] Refreshed resources
+[01:43:14][realscrp] Ensured resource "qbx-phone"
+[01:56:34][realscrp] Refreshed resources
+[01:56:36][realscrp] Ensured resource "qbx-phone"
+[02:20:39][realscrp] Refreshed resources
+[02:20:40][realscrp] Ensured resource "qbx-phone"
+[02:24:36][realscrp] Refreshed resources
+[02:24:38][realscrp] Ensured resource "qbx-phone"
+[02:27:26][realscrp] Refreshed resources
+[02:27:27][realscrp] Ensured resource "qbx-phone"
+[02:41:08][realscrp] Refreshed resources
+[02:41:09][realscrp] Ensured resource "qbx-phone"
+[02:47:44][realscrp] Refreshed resources
+[02:47:45][realscrp] Ensured resource "qbx-phone"

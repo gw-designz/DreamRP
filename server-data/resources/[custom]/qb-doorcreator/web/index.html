@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>qb-doorcreator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hidden by default; client/nui.lua's OpenNui() sends an 'open'
+       postMessage that app.js listens for to show this and render
+       either the create-form or the manage panel. -->
+  <div id="app" class="hidden"></div>
+
+  <!-- The player-facing door interaction prompt (§8). Entirely separate
+       from #app above - client/main.lua drives it with plain
+       SendNUIMessage calls (no SetNuiFocus), so it can be visible at
+       any time without ever capturing mouse/keyboard input. -->
+  <div id="prompt" class="hidden">
+    <span id="prompt-key" class="prompt-key">E</span>
+    <span id="prompt-label" class="prompt-label">Lock</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+    "notify": {
+        "cant_use_downed": "Du kan ikke bruge dette mens du er bevidstløs.",
+        "revived": "Du er blevet genoplivet.",
+        "no_injuries": "Du har ingen skader.",
+        "injuries_cleared": "Alle skader er blevet fjernet.",
+        "invalid_part": "Ugyldig kropsdel: %s",
+        "injured_part": "Skadede %s med %d",
+        "injury_status": "%s: skade %d, blødning %d"
+    },
+    "items": {
+        "bandage": "Du forbandt dine sår og stoppede blødningen.",
+        "firstaid": "Du behandlede dine skader.",
+        "medkit": "Du er blevet fuldt behandlet.",
+        "painkillers": "Smerterne aftager..."
+    },
+    "parts": {
+        "head": "Hoved",
+        "torso": "Overkrop",
+        "pelvis": "Bækken",
+        "left-arm": "Venstre arm",
+        "right-arm": "Højre arm",
+        "left-hand": "Venstre hånd",
+        "right-hand": "Højre hånd",
+        "left-leg": "Venstre ben",
+        "right-leg": "Højre ben",
+        "left-foot": "Venstre fod",
+        "right-foot": "Højre fod"
+    }
+}

@@ -1,0 +1,27 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 9/3/2026, 1:38:48 PM
+================================================================
+================================================================
+======== Log Rotated - 9/3/2026, 1:38:51 PM                     
+================================================================
+[13:39:05][realscrp] logged in from 127.0.0.1 via password auth
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/3/2026, 1:41:26 PM
+================================================================
+[13:41:36][realscrp] logged in from 127.0.0.1 via password auth
+[13:43:09][realscrp] Refreshed resources
+[13:47:27][realscrp] Refreshed resources
+[13:47:35][realscrp] Ensured resource "ox_inventory"
+[13:47:39][realscrp] Ensured resource "ox_fuel"
+[13:47:43][realscrp] Ensured resource "sd-itemspawner"
+[13:47:46][realscrp] Ensured resource "qbx_ambulancejob"
+[13:47:47][realscrp] Ensured resource "p_policejob"
+[13:48:15][realscrp] Refreshed resources
+[13:48:18][realscrp] Refreshed resources
+[13:48:19][realscrp] Ensured resource "object_gizmo"
+[13:48:21][realscrp] Ensured resource "p_policejob"
+[13:51:24][realscrp] Ensured resource "bablo-hud"
+[13:57:29][realscrp] Stopped resource "plt_departments"
+[14:12:59][realscrp] Refreshed resources
+[14:19:47][realscrp] Refreshed resources
+[14:19:56][realscrp] executed "RESTART SERVER"

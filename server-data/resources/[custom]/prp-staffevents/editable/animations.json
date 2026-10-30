@@ -1,0 +1,5130 @@
+[
+    {
+        "name": "dance96",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "hi_dance_prop_09_v1_female^4",
+        "category": "dance2",
+        "label": "Dance 096"
+    },
+    {
+        "name": "prideflag1",
+        "animDict": "rcmnigel1d",
+        "animFlag": 51,
+        "animName": "base_club_shoulder",
+        "category": "pride",
+        "label": "Pride Flag 1"
+    },
+    {
+        "name": "danceglowstick2",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 1,
+        "animName": "ambclub_12_mi_hi_bootyshake_laz",
+        "category": "dance",
+        "label": "Dance Glowsticks 2"
+    },
+    {
+        "name": "dance31",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_male^1",
+        "category": "dance2",
+        "label": "Dance 031"
+    },
+    {
+        "name": "dance164",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_male^3",
+        "category": "dance2",
+        "label": "Dance 164"
+    },
+    {
+        "name": "wait2",
+        "animDict": "missbigscore2aig_3",
+        "animFlag": 1,
+        "animName": "wait_for_van_c",
+        "category": "waiting",
+        "label": "Wait 2"
+    },
+    {
+        "name": "coffee",
+        "animDict": "amb@world_human_drinking@coffee@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_c",
+        "category": "prop",
+        "label": "Coffee"
+    },
+    {
+        "name": "namaste",
+        "animDict": "timetable@amanda@ig_4",
+        "animFlag": 51,
+        "animName": "ig_4_base",
+        "category": "relax",
+        "label": "Namaste"
+    },
+    {
+        "name": "sit6",
+        "animDict": "timetable@jimmy@mics3_ig_15@",
+        "animFlag": 1,
+        "animName": "idle_a_jimmy",
+        "category": "sitting",
+        "label": "Sit 6"
+    },
+    {
+        "name": "cpr2",
+        "animDict": "mini@cpr@char_a@cpr_str",
+        "animFlag": 1,
+        "animName": "cpr_pumpchest",
+        "category": "medical",
+        "label": "CPR 2"
+    },
+    {
+        "name": "fallasleep",
+        "animDict": "mp_sleep",
+        "animFlag": 51,
+        "animName": "sleep_loop",
+        "category": "lying",
+        "label": "Fall Asleep"
+    },
+    {
+        "name": "kneel2",
+        "animDict": "rcmextreme3",
+        "animFlag": 1,
+        "animName": "idle",
+        "category": "randomactions",
+        "label": "Kneel 2"
+    },
+    {
+        "name": "scared2",
+        "animDict": "random@homelandsecurity",
+        "animFlag": 51,
+        "animName": "knees_loop_girl",
+        "category": "randomactions",
+        "label": "Scared 2"
+    },
+    {
+        "name": "meditate2",
+        "animDict": "rcmepsilonism3",
+        "animFlag": 1,
+        "animName": "ep_3_rcm_marnie_meditating",
+        "category": "relax",
+        "label": "Meditiate 2"
+    },
+    {
+        "name": "lean2",
+        "animDict": "amb@world_human_leaning@female@wall@back@hand_up@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "leaning",
+        "label": "Lean 2"
+    },
+    {
+        "name": "dance102",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "hi_dance_prop_09_v1_male^4",
+        "category": "dance2",
+        "label": "Dance 102"
+    },
+    {
+        "name": "wave4",
+        "animDict": "random@mugging5",
+        "animFlag": 51,
+        "animName": "001445_01_gangintimidation_1_female_idle_b",
+        "category": "interactions",
+        "label": "Wave 4"
+    },
+    {
+        "name": "curtsy",
+        "animDict": "anim@mp_player_intcelebrationpaired@f_f_sarcastic",
+        "animFlag": 0,
+        "animName": "sarcastic_left",
+        "category": "interactions",
+        "label": "Curtsy"
+    },
+    {
+        "name": "peace2",
+        "animDict": "anim@mp_player_intupperpeace",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "randomactions",
+        "label": "Peace 2"
+    },
+    {
+        "name": "cigar2",
+        "animDict": "amb@world_human_smoking@male@male_a@enter",
+        "animFlag": 51,
+        "animName": "idle",
+        "category": "prop",
+        "label": "Cigar 2"
+    },
+    {
+        "name": "dance29",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_female^5",
+        "category": "dance2",
+        "label": "Dance 029"
+    },
+    {
+        "name": "dancesilly9",
+        "animDict": "rcmnigel1bnmt_1b",
+        "animFlag": 1,
+        "animName": "dance_loop_tyler",
+        "category": "dance",
+        "label": "Dance Silly 9"
+    },
+    {
+        "name": "golfswing",
+        "animDict": "rcmnigel1d",
+        "animFlag": 0,
+        "animName": "swing_a_mark",
+        "category": "exercise",
+        "label": "Golf Swing"
+    },
+    {
+        "name": "dance49",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_female^3",
+        "category": "dance2",
+        "label": "Dance 049"
+    },
+    {
+        "name": "book",
+        "animDict": "cellphone@",
+        "animFlag": 51,
+        "animName": "cellphone_text_read_base",
+        "category": "prop",
+        "label": "Book"
+    },
+    {
+        "name": "dance125",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "low_left",
+        "category": "dance2",
+        "label": "Dance 125"
+    },
+    {
+        "name": "dance169",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_female^2",
+        "category": "dance2",
+        "label": "Dance 169"
+    },
+    {
+        "name": "dance107",
+        "animDict": "special_ped@mountain_dancer@monologue_3@monologue_3a",
+        "animFlag": 1,
+        "animName": "mnt_dnc_buttwag",
+        "category": "dance2",
+        "label": "Dance 107"
+    },
+    {
+        "name": "dance83",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_low_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_li_to_hi_09_v1_male^3",
+        "category": "dance2",
+        "label": "Dance 083"
+    },
+    {
+        "name": "dance142",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_male^5",
+        "category": "dance2",
+        "label": "Dance 142"
+    },
+    {
+        "name": "tablet",
+        "animDict": "amb@world_human_tourist_map@male@base",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "prop",
+        "label": "Tablet"
+    },
+    {
+        "name": "lapdance",
+        "animDict": "mp_safehouse",
+        "animFlag": 1,
+        "animName": "lap_dance_girl",
+        "category": "dance",
+        "label": "Lapdance"
+    },
+    {
+        "name": "thumbsup",
+        "animDict": "anim@mp_player_intupperthumbs_up",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "interactions",
+        "label": "Thumbs Up"
+    },
+    {
+        "name": "type",
+        "animDict": "anim@heists@prison_heiststation@cop_reactions",
+        "animFlag": 51,
+        "animName": "cop_b_idle",
+        "category": "interactions",
+        "label": "Type"
+    },
+    {
+        "name": "dance178",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_male^5",
+        "category": "dance2",
+        "label": "Dance 178"
+    },
+    {
+        "name": "bpose11",
+        "animDict": "anim@male_bskball_photo_pose",
+        "animFlag": 1,
+        "animName": "photo_pose_clip",
+        "category": "poses",
+        "label": "Boy Pose 11"
+    },
+    {
+        "name": "clapangry",
+        "animDict": "anim@arena@celeb@flat@solo@no_props@",
+        "animFlag": 1,
+        "animName": "angry_clap_a_player_a",
+        "category": "celebration",
+        "label": "Clap Angry"
+    },
+    {
+        "name": "dance23",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_male^3",
+        "category": "dance2",
+        "label": "Dance 023"
+    },
+    {
+        "name": "flipoff2",
+        "animDict": "anim@arena@celeb@podium@no_prop@",
+        "animFlag": 50,
+        "animName": "flip_off_c_1st",
+        "category": "interactions",
+        "label": "Flip Off 2"
+    },
+    {
+        "name": "bartender",
+        "animDict": "anim@amb@clubhouse@bar@drink@idle_a",
+        "animFlag": 51,
+        "animName": "idle_a_bartender",
+        "category": "randomactions",
+        "label": "Bartender"
+    },
+    {
+        "name": "dance21",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_male^1",
+        "category": "dance2",
+        "label": "Dance 021"
+    },
+    {
+        "name": "wave5",
+        "animDict": "friends@frj@ig_1",
+        "animFlag": 51,
+        "animName": "wave_b",
+        "category": "interactions",
+        "label": "Wave 5"
+    },
+    {
+        "name": "sitlean",
+        "animDict": "timetable@tracy@ig_14@",
+        "animFlag": 1,
+        "animName": "ig_14_base_tracy",
+        "category": "sitting",
+        "label": "Sit Lean"
+    },
+    {
+        "name": "dance173",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_female^6",
+        "category": "dance2",
+        "label": "Dance 173"
+    },
+    {
+        "name": "dancepride8",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 51,
+        "animName": "ambclub_09_mi_hi_bellydancer_laz",
+        "category": "pride",
+        "label": "Pride Flag Dance 8"
+    },
+    {
+        "name": "dancef2",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "high_center",
+        "category": "dance",
+        "label": "Dance F2"
+    },
+    {
+        "name": "dance85",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_low_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_li_to_hi_09_v1_male^5",
+        "category": "dance2",
+        "label": "Dance 085"
+    },
+    {
+        "name": "t2",
+        "animDict": "mp_sleep",
+        "animFlag": 1,
+        "animName": "bind_pose_180",
+        "category": "weird",
+        "label": "T 2"
+    },
+    {
+        "name": "hug2",
+        "animDict": "mp_ped_interaction",
+        "animFlag": 0,
+        "animName": "kisses_guy_b",
+        "category": "interactions",
+        "label": "Hug 2"
+    },
+    {
+        "name": "peek",
+        "animDict": "random@paparazzi@peek",
+        "animFlag": 1,
+        "animName": "left_peek_a",
+        "category": "randomactions",
+        "label": "Peek"
+    },
+    {
+        "name": "camera",
+        "animDict": "amb@world_human_paparazzi@male@base",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "prop",
+        "label": "Camera"
+    },
+    {
+        "name": "dancef3",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "high_center_up",
+        "category": "dance",
+        "label": "Dance F3"
+    },
+    {
+        "name": "dance175",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_male^2",
+        "category": "dance2",
+        "label": "Dance 175"
+    },
+    {
+        "name": "passout5",
+        "animDict": "random@mugging4",
+        "animFlag": 1,
+        "animName": "flee_backward_loop_shopkeeper",
+        "category": "lying",
+        "label": "Passout 5"
+    },
+    {
+        "name": "dance87",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_med_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_mi_to_hi_09_v1_male^1",
+        "category": "dance2",
+        "label": "Dance 087"
+    },
+    {
+        "name": "dance165",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_male^4",
+        "category": "dance2",
+        "label": "Dance 165"
+    },
+    {
+        "name": "suitcase",
+        "animDict": "missheistdocksprep1hold_cellphone",
+        "animFlag": 51,
+        "animName": "static",
+        "category": "prop",
+        "label": "Suitcase"
+    },
+    {
+        "name": "pose31",
+        "animDict": "anim@selfie_floor_cute",
+        "animFlag": 1,
+        "animName": "floor_cute_clip",
+        "category": "poses",
+        "label": "Pose 31"
+    },
+    {
+        "name": "dance25",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_male^5",
+        "category": "dance2",
+        "label": "Dance 025"
+    },
+    {
+        "name": "cup",
+        "animDict": "amb@world_human_drinking@coffee@male@idle_a",
+        "animFlag": 50,
+        "animName": "idle_c",
+        "category": "prop",
+        "label": "Cup"
+    },
+    {
+        "name": "pose01",
+        "animDict": "lunyx@dazzleme",
+        "animFlag": 1,
+        "animName": "pose1_clip",
+        "category": "poses",
+        "label": "Pose"
+    },
+    {
+        "name": "smoke3",
+        "animDict": "amb@world_human_aa_smoke@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_b",
+        "category": "prop",
+        "label": "Smoke 3"
+    },
+    {
+        "name": "dance112",
+        "animDict": "anim@mp_player_intincardancestd@ds@",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "dance2",
+        "label": "Dance 112"
+    },
+    {
+        "name": "champagne",
+        "animDict": "anim@heists@humane_labs@finale@keycards",
+        "animFlag": 51,
+        "animName": "ped_a_enter_loop",
+        "category": "prop",
+        "label": "Champagne"
+    },
+    {
+        "name": "dance2",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@",
+        "animFlag": 1,
+        "animName": "high_center_down",
+        "category": "dance2",
+        "label": "Dance 002"
+    },
+    {
+        "name": "facepalm4",
+        "animDict": "anim@mp_player_intupperface_palm",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "reactions",
+        "label": "Facepalm 4"
+    },
+    {
+        "name": "dance34",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_male^6",
+        "category": "dance2",
+        "label": "Dance 034"
+    },
+    {
+        "name": "no",
+        "animDict": "anim@heists@ornate_bank@chat_manager",
+        "animFlag": 50,
+        "animName": "fail",
+        "category": "reactions",
+        "label": "No"
+    },
+    {
+        "name": "wait11",
+        "animDict": "misshair_shop@hair_dressers",
+        "animFlag": 51,
+        "animName": "keeper_base",
+        "category": "waiting",
+        "label": "Wait 11"
+    },
+    {
+        "name": "guitarelectric",
+        "animDict": "amb@world_human_musician@guitar@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_b",
+        "category": "prop",
+        "label": "Guitar Electric"
+    },
+    {
+        "name": "dance185",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_female^6",
+        "category": "dance2",
+        "label": "Dance 185"
+    },
+    {
+        "name": "fallover4",
+        "animDict": "friends@frf@ig_2",
+        "animFlag": 0,
+        "animName": "knockout_plyr",
+        "category": "falling",
+        "label": "Fall Over 4"
+    },
+    {
+        "name": "pose36",
+        "animDict": "anim@female_model_showoff",
+        "animFlag": 1,
+        "animName": "model_showoff_clip",
+        "category": "poses",
+        "label": "Pose 36"
+    },
+    {
+        "name": "makeitrain",
+        "animDict": "anim@mp_player_intupperraining_cash",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "prop",
+        "label": "Make It Rain"
+    },
+    {
+        "name": "dance176",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_male^3",
+        "category": "dance2",
+        "label": "Dance 176"
+    },
+    {
+        "name": "dance45",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_male^5",
+        "category": "dance2",
+        "label": "Dance 045"
+    },
+    {
+        "name": "dance39",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_female^5",
+        "category": "dance2",
+        "label": "Dance 039"
+    },
+    {
+        "name": "suitcase2",
+        "animDict": "missheistdocksprep1hold_cellphone",
+        "animFlag": 51,
+        "animName": "static",
+        "category": "prop",
+        "label": "Suitcase 2"
+    },
+    {
+        "name": "prideflag6",
+        "animDict": "rcmnigel1d",
+        "animFlag": 51,
+        "animName": "base_club_shoulder",
+        "category": "pride",
+        "label": "Pride Flag 6"
+    },
+    {
+        "name": "hiking",
+        "animDict": "move_m@hiking",
+        "animFlag": 51,
+        "animName": "idle",
+        "category": "exercise",
+        "label": "Hiking"
+    },
+    {
+        "name": "slide2",
+        "animDict": "anim@arena@celeb@flat@solo@no_props@",
+        "animFlag": 0,
+        "animName": "slide_b_player_a",
+        "category": "celebration",
+        "label": "Slide 2"
+    },
+    {
+        "name": "pushup",
+        "animDict": "amb@world_human_push_ups@male@idle_a",
+        "animFlag": 1,
+        "animName": "idle_d",
+        "category": "exercise",
+        "label": "Pushup"
+    },
+    {
+        "name": "adjusttie",
+        "animDict": "clothingtie",
+        "animFlag": 50,
+        "animName": "try_tie_positive_a",
+        "category": "clothing",
+        "label": "Adjust Tie"
+    },
+    {
+        "name": "wave6",
+        "animDict": "friends@frj@ig_1",
+        "animFlag": 51,
+        "animName": "wave_c",
+        "category": "interactions",
+        "label": "Wave 6"
+    },
+    {
+        "name": "dance93",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "hi_dance_prop_09_v1_female^1",
+        "category": "dance2",
+        "label": "Dance 093"
+    },
+    {
+        "name": "dancesilly5",
+        "animDict": "timetable@tracy@ig_5@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "dance",
+        "label": "Dance Silly 5"
+    },
+    {
+        "name": "danceslow3",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "low_center_down",
+        "category": "dance",
+        "label": "Dance Slow 3"
+    },
+    {
+        "name": "countdown",
+        "animDict": "random@street_race",
+        "animFlag": 1,
+        "animName": "grid_girl_race_start",
+        "category": "misc",
+        "label": "Countdown"
+    },
+    {
+        "name": "sitsad",
+        "animDict": "anim@amb@business@bgen@bgen_no_work@",
+        "animFlag": 1,
+        "animName": "sit_phone_phoneputdown_sleeping-noworkfemale",
+        "category": "sitting",
+        "label": "Sit Sad"
+    },
+    {
+        "name": "idle8",
+        "animDict": "amb@world_human_hang_out_street@male_b@idle_a",
+        "animFlag": 1,
+        "animName": "idle_b",
+        "category": "idles",
+        "label": "Idle 8"
+    },
+    {
+        "name": "passout4",
+        "animDict": "mini@cpr@char_b@cpr_def",
+        "animFlag": 1,
+        "animName": "cpr_pumpchest_idle",
+        "category": "lying",
+        "label": "Passout 4"
+    },
+    {
+        "name": "phonecall",
+        "animDict": "cellphone@",
+        "animFlag": 51,
+        "animName": "cellphone_call_listen_base",
+        "category": "prop",
+        "label": "Phone Call"
+    },
+    {
+        "name": "wine",
+        "animDict": "anim@heists@humane_labs@finale@keycards",
+        "animFlag": 51,
+        "animName": "ped_a_enter_loop",
+        "category": "prop",
+        "label": "Wine"
+    },
+    {
+        "name": "dance63",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_female^5",
+        "category": "dance2",
+        "label": "Dance 063"
+    },
+    {
+        "name": "blowkiss2",
+        "animDict": "anim@mp_player_intselfieblow_kiss",
+        "animFlag": 50,
+        "animName": "exit",
+        "category": "interactions",
+        "label": "Blow Kiss 2"
+    },
+    {
+        "name": "lapdance4",
+        "animDict": "mini@strip_club@private_dance@part3",
+        "animFlag": 1,
+        "animName": "priv_dance_p3",
+        "category": "dance",
+        "label": "Lapdance 4"
+    },
+    {
+        "name": "cloudgaze",
+        "animDict": "switch@trevor@annoys_sunbathers",
+        "animFlag": 1,
+        "animName": "trev_annoys_sunbathers_loop_girl",
+        "category": "lying",
+        "label": "Cloudgaze"
+    },
+    {
+        "name": "dance122",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "low_center",
+        "category": "dance2",
+        "label": "Dance 122"
+    },
+    {
+        "name": "leanside4",
+        "animDict": "misscarstealfinalecar_5_ig_1",
+        "animFlag": 1,
+        "animName": "waitloop_lamar",
+        "category": "leaning",
+        "label": "Leanside 4"
+    },
+    {
+        "name": "dance72",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v2_female^2",
+        "category": "dance2",
+        "label": "Dance 072"
+    },
+    {
+        "name": "handsup",
+        "animDict": "missminuteman_1ig_2",
+        "animFlag": 51,
+        "animName": "handsup_base",
+        "category": "reactions",
+        "label": "Hands Up"
+    },
+    {
+        "name": "guitarelectric2",
+        "animDict": "amb@world_human_musician@guitar@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_b",
+        "category": "prop",
+        "label": "Guitar Electric 2"
+    },
+    {
+        "name": "cutthroat",
+        "animDict": "anim@mp_player_intcelebrationmale@cut_throat",
+        "animFlag": 0,
+        "animName": "cut_throat",
+        "category": "fighting",
+        "label": "Cut Throat"
+    },
+    {
+        "name": "sit2",
+        "animDict": "rcm_barry3",
+        "animFlag": 1,
+        "animName": "barry_3_sit_loop",
+        "category": "sitting",
+        "label": "Sit 2"
+    },
+    {
+        "name": "dance86",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_low_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_li_to_hi_09_v1_male^6",
+        "category": "dance2",
+        "label": "Dance 086"
+    },
+    {
+        "name": "facepalm2",
+        "animDict": "anim@mp_player_intcelebrationfemale@face_palm",
+        "animFlag": 50,
+        "animName": "face_palm",
+        "category": "reactions",
+        "label": "Facepalm 2"
+    },
+    {
+        "name": "lean4",
+        "animDict": "amb@world_human_leaning@male@wall@back@foot_up@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "leaning",
+        "label": "Lean 4"
+    },
+    {
+        "name": "dance84",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_low_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_li_to_hi_09_v1_male^4",
+        "category": "dance2",
+        "label": "Dance 084"
+    },
+    {
+        "name": "dancesilly7",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_b@",
+        "animFlag": 1,
+        "animName": "high_center",
+        "category": "dance",
+        "label": "Dance Silly 7"
+    },
+    {
+        "name": "think5",
+        "animDict": "mp_cp_welcome_tutthink",
+        "animFlag": 51,
+        "animName": "b_think",
+        "category": "thinking",
+        "label": "Think 5"
+    },
+    {
+        "name": "spraypaint",
+        "animDict": "anim@amb@business@weed@weed_inspecting_lo_med_hi@",
+        "animFlag": 1,
+        "animName": "weed_spraybottle_crouch_spraying_02_inspector",
+        "category": "prop",
+        "label": "SprayPaint"
+    },
+    {
+        "name": "pose02",
+        "animDict": "lunyx@dazzleme",
+        "animFlag": 1,
+        "animName": "pose2_clip",
+        "category": "poses",
+        "label": "Pose 2"
+    },
+    {
+        "name": "crossarms6",
+        "animDict": "random@shop_gunstore",
+        "animFlag": 51,
+        "animName": "_idle",
+        "category": "armfolding",
+        "label": "Crossarms 6"
+    },
+    {
+        "name": "dance73",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v2_female^3",
+        "category": "dance2",
+        "label": "Dance 073"
+    },
+    {
+        "name": "swatpose13",
+        "animDict": "anim@male@holding_vest_2",
+        "animFlag": 1,
+        "animName": "holding_vest_2_clip",
+        "category": "poses",
+        "label": "Swat Pose 13"
+    },
+    {
+        "name": "gangnamstyle",
+        "animDict": "custom@gangnamstyle",
+        "animFlag": 1,
+        "animName": "gangnamstyle",
+        "category": "dance",
+        "label": "Gangnam Style"
+    },
+    {
+        "name": "dance12",
+        "animDict": "anim@amb@nightclub@dancers@black_madonna_entourage@",
+        "animFlag": 1,
+        "animName": "li_dance_facedj_15_v2_male^2",
+        "category": "dance2",
+        "label": "Dance 012"
+    },
+    {
+        "name": "dance160",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_female^5",
+        "category": "dance2",
+        "label": "Dance 160"
+    },
+    {
+        "name": "dance79",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_female^5",
+        "category": "dance2",
+        "label": "Dance 079"
+    },
+    {
+        "name": "dance111",
+        "animDict": "anim@mp_player_intcelebrationfemale@banging_tunes_right",
+        "animFlag": 1,
+        "animName": "banging_tunes",
+        "category": "dance2",
+        "label": "Dance 111"
+    },
+    {
+        "name": "crossarms4",
+        "animDict": "random@street_race",
+        "animFlag": 51,
+        "animName": "_car_b_lookout",
+        "category": "armfolding",
+        "label": "Crossarms 4"
+    },
+    {
+        "name": "think2",
+        "animDict": "missheist_jewelleadinout",
+        "animFlag": 51,
+        "animName": "jh_int_outro_loop_a",
+        "category": "thinking",
+        "label": "Think 2"
+    },
+    {
+        "name": "sitchair5",
+        "animDict": "timetable@jimmy@mics3_ig_15@",
+        "animFlag": 1,
+        "animName": "mics3_15_base_tracy",
+        "category": "sitting",
+        "label": "Sit Chair 5"
+    },
+    {
+        "name": "crack",
+        "animDict": "switch@trevor@trev_smoking_meth",
+        "animFlag": 50,
+        "animName": "trev_smoking_meth_loop",
+        "category": "prop",
+        "label": "Crack"
+    },
+    {
+        "name": "slugger",
+        "animDict": "anim@arena@celeb@flat@solo@no_props@",
+        "animFlag": 0,
+        "animName": "slugger_a_player_a",
+        "category": "misc",
+        "label": "Slugger"
+    },
+    {
+        "name": "makarena",
+        "animDict": "custom@makarena",
+        "animFlag": 1,
+        "animName": "makarena",
+        "category": "dance",
+        "label": "Macarena"
+    },
+    {
+        "name": "idle",
+        "animDict": "anim@heists@heist_corona@team_idles@male_a",
+        "animFlag": 1,
+        "animName": "idle",
+        "category": "idles",
+        "label": "Idle"
+    },
+    {
+        "name": "passout",
+        "animDict": "missarmenian2",
+        "animFlag": 1,
+        "animName": "drunk_loop",
+        "category": "lying",
+        "label": "Passout"
+    },
+    {
+        "name": "dance174",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_male^1",
+        "category": "dance2",
+        "label": "Dance 174"
+    },
+    {
+        "name": "dance76",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v2_female^6",
+        "category": "dance2",
+        "label": "Dance 076"
+    },
+    {
+        "name": "cig",
+        "animDict": "amb@world_human_smoking@male@male_a@enter",
+        "animFlag": 50,
+        "animName": "enter",
+        "category": "prop",
+        "label": "Cig"
+    },
+    {
+        "name": "idle3",
+        "animDict": "anim@heists@humane_labs@finale@strip_club",
+        "animFlag": 1,
+        "animName": "ped_b_celebrate_loop",
+        "category": "idles",
+        "label": "Idle 3"
+    },
+    {
+        "name": "cpr",
+        "animDict": "mini@cpr@char_a@cpr_str",
+        "animFlag": 1,
+        "animName": "cpr_pumpchest",
+        "category": "medical",
+        "label": "CPR"
+    },
+    {
+        "name": "noway",
+        "animDict": "gestures@m@standing@casual",
+        "animFlag": 50,
+        "animName": "gesture_no_way",
+        "category": "reactions",
+        "label": "No Way"
+    },
+    {
+        "name": "jog2",
+        "animDict": "amb@world_human_jog_standing@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "exercise",
+        "label": "Jog 2"
+    },
+    {
+        "name": "type5",
+        "animDict": "mp_fbi_heist",
+        "animFlag": 1,
+        "animName": "loop",
+        "category": "interactions",
+        "label": "Type 4"
+    },
+    {
+        "name": "dti03",
+        "animDict": "lunyxco@dresstoimpress",
+        "animFlag": 1,
+        "animName": "magica",
+        "category": "rrposes",
+        "label": "Runway Royale 3"
+    },
+    {
+        "name": "thumbsup2",
+        "animDict": "anim@mp_player_intupperthumbs_up",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "interactions",
+        "label": "Thumbs Up 2"
+    },
+    {
+        "name": "dancepride7",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 51,
+        "animName": "ambclub_09_mi_hi_bellydancer_laz",
+        "category": "pride",
+        "label": "Pride Flag Dance 7"
+    },
+    {
+        "name": "dti05",
+        "animDict": "lunyxco@dresstoimpress",
+        "animFlag": 1,
+        "animName": "pose8",
+        "category": "rrposes",
+        "label": "Runway Royale 5"
+    },
+    {
+        "name": "round_start",
+        "animDict": "amb@world_human_bum_freeway@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "fighting",
+        "label": "Round Start"
+    },
+    {
+        "name": "wait10",
+        "animDict": "timetable@amanda@ig_3",
+        "animFlag": 51,
+        "animName": "ig_3_base_tracy",
+        "category": "waiting",
+        "label": "Wait 10"
+    },
+    {
+        "name": "dance103",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "hi_dance_prop_09_v1_male^5",
+        "category": "dance2",
+        "label": "Dance 103"
+    },
+    {
+        "name": "handshake2",
+        "animDict": "mp_ped_interaction",
+        "animFlag": 50,
+        "animName": "handshake_guy_b",
+        "category": "interactions",
+        "label": "Handshake 2"
+    },
+    {
+        "name": "dance89",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_med_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_mi_to_hi_09_v1_male^3",
+        "category": "dance2",
+        "label": "Dance 089"
+    },
+    {
+        "name": "dance193",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v2_female^1",
+        "category": "dance2",
+        "label": "Dance 193"
+    },
+    {
+        "name": "dance118",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "high_left_up",
+        "category": "dance2",
+        "label": "Dance 118"
+    },
+    {
+        "name": "meditate",
+        "animDict": "rcmcollect_paperleadinout@",
+        "animFlag": 1,
+        "animName": "meditiate_idle",
+        "category": "relax",
+        "label": "Meditiate"
+    },
+    {
+        "name": "dance81",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_low_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_li_to_hi_09_v1_male^1",
+        "category": "dance2",
+        "label": "Dance 081"
+    },
+    {
+        "name": "medic2",
+        "animDict": "amb@medic@standing@tendtodead@base",
+        "animFlag": 1,
+        "animName": "base",
+        "category": "medical",
+        "label": "Medic 2"
+    },
+    {
+        "name": "newsmic2",
+        "animDict": "missmic4premiere",
+        "animFlag": 51,
+        "animName": "interview_short_lazlow",
+        "category": "prop",
+        "label": "News Mic 2"
+    },
+    {
+        "name": "box",
+        "animDict": "anim@heists@box_carry@",
+        "animFlag": 51,
+        "animName": "idle",
+        "category": "prop",
+        "label": "Box"
+    },
+    {
+        "name": "crossarms3",
+        "animDict": "anim@heists@heist_corona@single_team",
+        "animFlag": 51,
+        "animName": "single_team_loop_boss",
+        "category": "armfolding",
+        "label": "Crossarms 3"
+    },
+    {
+        "name": "mugshot",
+        "animDict": "mp_character_creation@customise@male_a",
+        "animFlag": 51,
+        "animName": "loop",
+        "category": "prop",
+        "label": "Mugshot"
+    },
+    {
+        "name": "slowclap",
+        "animDict": "anim@mp_player_intcelebrationfemale@slow_clap",
+        "animFlag": 51,
+        "animName": "slow_clap",
+        "category": "celebration",
+        "label": "Slow Clap"
+    },
+    {
+        "name": "superhero",
+        "animDict": "rcmbarry",
+        "animFlag": 1,
+        "animName": "base",
+        "category": "weird",
+        "label": "Superhero"
+    },
+    {
+        "name": "dance161",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_female^6",
+        "category": "dance2",
+        "label": "Dance 161"
+    },
+    {
+        "name": "dance6",
+        "animDict": "misschinese2_crystalmazemcs1_cs",
+        "animFlag": 1,
+        "animName": "dance_loop_tao",
+        "category": "dance2",
+        "label": "Dance 006"
+    },
+    {
+        "name": "dance182",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_female^3",
+        "category": "dance2",
+        "label": "Dance 182"
+    },
+    {
+        "name": "dance186",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_male^1",
+        "category": "dance2",
+        "label": "Dance 186"
+    },
+    {
+        "name": "dti04",
+        "animDict": "lunyxco@dresstoimpress",
+        "animFlag": 1,
+        "animName": "pose5",
+        "category": "rrposes",
+        "label": "Runway Royale 4"
+    },
+    {
+        "name": "beast",
+        "animDict": "anim@mp_fm_event@intro",
+        "animFlag": 50,
+        "animName": "beast_transform",
+        "category": "weird",
+        "label": "Beast"
+    },
+    {
+        "name": "rollie",
+        "animDict": "custom@rollie",
+        "animFlag": 1,
+        "animName": "rollie",
+        "category": "dance",
+        "label": "Rollie"
+    },
+    {
+        "name": "leanhigh2",
+        "animDict": "anim@mp_ferris_wheel",
+        "animFlag": 1,
+        "animName": "idle_a_player_two",
+        "category": "leaning",
+        "label": "Lean High 2"
+    },
+    {
+        "name": "rose",
+        "animDict": "anim@heists@humane_labs@finale@keycards",
+        "animFlag": 51,
+        "animName": "ped_a_enter_loop",
+        "category": "prop",
+        "label": "Rose"
+    },
+    {
+        "name": "wait7",
+        "animDict": "rcmnigel1cnmt_1c",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "waiting",
+        "label": "Wait 7"
+    },
+    {
+        "name": "wait9",
+        "animDict": "rcmjosh2",
+        "animFlag": 1,
+        "animName": "josh_2_intp1_base",
+        "category": "waiting",
+        "label": "Wait 9"
+    },
+    {
+        "name": "prone",
+        "animDict": "missfbi3_sniping",
+        "animFlag": 1,
+        "animName": "prone_dave",
+        "category": "misc",
+        "label": "Prone"
+    },
+    {
+        "name": "think",
+        "animDict": "misscarsteal4@aliens",
+        "animFlag": 51,
+        "animName": "rehearsal_base_idle_director",
+        "category": "thinking",
+        "label": "Think"
+    },
+    {
+        "name": "idle2",
+        "animDict": "anim@heists@heist_corona@team_idles@female_a",
+        "animFlag": 1,
+        "animName": "idle",
+        "category": "idles",
+        "label": "Idle 2"
+    },
+    {
+        "name": "dance163",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_male^2",
+        "category": "dance2",
+        "label": "Dance 163"
+    },
+    {
+        "name": "dti09",
+        "animDict": "lunyxco@dresstoimpress",
+        "animFlag": 1,
+        "animName": "split",
+        "category": "rrposes",
+        "label": "Runway Royale 9"
+    },
+    {
+        "name": "dance134",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_female^3",
+        "category": "dance2",
+        "label": "Dance 134"
+    },
+    {
+        "name": "wave2",
+        "animDict": "anim@mp_player_intcelebrationfemale@wave",
+        "animFlag": 50,
+        "animName": "wave",
+        "category": "interactions",
+        "label": "Wave 2"
+    },
+    {
+        "name": "dance97",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "hi_dance_prop_09_v1_female^5",
+        "category": "dance2",
+        "label": "Dance 097"
+    },
+    {
+        "name": "dance149",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_female^6",
+        "category": "dance2",
+        "label": "Dance 149"
+    },
+    {
+        "name": "dance99",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "hi_dance_prop_09_v1_male^1",
+        "category": "dance2",
+        "label": "Dance 099"
+    },
+    {
+        "name": "dance42",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_male^2",
+        "category": "dance2",
+        "label": "Dance 042"
+    },
+    {
+        "name": "chill",
+        "animDict": "switch@trevor@scares_tramp",
+        "animFlag": 1,
+        "animName": "trev_scares_tramp_idle_tramp",
+        "category": "relax",
+        "label": "Chill"
+    },
+    {
+        "name": "dance183",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_female^4",
+        "category": "dance2",
+        "label": "Dance 183"
+    },
+    {
+        "name": "wave9",
+        "animDict": "gestures@m@standing@casual",
+        "animFlag": 50,
+        "animName": "gesture_hello",
+        "category": "interactions",
+        "label": "Wave 9"
+    },
+    {
+        "name": "danceglowstick",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 50,
+        "animName": "ambclub_13_mi_hi_sexualgriding_laz",
+        "category": "dance",
+        "label": "Dance Glowsticks"
+    },
+    {
+        "name": "dance152",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_male^3",
+        "category": "dance2",
+        "label": "Dance 152"
+    },
+    {
+        "name": "clean2",
+        "animDict": "amb@world_human_maid_clean@",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "prop",
+        "label": "Clean 2"
+    },
+    {
+        "name": "pullover",
+        "animDict": "misscarsteal3pullover",
+        "animFlag": 50,
+        "animName": "pull_over_right",
+        "category": "police",
+        "label": "Pullover"
+    },
+    {
+        "name": "nervous",
+        "animDict": "amb@world_human_bum_standing@twitchy@idle_a",
+        "animFlag": 51,
+        "animName": "idle_c",
+        "category": "reactions",
+        "label": "Nervous"
+    },
+    {
+        "name": "newspaper",
+        "animDict": "amb@world_human_tourist_map@female@base",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "prop",
+        "label": "Newspaper"
+    },
+    {
+        "name": "peace",
+        "animDict": "mp_player_int_upperpeace_sign",
+        "animFlag": 51,
+        "animName": "mp_player_int_peace_sign",
+        "category": "randomactions",
+        "label": "Peace"
+    },
+    {
+        "name": "beg",
+        "animDict": "amb@world_human_bum_freeway@male@base",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "prop",
+        "label": "Beg"
+    },
+    {
+        "name": "dance170",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_female^3",
+        "category": "dance2",
+        "label": "Dance 170"
+    },
+    {
+        "name": "dance143",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_male^6",
+        "category": "dance2",
+        "label": "Dance 143"
+    },
+    {
+        "name": "dance121",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "med_right_up",
+        "category": "dance2",
+        "label": "Dance 121"
+    },
+    {
+        "name": "dance38",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_female^4",
+        "category": "dance2",
+        "label": "Dance 038"
+    },
+    {
+        "name": "clipboard",
+        "animDict": "missfam4",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "prop",
+        "label": "Clipboard"
+    },
+    {
+        "name": "dance57",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_male^5",
+        "category": "dance2",
+        "label": "Dance 057"
+    },
+    {
+        "name": "danceupper",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
+        "animFlag": 50,
+        "animName": "high_center",
+        "category": "dance",
+        "label": "Dance Upper"
+    },
+    {
+        "name": "mindcontrol",
+        "animDict": "rcmbarry",
+        "animFlag": 1,
+        "animName": "mind_control_b_loop",
+        "category": "weird",
+        "label": "Mind Control"
+    },
+    {
+        "name": "idledrunk",
+        "animDict": "random@drunk_driver_1",
+        "animFlag": 1,
+        "animName": "drunk_driver_stand_loop_dd1",
+        "category": "idles",
+        "label": "Idle Drunk"
+    },
+    {
+        "name": "jumpingjacks",
+        "animDict": "timetable@reunited@ig_2",
+        "animFlag": 1,
+        "animName": "jimmy_getknocked",
+        "category": "exercise",
+        "label": "Jumping Jacks"
+    },
+    {
+        "name": "sleep",
+        "animDict": "timetable@tracy@sleep@",
+        "animFlag": 1,
+        "animName": "idle_c",
+        "category": "lying",
+        "label": "Sleep"
+    },
+    {
+        "name": "dance30",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_female^6",
+        "category": "dance2",
+        "label": "Dance 030"
+    },
+    {
+        "name": "newscamera",
+        "animDict": "missfinale_c2mcs_1",
+        "animFlag": 51,
+        "animName": "fin_c2_mcs_1_camman",
+        "category": "prop",
+        "label": "News Camera"
+    },
+    {
+        "name": "dance92",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_med_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_mi_to_hi_09_v1_male^6",
+        "category": "dance2",
+        "label": "Dance 092"
+    },
+    {
+        "name": "dance22",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_male^2",
+        "category": "dance2",
+        "label": "Dance 022"
+    },
+    {
+        "name": "clown",
+        "animDict": "rcm_barry2",
+        "animFlag": 1,
+        "animName": "clown_idle_0",
+        "category": "weird",
+        "label": "Clown"
+    },
+    {
+        "name": "dance126",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "low_left_up",
+        "category": "dance2",
+        "label": "Dance 126"
+    },
+    {
+        "name": "bark",
+        "animDict": "random@peyote@dog",
+        "animFlag": 0,
+        "animName": "wakeup",
+        "category": "weird",
+        "label": "Bark"
+    },
+    {
+        "name": "bow",
+        "animDict": "anim@arena@celeb@podium@no_prop@",
+        "animFlag": 0,
+        "animName": "regal_c_1st",
+        "category": "interactions",
+        "label": "Bow"
+    },
+    {
+        "name": "dance137",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_female^6",
+        "category": "dance2",
+        "label": "Dance 137"
+    },
+    {
+        "name": "stunned",
+        "animDict": "stungun@standing",
+        "animFlag": 1,
+        "animName": "damage",
+        "category": "reactions",
+        "label": "Stunned"
+    },
+    {
+        "name": "mindblown2",
+        "animDict": "anim@mp_player_intcelebrationfemale@mind_blown",
+        "animFlag": 50,
+        "animName": "mind_blown",
+        "category": "reactions",
+        "label": "Mind Blown 2"
+    },
+    {
+        "name": "guitar",
+        "animDict": "amb@world_human_musician@guitar@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_b",
+        "category": "prop",
+        "label": "Guitar"
+    },
+    {
+        "name": "dance132",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_female^1",
+        "category": "dance2",
+        "label": "Dance 132"
+    },
+    {
+        "name": "wait",
+        "animDict": "random@shop_tattoo",
+        "animFlag": 51,
+        "animName": "_idle_a",
+        "category": "waiting",
+        "label": "Wait"
+    },
+    {
+        "name": "danceglowstick3",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 1,
+        "animName": "ambclub_09_mi_hi_bellydancer_laz",
+        "category": "dance",
+        "label": "Dance Glowsticks 3"
+    },
+    {
+        "name": "dancef",
+        "animDict": "anim@amb@nightclub@dancers@solomun_entourage@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_17_v1_female^1",
+        "category": "dance",
+        "label": "Dance F"
+    },
+    {
+        "name": "pointright",
+        "animDict": "mp_gun_shop_tut",
+        "animFlag": 0,
+        "animName": "indicate_right",
+        "category": "interactions",
+        "label": "Point Right"
+    },
+    {
+        "name": "dance40",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_female^6",
+        "category": "dance2",
+        "label": "Dance 040"
+    },
+    {
+        "name": "leanside5",
+        "animDict": "rcmjosh2",
+        "animFlag": 1,
+        "animName": "josh_2_intp1_base",
+        "category": "leaning",
+        "label": "Leanside 5"
+    },
+    {
+        "name": "fishdance",
+        "animDict": "anim@mp_player_intupperfind_the_fish",
+        "animFlag": 50,
+        "animName": "idle_a",
+        "category": "dance",
+        "label": "Fish Dance"
+    },
+    {
+        "name": "slowclap2",
+        "animDict": "anim@mp_player_intcelebrationmale@slow_clap",
+        "animFlag": 51,
+        "animName": "slow_clap",
+        "category": "celebration",
+        "label": "Slow Clap 2"
+    },
+    {
+        "name": "dance50",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_female^4",
+        "category": "dance2",
+        "label": "Dance 050"
+    },
+    {
+        "name": "dance130",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "med_right_down",
+        "category": "dance2",
+        "label": "Dance 130"
+    },
+    {
+        "name": "dance59",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_female^1",
+        "category": "dance2",
+        "label": "Dance 059"
+    },
+    {
+        "name": "dpullup",
+        "animDict": "custom@pullup",
+        "animFlag": 1,
+        "animName": "pullup",
+        "category": "dance",
+        "label": "Pullup"
+    },
+    {
+        "name": "knock",
+        "animDict": "timetable@jimmy@doorknock@",
+        "animFlag": 51,
+        "animName": "knockdoor_idle",
+        "category": "randomactions",
+        "label": "Knock"
+    },
+    {
+        "name": "dancesilly",
+        "animDict": "special_ped@mountain_dancer@monologue_3@monologue_3a",
+        "animFlag": 1,
+        "animName": "mnt_dnc_buttwag",
+        "category": "dance",
+        "label": "Dance Silly"
+    },
+    {
+        "name": "dance168",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_female^1",
+        "category": "dance2",
+        "label": "Dance 168"
+    },
+    {
+        "name": "dance140",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_male^3",
+        "category": "dance2",
+        "label": "Dance 140"
+    },
+    {
+        "name": "fightme",
+        "animDict": "anim@deathmatch_intros@unarmed",
+        "animFlag": 0,
+        "animName": "intro_male_unarmed_c",
+        "category": "fighting",
+        "label": "Fight Me"
+    },
+    {
+        "name": "swatpose14",
+        "animDict": "anim@male@holding_vest_siege",
+        "animFlag": 1,
+        "animName": "holding_vest_siege_clip",
+        "category": "poses",
+        "label": "Swat Pose 14"
+    },
+    {
+        "name": "pointdown2",
+        "animDict": "gestures@f@standing@casual",
+        "animFlag": 0,
+        "animName": "gesture_hand_down",
+        "category": "interactions",
+        "label": "Point Down"
+    },
+    {
+        "name": "pointdown",
+        "animDict": "gestures@f@standing@casual",
+        "animFlag": 50,
+        "animName": "gesture_hand_down",
+        "category": "interactions",
+        "label": "Point Down"
+    },
+    {
+        "name": "dance131",
+        "animDict": "anim@move_m@dancing@var@",
+        "animFlag": 1,
+        "animName": "idle",
+        "category": "dance2",
+        "label": "Dance 131"
+    },
+    {
+        "name": "no2",
+        "animDict": "mp_player_int_upper_nod",
+        "animFlag": 50,
+        "animName": "mp_player_int_nod_no",
+        "category": "reactions",
+        "label": "No 2"
+    },
+    {
+        "name": "salute",
+        "animDict": "anim@mp_player_intincarsalutestd@ds@",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "interactions",
+        "label": "Salute"
+    },
+    {
+        "name": "nervous2",
+        "animDict": "mp_missheist_countrybank@nervous",
+        "animFlag": 51,
+        "animName": "nervous_idle",
+        "category": "reactions",
+        "label": "Nervous 2"
+    },
+    {
+        "name": "gangsign2",
+        "animDict": "mp_player_int_uppergang_sign_b",
+        "animFlag": 51,
+        "animName": "mp_player_int_gang_sign_b",
+        "category": "randomactions",
+        "label": "Gang Sign 2"
+    },
+    {
+        "name": "bouquet",
+        "animDict": "impexp_int-0",
+        "animFlag": 51,
+        "animName": "mp_m_waremech_01_dual-0",
+        "category": "prop",
+        "label": "Bouquet"
+    },
+    {
+        "name": "dance56",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_male^4",
+        "category": "dance2",
+        "label": "Dance 056"
+    },
+    {
+        "name": "hearthands",
+        "animDict": "heart@hands1",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "reactions",
+        "label": "Heart Hands"
+    },
+    {
+        "name": "damn2",
+        "animDict": "anim@am_hold_up@male",
+        "animFlag": 50,
+        "animName": "shoplift_mid",
+        "category": "reactions",
+        "label": "Damn 2"
+    },
+    {
+        "name": "facepalm",
+        "animDict": "random@car_thief@agitated@idle_a",
+        "animFlag": 50,
+        "animName": "agitated_idle_a",
+        "category": "reactions",
+        "label": "Facepalm"
+    },
+    {
+        "name": "prideflag2",
+        "animDict": "rcmnigel1d",
+        "animFlag": 51,
+        "animName": "base_club_shoulder",
+        "category": "pride",
+        "label": "Pride Flag 2"
+    },
+    {
+        "name": "me",
+        "animDict": "gestures@f@standing@casual",
+        "animFlag": 50,
+        "animName": "gesture_me_hard",
+        "category": "reactions",
+        "label": "Me"
+    },
+    {
+        "name": "shrug",
+        "animDict": "gestures@f@standing@casual",
+        "animFlag": 50,
+        "animName": "gesture_shrug_hard",
+        "category": "reactions",
+        "label": "Shrug"
+    },
+    {
+        "name": "idle4",
+        "animDict": "anim@mp_celebration@idles@female",
+        "animFlag": 1,
+        "animName": "celebration_idle_f_a",
+        "category": "idles",
+        "label": "Idle 4"
+    },
+    {
+        "name": "nervous3",
+        "animDict": "rcmme_tracey1",
+        "animFlag": 51,
+        "animName": "nervous_loop",
+        "category": "reactions",
+        "label": "Nervous 3"
+    },
+    {
+        "name": "sunbathe2",
+        "animDict": "amb@world_human_sunbathe@female@back@base",
+        "animFlag": 1,
+        "animName": "base",
+        "category": "lying",
+        "label": "Sunbathe 2"
+    },
+    {
+        "name": "facepalm3",
+        "animDict": "missminuteman_1ig_2",
+        "animFlag": 50,
+        "animName": "tasered_2",
+        "category": "reactions",
+        "label": "Facepalm 3"
+    },
+    {
+        "name": "smoke4",
+        "animDict": "amb@world_human_smoking@female@idle_a",
+        "animFlag": 51,
+        "animName": "idle_b",
+        "category": "prop",
+        "label": "Smoke 4"
+    },
+    {
+        "name": "dancehorse",
+        "animDict": "anim@amb@nightclub@lazlow@hi_dancefloor@",
+        "animFlag": 50,
+        "animName": "dancecrowd_li_15_handup_laz",
+        "category": "dance",
+        "label": "Dance Horse"
+    },
+    {
+        "name": "damn",
+        "animDict": "gestures@m@standing@casual",
+        "animFlag": 50,
+        "animName": "gesture_damn",
+        "category": "reactions",
+        "label": "Damn"
+    },
+    {
+        "name": "dance179",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_male^6",
+        "category": "dance2",
+        "label": "Dance 179"
+    },
+    {
+        "name": "shrug2",
+        "animDict": "gestures@m@standing@casual",
+        "animFlag": 50,
+        "animName": "gesture_shrug_hard",
+        "category": "reactions",
+        "label": "Shrug 2"
+    },
+    {
+        "name": "ok",
+        "animDict": "anim@mp_player_intselfiedock",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "reactions",
+        "label": "OK"
+    },
+    {
+        "name": "flipoff",
+        "animDict": "anim@arena@celeb@podium@no_prop@",
+        "animFlag": 50,
+        "animName": "flip_off_a_1st",
+        "category": "interactions",
+        "label": "Flip Off"
+    },
+    {
+        "name": "dance61",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_female^3",
+        "category": "dance2",
+        "label": "Dance 061"
+    },
+    {
+        "name": "pose07",
+        "animDict": "lunyx@dazzleme",
+        "animFlag": 1,
+        "animName": "pose7_clip",
+        "category": "poses",
+        "label": "Pose 7"
+    },
+    {
+        "name": "leanside",
+        "animDict": "timetable@mime@01_gc",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "leaning",
+        "label": "Leanside"
+    },
+    {
+        "name": "lol",
+        "animDict": "anim@arena@celeb@flat@paired@no_props@",
+        "animFlag": 0,
+        "animName": "laugh_a_player_b",
+        "category": "reactions",
+        "label": "LOL"
+    },
+    {
+        "name": "headbutt",
+        "animDict": "melee@unarmed@streamed_variations",
+        "animFlag": 0,
+        "animName": "plyr_takedown_front_headbutt",
+        "category": "fighting",
+        "label": "Headbutt"
+    },
+    {
+        "name": "cop2",
+        "animDict": "anim@amb@nightclub@peds@",
+        "animFlag": 1,
+        "animName": "rcmme_amanda1_stand_loop_cop",
+        "category": "police",
+        "label": "Cop 2"
+    },
+    {
+        "name": "idle11",
+        "animDict": "random@countrysiderobbery",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "idles",
+        "label": "Idle 11"
+    },
+    {
+        "name": "screwyou",
+        "animDict": "misscommon@response",
+        "animFlag": 0,
+        "animName": "screw_you",
+        "category": "reactions",
+        "label": "Screw You"
+    },
+    {
+        "name": "cigar",
+        "animDict": "amb@world_human_smoking@male@male_a@enter",
+        "animFlag": 51,
+        "animName": "enter",
+        "category": "prop",
+        "label": "Cigar"
+    },
+    {
+        "name": "dance43",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_male^3",
+        "category": "dance2",
+        "label": "Dance 043"
+    },
+    {
+        "name": "mindblown",
+        "animDict": "anim@mp_player_intcelebrationmale@mind_blown",
+        "animFlag": 50,
+        "animName": "mind_blown",
+        "category": "reactions",
+        "label": "Mind Blown"
+    },
+    {
+        "name": "twerk",
+        "animDict": "switch@trevor@mocks_lapdance",
+        "animFlag": 1,
+        "animName": "001443_01_trvs_28_idle_stripper",
+        "category": "dance",
+        "label": "Twerk"
+    },
+    {
+        "name": "cop3",
+        "animDict": "amb@code_human_police_investigate@idle_a",
+        "animFlag": 1,
+        "animName": "idle_b",
+        "category": "police",
+        "label": "Cop 3"
+    },
+    {
+        "name": "swatpose12",
+        "animDict": "anim@holding_siege_vest_side",
+        "animFlag": 1,
+        "animName": "holding_siege_vest_side_clip",
+        "category": "poses",
+        "label": "Swat Pose 12"
+    },
+    {
+        "name": "yeah",
+        "animDict": "anim@mp_player_intupperair_shagging",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "reactions",
+        "label": "Yeah"
+    },
+    {
+        "name": "dance129",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "low_right_up",
+        "category": "dance2",
+        "label": "Dance 129"
+    },
+    {
+        "name": "lol2",
+        "animDict": "anim@arena@celeb@flat@solo@no_props@",
+        "animFlag": 0,
+        "animName": "giggle_a_player_b",
+        "category": "reactions",
+        "label": "LOL 2"
+    },
+    {
+        "name": "boi",
+        "animDict": "special_ped@jane@monologue_5@monologue_5c",
+        "animFlag": 50,
+        "animName": "brotheradrianhasshown_2",
+        "category": "reactions",
+        "label": "BOI"
+    },
+    {
+        "name": "dancef5",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_female^3",
+        "category": "dance",
+        "label": "Dance F5"
+    },
+    {
+        "name": "fallover3",
+        "animDict": "mp_suicide",
+        "animFlag": 0,
+        "animName": "pill",
+        "category": "falling",
+        "label": "Fall Over 3"
+    },
+    {
+        "name": "fallover5",
+        "animDict": "anim@gangops@hostage@",
+        "animFlag": 0,
+        "animName": "victim_fail",
+        "category": "falling",
+        "label": "Fall Over 5"
+    },
+    {
+        "name": "fallover2",
+        "animDict": "mp_suicide",
+        "animFlag": 0,
+        "animName": "pistol",
+        "category": "falling",
+        "label": "Fall Over 2"
+    },
+    {
+        "name": "fallover",
+        "animDict": "random@drunk_driver_1",
+        "animFlag": 0,
+        "animName": "drunk_fall_over",
+        "category": "falling",
+        "label": "Fall Over"
+    },
+    {
+        "name": "outofbreath",
+        "animDict": "re@construction",
+        "animFlag": 50,
+        "animName": "out_of_breath",
+        "category": "misc",
+        "label": "Out of Breath"
+    },
+    {
+        "name": "idle10",
+        "animDict": "mp_move@prostitute@m@french",
+        "animFlag": 51,
+        "animName": "idle",
+        "category": "idles",
+        "label": "Idle 10"
+    },
+    {
+        "name": "petting",
+        "animDict": "creatures@rottweiler@tricks@",
+        "animFlag": 1,
+        "animName": "petting_franklin",
+        "category": "misc",
+        "label": "Petting"
+    },
+    {
+        "name": "swatstand01",
+        "animDict": "anim@male@holding_vest",
+        "animFlag": 51,
+        "animName": "holding_vest_clip",
+        "category": "poses",
+        "label": "Swat Stand"
+    },
+    {
+        "name": "handshake",
+        "animDict": "mp_ped_interaction",
+        "animFlag": 50,
+        "animName": "handshake_guy_a",
+        "category": "interactions",
+        "label": "Handshake"
+    },
+    {
+        "name": "crawl",
+        "animDict": "move_injured_ground",
+        "animFlag": 1,
+        "animName": "front_loop",
+        "category": "misc",
+        "label": "Crawl"
+    },
+    {
+        "name": "stumble",
+        "animDict": "misscarsteal4@actor",
+        "animFlag": 1,
+        "animName": "stumble",
+        "category": "misc",
+        "label": "Stumble"
+    },
+    {
+        "name": "stink",
+        "animDict": "anim@mp_player_intcelebrationfemale@stinker",
+        "animFlag": 51,
+        "animName": "stinker",
+        "category": "misc",
+        "label": "Stink"
+    },
+    {
+        "name": "dance82",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_low_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_li_to_hi_09_v1_male^2",
+        "category": "dance2",
+        "label": "Dance 082"
+    },
+    {
+        "name": "metal",
+        "animDict": "anim@mp_player_intincarrockstd@ps@",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "misc",
+        "label": "Metal"
+    },
+    {
+        "name": "push2",
+        "animDict": "missfinale_c2ig_11",
+        "animFlag": 1,
+        "animName": "pushcar_offcliff_m",
+        "category": "exercise",
+        "label": "Push 2"
+    },
+    {
+        "name": "dance153",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_male^4",
+        "category": "dance2",
+        "label": "Dance 153"
+    },
+    {
+        "name": "dance101",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "hi_dance_prop_09_v1_male^3",
+        "category": "dance2",
+        "label": "Dance 101"
+    },
+    {
+        "name": "dancef4",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_female^1",
+        "category": "dance",
+        "label": "Dance F4"
+    },
+    {
+        "name": "dance54",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_male^2",
+        "category": "dance2",
+        "label": "Dance 054"
+    },
+    {
+        "name": "cough",
+        "animDict": "timetable@gardener@smoking_joint",
+        "animFlag": 50,
+        "animName": "idle_cough",
+        "category": "misc",
+        "label": "Cough"
+    },
+    {
+        "name": "dancesilly6",
+        "animDict": "timetable@tracy@ig_8@idle_b",
+        "animFlag": 1,
+        "animName": "idle_d",
+        "category": "dance",
+        "label": "Dance Silly 6"
+    },
+    {
+        "name": "slap",
+        "animDict": "melee@unarmed@streamed_variations",
+        "animFlag": 1,
+        "animName": "plyr_takedown_front_slap",
+        "category": "fighting",
+        "label": "Slap"
+    },
+    {
+        "name": "bourbon",
+        "animDict": "amb@world_human_drinking@coffee@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_c",
+        "category": "prop",
+        "label": "Bourbon"
+    },
+    {
+        "name": "dance194",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v2_female^2",
+        "category": "dance2",
+        "label": "Dance 194"
+    },
+    {
+        "name": "eat",
+        "animDict": "mp_player_inteat@burger",
+        "animFlag": 50,
+        "animName": "mp_player_int_eat_burger",
+        "category": "misc",
+        "label": "Eat"
+    },
+    {
+        "name": "knock2",
+        "animDict": "missheistfbi3b_ig7",
+        "animFlag": 1,
+        "animName": "lift_fibagent_loop",
+        "category": "randomactions",
+        "label": "Knock 2"
+    },
+    {
+        "name": "bbounce",
+        "animDict": "custom@billybounce",
+        "animFlag": 1,
+        "animName": "billybounce",
+        "category": "dance",
+        "label": "Billy Bounce"
+    },
+    {
+        "name": "dance94",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "hi_dance_prop_09_v1_female^2",
+        "category": "dance2",
+        "label": "Dance 094"
+    },
+    {
+        "name": "jog5",
+        "animDict": "move_m@joy@a",
+        "animFlag": 51,
+        "animName": "walk",
+        "category": "exercise",
+        "label": "Jog 5"
+    },
+    {
+        "name": "stickup",
+        "animDict": "random@countryside_gang_fight",
+        "animFlag": 50,
+        "animName": "biker_02_stickup_loop",
+        "category": "misc",
+        "label": "Stick Up"
+    },
+    {
+        "name": "mechanic2",
+        "animDict": "anim@amb@clubhouse@tutorial@bkr_tut_ig3@",
+        "animFlag": 1,
+        "animName": "machinic_loop_mechandplayer",
+        "category": "mechanic",
+        "label": "Mechanic 2"
+    },
+    {
+        "name": "reaching",
+        "animDict": "move_m@intimidation@cop@unarmed",
+        "animFlag": 51,
+        "animName": "idle",
+        "category": "misc",
+        "label": "Reaching"
+    },
+    {
+        "name": "flip2",
+        "animDict": "anim@arena@celeb@flat@solo@no_props@",
+        "animFlag": 0,
+        "animName": "cap_a_player_a",
+        "category": "exercise",
+        "label": "Flip 2"
+    },
+    {
+        "name": "champagne2",
+        "animDict": "anim@mp_player_intupperspray_champagne",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "prop",
+        "label": "Champagne 2"
+    },
+    {
+        "name": "nosepick",
+        "animDict": "anim@mp_player_intcelebrationfemale@nose_pick",
+        "animFlag": 1,
+        "animName": "nose_pick",
+        "category": "misc",
+        "label": "Nose Pick"
+    },
+    {
+        "name": "lift",
+        "animDict": "random@hitch_lift",
+        "animFlag": 50,
+        "animName": "idle_f",
+        "category": "misc",
+        "label": "Lift"
+    },
+    {
+        "name": "idle9",
+        "animDict": "friends@fra@ig_1",
+        "animFlag": 1,
+        "animName": "base_idle",
+        "category": "idles",
+        "label": "Idle 9"
+    },
+    {
+        "name": "smell",
+        "animDict": "move_p_m_two_idles@generic",
+        "animFlag": 50,
+        "animName": "fidget_sniff_fingers",
+        "category": "misc",
+        "label": "Smell"
+    },
+    {
+        "name": "sitchair2",
+        "animDict": "timetable@ron@ig_5_p3",
+        "animFlag": 1,
+        "animName": "ig_5_p3_base",
+        "category": "sitting",
+        "label": "Sit Chair 2"
+    },
+    {
+        "name": "drink",
+        "animDict": "mp_player_inteat@pnq",
+        "animFlag": 50,
+        "animName": "loop",
+        "category": "misc",
+        "label": "Drink"
+    },
+    {
+        "name": "thumbsup3",
+        "animDict": "anim@mp_player_intupperthumbs_up",
+        "animFlag": 50,
+        "animName": "enter",
+        "category": "interactions",
+        "label": "Thumbs Up 3"
+    },
+    {
+        "name": "mechanic",
+        "animDict": "mini@repair",
+        "animFlag": 1,
+        "animName": "fixing_a_ped",
+        "category": "mechanic",
+        "label": "Mechanic"
+    },
+    {
+        "name": "bringiton",
+        "animDict": "misscommon@response",
+        "animFlag": 50,
+        "animName": "bring_it_on",
+        "category": "fighting",
+        "label": "Bring It On"
+    },
+    {
+        "name": "cutthroat2",
+        "animDict": "anim@mp_player_intcelebrationfemale@cut_throat",
+        "animFlag": 0,
+        "animName": "cut_throat",
+        "category": "fighting",
+        "label": "Cut Throat 2"
+    },
+    {
+        "name": "lean5",
+        "animDict": "amb@world_human_leaning@male@wall@back@hands_together@idle_b",
+        "animFlag": 1,
+        "animName": "idle_b",
+        "category": "leaning",
+        "label": "Lean 5"
+    },
+    {
+        "name": "dance180",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_female^1",
+        "category": "dance2",
+        "label": "Dance 180"
+    },
+    {
+        "name": "boxing",
+        "animDict": "anim@mp_player_intcelebrationmale@shadow_boxing",
+        "animFlag": 50,
+        "animName": "shadow_boxing",
+        "category": "fighting",
+        "label": "Boxing"
+    },
+    {
+        "name": "comeatmebro",
+        "animDict": "mini@triathlon",
+        "animFlag": 50,
+        "animName": "want_some_of_this",
+        "category": "fighting",
+        "label": "Come at me bro"
+    },
+    {
+        "name": "threaten",
+        "animDict": "random@atmrobberygen",
+        "animFlag": 50,
+        "animName": "b_atm_mugging",
+        "category": "fighting",
+        "label": "Threaten"
+    },
+    {
+        "name": "dance147",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_female^4",
+        "category": "dance2",
+        "label": "Dance 147"
+    },
+    {
+        "name": "dance138",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_male^1",
+        "category": "dance2",
+        "label": "Dance 138"
+    },
+    {
+        "name": "lean3",
+        "animDict": "amb@world_human_leaning@female@wall@back@holding_elbow@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "leaning",
+        "label": "Lean 3"
+    },
+    {
+        "name": "surrender",
+        "animDict": "random@arrests@busted",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "fighting",
+        "label": "Surrender"
+    },
+    {
+        "name": "karate",
+        "animDict": "anim@mp_player_intcelebrationfemale@karate_chops",
+        "animFlag": 0,
+        "animName": "karate_chops",
+        "category": "fighting",
+        "label": "Karate"
+    },
+    {
+        "name": "airguitar",
+        "animDict": "anim@mp_player_intcelebrationfemale@air_guitar",
+        "animFlag": 0,
+        "animName": "air_guitar",
+        "category": "randomactions",
+        "label": "Air Guitar"
+    },
+    {
+        "name": "danceslow",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@",
+        "animFlag": 1,
+        "animName": "low_center",
+        "category": "dance",
+        "label": "Dance Slow"
+    },
+    {
+        "name": "karate2",
+        "animDict": "anim@mp_player_intcelebrationmale@karate_chops",
+        "animFlag": 0,
+        "animName": "karate_chops",
+        "category": "fighting",
+        "label": "Karate 2"
+    },
+    {
+        "name": "fightme2",
+        "animDict": "anim@deathmatch_intros@unarmed",
+        "animFlag": 0,
+        "animName": "intro_male_unarmed_e",
+        "category": "fighting",
+        "label": "Fight Me 2"
+    },
+    {
+        "name": "dance33",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_male^4",
+        "category": "dance2",
+        "label": "Dance 033"
+    },
+    {
+        "name": "boxing2",
+        "animDict": "anim@mp_player_intcelebrationfemale@shadow_boxing",
+        "animFlag": 50,
+        "animName": "shadow_boxing",
+        "category": "fighting",
+        "label": "Boxing 2"
+    },
+    {
+        "name": "knucklecrunch",
+        "animDict": "anim@mp_player_intcelebrationfemale@knuckle_crunch",
+        "animFlag": 50,
+        "animName": "knuckle_crunch",
+        "category": "fighting",
+        "label": "Knuckle Crunch"
+    },
+    {
+        "name": "clown4",
+        "animDict": "rcm_barry2",
+        "animFlag": 50,
+        "animName": "clown_idle_3",
+        "category": "weird",
+        "label": "Clown 4"
+    },
+    {
+        "name": "dance116",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "high_left",
+        "category": "dance2",
+        "label": "Dance 116"
+    },
+    {
+        "name": "airsynth",
+        "animDict": "anim@mp_player_intcelebrationfemale@air_synth",
+        "animFlag": 0,
+        "animName": "air_synth",
+        "category": "randomactions",
+        "label": "Air Synth"
+    },
+    {
+        "name": "dti01",
+        "animDict": "lunyxco@dresstoimpress",
+        "animFlag": 1,
+        "animName": "chic",
+        "category": "rrposes",
+        "label": "Runway Royale"
+    },
+    {
+        "name": "dance117",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "high_left_down",
+        "category": "dance2",
+        "label": "Dance 117"
+    },
+    {
+        "name": "clown2",
+        "animDict": "rcm_barry2",
+        "animFlag": 1,
+        "animName": "clown_idle_1",
+        "category": "weird",
+        "label": "Clown 2"
+    },
+    {
+        "name": "mackwalk",
+        "animDict": "move_m@joy@a",
+        "animFlag": 33,
+        "animName": "walk",
+        "category": "weird",
+        "label": "The Mack Walk"
+    },
+    {
+        "name": "blowkiss",
+        "animDict": "anim@mp_player_intcelebrationfemale@blow_kiss",
+        "animFlag": 0,
+        "animName": "blow_kiss",
+        "category": "interactions",
+        "label": "Blow Kiss"
+    },
+    {
+        "name": "dance",
+        "animDict": "anim@amb@nightclub@dancers@podium_dancers@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_17_v2_male^5",
+        "category": "dance2",
+        "label": "Dance 001"
+    },
+    {
+        "name": "dance135",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_female^4",
+        "category": "dance2",
+        "label": "Dance 135"
+    },
+    {
+        "name": "notepad",
+        "animDict": "missheistdockssetup1clipboard@base",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "prop",
+        "label": "Notepad"
+    },
+    {
+        "name": "dance20",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_female^6",
+        "category": "dance2",
+        "label": "Dance 020"
+    },
+    {
+        "name": "sit3",
+        "animDict": "amb@world_human_picnic@male@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "sitting",
+        "label": "Sit 3"
+    },
+    {
+        "name": "pockets",
+        "animDict": "bzzz@animations@hands",
+        "animFlag": 51,
+        "animName": "bz_hands",
+        "category": "weird",
+        "label": "Pockets"
+    },
+    {
+        "name": "dance52",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_female^6",
+        "category": "dance2",
+        "label": "Dance 052"
+    },
+    {
+        "name": "crossarms5",
+        "animDict": "anim@amb@nightclub@peds@",
+        "animFlag": 51,
+        "animName": "rcmme_amanda1_stand_loop_cop",
+        "category": "armfolding",
+        "label": "Crossarms 5"
+    },
+    {
+        "name": "dti07",
+        "animDict": "lunyxco@dresstoimpress",
+        "animFlag": 1,
+        "animName": "pose28",
+        "category": "rrposes",
+        "label": "Runway Royale 7"
+    },
+    {
+        "name": "prideflag9",
+        "animDict": "rcmnigel1d",
+        "animFlag": 51,
+        "animName": "base_club_shoulder",
+        "category": "pride",
+        "label": "Pride Flag 9"
+    },
+    {
+        "name": "gangsign",
+        "animDict": "mp_player_int_uppergang_sign_a",
+        "animFlag": 51,
+        "animName": "mp_player_int_gang_sign_a",
+        "category": "randomactions",
+        "label": "Gang Sign"
+    },
+    {
+        "name": "dance62",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_female^4",
+        "category": "dance2",
+        "label": "Dance 062"
+    },
+    {
+        "name": "statue3",
+        "animDict": "club_intro2-0",
+        "animFlag": 1,
+        "animName": "csb_englishdave_dual-0",
+        "category": "weird",
+        "label": "Statue 3"
+    },
+    {
+        "name": "shakeoff",
+        "animDict": "move_m@_idles@shake_off",
+        "animFlag": 50,
+        "animName": "shakeoff_1",
+        "category": "misc",
+        "label": "Shake Off"
+    },
+    {
+        "name": "dance166",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_male^5",
+        "category": "dance2",
+        "label": "Dance 166"
+    },
+    {
+        "name": "dance145",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_female^2",
+        "category": "dance2",
+        "label": "Dance 145"
+    },
+    {
+        "name": "clown5",
+        "animDict": "rcm_barry2",
+        "animFlag": 1,
+        "animName": "clown_idle_6",
+        "category": "weird",
+        "label": "Clown 5"
+    },
+    {
+        "name": "jog4",
+        "animDict": "amb@world_human_power_walker@female@idle_a",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "exercise",
+        "label": "Jog 4"
+    },
+    {
+        "name": "dance128",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "low_right_down",
+        "category": "dance2",
+        "label": "Dance 128"
+    },
+    {
+        "name": "wait4",
+        "animDict": "amb@world_human_hang_out_street@Female_arm_side@idle_a",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "waiting",
+        "label": "Wait 4"
+    },
+    {
+        "name": "t",
+        "animDict": "missfam5_yoga",
+        "animFlag": 51,
+        "animName": "a2_pose",
+        "category": "weird",
+        "label": "T"
+    },
+    {
+        "name": "danceupper2",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
+        "animFlag": 50,
+        "animName": "high_center_up",
+        "category": "dance",
+        "label": "Dance Upper 2"
+    },
+    {
+        "name": "clown3",
+        "animDict": "rcm_barry2",
+        "animFlag": 1,
+        "animName": "clown_idle_2",
+        "category": "weird",
+        "label": "Clown 3"
+    },
+    {
+        "name": "dance69",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_male^5",
+        "category": "dance2",
+        "label": "Dance 069"
+    },
+    {
+        "name": "dance141",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_male^4",
+        "category": "dance2",
+        "label": "Dance 141"
+    },
+    {
+        "name": "mindcontrol2",
+        "animDict": "rcmbarry",
+        "animFlag": 1,
+        "animName": "bar_1_attack_idle_aln",
+        "category": "weird",
+        "label": "Mind Control 2"
+    },
+    {
+        "name": "dance120",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "high_right_up",
+        "category": "dance2",
+        "label": "Dance 120"
+    },
+    {
+        "name": "spiderman",
+        "animDict": "missexile3",
+        "animFlag": 1,
+        "animName": "ex03_train_roof_idle",
+        "category": "weird",
+        "label": "Spider-Man"
+    },
+    {
+        "name": "dance17",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_female^3",
+        "category": "dance2",
+        "label": "Dance 017"
+    },
+    {
+        "name": "dance190",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_male^5",
+        "category": "dance2",
+        "label": "Dance 190"
+    },
+    {
+        "name": "chicken",
+        "animDict": "random@peyote@chicken",
+        "animFlag": 50,
+        "animName": "wakeup",
+        "category": "weird",
+        "label": "Chicken"
+    },
+    {
+        "name": "downward",
+        "animDict": "custom@downward_fortnite",
+        "animFlag": 1,
+        "animName": "Downward_fortnite",
+        "category": "dance",
+        "label": "Downward"
+    },
+    {
+        "name": "sitchair6",
+        "animDict": "timetable@maid@couch@",
+        "animFlag": 1,
+        "animName": "base",
+        "category": "sitting",
+        "label": "Sit Chair 6"
+    },
+    {
+        "name": "sit7",
+        "animDict": "anim@amb@nightclub@lazlow@lo_alone@",
+        "animFlag": 1,
+        "animName": "lowalone_base_laz",
+        "category": "sitting",
+        "label": "Sit 7"
+    },
+    {
+        "name": "dance136",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_female^5",
+        "category": "dance2",
+        "label": "Dance 136"
+    },
+    {
+        "name": "adjust",
+        "animDict": "missmic4",
+        "animFlag": 50,
+        "animName": "michael_tux_fidget",
+        "category": "clothing",
+        "label": "Adjust"
+    },
+    {
+        "name": "sit",
+        "animDict": "anim@amb@business@bgen@bgen_no_work@",
+        "animFlag": 1,
+        "animName": "sit_phone_phoneputdown_idle_nowork",
+        "category": "sitting",
+        "label": "Sit"
+    },
+    {
+        "name": "statue2",
+        "animDict": "fra_0_int-1",
+        "animFlag": 1,
+        "animName": "cs_lamardavis_dual-1",
+        "category": "weird",
+        "label": "Statue 2"
+    },
+    {
+        "name": "bird",
+        "animDict": "random@peyote@bird",
+        "animFlag": 0,
+        "animName": "wakeup",
+        "category": "weird",
+        "label": "Bird"
+    },
+    {
+        "name": "pose03",
+        "animDict": "lunyx@dazzleme",
+        "animFlag": 1,
+        "animName": "pose3_clip",
+        "category": "poses",
+        "label": "Pose 3"
+    },
+    {
+        "name": "beans",
+        "animDict": "anim@scripted@island@special_peds@pavel@hs4_pavel_ig5_caviar_p1",
+        "animFlag": 51,
+        "animName": "base_idle",
+        "category": "prop",
+        "label": "Beans"
+    },
+    {
+        "name": "sit5",
+        "animDict": "anim@heists@fleeca_bank@ig_7_jetski_owner",
+        "animFlag": 1,
+        "animName": "owner_idle",
+        "category": "sitting",
+        "label": "Sit 5"
+    },
+    {
+        "name": "finger2",
+        "animDict": "anim@mp_player_intupperfinger",
+        "animFlag": 51,
+        "animName": "idle_a_fp",
+        "category": "interactions",
+        "label": "Finger 2"
+    },
+    {
+        "name": "dance5",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "med_center",
+        "category": "dance2",
+        "label": "Dance 005"
+    },
+    {
+        "name": "sit4",
+        "animDict": "amb@world_human_picnic@female@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "sitting",
+        "label": "Sit 4"
+    },
+    {
+        "name": "sitscared2",
+        "animDict": "anim@heists@ornate_bank@hostages@ped_c@",
+        "animFlag": 1,
+        "animName": "flinch_loop",
+        "category": "sitting",
+        "label": "Sit Scared 2"
+    },
+    {
+        "name": "pose34",
+        "animDict": "anim@female_beach_booty_selfie",
+        "animFlag": 1,
+        "animName": "booty_selfie_clip",
+        "category": "poses",
+        "label": "Pose 34"
+    },
+    {
+        "name": "kneel3",
+        "animDict": "amb@world_human_bum_wash@male@low@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "randomactions",
+        "label": "Kneel 3"
+    },
+    {
+        "name": "sit8",
+        "animDict": "timetable@jimmy@mics3_ig_15@",
+        "animFlag": 1,
+        "animName": "mics3_15_base_jimmy",
+        "category": "sitting",
+        "label": "Sit 8"
+    },
+    {
+        "name": "sitchair4",
+        "animDict": "timetable@ron@ig_3_couch",
+        "animFlag": 1,
+        "animName": "base",
+        "category": "sitting",
+        "label": "Sit Chair 4"
+    },
+    {
+        "name": "sitchair3",
+        "animDict": "timetable@reunited@ig_10",
+        "animFlag": 1,
+        "animName": "base_amanda",
+        "category": "sitting",
+        "label": "Sit Chair 3"
+    },
+    {
+        "name": "dance78",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_female^4",
+        "category": "dance2",
+        "label": "Dance 078"
+    },
+    {
+        "name": "sitscared3",
+        "animDict": "anim@heists@ornate_bank@hostages@ped_e@",
+        "animFlag": 1,
+        "animName": "flinch_loop",
+        "category": "sitting",
+        "label": "Sit Scared 3"
+    },
+    {
+        "name": "danceshy2",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
+        "animFlag": 1,
+        "animName": "low_center_down",
+        "category": "dance",
+        "label": "Dance Shy 2"
+    },
+    {
+        "name": "bpose10",
+        "animDict": "anim@male_insta_selfie",
+        "animFlag": 1,
+        "animName": "insta_selfie_clip",
+        "category": "poses",
+        "label": "Boy Pose 10"
+    },
+    {
+        "name": "dance148",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_female^5",
+        "category": "dance2",
+        "label": "Dance 148"
+    },
+    {
+        "name": "dance58",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_male^6",
+        "category": "dance2",
+        "label": "Dance 058"
+    },
+    {
+        "name": "dance197",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_male^3",
+        "category": "dance2",
+        "label": "Dance 197"
+    },
+    {
+        "name": "sit9",
+        "animDict": "amb@world_human_stupor@male@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "sitting",
+        "label": "Sit 9"
+    },
+    {
+        "name": "dance172",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_female^5",
+        "category": "dance2",
+        "label": "Dance 172"
+    },
+    {
+        "name": "idledrunk2",
+        "animDict": "random@drunk_driver_1",
+        "animFlag": 1,
+        "animName": "drunk_driver_stand_loop_dd2",
+        "category": "idles",
+        "label": "Idle Drunk 2"
+    },
+    {
+        "name": "dance196",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v2_female^4",
+        "category": "dance2",
+        "label": "Dance 196"
+    },
+    {
+        "name": "dance109",
+        "animDict": "anim@mp_player_intcelebrationfemale@banging_tunes",
+        "animFlag": 1,
+        "animName": "banging_tunes",
+        "category": "dance2",
+        "label": "Dance 109"
+    },
+    {
+        "name": "dance65",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_male^1",
+        "category": "dance2",
+        "label": "Dance 065"
+    },
+    {
+        "name": "dance71",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v2_female^1",
+        "category": "dance2",
+        "label": "Dance 071"
+    },
+    {
+        "name": "swatstand06",
+        "animDict": "anim@male@holding_vest_siege_2",
+        "animFlag": 51,
+        "animName": "holding_vest_siege_2_clip",
+        "category": "poses",
+        "label": "Swat Stand 6"
+    },
+    {
+        "name": "think3",
+        "animDict": "timetable@tracy@ig_8@base",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "thinking",
+        "label": "Think 3"
+    },
+    {
+        "name": "round_end",
+        "animDict": "amb@world_human_bum_freeway@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "fighting",
+        "label": "Round End"
+    },
+    {
+        "name": "swatstand03",
+        "animDict": "anim@holding_siege_vest_side",
+        "animFlag": 51,
+        "animName": "holding_siege_vest_side_clip",
+        "category": "poses",
+        "label": "Swat Stand 3"
+    },
+    {
+        "name": "lapdance2",
+        "animDict": "mini@strip_club@private_dance@idle",
+        "animFlag": 1,
+        "animName": "priv_dance_idle",
+        "category": "dance",
+        "label": "Lapdance 2"
+    },
+    {
+        "name": "pose05",
+        "animDict": "lunyx@dazzleme",
+        "animFlag": 1,
+        "animName": "pose5_clip",
+        "category": "poses",
+        "label": "Pose 5"
+    },
+    {
+        "name": "wait12",
+        "animDict": "rcmjosh1",
+        "animFlag": 1,
+        "animName": "idle",
+        "category": "waiting",
+        "label": "Wait 12"
+    },
+    {
+        "name": "bpose12",
+        "animDict": "anim@male_bskball_hold",
+        "animFlag": 1,
+        "animName": "bskball_hold_clip",
+        "category": "poses",
+        "label": "Boy Pose 12"
+    },
+    {
+        "name": "dancesilly3",
+        "animDict": "move_clown@p_m_two_idles@",
+        "animFlag": 1,
+        "animName": "fidget_short_dance",
+        "category": "dance",
+        "label": "Dance Silly 3"
+    },
+    {
+        "name": "swatpose10",
+        "animDict": "anim@male@holding_vest",
+        "animFlag": 1,
+        "animName": "holding_vest_clip",
+        "category": "poses",
+        "label": "Swat Pose 10"
+    },
+    {
+        "name": "swatstand05",
+        "animDict": "anim@male@holding_vest_siege",
+        "animFlag": 51,
+        "animName": "holding_vest_siege_clip",
+        "category": "poses",
+        "label": "Swat Stand 5"
+    },
+    {
+        "name": "dance64",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_female^6",
+        "category": "dance2",
+        "label": "Dance 064"
+    },
+    {
+        "name": "dance108",
+        "animDict": "special_ped@mountain_dancer@monologue_4@monologue_4a",
+        "animFlag": 1,
+        "animName": "mnt_dnc_verse",
+        "category": "dance2",
+        "label": "Dance 108"
+    },
+    {
+        "name": "dance113",
+        "animDict": "misschinese1crazydance",
+        "animFlag": 51,
+        "animName": "crazy_dance_base",
+        "category": "dance2",
+        "label": "Dance 113"
+    },
+    {
+        "name": "dance119",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "high_right",
+        "category": "dance2",
+        "label": "Dance 119"
+    },
+    {
+        "name": "dance144",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_female^1",
+        "category": "dance2",
+        "label": "Dance 144"
+    },
+    {
+        "name": "dance7",
+        "animDict": "misschinese2_crystalmazemcs1_ig",
+        "animFlag": 1,
+        "animName": "dance_loop_tao",
+        "category": "dance2",
+        "label": "Dance 007"
+    },
+    {
+        "name": "foldarms",
+        "animDict": "anim@amb@business@bgen@bgen_no_work@",
+        "animFlag": 51,
+        "animName": "stand_phone_phoneputdown_idle_nowork",
+        "category": "armfolding",
+        "label": "Fold Arms"
+    },
+    {
+        "name": "vodka",
+        "animDict": "amb@world_human_drinking@coffee@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_c",
+        "category": "prop",
+        "label": "Vodka"
+    },
+    {
+        "name": "dance91",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_med_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_mi_to_hi_09_v1_male^5",
+        "category": "dance2",
+        "label": "Dance 091"
+    },
+    {
+        "name": "jog3",
+        "animDict": "amb@world_human_jog_standing@female@idle_a",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "exercise",
+        "label": "Jog 3"
+    },
+    {
+        "name": "dance74",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v2_female^4",
+        "category": "dance2",
+        "label": "Dance 074"
+    },
+    {
+        "name": "dance98",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "hi_dance_prop_09_v1_female^6",
+        "category": "dance2",
+        "label": "Dance 098"
+    },
+    {
+        "name": "swatstand04",
+        "animDict": "anim@male@holding_vest_2",
+        "animFlag": 51,
+        "animName": "holding_vest_2_clip",
+        "category": "poses",
+        "label": "Swat Stand 4"
+    },
+    {
+        "name": "pose32",
+        "animDict": "anim@sitting_thot",
+        "animFlag": 1,
+        "animName": "sitting_thot_clip",
+        "category": "poses",
+        "label": "Pose 32"
+    },
+    {
+        "name": "danceslow4",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_b@",
+        "animFlag": 1,
+        "animName": "low_center",
+        "category": "dance",
+        "label": "Dance Slow 4"
+    },
+    {
+        "name": "slide3",
+        "animDict": "anim@arena@celeb@flat@solo@no_props@",
+        "animFlag": 0,
+        "animName": "slide_c_player_a",
+        "category": "celebration",
+        "label": "Slide 3"
+    },
+    {
+        "name": "dance70",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_male^6",
+        "category": "dance2",
+        "label": "Dance 070"
+    },
+    {
+        "name": "prideflag7",
+        "animDict": "rcmnigel1d",
+        "animFlag": 51,
+        "animName": "base_club_shoulder",
+        "category": "pride",
+        "label": "Pride Flag 7"
+    },
+    {
+        "name": "newsboom",
+        "animDict": "missfra1",
+        "animFlag": 51,
+        "animName": "mcs2_crew_idle_m_boom",
+        "category": "prop",
+        "label": "News Boom"
+    },
+    {
+        "name": "posestand02",
+        "animDict": "lunyx@dazzleme",
+        "animFlag": 51,
+        "animName": "pose7_clip",
+        "category": "poses",
+        "label": "Pose Stand 2"
+    },
+    {
+        "name": "meditate3",
+        "animDict": "rcmepsilonism3",
+        "animFlag": 1,
+        "animName": "base_loop",
+        "category": "relax",
+        "label": "Meditiate 3"
+    },
+    {
+        "name": "dance105",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_female^3",
+        "category": "dance2",
+        "label": "Dance 105"
+    },
+    {
+        "name": "dance80",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_female^6",
+        "category": "dance2",
+        "label": "Dance 080"
+    },
+    {
+        "name": "dancehorse3",
+        "animDict": "anim@amb@nightclub@lazlow@hi_dancefloor@",
+        "animFlag": 1,
+        "animName": "dancecrowd_li_11_hu_shimmy_laz",
+        "category": "dance",
+        "label": "Dance Horse 3"
+    },
+    {
+        "name": "argue2",
+        "animDict": "oddjobs@assassinate@vice@hooker",
+        "animFlag": 50,
+        "animName": "argue_a",
+        "category": "interactions",
+        "label": "Argue 2"
+    },
+    {
+        "name": "hug",
+        "animDict": "mp_ped_interaction",
+        "animFlag": 0,
+        "animName": "kisses_guy_a",
+        "category": "interactions",
+        "label": "Hug"
+    },
+    {
+        "name": "situp",
+        "animDict": "amb@world_human_sit_ups@male@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "exercise",
+        "label": "Sit Up"
+    },
+    {
+        "name": "dance11",
+        "animDict": "anim@amb@nightclub@dancers@black_madonna_entourage@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_male^5",
+        "category": "dance2",
+        "label": "Dance 011"
+    },
+    {
+        "name": "beer",
+        "animDict": "amb@world_human_drinking@coffee@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_c",
+        "category": "prop",
+        "label": "Beer"
+    },
+    {
+        "name": "whistle2",
+        "animDict": "rcmnigel1c",
+        "animFlag": 50,
+        "animName": "hailing_whistle_waive_a",
+        "category": "interactions",
+        "label": "Whistle 2"
+    },
+    {
+        "name": "pose06",
+        "animDict": "lunyx@dazzleme",
+        "animFlag": 1,
+        "animName": "pose6_clip",
+        "category": "poses",
+        "label": "Pose 6"
+    },
+    {
+        "name": "smoke2",
+        "animDict": "amb@world_human_aa_smoke@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_c",
+        "category": "prop",
+        "label": "Smoke 2"
+    },
+    {
+        "name": "dti06",
+        "animDict": "lunyxco@dresstoimpress",
+        "animFlag": 1,
+        "animName": "pose20",
+        "category": "rrposes",
+        "label": "Runway Royale 6"
+    },
+    {
+        "name": "leanside2",
+        "animDict": "misscarstealfinale",
+        "animFlag": 51,
+        "animName": "packer_idle_1_trevor",
+        "category": "leaning",
+        "label": "Leanside 2"
+    },
+    {
+        "name": "swatstand02",
+        "animDict": "anim@holding_side_vest",
+        "animFlag": 51,
+        "animName": "holding_side_vest_clip",
+        "category": "poses",
+        "label": "Swat Stand 2"
+    },
+    {
+        "name": "dancesilly4",
+        "animDict": "anim@amb@nightclub@lazlow@hi_podium@",
+        "animFlag": 1,
+        "animName": "danceidle_hi_11_buttwiggle_b_laz",
+        "category": "dance",
+        "label": "Dance Silly 4"
+    },
+    {
+        "name": "dancepride9",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 51,
+        "animName": "ambclub_09_mi_hi_bellydancer_laz",
+        "category": "pride",
+        "label": "Pride Flag Dance 9"
+    },
+    {
+        "name": "hug3",
+        "animDict": "mp_ped_interaction",
+        "animFlag": 0,
+        "animName": "hugs_guy_a",
+        "category": "interactions",
+        "label": "Hug 3"
+    },
+    {
+        "name": "smoke5",
+        "animDict": "amb@world_human_aa_smoke@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_c",
+        "category": "prop",
+        "label": "Smoke 2"
+    },
+    {
+        "name": "dj",
+        "animDict": "anim@amb@nightclub@djs@dixon@",
+        "animFlag": 51,
+        "animName": "dixn_dance_cntr_open_dix",
+        "category": "randomactions",
+        "label": "DJ"
+    },
+    {
+        "name": "tryclothes",
+        "animDict": "mp_clothing@female@trousers",
+        "animFlag": 1,
+        "animName": "try_trousers_neutral_a",
+        "category": "clothing",
+        "label": "Try Clothes"
+    },
+    {
+        "name": "wait8",
+        "animDict": "rcmjosh1",
+        "animFlag": 51,
+        "animName": "idle",
+        "category": "waiting",
+        "label": "Wait 8"
+    },
+    {
+        "name": "crossarms",
+        "animDict": "amb@world_human_hang_out_street@female_arms_crossed@idle_a",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "armfolding",
+        "label": "Crossarms"
+    },
+    {
+        "name": "radio",
+        "animDict": "random@arrests",
+        "animFlag": 51,
+        "animName": "generic_radio_chatter",
+        "category": "police",
+        "label": "Radio"
+    },
+    {
+        "name": "ledge",
+        "animDict": "missfbi1",
+        "animFlag": 1,
+        "animName": "ledge_loop",
+        "category": "randomactions",
+        "label": "Ledge"
+    },
+    {
+        "name": "dance24",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_male^4",
+        "category": "dance2",
+        "label": "Dance 024"
+    },
+    {
+        "name": "sitdrunk",
+        "animDict": "timetable@amanda@drunk@base",
+        "animFlag": 1,
+        "animName": "base",
+        "category": "sitting",
+        "label": "Sit Drunk"
+    },
+    {
+        "name": "celebrate",
+        "animDict": "rcmfanatic1celebrate",
+        "animFlag": 1,
+        "animName": "celebrate",
+        "category": "celebration",
+        "label": "Celebrate"
+    },
+    {
+        "name": "dance53",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_male^1",
+        "category": "dance2",
+        "label": "Dance 053"
+    },
+    {
+        "name": "stretch2",
+        "animDict": "mini@triathlon",
+        "animFlag": 1,
+        "animName": "idle_f",
+        "category": "relax",
+        "label": "Stretch 2"
+    },
+    {
+        "name": "pose33",
+        "animDict": "anim@egirl_1foot_selfie",
+        "animFlag": 1,
+        "animName": "1foot_selfie_clip",
+        "category": "poses",
+        "label": "Pose 33"
+    },
+    {
+        "name": "bow2",
+        "animDict": "anim@arena@celeb@podium@no_prop@",
+        "animFlag": 0,
+        "animName": "regal_a_1st",
+        "category": "interactions",
+        "label": "Bow 2"
+    },
+    {
+        "name": "pickup",
+        "animDict": "random@domestic",
+        "animFlag": 0,
+        "animName": "pickup_low",
+        "category": "misc",
+        "label": "Pickup"
+    },
+    {
+        "name": "dancepride4",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 51,
+        "animName": "ambclub_09_mi_hi_bellydancer_laz",
+        "category": "pride",
+        "label": "Pride Flag Dance 4"
+    },
+    {
+        "name": "type2",
+        "animDict": "anim@heists@prison_heistig1_p1_guard_checks_bus",
+        "animFlag": 51,
+        "animName": "loop",
+        "category": "interactions",
+        "label": "Type 2"
+    },
+    {
+        "name": "dance114",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "high_center",
+        "category": "dance2",
+        "label": "Dance 114"
+    },
+    {
+        "name": "swatpose15",
+        "animDict": "anim@male@holding_vest_siege_2",
+        "animFlag": 1,
+        "animName": "holding_vest_siege_2_clip",
+        "category": "poses",
+        "label": "Swat Pose 15"
+    },
+    {
+        "name": "salute3",
+        "animDict": "anim@mp_player_intuppersalute",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "interactions",
+        "label": "Salute 3"
+    },
+    {
+        "name": "danceshy",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@male@var_a@",
+        "animFlag": 1,
+        "animName": "low_center",
+        "category": "dance",
+        "label": "Dance Shy"
+    },
+    {
+        "name": "dance177",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_male^4",
+        "category": "dance2",
+        "label": "Dance 177"
+    },
+    {
+        "name": "swatpose11",
+        "animDict": "anim@holding_side_vest",
+        "animFlag": 1,
+        "animName": "holding_side_vest_clip",
+        "category": "poses",
+        "label": "Swat Pose 11"
+    },
+    {
+        "name": "dance188",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_male^3",
+        "category": "dance2",
+        "label": "Dance 188"
+    },
+    {
+        "name": "brief",
+        "animDict": "missheistdocksprep1hold_cellphone",
+        "animFlag": 51,
+        "animName": "static",
+        "category": "prop",
+        "label": "Briefcase"
+    },
+    {
+        "name": "dancepride5",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 51,
+        "animName": "ambclub_09_mi_hi_bellydancer_laz",
+        "category": "pride",
+        "label": "Pride Flag Dance 5"
+    },
+    {
+        "name": "clean",
+        "animDict": "timetable@floyd@clean_kitchen@base",
+        "animFlag": 1,
+        "animName": "base",
+        "category": "prop",
+        "label": "Clean"
+    },
+    {
+        "name": "shot",
+        "animDict": "random@dealgonewrong",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "misc",
+        "label": "Shot"
+    },
+    {
+        "name": "cup2",
+        "animDict": "mp_player_inteat@pnq",
+        "animFlag": 51,
+        "animName": "loop",
+        "category": "prop",
+        "label": "Cup 2"
+    },
+    {
+        "name": "idle7",
+        "animDict": "anim@mp_corona_idles@male_d@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "idles",
+        "label": "Idle 7"
+    },
+    {
+        "name": "dance146",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_female^3",
+        "category": "dance2",
+        "label": "Dance 146"
+    },
+    {
+        "name": "idledrunk3",
+        "animDict": "missarmenian2",
+        "animFlag": 1,
+        "animName": "standing_idle_loop_drunk",
+        "category": "idles",
+        "label": "Idle Drunk 3"
+    },
+    {
+        "name": "dance55",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_male^3",
+        "category": "dance2",
+        "label": "Dance 055"
+    },
+    {
+        "name": "pridebear",
+        "animDict": "impexp_int-0",
+        "animFlag": 51,
+        "animName": "mp_m_waremech_01_dual-0",
+        "category": "pride",
+        "label": "Pride Bear"
+    },
+    {
+        "name": "salute2",
+        "animDict": "anim@mp_player_intincarsalutestd@ps@",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "interactions",
+        "label": "Salute 2"
+    },
+    {
+        "name": "whistle",
+        "animDict": "taxi_hail",
+        "animFlag": 50,
+        "animName": "hail_taxi",
+        "category": "interactions",
+        "label": "Whistle"
+    },
+    {
+        "name": "wseeme",
+        "animDict": "custom@wanna_see_me",
+        "animFlag": 1,
+        "animName": "wanna_see_me",
+        "category": "dance",
+        "label": "Wanna See Me"
+    },
+    {
+        "name": "dance156",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_female^1",
+        "category": "dance2",
+        "label": "Dance 156"
+    },
+    {
+        "name": "sitscared",
+        "animDict": "anim@heists@ornate_bank@hostages@hit",
+        "animFlag": 1,
+        "animName": "hit_loop_ped_b",
+        "category": "sitting",
+        "label": "Sit Scared"
+    },
+    {
+        "name": "wait3",
+        "animDict": "amb@world_human_hang_out_street@female_hold_arm@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "waiting",
+        "label": "Wait 3"
+    },
+    {
+        "name": "flute",
+        "animDict": "anim@heists@humane_labs@finale@keycards",
+        "animFlag": 51,
+        "animName": "ped_a_enter_loop",
+        "category": "prop",
+        "label": "Flute"
+    },
+    {
+        "name": "warmth",
+        "animDict": "amb@world_human_stand_fire@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "misc",
+        "label": "Warmth"
+    },
+    {
+        "name": "dance77",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_female^2",
+        "category": "dance2",
+        "label": "Dance 077"
+    },
+    {
+        "name": "prideflag5",
+        "animDict": "rcmnigel1d",
+        "animFlag": 51,
+        "animName": "base_club_shoulder",
+        "category": "pride",
+        "label": "Pride Flag 5"
+    },
+    {
+        "name": "dance191",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_male^6",
+        "category": "dance2",
+        "label": "Dance 191"
+    },
+    {
+        "name": "leanside3",
+        "animDict": "misscarstealfinalecar_5_ig_1",
+        "animFlag": 51,
+        "animName": "waitloop_lamar",
+        "category": "leaning",
+        "label": "Leanside 3"
+    },
+    {
+        "name": "dance155",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_male^6",
+        "category": "dance2",
+        "label": "Dance 155"
+    },
+    {
+        "name": "dance110",
+        "animDict": "anim@mp_player_intcelebrationfemale@banging_tunes_left",
+        "animFlag": 1,
+        "animName": "banging_tunes",
+        "category": "dance2",
+        "label": "Dance 110"
+    },
+    {
+        "name": "stretch3",
+        "animDict": "mini@triathlon",
+        "animFlag": 1,
+        "animName": "idle_d",
+        "category": "relax",
+        "label": "Stretch 3"
+    },
+    {
+        "name": "crossarmsside",
+        "animDict": "rcmnigel1a_band_groupies",
+        "animFlag": 51,
+        "animName": "base_m2",
+        "category": "armfolding",
+        "label": "Crossarms Side"
+    },
+    {
+        "name": "pull",
+        "animDict": "random@mugging4",
+        "animFlag": 50,
+        "animName": "struggle_loop_b_thief",
+        "category": "exercise",
+        "label": "Pull"
+    },
+    {
+        "name": "flip",
+        "animDict": "anim@arena@celeb@flat@solo@no_props@",
+        "animFlag": 0,
+        "animName": "flip_a_player_a",
+        "category": "exercise",
+        "label": "Flip"
+    },
+    {
+        "name": "finger",
+        "animDict": "anim@mp_player_intselfiethe_bird",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "interactions",
+        "label": "Finger"
+    },
+    {
+        "name": "dance16",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_female^2",
+        "category": "dance2",
+        "label": "Dance 016"
+    },
+    {
+        "name": "dancepride3",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 51,
+        "animName": "ambclub_09_mi_hi_bellydancer_laz",
+        "category": "pride",
+        "label": "Pride Flag Dance 3"
+    },
+    {
+        "name": "dancepride2",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 51,
+        "animName": "ambclub_09_mi_hi_bellydancer_laz",
+        "category": "pride",
+        "label": "Pride Flag Dance 2"
+    },
+    {
+        "name": "wait5",
+        "animDict": "missclothing",
+        "animFlag": 51,
+        "animName": "idle_storeclerk",
+        "category": "waiting",
+        "label": "Wait 5"
+    },
+    {
+        "name": "idle6",
+        "animDict": "anim@mp_corona_idles@male_c@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "idles",
+        "label": "Idle 6"
+    },
+    {
+        "name": "dance150",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_male^1",
+        "category": "dance2",
+        "label": "Dance 150"
+    },
+    {
+        "name": "wait13",
+        "animDict": "rcmnigel1a",
+        "animFlag": 1,
+        "animName": "base",
+        "category": "waiting",
+        "label": "Wait 13"
+    },
+    {
+        "name": "dance47",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_female^1",
+        "category": "dance2",
+        "label": "Dance 047"
+    },
+    {
+        "name": "dance95",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "hi_dance_prop_09_v1_female^3",
+        "category": "dance2",
+        "label": "Dance 095"
+    },
+    {
+        "name": "dancef6",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "high_center_up",
+        "category": "dance",
+        "label": "Dance F6"
+    },
+    {
+        "name": "sitchairside",
+        "animDict": "timetable@ron@ron_ig_2_alt1",
+        "animFlag": 1,
+        "animName": "ig_2_alt1_base",
+        "category": "sitting",
+        "label": "Sit Chair Side"
+    },
+    {
+        "name": "argue",
+        "animDict": "misscarsteal4@actor",
+        "animFlag": 50,
+        "animName": "actor_berating_loop",
+        "category": "interactions",
+        "label": "Argue"
+    },
+    {
+        "name": "newsmic",
+        "animDict": "anim@heists@humane_labs@finale@keycards",
+        "animFlag": 51,
+        "animName": "ped_a_enter_loop",
+        "category": "prop",
+        "label": "News Mic"
+    },
+    {
+        "name": "dance9",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "med_center_up",
+        "category": "dance2",
+        "label": "Dance 009"
+    },
+    {
+        "name": "dance36",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_female^2",
+        "category": "dance2",
+        "label": "Dance 036"
+    },
+    {
+        "name": "dance19",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_female^5",
+        "category": "dance2",
+        "label": "Dance 019"
+    },
+    {
+        "name": "wave3",
+        "animDict": "friends@fra@ig_1",
+        "animFlag": 51,
+        "animName": "over_here_idle_a",
+        "category": "interactions",
+        "label": "Wave 3"
+    },
+    {
+        "name": "leanbar3",
+        "animDict": "anim@amb@nightclub@lazlow@ig1_vip@",
+        "animFlag": 1,
+        "animName": "clubvip_base_laz",
+        "category": "leaning",
+        "label": "Lean Bar 3"
+    },
+    {
+        "name": "stretch",
+        "animDict": "mini@triathlon",
+        "animFlag": 1,
+        "animName": "idle_e",
+        "category": "relax",
+        "label": "Stretch"
+    },
+    {
+        "name": "dance158",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_female^3",
+        "category": "dance2",
+        "label": "Dance 158"
+    },
+    {
+        "name": "rabbit",
+        "animDict": "random@peyote@rabbit",
+        "animFlag": 0,
+        "animName": "wakeup",
+        "category": "weird",
+        "label": "Rabbit"
+    },
+    {
+        "name": "dance3",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@male@var_a@",
+        "animFlag": 1,
+        "animName": "high_center",
+        "category": "dance2",
+        "label": "Dance 003"
+    },
+    {
+        "name": "prideflag4",
+        "animDict": "rcmnigel1d",
+        "animFlag": 51,
+        "animName": "base_club_shoulder",
+        "category": "pride",
+        "label": "Pride Flag 4"
+    },
+    {
+        "name": "salsa",
+        "animDict": "custom@salsa",
+        "animFlag": 1,
+        "animName": "salsa",
+        "category": "dance",
+        "label": "Salsa"
+    },
+    {
+        "name": "dance133",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_female^2",
+        "category": "dance2",
+        "label": "Dance 133"
+    },
+    {
+        "name": "register",
+        "animDict": "anim@heists@box_carry@",
+        "animFlag": 51,
+        "animName": "idle",
+        "category": "prop",
+        "label": "Register"
+    },
+    {
+        "name": "idle5",
+        "animDict": "anim@mp_corona_idles@female_b@idle_a",
+        "animFlag": 1,
+        "animName": "idle_a",
+        "category": "idles",
+        "label": "Idle 5"
+    },
+    {
+        "name": "dance154",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_male^5",
+        "category": "dance2",
+        "label": "Dance 154"
+    },
+    {
+        "name": "dance104",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@hi_intensity",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_female^2",
+        "category": "dance2",
+        "label": "Dance 104"
+    },
+    {
+        "name": "dance159",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_female^4",
+        "category": "dance2",
+        "label": "Dance 159"
+    },
+    {
+        "name": "dance115",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "high_center_down",
+        "category": "dance2",
+        "label": "Dance 115"
+    },
+    {
+        "name": "dance151",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v2_male^2",
+        "category": "dance2",
+        "label": "Dance 151"
+    },
+    {
+        "name": "dance8",
+        "animDict": "missfbi3_sniping",
+        "animFlag": 1,
+        "animName": "dance_m_default",
+        "category": "dance2",
+        "label": "Dance 008"
+    },
+    {
+        "name": "dance171",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_13_v2_female^4",
+        "category": "dance2",
+        "label": "Dance 171"
+    },
+    {
+        "name": "backpack",
+        "animDict": "move_p_m_zero_rucksack",
+        "animFlag": 51,
+        "animName": "idle",
+        "category": "prop",
+        "label": "Backpack"
+    },
+    {
+        "name": "dti08",
+        "animDict": "lunyxco@dresstoimpress",
+        "animFlag": 1,
+        "animName": "runoutofposes",
+        "category": "rrposes",
+        "label": "Runway Royale 8"
+    },
+    {
+        "name": "leanbar4",
+        "animDict": "anim@heists@prison_heist",
+        "animFlag": 1,
+        "animName": "ped_b_loop_a",
+        "category": "leaning",
+        "label": "Lean Bar 4"
+    },
+    {
+        "name": "stretch4",
+        "animDict": "rcmfanatic1maryann_stretchidle_b",
+        "animFlag": 1,
+        "animName": "idle_e",
+        "category": "relax",
+        "label": "Stretch 4"
+    },
+    {
+        "name": "leanhigh",
+        "animDict": "anim@mp_ferris_wheel",
+        "animFlag": 1,
+        "animName": "idle_a_player_one",
+        "category": "leaning",
+        "label": "Lean High"
+    },
+    {
+        "name": "airplane",
+        "animDict": "missfbi1",
+        "animFlag": 50,
+        "animName": "ledge_loop",
+        "category": "weird",
+        "label": "Air Plane"
+    },
+    {
+        "name": "slowclap3",
+        "animDict": "anim@mp_player_intupperslow_clap",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "celebration",
+        "label": "Slow Clap 3"
+    },
+    {
+        "name": "dance46",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_male^6",
+        "category": "dance2",
+        "label": "Dance 046"
+    },
+    {
+        "name": "leanflirt",
+        "animDict": "random@street_race",
+        "animFlag": 1,
+        "animName": "_car_a_flirt_girl",
+        "category": "leaning",
+        "label": "Lean Flirt"
+    },
+    {
+        "name": "dti02",
+        "animDict": "lunyxco@dresstoimpress",
+        "animFlag": 1,
+        "animName": "deathdrop",
+        "category": "rrposes",
+        "label": "Runway Royale 2"
+    },
+    {
+        "name": "passout2",
+        "animDict": "missarmenian2",
+        "animFlag": 1,
+        "animName": "corpse_search_exit_ped",
+        "category": "lying",
+        "label": "Passout 2"
+    },
+    {
+        "name": "teddy",
+        "animDict": "impexp_int-0",
+        "animFlag": 51,
+        "animName": "mp_m_waremech_01_dual-0",
+        "category": "prop",
+        "label": "Teddy"
+    },
+    {
+        "name": "dance181",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_female^2",
+        "category": "dance2",
+        "label": "Dance 181"
+    },
+    {
+        "name": "dancepride1",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 51,
+        "animName": "ambclub_09_mi_hi_bellydancer_laz",
+        "category": "pride",
+        "label": "Pride Flag Dance 1"
+    },
+    {
+        "name": "cocaine",
+        "animDict": "anim@amb@nightclub@peds@",
+        "animFlag": 50,
+        "animName": "missfbi3_party_snort_coke_b_male3",
+        "category": "prop",
+        "label": "Crack"
+    },
+    {
+        "name": "danceslow2",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "low_center",
+        "category": "dance",
+        "label": "Dance Slow 2"
+    },
+    {
+        "name": "dance13",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "mi_dance_prop_15_v1_male^1",
+        "category": "dance2",
+        "label": "Dance 013"
+    },
+    {
+        "name": "prideflag8",
+        "animDict": "rcmnigel1d",
+        "animFlag": 51,
+        "animName": "base_club_shoulder",
+        "category": "pride",
+        "label": "Pride Flag 8"
+    },
+    {
+        "name": "leanbar2",
+        "animDict": "amb@prop_human_bum_shopping_cart@male@idle_a",
+        "animFlag": 1,
+        "animName": "idle_c",
+        "category": "leaning",
+        "label": "Lean Bar 2"
+    },
+    {
+        "name": "type3",
+        "animDict": "mp_prison_break",
+        "animFlag": 51,
+        "animName": "hack_loop",
+        "category": "interactions",
+        "label": "Type 3"
+    },
+    {
+        "name": "clap",
+        "animDict": "amb@world_human_cheering@male_a",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "celebration",
+        "label": "Clap"
+    },
+    {
+        "name": "crossarms2",
+        "animDict": "amb@world_human_hang_out_street@male_c@idle_a",
+        "animFlag": 51,
+        "animName": "idle_b",
+        "category": "armfolding",
+        "label": "Crossarms 2"
+    },
+    {
+        "name": "dancepride6",
+        "animDict": "anim@amb@nightclub@lazlow@hi_railing@",
+        "animFlag": 51,
+        "animName": "ambclub_09_mi_hi_bellydancer_laz",
+        "category": "pride",
+        "label": "Pride Flag Dance 6"
+    },
+    {
+        "name": "dance41",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_male^1",
+        "category": "dance2",
+        "label": "Dance 041"
+    },
+    {
+        "name": "dance123",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "low_center_down",
+        "category": "dance2",
+        "label": "Dance 123"
+    },
+    {
+        "name": "think4",
+        "animDict": "anim@amb@casino@hangout@ped_male@stand@02b@idles",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "thinking",
+        "label": "Think 4"
+    },
+    {
+        "name": "posestand01",
+        "animDict": "lunyx@dazzleme",
+        "animFlag": 51,
+        "animName": "pose6_clip",
+        "category": "poses",
+        "label": "Pose Stand"
+    },
+    {
+        "name": "sunbathe",
+        "animDict": "amb@world_human_sunbathe@male@back@base",
+        "animFlag": 1,
+        "animName": "base",
+        "category": "lying",
+        "label": "Sunbathe"
+    },
+    {
+        "name": "clean3",
+        "animDict": "timetable@floyd@clean_kitchen@base",
+        "animFlag": 1,
+        "animName": "base",
+        "category": "prop",
+        "label": "Clean 3"
+    },
+    {
+        "name": "dance189",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_male^4",
+        "category": "dance2",
+        "label": "Dance 189"
+    },
+    {
+        "name": "dance195",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v2_female^3",
+        "category": "dance2",
+        "label": "Dance 195"
+    },
+    {
+        "name": "wave7",
+        "animDict": "friends@frj@ig_1",
+        "animFlag": 51,
+        "animName": "wave_d",
+        "category": "interactions",
+        "label": "Wave 7"
+    },
+    {
+        "name": "dance184",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_female^5",
+        "category": "dance2",
+        "label": "Dance 184"
+    },
+    {
+        "name": "dance192",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_male^6",
+        "category": "dance2",
+        "label": "Dance 192"
+    },
+    {
+        "name": "tablet2",
+        "animDict": "amb@code_human_in_bus_passenger_idles@female@tablet@idle_a",
+        "animFlag": 51,
+        "animName": "idle_a",
+        "category": "prop",
+        "label": "Tablet 2"
+    },
+    {
+        "name": "dance4",
+        "animDict": "anim@amb@nightclub@mini@dance@dance_solo@male@var_b@",
+        "animFlag": 1,
+        "animName": "high_center_up",
+        "category": "dance2",
+        "label": "Dance 004"
+    },
+    {
+        "name": "dance51",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_female^5",
+        "category": "dance2",
+        "label": "Dance 051"
+    },
+    {
+        "name": "dance88",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_med_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_mi_to_hi_09_v1_male^2",
+        "category": "dance2",
+        "label": "Dance 088"
+    },
+    {
+        "name": "dance37",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_female^3",
+        "category": "dance2",
+        "label": "Dance 037"
+    },
+    {
+        "name": "dance28",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_female^4",
+        "category": "dance2",
+        "label": "Dance 028"
+    },
+    {
+        "name": "dance60",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_female^2",
+        "category": "dance2",
+        "label": "Dance 060"
+    },
+    {
+        "name": "dance167",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_male^6",
+        "category": "dance2",
+        "label": "Dance 167"
+    },
+    {
+        "name": "superhero2",
+        "animDict": "rcmbarry",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "weird",
+        "label": "Superhero 2"
+    },
+    {
+        "name": "passout3",
+        "animDict": "anim@gangops@morgue@table@",
+        "animFlag": 1,
+        "animName": "body_search",
+        "category": "lying",
+        "label": "Passout 3"
+    },
+    {
+        "name": "dance10",
+        "animDict": "anim@amb@nightclub@dancers@black_madonna_entourage@",
+        "animFlag": 1,
+        "animName": "li_dance_facedj_11_v1_male^1",
+        "category": "dance2",
+        "label": "Dance 010"
+    },
+    {
+        "name": "joint",
+        "animDict": "amb@world_human_smoking_pot@male@base",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "prop",
+        "label": "Joint"
+    },
+    {
+        "name": "dance162",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_male^1",
+        "category": "dance2",
+        "label": "Dance 162"
+    },
+    {
+        "name": "point",
+        "animDict": "gestures@f@standing@casual",
+        "animFlag": 0,
+        "animName": "gesture_point",
+        "category": "interactions",
+        "label": "Point"
+    },
+    {
+        "name": "dance157",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_11_v1_female^2",
+        "category": "dance2",
+        "label": "Dance 157"
+    },
+    {
+        "name": "dance14",
+        "animDict": "anim@amb@nightclub@djs@solomun@",
+        "animFlag": 1,
+        "animName": "sol_trans_out_to_rt_a_sol",
+        "category": "dance2",
+        "label": "Dance 014"
+    },
+    {
+        "name": "dance48",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v2_female^2",
+        "category": "dance2",
+        "label": "Dance 048"
+    },
+    {
+        "name": "dance27",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_female^2",
+        "category": "dance2",
+        "label": "Dance 027"
+    },
+    {
+        "name": "wave8",
+        "animDict": "friends@frj@ig_1",
+        "animFlag": 51,
+        "animName": "wave_e",
+        "category": "interactions",
+        "label": "Wave 8"
+    },
+    {
+        "name": "tryclothes2",
+        "animDict": "mp_clothing@female@shirt",
+        "animFlag": 1,
+        "animName": "try_shirt_positive_a",
+        "category": "clothing",
+        "label": "Try Clothes 2"
+    },
+    {
+        "name": "dancehorse2",
+        "animDict": "anim@amb@nightclub@lazlow@hi_dancefloor@",
+        "animFlag": 1,
+        "animName": "crowddance_hi_11_handup_laz",
+        "category": "dance",
+        "label": "Dance Horse 2"
+    },
+    {
+        "name": "guitar2",
+        "animDict": "switch@trevor@guitar_beatdown",
+        "animFlag": 51,
+        "animName": "001370_02_trvs_8_guitar_beatdown_idle_busker",
+        "category": "prop",
+        "label": "Guitar 2"
+    },
+    {
+        "name": "jazzhands",
+        "animDict": "anim@mp_player_intcelebrationfemale@jazz_hands",
+        "animFlag": 50,
+        "animName": "jazz_hands",
+        "category": "celebration",
+        "label": "Jazzhands"
+    },
+    {
+        "name": "pose04",
+        "animDict": "lunyx@dazzleme",
+        "animFlag": 1,
+        "animName": "pose4_clip",
+        "category": "poses",
+        "label": "Pose 4"
+    },
+    {
+        "name": "bong",
+        "animDict": "anim@safehouse@bong",
+        "animFlag": 1,
+        "animName": "bong_stage3",
+        "category": "prop",
+        "label": "Bong"
+    },
+    {
+        "name": "dance15",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_female^1",
+        "category": "dance2",
+        "label": "Dance 015"
+    },
+    {
+        "name": "slide",
+        "animDict": "anim@arena@celeb@flat@solo@no_props@",
+        "animFlag": 0,
+        "animName": "slide_a_player_a",
+        "category": "celebration",
+        "label": "Slide"
+    },
+    {
+        "name": "dance127",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "low_right",
+        "category": "dance2",
+        "label": "Dance 127"
+    },
+    {
+        "name": "whiskey",
+        "animDict": "amb@world_human_drinking@coffee@male@idle_a",
+        "animFlag": 51,
+        "animName": "idle_c",
+        "category": "prop",
+        "label": "Whiskey"
+    },
+    {
+        "name": "wave",
+        "animDict": "friends@frj@ig_1",
+        "animFlag": 51,
+        "animName": "wave_a",
+        "category": "interactions",
+        "label": "Wave"
+    },
+    {
+        "name": "dance106",
+        "animDict": "special_ped@mountain_dancer@monologue_1@monologue_1a",
+        "animFlag": 1,
+        "animName": "mtn_dnc_if_you_want_to_get_to_heaven",
+        "category": "dance2",
+        "label": "Dance 106"
+    },
+    {
+        "name": "cloudgaze2",
+        "animDict": "switch@trevor@annoys_sunbathers",
+        "animFlag": 1,
+        "animName": "trev_annoys_sunbathers_loop_guy",
+        "category": "lying",
+        "label": "Cloudgaze 2"
+    },
+    {
+        "name": "dance44",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_male^4",
+        "category": "dance2",
+        "label": "Dance 044"
+    },
+    {
+        "name": "dance90",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups_transitions@from_med_intensity",
+        "animFlag": 1,
+        "animName": "trans_dance_crowd_mi_to_hi_09_v1_male^4",
+        "category": "dance2",
+        "label": "Dance 090"
+    },
+    {
+        "name": "prideflag3",
+        "animDict": "rcmnigel1d",
+        "animFlag": 51,
+        "animName": "base_club_shoulder",
+        "category": "pride",
+        "label": "Pride Flag 3"
+    },
+    {
+        "name": "map",
+        "animDict": "amb@world_human_tourist_map@male@base",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "prop",
+        "label": "Map"
+    },
+    {
+        "name": "umbrella",
+        "animDict": "amb@world_human_drinking@coffee@male@base",
+        "animFlag": 51,
+        "animName": "base",
+        "category": "prop",
+        "label": "Umbrella"
+    },
+    {
+        "name": "dance18",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_female^4",
+        "category": "dance2",
+        "label": "Dance 018"
+    },
+    {
+        "name": "walkingstick",
+        "animDict": "missheistdocksprep1hold_cellphone",
+        "animFlag": 51,
+        "animName": "WalkingStick",
+        "category": "prop",
+        "label": "Walking Stick"
+    },
+    {
+        "name": "scared",
+        "animDict": "random@domestic",
+        "animFlag": 51,
+        "animName": "f_distressed_loop",
+        "category": "randomactions",
+        "label": "Scared"
+    },
+    {
+        "name": "newsmic3",
+        "animDict": "anim@heists@humane_labs@finale@keycards",
+        "animFlag": 51,
+        "animName": "ped_b_enter_loop",
+        "category": "prop",
+        "label": "News Mic 3"
+    },
+    {
+        "name": "cig2",
+        "animDict": "amb@world_human_smoking@male@male_a@enter",
+        "animFlag": 51,
+        "animName": "idle",
+        "category": "prop",
+        "label": "Cig 2"
+    },
+    {
+        "name": "dance66",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_male^2",
+        "category": "dance2",
+        "label": "Dance 066"
+    },
+    {
+        "name": "push",
+        "animDict": "missfinale_c2ig_11",
+        "animFlag": 1,
+        "animName": "pushcar_offcliff_f",
+        "category": "exercise",
+        "label": "Push"
+    },
+    {
+        "name": "dance100",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_single_props@",
+        "animFlag": 1,
+        "animName": "hi_dance_prop_09_v1_male^2",
+        "category": "dance2",
+        "label": "Dance 100"
+    },
+    {
+        "name": "dancesilly2",
+        "animDict": "move_clown@p_m_zero_idles@",
+        "animFlag": 1,
+        "animName": "fidget_short_dance",
+        "category": "dance",
+        "label": "Dance Silly 2"
+    },
+    {
+        "name": "lapdance3",
+        "animDict": "mini@strip_club@private_dance@part2",
+        "animFlag": 1,
+        "animName": "priv_dance_p2",
+        "category": "dance",
+        "label": "Lapdance 3"
+    },
+    {
+        "name": "wait6",
+        "animDict": "timetable@amanda@ig_2",
+        "animFlag": 1,
+        "animName": "ig_2_base_amanda",
+        "category": "waiting",
+        "label": "Wait 6"
+    },
+    {
+        "name": "foldarms2",
+        "animDict": "anim@amb@nightclub@peds@",
+        "animFlag": 51,
+        "animName": "rcmme_amanda1_stand_loop_cop",
+        "category": "armfolding",
+        "label": "Fold Arms 2"
+    },
+    {
+        "name": "tryclothes3",
+        "animDict": "mp_clothing@female@shoes",
+        "animFlag": 1,
+        "animName": "try_shoes_positive_a",
+        "category": "clothing",
+        "label": "Try Clothes 3"
+    },
+    {
+        "name": "dance75",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v2_female^5",
+        "category": "dance2",
+        "label": "Dance 075"
+    },
+    {
+        "name": "dance139",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_09_v1_male^2",
+        "category": "dance2",
+        "label": "Dance 139"
+    },
+    {
+        "name": "dancesilly8",
+        "animDict": "anim@mp_player_intcelebrationfemale@the_woogie",
+        "animFlag": 1,
+        "animName": "the_woogie",
+        "category": "dance",
+        "label": "Dance Silly 8"
+    },
+    {
+        "name": "dance35",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_11_v1_female^1",
+        "category": "dance2",
+        "label": "Dance 035"
+    },
+    {
+        "name": "dance26",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v1_male^6",
+        "category": "dance2",
+        "label": "Dance 026"
+    },
+    {
+        "name": "dance187",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_groups@",
+        "animFlag": 1,
+        "animName": "hi_dance_crowd_15_v1_male^2",
+        "category": "dance2",
+        "label": "Dance 187"
+    },
+    {
+        "name": "inspect",
+        "animDict": "random@train_tracks",
+        "animFlag": 0,
+        "animName": "idle_e",
+        "category": "medical",
+        "label": "Inspect"
+    },
+    {
+        "name": "dance67",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_male^3",
+        "category": "dance2",
+        "label": "Dance 067"
+    },
+    {
+        "name": "dance124",
+        "animDict": "anim@amb@casino@mini@dance@dance_solo@female@var_a@",
+        "animFlag": 1,
+        "animName": "low_center_up",
+        "category": "dance2",
+        "label": "Dance 124"
+    },
+    {
+        "name": "dance32",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "hi_dance_facedj_09_v2_male^2",
+        "category": "dance2",
+        "label": "Dance 032"
+    },
+    {
+        "name": "dance68",
+        "animDict": "anim@amb@nightclub@dancers@crowddance_facedj@",
+        "animFlag": 1,
+        "animName": "mi_dance_facedj_09_v1_male^4",
+        "category": "dance2",
+        "label": "Dance 068"
+    }
+]

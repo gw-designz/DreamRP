@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<Item>
+			<modelName>w_prp_gpslauncher</modelName>
+			<txdName>w_prp_gpslauncher</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+				<Item>
+			<modelName>w_prp_gps</modelName>
+			<txdName>w_prp_gps</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_ex_flashbang</modelName>
+			<txdName>w_ex_flashbang</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_ex_smokegrenade_2</modelName>
+			<txdName>w_ex_smokegrenade_2</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_ex_grenadefrag_freeze</modelName>
+			<txdName>w_ex_grenadefrag_freeze</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multicharacter Ped Labels</title>
+    <style>
+      /* Self-hosted Geist (WOFF2). Loading from Google Fonts inside FiveM's
+         DUI CEF served a stripped basic-Latin TTF that lacked å/ä/ö/etc.
+         These local files ship the full Latin-1 Supplement glyphs so
+         Swedish/German/Norwegian nameplates render correctly. */
+      @font-face {
+        font-family: "Geist";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("fonts/geist/Geist-Regular.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: "Geist";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url("fonts/geist/Geist-Medium.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: "Geist";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url("fonts/geist/Geist-SemiBold.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: "Geist";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url("fonts/geist/Geist-Bold.woff2") format("woff2");
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 512px;
+        height: 512px;
+        overflow: hidden;
+        background: transparent;
+        font-family: "Geist", sans-serif;
+        color: #ffffff;
+        user-select: none;
+      }
+
+      /* The atlas is a 512px-tall canvas split into `slotCount` stacked
+         strips. The Lua side samples each strip by V-range (1/slotCount) and
+         draws it as a camera-facing billboard above the matching ped's head.
+         Slot divs are created/positioned dynamically in JS so the resource
+         can show more than 4 characters. `top`/`height` are set inline. */
+      .slot {
+        position: absolute;
+        left: 0;
+        width: 512px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+      }
+
+      .slot.visible {
+        visibility: visible;
+      }
+
+      /* Theme tokens. Defaults to dark; flipped via body[data-theme]
+         in response to the SET_THEME bridge from Lua (which mirrors
+         the React settingsStore.theme). The DUI is rendered into a
+         3D billboard with no WebGL blur layer behind it, so the
+         light-mode glass needs a higher opacity than the React-side
+         iOS gray (we can't lean on the blur to carry readability). */
+      body {
+        --pill-bg:           rgba(20, 20, 22, 0.78);
+        --pill-shadow-inset: rgba(255, 255, 255, 0.06);
+        --pill-shadow-drop:  rgba(0, 0, 0, 0.45);
+        --pill-text:         #ffffff;
+        --pill-icon:         #ffffff;
+        --pill-accent-r:     122;
+        --pill-accent-g:     173;
+        --pill-accent-b:     255;
+      }
+
+      body[data-theme="light"] {
+        /* iOS-style gray pill matching the React surfaces' translucent
+           material. Text stays white on both themes — same recipe as
+           the rest of the UI. */
+        --pill-bg:           rgba(128, 128, 128, 0.3);
+        --pill-shadow-inset: rgba(255, 255, 255, 0.22);
+        --pill-shadow-drop:  rgba(0, 0, 0, 0.35);
+        --pill-text:         #ffffff;
+        --pill-icon:         #ffffff;
+      }
+
+      /* iOS-style nameplate. Default state: theme-driven pill with
+         white text, medium-weight SF-Pro-like setting, subtle 1px
+         outline shadow as a refined alternative to a CSS border.
+         Hover state inverts to the brand accent fill (same on both
+         themes) — classic Apple interaction pattern that gives a
+         strong, clean contrast without color noise. */
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 28px;
+        border-radius: 999px;
+        background: var(--pill-bg);
+        color: var(--pill-text);
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        white-space: nowrap;
+        /* max-width caps the pill at 460px leaving 26px margin on
+           each side of the 512px canvas slot — anything longer gets
+           ellipsis-truncated via the .pill > span rule below. */
+        max-width: 460px;
+        overflow: hidden;
+        box-shadow:
+          0 0 0 1px var(--pill-shadow-inset),
+          0 6px 20px var(--pill-shadow-drop);
+        transition: background 150ms ease-out;
+      }
+
+      /* Text span inside the pill — flex-shrinks and ellipsis-
+         truncates when the name is too long for the pill width.
+         `min-width: 0` is required for flex children to shrink
+         below their content size; without it, white-space: nowrap
+         keeps the span at full text width and the pill blows past
+         max-width instead of clipping. */
+      .pill > span {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      /* Hover state takes the brand accent — solid #7aadff pill with dark
+         text + a soft blue glow halo. Mirrors the PLAY button's color
+         treatment so a hovered ped reads as "this is the action target"
+         using the same visual language. Stays the same on both themes
+         because the brand colour is the affordance, not the tone. */
+      .pill.hovered {
+        background: rgba(var(--pill-accent-r), var(--pill-accent-g), var(--pill-accent-b), 0.96);
+        color: #0e0e0e;
+        box-shadow:
+          0 0 0 1px rgba(var(--pill-accent-r), var(--pill-accent-g), var(--pill-accent-b), 0.4),
+          0 0 28px rgba(var(--pill-accent-r), var(--pill-accent-g), var(--pill-accent-b), 0.55),
+          0 8px 28px rgba(0, 0, 0, 0.5);
+      }
+
+      .pill.empty {
+        opacity: 0.6;
+      }
+
+      .pill .icon {
+        width: 26px;
+        height: 26px;
+        flex-shrink: 0;
+        opacity: 0.9;
+      }
+
+      .pill .icon path,
+      .pill .icon line,
+      .pill .icon circle {
+        stroke: var(--pill-icon);
+        fill: none;
+      }
+
+      /* Icons flip to dark on the bright-blue hover pill so they keep
+         contrast against the accent fill. */
+      .pill.hovered .icon path,
+      .pill.hovered .icon line,
+      .pill.hovered .icon circle {
+        stroke: #0e0e0e;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="slot-container"></div>
+
+    <script>
+      // Each slot strip is a FIXED height; the texture (and this page) grows
+      // with the slot count. Lua sizes the DUI to slotCount * STRIP_H, so the
+      // nameplate looks identical at any count. Must match STRIP_H in dui.lua.
+      const STRIP_H = 128;
+
+      // Slot divs are built dynamically to match the slot count sent from Lua
+      // (so the resource can show more than 4 characters). `slots` is rebuilt
+      // whenever the count changes.
+      const container = document.getElementById("slot-container");
+      let slots = [];
+      let builtCount = 0;
+
+      function buildSlots(count) {
+        if (count === builtCount) return;
+        const totalH = count * STRIP_H;
+        // Match the page to the DUI texture height so the strips line up.
+        document.documentElement.style.height = totalH + "px";
+        document.body.style.height = totalH + "px";
+        container.innerHTML = "";
+        slots = [];
+        for (let i = 0; i < count; i++) {
+          const el = document.createElement("div");
+          el.className = "slot";
+          el.style.top = (i * STRIP_H) + "px";
+          el.style.height = STRIP_H + "px";
+          const pill = document.createElement("div");
+          pill.className = "pill";
+          el.appendChild(pill);
+          container.appendChild(el);
+          slots.push({ el: el, pill: pill });
+        }
+        builtCount = count;
+      }
+
+      // Lucide-style outline icons. Inline so the DUI has zero external deps.
+      const ICON_USER =
+        '<svg class="icon" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">' +
+        '<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />' +
+        '<circle cx="12" cy="7" r="4" />' +
+        "</svg>";
+
+      const ICON_PLUS =
+        '<svg class="icon" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">' +
+        '<line x1="12" y1="5" x2="12" y2="19" />' +
+        '<line x1="5" y1="12" x2="19" y2="12" />' +
+        "</svg>";
+
+      // Minimal padlock — thin stroke, body proportions tuned for the 26px
+      // .icon size so it reads cleanly next to the pill text. Drawn as
+      // pure <path> elements (no <rect>) so the .pill .icon stroke rules
+      // (which target path/line/circle) recolor every part on theme + hover.
+      const ICON_LOCK =
+        '<svg class="icon" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+        '<path d="M6.5 11.5h11a1 1 0 0 1 1 1v7a1 1 0 0 1 -1 1h-11a1 1 0 0 1 -1 -1v-7a1 1 0 0 1 1 -1z" />' +
+        '<path d="M8 11.5V8a4 4 0 0 1 8 0v3.5" />' +
+        '</svg>';
+
+      // Max display length for the name BEFORE the JS-level ellipsis
+      // kicks in. The CSS rule on `.pill > span` also adds an ellipsis
+      // when the pill overflows its 460px max-width, but we've seen
+      // CSS truncation NOT activate reliably in the CEF/DUI render
+      // pipeline for certain edge cases (unusual letter-spacing,
+      // wide unicode, repeated identical characters, etc.) — so this
+      // JS-level cap is the primary defense. The CSS rule stays as
+      // a belt-and-braces backup for any name that slips through.
+      //
+      // 20 chars at the 32px font + 0.4px letter-spacing fits with
+      // room to spare inside the 460px pill width. Tuned so the
+      // ellipsis appears noticeably (the player can tell the name's
+      // truncated) rather than the pill landing exactly at its limit.
+      const MAX_NAME_CHARS = 20;
+
+      function truncateName(name) {
+        const text = (name || "").toUpperCase();
+        if (text.length <= MAX_NAME_CHARS) return text;
+        // Slice + trim trailing whitespace so "JOHN  " doesn't become
+        // "JOHN …" with an awkward double-gap before the ellipsis.
+        // Using the single-char "…" rather than "..." keeps the
+        // visual weight consistent regardless of the font's dot
+        // kerning.
+        return text.slice(0, MAX_NAME_CHARS - 1).replace(/\s+$/, "") + "…";
+      }
+
+      function updateSlot(i, data) {
+        const s = slots[i];
+        if (!s) return;
+        if (!data || !data.visible) {
+          s.el.classList.remove("visible");
+          return;
+        }
+
+        const text = truncateName(data.name);
+        // Lock takes priority over empty — a locked slot IS empty, but
+        // gets the padlock affordance so players know it's gated, not
+        // just "click to create".
+        const icon = data.locked ? ICON_LOCK : (data.empty ? ICON_PLUS : ICON_USER);
+        // Safe innerHTML: `truncateName` returns the player-supplied
+        // name as plain text after uppercasing/truncating. We escape
+        // the angle brackets defensively in case a name somehow gets
+        // through with markup-looking content (shouldn't happen with
+        // QBCore charinfo but local-only games sometimes get
+        // adventurous test names). Cheap, no perf hit.
+        const safe = text.replace(/[&<>]/g, function (c) {
+          return c === "&" ? "&amp;" : c === "<" ? "&lt;" : "&gt;";
+        });
+        s.pill.innerHTML = icon + "<span>" + safe + "</span>";
+
+        s.pill.classList.toggle("hovered", !!data.hovered);
+        s.pill.classList.toggle("empty", !!data.empty);
+        s.el.classList.add("visible");
+      }
+
+      function applyAccent(hex) {
+        if (!hex || typeof hex !== "string") return;
+        const h = hex.replace(/^#/, "");
+        const expanded = h.length === 3
+          ? h.split("").map((c) => c + c).join("")
+          : h;
+        const m = expanded.match(/^([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/);
+        if (!m) return;
+        const r = parseInt(m[1], 16);
+        const g = parseInt(m[2], 16);
+        const b = parseInt(m[3], 16);
+        document.body.style.setProperty("--pill-accent-r", String(r));
+        document.body.style.setProperty("--pill-accent-g", String(g));
+        document.body.style.setProperty("--pill-accent-b", String(b));
+      }
+
+      window.addEventListener("message", (event) => {
+        const data = event.data;
+        if (!data || data.action !== "bablo-multicharacter:peds" || !data.data) return;
+
+        const theme = data.data.theme;
+        if (theme === "dark" || theme === "light") {
+          document.body.setAttribute("data-theme", theme);
+        }
+
+        applyAccent(data.data.accent);
+
+        const slotsData = data.data.slots || [];
+        const count = data.data.slotCount || slotsData.length || 4;
+        buildSlots(count);
+        for (let i = 0; i < count; i++) {
+          updateSlot(i, slotsData[i]);
+        }
+      });
+    </script>
+  </body>
+</html>

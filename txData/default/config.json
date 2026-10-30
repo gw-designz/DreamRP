@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "general": {
+    "serverName": "FiveMServer"
+  },
+  "server": {
+    "dataPath": "D:/FiveMServer/game/server-data",
+    "cfgPath": "D:/FiveMServer/game/server-data/server.cfg",
+    "onesync": "on"
+  }
+}

@@ -1,0 +1,103 @@
+/* The MDT's one typeface (fonts/TheRiftShop-license.txt: freeware, non-commercial).
+   It has a single weight, so it answers every weight instead of being faux-bolded. */
+@font-face {
+	font-family: "The Rift Shop";
+	src: url("./fonts/TheRiftShop-Yzde4.ttf") format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+:root {
+	--font-main: "The Rift Shop", "Inter Variable", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-family: var(--font-main);
+	line-height: 1.5;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.87);
+	font-synthesis: none;
+	text-rendering: geometricPrecision;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Accent (customizable via Colors settings); defaults match my-hud: one neon red accent */
+	--accent-rgb: 255, 36, 58;
+	--accent-text-rgb: 255, 128, 140;
+
+	/* Background: black / graphite plates */
+	--dark-bg: rgb(12, 12, 14);
+	--light-bg: rgb(24, 24, 28);
+	--card-dark-bg: rgb(18, 18, 21);
+	--card-light-bg: rgb(255, 255, 255);
+	--secondary-bg: rgb(24, 24, 28);
+	--menu-bg: rgb(14, 14, 16);
+	--hover-bg: rgba(255, 255, 255, 0.05);
+	--active-bg: rgba(255, 255, 255, 0.1);
+
+	/* Text */
+	--primary-text: rgba(255, 255, 255, 0.87);
+	--secondary-text: rgba(220, 222, 228, 0.72);
+	--muted-text: rgba(220, 222, 228, 0.55);
+	--disabled-text: rgba(255, 255, 255, 0.5);
+
+	/* Border */
+	--border-primary: rgba(200, 202, 210, 0.1);
+	--border-secondary: rgba(200, 202, 210, 0.18);
+	--border-hover: rgba(255, 255, 255, 0.3);
+
+	/* Button */
+	--btn-primary: rgb(200, 28, 46);
+	--btn-primary-hover: rgb(255, 36, 58);
+	--btn-secondary: rgba(255, 255, 255, 0.1);
+	--btn-secondary-hover: rgba(255, 255, 255, 0.3);
+	--btn-secondary-active: rgba(255, 255, 255, 0.3);
+	--btn-danger: rgb(185, 28, 38);
+	--btn-danger-hover: rgb(210, 40, 50);
+
+	/* Status */
+	--success: rgb(16, 185, 129);
+	--warning: rgb(245, 158, 11);
+	--error: rgb(239, 68, 68);
+	--info: rgb(var(--accent-rgb));
+
+	/* Priority */
+	--priority-red: rgb(239, 68, 68);
+	--priority-orange: rgb(245, 158, 11);
+	--priority-green: rgb(16, 185, 129);
+	--priority-grey: rgb(107, 114, 128);
+
+	/* Pill/Badge */
+	--pill-blue-bg: rgba(var(--accent-rgb), 0.2);
+	--pill-blue-border: rgba(var(--accent-rgb), 0.3);
+	--pill-green-bg: rgba(16, 185, 129, 0.2);
+	--pill-green-border: rgba(16, 185, 129, 0.3);
+	--pill-red-bg: rgba(239, 68, 68, 0.2);
+	--pill-red-border: rgba(239, 68, 68, 0.3);
+	--pill-orange-bg: rgba(245, 158, 11, 0.2);
+	--pill-orange-border: rgba(245, 158, 11, 0.3);
+
+	/* Form */
+	--input-bg: rgba(255, 255, 255, 0.03);
+	--input-border: rgba(200, 202, 210, 0.18);
+	--input-focus: rgb(var(--accent-rgb));
+	--input-placeholder: rgba(255, 255, 255, 0.5);
+
+	/* Loading/Spinner */
+	--spinner-primary: rgb(var(--accent-rgb));
+	--spinner-track: rgba(255, 255, 255, 0.1);
+
+	/* my-hud shape + type */
+	--font-display: var(--font-main);
+	--crit: rgb(255, 42, 61);
+	--ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+	/* chamfered plates: top-left and bottom-right corners cut (fixed sizes; a var(--cut) here would resolve on :root) */
+	--chamfer: polygon(7px 0, 100% 0, 100% calc(100% - 7px), calc(100% - 7px) 100%, 0 100%, 0 7px);
+	--chamfer-sm: polygon(4px 0, 100% 0, 100% calc(100% - 4px), calc(100% - 4px) 100%, 0 100%, 0 4px);
+	--chamfer-lg: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+/* Accent opacity steps used by shell components */
+:root {
+	--accent: rgb(var(--accent-rgb));
+	--accent-10: rgba(var(--accent-rgb), 0.1);
+	--accent-20: rgba(var(--accent-rgb), 0.2);
+	--accent-text: rgba(var(--accent-text-rgb), 0.95);
+}

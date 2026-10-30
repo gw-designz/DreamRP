@@ -1,0 +1,99 @@
+.statusbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    height: 2.6em;
+    padding: 0 1.5em 0 1.45em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.statusbar__left {
+    font-size: 0.76em;
+    font-weight: 600;
+    pointer-events: auto;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    min-width: 6em;
+    white-space: nowrap;
+}
+
+.statusbar__right {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    min-width: 6em;
+    justify-content: flex-end;
+}
+
+.statusbar__icon {
+    height: 0.82em;
+    width: auto;
+    display: block;
+}
+
+.statusbar__battery {
+    height: 0.86em;
+}
+
+.statusbar__cc {
+    display: flex;
+    align-items: center;
+    gap: 0.42em;
+    pointer-events: auto;
+    cursor: pointer;
+    padding: 0.5em 0;
+    margin: -0.5em 0;
+}
+
+.statusbar__done {
+    color: #fff;
+    font-size: 0.82em;
+    font-weight: 600;
+    cursor: pointer;
+    pointer-events: auto;
+    padding: 0.25em 0.8em;
+    border-radius: 1em;
+    background: rgba(255, 255, 255, 0.22);
+}
+
+/* camera / sensor cutout */
+.statusbar__island {
+    position: absolute;
+    top: 0.48em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6.6em;
+    height: 1.78em;
+    background: #050506;
+    border-radius: 0.9em;
+    box-shadow: inset 0 0 0 0.06em rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.5em;
+}
+
+.statusbar__lens {
+    width: 0.85em;
+    height: 0.85em;
+    object-fit: contain;
+}
+
+/* light apps (Socials etc.): dark glyphs, grey sensor pill */
+.statusbar--light {
+    color: #1b1b1b;
+}
+
+.statusbar--light .statusbar__icon {
+    filter: invert(1) brightness(0.15);
+}
+
+

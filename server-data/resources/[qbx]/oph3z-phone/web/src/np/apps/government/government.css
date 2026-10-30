@@ -1,0 +1,267 @@
+.ngv {
+    --bg: #eeeff2;
+    --accent: #3b82f6;
+    --key-bg: #fff;
+}
+
+.ngv-home {
+    padding-top: 3.4em !important;
+}
+
+.ngv-welcome {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+}
+
+.ngv-avatar {
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+    box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.06);
+}
+
+.ngv-avatar .fa-svg {
+    width: 0.9em !important;
+    height: 0.9em !important;
+}
+
+.ngv-welcome span {
+    display: flex;
+    flex-direction: column;
+}
+
+.ngv-welcome em,
+.ngv-intro em {
+    font-style: normal;
+    font-size: 0.7em;
+    color: #555;
+}
+
+.ngv-welcome b {
+    font-size: 1.05em;
+    font-weight: 600;
+}
+
+.ngv-intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2em;
+    padding-bottom: 0.9em;
+    border-bottom: 0.0625em solid #c9cbcf;
+}
+
+.ngv-intro b {
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+.ngv-group {
+    margin: 1em 0 0.55em;
+    font-size: 0.64em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #555;
+}
+
+.ngv-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    width: 100%;
+    margin-bottom: 0.55em;
+    padding: 0.75em 0.8em;
+    background: #fff;
+    border-radius: 0.3em;
+    box-shadow: 0 0.06em 0.2em rgba(0, 0, 0, 0.05);
+    text-align: left;
+    cursor: pointer;
+}
+
+.ngv-item__ico {
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 0.3em;
+    background: #eceef1;
+    color: #3b82f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.ngv-item__ico .fa-svg {
+    width: 0.85em !important;
+    height: 0.85em !important;
+}
+
+.ngv-item__main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.ngv-item__main b {
+    font-size: 0.82em;
+    font-weight: 700;
+}
+
+.ngv-item__main em {
+    font-style: normal;
+    font-size: 0.6em;
+    color: #555;
+    line-height: 1.35;
+}
+
+.ngv-item__chev {
+    width: 0.65em !important;
+    height: 0.65em !important;
+    color: #222;
+}
+
+.ngv-regions {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.6em 0.8em 1.6em;
+    border-top: 0.0625em solid #d5d7da;
+    background: #f7f7f8;
+    --key-line: #0b0b0b;
+}
+
+.ngv-regions button {
+    flex: 1 1 0;
+    height: 2.05em;
+    border-radius: 0.25em;
+    background: #e3e4e7;
+    font-size: 0.75em !important;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.ngv-regions button.is-on {
+    background: #3b82f6;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.ngv-card {
+    padding: 0.8em 0.85em;
+    margin-bottom: 0.55em;
+    background: #fff;
+    border-radius: 0.35em;
+    box-shadow: 0 0.06em 0.2em rgba(0, 0, 0, 0.05);
+}
+
+.ngv-card__head {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6em;
+}
+
+.ngv-card__head b {
+    flex: 1 1 auto;
+    font-size: 0.88em;
+}
+
+.ngv-card p {
+    margin: 0.4em 0 0;
+    font-size: 0.76em;
+    color: #333;
+    white-space: pre-wrap;
+    line-height: 1.45;
+}
+
+.ngv-date,
+.ngv-by {
+    font-size: 0.66em;
+    color: #777;
+}
+
+.ngv-by {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+}
+
+.ngv-del {
+    color: #b42335 !important;
+    font-size: 0.68em !important;
+    cursor: pointer;
+}
+
+.ngv-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+    margin-top: 0.6em;
+}
+
+.ngv-opt {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 2.1em;
+    padding: 0 0.7em;
+    border-radius: 0.3em;
+    border: 0.08em solid #d0d3d8;
+    overflow: hidden;
+    font-size: 0.8em !important;
+    cursor: pointer;
+    text-align: left;
+}
+
+.ngv-opt:disabled {
+    cursor: default;
+}
+
+.ngv-opt.is-mine {
+    border-color: #3b82f6;
+}
+
+.ngv-opt__bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(59, 130, 246, 0.14);
+}
+
+.ngv-opt__label {
+    position: relative;
+    flex: 1 1 auto;
+}
+
+.ngv-opt__label .fa-svg {
+    color: #3b82f6;
+}
+
+.ngv-opt__pct {
+    position: relative;
+    font-weight: 600;
+}
+
+.ngv-scope {
+    display: flex;
+    gap: 0.4em;
+}
+
+.ngv-scope button {
+    flex: 1;
+    height: 2em;
+    border-radius: 0.3em;
+    background: #e3e4e7;
+    font-size: 0.75em !important;
+    cursor: pointer;
+}
+
+.ngv-scope button.is-on {
+    background: #3b82f6;
+    color: #fff !important;
+}

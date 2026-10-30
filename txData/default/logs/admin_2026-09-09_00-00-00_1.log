@@ -1,0 +1,127 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/9/2026, 1:08:05 AM
+================================================================
+================================================================
+======== Log Rotated - 9/9/2026, 1:08:09 AM                     
+================================================================
+[01:09:13][realscrp] logged in from 127.0.0.1 via password auth
+[01:10:12][realscrp] executed "STOP SERVER"
+[01:10:12][realscrp] Config changes: server.dataPath
+[01:10:12][realscrp] Resetting server data settings.
+[01:10:38][realscrp] Config changes: server.dataPath
+[01:10:38][realscrp] Changing global/fxserver settings via setup stepper.
+[01:13:53][realscrp] Refreshed resources
+[01:14:00][realscrp] Ensured resource "prompt_mrpd"
+[01:14:06][realscrp] Ensured resource "prompt_mrpd_scripts"
+[01:14:16][realscrp] Stopped resource "map4all-pdm"
+[01:14:17][realscrp] Ensured resource "mz3d_NEWPDMV5"
+[01:55:07][realscrp] Refreshed resources
+[01:55:11][realscrp] Ensured resource "averix_doorlock"
+[01:57:53][realscrp] Refreshed resources
+[01:57:54][realscrp] Ensured resource "averix_doorlock"
+[01:59:45][realscrp] Refreshed resources
+[01:59:46][realscrp] Stopped resource "averix_doorlock"
+[02:00:31][realscrp] Refreshed resources
+[02:00:32][realscrp] Ensured resource "cd_doorlock"
+[03:16:02][realscrp] executed "STOP SERVER"
+[03:16:02][realscrp] Config changes: server.dataPath
+[03:16:02][realscrp] Resetting server data settings.
+[03:22:16][realscrp] Config changes: server.dataPath
+[03:22:16][realscrp] Changing global/fxserver settings via setup stepper.
+[03:24:58][realscrp] Refreshed resources
+[03:25:02][realscrp] Ensured resource "ox_lib"
+[03:25:11][realscrp] executed "RESTART SERVER"
+[03:25:51][realscrp] Refreshed resources
+[03:25:55][realscrp] Ensured resource "illenium-appearance"
+[03:26:28][realscrp] Refreshed resources
+[03:26:30][realscrp] Refreshed resources
+[03:26:30][realscrp] Ensured resource "illenium-appearance"
+[03:27:29][realscrp] Refreshed resources
+[03:27:30][realscrp] Ensured resource "illenium-appearance"
+[03:27:46][realscrp] Refreshed resources
+[03:27:47][realscrp] Ensured resource "illenium-appearance"
+[03:27:49][realscrp] Ensured resource "illenium-appearance"
+[03:27:59][realscrp] Refreshed resources
+[03:28:00][realscrp] Ensured resource "illenium-appearance"
+[03:28:23][realscrp] Ensured resource "ox_lib"
+[03:28:31][realscrp] executed "RESTART SERVER"
+[03:33:06][realscrp] executed "RESTART SERVER"
+[03:33:59][realscrp] Refreshed resources
+[03:35:55][realscrp] Stopped resource "bablo-hud"
+[03:36:05][realscrp] Ensured resource "minimap"
+[03:36:24][realscrp] Refreshed resources
+[03:36:28][realscrp] Ensured resource "ox_inventory"
+[03:40:23][realscrp] Refreshed resources
+[03:40:25][realscrp] Ensured resource "ox_target"
+[03:41:36][realscrp] Refreshed resources
+[03:41:39][realscrp] Ensured resource "karma-climbing"
+[03:45:41][realscrp] Stopped resource "car_hud"
+[03:45:42][realscrp] Stopped resource "player_hud"
+[03:45:45][realscrp] Stopped resource "minimap"
+[03:45:47][realscrp] Refreshed resources
+[03:45:51][realscrp] Ensured resource "tuff-hud"
+[03:50:37][realscrp] executed "RESTART SERVER"
+[03:51:32][realscrp] Refreshed resources
+[04:07:46][realscrp] Refreshed resources
+[04:08:22][realscrp] Refreshed resources
+[04:08:23][realscrp] Ensured resource "qb-doorcreator"
+[04:23:43][realscrp] Refreshed resources
+[04:23:44][realscrp] Ensured resource "qb-doorcreator"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/9/2026, 1:02:58 PM
+================================================================
+[13:09:11][realscrp] logged in from 127.0.0.1 via password auth
+[13:09:15][realscrp] Refreshed resources
+[13:09:27][realscrp] Stopped resource "prp-mrpd"
+[13:09:28][realscrp] Stopped resource "prp-mrpd-park"
+[13:09:30][realscrp] Ensured resource "prompt_mrpd"
+[13:09:34][realscrp] Ensured resource "prompt_mrpd_scripts"
+[13:09:40][realscrp] Ensured resource "mz3d_NEWPDMV5"
+[13:09:44][realscrp] Ensured resource "sky_phone"
+[13:12:01][realscrp] Stopped resource "sd-phone"
+[13:12:03][realscrp] Stopped resource "sd-phone-props"
+[13:12:23][realscrp] Stopped resource "qbx-phone"
+[13:13:44][realscrp] Refreshed resources
+[13:13:49][realscrp] Ensured resource "tuff-hud"
+[13:14:09][realscrp] Refreshed resources
+[13:14:10][realscrp] Ensured resource "tuff-hud"
+[13:14:29][realscrp] Ensured resource "bablo-multicharacter"
+[13:17:50][realscrp] Refreshed resources
+[13:17:54][realscrp] Ensured resource "business-creator"
+[13:17:59][realscrp] Ensured resource "sd-itemspawner"
+[13:18:02][realscrp] Ensured resource "sd-tablet"
+[13:18:13][realscrp] executed "RESTART SERVER"
+[13:20:32][realscrp] executed "RESTART SERVER"
+[13:22:36][realscrp] Refreshed resources
+[13:25:10][realscrp] Refreshed resources
+[13:26:23][realscrp] Refreshed resources
+[13:26:24][realscrp] Stopped resource "sd-tablet-props"
+[13:27:55][realscrp] Refreshed resources
+[13:27:58][realscrp] Ensured resource "ox_inventory"
+[13:28:04][realscrp] Ensured resource "business-creator"
+[13:28:09][realscrp] Ensured resource "ox_fuel"
+[13:28:11][realscrp] Ensured resource "qbx_ambulancejob"
+[13:28:16][realscrp] Ensured resource "tuff-hud"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/9/2026, 4:00:15 PM
+================================================================
+[16:18:12][realscrp] logged in from 127.0.0.1 via password auth
+[16:18:17][realscrp] Stopped resource "prism_banking"
+[16:24:45][realscrp] Refreshed resources
+[16:24:49][realscrp] executed "RESTART SERVER"
+[16:29:41][realscrp] Refreshed resources
+[16:29:42][realscrp] Ensured resource "tgg-hud"
+[16:38:42][realscrp] Stopped resource "prp-property"
+[16:38:43][realscrp] Stopped resource "prp-props-housing"
+[16:38:44][realscrp] Refreshed resources
+[16:39:29][realscrp] Refreshed resources
+[16:39:31][realscrp] Ensured resource "nolag_properties"
+[16:40:20][realscrp] executed "refresh"
+[16:40:29][realscrp] executed "restart nolag_properties"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/9/2026, 11:50:44 PM
+================================================================
+[23:51:08][realscrp] logged in from 127.0.0.1 via password auth
+[23:51:28][realscrp] executed "STOP SERVER"
+[23:51:28][realscrp] Config changes: server.dataPath
+[23:51:28][realscrp] Resetting server data settings.

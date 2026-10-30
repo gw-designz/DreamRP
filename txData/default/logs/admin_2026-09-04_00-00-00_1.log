@@ -1,0 +1,59 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/4/2026, 12:01:03 AM
+================================================================
+================================================================
+======== Log Rotated - 9/4/2026, 12:01:04 AM                    
+================================================================
+[00:01:17][realscrp] logged in from 127.0.0.1 via password auth
+[00:01:29][realscrp] executed "STOP SERVER"
+[00:01:29][realscrp] Config changes: server.dataPath
+[00:01:29][realscrp] Resetting server data settings.
+[00:01:44][realscrp] Config changes: server.dataPath
+[00:01:44][realscrp] Changing global/fxserver settings via setup stepper.
+[00:03:59][realscrp] executed "RESTART SERVER"
+[00:08:33][realscrp] executed "RESTART SERVER"
+[00:10:00][realscrp] Refreshed resources
+[00:11:00][realscrp] Refreshed resources
+[00:11:02][realscrp] Ensured resource "map_wiwang_hotel"
+[00:11:05][realscrp] executed "RESTART SERVER"
+[00:44:20][realscrp] Refreshed resources
+[00:44:24][realscrp] Ensured resource "rockford_hills_pd"
+[00:53:47][realscrp] Refreshed resources
+[00:53:48][realscrp] Ensured resource "cfx_digitalden"
+[01:26:55][realscrp] Refreshed resources
+[01:26:56][realscrp] Ensured resource "map4all-pdm"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/4/2026, 5:04:01 PM
+================================================================
+[17:04:19][realscrp] logged in from 127.0.0.1 via password auth
+[17:04:24][realscrp] executed "STOP SERVER"
+[17:04:24][realscrp] Config changes: server.dataPath
+[17:04:24][realscrp] Resetting server data settings.
+[17:04:32][realscrp] Config changes: 
+[17:04:32][realscrp] Changing global settings via setup stepper and started Deployer.
+[17:04:38][realscrp] Setting recipe.
+[17:05:23][realscrp] Running recipe.
+[17:08:23][realscrp] Config changes: server.dataPath
+[17:08:23][realscrp] Completed and committed server deploy.
+[17:12:22][realscrp] Refreshed resources
+[17:13:23][realscrp] Refreshed resources
+[17:13:26][realscrp] Ensured resource "oxmysql"
+[17:13:32][realscrp] executed "RESTART SERVER"
+[17:26:21][realscrp] executed "RESTART SERVER"
+[17:27:11][realscrp] Refreshed resources
+[17:27:14][realscrp] executed "RESTART SERVER"
+[17:39:12][realscrp] Refreshed resources
+[17:39:15][realscrp] Ensured resource "core"
+[17:39:19][realscrp] Ensured resource "banking"
+[17:39:21][realscrp] Ensured resource "hud"
+[17:39:26][realscrp] Ensured resource "loadingscreen"
+[17:40:04][realscrp] Refreshed resources
+[17:40:07][realscrp] Ensured resource "hud"
+[17:55:54][realscrp] Refreshed resources
+[17:56:00][realscrp] Refreshed resources
+[17:56:07][realscrp] executed "RESTART SERVER"
+[18:06:17][realscrp] Refreshed resources
+[18:06:20][realscrp] Ensured resource "multichar"
+[18:06:39][realscrp] executed "RESTART SERVER"
+[18:13:28][realscrp] executed "RESTART SERVER"
+[18:18:38][realscrp] executed "RESTART SERVER"

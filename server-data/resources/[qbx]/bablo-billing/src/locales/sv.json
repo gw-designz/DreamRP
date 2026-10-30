@@ -1,0 +1,819 @@
+[
+    {
+        "accountTypes": {
+            "business": "Jobbkonto",
+            "personal": "Personligt Konto",
+            "requires_job": "Kräver ett jobb",
+            "cannot_switch": "Kan inte byta konto",
+            "need_job_message": "Du behöver ha ett jobb för att använda jobbkonto"
+        },
+        "tax": {
+            "subtotal": "Subtotal",
+            "vat_label": "VAT ({rate}%)",
+            "total": "Total"
+        },
+        "preset_selector": {
+            "title": "Fakturamallar",
+            "create_button": "Skapa mall",
+            "filtered_note": "Mallar filtrerade för din roll",
+            "description": "Välj en mall för att snabbt fylla i ditt fakturaformulär. Egna mallar är personliga och syns endast för dig.",
+            "search_placeholder": "Sök mallar...",
+            "all_tab": "Alla mallar",
+            "loading": "Laddar mallar...",
+            "empty": "Inga mallar matchar din sökning.",
+            "job_badge": "Jobb: {job}",
+            "unemployed": "Arbetslös",
+            "create_dialog": {
+                "title": "Skapa ny mall",
+                "description": "Lägg till en personlig mall som du kan återanvända när du skapar fakturor."
+            },
+            "edit_dialog": {
+                "title": "Redigera mall",
+                "description": "Uppdatera detaljerna för din personliga mall."
+            },
+            "fields": {
+                "name_label": "Mallnamn",
+                "name_placeholder": "t.ex. Parkeringsböter",
+                "title_label": "Fakturatitel",
+                "title_placeholder": "t.ex. Böter för parkeringsförseelse",
+                "description_label": "Beskrivning",
+                "description_placeholder": "Beskrivning av tjänsten eller förseelsen...",
+                "amount_label": "Belopp ({symbol})",
+                "category_label": "Kategori"
+            },
+            "actions": {
+                "cancel": "Avbryt",
+                "creating": "Skapar...",
+                "saving": "Sparar...",
+                "save": "Spara ändringar"
+            },
+            "toasts": {
+                "validation": { "title": "Valideringsfel", "description": "Fyll i alla fält med giltiga värden" },
+                "created": { "title": "Mall skapad", "description": "Mallen \"{name}\" har skapats." },
+                "create_error": { "title": "Fel", "description": "Det gick inte att skapa mallen. Försök igen." },
+                "updated": { "title": "Mall uppdaterad", "description": "Mallen \"{name}\" har uppdaterats." },
+                "update_error": { "title": "Fel", "description": "Det gick inte att uppdatera mallen. Försök igen." },
+                "deleted": { "title": "Mall borttagen", "description": "Mallen \"{name}\" har tagits bort." },
+                "delete_error": { "title": "Fel", "description": "Det gick inte att ta bort mallen. Försök igen." }
+            }
+        },
+        "pagination": {
+            "showing": "Visar {start} till {end} av {total} resultat",
+            "items_per_page": "Objekt per sida",
+            "go_to_first": "Gå till första sidan",
+            "go_to_previous": "Gå till föregående sida",
+            "go_to_next": "Gå till nästa sida",
+            "go_to_last": "Gå till sista sidan",
+            "page": "Sida {page}",
+            "of_pages": "av {total} sidor"
+        },
+        "sidebar": {
+            "navigation": {
+                "title": "Navigation"
+            },
+            "header": {
+                "title": "Stadens Fakturering",
+                "subtitle": "Fakturering gjort enkelt"
+            },
+            "routes": {
+                "dashboard": "Översikt",
+                "sent": "Skickade Fakturor",
+                "received": "Mottagna Fakturor",
+                "pay-reference": "Betala med Referens",
+                "citizen-lookup": "Medborgarsökning",
+                "contacts": "Kontakter"
+            },
+            "user_menu": {
+                "settings": "Inställningar",
+                "templates": "Mallar",
+                "profile": "Profil",
+                "personal_account": "Personligt Konto",
+                "job_account": "Jobbkonto",
+                "account_management": "Kontohantering"
+            }
+        },
+        "settings": {
+            "title": "Inställningar",
+            "subtitle": "Anpassa dina preferenser",
+            "theme": {
+                "title": "Tema",
+                "light": "Ljust",
+                "dark": "Mörkt",
+                "system": "System"
+            },
+            "templates": {
+                "title": "Mallhantering",
+                "subtitle": "Hantera dina fakturamallar och förinställningar",
+                "manage_button": "Hantera Mallar",
+                "dialog_title": "Mallhantering",
+                "custom_title": "Anpassade Mallar",
+                "custom_count": "Du har {count} anpassade mallar",
+                "default_title": "Standardmallar",
+                "default_count": "{count} inbyggda mallar tillgängliga"
+            }
+        },
+        "userMenu": {
+            "settings": "Inställningar",
+            "templates": "Mallar",
+            "profile": "Profil",
+            "templateDialog": {
+                "title": "Mallhantering"
+            }
+        },
+        "dashboard": {
+            "header": {
+                "title": "Översikt",
+                "subtitle": "Översikt av dina faktureringsaktiviteter",
+                "overview": "Översikt"
+            },
+            "stats": {
+                "unpaid": "Obetalda Fakturor",
+                "total": "Total Fakturakostnad"
+            },
+            "chart": {
+                "title": "Fakturaaktivitet",
+                "subtitle": "Översikt av din ekonomiska flöde de senaste 7 dagarna",
+                "empty": "Ingen aktivitet registrerad än",
+                "vs_last_7_days": "jämfört med senaste 7 dagarna",
+                "money_in": "Pengar in",
+                "money_out": "Pengar ut",
+                "money_in_label": "Fakturor betalda till dig",
+                "money_out_label": "Fakturor du betalat"
+            },
+            "latest": {
+                "title": "Senaste fakturor",
+                "subtitle": "Senaste transaktioner",
+                "empty": "Inga senaste fakturor",
+                "empty_hint": "Nya fakturor visas här",
+                "sent_badge": "Skickad",
+                "received_badge": "Mottagen"
+            },
+            "recent_dialog": {
+                "title": "Senaste fakturor",
+                "description": "Senaste fakturaaktivitet och statusuppdateringar",
+                "view_sent": "Visa alla skickade",
+                "view_received": "Visa alla mottagna",
+                "no_invoices": "Inga fakturor hittades"
+            }
+        },
+        "paid": "Betald",
+        "pay": "Betala",
+        "invoice-card": {
+            "amount": "Belopp att betala",
+            "actions": {
+                "details": "Visa Detaljer",
+                "pay": "Betala Faktura"
+            }
+        },
+        "sent_invoices": {
+            "header": {
+                "title": "Skickade Fakturor",
+                "subtitle": "Här kan du se alla fakturor du har skickat till dina kunder. Du kan också hantera dem, kontrollera betalningsstatus och mer."
+            },
+            "create_button": "Skapa Ny Faktura",
+            "loading": "Laddar skickade fakturor...",
+            "loading_title": "Laddar fakturor...",
+            "please_wait": "Vänta",
+            "empty": "Inga skickade fakturor hittades.",
+            "empty_title": "Inga skickade fakturor",
+            "empty_description": "Du har inte skickat några fakturor än. Skapa din första faktura för att komma igång.",
+            "empty_filtered_title": "Inga {status} fakturor",
+            "empty_filtered_description": "Inga fakturor med status \"{status}\" hittades.",
+            "invoice_count": "{count} fakturor",
+            "showing_invoices": "Visar {count} fakturor",
+            "all_status": "Alla statusar",
+            "tabs": {
+                "card": "Kortvy",
+                "table": "Tabellvy"
+            },
+            "table": {
+                "title": "Fakturor",
+                "search_placeholder": "Sök efter fakturanummer, titel eller kund...",
+                "per_page": "sida",
+                "filter": {
+                    "all": "Alla statusar",
+                    "pending": "Väntande",
+                    "paid": "Betald",
+                    "cancelled": "Avbruten"
+                },
+                "sort": {
+                    "status": "Status",
+                    "date": "Datum",
+                    "amount": "Belopp",
+                    "title": "Titel"
+                },
+                "sort_select": {
+                    "title": "Sortera efter",
+                    "options": {
+                        "date_desc": "Datum",
+                        "amount_desc": "Belopp",
+                        "title_desc": "Titel",
+                        "status_desc": "Status"
+                    }
+                },
+                "columns": {
+                    "invoice_number": "Faktura #",
+                    "title": "Titel",
+                    "receiver": "Mottagare",
+                    "date": "Datum",
+                    "amount": "Belopp",
+                    "status": "Status",
+                    "actions": "Åtgärder"
+                }
+            },
+            "delete": {
+                "title": "Ta bort faktura",
+                "description": "Är du säker på att du vill ta bort fakturan \"{title}\" (#{id})? Denna åtgärd kan inte ångras.",
+                "success_title": "Faktura borttagen",
+                "success_description": "Fakturan har tagits bort framgångsrikt.",
+                "error_title": "Borttagning misslyckades",
+                "error_description": "Kunde inte ta bort fakturan. Försök igen."
+            },
+            "statuses": {
+                "all": "Alla statusar",
+                "paid": "Betald",
+                "unpaid": "Obetald",
+                "pending": "Väntande"
+            }
+        },
+        "received_invoices": {
+            "loading": "Laddar mottagna fakturor...",
+            "loading_title": "Laddar fakturor...",
+            "please_wait": "Vänta",
+            "invoice_count": "{count} fakturor",
+            "all_status": "Alla statusar",
+            "from_label": "Från",
+            "statuses": {
+                "pending": "Väntande",
+                "paid": "Betald"
+            },
+            "pay_dialog": {
+                "title": "Är du säker på att du vill betala denna faktura?",
+                "description": "Du håller på att betala fakturan med id {invoiceId} för {amount}.",
+                "confirm": "Betala Faktura",
+                "cancel": "Avbryt"
+            },
+            "header": {
+                "title": "Mottagna Fakturor",
+                "subtitle": "Hantera mottagna fakturor med kort- eller tabellvy",
+                "pay_reference": "Betala med Referens"
+            },
+            "tabs": {
+                "card": "Kortvy",
+                "table": "Tabellvy"
+            },
+            "error": {
+                "title": "Inga fakturor hittades",
+                "subtitle": "Det finns inga mottagna fakturor att visa."
+            },
+            "end_of_list": "Alla fakturor laddade",
+            "table": {
+                "title": "Fakturor",
+                "search_placeholder": "Sök efter fakturanummer eller avsändare",
+                "sort_select": {
+                    "title": "Sortera efter",
+                    "options": {
+                        "date_desc": "Datum",
+                        "amount_desc": "Belopp",
+                        "title_desc": "Titel",
+                        "status_desc": "Status"
+                    }
+                },
+                "columns": {
+                    "invoice_number": "Faktura #",
+                    "title": "Titel",
+                    "receiver": "Mottagare",
+                    "date": "Datum",
+                    "amount": "Belopp",
+                    "status": "Status",
+                    "actions": "Åtgärder",
+                    "action": "Betala"
+                }
+            }
+        },
+        "notifications": {
+            "invoice_received": {
+                "title": "Ny Faktura Mottagen",
+                "message": "Du har fått en ny faktura på {amount} kr från {sender}",
+                "simple": "Ny faktura mottagen på {amount} kr"
+            },
+            "job_invoice_paid": {
+                "title": "Jobbfaktura Betald",
+                "message": "En jobbfaktura på {amount} kr har betalats för {job}",
+                "simple": "Jobbfaktura betald: {amount} kr"
+            }
+        },
+        "common": {
+            "descriptions": {
+                "invoice_paid": "Faktura Betald",
+                "invoice_payment": "Fakturabetalning"
+            },
+            "ready": "Redo!",
+            "you": "Du",
+            "labels": {
+                "invoice_number": "Faktura #",
+                "title": "Titel",
+                "customer": "Kund",
+                "date": "Datum",
+                "amount": "Belopp",
+                "actions": "Åtgärder",
+                "status": "Status",
+                "description": "Beskrivning",
+                "from": "Från (Avsändare)",
+                "user_avatar": "Användaravatar",
+                "business_account": "Företagskonto"
+            },
+            "placeholders": {
+                "identifier": "Identifierare"
+            },
+            "status_labels": {
+                "pending": "Väntande",
+                "paid": "Betald",
+                "cancelled": "Avbruten"
+            },
+            "loading": {
+                "welcome": "Välkommen {name}",
+                "initializing": "Initialiserar system...",
+                "loading_data": "Laddar din data...",
+                "almost_ready": "Nästan klar..."
+            },
+            "ui": {
+                "loading": "Laddar...",
+                "error": "Fel",
+                "view_all": "Visa Alla",
+                "not_available": "Ej tillgänglig"
+            },
+            "actions": {
+                "view": "Visa",
+                "cancel": "Avbryt",
+                "creating": "Skapar...",
+                "save": "Spara",
+                "edit": "Redigera",
+                "delete": "Ta bort",
+                "deleting": "Tar bort...",
+                "confirm": "Bekräfta",
+                "close": "Stäng"
+            }
+        },
+        "create_invoice": {
+            "tabs": {
+                "create": "Skapa faktura",
+                "templates": "Mallar"
+            },
+            "success": {
+                "title": "Faktura skapad",
+                "business": "Fakturan har skickats via företagets system.",
+                "personal": "Din personliga faktura har skapats."
+            },
+            "error": {
+                "title": "Fel",
+                "description": "Kunde inte skapa fakturan."
+            },
+            "players": {
+                "none_found": {
+                    "title": "Inga spelare hittades",
+                    "description": "Det finns inga spelare i närheten."
+                },
+                "closest_selected": {
+                    "title": "Närmaste spelare vald",
+                    "description": "{identifier} ({distance}m bort) har valts som mottagare."
+                },
+                "fetch_error": {
+                    "title": "Fel",
+                    "description": "Kunde inte hämta spelare i närheten."
+                }
+            },
+            "form": {
+                "identifier": {
+                    "label": "Identifierare",
+                    "description": "Närmaste spelare"
+                },
+                "details": {
+                    "label": "Detaljer",
+                    "description": "Ange fakturans detaljer."
+                },
+                "title": {
+                    "label": "Titel",
+                    "placeholder": "Faktura för utförda tjänster",
+                    "description": "En kort beskrivning av vad fakturan gäller."
+                },
+                "description": {
+                    "label": "Beskrivning",
+                    "placeholder": "Detaljerad beskrivning av tjänster eller produkter...",
+                    "description": "Beskriv i detalj vad som faktureras."
+                },
+                "amount": {
+                    "label": "Belopp",
+                    "placeholder": "Ange belopp",
+                    "description": "Fakturabelopp."
+                },
+                "due_date": {
+                    "label": "Förfallodatum",
+                    "description": "När fakturan ska betalas senast."
+                },
+                "recipient_type": "Mottagartyp",
+                "player": "Spelare",
+                "job": "Jobb",
+                "select_player": "Välj spelare",
+                "quick_actions": "Snabbt åtgärder",
+                "find_nearby": "Hitta nära",
+                "manual_entry": "Manuell inmatning",
+                "identifier_placeholder": "Ange käll-ID (t.ex. 1, 2, 3) eller identifierare",
+                "check": "Kontrollera",
+                "invoice_type": "Fakturatyp",
+                "simple_invoice": "Enkel faktura",
+                "simple_invoice_description": "Ett belopp, en beskrivning",
+                "nearby_players": "Närliggande spelare",
+                "distance_away": "{distance}m bort",
+                "select_organization": "Välj organisation",
+                "choose_organization_placeholder": "Välj en organisation...",
+                "multiple_items": {
+                    "toggle_label": "Flera tjänster/produkter",
+                    "toggle_description": "Aktivera för att lägga till flera saker på samma faktura (t.ex. bilreparationer, tuning, etc.)",
+                    "amount_auto_calculated": "Beräknas automatiskt från raderna nedan",
+                    "services_products_title": "Tjänster & Produkter",
+                    "services_products_description": "Lägg till alla tjänster och produkter som ska faktureras",
+                    "add_line": "Lägg till rad",
+                    "line_number": "Rad {number}",
+                    "description_label": "Beskrivning *",
+                    "description_placeholder": "Beskrivning av tjänst eller produkt (t.ex. 'Motortuning', 'Däckbyte', etc.)",
+                    "quantity_label": "Antal *",
+                    "unit_price_label": "Enhetspris *",
+                    "line_total": "Radtotal:",
+                    "total_to_pay": "Totalt att betala:",
+                    "details_label": "Detaljer:"
+                },
+                "footer": {
+                    "business": "Fakturan skickas automatiskt via företagets system.",
+                    "personal": "Fakturan sparas för manuell hantering."
+                },
+                "actions": {
+                    "cancel": "Avbryt",
+                    "creating": "Skapar...",
+                    "sending": "Skickar...",
+                    "send_invoice": "Skicka faktura",
+                    "create_send": "Skapa och Skicka",
+                    "create_invoice": "Skapa faktura"
+                }
+            },
+            "dialog": {
+                "business": {
+                    "title": "Företagsfaktura",
+                    "description": "Skapa och skicka fakturor via företagets system.",
+                    "badge": "Företag"
+                },
+                "personal": {
+                    "title": "Skapa Ny Faktura",
+                    "description": "Skicka en professionell faktura till en annan spelare",
+                    "badge": "Personlig"
+                }
+            }
+        },
+        "statuses": {
+            "all": "Alla statusar",
+            "paid": "Betald",
+            "unpaid": "Obetald",
+            "pending": "Väntande",
+            "cancelled": "Avbruten",
+            "unknown": "Okänd",
+            "overdue": "Förfallen"
+        },
+        "invoice_details": {
+            "untitled": "Faktura utan titel",
+            "status": {
+                "current_status": "Aktuell status",
+                "awaiting_payment": "Väntar på betalning",
+                "awaiting_payment_message": "Mottagaren har ännu inte betalat denna faktura."
+            },
+            "types": {
+                "sent": "Skickad Faktura",
+                "received": "Mottagen Faktura"
+            },
+            "descriptions": {
+                "sent": "Detaljer för skickad faktura",
+                "received": "Detaljer för mottagen faktura"
+            },
+            "labels": {
+                "you": "Du",
+                "item": "artikel",
+                "items": "artiklar",
+                "id": "ID"
+            },
+            "line_items": {
+                "title": "Fakturarader",
+                "description": "Beskrivning",
+                "qty": "Antal",
+                "quantity": "Antal",
+                "unit_price": "Enhetspris",
+                "total": "Totalt",
+                "footer": {
+                    "based_on": "Baserat på",
+                    "single_amount": "Enkelt beloppsfaktura"
+                }
+            },
+            "cards": {
+                "info": {
+                    "title": "Fakturinformation",
+                    "invoice_number": "Faktura #",
+                    "invoice_id": "Faktura-ID",
+                    "status": "Status"
+                },
+                "amount": {
+                    "title": "Belopp",
+                    "total": "Totalt Belopp"
+                },
+                "involved": {
+                    "title": "Involverade Parter",
+                    "sender": "Avsändare",
+                    "receiver": "Mottagare",
+                    "from_you": "Från (Du)",
+                    "to": "Till"
+                },
+                "description": {
+                    "title": "Beskrivning",
+                    "details": "Detaljer"
+                },
+                "line_items": {
+                    "title": "Fakturarader",
+                    "quantity": "Antal",
+                    "unit_price": "Enhetspris",
+                    "total": "Totalt"
+                },
+                "date": {
+                    "title": "Datum",
+                    "created": "Skapad",
+                    "due": "Förfallodatum",
+                    "paid": "Betald"
+                }
+            }
+        },
+        "job_invoice": {
+            "validation": {
+                "company_name_required": "Företagsnamn krävs",
+                "company_address_required": "Företagsadress krävs",
+                "phone_required": "Telefonnummer krävs",
+                "valid_email_required": "Giltig e-postadress krävs",
+                "org_number_required": "Organisationsnummer krävs",
+                "customer_name_required": "Kundnamn krävs",
+                "customer_address_required": "Kundadress krävs",
+                "customer_phone_required": "Kundtelefon krävs",
+                "invoice_number_required": "Fakturanummer krävs",
+                "invoice_date_required": "Fakturadatum krävs",
+                "due_date_required": "Förfallodatum krävs",
+                "description_required": "Beskrivning krävs",
+                "quantity_min": "Antal måste vara större än 0",
+                "unit_price_min": "Enhetspris måste vara större än 0",
+                "vat_rate_range": "Moms måste vara mellan 0-100%",
+                "min_one_line_required": "Minst en rad krävs",
+                "payment_terms_required": "Betalningsvillkor krävs",
+                "payment_method_required": "Betalningsmetod krävs"
+            },
+            "dialog": {
+                "title": "Skapa Företagsfaktura",
+                "description": "Skapa och skicka professionella fakturor för ditt företag",
+                "security_notice": {
+                    "title": "Säker Fakturahantering",
+                    "description": "All företagsinformation hanteras säkert och skickas direkt från systemet"
+                }
+            },
+            "tabs": {
+                "company": "Företag",
+                "customer": "Kund",
+                "services": "Tjänster",
+                "payment": "Betalning"
+            },
+            "sections": {
+                "company_info": {
+                    "title": "Företagsinformation",
+                    "description": "Ange ditt företags kontaktuppgifter och organisationsinformation"
+                },
+                "services_products": {
+                    "title": "Tjänster och Produkter",
+                    "description": "Lägg till detaljerade rader för tjänster eller produkter"
+                },
+                "payment_info": {
+                    "title": "Betalningsinformation",
+                    "description": "Ange betalningsmetod och villkor för fakturan"
+                }
+            },
+            "form": {
+                "company_name": "Företagsnamn",
+                "company_address": "Företagsadress",
+                "company_phone": "Telefon",
+                "company_email": "E-post",
+                "org_number": "Organisationsnummer",
+                "vat_number": "Momsnummer",
+                "customer_name": "Kundnamn",
+                "customer_company": "Företag",
+                "customer_address": "Kundadress",
+                "customer_phone": "Kundtelefon",
+                "customer_email": "Kund-e-post",
+                "invoice_number": "Fakturanummer",
+                "invoice_date": "Fakturadatum",
+                "due_date": "Förfallodatum",
+                "project_reference": "Projektreferens",
+                "payment_terms": "Betalningsvillkor",
+                "payment_method": "Betalningsmetod",
+                "bank_account": "Bankkonto",
+                "notes": "Anteckningar",
+                "add_line": "Lägg till rad",
+                "quantity": "Antal",
+                "unit_price": "Enhetspris",
+                "vat_rate": "Moms"
+            },
+            "placeholders": {
+                "company_name": "Ditt Företag AB",
+                "company_address": "Företagsgatan 123\n123 45 Stockholm",
+                "customer_company": "Kundens Företag AB",
+                "customer_address": "Kundgatan 456\n123 45 Göteborg",
+                "service_description": "Beskrivning av tjänst eller produkt"
+            },
+            "descriptions": {
+                "vat_optional": "Valfritt - endast för momregistrerade företag",
+                "internal_reference": "Valfritt - för intern referens",
+                "bank_info": "Ange ditt bankgiro eller plusgiro för betalningar",
+                "invoice_notes": "Valfri information som visas på fakturan"
+            },
+            "vat_options": {
+                "books_newspapers": "6% (Böcker, tidningar)"
+            },
+            "footer": {
+                "due_date": "Förfallodatum: ",
+                "security_note": "Säker fakturahantering - ingen export möjlig"
+            }
+        },
+        "pay_reference": {
+            "status_pending": "Väntande",
+            "status_paid": "Betald",
+            "header": {
+                "title": "Betala med referens",
+                "subtitle": "Sök och betala valfri faktura med referensnumret"
+            },
+            "search": {
+                "title": "Sök faktura",
+                "description": "Ange fakturareferensnumret för att söka",
+                "placeholder": "Ange fakturareferens (t.ex. ABC123)",
+                "button": "Sök"
+            },
+            "invoice": {
+                "title": "Fakturainformation",
+                "reference": "Referens",
+                "amount": "Belopp",
+                "issuer": "Utfärdad av",
+                "date": "Datum",
+                "description_label": "Beskrivning"
+            },
+            "warnings": {
+                "is_creator": "Du kan inte betala din egen faktura",
+                "same_job": "Du kan inte betala en faktura skapad av ditt jobb",
+                "already_paid": "Denna faktura har redan betalats"
+            },
+            "pay": {
+                "button": "Betala denna faktura",
+                "confirm_title": "Bekräfta betalning",
+                "your_balance": "Ditt saldo",
+                "amount_to_pay": "Belopp att betala",
+                "insufficient_funds": "Otillräckliga medel på ditt bankkonto",
+                "cancel": "Avbryt",
+                "confirm": "Bekräfta betalning"
+            }
+        },
+        "citizen_lookup": {
+            "header": {
+                "title": "Medborgarsökning",
+                "subtitle": "Sök efter medborgare och visa deras fakturastatus"
+            },
+            "search": {
+                "title": "Sök medborgare",
+                "description": "Ange medborgar-ID eller namn för att söka",
+                "placeholder": "Medborgar-ID eller namn...",
+                "no_results": "Inga medborgare hittades"
+            },
+            "stats": {
+                "unpaid": "Obetalda fakturor",
+                "total_owed": "Totalt skuldat",
+                "paid": "Betalda fakturor",
+                "paid_with_days": "Betalt (senaste {days} dagarna)"
+            },
+            "invoices": {
+                "title": "Obetalda fakturor",
+                "no_unpaid": "Inga obetalda fakturor",
+                "columns": {
+                    "reference": "Referens",
+                    "title": "Titel",
+                    "issuer": "Avsändare",
+                    "date": "Datum",
+                    "amount": "Belopp"
+                }
+            },
+            "placeholder": {
+                "title": "Ingen medborgare vald",
+                "description": "Sök och välj en medborgare för att visa deras detaljer"
+            }
+        },
+        "contacts": {
+            "header": {
+                "title": "Kontakter",
+                "subtitle": "Hantera dina sparade kontakter för snabb fakturaskapning"
+            },
+            "add_form": {
+                "title": "Lägg till Kontakt",
+                "subtitle": "Spara ofta använda spelaridentifierare för snabb åtkomst",
+                "identifier_label": "Spelaridentifierare",
+                "identifier_placeholder": "steam:123456, license:abc123, char1:1234...",
+                "display_name_label": "Visningsnamn",
+                "display_name_placeholder": "Johan Andersson",
+                "button_add": "Lägg till Kontakt",
+                "button_adding": "Lägger till..."
+            },
+            "list": {
+                "title": "Dina Kontakter",
+                "subtitle": "Klicka på en kontakt för att redigera, eller använd ta bort-knappen",
+                "search_placeholder": "Sök kontakter...",
+                "loading": "Laddar kontakter...",
+                "empty": {
+                    "title": "Inga kontakter sparade än",
+                    "subtitle": "Lägg till din första kontakt med formuläret till vänster",
+                    "description": "Lägg till kontakter ovan för snabb fakturaskapning",
+                    "button": "Lägg till din första kontakt ovan"
+                },
+                "no_results": {
+                    "title": "Inga matchande kontakter",
+                    "subtitle": "Försök justera dina söktermer"
+                },
+                "added_date": "Tillagd {date}"
+            },
+            "actions": {
+                "edit": "Redigera",
+                "delete": "Ta bort",
+                "save": "Spara",
+                "cancel": "Avbryt"
+            },
+            "validation": {
+                "identifier_required": "Spelaridentifierare krävs",
+                "identifier_min": "Identifierare måste vara minst 3 tecken",
+                "identifier_invalid": "Ogiltigt identifierarformat (måste vara typ:värde, t.ex. steam:123456)",
+                "display_name_required": "Visningsnamn krävs",
+                "display_name_min": "Visningsnamn måste vara minst 2 tecken",
+                "display_name_max": "Visningsnamn måste vara mindre än 50 tecken",
+                "contact_exists": "Denna kontakt finns redan"
+            },
+            "common": {
+                "ui": {
+                    "loading": "Laddar..."
+                },
+                "actions": {
+                    "deleting": "Tar bort..."
+                }
+            },
+            "delete_dialog": {
+                "title": "Ta bort Kontakt",
+                "description": "Är du säker på att du vill ta bort \"{name}\"? Denna åtgärd kan inte ångras.",
+                "cancel": "Avbryt",
+                "confirm": "Ta bort"
+            },
+            "manager": {
+                "select_title": "Välj Kontakt",
+                "manage_title": "Hantera Kontakter",
+                "select_description": "Välj en kontakt för att automatiskt fylla i mottagarinformation.",
+                "manage_description": "Lägg till, redigera eller ta bort dina sparade kontakter för snabb fakturaskapning.",
+                "select_button": "Välj Kontakt",
+                "manage_button": "Hantera Kontakter",
+                "add_new": "Lägg till Ny Kontakt",
+                "select_contact_button": "Välj"
+            }
+        },
+        "quick_bill": {
+            "title": "Skicka Faktura",
+            "subtitle": "Snabbfaktura",
+            "title_label": "Titel",
+            "title_placeholder": "t.ex. Medicinsk behandling",
+            "amount_label": "Belopp",
+            "amount_placeholder": "Ange belopp",
+            "description_label": "Beskrivning",
+            "description_placeholder": "Ytterligare detaljer...",
+            "optional": "valfritt",
+            "send": "Skicka Faktura",
+            "cancel": "Avbryt",
+            "sending": "Skickar...",
+            "sent": "Skickad!",
+            "success_title": "Faktura Skickad",
+            "success_description": "Fakturan har skickats.",
+            "error": "Fel",
+            "error_generic": "Kunde inte skicka fakturan",
+            "error_title_min": "Titeln måste vara minst 3 tecken",
+            "error_amount_min": "Beloppet måste vara större än 0",
+            "use_template": "Använd en mall",
+            "search_templates": "Sök mallar...",
+            "loading_templates": "Laddar...",
+            "no_templates": "Inga mallar hittades",
+            "single_template": "Enkel",
+            "multiple_templates": "Flera",
+            "selected_items": "Valda artiklar",
+            "total": "Totalt",
+            "error_no_templates": "Välj minst en mall",
+            "personal": "Personlig",
+            "job": "Företag"
+        }
+    }
+]

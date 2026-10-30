@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapTypes>
+  <extensions/>
+  <archetypes>
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="300.00000000"/>
+      <flags value="0"/>
+      <specialAttribute value="0"/>
+      <bbMin x="-0.07768825" y="-0.03843416" z="-0.10890120"/>
+      <bbMax x="0.07806713" y="0.03833046" z="0.10858550"/>
+      <bsCentre x="0.00018944" y="-0.00005185" z="-0.00015788"/>
+      <bsRadius value="0.13915190"/>
+      <hdTextureDist value="300.00000000"/>
+      <name>prop_yflip-gold</name>
+      <textureDictionary>yflip_tex</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>prop_yflip-gold</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_yflip-gold</assetName>
+      <extensions/>
+      </Item>
+      <Item type="CBaseArchetypeDef">
+      <lodDist value="300.00000000"/>
+      <flags value="0"/>
+      <specialAttribute value="0"/>
+      <bbMin x="-0.07768825" y="-0.03843416" z="-0.10890120"/>
+      <bbMax x="0.07806713" y="0.03833046" z="0.10858550"/>
+      <bsCentre x="0.00018944" y="-0.00005185" z="-0.00015788"/>
+      <bsRadius value="0.13915190"/>
+      <hdTextureDist value="300.00000000"/>
+      <name>prop_yflip-graphite-flipped</name>
+      <textureDictionary>yflip_tex</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>prop_yflip-graphite-flipped</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_yflip-graphite-flipped</assetName>
+      <extensions/>
+      </Item>
+      <Item type="CBaseArchetypeDef">
+      <lodDist value="300.00000000"/>
+      <flags value="0"/>
+      <specialAttribute value="0"/>
+      <bbMin x="-0.07768825" y="-0.03843416" z="-0.10890120"/>
+      <bbMax x="0.07806713" y="0.03833046" z="0.10858550"/>
+      <bsCentre x="0.00018944" y="-0.00005185" z="-0.00015788"/>
+      <bsRadius value="0.13915190"/>
+      <hdTextureDist value="300.00000000"/>
+      <name>prop_yflip-lavender</name>
+      <textureDictionary>yflip_tex</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>prop_yflip-lavender</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_yflip-lavender</assetName>
+      <extensions/>
+      </Item>
+      <Item type="CBaseArchetypeDef">
+      <lodDist value="300.00000000"/>
+      <flags value="0"/>
+      <specialAttribute value="0"/>
+      <bbMin x="-0.07768825" y="-0.03843416" z="-0.10890120"/>
+      <bbMax x="0.07806713" y="0.03833046" z="0.10858550"/>
+      <bsCentre x="0.00018944" y="-0.00005185" z="-0.00015788"/>
+      <bsRadius value="0.13915190"/>
+      <hdTextureDist value="300.00000000"/>
+      <name>prop_yflip-lavender-flipped</name>
+      <textureDictionary>yflip_tex</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>prop_yflip-lavender-flipped</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_yflip-lavender-flipped</assetName>
+      <extensions/>
+      </Item>
+      <Item type="CBaseArchetypeDef">
+      <lodDist value="300.00000000"/>
+      <flags value="0"/>
+      <specialAttribute value="0"/>
+      <bbMin x="-0.07768825" y="-0.03843416" z="-0.10890120"/>
+      <bbMax x="0.07806713" y="0.03833046" z="0.10858550"/>
+      <bsCentre x="0.00018944" y="-0.00005185" z="-0.00015788"/>
+      <bsRadius value="0.13915190"/>
+      <hdTextureDist value="300.00000000"/>
+      <name>prop_yflip-mint</name>
+      <textureDictionary>yflip_tex</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>prop_yflip-mint</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_yflip-mint</assetName>
+      <extensions/>
+      </Item>
+      <Item type="CBaseArchetypeDef">
+      <lodDist value="300.00000000"/>
+      <flags value="0"/>
+      <specialAttribute value="0"/>
+      <bbMin x="-0.07768825" y="-0.03843416" z="-0.10890120"/>
+      <bbMax x="0.07806713" y="0.03833046" z="0.10858550"/>
+      <bsCentre x="0.00018944" y="-0.00005185" z="-0.00015788"/>
+      <bsRadius value="0.13915190"/>
+      <hdTextureDist value="300.00000000"/>
+      <name>prop_yflip-mint-flipped</name>
+      <textureDictionary>yflip_tex</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>prop_yflip-mint-flipped</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_yflip-mint-flipped</assetName>
+      <extensions/>
+      </Item>
+      <Item type="CBaseArchetypeDef">
+      <lodDist value="300.00000000"/>
+      <flags value="0"/>
+      <specialAttribute value="0"/>
+      <bbMin x="-0.07768825" y="-0.03843416" z="-0.10890120"/>
+      <bbMax x="0.07806713" y="0.03833046" z="0.10858550"/>
+      <bsCentre x="0.00018944" y="-0.00005185" z="-0.00015788"/>
+      <bsRadius value="0.13915190"/>
+      <hdTextureDist value="300.00000000"/>
+      <name>prop_yflip-graphite</name>
+      <textureDictionary>yflip_tex</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>prop_yflip-graphite</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_yflip-graphite</assetName>
+      <extensions/>
+      </Item>
+      <Item type="CBaseArchetypeDef">
+        <lodDist value="100.00000000"/>
+        <flags value="537001984"/>
+        <specialAttribute value="0"/>
+        <bbMin x="-0.23715700" y="-0.41687000" z="-0.01003400"/>
+        <bbMax x="0.19985000" y="0.08050000" z="0.76067500"/>
+        <bsCentre x="-0.01865350" y="-0.16818500" z="0.37532050"/>
+        <bsRadius value="0.50802180"/>
+        <hdTextureDist value="5.00000000"/>
+        <name>prop_yflip-gold-flipped</name>
+        <textureDictionary>yflip_tex</textureDictionary>
+        <clipDictionary/>
+        <drawableDictionary/>
+        <physicsDictionary>prop_yflip-gold-flipped</physicsDictionary>
+        <assetType>ASSET_TYPE_DRAWABLE</assetType>
+        <assetName>prop_yflip-gold-flipped</assetName>
+        <extensions/>
+        </Item>
+        </archetypes>
+        <name>0x0AD225D7</name>
+        <dependencies/>
+        <compositeEntityTypes/>
+      </CMapTypes>

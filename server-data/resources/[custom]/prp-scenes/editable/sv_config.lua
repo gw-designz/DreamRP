@@ -1,0 +1,1 @@
+LogWebhookUrl = "" -- Webhook URL for logging scene creations, leave empty to disable logging

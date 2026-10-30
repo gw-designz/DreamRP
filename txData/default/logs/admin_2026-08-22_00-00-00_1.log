@@ -1,0 +1,42 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/22/2026, 10:49:15 AM
+================================================================
+================================================================
+======== Log Rotated - 8/22/2026, 10:49:16 AM                   
+================================================================
+[10:50:13][realscrp] logged in from 127.0.0.1 via cfxre auth
+[10:50:31][realscrp] Refreshed resources
+[10:50:35][realscrp] executed "RESTART SERVER"
+[10:56:06][realscrp] Refreshed resources
+[10:56:09][realscrp] executed "RESTART SERVER"
+[10:57:13][realscrp] Refreshed resources
+[11:41:23][realscrp] Refreshed resources
+[11:41:28][realscrp] Stopped resource "ps-adminmenu"
+[11:41:28][realscrp] Ensured resource "meteo-adminmenu"
+[11:41:29][realscrp] Ensured resource "meteo-adminmenu"
+[11:41:30][realscrp] Ensured resource "meteo-adminmenu"
+[11:43:10][realscrp] Refreshed resources
+[11:43:14][realscrp] Ensured resource "meteo-apartments"
+[11:43:15][realscrp] Ensured resource "meteo-adminmenu"
+[11:43:17][realscrp] executed "RESTART SERVER"
+[11:45:04][realscrp] Refreshed resources
+[11:47:01][realscrp] Refreshed resources
+[11:47:03][realscrp] Stopped resource "ps-adminmenu"
+[11:51:53][realscrp] Stopped resource "qbx_properties"
+[11:54:05][realscrp] Refreshed resources
+[11:54:08][realscrp] Ensured resource "meteo-apartments"
+[12:03:33][realscrp] Refreshed resources
+[12:03:34][realscrp] Ensured resource "meteo-apartments"
+[12:03:59][realscrp] Ensured resource "meteo-apartments"
+[12:04:20][realscrp] Ensured resource "meteo-apartments"
+[12:09:27][realscrp] Refreshed resources
+[12:09:30][realscrp] Stopped resource "rs_radial"
+[12:09:32][realscrp] Ensured resource "qbx_radialmenu"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/22/2026, 7:13:35 PM
+================================================================
+[19:16:23][realscrp] logged in from 127.0.0.1 via password auth
+[19:16:31][realscrp] Refreshed resources
+[19:17:00][realscrp] Refreshed resources
+[19:17:04][realscrp] executed "RESTART SERVER"
+[19:29:42][realscrp] Refreshed resources

@@ -1,0 +1,2516 @@
+{
+  "id": 32,
+  "metadata": {
+    "defaultFocus": true,
+    "defaultMode": "overlay",
+    "defaultZ": 100,
+    "description": "Starter Phoenix dashboard — sidebar tabs · stats · inventory · garage · jobs · settings.",
+    "name": "blackMarket",
+    "updatedAt": "2026-07-14T15:50:38.586Z",
+    "version": "1.0.0",
+    "viewport": {
+      "baseHeight": 1080,
+      "baseWidth": 1920,
+      "scaleMode": "fit"
+    }
+  },
+  "name": "blackMarket",
+  "owner": "3",
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "id": "image_mrhlj14f_znj7i",
+                            "layout": {
+                              "anchor": "top-left",
+                              "h": 36,
+                              "mode": "absolute",
+                              "w": 36,
+                              "x": 6,
+                              "y": 6
+                            },
+                            "name": "Image",
+                            "props": {
+                              "alt": "Image",
+                              "fit": "contain",
+                              "inventoryType": "qb",
+                              "item": "weapon_grenade",
+                              "src": ""
+                            },
+                            "style": {
+                              "border": "1px solid rgba(255,255,255,0.06)",
+                              "borderRadius": 10
+                            },
+                            "type": "image"
+                          }
+                        ],
+                        "effects": {
+                          "transition": "normal"
+                        },
+                        "id": "panel_mrhlj14f_or399",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 48,
+                          "mode": "absolute",
+                          "w": 48,
+                          "x": 14,
+                          "y": 14
+                        },
+                        "name": "Panel",
+                        "props": [],
+                        "style": {
+                          "bg": "radial-gradient(circle at center, rgba(220, 38, 38, 0.15), rgba(0,0,0,0.5))",
+                          "border": "1px solid rgba(220, 38, 38, 0.3)",
+                          "borderRadius": 12,
+                          "color": "#FAFAFA",
+                          "padding": 0
+                        },
+                        "type": "panel"
+                      },
+                      {
+                        "id": "text_mrhlj14f_2ih9b",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 18,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 20
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "Grenade"
+                        },
+                        "style": {
+                          "color": "#FAFAFA",
+                          "fontSize": 15,
+                          "fontWeight": "bold",
+                          "letterSpacing": 1,
+                          "textTransform": "uppercase"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhlj14f_7o59f",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 14,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 42
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "A reliable firearm"
+                        },
+                        "style": {
+                          "color": "rgba(255,255,255,0.4)",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhlj14f_dwprk",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 20,
+                          "mode": "absolute",
+                          "w": 60,
+                          "x": 632,
+                          "y": 27
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "$500"
+                        },
+                        "style": {
+                          "color": "#EF4444",
+                          "fontSize": 18,
+                          "fontWeight": "black",
+                          "letterSpacing": 0.2,
+                          "textAlign": "right",
+                          "textShadow": "0 0 10px rgba(239, 68, 68, 0.4)"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "effects": {
+                          "hoverScale": 1.05,
+                          "hoverShadow": "glow",
+                          "transition": "fast"
+                        },
+                        "events": {
+                          "click": {
+                            "actions": [
+                              {
+                                "id": "5goh6lmljq",
+                                "type": "emit_event",
+                                "eventKey": "buyGrenade",
+                                "payload": {
+                                  "item": "weapon_grenade",
+                                  "price": 500
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "id": "button_mrhlj14f_m769d",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 40,
+                          "mode": "absolute",
+                          "w": 80,
+                          "x": 704,
+                          "y": 16
+                        },
+                        "name": "Button",
+                        "props": {
+                          "icon": "ShoppingCart",
+                          "iconPosition": "left",
+                          "pill": false,
+                          "size": "md",
+                          "text": "Buy"
+                        },
+                        "style": {
+                          "borderRadius": 10,
+                          "fontWeight": "black",
+                          "letterSpacing": 1.2,
+                          "shadow": "glow",
+                          "bg": "linear-gradient(135deg, #EF4444, #991B1B)",
+                          "color": "#FFFFFF",
+                          "border": "none"
+                        },
+                        "type": "button"
+                      }
+                    ],
+                    "effects": {
+                      "transition": "fast",
+                      "hoverBg": "linear-gradient(145deg, rgba(30,25,25,0.95), rgba(15,12,12,0.95))",
+                      "hoverBorderColor": "rgba(220, 38, 38, 0.5)",
+                      "hoverScale": 1.02,
+                      "hoverShadow": "glow"
+                    },
+                    "id": "panel_mrhlj14f_vpkwp",
+                    "layout": {
+                      "anchor": "top-left",
+                      "h": 80,
+                      "mode": "absolute",
+                      "w": 800,
+                      "x": 8,
+                      "y": 16
+                    },
+                    "name": "Shop Item Row",
+                    "props": [],
+                    "style": {
+                      "bg": "linear-gradient(145deg, rgba(20,20,24,0.95), rgba(12,12,15,0.95))",
+                      "border": "1px solid rgba(220, 38, 38, 0.15)",
+                      "borderRadius": 16,
+                      "color": "#FAFAFA",
+                      "overflow": "visible",
+                      "padding": 0,
+                      "shadow": "md"
+                    },
+                    "type": "panel"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "id": "image_mrhlje82_oia22",
+                            "layout": {
+                              "anchor": "top-left",
+                              "h": 36,
+                              "mode": "absolute",
+                              "w": 36,
+                              "x": 6,
+                              "y": 6
+                            },
+                            "name": "Image",
+                            "props": {
+                              "alt": "Image",
+                              "fit": "contain",
+                              "inventoryType": "qb",
+                              "item": "weapon_knife",
+                              "src": ""
+                            },
+                            "style": {
+                              "border": "1px solid rgba(255,255,255,0.06)",
+                              "borderRadius": 10
+                            },
+                            "type": "image"
+                          }
+                        ],
+                        "effects": {
+                          "transition": "normal"
+                        },
+                        "id": "panel_mrhlje82_brh6t",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 48,
+                          "mode": "absolute",
+                          "w": 48,
+                          "x": 14,
+                          "y": 14
+                        },
+                        "name": "Panel",
+                        "props": [],
+                        "style": {
+                          "bg": "radial-gradient(circle at center, rgba(220, 38, 38, 0.15), rgba(0,0,0,0.5))",
+                          "border": "1px solid rgba(220, 38, 38, 0.3)",
+                          "borderRadius": 12,
+                          "color": "#FAFAFA",
+                          "padding": 0
+                        },
+                        "type": "panel"
+                      },
+                      {
+                        "id": "text_mrhlje82_74obr",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 18,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 20
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "Knife\n"
+                        },
+                        "style": {
+                          "color": "#FAFAFA",
+                          "fontSize": 15,
+                          "fontWeight": "bold",
+                          "letterSpacing": 1,
+                          "textTransform": "uppercase"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhlje82_hnlxv",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 14,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 42
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "A reliable firearm"
+                        },
+                        "style": {
+                          "color": "rgba(255,255,255,0.4)",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhlje82_dvdoz",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 20,
+                          "mode": "absolute",
+                          "w": 60,
+                          "x": 632,
+                          "y": 27
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "$500"
+                        },
+                        "style": {
+                          "color": "#EF4444",
+                          "fontSize": 18,
+                          "fontWeight": "black",
+                          "letterSpacing": 0.2,
+                          "textAlign": "right",
+                          "textShadow": "0 0 10px rgba(239, 68, 68, 0.4)"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "effects": {
+                          "hoverScale": 1.05,
+                          "hoverShadow": "glow",
+                          "transition": "fast"
+                        },
+                        "events": {
+                          "click": {
+                            "actions": [
+                              {
+                                "id": "yaw6ixn631m",
+                                "type": "emit_event",
+                                "eventKey": "buyKnife",
+                                "payload": {
+                                  "item": "weapon_knife",
+                                  "price": 500
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "id": "button_mrhlje82_juqyo",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 40,
+                          "mode": "absolute",
+                          "w": 80,
+                          "x": 704,
+                          "y": 16
+                        },
+                        "name": "Button",
+                        "props": {
+                          "icon": "ShoppingCart",
+                          "iconPosition": "left",
+                          "pill": false,
+                          "size": "md",
+                          "text": "Buy\n"
+                        },
+                        "style": {
+                          "borderRadius": 10,
+                          "fontWeight": "black",
+                          "letterSpacing": 1.2,
+                          "shadow": "glow",
+                          "bg": "linear-gradient(135deg, #EF4444, #991B1B)",
+                          "color": "#FFFFFF",
+                          "border": "none"
+                        },
+                        "type": "button"
+                      }
+                    ],
+                    "effects": {
+                      "transition": "fast",
+                      "hoverBg": "linear-gradient(145deg, rgba(30,25,25,0.95), rgba(15,12,12,0.95))",
+                      "hoverBorderColor": "rgba(220, 38, 38, 0.5)",
+                      "hoverScale": 1.02,
+                      "hoverShadow": "glow"
+                    },
+                    "id": "panel_mrhlje82_w3zuj",
+                    "layout": {
+                      "anchor": "top-left",
+                      "h": 80,
+                      "mode": "absolute",
+                      "w": 800,
+                      "x": 8,
+                      "y": 104
+                    },
+                    "name": "Shop Item Row",
+                    "props": [],
+                    "style": {
+                      "bg": "linear-gradient(145deg, rgba(20,20,24,0.95), rgba(12,12,15,0.95))",
+                      "border": "1px solid rgba(220, 38, 38, 0.15)",
+                      "borderRadius": 16,
+                      "color": "#FAFAFA",
+                      "overflow": "visible",
+                      "padding": 0,
+                      "shadow": "md"
+                    },
+                    "type": "panel"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "id": "image_mrhljlyy_b4f8h",
+                            "layout": {
+                              "anchor": "top-left",
+                              "h": 36,
+                              "mode": "absolute",
+                              "w": 36,
+                              "x": 6,
+                              "y": 6
+                            },
+                            "name": "Image",
+                            "props": {
+                              "alt": "Image",
+                              "fit": "contain",
+                              "inventoryType": "qb",
+                              "item": "weapon_pistol",
+                              "src": ""
+                            },
+                            "style": {
+                              "border": "1px solid rgba(255,255,255,0.06)",
+                              "borderRadius": 10
+                            },
+                            "type": "image"
+                          }
+                        ],
+                        "effects": {
+                          "transition": "normal"
+                        },
+                        "id": "panel_mrhljlyy_eoyfo",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 48,
+                          "mode": "absolute",
+                          "w": 48,
+                          "x": 14,
+                          "y": 14
+                        },
+                        "name": "Panel",
+                        "props": [],
+                        "style": {
+                          "bg": "radial-gradient(circle at center, rgba(220, 38, 38, 0.15), rgba(0,0,0,0.5))",
+                          "border": "1px solid rgba(220, 38, 38, 0.3)",
+                          "borderRadius": 12,
+                          "color": "#FAFAFA",
+                          "padding": 0
+                        },
+                        "type": "panel"
+                      },
+                      {
+                        "id": "text_mrhljlyy_khp8v",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 18,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 20
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "Pistol"
+                        },
+                        "style": {
+                          "color": "#FAFAFA",
+                          "fontSize": 15,
+                          "fontWeight": "bold",
+                          "letterSpacing": 1,
+                          "textTransform": "uppercase"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhljlyy_dm8vc",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 14,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 42
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "A reliable firearm"
+                        },
+                        "style": {
+                          "color": "rgba(255,255,255,0.4)",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhljlyy_hky8w",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 20,
+                          "mode": "absolute",
+                          "w": 60,
+                          "x": 632,
+                          "y": 27
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "$500"
+                        },
+                        "style": {
+                          "color": "#EF4444",
+                          "fontSize": 18,
+                          "fontWeight": "black",
+                          "letterSpacing": 0.2,
+                          "textAlign": "right",
+                          "textShadow": "0 0 10px rgba(239, 68, 68, 0.4)"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "effects": {
+                          "hoverScale": 1.05,
+                          "hoverShadow": "glow",
+                          "transition": "fast"
+                        },
+                        "events": {
+                          "click": {
+                            "actions": [
+                              {
+                                "id": "eccgtefl74g",
+                                "type": "emit_event",
+                                "eventKey": "buyPIstol",
+                                "payload": {
+                                  "item": "weapon_pistol",
+                                  "price": 500
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "id": "button_mrhljlyy_znydr",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 40,
+                          "mode": "absolute",
+                          "w": 80,
+                          "x": 704,
+                          "y": 16
+                        },
+                        "name": "Button",
+                        "props": {
+                          "icon": "ShoppingCart",
+                          "iconPosition": "left",
+                          "pill": false,
+                          "size": "md",
+                          "text": "Buy"
+                        },
+                        "style": {
+                          "borderRadius": 10,
+                          "fontWeight": "black",
+                          "letterSpacing": 1.2,
+                          "shadow": "glow",
+                          "bg": "linear-gradient(135deg, #EF4444, #991B1B)",
+                          "color": "#FFFFFF",
+                          "border": "none"
+                        },
+                        "type": "button"
+                      }
+                    ],
+                    "effects": {
+                      "transition": "fast",
+                      "hoverBg": "linear-gradient(145deg, rgba(30,25,25,0.95), rgba(15,12,12,0.95))",
+                      "hoverBorderColor": "rgba(220, 38, 38, 0.5)",
+                      "hoverScale": 1.02,
+                      "hoverShadow": "glow"
+                    },
+                    "id": "panel_mrhljlyy_sgttd",
+                    "layout": {
+                      "anchor": "top-left",
+                      "h": 80,
+                      "mode": "absolute",
+                      "w": 800,
+                      "x": 8,
+                      "y": 192
+                    },
+                    "name": "Shop Item Row",
+                    "props": [],
+                    "style": {
+                      "bg": "linear-gradient(145deg, rgba(20,20,24,0.95), rgba(12,12,15,0.95))",
+                      "border": "1px solid rgba(220, 38, 38, 0.15)",
+                      "borderRadius": 16,
+                      "color": "#FAFAFA",
+                      "overflow": "visible",
+                      "padding": 0,
+                      "shadow": "md"
+                    },
+                    "type": "panel"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "id": "image_mrhmnsu0_820sg",
+                            "layout": {
+                              "anchor": "top-left",
+                              "h": 36,
+                              "mode": "absolute",
+                              "w": 36,
+                              "x": 6,
+                              "y": 6
+                            },
+                            "name": "Image",
+                            "props": {
+                              "alt": "Image",
+                              "fit": "contain",
+                              "inventoryType": "qb",
+                              "item": "weapon_combatpistol",
+                              "src": ""
+                            },
+                            "style": {
+                              "border": "1px solid rgba(255,255,255,0.06)",
+                              "borderRadius": 10
+                            },
+                            "type": "image"
+                          }
+                        ],
+                        "effects": {
+                          "transition": "normal"
+                        },
+                        "id": "panel_mrhmnsu0_scbk4",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 48,
+                          "mode": "absolute",
+                          "w": 48,
+                          "x": 14,
+                          "y": 14
+                        },
+                        "name": "Panel",
+                        "props": [],
+                        "style": {
+                          "bg": "radial-gradient(circle at center, rgba(220, 38, 38, 0.15), rgba(0,0,0,0.5))",
+                          "border": "1px solid rgba(220, 38, 38, 0.3)",
+                          "borderRadius": 12,
+                          "color": "#FAFAFA",
+                          "padding": 0
+                        },
+                        "type": "panel"
+                      },
+                      {
+                        "id": "text_mrhmnsu0_2dd6r",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 18,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 20
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "Pistol"
+                        },
+                        "style": {
+                          "color": "#FAFAFA",
+                          "fontSize": 15,
+                          "fontWeight": "bold",
+                          "letterSpacing": 1,
+                          "textTransform": "uppercase"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhmnsu0_w0hjd",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 14,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 42
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "A reliable firearm"
+                        },
+                        "style": {
+                          "color": "rgba(255,255,255,0.4)",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhmnsu0_k3qhs",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 20,
+                          "mode": "absolute",
+                          "w": 60,
+                          "x": 632,
+                          "y": 27
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "$500"
+                        },
+                        "style": {
+                          "color": "#EF4444",
+                          "fontSize": 18,
+                          "fontWeight": "black",
+                          "letterSpacing": 0.2,
+                          "textAlign": "right",
+                          "textShadow": "0 0 10px rgba(239, 68, 68, 0.4)"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "effects": {
+                          "hoverScale": 1.05,
+                          "hoverShadow": "glow",
+                          "transition": "fast"
+                        },
+                        "events": {
+                          "click": {
+                            "actions": [
+                              {
+                                "id": "7mah7nwbavi",
+                                "type": "emit_event",
+                                "eventKey": "buyCombatPIstol",
+                                "payload": {
+                                  "item": "weapon_pistol",
+                                  "price": 500
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "id": "button_mrhmnsu0_jp8no",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 40,
+                          "mode": "absolute",
+                          "w": 80,
+                          "x": 704,
+                          "y": 16
+                        },
+                        "name": "Button",
+                        "props": {
+                          "icon": "ShoppingCart",
+                          "iconPosition": "left",
+                          "pill": false,
+                          "size": "md",
+                          "text": "Buy"
+                        },
+                        "style": {
+                          "borderRadius": 10,
+                          "fontWeight": "black",
+                          "letterSpacing": 1.2,
+                          "shadow": "glow",
+                          "bg": "linear-gradient(135deg, #EF4444, #991B1B)",
+                          "color": "#FFFFFF",
+                          "border": "none"
+                        },
+                        "type": "button"
+                      }
+                    ],
+                    "effects": {
+                      "transition": "fast",
+                      "hoverBg": "linear-gradient(145deg, rgba(30,25,25,0.95), rgba(15,12,12,0.95))",
+                      "hoverBorderColor": "rgba(220, 38, 38, 0.5)",
+                      "hoverScale": 1.02,
+                      "hoverShadow": "glow"
+                    },
+                    "id": "panel_mrhmnsu0_hqnlz",
+                    "layout": {
+                      "anchor": "top-left",
+                      "h": 80,
+                      "mode": "absolute",
+                      "w": 800,
+                      "x": 8,
+                      "y": 280
+                    },
+                    "name": "Shop Item Row",
+                    "props": [],
+                    "style": {
+                      "bg": "linear-gradient(145deg, rgba(20,20,24,0.95), rgba(12,12,15,0.95))",
+                      "border": "1px solid rgba(220, 38, 38, 0.15)",
+                      "borderRadius": 16,
+                      "color": "#FAFAFA",
+                      "overflow": "visible",
+                      "padding": 0,
+                      "shadow": "md"
+                    },
+                    "type": "panel"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "id": "image_mrhmobxr_7m0gf",
+                            "layout": {
+                              "anchor": "top-left",
+                              "h": 36,
+                              "mode": "absolute",
+                              "w": 36,
+                              "x": 6,
+                              "y": 6
+                            },
+                            "name": "Image",
+                            "props": {
+                              "alt": "Image",
+                              "fit": "contain",
+                              "inventoryType": "qb",
+                              "item": "weapon_smg",
+                              "src": ""
+                            },
+                            "style": {
+                              "border": "1px solid rgba(255,255,255,0.06)",
+                              "borderRadius": 10
+                            },
+                            "type": "image"
+                          }
+                        ],
+                        "effects": {
+                          "transition": "normal"
+                        },
+                        "id": "panel_mrhmobxr_8gyt2",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 48,
+                          "mode": "absolute",
+                          "w": 48,
+                          "x": 14,
+                          "y": 14
+                        },
+                        "name": "Panel",
+                        "props": [],
+                        "style": {
+                          "bg": "radial-gradient(circle at center, rgba(220, 38, 38, 0.15), rgba(0,0,0,0.5))",
+                          "border": "1px solid rgba(220, 38, 38, 0.3)",
+                          "borderRadius": 12,
+                          "color": "#FAFAFA",
+                          "padding": 0
+                        },
+                        "type": "panel"
+                      },
+                      {
+                        "id": "text_mrhmobxr_wwacv",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 18,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 20
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "SMG\n"
+                        },
+                        "style": {
+                          "color": "#FAFAFA",
+                          "fontSize": 15,
+                          "fontWeight": "bold",
+                          "letterSpacing": 1,
+                          "textTransform": "uppercase"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhmobxr_4t3sm",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 14,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 42
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "A reliable firearm"
+                        },
+                        "style": {
+                          "color": "rgba(255,255,255,0.4)",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhmobxr_jxw1m",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 20,
+                          "mode": "absolute",
+                          "w": 60,
+                          "x": 632,
+                          "y": 27
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "$500"
+                        },
+                        "style": {
+                          "color": "#EF4444",
+                          "fontSize": 18,
+                          "fontWeight": "black",
+                          "letterSpacing": 0.2,
+                          "textAlign": "right",
+                          "textShadow": "0 0 10px rgba(239, 68, 68, 0.4)"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "effects": {
+                          "hoverScale": 1.05,
+                          "hoverShadow": "glow",
+                          "transition": "fast"
+                        },
+                        "events": {
+                          "click": {
+                            "actions": [
+                              {
+                                "id": "1vkbhcv545r",
+                                "type": "emit_event",
+                                "eventKey": "buySMG",
+                                "payload": {
+                                  "item": "weapon_smg",
+                                  "price": 500
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "id": "button_mrhmobxr_m6c87",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 40,
+                          "mode": "absolute",
+                          "w": 80,
+                          "x": 704,
+                          "y": 16
+                        },
+                        "name": "Button",
+                        "props": {
+                          "icon": "ShoppingCart",
+                          "iconPosition": "left",
+                          "pill": false,
+                          "size": "md",
+                          "text": "Buy"
+                        },
+                        "style": {
+                          "borderRadius": 10,
+                          "fontWeight": "black",
+                          "letterSpacing": 1.2,
+                          "shadow": "glow",
+                          "bg": "linear-gradient(135deg, #EF4444, #991B1B)",
+                          "color": "#FFFFFF",
+                          "border": "none"
+                        },
+                        "type": "button"
+                      }
+                    ],
+                    "effects": {
+                      "transition": "fast",
+                      "hoverBg": "linear-gradient(145deg, rgba(30,25,25,0.95), rgba(15,12,12,0.95))",
+                      "hoverBorderColor": "rgba(220, 38, 38, 0.5)",
+                      "hoverScale": 1.02,
+                      "hoverShadow": "glow"
+                    },
+                    "id": "panel_mrhmobxr_geg5w",
+                    "layout": {
+                      "anchor": "top-left",
+                      "h": 80,
+                      "mode": "absolute",
+                      "w": 800,
+                      "x": 8,
+                      "y": 368
+                    },
+                    "name": "Shop Item Row",
+                    "props": [],
+                    "style": {
+                      "bg": "linear-gradient(145deg, rgba(20,20,24,0.95), rgba(12,12,15,0.95))",
+                      "border": "1px solid rgba(220, 38, 38, 0.15)",
+                      "borderRadius": 16,
+                      "color": "#FAFAFA",
+                      "overflow": "visible",
+                      "padding": 0,
+                      "shadow": "md"
+                    },
+                    "type": "panel"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "id": "image_mrhmp1ip_faf31",
+                            "layout": {
+                              "anchor": "top-left",
+                              "h": 36,
+                              "mode": "absolute",
+                              "w": 36,
+                              "x": 6,
+                              "y": 6
+                            },
+                            "name": "Image",
+                            "props": {
+                              "alt": "Image",
+                              "fit": "contain",
+                              "inventoryType": "qb",
+                              "item": "weapon_carbinerifle",
+                              "src": ""
+                            },
+                            "style": {
+                              "border": "1px solid rgba(255,255,255,0.06)",
+                              "borderRadius": 10
+                            },
+                            "type": "image"
+                          }
+                        ],
+                        "effects": {
+                          "transition": "normal"
+                        },
+                        "id": "panel_mrhmp1ip_k0p5f",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 48,
+                          "mode": "absolute",
+                          "w": 48,
+                          "x": 14,
+                          "y": 14
+                        },
+                        "name": "Panel",
+                        "props": [],
+                        "style": {
+                          "bg": "radial-gradient(circle at center, rgba(220, 38, 38, 0.15), rgba(0,0,0,0.5))",
+                          "border": "1px solid rgba(220, 38, 38, 0.3)",
+                          "borderRadius": 12,
+                          "color": "#FAFAFA",
+                          "padding": 0
+                        },
+                        "type": "panel"
+                      },
+                      {
+                        "id": "text_mrhmp1ip_fqr7r",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 18,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 20
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "CARBINE\n"
+                        },
+                        "style": {
+                          "color": "#FAFAFA",
+                          "fontSize": 15,
+                          "fontWeight": "bold",
+                          "letterSpacing": 1,
+                          "textTransform": "uppercase"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhmp1ip_nzjte",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 14,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 42
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "A reliable firearm"
+                        },
+                        "style": {
+                          "color": "rgba(255,255,255,0.4)",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhmp1ip_898ma",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 20,
+                          "mode": "absolute",
+                          "w": 60,
+                          "x": 632,
+                          "y": 27
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "$500"
+                        },
+                        "style": {
+                          "color": "#EF4444",
+                          "fontSize": 18,
+                          "fontWeight": "black",
+                          "letterSpacing": 0.2,
+                          "textAlign": "right",
+                          "textShadow": "0 0 10px rgba(239, 68, 68, 0.4)"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "effects": {
+                          "hoverScale": 1.05,
+                          "hoverShadow": "glow",
+                          "transition": "fast"
+                        },
+                        "events": {
+                          "click": {
+                            "actions": [
+                              {
+                                "id": "el2yllscmzg",
+                                "type": "emit_event",
+                                "eventKey": "buyCarbine",
+                                "payload": {
+                                  "item": "weapon_carbinerifle",
+                                  "price": 500
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "id": "button_mrhmp1ip_lg265",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 40,
+                          "mode": "absolute",
+                          "w": 80,
+                          "x": 704,
+                          "y": 16
+                        },
+                        "name": "Button",
+                        "props": {
+                          "icon": "",
+                          "iconPosition": "left",
+                          "pill": false,
+                          "size": "md",
+                          "text": "Buy"
+                        },
+                        "style": {
+                          "borderRadius": 10,
+                          "fontWeight": "black",
+                          "letterSpacing": 1.2,
+                          "shadow": "glow",
+                          "bg": "linear-gradient(135deg, #EF4444, #991B1B)",
+                          "color": "#FFFFFF",
+                          "border": "none"
+                        },
+                        "type": "button"
+                      }
+                    ],
+                    "effects": {
+                      "transition": "fast",
+                      "hoverBg": "linear-gradient(145deg, rgba(30,25,25,0.95), rgba(15,12,12,0.95))",
+                      "hoverBorderColor": "rgba(220, 38, 38, 0.5)",
+                      "hoverScale": 1.02,
+                      "hoverShadow": "glow"
+                    },
+                    "id": "panel_mrhmp1ip_i0gpz",
+                    "layout": {
+                      "anchor": "top-left",
+                      "h": 80,
+                      "mode": "absolute",
+                      "w": 800,
+                      "x": 8,
+                      "y": 456
+                    },
+                    "name": "Shop Item Row",
+                    "props": [],
+                    "style": {
+                      "bg": "linear-gradient(145deg, rgba(20,20,24,0.95), rgba(12,12,15,0.95))",
+                      "border": "1px solid rgba(220, 38, 38, 0.15)",
+                      "borderRadius": 16,
+                      "color": "#FAFAFA",
+                      "overflow": "visible",
+                      "padding": 0,
+                      "shadow": "md"
+                    },
+                    "type": "panel"
+                  }
+                ],
+                "id": "group_mrhli4sh_iddyo",
+                "layout": {
+                  "anchor": "top-left",
+                  "h": 416,
+                  "mode": "absolute",
+                  "w": 832,
+                  "x": -24,
+                  "y": 96
+                },
+                "name": "Scroll Area",
+                "props": [],
+                "style": {
+                  "bg": "transparent",
+                  "border": "none",
+                  "overflow": "auto",
+                  "padding": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                "type": "group"
+              }
+            ],
+            "id": "page_dashboard",
+            "layout": {
+              "anchor": "top-left",
+              "h": 544,
+              "mode": "absolute",
+              "w": 840,
+              "x": 0,
+              "y": 0
+            },
+            "name": "Dashboard",
+            "props": {
+              "tabBadge": "",
+              "tabIcon": "LucidePocketKnife",
+              "tabLabel": "WEAPONS"
+            },
+            "style": {
+              "bg": "transparent",
+              "border": "none",
+              "overflow": "auto",
+              "padding": 26
+            },
+            "type": "panel"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "id": "image_mrhn3x6t_yii5k",
+                            "layout": {
+                              "anchor": "top-left",
+                              "h": 36,
+                              "mode": "absolute",
+                              "w": 36,
+                              "x": 6,
+                              "y": 6
+                            },
+                            "name": "Image",
+                            "props": {
+                              "alt": "Image",
+                              "fit": "contain",
+                              "inventoryType": "qb",
+                              "item": "lockpick",
+                              "src": ""
+                            },
+                            "style": {
+                              "border": "1px solid rgba(255,255,255,0.06)",
+                              "borderRadius": 10
+                            },
+                            "type": "image"
+                          }
+                        ],
+                        "effects": {
+                          "transition": "normal"
+                        },
+                        "id": "panel_mrhn3x6t_8tipy",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 48,
+                          "mode": "absolute",
+                          "w": 48,
+                          "x": 14,
+                          "y": 14
+                        },
+                        "name": "Panel",
+                        "props": [],
+                        "style": {
+                          "bg": "radial-gradient(circle at center, rgba(220, 38, 38, 0.15), rgba(0,0,0,0.5))",
+                          "border": "1px solid rgba(220, 38, 38, 0.3)",
+                          "borderRadius": 12,
+                          "color": "#FAFAFA",
+                          "padding": 0
+                        },
+                        "type": "panel"
+                      },
+                      {
+                        "id": "text_mrhn3x6t_su0yp",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 18,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 20
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "lockpick\n"
+                        },
+                        "style": {
+                          "color": "#FAFAFA",
+                          "fontSize": 15,
+                          "fontWeight": "bold",
+                          "letterSpacing": 1,
+                          "textTransform": "uppercase"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhn3x6t_fp79n",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 14,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 42
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "A reliable firearm"
+                        },
+                        "style": {
+                          "color": "rgba(255,255,255,0.4)",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhn3x6t_4amlr",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 20,
+                          "mode": "absolute",
+                          "w": 60,
+                          "x": 632,
+                          "y": 27
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "$500"
+                        },
+                        "style": {
+                          "color": "#EF4444",
+                          "fontSize": 18,
+                          "fontWeight": "black",
+                          "letterSpacing": 0.2,
+                          "textAlign": "right",
+                          "textShadow": "0 0 10px rgba(239, 68, 68, 0.4)"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "effects": {
+                          "hoverScale": 1.05,
+                          "hoverShadow": "glow",
+                          "transition": "fast"
+                        },
+                        "events": {
+                          "click": {
+                            "actions": [
+                              {
+                                "id": "z8hgwx9kiw",
+                                "type": "emit_event",
+                                "eventKey": "buyLockpick",
+                                "payload": {
+                                  "item": "lockpick",
+                                  "price": 500
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "id": "button_mrhn3x6t_olbp2",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 40,
+                          "mode": "absolute",
+                          "w": 80,
+                          "x": 704,
+                          "y": 16
+                        },
+                        "name": "Button",
+                        "props": {
+                          "icon": "ShoppingCart",
+                          "iconPosition": "left",
+                          "pill": false,
+                          "size": "md",
+                          "text": "Buy"
+                        },
+                        "style": {
+                          "borderRadius": 10,
+                          "fontWeight": "black",
+                          "letterSpacing": 1.2,
+                          "shadow": "glow",
+                          "bg": "linear-gradient(135deg, #EF4444, #991B1B)",
+                          "color": "#FFFFFF",
+                          "border": "none"
+                        },
+                        "type": "button"
+                      }
+                    ],
+                    "effects": {
+                      "transition": "fast",
+                      "hoverBg": "linear-gradient(145deg, rgba(30,25,25,0.95), rgba(15,12,12,0.95))",
+                      "hoverBorderColor": "rgba(220, 38, 38, 0.5)",
+                      "hoverScale": 1.02,
+                      "hoverShadow": "glow"
+                    },
+                    "id": "panel_mrhn3x6t_35tbp",
+                    "layout": {
+                      "anchor": "top-left",
+                      "h": 80,
+                      "mode": "absolute",
+                      "w": 800,
+                      "x": 16,
+                      "y": 24
+                    },
+                    "name": "Shop Item Row",
+                    "props": [],
+                    "style": {
+                      "bg": "linear-gradient(145deg, rgba(20,20,24,0.95), rgba(12,12,15,0.95))",
+                      "border": "1px solid rgba(220, 38, 38, 0.15)",
+                      "borderRadius": 16,
+                      "color": "#FAFAFA",
+                      "overflow": "visible",
+                      "padding": 0,
+                      "shadow": "md"
+                    },
+                    "type": "panel"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "id": "image_mrhn4wty_rpapj",
+                            "layout": {
+                              "anchor": "top-left",
+                              "h": 36,
+                              "mode": "absolute",
+                              "w": 36,
+                              "x": 6,
+                              "y": 6
+                            },
+                            "name": "Image",
+                            "props": {
+                              "alt": "Image",
+                              "fit": "contain",
+                              "inventoryType": "qb",
+                              "item": "advancedlockpick",
+                              "src": ""
+                            },
+                            "style": {
+                              "border": "1px solid rgba(255,255,255,0.06)",
+                              "borderRadius": 10
+                            },
+                            "type": "image"
+                          }
+                        ],
+                        "effects": {
+                          "transition": "normal"
+                        },
+                        "id": "panel_mrhn4wty_0xb7e",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 48,
+                          "mode": "absolute",
+                          "w": 48,
+                          "x": 14,
+                          "y": 14
+                        },
+                        "name": "Panel",
+                        "props": [],
+                        "style": {
+                          "bg": "radial-gradient(circle at center, rgba(220, 38, 38, 0.15), rgba(0,0,0,0.5))",
+                          "border": "1px solid rgba(220, 38, 38, 0.3)",
+                          "borderRadius": 12,
+                          "color": "#FAFAFA",
+                          "padding": 0
+                        },
+                        "type": "panel"
+                      },
+                      {
+                        "id": "text_mrhn4wty_in57v",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 18,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 20
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "advancedlockpick"
+                        },
+                        "style": {
+                          "color": "rgba(255,255,255,0.4)",
+                          "fontSize": 15,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhn4wty_f28dt",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 14,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 42
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "A reliable firearm"
+                        },
+                        "style": {
+                          "color": "rgba(255,255,255,0.4)",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhn4wty_qd5zo",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 20,
+                          "mode": "absolute",
+                          "w": 60,
+                          "x": 632,
+                          "y": 27
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "$500"
+                        },
+                        "style": {
+                          "color": "#EF4444",
+                          "fontSize": 18,
+                          "fontWeight": "black",
+                          "letterSpacing": 0.2,
+                          "textAlign": "right",
+                          "textShadow": "0 0 10px rgba(239, 68, 68, 0.4)"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "effects": {
+                          "hoverScale": 1.05,
+                          "hoverShadow": "glow",
+                          "transition": "fast"
+                        },
+                        "events": {
+                          "click": {
+                            "actions": [
+                              {
+                                "id": "52jysfqu2kk",
+                                "type": "emit_event",
+                                "eventKey": "buyAdvancedLockpick",
+                                "payload": {
+                                  "item": "unknown_item",
+                                  "price": 500
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "id": "button_mrhn4wty_8a56s",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 40,
+                          "mode": "absolute",
+                          "w": 80,
+                          "x": 704,
+                          "y": 16
+                        },
+                        "name": "Button",
+                        "props": {
+                          "icon": "ShoppingCart",
+                          "iconPosition": "left",
+                          "pill": false,
+                          "size": "md",
+                          "text": "Buy"
+                        },
+                        "style": {
+                          "borderRadius": 10,
+                          "fontWeight": "black",
+                          "letterSpacing": 1.2,
+                          "shadow": "glow",
+                          "bg": "linear-gradient(135deg, #EF4444, #991B1B)",
+                          "color": "#FFFFFF",
+                          "border": "none"
+                        },
+                        "type": "button"
+                      }
+                    ],
+                    "effects": {
+                      "transition": "fast",
+                      "hoverBg": "linear-gradient(145deg, rgba(30,25,25,0.95), rgba(15,12,12,0.95))",
+                      "hoverBorderColor": "rgba(220, 38, 38, 0.5)",
+                      "hoverScale": 1.02,
+                      "hoverShadow": "glow"
+                    },
+                    "id": "panel_mrhn4wty_2j5ha",
+                    "layout": {
+                      "anchor": "top-left",
+                      "h": 80,
+                      "mode": "absolute",
+                      "w": 800,
+                      "x": 16,
+                      "y": 112
+                    },
+                    "name": "Shop Item Row",
+                    "props": [],
+                    "style": {
+                      "bg": "linear-gradient(145deg, rgba(20,20,24,0.95), rgba(12,12,15,0.95))",
+                      "border": "1px solid rgba(220, 38, 38, 0.15)",
+                      "borderRadius": 16,
+                      "color": "#FAFAFA",
+                      "overflow": "visible",
+                      "padding": 0,
+                      "shadow": "md"
+                    },
+                    "type": "panel"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "id": "image_mrhn51ob_d6pn6",
+                            "layout": {
+                              "anchor": "top-left",
+                              "h": 36,
+                              "mode": "absolute",
+                              "w": 36,
+                              "x": 6,
+                              "y": 6
+                            },
+                            "name": "Image",
+                            "props": {
+                              "alt": "Image",
+                              "fit": "contain",
+                              "inventoryType": "qb",
+                              "item": "pistol_ammo",
+                              "src": ""
+                            },
+                            "style": {
+                              "border": "1px solid rgba(255,255,255,0.06)",
+                              "borderRadius": 10
+                            },
+                            "type": "image"
+                          }
+                        ],
+                        "effects": {
+                          "transition": "normal"
+                        },
+                        "id": "panel_mrhn51ob_lxrev",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 48,
+                          "mode": "absolute",
+                          "w": 48,
+                          "x": 14,
+                          "y": 14
+                        },
+                        "name": "Panel",
+                        "props": [],
+                        "style": {
+                          "bg": "radial-gradient(circle at center, rgba(220, 38, 38, 0.15), rgba(0,0,0,0.5))",
+                          "border": "1px solid rgba(220, 38, 38, 0.3)",
+                          "borderRadius": 12,
+                          "color": "#FAFAFA",
+                          "padding": 0
+                        },
+                        "type": "panel"
+                      },
+                      {
+                        "id": "text_mrhn51ob_vw4ih",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 18,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 20
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "pistol ammo"
+                        },
+                        "style": {
+                          "color": "#FAFAFA",
+                          "fontSize": 15,
+                          "fontWeight": "bold",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhn51ob_qaqk9",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 14,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 42
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "A reliable firearm"
+                        },
+                        "style": {
+                          "color": "rgba(255,255,255,0.4)",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhn51ob_ucjti",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 20,
+                          "mode": "absolute",
+                          "w": 60,
+                          "x": 632,
+                          "y": 27
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "$500"
+                        },
+                        "style": {
+                          "color": "#EF4444",
+                          "fontSize": 18,
+                          "fontWeight": "black",
+                          "letterSpacing": 0.2,
+                          "textAlign": "right",
+                          "textShadow": "0 0 10px rgba(239, 68, 68, 0.4)"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "effects": {
+                          "hoverScale": 1.05,
+                          "hoverShadow": "glow",
+                          "transition": "fast"
+                        },
+                        "events": {
+                          "click": {
+                            "actions": [
+                              {
+                                "id": "ki0b8acns0l",
+                                "type": "emit_event",
+                                "eventKey": "buyPistolAmmo",
+                                "payload": {
+                                  "item": "pistol_ammo",
+                                  "price": 500
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "id": "button_mrhn51ob_18g6v",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 40,
+                          "mode": "absolute",
+                          "w": 80,
+                          "x": 704,
+                          "y": 16
+                        },
+                        "name": "Button",
+                        "props": {
+                          "icon": "ShoppingCart",
+                          "iconPosition": "left",
+                          "pill": false,
+                          "size": "md",
+                          "text": "Buy"
+                        },
+                        "style": {
+                          "borderRadius": 10,
+                          "fontWeight": "black",
+                          "letterSpacing": 1.2,
+                          "shadow": "glow",
+                          "bg": "linear-gradient(135deg, #EF4444, #991B1B)",
+                          "color": "#FFFFFF",
+                          "border": "none"
+                        },
+                        "type": "button"
+                      }
+                    ],
+                    "effects": {
+                      "transition": "fast",
+                      "hoverBg": "linear-gradient(145deg, rgba(30,25,25,0.95), rgba(15,12,12,0.95))",
+                      "hoverBorderColor": "rgba(220, 38, 38, 0.5)",
+                      "hoverScale": 1.02,
+                      "hoverShadow": "glow"
+                    },
+                    "id": "panel_mrhn51ob_m4mnh",
+                    "layout": {
+                      "anchor": "top-left",
+                      "h": 80,
+                      "mode": "absolute",
+                      "w": 800,
+                      "x": 16,
+                      "y": 200
+                    },
+                    "name": "Shop Item Row",
+                    "props": [],
+                    "style": {
+                      "bg": "linear-gradient(145deg, rgba(20,20,24,0.95), rgba(12,12,15,0.95))",
+                      "border": "1px solid rgba(220, 38, 38, 0.15)",
+                      "borderRadius": 16,
+                      "color": "#FAFAFA",
+                      "overflow": "visible",
+                      "padding": 0,
+                      "shadow": "md"
+                    },
+                    "type": "panel"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "id": "image_mrhn59w0_o6q92",
+                            "layout": {
+                              "anchor": "top-left",
+                              "h": 36,
+                              "mode": "absolute",
+                              "w": 36,
+                              "x": 6,
+                              "y": 6
+                            },
+                            "name": "Image",
+                            "props": {
+                              "alt": "Image",
+                              "fit": "contain",
+                              "inventoryType": "qb",
+                              "item": "electronickit",
+                              "src": ""
+                            },
+                            "style": {
+                              "border": "1px solid rgba(255,255,255,0.06)",
+                              "borderRadius": 10
+                            },
+                            "type": "image"
+                          }
+                        ],
+                        "effects": {
+                          "transition": "normal"
+                        },
+                        "id": "panel_mrhn59w0_x2eom",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 48,
+                          "mode": "absolute",
+                          "w": 48,
+                          "x": 14,
+                          "y": 14
+                        },
+                        "name": "Panel",
+                        "props": [],
+                        "style": {
+                          "bg": "radial-gradient(circle at center, rgba(220, 38, 38, 0.15), rgba(0,0,0,0.5))",
+                          "border": "1px solid rgba(220, 38, 38, 0.3)",
+                          "borderRadius": 12,
+                          "color": "#FAFAFA",
+                          "padding": 0
+                        },
+                        "type": "panel"
+                      },
+                      {
+                        "id": "text_mrhn59w0_6t7sx",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 18,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 20
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "electronickit"
+                        },
+                        "style": {
+                          "color": "#FAFAFA",
+                          "fontSize": 15,
+                          "fontWeight": "bold",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhn59w0_i43of",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 14,
+                          "mode": "absolute",
+                          "w": 140,
+                          "x": 76,
+                          "y": 42
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "A reliable firearm"
+                        },
+                        "style": {
+                          "color": "rgba(255,255,255,0.4)",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.2
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "id": "text_mrhn59w0_wqfom",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 20,
+                          "mode": "absolute",
+                          "w": 60,
+                          "x": 632,
+                          "y": 27
+                        },
+                        "name": "Text",
+                        "props": {
+                          "text": "$500"
+                        },
+                        "style": {
+                          "color": "#EF4444",
+                          "fontSize": 18,
+                          "fontWeight": "black",
+                          "letterSpacing": 0.2,
+                          "textAlign": "right",
+                          "textShadow": "0 0 10px rgba(239, 68, 68, 0.4)"
+                        },
+                        "type": "text"
+                      },
+                      {
+                        "effects": {
+                          "hoverScale": 1.05,
+                          "hoverShadow": "glow",
+                          "transition": "fast"
+                        },
+                        "events": {
+                          "click": {
+                            "actions": [
+                              {
+                                "id": "kytoz2z80cn",
+                                "type": "emit_event",
+                                "eventKey": "buyelectronickit",
+                                "payload": {
+                                  "item": "electronickit",
+                                  "price": 500
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "id": "button_mrhn59w0_k8wx9",
+                        "layout": {
+                          "anchor": "top-left",
+                          "h": 40,
+                          "mode": "absolute",
+                          "w": 80,
+                          "x": 704,
+                          "y": 16
+                        },
+                        "name": "Button",
+                        "props": {
+                          "icon": "ShoppingCart",
+                          "iconPosition": "left",
+                          "pill": false,
+                          "size": "md",
+                          "text": "Buy"
+                        },
+                        "style": {
+                          "borderRadius": 10,
+                          "fontWeight": "black",
+                          "letterSpacing": 1.2,
+                          "shadow": "glow",
+                          "bg": "linear-gradient(135deg, #EF4444, #991B1B)",
+                          "color": "#FFFFFF",
+                          "border": "none"
+                        },
+                        "type": "button"
+                      }
+                    ],
+                    "effects": {
+                      "transition": "fast",
+                      "hoverBg": "linear-gradient(145deg, rgba(30,25,25,0.95), rgba(15,12,12,0.95))",
+                      "hoverBorderColor": "rgba(220, 38, 38, 0.5)",
+                      "hoverScale": 1.02,
+                      "hoverShadow": "glow"
+                    },
+                    "id": "panel_mrhn59w0_8rl1l",
+                    "layout": {
+                      "anchor": "top-left",
+                      "h": 80,
+                      "mode": "absolute",
+                      "w": 800,
+                      "x": 16,
+                      "y": 288
+                    },
+                    "name": "Shop Item Row",
+                    "props": [],
+                    "style": {
+                      "bg": "linear-gradient(145deg, rgba(20,20,24,0.95), rgba(12,12,15,0.95))",
+                      "border": "1px solid rgba(220, 38, 38, 0.15)",
+                      "borderRadius": 16,
+                      "color": "#FAFAFA",
+                      "overflow": "visible",
+                      "padding": 0,
+                      "shadow": "md"
+                    },
+                    "type": "panel"
+                  }
+                ],
+                "id": "group_mrhn27op_boshv",
+                "layout": {
+                  "anchor": "top-left",
+                  "h": 424,
+                  "mode": "absolute",
+                  "w": 840,
+                  "x": -32,
+                  "y": 88
+                },
+                "name": "Scroll Area",
+                "props": [],
+                "style": {
+                  "bg": "transparent",
+                  "border": "none",
+                  "overflow": "auto",
+                  "padding": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                "type": "group"
+              }
+            ],
+            "id": "page_inventory",
+            "layout": {
+              "anchor": "top-left",
+              "h": 540,
+              "mode": "absolute",
+              "w": 800,
+              "x": 0,
+              "y": 0
+            },
+            "name": "Inventory",
+            "props": {
+              "tabBadge": "",
+              "tabIcon": "Package",
+              "tabLabel": "Items\n"
+            },
+            "style": {
+              "bg": "transparent",
+              "border": "none",
+              "padding": 26
+            },
+            "type": "panel"
+          }
+        ],
+        "id": "main_tabs",
+        "layout": {
+          "anchor": "top-left",
+          "h": 540,
+          "mode": "absolute",
+          "w": 1080,
+          "x": 0,
+          "y": 0
+        },
+        "name": "Phoenix Tabs",
+        "props": {
+          "activeTab": "page_dashboard",
+          "sidebarLabel": "BlACKMARKET SHOP",
+          "sidebarWidth": 240,
+          "variant": "sidebar"
+        },
+        "style": {
+          "backdropBlur": "xl",
+          "bg": "linear-gradient(160deg, rgba(15,15,18,0.98), rgba(8,8,10,0.99))",
+          "border": "1px solid rgba(220, 38, 38, 0.2)",
+          "borderRadius": 20,
+          "overflow": "hidden",
+          "padding": 0,
+          "shadow": "xl"
+        },
+        "type": "tabs"
+      },
+      {
+        "id": "divider_mrgrhqzc_atd2a",
+        "layout": {
+          "anchor": "top-left",
+          "h": 8,
+          "mode": "absolute",
+          "w": 840,
+          "x": 240,
+          "y": 112
+        },
+        "name": "Divider",
+        "props": {
+          "orientation": "horizontal"
+        },
+        "style": {
+          "bg": "rgba(255,255,255,0.08)",
+          "transformData": {
+            "rotation": 180.11379738865787
+          }
+        },
+        "type": "divider"
+      },
+      {
+        "children": [
+          {
+            "id": "text_mrgrrjzv_lyfb0",
+            "layout": {
+              "anchor": "top-left",
+              "h": 14,
+              "mode": "absolute",
+              "w": 600,
+              "x": 0,
+              "y": 0
+            },
+            "name": "Text",
+            "props": {
+              "text": "WELCOME BACK"
+            },
+            "style": {
+              "color": "#FF7300",
+              "fontSize": 10,
+              "fontWeight": "black",
+              "letterSpacing": 2.2
+            },
+            "type": "text"
+          },
+          {
+            "id": "text_mrgrrjzv_qyk7l",
+            "layout": {
+              "anchor": "top-left",
+              "h": 38,
+              "mode": "absolute",
+              "w": 600,
+              "x": 0,
+              "y": 20
+            },
+            "name": "Text",
+            "props": {
+              "text": "Good evening, {{state.playerName}}"
+            },
+            "style": {
+              "color": "rgba(255,255,255,0.4)",
+              "fontSize": 30,
+              "fontWeight": "normal",
+              "letterSpacing": -0.5
+            },
+            "type": "text"
+          },
+          {
+            "id": "text_mrgrrjzv_rqza0",
+            "layout": {
+              "anchor": "top-left",
+              "h": 18,
+              "mode": "absolute",
+              "w": 600,
+              "x": 0,
+              "y": 64
+            },
+            "name": "Text",
+            "props": {
+              "text": "Let's go shopping."
+            },
+            "style": {
+              "color": "rgba(255,255,255,0.4)",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 0.2
+            },
+            "type": "text"
+          }
+        ],
+        "effects": {
+          "transition": "normal"
+        },
+        "id": "panel_mrgrrjzv_d2qcp",
+        "layout": {
+          "anchor": "top-left",
+          "h": 90,
+          "mode": "absolute",
+          "w": 600,
+          "x": 256,
+          "y": 16
+        },
+        "name": "Hero",
+        "props": [],
+        "style": {
+          "bg": "transparent",
+          "border": "none",
+          "borderRadius": 8,
+          "color": "#FAFAFA",
+          "padding": 0
+        },
+        "type": "panel"
+      },
+      {
+        "id": "divider_mrhj3yp0_jkenj",
+        "layout": {
+          "anchor": "top-left",
+          "h": 8,
+          "mode": "absolute",
+          "w": 240,
+          "x": 0,
+          "y": 397
+        },
+        "name": "Divider",
+        "props": {
+          "orientation": "horizontal"
+        },
+        "style": {
+          "bg": "rgba(255,255,255,0.08)"
+        },
+        "type": "divider"
+      },
+      {
+        "id": "text_mrhj5b7k_jkkul",
+        "layout": {
+          "anchor": "top-left",
+          "h": 40,
+          "mode": "absolute",
+          "w": 160,
+          "x": 40,
+          "y": 412
+        },
+        "name": "Text",
+        "props": {
+          "text": "CASH: {{state.cash}}"
+        },
+        "style": {
+          "color": "rgba(255,255,255,0.4)",
+          "fontSize": 14,
+          "fontWeight": "normal",
+          "letterSpacing": 0.2
+        },
+        "type": "text"
+      },
+      {
+        "effects": {
+          "hoverColor": "#FFB570",
+          "transition": "fast"
+        },
+        "id": "icon_mrhj5pxi_puxr1",
+        "layout": {
+          "anchor": "top-left",
+          "h": 28,
+          "mode": "absolute",
+          "w": 28,
+          "x": 8,
+          "y": 410
+        },
+        "name": "Icon",
+        "props": {
+          "icon": "LucideDollarSign",
+          "size": 22
+        },
+        "style": {
+          "color": "#FF7300"
+        },
+        "type": "icon"
+      },
+      {
+        "id": "text_mrhj83hr_fj091",
+        "layout": {
+          "anchor": "top-left",
+          "h": 40,
+          "mode": "absolute",
+          "w": 160,
+          "x": 40,
+          "y": 439
+        },
+        "name": "Text",
+        "props": {
+          "text": "BANK: {{state.bank}}"
+        },
+        "style": {
+          "color": "rgba(255,255,255,0.4)",
+          "fontSize": 14,
+          "fontWeight": "normal",
+          "letterSpacing": 0.2
+        },
+        "type": "text"
+      },
+      {
+        "effects": {
+          "hoverColor": "#FFB570",
+          "transition": "fast"
+        },
+        "id": "icon_mrhj89nm_2y29g",
+        "layout": {
+          "anchor": "top-left",
+          "h": 28,
+          "mode": "absolute",
+          "w": 28,
+          "x": 8,
+          "y": 437
+        },
+        "name": "Icon",
+        "props": {
+          "icon": "Banknote",
+          "size": 22
+        },
+        "style": {
+          "color": "#FF7300"
+        },
+        "type": "icon"
+      },
+      {
+        "id": "avatar_mrhor6w0_dfch4",
+        "layout": {
+          "anchor": "top-left",
+          "h": 48,
+          "mode": "absolute",
+          "w": 48,
+          "x": 1016,
+          "y": 16
+        },
+        "name": "Avatar",
+        "props": {
+          "initials": "",
+          "src": "assets/uploads/1784044236_XenoLogoNoBG.png",
+          "status": "none"
+        },
+        "style": {
+          "bg": "rgba(255,255,255,0.1)",
+          "border": "2px solid linear-gradient(145deg, rgba(25,25,30,1), rgba(15,15,18,1))",
+          "borderRadius": 999,
+          "color": "#FAFAFA",
+          "fontSize": 16,
+          "fontWeight": "bold",
+          "textAlign": "center"
+        },
+        "type": "avatar"
+      },
+      {
+        "id": "button_exit_menu",
+        "type": "button",
+        "name": "Exit Button",
+        "layout": {
+          "anchor": "top-left",
+          "x": 14,
+          "y": 488,
+          "w": 220,
+          "h": 40,
+          "mode": "absolute"
+        },
+        "props": {
+          "text": "EXIT",
+          "variant": "primary",
+          "icon": "LogOut",
+          "iconPosition": "left"
+        },
+        "style": {
+          "bg": "rgba(220, 38, 38, 0.15)",
+          "color": "#EF4444",
+          "border": "1px solid rgba(220, 38, 38, 0.5)",
+          "borderRadius": 10,
+          "fontWeight": "black",
+          "letterSpacing": 1.2,
+          "shadow": "none"
+        },
+        "effects": {
+          "hoverBg": "rgba(220, 38, 38, 0.3)",
+          "hoverBorderColor": "#EF4444",
+          "hoverScale": 1.05,
+          "transition": "fast"
+        },
+        "events": {
+          "click": {
+            "actions": [
+              {
+                "id": "6hmqc7p2aaq",
+                "type": "emit_event",
+                "eventKey": "closeUI"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "divider_mrjb5jdm_o0a82",
+        "layout": {
+          "anchor": "top-left",
+          "h": 8,
+          "mode": "absolute",
+          "w": 240,
+          "x": 3,
+          "y": 468
+        },
+        "name": "Divider",
+        "props": {
+          "orientation": "horizontal"
+        },
+        "style": {
+          "bg": "rgba(255,255,255,0.08)"
+        },
+        "type": "divider"
+      }
+    ],
+    "id": "root_panel",
+    "layout": {
+      "anchor": "top-left",
+      "h": 540,
+      "mode": "absolute",
+      "w": 1080,
+      "x": 60,
+      "y": 60,
+      "z": 100
+    },
+    "name": "Root",
+    "props": [],
+    "style": {
+      "bg": "transparent",
+      "border": "none",
+      "borderRadius": 0,
+      "cursor": "default",
+      "fontFamily": "Fira Code",
+      "letterSpacing": 1.6,
+      "overflow": "hidden",
+      "padding": 0,
+      "shadow": "none",
+      "textTransform": "uppercase"
+    },
+    "type": "panel"
+  },
+  "state": {
+    "armor": 60,
+    "bank": 86400,
+    "cash": 12480,
+    "health": 88,
+    "hunger": 72,
+    "notifications": 3,
+    "playerName": "Player",
+    "weight": 23,
+    "weightMax": 50
+  },
+  "themeConfig": {
+    "typography": {
+      "color": "#F5F5F5",
+      "fontFamily": "Outfit, Inter, sans-serif",
+      "fontScale": 1,
+      "fontSize": 14,
+      "lineHeight": 1.5
+    }
+  }
+}

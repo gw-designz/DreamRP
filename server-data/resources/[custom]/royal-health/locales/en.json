@@ -1,0 +1,30 @@
+{
+    "notify": {
+        "cant_use_downed": "You can't use this while unconscious.",
+        "revived": "You have been revived.",
+        "no_injuries": "You have no injuries.",
+        "injuries_cleared": "All injuries have been cleared.",
+        "invalid_part": "Invalid body part: %s",
+        "injured_part": "Injured %s for %d",
+        "injury_status": "%s: damage %d, bleeding %d"
+    },
+    "items": {
+        "bandage": "You bandaged your wounds and stopped the bleeding.",
+        "firstaid": "You treated your injuries.",
+        "medkit": "You have been fully treated.",
+        "painkillers": "The pain fades away..."
+    },
+    "parts": {
+        "head": "Head",
+        "torso": "Torso",
+        "pelvis": "Pelvis",
+        "left-arm": "Left Arm",
+        "right-arm": "Right Arm",
+        "left-hand": "Left Hand",
+        "right-hand": "Right Hand",
+        "left-leg": "Left Leg",
+        "right-leg": "Right Leg",
+        "left-foot": "Left Foot",
+        "right-foot": "Right Foot"
+    }
+}

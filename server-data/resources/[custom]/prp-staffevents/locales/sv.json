@@ -1,0 +1,283 @@
+{
+    "EVENTS_COMMAND_HELP": "Öppna evenemangsmenyn",
+    "NO_ACCESS": "Du har inte tillgång till evenemangsmenyn.",
+    "SEARCHING": "Söker...",
+    "STASH_LABEL": "Förråd",
+    "INVALID_STATE_ID": "Ogiltigt state-ID",
+    "INVALID_STASH_ID": "Ogiltigt förråds-ID",
+    "INVALID_SCENE_ID": "Ogiltigt scen-ID",
+    "INVALID_OBJECT_ID": "Ogiltigt objekt-ID",
+    "INVALID_LOADOUT_ID": "Ogiltigt utrustnings-ID",
+    "INVALID_NAME": "Namnet får inte vara tomt",
+    "INVALID_NAME_2": "Namnet får inte vara tomt eller längre än 250 tecken",
+    "INVALID_PLAYER_ENTITY": "Ogiltig spelarenhet",
+    "FAILED_TO_SET_ACCESS": "Misslyckades med att ställa in åtkomst",
+    "FAILED_TO_CREATE_EVENT_STASH": "Misslyckades med att skapa evenemangsförråd",
+    "FAILED_TO_CREATE_EVENT_LOADOUT": "Misslyckades med att skapa evenemangsutrustning",
+    "SCENE_DOES_NOT_EXIST": "Evenemangsscenen finns inte",
+    "OBJECT_DOES_NOT_EXIST": "Evenemangsobjektet finns inte",
+    "STASH_DOES_NOT_EXIST": "Evenemangsförrådet finns inte",
+    "LOADOUT_DOES_NOT_EXIST": "Evenemangsutrustningen finns inte",
+    "TELEPORT_DOES_NOT_EXIST": "Teleport finns inte",
+    "FAILED_TO_REMOVE_ACCESS": "Misslyckades med att ta bort åtkomst",
+    "FAILED_TO_PREPARE_INVENTORY": "Misslyckades med att förbereda inventariet",
+    "NO_PERM_CREATE_SCENE": "Du har inte behörighet att skapa evenemangsscener",
+    "NO_PERM_ADD_OBJECT": "Du har inte behörighet att lägga till objekt i evenemangsscener",
+    "NO_PERM_REMOVE_OBJECT": "Du har inte behörighet att ta bort objekt från evenemangsscener",
+    "NO_PERM_ASSIGN_STASH": "Du har inte behörighet att tilldela förråd till objekt",
+    "NO_PERM_ASSIGN_LOADOUT": "Du har inte behörighet att tilldela utrustningar till objekt",
+    "NO_PERM_SET_EVENT_ACCESS": "Du har inte behörighet att ställa in evenemangsåtkomst",
+    "NO_PERM_REMOVE_EVENT_ACCESS": "Du har inte behörighet att ta bort evenemangsåtkomst",
+    "NO_PERM_CREATE_EVENT_STASH": "Du har inte behörighet att skapa evenemangsförråd",
+    "NO_PERM_REMOVE_EVENT_STASH": "Du har inte behörighet att ta bort evenemangsförråd",
+    "NO_PERM_EDIT_EVENT_STASH_ITEMS": "Du har inte behörighet att redigera föremål i evenemangsförråd",
+    "NO_PERM_REFILL_EVENT_STASH": "Du har inte behörighet att fylla på evenemangsförråd",
+    "NO_PERM_CREATE_EVENT_LOADOUT": "Du har inte behörighet att skapa evenemangsutrustning",
+    "NO_PERM_REMOVE_EVENT_LOADOUT": "Du har inte behörighet att ta bort evenemangsutrustning",
+    "NO_PERM_EDIT_EVENT_LOADOUT_ITEMS": "Du har inte behörighet att redigera föremål i evenemangsutrustning",
+    "NO_PERM_REFILL_EVENT_LOADOUT": "Du har inte behörighet att fylla på evenemangsutrustning",
+    "YOU_ARE_NOT_EDITOR": "Du är inte redigerare av denna evenemangsscen",
+    "TO_FAR_AWAY_FROM_STASH": "Du är för långt bort från förrådet",
+    "CANCELED_SEARCHING_STASH": "Du har avbrutit sökningen i förrådet",
+    "MINIGAME_FAILED": "Du misslyckades",
+    "OPEN_STASH": "Öppna förråd",
+    "USE": "Använd",
+    "GET_LOADOUT": "Hämta utrustning",
+    "RETURN_LOADOUT": "Lämna tillbaka utrustning",
+    "TO_FAR_AWAY": "Du är för långt bort",
+    "INVALID_TELEPORT_COORDS": "Ogiltiga teleportkoordinater",
+    "ROTATE": "Rotera",
+    "INVENTORY_NOT_FOUND": "Inventariet hittades inte",
+    "CONFIRM": "Bekräfta",
+    "SOMETHING_WENT_WRONG": "Något gick fel",
+    "YOU_ALREADY_HAVE_EQUIPMENT": "Du har redan evenemangsutrustning. Lämna tillbaka den först.",
+    "YOU_DONT_HAVE_EQUIPMENT": "Du har ingen evenemangsutrustning.",
+    "CHARACTER_NOT_ONLINE": "Karaktären är inte online",
+    "LOADOUT_EQUIPPED": "Utrustning utrustad",
+    "LOADOUT_RETURNED": "Utrustning återlämnad",
+    "YOUR_EQUIPMENT_WAS_RETURNED": "Din evenemangsutrustning har återlämnats",
+    "MINUTES": "%s minuter",
+    "HOUR": "%s timme",
+    "HOURS": "%s timmar",
+    "WEEK": "Vecka",
+    "WEEKS": "%s veckor",
+    "MONTH": "Månad",
+    "MONTHS": "%s månader",
+    "NO_PERM_IMPORT_SCENE": "Du har inte behörighet att importera evenemangsscener",
+    "IMPORT_CODE_NOT_FOUND": "Importkoden hittades inte",
+    "IMPORT_CODE_FAILED": "Importkoden är ogiltig",
+    "IMPORT_CODE_UNKNOWN_ERROR": "Okänt fel",
+    "NO_PERM_EXPORT_SCENE": "Du har inte behörighet att exportera evenemangsscener",
+    "EXPORT_CODE_UNKNOWN_ERROR": "Okänt fel under export",
+    "MODEL_FAILED_TO_LOAD": "Misslyckades med att ladda modellen",
+    "ui": {
+        "common": {
+            "cancel": "Avbryt",
+            "save": "Spara",
+            "delete": "Radera",
+            "edit": "Redigera",
+            "close": "Stäng",
+            "createNew": "Skapa ny",
+            "import": "Importera",
+            "export": "Exportera",
+            "new": "Ny"
+        },
+        "sidebar": {
+            "scenes": "Scener",
+            "stashes": "Förråd",
+            "users": "Användare"
+        },
+        "scenes": {
+            "title": "Scener",
+            "createdBy": "Skapad av:",
+            "createdAt": "Skapad den:",
+            "lastUpdated": "Senast uppdaterad:",
+            "numObjects": "Antal objekt:",
+            "active": "Aktiv",
+            "disabled": "Inaktiverad",
+            "disable": "Inaktivera",
+            "enable": "Aktivera",
+            "searchPlaceholder": "Sök scener...",
+            "noScenes": "Inga scener tillgängliga.",
+            "createDialog": {
+                "title": "Skapa ny scen",
+                "namePlaceholder": "Ange namn...",
+                "createButton": "Skapa scen"
+            },
+            "importDialog": {
+                "title": "Importera scen",
+                "codePlaceholder": "Importkod...",
+                "importing": "Importerar...",
+                "importButton": "Importera scen"
+            },
+            "exportDialog": {
+                "title": "Exportera scen",
+                "codePlaceholder": "Exportkod...",
+                "copyButton": "Kopiera kod",
+                "copied": "Exportkod kopierad till urklipp"
+            },
+            "renameDialog": {
+                "title": "Ändra namn",
+                "namePlaceholder": "Ange namn...",
+                "saveButton": "Spara"
+            },
+            "deleteDialog": {
+                "title": "Radera scen",
+                "message": "Är du säker på att du vill radera denna scen? Denna åtgärd kan inte ångras."
+            }
+        },
+        "stashes": {
+            "title": "Förråd",
+            "noStashes": "Inga förråd tillgängliga.",
+            "createDialog": {
+                "title": "Skapa nytt förråd",
+                "namePlaceholder": "Ange namn...",
+                "createButton": "Skapa förråd"
+            },
+            "deleteDialog": {
+                "title": "Radera förråd",
+                "message": "Är du säker på att du vill radera detta förråd? Denna åtgärd kan inte ångras."
+            }
+        },
+        "users": {
+            "title": "Användare",
+            "addUser": "Lägg till användare",
+            "searchPlaceholder": "Sök...",
+            "noCharacters": "Inga karaktärer tillgängliga.",
+            "removeAccess": "Ta bort åtkomst",
+            "addDialogTitle": "Lägg till användaråtkomst",
+            "editDialogTitle": "Redigera användaråtkomst",
+            "targetId": "Mål-ID",
+            "targetPlaceholder": "Ange målets server-ID...",
+            "loading": "Laddar...",
+            "foundUser": "Hittade användare: {{firstName}} {{lastName}} ({{username}})",
+            "notFound": "Ingen användare hittades",
+            "removeDialog": {
+                "title": "Ta bort användaråtkomst",
+                "message": "Är du säker på att du vill ta bort den här användarens åtkomst? Denna åtgärd kan inte ångras."
+            }
+        },
+        "inventoryEditor": {
+            "stash": "Förråd",
+            "loadout": "Loadout",
+            "notFound": "{{type}} hittades inte...",
+            "editingTitle": "Redigerar {{type}} ({{name}})",
+            "deleteButton": "Radera {{type}}",
+            "nameLabel": "Namn på {{type}}",
+            "stashItemsLabel": "Föremål tillagda i förrådet",
+            "loadoutItemsLabel": "Föremål i loadout",
+            "addItem": "Lägg till föremål",
+            "editItem": "Redigera föremål",
+            "item": "Föremål",
+            "selectItem": "Välj föremål",
+            "searchItems": "Sök efter föremål...",
+            "noItems": "Inga föremål hittades.",
+            "count": "Antal",
+            "overrideDecay": "Åsidosätt förfall (standard {{default}}) i sekunder",
+            "selectDecayTime": "Välj förfallotid",
+            "addItemButton": "Lägg till föremål",
+            "saveChanges": "Spara ändringar",
+            "deleteDialog": {
+                "title": "Radera objekt",
+                "message": "Är du säker på att du vill radera detta? Denna åtgärd kan inte ångras.",
+                "confirm": "Radera"
+            }
+        },
+        "sceneEditor": {
+            "title": "REDIGERINGSLÄGE FÖR SCEN",
+            "close": "Stäng",
+            "renderDistance": "RENDER-AVSTÅND",
+            "changeCameraPosition": "ÄNDRA KAMERAPOSITION",
+            "coordsPlaceholder": "Koordinater (0.0, 0.0, 0.0)",
+            "changePosition": "Ändra position",
+            "objects": {
+                "title": "OBJEKT I SCENEN",
+                "searchPlaceholder": "Sök objekt...",
+                "noMatch": "Inga objekt matchar din sökning",
+                "enabled": "Aktiverad",
+                "disabled": "Inaktiverad",
+                "teleportLabel": "TELEPORT",
+                "teleportTo": "Teleportera till",
+                "deleteDialog": {
+                    "title": "Radera objekt",
+                    "message": "Är du säker på att du vill radera detta objekt? Denna åtgärd kan inte ångras.",
+                    "confirm": "Radera"
+                }
+            },
+            "objectTypes": {
+                "prop": "Prop",
+                "ped": "Ped",
+                "teleport": "Teleport"
+            },
+            "editor": {
+                "editTitle": "REDIGERA {{label}}",
+                "selectModel": "Välj modell...",
+                "customModel": "Anpassad modell",
+                "searchModel": "Sök modell...",
+                "noModel": "Ingen modell hittades.",
+                "deleteButton": "Radera {{label}}",
+                "name": "Namn",
+                "namePlaceholder": "Ange anpassat namn",
+                "deleteDialog": {
+                    "title": "Radera objekt",
+                    "message": "Är du säker na att du vill radera detta? Denna åtgärd kan inte ångras.",
+                    "confirm": "Radera"
+                }
+            },
+            "creator": {
+                "noItemsInCategory": "Inga föremål i denna kategori",
+                "noPedModels": "Inga ped-modeller tillgängliga",
+                "searchPed": "Sök ped-modell...",
+                "createTeleport": "Skapa teleport",
+                "customModelDialog": {
+                    "title": "Ange anpassad modell",
+                    "placeholder": "prop_chair_01a",
+                    "createButton": "Skapa prop"
+                }
+            },
+            "ped": {
+                "health": "Hälsa",
+                "armor": "Skyddsväst",
+                "weapon": "Vapen",
+                "accuracy": "Träffsäkerhet (0-100)",
+                "animation": "Animation",
+                "godMode": "Oövervinnerlig (God Mode)",
+                "frozen": "Fastlåst",
+                "aggresionType": "Aggressionstyp",
+                "passive": "Passiv",
+                "aggressive": "Aggressiv mot alla",
+                "hostile": "Hostil mot alla",
+                "networked": "Nätverksansluten",
+                "networkedTooltip": "Om peden ska synkroniseras för alla spelare (använd för vakter osv.)"
+            },
+            "prop": {
+                "animDict": "Anpassad animations-dict",
+                "animName": "Anpassat animationsnamn",
+                "loopAnim": "Loopa animation"
+            },
+            "teleport": {
+                "label": "Etikett",
+                "coords": "Teleport-koordinater (x, y, z, heading)",
+                "coordsPlaceholder": "200.1, -314.44921, 25.3, 12.0",
+                "labelPlaceholder": "Ange etikett för interaktion...",
+                "addDestination": "Lägg till destination"
+            },
+            "inventory": {
+                "stash": "Förråd",
+                "stashName": "Förrådsnamn",
+                "refillTooltip": "Fyll på förrådsföremål",
+                "stashCommon": "Gemensamt förråd",
+                "stashCommonTooltip": "Om inaktiverad har varje spelare sin egen kopia av förrådet",
+                "progressBar": "Använd förloppsindikator vid genomsökning",
+                "progressBarDuration": "Längd på förloppsindikator (ms)",
+                "progressBarAnim": "Animation för förloppsindikator",
+                "minigames": "Minispel",
+                "minigameType": "Typ av minispel",
+                "options": "Alternativ",
+                "addMinigame": "Lägg till minispel",
+                "refillSuccess": "Förrådsföremål påfyllda",
+                "refillFailed": "Misslyckades med att fylla på förrådsföremål"
+            }
+        }
+    }
+}

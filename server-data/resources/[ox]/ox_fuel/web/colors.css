@@ -1,0 +1,48 @@
+/*
+ * Pump faceplate colors - change these to restyle every pump.
+ */
+:root {
+	/* faceplate */
+	--plate: #3a2427;
+	--plate-light: #482d31;
+	--plate-dark: #241517;
+	--plate-edge: #1a0f11;
+
+	/* physical buttons */
+	--key: #d9c4c7;
+	--key-shade: #a98f93;
+	--key-text: #3a2427;
+	--side-key: #d8b3b8;
+	--side-key-shade: #a5787e;
+	--side-key-text: #4a2c31;
+	--key-cancel: #d7383f;
+	--key-clear: #d9a72e;
+	--key-enter: #3e9b4f;
+
+	/* contactless reader + card slot */
+	--reader: #2b1b1d;
+	--reader-icon: #8f5c63;
+	--slot: #c9a6ab;
+
+	/* LCD screen */
+	--lcd-frame: #0d0b0c;
+	--lcd: #eef0da;
+	--lcd-text: #23262b;
+	--lcd-dim: #5c5f58;
+	--lcd-line: #c9cbb4;
+	--lcd-soft: #e4e6cf;
+	--lcd-dark: #1f2228;
+	--lcd-dark-text: #f2f3e4;
+	--lcd-block: #3a3e47;
+	--lcd-good: #2f7d3f;
+	--lcd-bad: #b3262f;
+
+	/* stickers */
+	--sign: #f2c6cb;
+	--sign-text: #a8343f;
+	--tile-1: #3d4e9e;
+	--tile-2: #b8343e;
+	--tile-3: #e9e3dc;
+	--tile-4: #d4a22a;
+	--tile-text: #2a1d1f;
+}

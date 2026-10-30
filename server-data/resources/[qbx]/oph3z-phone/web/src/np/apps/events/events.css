@@ -1,0 +1,174 @@
+.nev {
+    --bg: #f4f4f6;
+    --accent: #4b1fd1;
+    --key-bg: #0b0b0b;
+    --key-fg: #fff;
+}
+
+.nev-splash .npk-splash__title {
+    font-size: 2.6em;
+    line-height: 1;
+    max-width: 5em;
+}
+
+.nev-splash .npk-splash__tag {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.nev-head {
+    flex: 0 0 auto;
+    padding: 3.3em 1em 0.8em;
+    border-bottom: 0.0625em solid #dcdde1;
+}
+
+.nev-head__row {
+    display: flex;
+    align-items: center;
+}
+
+.nev-head h1 {
+    flex: 1 1 auto;
+    margin: 0;
+    font-size: 1.55em;
+    font-weight: 700;
+}
+
+.nev-head p {
+    margin: 0.2em 0 0;
+    font-size: 0.7em;
+    color: #333;
+}
+
+.nev-add {
+    width: 1.9em;
+    height: 1.9em;
+    border-radius: 0.35em;
+    background: #2a1a5e;
+    color: #c5a8ff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nev-add .fa-svg {
+    width: 0.8em !important;
+    height: 0.8em !important;
+}
+
+.nev-card {
+    margin-bottom: 0.6em;
+    background: #fff;
+    border: 0.0625em solid #d9dade;
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+.nev-card__top {
+    display: flex;
+    gap: 0.6em;
+    padding: 0.7em 0.8em;
+}
+
+.nev-card__top > span {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.nev-card__top b {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.nev-card__top em {
+    font-style: normal;
+    font-size: 0.68em;
+    color: #333;
+}
+
+.nev-btn {
+    align-self: flex-start;
+    padding: 0.4em 0.9em;
+    border-radius: 0.2em;
+    background: #2a1a5e;
+    color: #b48bff !important;
+    font-weight: 700;
+    font-size: 0.78em !important;
+    cursor: pointer;
+}
+
+.nev-card__stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.55em 0.8em;
+    border-top: 0.0625em solid #e4e5e8;
+}
+
+.nev-card__stats > span {
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+}
+
+.nev-card__stats .fa-svg {
+    width: 0.95em !important;
+    height: 0.95em !important;
+    color: #222;
+}
+
+.nev-card__stats > span > span {
+    display: flex;
+    flex-direction: column;
+}
+
+.nev-card__stats small {
+    font-size: 0.56em;
+    color: #444;
+}
+
+.nev-card__stats b {
+    font-size: 0.68em;
+    font-weight: 700;
+}
+
+.is-purple {
+    color: #5b2cf5;
+}
+
+.is-orange {
+    color: #e48a12;
+}
+
+.nev-tabs {
+    background: #fff;
+}
+
+.nev-tabs .npk-tab.is-on {
+    color: #4b1fd1;
+}
+
+.nev-desc {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.45;
+}
+
+.nev-actions {
+    display: flex;
+    gap: 0.45em;
+}
+
+.nev-actions .npk-btn {
+    flex: 1;
+}
+
+.nev-actions .npk-btn--danger {
+    flex: 0 0 auto;
+}
+
+.nev-when {
+    flex-wrap: wrap;
+}

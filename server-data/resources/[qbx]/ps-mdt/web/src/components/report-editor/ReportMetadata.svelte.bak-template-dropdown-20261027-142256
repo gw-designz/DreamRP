@@ -1,0 +1,178 @@
+<script lang="ts">
+	interface TemplateOption {
+		id: number;
+		name: string;
+		type: string;
+		content: string;
+	}
+
+	import { untrack } from "svelte";
+	import { ico } from "@/icons";
+	import SkSelect from "../SkSelect.svelte";
+	import { getReportTypesForJob } from "../../constants/index";
+	import { formatDate as fmtDate, formatTime as fmtTime } from "../../utils/datetime";
+	import type { JobType } from "../../interfaces/IUser";
+
+	interface Props {
+		title: string;
+		reportId: string;
+		officer: string;
+		type: string;
+		created: number;
+		lastUpdated: number;
+		onTitleChange: (title: string) => void;
+		onTypeChange: (type: string) => void;
+		onInsertTemplate?: () => void;
+		onSelectTemplate?: (template: TemplateOption) => void;
+		availableTemplates?: TemplateOption[];
+		showTemplateMenu?: boolean;
+		jobType?: JobType;
+	}
+
+	let {
+		title,
+		reportId,
+		officer,
+		type,
+		created,
+		lastUpdated,
+		onTitleChange,
+		onTypeChange,
+		onInsertTemplate,
+		onSelectTemplate,
+		availableTemplates = [],
+		showTemplateMenu = false,
+		jobType = 'leo',
+	}: Props = $props();
+
+	// Local state so parent re-renders don't reset inputs
+	let localTitle = $state(title);
+	let localType = $state(type);
+
+	// Sync from parent only when the prop value actually differs from what we last sent
+	$effect(() => { const t = title; untrack(() => { if (t !== localTitle) localTitle = t; }); });
+	$effect(() => { const t = type; untrack(() => { if (t !== localType) localType = t; }); });
+
+	function handleTitleInput() {
+		onTitleChange(localTitle);
+	}
+
+	function handleTypeChange() {
+		onTypeChange(localType);
+	}
+
+	let matchingTemplates = $derived(availableTemplates.filter((t) => t.type === localType));
+
+	let reportTypes = $derived(getReportTypesForJob(jobType));
+
+	// Keep a report's saved type selectable even if it isn't in this job's list
+	let typeOptions = $derived(
+		[...reportTypes, ...(localType && !reportTypes.includes(localType) ? [localType] : [])].map((t) => ({
+			value: t,
+			label: t,
+			icon: "description",
+		})),
+	);
+
+	function formatDate(timestamp: number): string {
+		return fmtDate(timestamp);
+	}
+
+	function formatTime(timestamp: number): string {
+		return fmtTime(timestamp);
+	}
+</script>
+
+<div class="report-info">
+	<div class="field-grid">
+		<div class="field">
+			<span class="field-label">Report Type</span>
+			<SkSelect
+				bind:value={localType}
+				options={typeOptions}
+				placeholder="Select type"
+				onchange={handleTypeChange}
+			/>
+		</div>
+		<div class="field">
+			<span class="field-label">Title <span class="req">*</span></span>
+			<div class="sk-field">
+				<input
+					type="text"
+					placeholder="Report Title"
+					bind:value={localTitle}
+					oninput={handleTitleInput}
+				/>
+			</div>
+		</div>
+	</div>
+
+	<div class="meta-row">
+		{#if reportId}
+			<span class="meta-chip"><span class="meta-key">ID</span> {reportId}</span>
+		{/if}
+		<span class="meta-chip">
+			<span class="meta-key">Officer</span>
+			{#if officer.startsWith('NO CALLSIGN')}
+				<span class="officer-badge no-callsign">NO CALLSIGN</span>
+				{officer.replace('NO CALLSIGN', '').trim()}
+			{:else if officer.includes(' ')}
+				<span class="officer-badge">{officer.split(' ')[0]}</span>
+				{officer.split(' ').slice(1).join(' ')}
+			{:else}
+				{officer}
+			{/if}
+		</span>
+		<span class="meta-chip"><span class="meta-key">Created</span> {formatDate(created)} {formatTime(created)}</span>
+		{#if onInsertTemplate && matchingTemplates.length > 0}
+			<div class="template-wrapper">
+				<button class="sk-btn sk-sm" onclick={onInsertTemplate} type="button">
+					<span class="material-icons">{@html ico("description")}</span>
+					{matchingTemplates.length === 1 ? "Insert Template" : "Templates..."}
+				</button>
+				{#if showTemplateMenu && matchingTemplates.length > 1 && onSelectTemplate}
+					<div class="template-dropdown">
+						{#each matchingTemplates as tmpl (tmpl.id)}
+							<button class="template-dropdown-item" onclick={() => onSelectTemplate(tmpl)} type="button">
+								{tmpl.name}
+							</button>
+						{/each}
+					</div>
+				{/if}
+			</div>
+		{/if}
+	</div>
+
+	<span class="field-label content-label">Report Content <span class="req">*</span></span>
+</div>
+
+<style>
+	.report-info { padding: 16px 20px 0; }
+
+	.field-grid { display: grid; grid-template-columns: minmax(180px, 1fr) 2fr; gap: 14px; }
+	.field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+	.field-label { font-size: 13px; font-weight: 600; color: #fff; }
+	.req { color: var(--accent-text); }
+	.field .sk-field > input { font-size: 14px; }
+
+	.meta-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+	.meta-chip { display: inline-flex; align-items: center; gap: 6px; margin: 0 3px; padding: 4px 12px; font-size: 12px; font-weight: 600; color: #fff; position: relative; isolation: isolate; }
+	.meta-chip::before { content: ''; position: absolute; inset: 0; transform: skewX(-14deg); background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-primary); border-radius: 3px; z-index: -1; pointer-events: none; }
+	.meta-key { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--secondary-text); }
+
+	.officer-badge { position: relative; isolation: isolate; color: var(--accent-text); font-size: 10px; font-weight: 700; padding: 1px 7px; margin: 0 2px; white-space: nowrap; }
+	.officer-badge::before { content: ''; position: absolute; inset: 0; transform: skewX(-14deg); background: rgba(var(--accent-rgb), 0.15); border: 1px solid rgba(var(--accent-rgb), 0.35); border-radius: 2px; z-index: -1; pointer-events: none; }
+	.officer-badge.no-callsign { color: var(--secondary-text); }
+	.officer-badge.no-callsign::before { background: rgba(255, 255, 255, 0.04); border-color: var(--border-primary); }
+
+	.content-label { display: block; margin-top: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border-primary); }
+
+	.template-wrapper { position: relative; }
+	.template-dropdown { position: absolute; top: calc(100% + 4px); left: 0; min-width: 180px; z-index: 30; padding: 4px; display: flex; flex-direction: column; background: var(--menu-bg); border: 1px solid var(--border-secondary); border-left: 3px solid var(--accent); border-radius: 4px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); }
+	.template-dropdown-item { display: block; width: 100%; text-align: left; background: transparent; border: none; padding: 7px 10px; color: var(--primary-text); font-size: 12px; font-weight: 600; cursor: pointer; border-radius: 2px; }
+	.template-dropdown-item:hover { background: rgba(var(--accent-rgb), 0.18); color: #fff; }
+
+	@media (max-width: 1024px) {
+		.field-grid { grid-template-columns: 1fr; }
+	}
+</style>

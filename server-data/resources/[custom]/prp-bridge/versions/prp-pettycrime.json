@@ -1,0 +1,10 @@
+{
+  "version": "1.0.4",
+  "changes": [
+      "Fix parking meter (and letterbox/mail) showing found nothing when loot was actually given"
+  ],
+  "filesAffected": [
+      "fxmanifest.lua",
+      "server/utils.lua"
+  ]
+}

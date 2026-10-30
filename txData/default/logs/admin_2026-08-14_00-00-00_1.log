@@ -1,0 +1,245 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/14/2026, 12:13:15 AM
+================================================================
+================================================================
+======== Log Rotated - 8/14/2026, 12:13:19 AM                   
+================================================================
+[00:19:36][realscrp] logged in from 127.0.0.1 via password auth
+[00:19:44][realscrp] Refreshed resources
+[00:19:48][realscrp] Stopped resource "codem-phone"
+[00:19:49][realscrp] Stopped resource "codem-phone-props"
+[00:19:51][realscrp] Ensured resource "phone-render"
+[00:19:57][realscrp] Ensured resource "qs-smartphone-pro"
+[00:20:55][realscrp] Refreshed resources
+[00:20:57][realscrp] Ensured resource "xsound"
+[00:21:01][realscrp] Ensured resource "qs-smartphone-pro"
+[00:21:06][realscrp] Ensured resource "phone-radio"
+[00:21:08][realscrp] Ensured resource "phone-recorder"
+[00:23:55][realscrp] Refreshed resources
+[00:23:57][realscrp] executed "RESTART SERVER"
+[00:38:40][realscrp] Refreshed resources
+[00:38:58][realscrp] Ensured resource "frkn-waypoint"
+[00:43:09][realscrp] Refreshed resources
+[00:43:11][realscrp] Stopped resource "frkn-waypoint"
+[00:43:53][realscrp] Refreshed resources
+[00:43:54][realscrp] Ensured resource "bablo-pausemenu"
+[00:46:57][realscrp] Refreshed resources
+[00:48:58][realscrp] Refreshed resources
+[00:49:01][realscrp] Ensured resource "nn_lib"
+[00:49:02][realscrp] Ensured resource "nn_bridge"
+[00:49:07][realscrp] Ensured resource "is_interaction"
+[00:49:09][realscrp] Ensured resource "is_lib"
+[00:49:15][realscrp] Ensured resource "nano_pos"
+[00:52:19][realscrp] Refreshed resources
+[00:52:23][realscrp] Ensured resource "is_interaction"
+[00:52:31][realscrp] Ensured resource "uniqx_burgershot"
+[00:52:36][realscrp] Ensured resource "nano_pos"
+[00:56:05][realscrp] Refreshed resources
+[00:56:06][realscrp] Ensured resource "nano_pos"
+[01:05:57][realscrp] Refreshed resources
+[01:06:02][realscrp] Ensured resource "frkn-racingv2"
+[01:08:57][realscrp] Refreshed resources
+[01:08:59][realscrp] Ensured resource "ox_inventory"
+[01:09:04][realscrp] Ensured resource "p_itemclothes"
+[01:09:09][realscrp] Ensured resource "ox_fuel"
+[01:09:15][realscrp] Ensured resource "frkn-racingv2"
+[01:10:44][realscrp] Refreshed resources
+[01:10:47][realscrp] Ensured resource "ox_inventory"
+[01:11:14][realscrp] Ensured resource "ox_fuel"
+[01:11:40][realscrp] Refreshed resources
+[01:11:54][realscrp] Refreshed resources
+[01:11:56][realscrp] Ensured resource "ox_inventory"
+[01:11:58][realscrp] Ensured resource "ox_fuel"
+[01:26:49][realscrp] Refreshed resources
+[01:26:55][realscrp] Ensured resource "ox_inventory"
+[01:30:32][realscrp] Stopped resource "qbx_adminmenu"
+[01:30:33][realscrp] Ensured resource "luxu_admin"
+[01:33:57][realscrp] Refreshed resources
+[01:34:00][realscrp] Ensured resource "forger-vehcontrol"
+[01:38:38][realscrp] Refreshed resources
+[01:38:41][realscrp] Stopped resource "izzy-hudv6"
+[01:38:43][realscrp] Ensured resource "cortex-hud"
+[01:40:20][realscrp] Refreshed resources
+[01:40:28][realscrp] Ensured resource "cortex-lib"
+[01:40:32][realscrp] Ensured resource "cortex-hud"
+[01:43:01][realscrp] Refreshed resources
+[01:43:04][realscrp] Ensured resource "cortex-lib"
+[01:43:06][realscrp] Ensured resource "cortex-hud"
+[01:44:33][realscrp] Refreshed resources
+[01:44:34][realscrp] Ensured resource "cortex-lib"
+[01:44:38][realscrp] Ensured resource "cortex-hud"
+[01:47:13][realscrp] Refreshed resources
+[01:47:17][realscrp] Stopped resource "luxu_admin"
+[01:47:18][realscrp] Ensured resource "cortex-admin"
+[01:51:32][realscrp] Refreshed resources
+[01:51:36][realscrp] Stopped resource "p_dojmdt"
+[01:51:39][realscrp] Stopped resource "wasabi_mdt"
+[01:51:40][realscrp] Ensured resource "p_dojmdt"
+[01:51:42][realscrp] Ensured resource "cortex_mdtsv"
+[01:53:38][realscrp] Ensured resource "cortex_mdtsv"
+[01:55:05][realscrp] executed "refresh"
+[01:55:12][realscrp] executed "restart cortex_mdtsv"
+[01:57:21][realscrp] Refreshed resources
+[01:57:24][realscrp] Stopped resource "cortex-hud"
+[01:57:25][realscrp] Ensured resource "v-hud"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/14/2026, 12:25:42 PM
+================================================================
+[12:29:55][realscrp] logged in from 127.0.0.1 via password auth
+[12:35:41][realscrp] executed "STOP SERVER"
+[12:35:41][realscrp] Config changes: server.dataPath
+[12:35:41][realscrp] Resetting server data settings.
+[12:35:46][realscrp] Config changes: 
+[12:35:46][realscrp] Changing global settings via setup stepper and started Deployer.
+[12:35:47][realscrp] Setting recipe.
+[12:36:02][realscrp] Running recipe.
+[12:45:52][realscrp] Config changes: server.dataPath
+[12:45:52][realscrp] Completed and committed server deploy.
+[12:56:27][realscrp] Refreshed resources
+[12:56:30][realscrp] Stopped resource "ox_inventory"
+[12:56:33][realscrp] Ensured resource "qs-armor"
+[12:56:41][realscrp] Ensured resource "qs-licenses"
+[12:56:42][realscrp] Ensured resource "qs-shops"
+[12:56:44][realscrp] Ensured resource "qs-weapondraw"
+[12:56:46][realscrp] Ensured resource "qs-weaponsonback"
+[12:56:47][realscrp] Ensured resource "qs-backpacks"
+[12:56:55][realscrp] Ensured resource "qs-inventory"
+[12:58:23][realscrp] Refreshed resources
+[12:58:24][realscrp] Ensured resource "qs-inventory"
+[12:58:33][realscrp] Ensured resource "qs-armor"
+[12:58:34][realscrp] Ensured resource "qs-backpacks"
+[12:58:35][realscrp] Ensured resource "qs-backpacks"
+[12:58:37][realscrp] Ensured resource "qs-licenses"
+[12:58:38][realscrp] Ensured resource "qs-shops"
+[12:58:39][realscrp] Ensured resource "qs-shops"
+[12:58:40][realscrp] Ensured resource "qs-weapondraw"
+[12:58:41][realscrp] Ensured resource "qs-weaponsonback"
+[13:01:16][realscrp] Refreshed resources
+[13:01:18][realscrp] Stopped resource "qs-inventory"
+[13:01:23][realscrp] Ensured resource "ox_inventory"
+[13:05:19][realscrp] Refreshed resources
+[13:05:22][realscrp] Ensured resource "ox_fuel"
+[13:05:28][realscrp] executed "RESTART SERVER"
+[13:17:29][realscrp] Refreshed resources
+[13:17:32][realscrp] Ensured resource "ox_inventory"
+[13:17:39][realscrp] Ensured resource "ox_fuel"
+[13:17:42][realscrp] Ensured resource "qbx_ambulancejob"
+[13:29:28][realscrp] Refreshed resources
+[13:29:32][realscrp] Stopped resource "npwd_qbx_garages"
+[13:29:34][realscrp] Stopped resource "npwd"
+[13:29:35][realscrp] Stopped resource "npwd_qbx_mail"
+[13:29:36][realscrp] Stopped resource "qbx_npwd"
+[13:29:39][realscrp] Refreshed resources
+[13:30:07][realscrp] Refreshed resources
+[13:30:23][realscrp] Refreshed resources
+[13:30:27][realscrp] Ensured resource "prp-phone"
+[13:31:01][realscrp] Refreshed resources
+[13:31:02][realscrp] Ensured resource "prp-phone"
+[13:32:17][realscrp] executed "refresh"
+[13:32:20][realscrp] executed "restart prp-phone"
+[13:33:30][realscrp] Refreshed resources
+[13:33:37][realscrp] Ensured resource "cylex_multichar"
+[13:34:21][realscrp] executed "RESTART SERVER"
+[13:37:02][realscrp] Refreshed resources
+[13:37:05][realscrp] Ensured resource "prp-phone"
+[13:48:46][realscrp] Refreshed resources
+[13:48:49][realscrp] Stopped resource "qbx_adminmenu"
+[13:48:50][realscrp] Ensured resource "ps-adminmenu"
+[14:00:57][realscrp] Refreshed resources
+[14:01:03][realscrp] Ensured resource "av_laptop"
+[14:02:45][realscrp] Refreshed resources
+[14:02:49][realscrp] Ensured resource "ox_inventory"
+[14:02:55][realscrp] Ensured resource "ps-adminmenu"
+[14:04:15][realscrp] Refreshed resources
+[14:05:09][realscrp] Refreshed resources
+[14:05:12][realscrp] Ensured resource "ox_inventory"
+[14:05:15][realscrp] Ensured resource "ox_fuel"
+[14:05:18][realscrp] Ensured resource "qbx_ambulancejob"
+[14:05:22][realscrp] Ensured resource "ps-adminmenu"
+[14:15:17][realscrp] Refreshed resources
+[14:15:24][realscrp] Ensured resource "df_shops"
+[14:15:42][realscrp] executed "RESTART SERVER"
+[14:18:02][realscrp] Stopped resource "qbx_adminmenu"
+[14:18:51][realscrp] Stopped resource "df_shops"
+[14:22:40][realscrp] Refreshed resources
+[14:22:45][realscrp] Stopped resource "qbx_hud"
+[14:22:46][realscrp] Ensured resource "royal-hud"
+[14:22:49][realscrp] Ensured resource "royal-health"
+[14:22:55][realscrp] Ensured resource "royal-hud"
+[14:24:31][realscrp] Refreshed resources
+[14:24:34][realscrp] Ensured resource "ps-adminmenu"
+[14:31:38][realscrp] Refreshed resources
+[14:31:41][realscrp] Stopped resource "qbx_radialmenu"
+[14:31:42][realscrp] Ensured resource "rs_radial"
+[14:32:27][realscrp] executed "RESTART SERVER"
+[14:48:17][realscrp] Refreshed resources
+[14:48:20][realscrp] Ensured resource "qbx_ambulancejob"
+[14:48:21][realscrp] Ensured resource "ox_fuel"
+[15:05:07][realscrp] Refreshed resources
+[15:05:11][realscrp] Ensured resource "ox_inventory"
+[15:05:18][realscrp] Ensured resource "qbx_ambulancejob"
+[15:05:31][realscrp] Ensured resource "ox_fuel"
+[15:06:50][realscrp] Refreshed resources
+[15:13:57][realscrp] Refreshed resources
+[15:14:00][realscrp] Stopped resource "ox_doorlock"
+[15:14:01][realscrp] Ensured resource "FRKN_DOORLOCK"
+[15:22:06][realscrp] executed "refresh"
+[15:22:09][realscrp] executed "restart FRKN_DOORLOCK"
+[15:34:51][realscrp] Refreshed resources
+[15:34:54][realscrp] Ensured resource "ox_inventory"
+[16:23:51][realscrp] Refreshed resources
+[16:23:55][realscrp] Ensured resource "cfx_onx_gov_clothing"
+[16:24:57][realscrp] executed "RESTART SERVER"
+[16:26:26][realscrp] executed "RESTART SERVER"
+[16:27:56][realscrp] Refreshed resources
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/14/2026, 10:29:02 PM
+================================================================
+[22:29:24][realscrp] logged in from 127.0.0.1 via password auth
+[22:29:26][realscrp] Refreshed resources
+[22:30:22][realscrp] Refreshed resources
+[22:30:26][realscrp] Ensured resource "prp-staffevents"
+[22:37:01][realscrp] Refreshed resources
+[22:37:25][realscrp] Stopped resource "cylex_multichar"
+[22:37:27][realscrp] Ensured resource "prp-characters"
+[22:38:06][realscrp] executed "RESTART SERVER"
+[22:38:41][realscrp] executed "RESTART SERVER"
+[22:43:31][realscrp] Refreshed resources
+[22:43:44][realscrp] Ensured resource "ox_inventory"
+[22:44:01][realscrp] Ensured resource "ox_fuel"
+[22:44:02][realscrp] Ensured resource "qbx_ambulancejob"
+[22:44:03][realscrp] Ensured resource "prp-scenes"
+[22:44:05][realscrp] Ensured resource "prp-scenes"
+[22:45:47][realscrp] Refreshed resources
+[22:49:14][realscrp] executed "RESTART SERVER"
+[22:53:08][realscrp] Refreshed resources
+[22:55:03][realscrp] executed "RESTART SERVER"
+[23:05:16][realscrp] executed "RESTART SERVER"
+[23:10:13][realscrp] Refreshed resources
+[23:10:20][realscrp] Ensured resource "prp-mrpd-park"
+[23:10:26][realscrp] Ensured resource "prp-mrpd"
+[23:12:14][realscrp] Refreshed resources
+[23:12:17][realscrp] Stopped resource "prp-characters"
+[23:12:26][realscrp] Ensured resource "prp-characters"
+[23:12:32][realscrp] Stopped resource "prp-characters"
+[23:12:34][realscrp] Ensured resource "cylex_multichar"
+[23:24:49][realscrp] Refreshed resources
+[23:31:54][realscrp] Refreshed resources
+[23:31:57][realscrp] Ensured resource "prp-minigames"
+[23:32:03][realscrp] Ensured resource "prp-boosting-assets"
+[23:32:04][realscrp] Ensured resource "prp-boosting"
+[23:32:16][realscrp] Ensured resource "ox_inventory"
+[23:32:22][realscrp] Ensured resource "ox_fuel"
+[23:32:23][realscrp] Ensured resource "qbx_ambulancejob"
+[23:33:34][realscrp] Refreshed resources
+[23:33:37][realscrp] Ensured resource "ox_inventory"
+[23:33:42][realscrp] Ensured resource "qbx_ambulancejob"
+[23:33:43][realscrp] Ensured resource "ox_fuel"
+[23:47:56][realscrp] Refreshed resources
+[23:47:58][realscrp] Ensured resource "xsound"
+[23:54:03][realscrp] Refreshed resources
+[23:54:09][realscrp] Ensured resource "phone-render"
+[23:54:14][realscrp] Ensured resource "qs-smartphone-pro"
+[23:54:25][realscrp] executed "RESTART SERVER"
+[23:56:09][realscrp] Stopped resource "prp-characters"
+[23:56:26][realscrp] Stopped resource "prp-phone"

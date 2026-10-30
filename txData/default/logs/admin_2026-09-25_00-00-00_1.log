@@ -1,0 +1,48 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 9/25/2026, 1:08:39 AM
+================================================================
+================================================================
+======== Log Rotated - 9/25/2026, 1:08:42 AM                    
+================================================================
+[01:13:35][realscrp] logged in from 127.0.0.1 via password auth
+[01:16:48][realscrp] Refreshed resources
+[01:16:52][realscrp] Ensured resource "ox_inventory"
+[01:17:05][realscrp] Ensured resource "ox_fuel"
+[01:20:31][realscrp] Refreshed resources
+[01:20:34][realscrp] Ensured resource "ox_lib"
+[01:20:42][realscrp] Ensured resource "av_laptop"
+[01:20:47][realscrp] Ensured resource "bablo-pettycrimes"
+[01:20:51][realscrp] Ensured resource "p_policejob"
+[01:20:54][realscrp] Ensured resource "prp-boosting"
+[01:20:55][realscrp] Ensured resource "prp-boosting"
+[01:20:57][realscrp] Ensured resource "prp-boosting-assets"
+[01:21:03][realscrp] Refreshed resources
+[01:21:12][realscrp] Ensured resource "nolag_properties"
+[01:21:14][realscrp] Ensured resource "cloud-shop"
+[01:21:16][realscrp] Ensured resource "bablo-multicharacter"
+[01:21:20][realscrp] Ensured resource "yseries"
+[01:24:10][realscrp] Refreshed resources
+[01:24:23][realscrp] executed "RESTART SERVER"
+[01:25:53][realscrp] Refreshed resources
+[01:25:55][realscrp] Ensured resource "Renewed-Banking"
+[01:26:38][realscrp] Refreshed resources
+[01:26:39][realscrp] Ensured resource "Renewed-Banking"
+[01:28:41][realscrp] Stopped resource "p_itemclothes"
+[01:28:48][realscrp] Ensured resource "ox_inventory"
+[01:28:55][realscrp] Ensured resource "ox_fuel"
+[01:33:31][realscrp] Refreshed resources
+[01:33:35][realscrp] Ensured resource "ox_inventory"
+[01:34:09][realscrp] Refreshed resources
+[01:34:10][realscrp] Ensured resource "ox_inventory"
+[01:37:07][realscrp] Refreshed resources
+[01:37:09][realscrp] Ensured resource "ox_inventory"
+[01:37:17][realscrp] Refreshed resources
+[01:37:18][realscrp] Ensured resource "ox_inventory"
+[01:37:44][realscrp] Stopped resource "np-quickmenu"
+[01:41:27][realscrp] Refreshed resources
+[01:41:30][realscrp] Ensured resource "Renewed-Banking"
+[01:43:51][realscrp] Refreshed resources
+[01:44:17][realscrp] Refreshed resources
+[01:44:19][realscrp] Ensured resource "Renewed-Banking"
+[01:46:16][realscrp] Refreshed resources
+[01:46:19][realscrp] Ensured resource "business-creator"

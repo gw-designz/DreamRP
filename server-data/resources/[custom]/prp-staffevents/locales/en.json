@@ -1,0 +1,283 @@
+{
+    "EVENTS_COMMAND_HELP": "Open the event menu",
+    "NO_ACCESS": "You do not have access to the event menu.",
+    "SEARCHING": "Searching...",
+    "STASH_LABEL": "Stash",
+    "INVALID_STATE_ID": "Invalid state ID",
+    "INVALID_STASH_ID": "Invalid stash ID",
+    "INVALID_SCENE_ID": "Invalid scene ID",
+    "INVALID_OBJECT_ID": "Invalid object ID",
+    "INVALID_LOADOUT_ID": "Invalid loadout ID",
+    "INVALID_NAME": "Name cannot be nil or empty",
+    "INVALID_NAME_2": "Name cannot be nil or empty or longer than 250 characters",
+    "INVALID_PLAYER_ENTITY": "Invalid player entity",
+    "FAILED_TO_SET_ACCESS": "Failed to set access",
+    "FAILED_TO_CREATE_EVENT_STASH": "Failed to create event stash",
+    "FAILED_TO_CREATE_EVENT_LOADOUT": "Failed to create event loadout",
+    "SCENE_DOES_NOT_EXIST": "Event scene does not exist",
+    "OBJECT_DOES_NOT_EXIST": "Event object does not exist",
+    "STASH_DOES_NOT_EXIST": "Event stash does not exist",
+    "LOADOUT_DOES_NOT_EXIST": "Event loadout does not exist",
+    "TELEPORT_DOES_NOT_EXIST": "Teleport does not exist",
+    "FAILED_TO_REMOVE_ACCESS": "Failed to remove access",
+    "FAILED_TO_PREPARE_INVENTORY": "Failed to prepare inventory",
+    "NO_PERM_CREATE_SCENE": "You do not have permission to create event scenes",
+    "NO_PERM_ADD_OBJECT": "You do not have permission to add objects to event scenes",
+    "NO_PERM_REMOVE_OBJECT": "You do not have permission to remove objects from event scenes",
+    "NO_PERM_ASSIGN_STASH": "You do not have permission to assign stashes to objects",
+    "NO_PERM_ASSIGN_LOADOUT": "You do not have permission to assign loadouts to objects",
+    "NO_PERM_SET_EVENT_ACCESS": "You do not have permission to set event access",
+    "NO_PERM_REMOVE_EVENT_ACCESS": "You do not have permission to remove event access",
+    "NO_PERM_CREATE_EVENT_STASH": "You do not have permission to create event stashes",
+    "NO_PERM_REMOVE_EVENT_STASH": "You do not have permission to remove event stashes",
+    "NO_PERM_EDIT_EVENT_STASH_ITEMS": "You do not have permission to edit event stash items",
+    "NO_PERM_REFILL_EVENT_STASH": "You do not have permission to refill event stashes",
+    "NO_PERM_CREATE_EVENT_LOADOUT": "You do not have permission to create event loadouts",
+    "NO_PERM_REMOVE_EVENT_LOADOUT": "You do not have permission to remove event loadouts",
+    "NO_PERM_EDIT_EVENT_LOADOUT_ITEMS": "You do not have permission to edit event loadout items",
+    "NO_PERM_REFILL_EVENT_LOADOUT": "You do not have permission to refill event loadouts",
+    "YOU_ARE_NOT_EDITOR": "You are not an editor of this event scene",
+    "TO_FAR_AWAY_FROM_STASH": "You are too far away from the stash",
+    "CANCELED_SEARCHING_STASH": "You have canceled searching the stash",
+    "MINIGAME_FAILED": "You have failed",
+    "OPEN_STASH": "Open stash",
+    "USE": "Use",
+    "GET_LOADOUT": "Get equipment",
+    "RETURN_LOADOUT": "Return equipment",
+    "TO_FAR_AWAY": "You are too far away",
+    "INVALID_TELEPORT_COORDS": "Invalid teleport coordinates",
+    "ROTATE": "Rotate",
+    "INVENTORY_NOT_FOUND": "Inventory not found",
+    "CONFIRM": "Confirm",
+    "SOMETHING_WENT_WRONG": "Something went wrong",
+    "YOU_ALREADY_HAVE_EQUIPMENT": "You already have event equipment. Return it first.",
+    "YOU_DONT_HAVE_EQUIPMENT": "You do not have event equipment.",
+    "CHARACTER_NOT_ONLINE": "Character is not online",
+    "LOADOUT_EQUIPPED": "Equipment equipped",
+    "LOADOUT_RETURNED": "Equipment returned",
+    "YOUR_EQUIPMENT_WAS_RETURNED": "Your event equipment was returned",
+    "MINUTES": "%s minutes",
+    "HOUR": "%s hour",
+    "HOURS": "%s hours",
+    "WEEK": "Week",
+    "WEEKS": "%s weeks",
+    "MONTH": "Month",
+    "MONTHS": "%s months",
+    "NO_PERM_IMPORT_SCENE": "You do not have permission to import event scenes",
+    "IMPORT_CODE_NOT_FOUND": "Import code not found",
+    "IMPORT_CODE_FAILED": "Import code is invalid",
+    "IMPORT_CODE_UNKNOWN_ERROR": "Unknown error",
+    "NO_PERM_EXPORT_SCENE": "You do not have permission to export event scenes",
+    "EXPORT_CODE_UNKNOWN_ERROR": "Unknown error during export",
+    "MODEL_FAILED_TO_LOAD": "Failed to load model",
+    "ui": {
+        "common": {
+            "cancel": "Cancel",
+            "save": "Save",
+            "delete": "Delete",
+            "edit": "Edit",
+            "close": "Close",
+            "createNew": "Create New",
+            "import": "Import",
+            "export": "Export",
+            "new": "New"
+        },
+        "sidebar": {
+            "scenes": "Scenes",
+            "stashes": "Stashes",
+            "users": "Users"
+        },
+        "scenes": {
+            "title": "Scenes",
+            "createdBy": "Created by:",
+            "createdAt": "Created at:",
+            "lastUpdated": "Last updated:",
+            "numObjects": "Number of objects:",
+            "active": "Active",
+            "disabled": "Disabled",
+            "disable": "Disable",
+            "enable": "Enable",
+            "searchPlaceholder": "Search scenes...",
+            "noScenes": "No scenes available.",
+            "createDialog": {
+                "title": "Create new Scene",
+                "namePlaceholder": "Enter name...",
+                "createButton": "Create Scene"
+            },
+            "importDialog": {
+                "title": "Import Scene",
+                "codePlaceholder": "Import Code...",
+                "importing": "Importing...",
+                "importButton": "Import Scene"
+            },
+            "exportDialog": {
+                "title": "Export Scene",
+                "codePlaceholder": "Export Code...",
+                "copyButton": "Copy Code",
+                "copied": "Export code copied to clipboard"
+            },
+            "renameDialog": {
+                "title": "Change name",
+                "namePlaceholder": "Enter name...",
+                "saveButton": "Save"
+            },
+            "deleteDialog": {
+                "title": "Delete Scene",
+                "message": "Are you sure you want to delete this scene? This action cannot be undone."
+            }
+        },
+        "stashes": {
+            "title": "Stashes",
+            "noStashes": "No stashes available.",
+            "createDialog": {
+                "title": "Create New Stash",
+                "namePlaceholder": "Enter name...",
+                "createButton": "Create Stash"
+            },
+            "deleteDialog": {
+                "title": "Delete Stash",
+                "message": "Are you sure you want to delete this stash? This action cannot be undone."
+            }
+        },
+        "users": {
+            "title": "Users",
+            "addUser": "Add user",
+            "searchPlaceholder": "Search...",
+            "noCharacters": "No characters available.",
+            "removeAccess": "Remove Access",
+            "addDialogTitle": "Add user access",
+            "editDialogTitle": "Edit user access",
+            "targetId": "Target Id",
+            "targetPlaceholder": "Enter target server id...",
+            "loading": "Loading...",
+            "foundUser": "Found user: {{firstName}} {{lastName}} ({{username}})",
+            "notFound": "No user found",
+            "removeDialog": {
+                "title": "Remove user access",
+                "message": "Are you sure you want to remove this user's access? This action cannot be undone."
+            }
+        },
+        "inventoryEditor": {
+            "stash": "Stash",
+            "loadout": "Loadout",
+            "notFound": "{{type}} not found...",
+            "editingTitle": "Editing {{type}} ({{name}})",
+            "deleteButton": "Delete {{type}}",
+            "nameLabel": "{{type}} Name",
+            "stashItemsLabel": "Items added to Stash",
+            "loadoutItemsLabel": "Items in Loadout",
+            "addItem": "Add item",
+            "editItem": "Edit item",
+            "item": "Item",
+            "selectItem": "Select Item",
+            "searchItems": "Search for items...",
+            "noItems": "No items found.",
+            "count": "Count",
+            "overrideDecay": "Override Decay (default {{default}}) in seconds",
+            "selectDecayTime": "Select Decay Time",
+            "addItemButton": "Add Item",
+            "saveChanges": "Save Changes",
+            "deleteDialog": {
+                "title": "Delete Object",
+                "message": "Are you sure you want to delete this? This action cannot be undone.",
+                "confirm": "Delete"
+            }
+        },
+        "sceneEditor": {
+            "title": "EDITING SCENE MODE",
+            "close": "Close",
+            "renderDistance": "RENDER DISTANCE",
+            "changeCameraPosition": "CHANGE CAMERA POSITION",
+            "coordsPlaceholder": "Coords (0.0, 0.0, 0.0)",
+            "changePosition": "Change position",
+            "objects": {
+                "title": "OBJECTS IN SCENE",
+                "searchPlaceholder": "Search objects...",
+                "noMatch": "No objects match your search",
+                "enabled": "Enabled",
+                "disabled": "Disabled",
+                "teleportLabel": "TELEPORT",
+                "teleportTo": "Teleport to",
+                "deleteDialog": {
+                    "title": "Delete Object",
+                    "message": "Are you sure you want to delete this object? This action cannot be undone.",
+                    "confirm": "Delete"
+                }
+            },
+            "objectTypes": {
+                "prop": "Prop",
+                "ped": "Ped",
+                "teleport": "Teleport"
+            },
+            "editor": {
+                "editTitle": "EDIT {{label}}",
+                "selectModel": "Select model...",
+                "customModel": "Custom Model",
+                "searchModel": "Search model...",
+                "noModel": "No model found.",
+                "deleteButton": "Delete {{label}}",
+                "name": "Name",
+                "namePlaceholder": "Enter custom name",
+                "deleteDialog": {
+                    "title": "Delete Object",
+                    "message": "Are you sure you want to delete this? This action cannot be undone.",
+                    "confirm": "Delete"
+                }
+            },
+            "creator": {
+                "noItemsInCategory": "No items in this category",
+                "noPedModels": "No ped models available",
+                "searchPed": "Search ped model...",
+                "createTeleport": "Create Teleport",
+                "customModelDialog": {
+                    "title": "Enter Custom Model",
+                    "placeholder": "prop_chair_01a",
+                    "createButton": "Create Prop"
+                }
+            },
+            "ped": {
+                "health": "Health",
+                "armor": "Armor",
+                "weapon": "Weapon",
+                "accuracy": "Accuracy (0-100)",
+                "animation": "Animation",
+                "godMode": "God Mode",
+                "frozen": "Frozen",
+                "aggresionType": "Aggression Type",
+                "passive": "Passive",
+                "aggressive": "Aggressive to everyone",
+                "hostile": "Hostile to everyone",
+                "networked": "Networked",
+                "networkedTooltip": "If ped will be synced for all players (use for guards etc)"
+            },
+            "prop": {
+                "animDict": "Custom anim dict",
+                "animName": "Custom anim name",
+                "loopAnim": "Loop Anim"
+            },
+            "teleport": {
+                "label": "Label",
+                "coords": "Teleport coords (x, y, z, heading)",
+                "coordsPlaceholder": "200.1, -314.44921, 25.3, 12.0",
+                "labelPlaceholder": "Enter interaction label...",
+                "addDestination": "Add Destination"
+            },
+            "inventory": {
+                "stash": "Stash",
+                "stashName": "Stash Name",
+                "refillTooltip": "Refill stash items",
+                "stashCommon": "Stash Common",
+                "stashCommonTooltip": "If disabled every player has their own copy of the stash",
+                "progressBar": "Use progress bar when searching stash",
+                "progressBarDuration": "Progress bar duration (ms)",
+                "progressBarAnim": "Progress bar animation",
+                "minigames": "Minigames",
+                "minigameType": "Minigame Type",
+                "options": "Options",
+                "addMinigame": "Add Minigame",
+                "refillSuccess": "Stash items refilled",
+                "refillFailed": "Failed to refill stash items"
+            }
+        }
+    }
+}

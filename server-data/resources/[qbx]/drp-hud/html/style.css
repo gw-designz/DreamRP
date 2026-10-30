@@ -1,0 +1,1254 @@
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('fonts/BarlowCondensed-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('fonts/BarlowCondensed-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('fonts/BarlowCondensed-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('fonts/Rajdhani-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('fonts/Rajdhani-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+:root {
+    /* HUD colors: black / graphite plates, grey type, one neon red accent */
+    --c-accent-rgb: 255, 36, 58;
+    --c-accent: rgb(var(--c-accent-rgb));
+    --c-accent-icon: #ff3348;
+    --c-accent-track: rgba(120, 22, 32, .55);
+    --c-accent-glow: rgba(var(--c-accent-rgb), .7);
+    --c-text: #f2f3f5;
+    --c-text-inv: #0a0a0c;
+    --c-grey: #8d929b;
+    --c-grey-dark: #3a3d43;
+    --c-panel: rgba(8, 8, 10, .8);
+    --c-track: rgba(60, 63, 70, .45);
+    --c-bar: #e9ebee;
+    --c-warn: #ffb020;
+    --c-crit: #ff2a3d;
+    --c-lights: #f2f3f5;
+    --c-toast-status: var(--c-accent);
+    --c-dim: rgba(255, 255, 255, .3);
+    --c-digit-dim: #34373c;
+    --c-glyph: #d9dce1;
+    --c-glyph-text: #0a0a0c;
+    --c-controls: rgba(8, 8, 10, .78);
+    --c-frame: rgba(8, 8, 10, .92);
+    --c-fuel: #d9dce1;
+    --c-fuel-track: rgba(90, 94, 102, .5);
+
+    /* status bar colors: red for life, greys for the rest, warm only where it means "eat" */
+    --c-st-health: #ff2a3d;
+    --c-st-armor: #e9ebee;
+    --c-st-hunger: #ff8a3d;
+    --c-st-thirst: #9aa3ad;
+    --c-st-stress: #c2185b;
+    --c-st-oxygen: #c7d0d8;
+    --c-st-voice: #ffffff;
+    --c-st-radio: #ff6b7a;
+    --c-st-dev: #8d929b;
+
+    --shadow: 0 1px 3px rgba(0, 0, 0, .7);
+    --icon-shadow: drop-shadow(0 1px 2px rgba(0, 0, 0, .6));
+
+    /* chamfered plates: top-left and bottom-right corners are cut by --cut */
+    --cut: 10px;
+
+    /* settings menu + editor: black panel, red accent, skewed buttons */
+    --m-accent-rgb: 255, 36, 58;
+    --m-accent: rgb(var(--m-accent-rgb));
+    --m-accent-text: rgba(255, 128, 140, .95);
+    --m-overlay: rgba(0, 0, 0, .5);
+    --m-head: rgba(14, 14, 16, .98);
+    --m-panel: rgb(24, 24, 28);
+    --m-panel-solid: rgba(12, 12, 14, .97);
+    --m-card: rgb(12, 12, 14);
+    --m-row: rgb(24, 24, 28);
+    --m-row-hover: rgb(32, 32, 37);
+    --m-row-focus: rgba(var(--m-accent-rgb), .1);
+    --m-btn: rgb(22, 22, 26);
+    --m-light: #ffffff;
+    --m-ink: #0a0a0c;
+    --m-text: rgba(255, 255, 255, .9);
+    --m-muted: rgba(220, 222, 228, .55);
+    --m-line: rgba(200, 202, 210, .18);
+    --m-line-soft: rgba(200, 202, 210, .1);
+    --m-grid: rgba(255, 255, 255, .06);
+
+    /* type */
+    --font: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    --font-hud: 'Inter', 'Segoe UI', Arial, sans-serif;
+    --font-digits: 'Rajdhani', 'Inter', sans-serif;
+    --tracking: .015em;
+
+    /* shape */
+    --radius: 4px;
+    --radius-sm: 2px;
+
+    /* status (design px at 1080p) */
+    --edge-x: 24px;
+    --edge-y: 20px;
+    --st-w: 61px;
+    --st-icon: 22px;
+    --st-tile: 42px;
+
+    /* location bar */
+    --loc-edge-y: 22px;
+    --loc-font: 17px;
+    --loc-icon: 17px;
+
+    /* vehicle */
+    --speed-font: 50px;
+    --speedo-edge-x: 30px;
+    --speedo-edge-y: 15px;
+
+    /* bars / ammo / toasts / controls */
+    --pbar-w: 180px;
+    --pbar-edge-y: 22px;
+    --ammo-font: 40px;
+    --ammo-edge-x: 40px;
+    --ammo-edge-y: 280px;
+    --toast-edge-x: 24px;
+    --toast-edge-y: 90px;
+    --controls-edge-x: 30px;
+    --controls-edge-x-vehicle: 330px; /* clears the speedometer while driving */
+    --controls-edge-y: 22px;
+    --controls-font: 15px;
+    --glyph: 22px;
+    --glyph-font: 12px;
+
+    /* motion */
+    --ease: cubic-bezier(.2, .8, .2, 1);
+    --t-fast: .15s;
+    --t-med: .35s;
+
+    /* set by script.js */
+    --k: 1;
+    --kr: 1;
+    --km: 1;
+    --mx: 0px;
+    --my: 0px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+    user-select: none;
+}
+
+body {
+    font-family: var(--font);
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: var(--tracking);
+    text-transform: uppercase;
+    color: var(--c-text);
+    text-shadow: var(--shadow);
+    -webkit-font-smoothing: antialiased;
+}
+
+button { font: inherit; text-transform: inherit; letter-spacing: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+/* focus is drawn by the menu's own focus model (keyboard + gamepad), not the browser ring */
+button:focus, input:focus { outline: none; }
+
+.ico {
+    display: inline-block;
+    flex: none;
+    width: var(--st-icon);
+    height: var(--st-icon);
+    background-color: currentColor;
+    -webkit-mask: var(--icon) center / contain no-repeat;
+    mask: var(--icon) center / contain no-repeat;
+}
+.i-heart { --icon: url('icons/heart.svg'); }
+.i-heart-solid { --icon: url('icons/heart-solid.svg'); }
+.i-shield { --icon: url('icons/shield.svg'); }
+.i-food { --icon: url('icons/food.svg'); }
+.i-glass { --icon: url('icons/glass.svg'); }
+.i-burger { --icon: url('icons/burger.svg'); }
+.i-burger-fries { --icon: url('icons/burger-fries.svg'); }
+.i-utensils { --icon: url('icons/utensils.svg'); }
+.i-cup { --icon: url('icons/cup.svg'); }
+.i-mic { --icon: url('icons/mic.svg'); }
+.i-brain { --icon: url('icons/brain.svg'); }
+.i-bolt { --icon: url('icons/bolt.svg'); }
+.i-fuel { --icon: url('icons/fuel.svg'); }
+.i-seatbelt { --icon: url('icons/seatbelt.svg'); }
+.i-gun { --icon: url('icons/gun.svg'); }
+.i-runner { --icon: url('icons/runner.svg'); }
+.i-swimmer { --icon: url('icons/swimmer.svg'); }
+.i-lights { --icon: url('icons/lights.svg'); }
+.i-lock { --icon: url('icons/lock.svg'); }
+.i-unlock { --icon: url('icons/unlock.svg'); }
+.i-code { --icon: url('icons/code.svg'); }
+.i-radio { --icon: url('icons/radio.svg'); }
+.i-lungs { --icon: url('icons/lungs.svg'); }
+.i-wallet { --icon: url('icons/wallet.svg'); }
+.i-bank { --icon: url('icons/bank.svg'); }
+.i-plug { --icon: url('icons/plug.svg'); }
+.i-engine { --icon: url('icons/engine.svg'); }
+.i-bike { --icon: url('icons/bike.svg'); }
+.i-hazard { --icon: url('icons/hazard.svg'); }
+.i-anchor { --icon: url('icons/anchor.svg'); }
+.i-turn { --icon: url('icons/turn.svg'); }
+.i-cruise { --icon: url('icons/cruise.svg'); }
+.i-user { --icon: url('icons/user.svg'); }
+.i-compass { --icon: url('icons/compass.svg'); }
+.i-pin { --icon: url('icons/pin.svg'); }
+.i-map { --icon: url('icons/map.svg'); }
+.i-arrow { --icon: url('icons/arrow.svg'); }
+.i-gear { --icon: url('icons/gear.svg'); }
+.i-car { --icon: url('icons/car.svg'); }
+.i-grid { --icon: url('icons/grid.svg'); }
+.i-save { --icon: url('icons/save.svg'); }
+.i-reset { --icon: url('icons/reset.svg'); }
+.i-map-wave { --icon: url('icons/map-wave.svg'); }
+.i-heart-duo { --icon: url('icons/heart-duo.svg'); }
+.i-code-duo { --icon: url('icons/code-duo.svg'); }
+.i-close { --icon: url('icons/close.svg'); }
+
+@keyframes blink { 50% { opacity: .15; } }
+
+.toast, #control-bar, .glyph:not(.circle), .g-gear { clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut)); }
+
+/* ---------- widgets ---------- */
+
+#hud {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    transition: opacity var(--t-med) var(--ease);
+}
+/* HUD type */
+#hud {
+    font-family: var(--font-hud);
+    font-style: normal;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+}
+#hud.hidden { opacity: 0; }
+
+/* --ox / --oy are layout-editor offsets in 1080p px, --s is the per-widget size */
+.widget {
+    position: absolute;
+    --ox: 0;
+    --oy: 0;
+    --s: 1;
+    --tx: calc(var(--ox) * var(--kr) * 1px);
+    --ty: calc(var(--oy) * var(--kr) * 1px);
+    transition: opacity var(--t-med) var(--ease);
+}
+.widget.off { opacity: 0; }
+.widget.disabled { display: none; }
+
+.anchor-bl {
+    left: calc(var(--mx) + var(--edge-x) * var(--kr));
+    bottom: calc(var(--my) + var(--edge-y) * var(--kr));
+    transform-origin: left bottom;
+    transform: translate(var(--tx), var(--ty)) scale(calc(var(--k) * var(--s)));
+}
+.anchor-br {
+    right: calc(var(--mx) + var(--edge-r, 0px) * var(--kr));
+    bottom: calc(var(--my) + var(--edge-b, 0px) * var(--kr));
+    transform-origin: right bottom;
+    transform: translate(var(--tx), var(--ty)) scale(calc(var(--k) * var(--s)));
+}
+.anchor-tr {
+    right: calc(var(--mx) + var(--edge-r, 0px) * var(--kr));
+    top: calc(var(--my) + var(--edge-t, 0px) * var(--kr));
+    transform-origin: right top;
+    transform: translate(var(--tx), var(--ty)) scale(calc(var(--k) * var(--s)));
+}
+.anchor-tl {
+    left: calc(var(--mx) + var(--edge-l, 0px) * var(--kr));
+    top: calc(var(--my) + var(--edge-t, 0px) * var(--kr));
+    transform-origin: left top;
+    transform: translate(var(--tx), var(--ty)) scale(calc(var(--k) * var(--s)));
+}
+.anchor-bc {
+    left: 50%;
+    bottom: calc(var(--my) + var(--edge-b, 0px) * var(--kr));
+    transform-origin: center bottom;
+    transform: translate(calc(-50% + var(--tx)), var(--ty)) scale(calc(var(--k) * var(--s)));
+}
+.anchor-tc {
+    left: 50%;
+    top: calc(var(--my) + var(--edge-t, 0px) * var(--kr));
+    transform-origin: center top;
+    transform: translate(calc(-50% + var(--tx)), var(--ty)) scale(calc(var(--k) * var(--s)));
+}
+
+/* ---------- status: one tile per stat, filled from the bottom to its value ---------- */
+
+.status-row { display: flex; align-items: flex-end; }
+
+.st {
+    --c: var(--c-bar);
+    width: var(--st-w);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    color: var(--c-text);
+    transition: color var(--t-med) linear;
+}
+.st > .ico { filter: var(--icon-shadow); }
+.st.off, .st.disabled { display: none; }
+
+/* Status styles (Settings > Player Stats > Stats Style) live in ui.css: bars, hex, square, circle. */
+
+.st[data-stat="health"] { --c: var(--c-st-health); }
+.st[data-stat="armor"] { --c: var(--c-st-armor); }
+.st[data-stat="hunger"] { --c: var(--c-st-hunger); }
+.st[data-stat="thirst"] { --c: var(--c-st-thirst); }
+.st[data-stat="stress"] { --c: var(--c-st-stress); }
+.st[data-stat="oxygen"] { --c: var(--c-st-oxygen); }
+.st[data-stat="voice"] { --c: var(--c-st-voice); }
+.st[data-stat="radio"] { --c: var(--c-st-radio); }
+.st[data-stat="dev"] { --c: var(--c-st-dev); }
+
+/* low health / armor and low needs: fill and icon turn warn / crit */
+.st.warn { --c: var(--c-warn); color: var(--c-warn); }
+.st.crit, .st.low { --c: var(--c-crit); color: var(--c-crit); }
+.st.crit > .ico { animation: blink .8s step-end infinite; }
+
+#voice.talking > .ico { color: var(--c-accent); filter: drop-shadow(0 0 4px var(--c-accent-glow)); }
+#voice.radio { --c: var(--c-st-radio); }
+#voice.radio > .ico { color: var(--c-st-radio); }
+
+/* ---------- top location bar ---------- */
+
+#w-location {
+    --edge-t: var(--loc-edge-y);
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    padding: 9px 46px 10px;
+    background: linear-gradient(90deg, transparent, rgba(8, 8, 10, .62) 16%, rgba(8, 8, 10, .62) 84%, transparent);
+    font-size: var(--loc-font);
+    line-height: 1;
+    white-space: nowrap;
+}
+#w-location::after {
+    content: "";
+    position: absolute;
+    left: 12%;
+    right: 12%;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--c-accent), transparent);
+    box-shadow: 0 0 6px var(--c-accent-glow);
+}
+#heading { min-width: 24px; font-family: var(--font-digits); font-size: 1.2em; font-weight: 700; color: var(--c-accent); }
+.loc-item { display: flex; align-items: center; gap: 10px; }
+.loc-item .ico { width: var(--loc-icon); height: var(--loc-icon); color: var(--c-accent-icon); filter: var(--icon-shadow); }
+.loc-item.off, .loc-item.empty { display: none; }
+.wp-arrow { transform: rotate(var(--wp-rot, 0deg)); transition: transform .2s linear; }
+
+#w-location.no-compass #loc-dir,
+#w-location.no-waypoint #mm-waypoint,
+#w-location.no-location #loc-street,
+#w-location.no-location #loc-zone { display: none; }
+
+/* ---------- item toasts ---------- */
+
+#w-toasts { --edge-r: var(--toast-edge-x); --edge-t: var(--toast-edge-y); }
+#toast-list { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.toast {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 240px;
+    height: 52px;
+    padding: 0 14px 0 6px;
+    background: linear-gradient(90deg, rgba(var(--c-accent-rgb), .18), transparent 45%), var(--c-panel);
+    box-shadow: inset 2px 0 0 var(--c-accent);
+    animation: toast-in .35s var(--ease);
+    transition: opacity .3s var(--ease), transform .3s var(--ease);
+}
+.toast.out { opacity: 0; transform: translateX(24px); }
+.toast-img {
+    width: 48px;
+    height: 40px;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-text);
+}
+.toast-img img { max-width: 44px; max-height: 38px; object-fit: contain; }
+.toast-img .ico { width: 28px; height: 22px; }
+.toast-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.toast-name { font-size: 15px; line-height: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.toast-status { font-size: 11px; font-weight: 600; line-height: 1; letter-spacing: .1em; text-transform: uppercase; color: var(--c-toast-status); }
+
+@keyframes toast-in {
+    from { opacity: 0; transform: translateX(24px); }
+    to { opacity: 1; transform: none; }
+}
+
+/* ---------- controls bar (vehicle key hints + script prompts) ---------- */
+
+#w-controls {
+    --edge-r: var(--controls-edge-x);
+    --edge-b: var(--controls-edge-y);
+    transition: opacity var(--t-med) var(--ease), right var(--t-med) var(--ease);
+}
+#hud.in-vehicle #w-controls { --edge-r: var(--controls-edge-x-vehicle); }
+#control-bar {
+    display: flex;
+    align-items: center;
+    --cut: 8px;
+    padding: 9px 16px;
+    background: var(--c-controls);
+    box-shadow: inset 0 -2px 0 rgba(var(--c-accent-rgb), .85);
+    font-size: var(--controls-font);
+    line-height: 1;
+    white-space: nowrap;
+    transition: opacity var(--t-med) var(--ease), transform var(--t-med) var(--ease);
+}
+#control-bar.off { opacity: 0; transform: translateY(8px); }
+.prompt { display: flex; align-items: center; gap: 8px; }
+.prompt + .prompt { margin-left: 18px; }
+.glyph {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    min-width: var(--glyph);
+    height: var(--glyph);
+    --cut: 4px;
+    padding: 0 6px;
+    background: var(--c-glyph);
+    color: var(--c-glyph-text);
+    font-size: var(--glyph-font);
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: none;
+}
+/* controller face buttons (A / B / X / Y) */
+.glyph.circle { width: var(--glyph); padding: 0; border-radius: 50%; }
+.glyph.icon { padding: 0 3px; }
+.glyph .ico { width: 16px; height: 16px; }
+.i-wheel-up { --icon: url('icons/wheel-up.svg'); }
+.i-wheel-down { --icon: url('icons/wheel-down.svg'); }
+
+/* ---------- minimap frame ---------- */
+
+/* zero-size anchor at the map center; the frame is centered on it in design px */
+#w-minimap {
+    --mm-w: 295px;
+    --mm-h: 193px;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    transform-origin: 0 0;
+}
+.mm-frame {
+    position: absolute;
+    left: calc(var(--mm-w) / -2 - 3px);
+    top: calc(var(--mm-h) / -2 - 3px);
+    width: calc(var(--mm-w) + 6px);
+    height: calc(var(--mm-h) + 6px);
+    border: 3px solid var(--c-frame);
+    border-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .45);
+}
+.mm-frame::before {
+    --b: linear-gradient(var(--c-accent), var(--c-accent));
+    content: "";
+    position: absolute;
+    inset: -7px;
+    background:
+        var(--b) left top / 20px 2px no-repeat, var(--b) left top / 2px 20px no-repeat,
+        var(--b) right top / 20px 2px no-repeat, var(--b) right top / 2px 20px no-repeat,
+        var(--b) left bottom / 20px 2px no-repeat, var(--b) left bottom / 2px 20px no-repeat,
+        var(--b) right bottom / 20px 2px no-repeat, var(--b) right bottom / 2px 20px no-repeat;
+    filter: drop-shadow(0 0 3px var(--c-accent-glow));
+}
+
+/* The 3D minimap's canvas: the frame's rectangle grown by a tenth of its height on every
+   side (map3d.js paints the island into the middle and lets edge-pinned blips overhang).
+   Sized in real pixels by applyMinimap() so WebGL renders sharp at any resolution;
+   letter-spacing tells map3d.js the corner radius to round the island to. */
+#map3d { position: absolute; left: 0; top: 0; pointer-events: none; }
+#map3d.hidden { display: none; }
+
+/* ---------- stamina / oxygen ---------- */
+
+#w-bars {
+    --edge-b: var(--pbar-edge-y);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sbar-track {
+    width: var(--pbar-w);
+    margin-top: 3px;
+    background: var(--c-track);
+    overflow: hidden;
+    -webkit-mask: repeating-linear-gradient(90deg, #000 0 7px, transparent 7px 9px);
+    mask: repeating-linear-gradient(90deg, #000 0 7px, transparent 7px 9px);
+}
+.sbar-track.main { height: 4px; }
+.sbar-track.sub { height: 3px; }
+.sbar-track.sub.full { visibility: hidden; }
+.sbar-fill {
+    height: 100%;
+    background: var(--c-bar);
+    transform-origin: left center;
+    transform: scaleX(var(--v, 1));
+    transition: transform .25s linear, background-color var(--t-med) linear;
+}
+.sbar-track.sub .sbar-fill { background: var(--c-st-oxygen); }
+.sbar-track.crit .sbar-fill { background: var(--c-crit); }
+
+/* ---------- speedometer ---------- */
+
+#w-speedo {
+    --edge-r: var(--speedo-edge-x);
+    --edge-b: var(--speedo-edge-y);
+}
+/* 290 x 250 design px; the arc center sits 145px from the top */
+.gauge { position: relative; width: 290px; height: 250px; }
+.gauge-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+.g-rpm-track { fill: none; stroke: var(--c-accent-track); stroke-width: 7; stroke-linecap: round; }
+.g-rpm-fill {
+    fill: none;
+    stroke: var(--c-accent);
+    stroke-width: 7;
+    stroke-linecap: round;
+    stroke-dasharray: var(--rpm, 0) 100;
+    filter: drop-shadow(0 0 4px var(--c-accent-glow));
+    transition: stroke-dasharray .12s linear, stroke var(--t-med) linear;
+}
+/* tick ring around the RPM arc and a dotted inner ring, drawn by buildGauge */
+.g-ticks line { stroke: rgba(141, 146, 155, .4); stroke-width: 1.2; }
+.g-ticks line.major { stroke: rgba(233, 235, 238, .85); stroke-width: 2; }
+.g-inner { fill: none; stroke: rgba(141, 146, 155, .35); stroke-width: 1.5; stroke-dasharray: .1 5; stroke-linecap: round; }
+.g-nums text {
+    fill: var(--c-grey);
+    font-family: var(--font-hud);
+    font-size: 15px;
+    font-weight: 600;
+    text-anchor: middle;
+    dominant-baseline: central;
+    transition: fill var(--t-fast) linear;
+}
+.g-nums text.on { fill: var(--c-accent); }
+/* car: the top of the range goes red; electric: no redline */
+.gauge.car.redline .g-rpm-fill { stroke: #ffffff; filter: drop-shadow(0 0 6px var(--c-accent)) drop-shadow(0 0 2px var(--c-accent)); }
+.gauge.car.redline .g-nums text.on { fill: #ffffff; }
+
+.g-fuel-track { fill: none; stroke: var(--c-fuel-track); stroke-width: 6; stroke-linecap: round; }
+.g-fuel-fill {
+    fill: none;
+    stroke: var(--c-fuel);
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-dasharray: var(--fuel, 100) 100;
+    transition: stroke-dasharray .5s var(--ease), stroke var(--t-med) linear;
+}
+.gauge.fuel-low .g-fuel-fill { stroke: var(--c-crit); }
+.gauge.fuel-low .g-fuel-ico { color: var(--c-crit); }
+.g-fuel-ico {
+    position: absolute;
+    left: 42px;
+    top: 254px;
+    width: 15px;
+    height: 15px;
+    margin: -8px 0 0 -8px;
+    color: var(--c-accent);
+    filter: drop-shadow(0 0 3px var(--c-accent-glow));
+}
+
+.g-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 145px;
+    height: 0;
+    display: flex;
+    justify-content: center;
+}
+/* aircraft only: altitude over the speed */
+.g-gear {
+    position: absolute;
+    --cut: 5px;
+    bottom: 34px;
+    padding: 3px 10px 2px;
+    background: rgba(var(--c-accent-rgb), .16);
+    box-shadow: inset 0 0 0 1px rgba(var(--c-accent-rgb), .55);
+    font-family: var(--font-digits);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    white-space: nowrap;
+}
+.gauge:not(.air) .g-label { display: none; }
+.g-label { color: rgba(255, 255, 255, .6); }
+.g-speed {
+    position: absolute;
+    top: -30px;
+    font-family: var(--font-digits);
+    font-size: var(--speed-font);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .01em;
+    font-variant-numeric: tabular-nums;
+    color: var(--c-text);
+    text-shadow: 0 0 14px rgba(var(--c-accent-rgb), .35);
+}
+#speed-dim { color: var(--c-digit-dim); text-shadow: none; }
+.g-unit {
+    position: absolute;
+    top: 28px;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: .12em;
+    color: var(--c-accent);
+    text-shadow: 0 0 8px rgba(var(--c-accent-rgb), .4);
+}
+
+/* belt (red while unbuckled) and lock, bottom center under the speed */
+.g-mid {
+    position: absolute;
+    left: 50%;
+    top: 233px;
+    display: flex;
+    gap: 10px;
+    transform: translate(-50%, -50%);
+}
+.gi { display: none; color: var(--c-accent); }
+.gi .ico { display: block; width: 17px; height: 17px; }
+#ico-belt.alert { display: block; color: var(--c-crit); filter: drop-shadow(0 0 4px var(--c-accent-glow)); }
+#ico-belt.alert.blink { animation: blink .8s step-end infinite; }
+#ico-lock.on { display: block; filter: drop-shadow(0 0 3px var(--c-accent-glow)); }
+
+/* two dashes at the end of the arc: headlights */
+.g-dashes {
+    position: absolute;
+    left: 243px;
+    top: 240px;
+    display: flex;
+    gap: 4px;
+    transform: translate(-50%, -50%);
+}
+.g-dashes b { width: 13px; height: 4px; border-radius: 1px; background: var(--c-grey-dark); transition: background-color var(--t-med) linear; }
+.g-dashes.on b { background: var(--c-lights); box-shadow: 0 0 6px rgba(255, 255, 255, .6); }
+
+/* ---------- classic style (Settings > General > HUD style) ----------
+   Set on <html data-style="classic"> so the settings preview clones pick it up too.
+   Circuit is the base; everything below only overrides it. */
+
+.g-classic, .loc-cross, .g-dashes b:nth-child(3) { display: none; }
+
+[data-style="classic"], [data-speedo="needle"] {
+    --c-classic-accent: #ff2a3d;
+    --c-classic-glow: rgba(255, 36, 58, .8);
+    --c-classic-tip: #ffffff;
+    --c-classic-track: rgba(200, 204, 210, .55);
+    --c-classic-tick: rgba(255, 255, 255, .45);
+}
+
+/* Location styles (Settings > Minimap > Location style), set on <html data-loc="...">:
+   bar is the base above; pills, compass and minimal override it. */
+
+/* pills: soft dark pills, cross street after a red x */
+[data-loc="pills"] #w-location { gap: 12px; padding: 0; background: none; }
+[data-loc="pills"] #heading { min-width: 0; font-family: inherit; font-size: inherit; color: inherit; }
+[data-loc="pills"] .loc-item { padding: 7px 13px; border-radius: 8px; background: rgba(10, 12, 16, .32); }
+[data-loc="pills"] .loc-cross, [data-loc="minimal"] .loc-cross, [data-loc="compass"] .loc-cross { display: inline-flex; align-items: center; gap: 8px; }
+.loc-cross b { font-weight: 600; color: var(--c-accent-icon); }
+#w-location .loc-cross.off { display: none; }
+[data-loc="pills"] #w-location::after,
+[data-loc="minimal"] #w-location::after,
+[data-loc="compass"] #w-location::after { display: none; }
+
+/* minimal: plain text with a shadow, thin dividers between items */
+[data-loc="minimal"] #w-location { gap: 0; padding: 0; background: none; font-size: 16px; }
+[data-loc="minimal"] .loc-item { padding: 0 14px; text-shadow: 0 1px 4px rgba(0, 0, 0, .9); }
+[data-loc="minimal"] .loc-item + .loc-item { border-left: 1px solid rgba(255, 255, 255, .28); }
+[data-loc="minimal"] .loc-item .ico { width: 15px; height: 15px; }
+
+/* compass: a heading tape on top, street / zone / waypoint centred under it */
+.compass { display: none; }
+[data-loc="compass"] #w-location {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 22px;
+    padding: 0;
+    background: none;
+    font-size: 15px;
+}
+[data-loc="compass"] #loc-dir { display: none; }
+[data-loc="compass"] .loc-item { text-shadow: 0 1px 4px rgba(0, 0, 0, .9); }
+[data-loc="compass"] .loc-item .ico { width: 15px; height: 15px; }
+/* the row takes a whole line so the items wrap under it; the window inside is the tape */
+[data-loc="compass"] .compass { display: flex; flex: 0 0 100%; justify-content: center; margin-bottom: 2px; }
+.cmp-window {
+    position: relative;
+    width: 300px; /* CMP_W in script.js */
+    height: 44px;
+    overflow: hidden;
+    background: linear-gradient(90deg, transparent, rgba(8, 8, 10, .62) 18%, rgba(8, 8, 10, .62) 82%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent);
+    mask: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent);
+}
+/* centre mark: a small accent notch on the top edge */
+.cmp-window::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    border: 5px solid transparent;
+    border-top: 6px solid var(--c-accent);
+    filter: drop-shadow(0 0 3px var(--c-accent-glow));
+}
+.cmp-window::after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--c-accent), transparent);
+}
+.cmp-strip { position: absolute; left: 0; top: 0; bottom: 0; will-change: transform; }
+.cmp-tick { position: absolute; top: 6px; width: 1px; height: 5px; margin-left: -.5px; background: rgba(255, 255, 255, .35); }
+.cmp-tick.major { height: 8px; background: rgba(255, 255, 255, .7); }
+.cmp-tick b {
+    position: absolute;
+    left: 50%;
+    top: 11px;
+    transform: translateX(-50%);
+    font-family: var(--font-digits);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--c-grey);
+}
+.cmp-tick b.cardinal { font-size: 16px; color: var(--c-text); }
+/* waypoint: an accent pin on the tape, faded while pinned to an edge */
+.cmp-wp {
+    position: absolute;
+    top: 2px;
+    z-index: 1;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    border-radius: 50% 50% 50% 0;
+    background: var(--c-accent);
+    transform: rotate(-45deg);
+    box-shadow: 0 0 6px var(--c-accent-glow);
+}
+.cmp-wp.off { display: none; }
+.cmp-wp.edge { opacity: .55; }
+.cmp-deg {
+    position: absolute;
+    left: 50%;
+    bottom: 3px;
+    z-index: 2;
+    transform: translateX(-50%);
+    padding: 0 4px;
+    background: rgba(8, 8, 10, .85);
+    font-family: var(--font-digits);
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--c-accent);
+}
+#w-location.no-heading .cmp-deg { display: none; }
+#w-location.no-compass .compass { display: none; }
+
+/* Minimap styles (Settings > Minimap > Minimap style), set on <html data-map="...">:
+   brackets is the base above; clean, minimal and circle override it. */
+[data-map="clean"] .mm-frame { border-width: 2px; border-color: rgba(10, 12, 16, .55); border-radius: 3px; }
+[data-map="clean"] .mm-frame::before { display: none; }
+
+/* minimal: no frame, a soft shadow and an accent line under the map */
+[data-map="minimal"] .mm-frame { border-color: transparent; box-shadow: 0 6px 18px rgba(0, 0, 0, .35); }
+[data-map="minimal"] .mm-frame::before {
+    inset: auto 18% -4px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--c-accent), transparent);
+}
+
+/* circle: a round frame with an accent ring and four ticks at the cardinal points */
+[data-map="circle"] .mm-frame { border-radius: 50%; border-width: 4px; box-shadow: 0 0 0 1px rgba(var(--c-accent-rgb), .7), 0 0 12px rgba(var(--c-accent-rgb), .35), 0 4px 14px rgba(0, 0, 0, .5); }
+[data-map="circle"] .mm-frame::before {
+    --t: linear-gradient(var(--c-accent), var(--c-accent));
+    inset: -9px;
+    border-radius: 50%;
+    background:
+        var(--t) center top / 2px 7px no-repeat, var(--t) center bottom / 2px 7px no-repeat,
+        var(--t) left center / 7px 2px no-repeat, var(--t) right center / 7px 2px no-repeat;
+}
+
+/* speedometer: red wedge swept by a white needle, tick ring, big white digits, gear below */
+[data-speedo="needle"] .g-circuit { display: none; }
+[data-speedo="needle"] .g-classic { display: inline; }
+.cl-wedge { fill: url(#cl-glow); }
+.cl-track { fill: none; stroke: var(--c-classic-track); stroke-width: 3; stroke-linecap: round; }
+.cl-ticks line { stroke: var(--c-classic-tick); stroke-width: 1.5; stroke-linecap: round; }
+.cl-edge {
+    fill: none;
+    stroke: var(--c-classic-accent);
+    stroke-width: 4;
+    stroke-linecap: round;
+    filter: drop-shadow(0 0 4px var(--c-classic-glow));
+}
+.cl-needle { stroke: #ffffff; stroke-width: 3; stroke-linecap: round; filter: drop-shadow(0 0 2px rgba(0, 0, 0, .6)); }
+.cl-tip { fill: var(--c-classic-tip); filter: blur(3px); opacity: .85; }
+[data-speedo="needle"] .gauge.car.redline .cl-edge { stroke: #ffffff; }
+
+[data-speedo="needle"] .g-speed {
+    top: -54px;
+    font-family: var(--font-hud);
+    font-size: 62px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, .5);
+}
+[data-speedo="needle"] #speed-dim { color: #8a8f96; }
+[data-speedo="needle"] .g-unit { top: 19px; font-size: 15px; font-weight: 800; letter-spacing: .14em; color: #ffffff; text-shadow: var(--shadow); }
+[data-speedo="needle"] .g-gear { bottom: auto; top: 49px; padding: 0; background: none; box-shadow: none; clip-path: none; font-family: var(--font-hud); font-size: 21px; font-weight: 700; color: #ffffff; }
+[data-speedo="needle"] .gauge:not(.air) .g-label { display: none; }
+[data-speedo="needle"] .g-fuel-ico { left: 38px; top: 256px; color: rgba(255, 255, 255, .55); filter: none; }
+[data-speedo="needle"] .g-mid { top: 240px; }
+[data-speedo="needle"] .g-dashes { left: 252px; top: 256px; }
+[data-speedo="needle"] .g-dashes b:nth-child(3) { display: block; }
+[data-speedo="needle"] .g-dashes b { width: 15px; }
+
+/* ---------- speedometer styles (Settings > Vehicle) ----------
+   Modern Pro, Classic Analog, Classic Dual, Digital Linear, Tesla Style and Fitness Watch.
+   Set on <html data-speedo>; each draws its own SVG group plus a .sx overlay, so the shared
+   speed, gear, icons and fuel arc hide. Fills read --rpm / --fuel / --engine and needles --spd
+   (all 0-100) from the gauge. */
+
+.g-modern, .g-analog, .g-dual, .g-linear, .g-ev, .g-watch, .sx { display: none; }
+:is([data-speedo="modern"], [data-speedo="analog"], [data-speedo="dual"], [data-speedo="linear"], [data-speedo="ev"], [data-speedo="watch"])
+    :is(.g-circuit, .g-classic, .g-fuel-track, .g-fuel-fill, .g-center, .g-mid, .g-dashes, .g-fuel-ico) { display: none; }
+[data-speedo="modern"] .g-modern, [data-speedo="analog"] .g-analog, [data-speedo="dual"] .g-dual,
+[data-speedo="linear"] .g-linear, [data-speedo="ev"] .g-ev, [data-speedo="watch"] .g-watch { display: inline; }
+[data-speedo="modern"] .sx-modern, [data-speedo="analog"] .sx-analog, [data-speedo="dual"] .sx-dual,
+[data-speedo="linear"] .sx-linear, [data-speedo="ev"] .sx-ev, [data-speedo="watch"] .sx-watch { display: block; }
+
+/* overlay children are centered on --x / --y in the 290 x 250 box */
+.sx { position: absolute; inset: 0; pointer-events: none; font-family: var(--font-hud); color: var(--c-text); }
+.sx > * { position: absolute; left: var(--x); top: var(--y); transform: translate(-50%, -50%); line-height: 1; white-space: nowrap; }
+
+.sx-fill { fill: none; stroke-linecap: round; transition: stroke-dasharray .12s linear, stroke var(--t-med) linear; }
+.fill-rpm { stroke: var(--c-accent); stroke-dasharray: var(--rpm, 0) 100; }
+.fill-fuel { stroke-dasharray: var(--fuel, 100) 100; transition-duration: .5s; }
+.fill-engine { stroke-dasharray: var(--engine, 100) 100; transition-duration: .5s; }
+.sx-ticks line { stroke: rgba(255, 255, 255, .55); stroke-width: 1.5; stroke-linecap: round; }
+.sx-ticks line.major { stroke: #ffffff; stroke-width: 2.5; }
+.sx-ticks line.red { stroke: var(--c-accent); }
+.sx-ticks text { fill: rgba(255, 255, 255, .7); font-family: var(--font-hud); font-size: 11px; font-weight: 500; text-anchor: middle; dominant-baseline: central; }
+.ndl { transform: rotate(calc((var(--a0) + var(--nv, 0) * var(--span) / 100) * 1deg)); transition: transform .15s linear; }
+.gauge.electric .sx-fuel-ico { --icon: url('icons/plug.svg'); }
+.sx-odo {
+    padding: 4px 9px;
+    border-radius: 4px;
+    background: rgba(18, 18, 20, .92);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    color: #ffffff;
+}
+.sx-odo b { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* modern pro: faint ring, thick red RPM arc under white ticks at 1-5, cog with the gear,
+   thin speed, MPH, engine and fuel bars */
+.mp-ring { fill: none; stroke: rgba(255, 255, 255, .14); stroke-width: 1.5; }
+.mp-rpm { stroke-width: 14; filter: drop-shadow(0 0 6px rgba(var(--c-accent-rgb), .55)); }
+.gauge.car.redline .mp-rpm { stroke: #ffffff; }
+.mp-ticks line.major { stroke-width: 3; }
+.mp-ticks text { font-size: 12px; fill: rgba(255, 255, 255, .55); }
+.mp-cog { width: 26px; height: 26px; color: #ffffff; }
+.mp-gear { font-size: 9px; font-weight: 600; color: rgba(255, 255, 255, .7); }
+.mp-speed { font-size: 46px; font-weight: 300; text-shadow: var(--shadow); }
+.mp-unit { font-size: 14px; font-weight: 500; letter-spacing: .02em; color: rgba(255, 255, 255, .85); }
+.mp-ico { width: 13px; height: 13px; color: rgba(255, 255, 255, .7); }
+.mp-bar { width: 38px; height: 4px; border-radius: 2px; overflow: hidden; background: rgba(255, 255, 255, .14); }
+.mp-bar::after { content: ''; display: block; height: 100%; border-radius: 2px; background: var(--c-accent); transition: width .5s var(--ease); }
+.bar-engine::after { width: calc(var(--engine, 100) * 1%); }
+.bar-fuel::after { width: calc(var(--fuel, 100) * 1%); }
+.gauge.engine-low .bar-engine::after, .gauge.fuel-low .bar-fuel::after { background: #ffffff; animation: blink .8s step-end infinite; }
+
+/* classic analog: open tick dial 1-9 (x1000 RPM) with the top end red, thin needle,
+   MPH and the speed under the hub, small fuel gauge to the left */
+.an-ticks line { stroke-width: 2; }
+.an-ticks line.major { stroke-width: 4.5; }
+.an-ticks text { font-size: 12px; fill: rgba(255, 255, 255, .8); }
+.an-fuel-ticks line, .an-fuel-ticks line.major { stroke-width: 2; }
+.an-ndl path { fill: url(#ndl-fade); filter: drop-shadow(0 0 3px rgba(var(--c-accent-rgb), .6)); }
+.an-hub { fill: #9a9ea6; }
+.an-unit { font-size: 12px; font-weight: 500; letter-spacing: .04em; color: rgba(255, 255, 255, .6); }
+.an-speed { font-size: 20px; font-weight: 500; text-shadow: var(--shadow); }
+.an-fuel-ico { width: 12px; height: 12px; color: rgba(255, 255, 255, .75); }
+.gauge.fuel-low .an-fuel-ico { color: var(--c-accent); }
+
+/* classic dual: slate power dial (ECO / PWR / CHG), speed dial, small fuel dial on top */
+.dd-face { fill: rgba(43, 52, 60, .94); stroke: rgba(255, 255, 255, .1); stroke-width: 1.5; }
+.dd-track { fill: none; stroke: rgba(255, 255, 255, .08); stroke-width: 4; stroke-linecap: round; }
+.dd-pwr { stroke-width: 4; }
+.dd-red { fill: none; stroke: var(--c-accent); stroke-width: 3; }
+.dd-text { fill: rgba(255, 255, 255, .7); font-family: var(--font-hud); font-size: 7px; font-weight: 500; text-anchor: middle; dominant-baseline: central; }
+.dd-speed-ticks text { font-size: 7px; }
+.dd-bolt { fill: rgba(255, 255, 255, .12); }
+.dd-ndl path { fill: url(#ndl-fade); }
+.dd-hub { fill: #c8ccd2; }
+.dd-ico { width: 9px; height: 9px; color: rgba(255, 255, 255, .8); }
+.dd-gear { padding: 3px 5px; border-radius: 2px; background: rgba(255, 255, 255, .14); font-size: 8px; font-weight: 600; }
+.dd-unit, .dd-odo { font-size: 7px; font-weight: 500; letter-spacing: .04em; color: rgba(255, 255, 255, .8); font-variant-numeric: tabular-nums; }
+
+/* digital linear: gear box, thin digits with dim zeros, fuel / engine tiles, RPM cells,
+   distance, then the indicator strip with a tab under each turn signal */
+.ln-gear {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+    background: #d9d9d9;
+    color: #161616;
+    font-size: 17px;
+    font-weight: 600;
+}
+.ln-speed { font-size: 52px; font-weight: 300; letter-spacing: .02em; font-variant-numeric: tabular-nums; }
+.ln-speed .dim { color: rgba(255, 255, 255, .28); }
+.ln-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    background: rgba(74, 74, 76, .9);
+    font-size: 10px;
+    font-weight: 600;
+}
+.ln-chip .ico { width: 16px; height: 16px; color: #ffffff; }
+.gauge.fuel-low .ln-chip:not(.ln-engine) .ico, .gauge.engine-low .ln-engine .ico { color: var(--c-accent); }
+.ln-bar rect { fill: rgba(255, 255, 255, .1); transition: fill var(--t-fast) linear; }
+.ln-bar rect.on { fill: #d9d9d9; }
+.gauge.car .ln-bar rect.red.on, .gauge.car.redline .ln-bar rect.on { fill: var(--c-accent); }
+.ln-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 280px;
+    height: 34px;
+    border-radius: 7px;
+    background: rgba(26, 26, 28, .94);
+}
+.ln-strip .ico { width: 17px; height: 17px; color: rgba(255, 255, 255, .3); transition: color var(--t-fast) linear; }
+.ln-strip .fl-right { transform: scaleX(-1); }
+.ln-tab { width: 56px; height: 5px; border-radius: 3px; background: rgba(60, 60, 64, .9); transition: background-color var(--t-fast) linear; }
+.gauge.ind-left .fl-left, .gauge.ind-right .fl-right, .gauge.ind-left.ind-right .fl-hazard,
+.gauge.belted .fl-belt, .gauge.lights-on .fl-lights, .gauge.locked .fl-lock { color: var(--c-accent); }
+.gauge.ind-left .fl-left, .gauge.ind-right .fl-right, .gauge.ind-left.ind-right .fl-hazard { animation: blink .8s step-end infinite; }
+.gauge.ind-left .ln-tab-left, .gauge.ind-right .ln-tab-right { background: var(--c-accent); animation: blink .8s step-end infinite; }
+.gauge.belt-blink .fl-belt { color: #ffffff; animation: blink .8s step-end infinite; }
+
+/* tesla style: white fuel (left) and engine (right) side arcs, power arc filling from the top,
+   huge thin digits, gear, unit, distance and percentages */
+.ev-side { fill: none; stroke-width: 10; stroke-linecap: round; }
+.ev-rpm { fill: none; stroke-width: 11; stroke-linecap: round; }
+.ev-track { stroke: rgba(255, 255, 255, .16); }
+.ev-fill-side { stroke: #f2f3f5; }
+.gauge.fuel-low .fill-fuel.ev-fill-side, .gauge.engine-low .fill-engine.ev-fill-side { stroke: var(--c-accent); }
+.ev-power { stroke: url(#ev-fill); stroke-dasharray: var(--rpm, 0) 100; }
+.ev-mark { fill: none; stroke: #ffffff; stroke-width: 3; stroke-linecap: round; }
+.ev-label { fill: rgba(255, 255, 255, .6); font-family: var(--font-hud); font-size: 10px; font-weight: 500; text-anchor: middle; dominant-baseline: central; }
+.ev-bolt-bg { fill: rgba(255, 255, 255, .2); }
+.ev-ico { width: 16px; height: 16px; color: #ffffff; }
+.ev-bolt { width: 15px; height: 15px; color: #ffffff; }
+.ev-speed { font-size: 66px; font-weight: 200; text-shadow: var(--shadow); }
+.ev-gear { font-size: 24px; font-weight: 300; color: rgba(255, 255, 255, .6); }
+.ev-unit { font-size: 13px; font-weight: 400; color: rgba(255, 255, 255, .55); }
+.ev-pct { font-size: 11px; font-weight: 500; color: rgba(255, 255, 255, .7); }
+
+/* fitness watch (bicycles): grey case, black screen, Train / Speed / Heart / Cadence */
+.wt-body { fill: #2b2d31; }
+.wt-crown { fill: #3c3f44; }
+.wt-screen { fill: #000000; }
+.wt-rule { fill: none; stroke: rgba(255, 255, 255, .12); stroke-width: 1; }
+.wt-title { font-size: 10px; font-weight: 500; }
+.wt-label { font-size: 9px; font-weight: 400; color: rgba(255, 255, 255, .7); }
+.wt-bike { width: 34px; height: 34px; color: #ffffff; }
+.wt-speed { display: flex; align-items: center; gap: 7px; font-size: 38px; font-weight: 400; font-variant-numeric: tabular-nums; }
+.wt-speed b { font-weight: 400; }
+.wt-unit { width: 6px; font-size: 7px; font-weight: 500; line-height: 1.25; text-align: center; white-space: normal; word-break: break-all; color: rgba(255, 255, 255, .8); }
+.wt-val { display: flex; align-items: center; gap: 5px; font-size: 14px; font-weight: 400; }
+.wt-val b { font-weight: 400; }
+.wt-val small { font-size: 6px; font-weight: 600; color: rgba(255, 255, 255, .7); }
+.wt-heart { width: 11px; height: 11px; color: var(--c-accent); }
+
+
+/* ---------- layout editor + calibration ---------- */
+
+#hud.editing { opacity: 1; }
+#hud.editing .widget,
+#hud.editing .widget.off { opacity: 1; }
+#hud.editing .widget.disabled { display: block; opacity: .45; }
+#hud.editing #w-ammo.disabled, #hud.editing #w-bars.disabled, #hud.editing #w-location.disabled { display: flex; }
+#hud.editing #control-bar.off { opacity: 1; transform: none; }
+#hud.editing .st.off, #hud.editing .st.disabled { display: flex; }
+#hud.editing .loc-item.off { display: flex; }
+
+#editor, #calibrate {
+    position: fixed;
+    inset: 0;
+    transition: opacity var(--t-med) var(--ease);
+}
+#editor {
+    background-image:
+        linear-gradient(var(--m-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--m-grid) 1px, transparent 1px);
+    background-size: calc(32px * var(--kr)) calc(32px * var(--kr));
+}
+#editor.off, #calibrate.off { opacity: 0; pointer-events: none; }
+
+/* menu type: MDT-style Inter, upright, normal case */
+#settings, .ed-panel, .ed-hint {
+    font-family: var(--font-hud);
+    font-style: normal;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--m-text);
+}
+
+/* Buttons are status tiles: a dark chamfered tile with a tint rising from the bottom to
+   --fill (0-1) and a lit line on top of it, the same as the player status row. Idle buttons
+   are empty, hover fills a third, selected / primary ones are full. */
+.pm-tab, .pm-btn, .ed-btn, .dp-close {
+    --fill: 0;
+    --fill-alpha: .3;
+    --tint: var(--m-accent);
+    --cut: 7px;
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, .055);
+    clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
+    color: #fff;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: box-shadow var(--t-fast) linear;
+}
+.pm-tab::before, .pm-btn::before, .ed-btn::before, .dp-close::before,
+.pm-tab::after, .pm-btn::after, .ed-btn::after, .dp-close::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: calc(var(--fill) * 100%);
+    transition: height .3s var(--ease), opacity var(--t-fast) linear;
+}
+.pm-tab::before, .pm-btn::before, .ed-btn::before, .dp-close::before {
+    background: linear-gradient(to top, var(--tint), transparent);
+    opacity: var(--fill-alpha);
+}
+/* the line fades out while empty (opacity clamps to 1 above 2.5%) */
+.pm-tab::after, .pm-btn::after, .ed-btn::after, .dp-close::after {
+    border-top: 2px solid var(--tint);
+    filter: drop-shadow(0 0 3px var(--tint));
+    opacity: calc(var(--fill) * 40);
+}
+.pm-tab:hover, .pm-btn:hover, .ed-btn:hover, .dp-close:hover { --fill: .35; }
+/* selected / primary: a full tile */
+.pm-tab.on, .pm-save.dirty, .px-import, .pa, .ed-btn.light { --fill: 1; --fill-alpha: .45; }
+.pm-tab.on:hover, .pm-save.dirty:hover, .px-import:hover, .pa:hover, .ed-btn.light:hover { --fill-alpha: .62; }
+
+.key {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    height: 20px;
+    padding: 0 6px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid var(--m-line);
+    border-radius: 3px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.ed-panel {
+    position: absolute;
+    left: 50%;
+    top: calc(92px * var(--km));
+    width: 390px;
+    transform: translateX(-50%) scale(var(--km));
+    transform-origin: center top;
+    padding: 22px 22px 20px;
+    background: var(--m-panel-solid);
+    border: 1px solid var(--m-line);
+    border-top: 3px solid var(--m-accent);
+    border-radius: 8px;
+    text-align: center;
+    text-shadow: none;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .6);
+}
+.ed-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--m-accent-text); }
+.ed-heading { margin-top: 6px; font-size: 22px; font-weight: 700; line-height: 1.1; color: #fff; }
+.ed-sub { margin-top: 8px; font-size: 13px; font-weight: 500; color: var(--m-muted); }
+.ed-list { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; padding: 0 6px; }
+.ed-item, .ed-btn { width: 100%; height: 38px; font-size: 14px; }
+.ed-btn { margin-top: 8px; }
+.ed-panel > .ed-btn { width: calc(100% - 12px); }
+.ed-size { display: flex; align-items: center; gap: 12px; margin-top: 18px; font-size: 13px; color: var(--m-muted); }
+.ed-size input { flex: 1; }
+.ed-size output { min-width: 40px; text-align: right; font-size: 13px; color: #fff; font-variant-numeric: tabular-nums; }
+.ed-pos { margin-top: 6px; font-size: 11px; color: var(--m-muted); font-variant-numeric: tabular-nums; }
+.ed-snap { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 10px 0 12px; font-size: 12px; cursor: pointer; }
+.ed-snap input { width: 14px; height: 14px; accent-color: var(--m-accent); cursor: pointer; }
+.cal-read { display: flex; justify-content: center; align-items: baseline; gap: 10px; margin: 18px 0 10px; font-size: 13px; color: var(--m-muted); }
+.cal-read b { min-width: 34px; color: #fff; font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.ed-hint {
+    position: absolute;
+    left: 50%;
+    bottom: calc(12px * var(--km));
+    transform: translateX(-50%) scale(var(--km));
+    transform-origin: center bottom;
+    padding: 8px 16px;
+    background: var(--m-panel-solid);
+    border: 1px solid var(--m-line);
+    border-radius: 6px;
+    font-size: 12px;
+    color: var(--m-muted);
+    white-space: nowrap;
+    text-shadow: none;
+}
+
+/* ---------- compact dev panel ---------- */
+
+#devpanel { position: fixed; inset: 0; pointer-events: none; transition: opacity var(--t-med) var(--ease); }
+#devpanel.off { opacity: 0; }
+#devpanel.off .dp-panel { pointer-events: none; }
+/* docked left so the status strip, speedometer and key hints stay in view */
+.dp-panel {
+    left: calc(28px * var(--km));
+    top: 50%;
+    width: 320px;
+    max-height: calc(100vh / var(--km) - 120px);
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50%) scale(var(--km));
+    transform-origin: left center;
+    padding: 18px 18px 16px;
+    text-align: left;
+    pointer-events: auto;
+}
+.dp-head { display: flex; justify-content: space-between; align-items: flex-start; }
+.dp-head .ed-heading { font-size: 20px; }
+.dp-close { --cut: 5px; width: 30px; height: 30px; font-size: 18px; }
+.dp-body { display: flex; flex-direction: column; gap: 4px; margin: 14px 0 4px; overflow-y: auto; }
+.dp-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 34px;
+    padding: 0 10px;
+    background: var(--m-row);
+    border: 1px solid var(--m-line-soft);
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.dp-row:hover { background: var(--m-row-hover); }
+.dp-row.focus { background: var(--m-row-focus); border-color: rgba(var(--m-accent-rgb), .6); box-shadow: inset 3px 0 0 var(--m-accent); }
+.dp-row .dp-label { flex: 1; }
+.dp-row input[type="range"] { width: 110px; }
+.dp-row output { min-width: 38px; text-align: right; font-size: 12px; font-variant-numeric: tabular-nums; }
+.dp-pill { min-width: 40px; padding: 3px 0; border-radius: 3px; font-size: 11px; font-weight: 700; text-align: center; background: rgba(255, 255, 255, .08); color: var(--m-muted); }
+.dp-row.on .dp-pill { background: rgba(var(--m-accent-rgb), .22); color: var(--m-accent-text); box-shadow: inset 0 0 0 1px rgba(var(--m-accent-rgb), .5); }
+.dp-sep { height: 1px; margin: 6px 0; background: var(--m-line-soft); }
+.dp-row.action { justify-content: center; background: var(--m-btn); }
+.dp-row.action:hover, .dp-row.action.focus { background: var(--m-row-focus); }
+
+/* browser preview only: opens the dev panel */
+#dev-fab {
+    position: fixed;
+    right: 16px;
+    top: 50%;
+    padding: 10px 14px 9px;
+    background: var(--c-accent);
+    color: var(--m-ink);
+    font-size: 15px;
+    font-weight: 800;
+    text-shadow: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .35);
+}
+#dev-fab.off { display: none; }
+
+#hud.calibrating .mm-frame { border-color: var(--c-accent); }
+
+/* ---------- shared range input ---------- */
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(var(--m-accent), var(--m-accent)) 0 / var(--p, 50%) 100% no-repeat, rgba(255, 255, 255, .16);
+    cursor: pointer;
+    outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid var(--m-accent);
+}

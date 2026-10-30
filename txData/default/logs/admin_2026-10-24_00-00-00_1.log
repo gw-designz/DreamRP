@@ -1,0 +1,206 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 10/23/2026, 1:55:58 PM
+================================================================
+================================================================
+======== Log Rotated - 10/23/2026, 1:56:03 PM                   
+================================================================
+[13:56:46][realscrp] logged in from 127.0.0.1 via password auth
+[13:57:28][realscrp] Refreshed resources
+[13:57:32][realscrp] Stopped resource "codera-hud"
+[13:57:33][realscrp] Refreshed resources
+[13:57:34][realscrp] Refreshed resources
+[13:57:35][realscrp] Ensured resource "my-hud"
+[13:59:16][realscrp] Stopped resource "qbx_radialmenu"
+================================================================
+======== txAdmin v8.1.1 atop fxserver 35805 Starting - 10/23/2026, 2:12:33 PM
+================================================================
+[15:17:22][realscrp] logged in from 127.0.0.1 via password auth
+[15:17:25][realscrp] Refreshed resources
+[15:17:27][realscrp] Stopped resource "qbx_radialmenu"
+[15:18:45][realscrp] Refreshed resources
+[15:18:47][realscrp] Ensured resource "oph3z-phone"
+[15:19:00][realscrp] Refreshed resources
+[15:19:10][realscrp] Stopped resource "yseries"
+[15:19:27][realscrp] Stopped resource "np-quickmenu"
+[15:21:45][realscrp] Stopped resource "codera-hud"
+[15:21:50][realscrp] Ensured resource "my-hud"
+[15:22:08][realscrp] Stopped resource "my-hud"
+[15:22:10][realscrp] Ensured resource "codera-hud"
+[15:22:31][realscrp] Refreshed resources
+[15:22:34][realscrp] Stopped resource "codera-hud"
+[15:22:35][realscrp] Ensured resource "my-hud"
+[16:35:13][realscrp] Refreshed resources
+[16:35:16][realscrp] Ensured resource "fantasy_license"
+[16:35:18][realscrp] Ensured resource "fs-garages"
+[16:35:25][realscrp] Stopped resource "qbx_garages"
+[16:49:49][realscrp] Refreshed resources
+[16:49:51][realscrp] Ensured resource "npv_admin"
+[16:53:19][realscrp] Refreshed resources
+[16:53:23][realscrp] Ensured resource "fs-garages"
+[17:27:26][realscrp] Refreshed resources
+[17:27:29][realscrp] Ensured resource "Renewed-Banking"
+[17:30:54][realscrp] Refreshed resources
+[17:30:56][realscrp] Ensured resource "Renewed-Banking"
+[17:33:28][realscrp] Refreshed resources
+[17:33:32][realscrp] Ensured resource "Renewed-Banking"
+[17:38:56][realscrp] Refreshed resources
+[17:38:58][realscrp] Ensured resource "Renewed-Banking"
+[17:40:46][realscrp] Refreshed resources
+[17:40:50][realscrp] Ensured resource "ox_lib"
+[17:40:55][realscrp] Ensured resource "ox_inventory"
+[17:41:02][realscrp] Ensured resource "bablo-multicharacter"
+[17:41:14][realscrp] executed "RESTART SERVER"
+[17:42:00][realscrp] Refreshed resources
+[17:42:07][realscrp] Ensured resource "nolag_properties"
+[17:42:22][realscrp] Stopped resource "codera-hud"
+[17:42:29][realscrp] Stopped resource "qbx_radialmenu"
+[17:49:29][realscrp] Refreshed resources
+[17:56:04][realscrp] Refreshed resources
+[17:56:07][realscrp] Ensured resource "Renewed-Banking"
+[18:01:09][realscrp] Refreshed resources
+[18:01:11][realscrp] Ensured resource "Renewed-Banking"
+[18:01:59][realscrp] Refreshed resources
+[18:02:06][realscrp] Stopped resource "yseries"
+[18:11:14][realscrp] Refreshed resources
+[18:11:17][realscrp] Ensured resource "oph3z-phone"
+[18:15:46][realscrp] Stopped resource "np-quickmenu"
+[18:34:05][realscrp] Refreshed resources
+[18:34:15][realscrp] Ensured resource "bablo-multicharacter"
+[18:57:58][realscrp] Refreshed resources
+[18:58:05][realscrp] Ensured resource "oph3z-phone"
+[19:07:02][realscrp] Refreshed resources
+[19:07:04][realscrp] Ensured resource "oph3z-phone"
+[19:35:25][realscrp] Refreshed resources
+[19:35:28][realscrp] Ensured resource "bablo-multicharacter"
+[19:36:29][realscrp] executed "restart bablo-multicharacter"
+[19:52:03][realscrp] Refreshed resources
+[19:52:04][realscrp] Ensured resource "bablo-multicharacter"
+[19:59:45][realscrp] Refreshed resources
+[19:59:48][realscrp] Ensured resource "Renewed-Banking"
+[20:02:38][realscrp] Refreshed resources
+[20:02:39][realscrp] Ensured resource "Renewed-Banking"
+[20:07:03][realscrp] Refreshed resources
+[20:07:05][realscrp] Ensured resource "Renewed-Banking"
+[20:15:34][realscrp] Refreshed resources
+[20:15:37][realscrp] Ensured resource "interact"
+[20:15:40][realscrp] Ensured resource "Renewed-Banking"
+[20:18:09][realscrp] Refreshed resources
+[20:18:11][realscrp] Ensured resource "Renewed-Banking"
+[20:22:19][realscrp] Refreshed resources
+[20:22:21][realscrp] Ensured resource "Renewed-Banking"
+[20:29:39][realscrp] Stopped resource "p_itemclothes"
+[20:29:40][realscrp] Refreshed resources
+[20:30:25][realscrp] Refreshed resources
+[20:30:28][realscrp] Ensured resource "ox_inventory"
+[20:30:47][realscrp] Refreshed resources
+[20:30:49][realscrp] Ensured resource "ox_inventory"
+[20:32:13][realscrp] Refreshed resources
+[22:40:24][realscrp] Refreshed resources
+[22:40:29][realscrp] Stopped resource "av_laptop"
+[22:40:30][realscrp] Refreshed resources
+[22:40:31][realscrp] Ensured resource "nova_laptop"
+[22:41:37][realscrp] Refreshed resources
+[22:41:44][realscrp] Ensured resource "ox_inventory"
+[22:41:49][realscrp] Ensured resource "nova_laptop"
+[22:47:58][realscrp] Refreshed resources
+[22:48:00][realscrp] Ensured resource "nova_laptop"
+[22:49:48][realscrp] Refreshed resources
+[22:49:49][realscrp] Ensured resource "nova_laptop"
+[22:55:49][realscrp] Refreshed resources
+[22:55:51][realscrp] Ensured resource "nova_laptop"
+[22:58:49][realscrp] Refreshed resources
+[22:58:50][realscrp] Ensured resource "nova_laptop"
+[22:59:03][realscrp] Refreshed resources
+[22:59:05][realscrp] Ensured resource "nova_laptop"
+[23:03:23][realscrp] Refreshed resources
+[23:03:25][realscrp] Ensured resource "nova_laptop"
+[23:08:00][realscrp] Refreshed resources
+[23:08:01][realscrp] Ensured resource "nova_laptop"
+[23:09:39][realscrp] Refreshed resources
+[23:09:40][realscrp] Ensured resource "nova_laptop"
+[23:12:04][realscrp] Refreshed resources
+[23:12:05][realscrp] Ensured resource "nova_laptop"
+[23:12:47][realscrp] Ensured resource "object_gizmo"
+[23:18:53][realscrp] Refreshed resources
+[23:18:58][realscrp] Ensured resource "nova_laptop"
+[23:28:27][realscrp] Refreshed resources
+[23:28:28][realscrp] Ensured resource "nova_laptop"
+[23:35:11][realscrp] Refreshed resources
+[23:35:15][realscrp] Ensured resource "object_gizmo"
+[23:35:17][realscrp] Refreshed resources
+[23:37:10][realscrp] Refreshed resources
+[23:37:13][realscrp] Ensured resource "nova_laptop"
+[23:41:17][realscrp] Refreshed resources
+[23:41:18][realscrp] Ensured resource "nova_laptop"
+[23:52:31][realscrp] Refreshed resources
+[23:52:33][realscrp] Ensured resource "nova_laptop"
+[23:56:45][realscrp] Refreshed resources
+[23:56:46][realscrp] Ensured resource "nova_laptop"
+[23:59:13][realscrp] Refreshed resources
+[23:59:14][realscrp] Ensured resource "nova_laptop"
+[23:59:35][realscrp] Refreshed resources
+[23:59:36][realscrp] Ensured resource "nova_laptop"
+[00:01:49][realscrp] Refreshed resources
+[00:01:51][realscrp] Ensured resource "nova_laptop"
+[00:02:27][realscrp] Refreshed resources
+[00:05:18][realscrp] Refreshed resources
+[00:05:20][realscrp] Ensured resource "nova_laptop"
+[00:06:19][realscrp] Refreshed resources
+[00:06:20][realscrp] Ensured resource "nova_laptop"
+[00:08:37][realscrp] Refreshed resources
+[00:08:39][realscrp] Ensured resource "nova_laptop"
+[00:16:20][realscrp] Refreshed resources
+[00:16:22][realscrp] Ensured resource "nova_laptop"
+[00:24:37][realscrp] Refreshed resources
+[00:24:38][realscrp] Ensured resource "nova_laptop"
+[00:31:42][realscrp] Refreshed resources
+[00:31:45][realscrp] Ensured resource "ox_inventory"
+[00:31:50][realscrp] Ensured resource "nova_laptop"
+[00:37:06][realscrp] Refreshed resources
+[00:37:08][realscrp] Ensured resource "interact"
+[00:37:12][realscrp] Ensured resource "nova_laptop"
+[00:47:59][realscrp] Refreshed resources
+[00:48:04][realscrp] Ensured resource "nova_laptop"
+[00:48:40][realscrp] Refreshed resources
+[00:48:44][realscrp] Ensured resource "codera-radialmenu"
+[00:54:58][realscrp] Refreshed resources
+[00:55:06][realscrp] Ensured resource "nova_laptop"
+[01:01:38][realscrp] Refreshed resources
+[01:01:45][realscrp] Ensured resource "interact"
+[01:01:49][realscrp] Ensured resource "nova_laptop"
+[01:04:42][realscrp] Refreshed resources
+[01:04:45][realscrp] Ensured resource "oph3z-phone"
+[01:04:50][realscrp] Ensured resource "nova_laptop"
+[01:09:19][realscrp] Refreshed resources
+[01:12:15][realscrp] Refreshed resources
+[01:12:20][realscrp] Ensured resource "oph3z-phone"
+[01:13:17][realscrp] Refreshed resources
+[01:13:21][realscrp] Ensured resource "nova_laptop"
+[01:15:26][realscrp] Refreshed resources
+[01:15:30][realscrp] Ensured resource "oph3z-phone"
+[01:18:40][realscrp] Refreshed resources
+[01:18:42][realscrp] Ensured resource "oph3z-phone"
+[04:03:54][realscrp] Refreshed resources
+[04:04:05][realscrp] Ensured resource "oph3z-phone"
+[04:05:49][realscrp] Refreshed resources
+[04:05:53][realscrp] Ensured resource "interact"
+[04:05:57][realscrp] Ensured resource "nova_laptop"
+[04:09:17][realscrp] Refreshed resources
+[04:09:28][realscrp] Refreshed resources
+[04:09:31][realscrp] Ensured resource "nova_laptop"
+[04:21:14][realscrp] Refreshed resources
+[04:21:23][realscrp] Ensured resource "nova_laptop"
+[04:21:39][realscrp] Ensured resource "interact"
+[04:21:46][realscrp] Ensured resource "nova_laptop"
+[04:26:17][realscrp] Refreshed resources
+[04:26:24][realscrp] Ensured resource "nova_laptop"
+[04:33:11][realscrp] Refreshed resources
+[04:33:18][realscrp] Ensured resource "nova_laptop"
+[04:34:36][realscrp] Refreshed resources
+[04:34:40][realscrp] Ensured resource "interact"
+[04:34:43][realscrp] Ensured resource "nova_laptop"
+[04:38:36][realscrp] Refreshed resources
+[04:38:50][realscrp] Refreshed resources
+[04:38:52][realscrp] Ensured resource "nova_laptop"
+[04:40:02][realscrp] Refreshed resources
+[04:40:03][realscrp] Ensured resource "nova_laptop"

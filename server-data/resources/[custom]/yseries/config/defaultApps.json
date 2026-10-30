@@ -1,0 +1,159 @@
+{
+    "humanoid": {
+        "toolbar": [
+            "phone",
+            "messages",
+            "settings",
+            "camera"
+        ],
+        "firstPane": [
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "playstore",
+            "email",
+            "maps",
+            "contacts",
+            "clock",
+            "notes",
+            "gallery",
+            "calculator",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "folder-default-utilities",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot"
+        ],
+        "homeFolders": {
+            "default-utilities": {
+                "id": "default-utilities",
+                "label": "Utilities",
+                "children": [
+                    "homes",
+                    "garage",
+                    "companies",
+                    "ypay"
+                ]
+            }
+        },
+        "widgets": [
+            {
+                "id": "humanoid-clock-weather-instance",
+                "type": "humanoid-clock-weather-split",
+                "size": {
+                    "w": 4,
+                    "h": 1
+                },
+                "position": {
+                    "paneId": "pane-0",
+                    "col": 0,
+                    "row": 0
+                }
+            },
+            {
+                "id": "humanoid-widget-menu-opener-instance",
+                "type": "widget-menu-opener-1x1",
+                "size": {
+                    "w": 1,
+                    "h": 1
+                },
+                "position": {
+                    "paneId": "pane-0",
+                    "col": 3,
+                    "row": 4
+                }
+            }
+        ]
+    },
+    "yos": {
+        "toolbar": [
+            "phone",
+            "messages",
+            "settings",
+            "camera"
+        ],
+        "firstPane": [
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "playstore",
+            "email",
+            "maps",
+            "contacts",
+            "clock",
+            "notes",
+            "gallery",
+            "calculator",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot",
+            "folder-default-utilities",
+            "empty-slot",
+            "empty-slot",
+            "empty-slot"
+        ],
+        "homeFolders": {
+            "default-utilities": {
+                "id": "default-utilities",
+                "label": "Utilities",
+                "children": [
+                    "homes",
+                    "garage",
+                    "companies",
+                    "ypay"
+                ]
+            }
+        },
+        "widgets": [
+            {
+                "id": "yos-weather-card-instance",
+                "type": "yos-weather-card-2x2",
+                "size": {
+                    "w": 2,
+                    "h": 2
+                },
+                "position": {
+                    "paneId": "pane-0",
+                    "col": 0,
+                    "row": 0
+                }
+            },
+            {
+                "id": "yos-date-card-instance",
+                "type": "yos-date-card-2x2",
+                "size": {
+                    "w": 2,
+                    "h": 2
+                },
+                "position": {
+                    "paneId": "pane-0",
+                    "col": 2,
+                    "row": 0
+                }
+            },
+            {
+                "id": "yos-widget-menu-opener-instance",
+                "type": "widget-menu-opener-1x1",
+                "size": {
+                    "w": 1,
+                    "h": 1
+                },
+                "position": {
+                    "paneId": "pane-0",
+                    "col": 3,
+                    "row": 5
+                }
+            }
+        ]
+    }
+}

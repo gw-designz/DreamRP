@@ -1,0 +1,730 @@
+<script lang="ts">
+	import { ico } from "@/icons";
+	import { onMount, onDestroy } from "svelte";
+	import { formatDate, formatTime, toDate } from "../utils/datetime";
+	import { fetchNui } from "../utils/fetchNui";
+	import { NUI_EVENTS } from "../constants/nuiEvents";
+	import type { createTabService } from "../services/tabService.svelte";
+	import { openReportInEditor } from "../stores/reportsStore";
+	import { mdtStore } from "../stores/mdtStore";
+	import { PRIORITY_COLORS, type MDTTab } from "../constants";
+	import { createDashboardService } from "../services/dashboardService.svelte";
+	import ReportItem from "../components/dashboard/ReportItem.svelte";
+	import DispatchStatusWidget from "../components/dashboard/DispatchStatusWidget.svelte";
+	import type { PlayerData } from "@/interfaces/IPlayerData";
+
+	interface ActiveBolo {
+		id: number;
+		reportId: string;
+		name: string;
+		type: string;
+		notes: string;
+	}
+
+	import type { JobType } from "../interfaces/IUser";
+
+	let {
+		signOut,
+		playerData,
+		tabService,
+		jobType = 'leo',
+	}: {
+		signOut: () => void;
+		playerData: PlayerData | null;
+		tabService: ReturnType<typeof createTabService>;
+		jobType?: JobType;
+	} = $props();
+
+	let isLEO = $derived(jobType === 'leo');
+	let isDOJ = $derived(jobType === 'doj');
+	let isLEOJob = $derived(jobType !== 'doj' && jobType !== 'ems');
+
+	// ── Upcoming hearings / open cases helpers ──
+	function hearingWhen(v: string | number | undefined): string {
+		const d = toDate(v);
+		if (!d) return v ? String(v) : "";
+		const now = new Date();
+		const sameDay = d.toDateString() === now.toDateString();
+		const tomorrow = new Date(now); tomorrow.setDate(now.getDate() + 1);
+		const isTomorrow = d.toDateString() === tomorrow.toDateString();
+		const hm = formatTime(d);
+		if (sameDay) return `Today ${hm}`;
+		if (isTomorrow) return `Tomorrow ${hm}`;
+		return `${formatDate(d)} ${hm}`;
+	}
+	function hearingCatColor(cat?: string): string {
+		if (cat === "training") return "#22c55e";
+		if (cat === "meeting") return "#f59e0b";
+		if (cat === "other") return "#a78bfa";
+		return "#60a5fa"; // court
+	}
+	function casePrioColor(p?: string): string {
+		if (p === "high") return "#ef4444";
+		if (p === "low") return "#22c55e";
+		return "#f59e0b";
+	}
+
+	// DOJ dashboard data
+	let dojWarrantReviews = $state<any[]>([]);
+	let dojCourtCases = $state<any[]>([]);
+	let dojCourtOrders = $state<any[]>([]);
+
+	async function loadDojDashboard() {
+		if (!isDOJ) return;
+		const [reviews, cases, orders] = await Promise.all([
+			fetchNui<any>(NUI_EVENTS.DOJ.GET_WARRANT_REQUESTS, { status: 'pending', limit: 5 }, []),
+			fetchNui<any>(NUI_EVENTS.DOJ.GET_COURT_CASES, { limit: 5 }, []),
+			fetchNui<any>(NUI_EVENTS.DOJ.GET_COURT_ORDERS, { limit: 5 }, []),
+		]);
+		dojWarrantReviews = Array.isArray(reviews) ? reviews.slice(0, 5) : [];
+		dojCourtCases = Array.isArray(cases) ? cases.slice(0, 5) : [];
+		dojCourtOrders = Array.isArray(orders) ? orders.slice(0, 5) : [];
+	}
+
+	// Services
+	const dashboardService = createDashboardService() as ReturnType<
+		typeof createDashboardService
+	> & {
+		activeBolos?: ActiveBolo[];
+
+		recentReportsHasMore?: boolean;
+		loadMoreRecentReports?: () => Promise<void>;
+	};
+
+	// Impound at a glance (the server sends this on the dashboard payload).
+	let impound = $derived(
+		dashboardService.usageMetrics?.impound ?? { held: 0, outstanding: 0, oldestDays: 0, impoundedLast7: 0 }
+	);
+
+	// UI state
+	let reportOpened: number | null = $state(null);
+
+	// Pagination
+	const PAGE_SIZE = 10;
+	let warrantPage = $state(0);
+	let boloPage = $state(0);
+
+	let warrantTotalPages = $derived(Math.max(1, Math.ceil((dashboardService.activeWarrants ?? []).length / PAGE_SIZE)));
+	let boloTotalPages = $derived(Math.max(1, Math.ceil((dashboardService.activeBolos || []).length / PAGE_SIZE)));
+	let pagedWarrants = $derived((dashboardService.activeWarrants ?? []).slice(warrantPage * PAGE_SIZE, (warrantPage + 1) * PAGE_SIZE));
+	let pagedBolos = $derived((dashboardService.activeBolos || []).slice(boloPage * PAGE_SIZE, (boloPage + 1) * PAGE_SIZE));
+
+	// ── Callsign ──
+	const EMPTY_CALLSIGN_VALUES = new Set(['', 'NIL', 'NO CALLSIGN', 'NONE', 'NULL']);
+
+	function isValidCallsign(cs: unknown): boolean {
+		if (cs == null || cs === '') return false;
+		const upper = String(cs).trim().toUpperCase();
+		if (EMPTY_CALLSIGN_VALUES.has(upper)) return false;
+		if (!upper.startsWith('PD-')) return false;
+		return upper.length > 3;
+	}
+
+	let callsignModalOpen = $state(false);
+	let callsignInput = $state("");
+	let callsignSaving = $state(false);
+	let callsignLoading = $state(true);
+	let localCallsign = $state("");
+
+	async function fetchCallsign() {
+		callsignLoading = true;
+		const result = await fetchNui<{ callsign?: string }>(
+			NUI_EVENTS.DASHBOARD.GET_CALLSIGN,
+			{ citizenid: playerData?.citizenid },
+			{ callsign: '' }
+		);
+		const cs = result?.callsign != null ? String(result.callsign).trim() : "";
+		if (isValidCallsign(cs)) {
+			localCallsign = cs;
+		}
+		callsignLoading = false;
+	}
+
+	let hasCallsign = $derived(isValidCallsign(localCallsign));
+
+	function openCallsignModal() {
+		callsignInput = hasCallsign ? localCallsign : "PD-";
+		callsignModalOpen = true;
+	}
+
+	function closeCallsignModal() {
+		callsignModalOpen = false;
+		callsignInput = "";
+	}
+
+	function handleCallsignInput(e: Event) {
+		let val = (e.target as HTMLInputElement).value
+			.toUpperCase()
+			.replace(/[^A-Z0-9\-]/g, "");
+
+		if (!val.startsWith('PD-')) {
+			if (val.startsWith('PD')) {
+				val = 'PD-' + val.slice(2);
+			} else if (val.startsWith('P')) {
+				val = 'PD-' + val.slice(1).replace(/^D-?/, '');
+			} else {
+				val = 'PD-' + val.replace(/^[PD\-]+/, '');
+			}
+		}
+
+		callsignInput = val.slice(0, 6);
+		(e.target as HTMLInputElement).value = callsignInput;
+	}
+
+	async function saveCallsign() {
+		const cs = callsignInput.trim();
+		if (!isValidCallsign(cs) || callsignSaving) return;
+		callsignSaving = true;
+		try {
+			await fetchNui(NUI_EVENTS.DASHBOARD.SET_CALLSIGN, { callsign: cs, citizenid: playerData?.citizenid });
+			localCallsign = cs;
+			closeCallsignModal();
+		} catch {
+			/* silent */
+		} finally {
+			callsignSaving = false;
+		}
+	}
+
+	onMount(async () => {
+		dashboardService.initialize();
+		dashboardService.startCarouselTimer();
+		loadDojDashboard();
+		await fetchCallsign();
+	});
+
+	onDestroy(() => {
+		dashboardService.destroy();
+	});
+
+	function viewBolo(boloId: number) {
+		tabService.setActiveTab("BOLOs");
+		const activeInstance = tabService.getActiveInstance();
+		if (activeInstance) tabService.setInstanceTab(activeInstance.id, "BOLOs");
+	}
+
+	function viewReport(reportId: string) {
+		openReportInEditor(reportId);
+		tabService.setActiveTab("Reports");
+		const activeInstance = tabService.getActiveInstance();
+		if (activeInstance) tabService.setInstanceTab(activeInstance.id, "Reports");
+	}
+
+
+	function toggleDuty() {
+		fetchNui(NUI_EVENTS.NAVIGATION.TOGGLE_DUTY);
+	}
+
+	function handleSignOut() {
+		mdtStore.reset();
+		signOut();
+	}
+
+
+
+	function openReport(id: number) {
+		reportOpened = reportOpened === id ? null : id;
+	}
+
+	async function loadMoreReports() {
+		await dashboardService.loadMoreRecentReports();
+	}
+
+	function openWarrant(reportId: number) {
+		if (!reportId) return;
+		openReportInEditor(reportId);
+		tabService.setActiveTab("Reports");
+		const activeInstance = tabService.getActiveInstance();
+		if (activeInstance) tabService.setInstanceTab(activeInstance.id, "Reports");
+	}
+
+	// ── Hero header ──
+	let now = $state(new Date());
+	onMount(() => {
+		const clock = setInterval(() => (now = new Date()), 15000);
+		return () => clearInterval(clock);
+	});
+
+	let greeting = $derived(now.getHours() < 12 ? "Good Morning" : now.getHours() < 18 ? "Good Afternoon" : "Good Evening");
+	let officerName = $derived(
+		`${playerData?.charinfo?.firstname ?? ""} ${playerData?.charinfo?.lastname ?? ""}`.trim() || "Officer",
+	);
+	let deptLabel = $derived(playerData?.job?.label ?? "");
+	let clockTime = $derived(now.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }));
+	let clockDate = $derived(
+		now.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" }).replace(/,/g, "").toUpperCase(),
+	);
+
+	// Panel tab state
+	let boloTab = $state<"bolos" | "warrants">("bolos");
+	let reportTab = $state<"reports" | "cases">("reports");
+
+	function goTo(tab: string) {
+		const inst = tabService.getActiveInstance();
+		if (inst) tabService.setInstanceTab(inst.id, tab as MDTTab);
+	}
+</script>
+
+<div class="dashboard">
+	<!-- ===== Hero ===== -->
+	<div class="hero">
+		<div class="hero-id">
+			<span class="hero-greeting">{greeting}</span>
+			<span class="hero-name">{officerName}</span>
+			<div class="hero-tags">
+				<span class="hero-tag">{deptLabel || "Department"} • {dashboardService.jobInfo.rank}</span>
+				{#if !callsignLoading}
+					{#if hasCallsign}
+						<button class="hero-tag hero-tag-btn" onclick={openCallsignModal} title="Change callsign">
+							<span class="material-icons">{@html ico("badge")}</span> {localCallsign}
+						</button>
+					{:else}
+						<button class="hero-tag hero-tag-warn" onclick={openCallsignModal}>
+							<span class="material-icons">{@html ico("warning")}</span> Set Callsign
+						</button>
+					{/if}
+				{/if}
+				{#if dashboardService.jobInfo.payRate}
+					<span class="hero-tag hero-tag-muted">{dashboardService.jobInfo.payRate}</span>
+				{/if}
+			</div>
+		</div>
+
+		<div class="hero-right">
+			<div class="hero-stats">
+				<div class="hero-stat">
+					<span class="hero-stat-val">
+						{dashboardService.reportsInfo.totalThisWeek}
+						{#if dashboardService.reportsInfo.changeFromLastWeek !== 0}
+							<span class="hero-stat-delta" class:neg={dashboardService.reportsInfo.changeFromLastWeek < 0}>
+								{dashboardService.reportsInfo.changeFromLastWeek > 0 ? "+" : ""}{dashboardService.reportsInfo.changeFromLastWeek}
+							</span>
+						{/if}
+					</span>
+					<span class="hero-stat-lbl"><span class="material-icons">{@html ico("description")}</span> Reports this week</span>
+				</div>
+				<div class="hero-stat">
+					<span class="hero-stat-val">{dashboardService.activeUnits.count}</span>
+					<span class="hero-stat-lbl"><span class="material-icons">{@html ico("groups")}</span> On duty</span>
+				</div>
+				{#if impound.held > 0 || impound.outstanding > 0}
+					<div class="hero-stat" title={impound.oldestDays > 0 ? `Oldest vehicle held ${impound.oldestDays}d` : "Vehicles currently held in impound"}>
+						<span class="hero-stat-val">
+							{impound.held}
+							{#if impound.outstanding > 0}<span class="hero-stat-delta neg">${impound.outstanding.toLocaleString()}</span>{/if}
+						</span>
+						<span class="hero-stat-lbl"><span class="material-icons">{@html ico("local_shipping")}</span> Impounded</span>
+					</div>
+				{/if}
+				<div class="hero-stat">
+					<span class="hero-stat-val">{clockTime}</span>
+					<span class="hero-stat-lbl">{clockDate}</span>
+				</div>
+			</div>
+			<div class="hero-actions">
+				<div class="hero-dispatch"><DispatchStatusWidget /></div>
+				<button class="sk-btn sk-icon" onclick={toggleDuty} title="Toggle duty">
+					<span class="material-icons">{@html ico("power_settings_new")}</span>
+				</button>
+				<button class="sk-btn sk-icon sk-danger" onclick={handleSignOut} title="Sign out">
+					<span class="material-icons">{@html ico("logout")}</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== Panels ===== -->
+	<div class="dash-grid" class:two-col={!isLEO && !isDOJ}>
+		<!-- Column 1: Notice Board + Court Docket -->
+		<div class="dash-col">
+			<div class="dpanel">
+				<div class="dpanel-head">
+					<span class="material-icons dpanel-icon">{@html ico("campaign")}</span>
+					<div class="dpanel-titles">
+						<span class="dpanel-title">Notice Board</span>
+						<span class="dpanel-count">{dashboardService.bulletins.length}</span>
+					</div>
+					<button class="sk-btn sk-sm" onclick={() => goTo("Bulletin Board")}>
+						<span class="material-icons">{@html ico("open_in_new")}</span> Open
+					</button>
+				</div>
+				<div class="dpanel-body">
+					{#if dashboardService.bulletins.length === 0}
+						<div class="dempty">
+							<span class="material-icons dempty-icon">{@html ico("campaign")}</span>
+							<span class="dempty-title">No notices</span>
+							<span class="dempty-sub">Department announcements will appear here.</span>
+						</div>
+					{:else}
+						{#each dashboardService.bulletins as b, i (b.id)}
+							<button class="notice-row" class:active={i === dashboardService.currentBulletinIndex} onclick={() => dashboardService.goToBulletin(i)} title={b.content}>
+								<span class="material-icons notice-icon">{@html ico("info")}</span>
+								<span class="notice-text">{b.content}</span>
+							</button>
+						{/each}
+					{/if}
+				</div>
+			</div>
+
+			{#if !isDOJ}
+				<div class="dpanel">
+					<div class="dpanel-head">
+						<span class="material-icons dpanel-icon">{@html ico("calendar_month")}</span>
+						<div class="dpanel-titles">
+							<span class="dpanel-title">Court Docket</span>
+							<span class="dpanel-count">{dashboardService.upcomingHearings.length}</span>
+						</div>
+					</div>
+					<div class="dpanel-body">
+						{#if dashboardService.upcomingHearings.length === 0}
+							<div class="dempty">
+								<span class="material-icons dempty-icon">{@html ico("calendar_month")}</span>
+								<span class="dempty-title">No upcoming hearings</span>
+								<span class="dempty-sub">Court dates will appear here.</span>
+							</div>
+						{/if}
+						{#each dashboardService.upcomingHearings as h (h.id)}
+							<div class="drow">
+								<div class="priority-bar" style="background: {hearingCatColor(h.category)}"></div>
+								<div class="drow-main">
+									<span class="drow-title">{h.title}</span>
+									<span class="drow-sub">
+										{hearingWhen(h.scheduled_at)}{#if h.location} · {h.location}{/if}{#if h.defendant_name} · {h.defendant_name}{/if}
+									</span>
+								</div>
+								{#if h.status === "in_session"}<span class="live-pill">LIVE</span>{/if}
+							</div>
+						{/each}
+					</div>
+				</div>
+			{/if}
+		</div>
+
+		<!-- Column 2: BOLOs / Warrants (LEO) -->
+		{#if isLEO}
+			<div class="dash-col">
+				<div class="dpanel dpanel-fill">
+					<div class="dpanel-head">
+						<span class="material-icons dpanel-icon">{@html ico(boloTab === "bolos" ? "travel_explore" : "gavel")}</span>
+						<div class="dpanel-titles">
+							<span class="dpanel-title">{boloTab === "bolos" ? "Active BOLOs" : "Active Warrants"}</span>
+							<span class="dpanel-count">{boloTab === "bolos" ? (dashboardService.activeBolos || []).length : dashboardService.activeWarrants.length}</span>
+						</div>
+						<button class="sk-btn sk-sm sk-accent" onclick={() => goTo(boloTab === "bolos" ? "BOLOs" : "Warrants")}>
+							<span class="material-icons">{@html ico("add")}</span> New
+						</button>
+					</div>
+					<div class="seg">
+						<button class="seg-btn" class:active={boloTab === "bolos"} onclick={() => (boloTab = "bolos")}>
+							<span class="material-icons">{@html ico("travel_explore")}</span> BOLOs <span class="seg-count">{(dashboardService.activeBolos || []).length}</span>
+						</button>
+						<button class="seg-btn" class:active={boloTab === "warrants"} onclick={() => (boloTab = "warrants")}>
+							<span class="material-icons">{@html ico("description")}</span> Warrants <span class="seg-count">{dashboardService.activeWarrants.length}</span>
+						</button>
+					</div>
+					<div class="dpanel-body">
+						{#if boloTab === "bolos"}
+							{#if (dashboardService.activeBolos || []).length === 0}
+								<div class="dempty">
+									<span class="material-icons dempty-icon">{@html ico("travel_explore")}</span>
+									<span class="dempty-title">No active BOLOs</span>
+									<span class="dempty-sub">Create a BOLO when you need units to look for a person or vehicle.</span>
+									<button class="sk-btn sk-sm sk-accent" onclick={() => goTo("BOLOs")}><span class="material-icons">{@html ico("add")}</span> Create BOLO</button>
+								</div>
+							{:else}
+								{#each pagedBolos as bolo}
+									<button class="drow drow-btn" onclick={() => viewBolo(bolo.id)}>
+										<div class="drow-main">
+											<span class="drow-title">{bolo.name}</span>
+											<span class="drow-sub">#{bolo.reportId} · <span class="pill pill-blue">{bolo.type}</span></span>
+											{#if bolo.notes && bolo.notes.trim()}<span class="drow-notes">{bolo.notes}</span>{/if}
+										</div>
+										<span class="material-icons drow-arrow">{@html ico("chevron_right")}</span>
+									</button>
+								{/each}
+							{/if}
+						{:else if dashboardService.activeWarrants.length === 0}
+							<div class="dempty">
+								<span class="material-icons dempty-icon">{@html ico("gavel")}</span>
+								<span class="dempty-title">No active warrants</span>
+								<span class="dempty-sub">Approved warrants will appear here.</span>
+							</div>
+						{:else}
+							{#each pagedWarrants as warrant}
+								<button class="drow drow-btn" onclick={() => openWarrant(warrant.reportid)}>
+									<div class="drow-main">
+										<span class="drow-title">{warrant.name}</span>
+										<span class="drow-sub">#{warrant.reportid} · Exp. {formatDate(warrant.expirydate)}</span>
+										<div class="pill-row">
+											{#if warrant.felonies > 0}<span class="pill pill-red">{warrant.felonies} Felony</span>{/if}
+											{#if warrant.misdemeanors > 0}<span class="pill pill-orange">{warrant.misdemeanors} Misd.</span>{/if}
+											{#if warrant.infractions > 0}<span class="pill pill-green">{warrant.infractions} Infr.</span>{/if}
+										</div>
+									</div>
+									<span class="material-icons drow-arrow">{@html ico("chevron_right")}</span>
+								</button>
+							{/each}
+						{/if}
+					</div>
+					{#if (boloTab === "bolos" ? boloTotalPages : warrantTotalPages) > 1}
+						<div class="dpager">
+							{#if boloTab === "bolos"}
+								<button class="sk-btn sk-icon sk-xs" disabled={boloPage === 0} onclick={() => boloPage--}><span class="material-icons">{@html ico("chevron_left")}</span></button>
+								<span>{boloPage + 1}/{boloTotalPages}</span>
+								<button class="sk-btn sk-icon sk-xs" disabled={boloPage >= boloTotalPages - 1} onclick={() => boloPage++}><span class="material-icons">{@html ico("chevron_right")}</span></button>
+							{:else}
+								<button class="sk-btn sk-icon sk-xs" disabled={warrantPage === 0} onclick={() => warrantPage--}><span class="material-icons">{@html ico("chevron_left")}</span></button>
+								<span>{warrantPage + 1}/{warrantTotalPages}</span>
+								<button class="sk-btn sk-icon sk-xs" disabled={warrantPage >= warrantTotalPages - 1} onclick={() => warrantPage++}><span class="material-icons">{@html ico("chevron_right")}</span></button>
+							{/if}
+						</div>
+					{/if}
+				</div>
+			</div>
+		{/if}
+
+		<!-- Column 3: Reports / Cases, or DOJ queues -->
+		<div class="dash-col">
+			{#if isDOJ}
+				{#each [
+					{ title: "Pending Warrant Reviews", icon: "policy", items: dojWarrantReviews, tab: "Warrant Review", empty: "No pending warrants", name: (x: any) => x.citizen_name || x.citizenid, meta: (x: any) => `${x.status || "pending"} · ${formatDate(x.created_at)}` },
+					{ title: "Court Cases", icon: "gavel", items: dojCourtCases, tab: "Court Cases", empty: "No court cases", name: (x: any) => x.title || x.case_number, meta: (x: any) => `${x.status} · ${formatDate(x.created_at || x.filed_date)}` },
+					{ title: "Court Orders", icon: "assignment_late", items: dojCourtOrders, tab: "Court Orders", empty: "No court orders", name: (x: any) => x.title || x.order_number, meta: (x: any) => `${x.status} · ${formatDate(x.created_at)}` },
+				] as q}
+					<div class="dpanel">
+						<div class="dpanel-head">
+							<span class="material-icons dpanel-icon">{@html ico(q.icon)}</span>
+							<div class="dpanel-titles">
+								<span class="dpanel-title">{q.title}</span>
+								<span class="dpanel-count">{q.items.length}</span>
+							</div>
+						</div>
+						<div class="dpanel-body">
+							{#if q.items.length === 0}
+								<div class="dempty dempty-sm"><span class="dempty-sub">{q.empty}</span></div>
+							{:else}
+								{#each q.items as item}
+									<button class="drow drow-btn" onclick={() => goTo(q.tab)}>
+										<div class="drow-main">
+											<span class="drow-title">{q.name(item)}</span>
+											<span class="drow-sub">{q.meta(item)}</span>
+										</div>
+										<span class="material-icons drow-arrow">{@html ico("chevron_right")}</span>
+									</button>
+								{/each}
+							{/if}
+						</div>
+					</div>
+				{/each}
+			{:else}
+				<div class="dpanel dpanel-fill">
+					<div class="dpanel-head">
+						<span class="material-icons dpanel-icon">{@html ico(reportTab === "reports" ? "description" : "folder_open")}</span>
+						<div class="dpanel-titles">
+							<span class="dpanel-title">{reportTab === "reports" ? "Recent Reports" : "Open Cases"}</span>
+							<span class="dpanel-count">{reportTab === "reports" ? dashboardService.recentReports.length : dashboardService.openCases.length}</span>
+						</div>
+						<button class="sk-btn sk-sm sk-accent" onclick={() => goTo(reportTab === "reports" ? "Reports" : "Cases")}>
+							<span class="material-icons">{@html ico("add")}</span> New
+						</button>
+					</div>
+					{#if isLEOJob}
+						<div class="seg">
+							<button class="seg-btn" class:active={reportTab === "reports"} onclick={() => (reportTab = "reports")}>
+								<span class="material-icons">{@html ico("description")}</span> Reports
+							</button>
+							<button class="seg-btn" class:active={reportTab === "cases"} onclick={() => (reportTab = "cases")}>
+								<span class="material-icons">{@html ico("folder_open")}</span> Cases <span class="seg-count">{dashboardService.openCases.length}</span>
+							</button>
+						</div>
+					{/if}
+					<div class="dpanel-body">
+						{#if reportTab === "reports"}
+							{#if dashboardService.recentReports.length === 0}
+								<div class="dempty">
+									<span class="material-icons dempty-icon">{@html ico("description")}</span>
+									<span class="dempty-title">No recent reports</span>
+									<span class="dempty-sub">Reports filed by your department will appear here.</span>
+								</div>
+							{:else}
+								{#each dashboardService.recentReports as report}
+									<ReportItem {report} isExpanded={reportOpened === report.id} onToggle={openReport} onNavigate={viewReport} />
+								{/each}
+							{/if}
+						{:else if dashboardService.openCases.length === 0}
+							<div class="dempty">
+								<span class="material-icons dempty-icon">{@html ico("folder_open")}</span>
+								<span class="dempty-title">No open cases</span>
+								<span class="dempty-sub">Open investigations will appear here.</span>
+							</div>
+						{:else}
+							{#each dashboardService.openCases as c (c.id)}
+								<div class="drow">
+									<div class="priority-bar" style="background: {casePrioColor(c.priority)}"></div>
+									<div class="drow-main">
+										<span class="drow-title">{c.case_number} · {c.title}</span>
+										<span class="drow-sub">{c.status === "in_progress" ? "In progress" : "Open"}{#if c.priority} · {c.priority} priority{/if}</span>
+									</div>
+								</div>
+							{/each}
+						{/if}
+					</div>
+					{#if reportTab === "reports" && dashboardService.recentReportsHasMore}
+						<div class="dpager"><button class="sk-btn sk-sm" onclick={loadMoreReports}>Load more</button></div>
+					{/if}
+				</div>
+			{/if}
+		</div>
+	</div>
+
+	<!-- Callsign Modal -->
+	{#if callsignModalOpen}
+		<!-- svelte-ignore a11y_click_events_have_key_events -->
+		<!-- svelte-ignore a11y_no_static_element_interactions -->
+		<div class="cs-modal-overlay" onclick={(e) => { if (e.target === e.currentTarget) closeCallsignModal(); }}>
+			<div class="cs-modal" role="dialog" aria-modal="true" onclick={(e) => e.stopPropagation()}>
+				<div class="cs-modal-header">
+					<span class="cs-modal-title">{hasCallsign ? 'Change Callsign' : 'Set Callsign'}</span>
+					<button class="cs-modal-close" onclick={closeCallsignModal} aria-label="Close">
+						<span class="material-icons svg-ico" style="font-size: 14px;">{@html ico("x_plain")}</span>
+					</button>
+				</div>
+				<div class="cs-modal-body">
+					<span class="cs-input-label">Callsign</span>
+					<input
+						class="cs-input"
+						type="text"
+						placeholder="PD-01"
+						value={callsignInput}
+						oninput={handleCallsignInput}
+						onkeydown={(e) => { if (e.key === 'Enter') saveCallsign(); if (e.key === 'Escape') closeCallsignModal(); }}
+						maxlength={6}
+						spellcheck={false}
+						autofocus
+					/>
+					<span class="cs-hint">{callsignInput.length}/6 · format: PD-XX</span>
+				</div>
+				<div class="cs-modal-footer">
+					<button class="cs-btn-cancel" onclick={closeCallsignModal} disabled={callsignSaving}>Cancel</button>
+					<button class="cs-btn-confirm" onclick={saveCallsign} disabled={callsignSaving || !isValidCallsign(callsignInput)}>
+						{callsignSaving ? "Saving..." : "Save"}
+					</button>
+				</div>
+			</div>
+		</div>
+	{/if}
+</div>
+
+<style>
+	.dashboard { height: 100%; display: flex; flex-direction: column; gap: 14px; padding: 14px 18px 18px; background: var(--dark-bg); overflow: hidden; }
+
+	/* ===== Hero ===== */
+	.hero { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 18px 24px; background: var(--card-dark-bg); border: 1px solid var(--border-primary); border-radius: 8px; flex-shrink: 0; position: relative; overflow: hidden; }
+	.hero::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--accent); }
+	.hero-id { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+	.hero-greeting { font-size: 12px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--secondary-text); }
+	.hero-name { font-size: 30px; font-weight: 800; color: #fff; line-height: 1.15; letter-spacing: -0.3px; }
+	.hero-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+	.hero-tag { display: inline-flex; align-items: center; gap: 4px; padding: 3px 12px; font-size: 12px; font-weight: 600; color: #fff; background: none; border: none; position: relative; isolation: isolate; }
+	.hero-tag::before { content: ""; position: absolute; inset: 0; clip-path: var(--chamfer); background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-secondary); border-radius: 3px; z-index: -1; }
+	.hero-tag .material-icons { font-size: 14px; }
+	.hero-tag-btn { cursor: pointer; }
+	.hero-tag-btn:hover::before { border-color: var(--accent); }
+	.hero-tag-warn { cursor: pointer; color: #fbbf24; }
+	.hero-tag-warn::before { border-color: rgba(251, 191, 36, 0.45); background: rgba(251, 191, 36, 0.1); }
+	.hero-tag-muted { color: var(--secondary-text); }
+
+	.hero-right { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+	.hero-stats { display: flex; border: 1px solid var(--border-primary); border-radius: 6px; background: rgba(0, 0, 0, 0.15); }
+	.hero-stat { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 8px 20px; min-width: 110px; }
+	.hero-stat + .hero-stat { border-left: 1px solid var(--border-primary); }
+	.hero-stat-val { display: flex; align-items: baseline; gap: 6px; font-size: 22px; font-weight: 800; color: #fff; line-height: 1.2; }
+	.hero-stat-delta { font-size: 11px; font-weight: 700; color: #34d399; }
+	.hero-stat-delta.neg { color: #f87171; }
+	.hero-stat-lbl { display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #fff; white-space: nowrap; }
+	.hero-stat-lbl .material-icons { font-size: 14px; color: var(--accent); }
+	.hero-actions { display: flex; align-items: center; gap: 8px; }
+	.hero-dispatch { display: flex; align-items: center; }
+
+	/* ===== Grid & panels ===== */
+	.dash-grid { flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+	.dash-grid.two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.dash-col { display: flex; flex-direction: column; gap: 14px; min-height: 0; }
+
+	.dpanel { flex: 1; min-height: 0; display: flex; flex-direction: column; background: var(--card-dark-bg); border: 1px solid var(--border-primary); border-radius: 8px; overflow: hidden; }
+	.dpanel-head { display: flex; align-items: center; gap: 14px; padding: 12px 16px; border-bottom: 1px solid var(--border-primary); flex-shrink: 0; }
+	.dpanel-icon { font-size: 20px; color: var(--accent-text); width: 38px; height: 34px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative; isolation: isolate; }
+	.dpanel-icon::before { content: ""; position: absolute; inset: 0; clip-path: var(--chamfer); background: rgba(var(--accent-rgb), 0.16); border: 1px solid rgba(var(--accent-rgb), 0.4); border-radius: 3px; z-index: -1; }
+	.dpanel-titles { display: flex; flex-direction: column; flex: 1; min-width: 0; line-height: 1.25; }
+	.dpanel-title { font-size: 14px; font-weight: 700; color: #fff; }
+	.dpanel-count { font-size: 12px; font-weight: 600; color: var(--primary-text); }
+	.dpanel-body { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; padding: 8px 10px; }
+	.dpager { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 8px; border-top: 1px solid var(--border-primary); font-size: 12px; color: var(--secondary-text); flex-shrink: 0; }
+
+	/* Segmented tabs (BOLOs | Warrants) */
+	.seg { display: flex; gap: 0; margin: 10px 16px 0; padding: 4px; position: relative; isolation: isolate; flex-shrink: 0; }
+	.seg::before { content: ""; position: absolute; inset: 0; clip-path: var(--chamfer); background: rgba(0, 0, 0, 0.25); border: 1px solid var(--border-primary); border-radius: 3px; z-index: -1; pointer-events: none; }
+	.seg-btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; height: 30px; background: none; border: none; color: var(--primary-text); font-size: 13px; font-weight: 600; cursor: pointer; position: relative; isolation: isolate; }
+	.seg-btn .material-icons { font-size: 16px; }
+	.seg-btn::before { content: ""; position: absolute; inset: 0; clip-path: var(--chamfer); border-radius: 3px; z-index: -1; transition: background 0.12s; }
+	.seg-btn:hover::before { background: rgba(255, 255, 255, 0.04); }
+	.seg-btn.active { color: #fff; }
+	.seg-btn.active::before { background: linear-gradient(to top, rgba(var(--accent-rgb), 0.45), rgba(var(--accent-rgb), 0.06)); box-shadow: inset 0 -2px 0 var(--accent); }
+	.seg-count { min-width: 18px; padding: 0 5px; border-radius: 9px; background: rgba(255, 255, 255, 0.08); font-size: 11px; line-height: 18px; text-align: center; }
+	.seg-btn.active .seg-count { background: rgba(var(--accent-rgb), 0.35); color: #fff; }
+
+	/* Rows */
+	.notice-row { display: flex; align-items: center; gap: 14px; width: 100%; padding: 14px 12px; background: none; border: none; border-radius: 4px; color: #fff; font: inherit; text-align: left; cursor: pointer; flex-shrink: 0; }
+	.notice-row:hover, .notice-row.active { background: var(--hover-bg); }
+	.notice-icon { font-size: 20px; color: #fff; }
+	.notice-text { flex: 1; min-width: 0; font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+	.drow { display: flex; align-items: center; gap: 12px; width: 100%; padding: 10px 12px; background: none; border: none; border-bottom: 1px solid var(--border-primary); color: #fff; font: inherit; text-align: left; flex-shrink: 0; }
+	.drow:last-child { border-bottom: none; }
+	.drow-btn { cursor: pointer; border-radius: 4px; }
+	.drow-btn:hover { background: var(--hover-bg); }
+	.drow-main { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
+	.drow-title { font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.drow-sub { font-size: 12px; color: var(--secondary-text); }
+	.drow-notes { font-size: 12px; color: var(--primary-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+	.drow-arrow { font-size: 18px; color: var(--secondary-text); }
+
+	.priority-bar { width: 3px; height: 28px; border-radius: 2px; flex-shrink: 0; }
+	.live-pill { font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 3px; background: rgba(239, 68, 68, 0.2); color: #f87171; letter-spacing: 0.5px; }
+
+	/* Empty states */
+	.dempty { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center; padding: 24px; }
+	.dempty-sm { padding: 16px; }
+	.dempty-icon { font-size: 30px; color: var(--accent); margin-bottom: 6px; }
+	.dempty-title { font-size: 15px; font-weight: 700; color: #fff; }
+	.dempty-sub { font-size: 12px; font-weight: 500; color: var(--primary-text); max-width: 300px; line-height: 1.45; margin-bottom: 8px; }
+
+	/* Pills */
+	.pill-row { display: flex; gap: 4px; margin-top: 3px; flex-wrap: wrap; }
+	.pill { padding: 1px 5px; border-radius: 3px; font-size: 9px; font-weight: 600; letter-spacing: 0.2px; border: 1px solid transparent; }
+	.pill-red { background: rgba(239, 68, 68, 0.12); color: #f87171; border-color: rgba(239, 68, 68, 0.15); }
+	.pill-orange { background: rgba(245, 158, 11, 0.12); color: #fbbf24; border-color: rgba(245, 158, 11, 0.15); }
+	.pill-green { background: rgba(16, 185, 129, 0.12); color: #34d399; border-color: rgba(16, 185, 129, 0.15); }
+	.pill-blue { background: rgba(var(--accent-rgb), 0.12); color: var(--accent-text); border-color: rgba(var(--accent-rgb), 0.15); }
+
+	/* Callsign Modal */
+	.cs-modal-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; z-index: 9999; }
+	.cs-modal { background: var(--card-dark-bg); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 6px; width: min(320px, 92vw); display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); }
+	.cs-modal-header { display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.06); flex-shrink: 0; }
+	.cs-modal-title { font-size: 12px; font-weight: 600; color: rgba(255, 255, 255, 0.85); }
+	.cs-modal-close { display: flex; align-items: center; justify-content: center; background: transparent; color: rgba(255, 255, 255, 0.3); border: 1px solid rgba(255, 255, 255, 0.06); padding: 4px; border-radius: 3px; cursor: pointer; transition: all 0.1s; margin-left: auto; }
+	.cs-modal-close:hover { color: rgba(255, 255, 255, 0.7); border-color: rgba(255, 255, 255, 0.1); }
+	.cs-modal-body { padding: 14px 16px; display: flex; flex-direction: column; gap: 3px; }
+	.cs-input-label { color: rgba(255, 255, 255, 0.35); font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; }
+	.cs-input { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 3px; padding: 5px 8px; color: rgba(255, 255, 255, 0.8); font-size: 13px; font-weight: 600; letter-spacing: 1.5px; font-family: inherit; text-transform: uppercase; width: 100%; box-sizing: border-box; transition: border-color 0.1s; }
+	.cs-input:focus { outline: none; border-color: rgba(255, 255, 255, 0.1); }
+	.cs-input::placeholder { color: rgba(255, 255, 255, 0.15); letter-spacing: 1.5px; font-weight: 400; }
+	.cs-hint { color: rgba(255, 255, 255, 0.2); font-size: 9px; margin-top: 1px; }
+	.cs-modal-footer { display: flex; justify-content: flex-end; gap: 6px; padding: 10px 16px; border-top: 1px solid rgba(255, 255, 255, 0.06); }
+	.cs-btn-cancel { background: transparent; border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 3px; padding: 4px 10px; color: rgba(255, 255, 255, 0.4); font-size: 10px; font-weight: 500; cursor: pointer; transition: all 0.1s; }
+	.cs-btn-cancel:hover:not(:disabled) { color: rgba(255, 255, 255, 0.7); border-color: rgba(255, 255, 255, 0.1); }
+	.cs-btn-cancel:disabled { opacity: 0.4; cursor: not-allowed; }
+	.cs-btn-confirm { background: rgba(16, 185, 129, 0.06); color: rgba(52, 211, 153, 0.7); border: 1px solid rgba(16, 185, 129, 0.1); border-radius: 3px; padding: 4px 12px; font-size: 10px; font-weight: 600; cursor: pointer; transition: all 0.1s; }
+	.cs-btn-confirm:hover:not(:disabled) { background: rgba(16, 185, 129, 0.12); color: rgba(110, 231, 183, 0.9); }
+	.cs-btn-confirm:disabled { opacity: 0.4; cursor: not-allowed; }
+</style>

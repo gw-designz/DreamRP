@@ -1,0 +1,105 @@
+.nsc {
+    --bg: #eafcfd;
+    color: #0b0b0b;
+}
+
+.nsc-hero {
+    flex: 0 0 auto;
+    padding: 3.6em 1.2em 1.6em;
+    background: linear-gradient(170deg, #31d4d8 0%, #68eaf2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 1.4em 1.4em;
+}
+
+.nsc-art {
+    width: 5em;
+    height: 5em;
+    color: #0b0b0b;
+}
+
+.nsc-hero h1 {
+    margin: 0.2em 0 0;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+.nsc-hero p {
+    margin: 0.1em 0 0;
+    font-size: 0.82em;
+    font-weight: 500;
+}
+
+.nsc-body {
+    flex: 1 1 auto;
+    padding: 1.2em 1.1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.nsc-card {
+    display: flex;
+    align-items: center;
+    gap: 0.9em;
+    padding: 0.9em 1em;
+    border-radius: 0.6em;
+    background: #fff;
+    box-shadow: 0 0.15em 0.5em rgba(0, 80, 90, 0.1);
+}
+
+.nsc-card > .fa-svg {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    color: #1fb7bd;
+}
+
+.nsc-card span {
+    display: flex;
+    flex-direction: column;
+}
+
+.nsc-card em {
+    font-style: normal;
+    font-size: 0.72em;
+    color: #555;
+}
+
+.nsc-card b {
+    font-size: 1.6em;
+    font-weight: 800;
+}
+
+.nsc-note {
+    margin: 0;
+    font-size: 0.72em;
+    color: #4a5a5c;
+}
+
+.nsc-btn {
+    height: 2.5em;
+    border-radius: 1.3em;
+    font-weight: 700;
+    font-size: 0.86em !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+.nsc-btn--dark {
+    background: #0b0b0b;
+    color: #5ff0f5 !important;
+}
+
+.nsc-btn--dark:disabled {
+    opacity: 0.5;
+}
+
+.nsc-btn--ghost {
+    border: 0.1em solid #0b0b0b;
+    color: #0b0b0b !important;
+}

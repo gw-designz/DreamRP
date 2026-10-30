@@ -1,0 +1,498 @@
+:root {
+  --bg: #12151c;
+  --panel: #1a1f2b;
+  --panel-alt: #212736;
+  --border: #2c3345;
+  --text: #e6e9f0;
+  --text-muted: #8b93a7;
+  --accent: #4f8cff;
+  --accent-hover: #6ba0ff;
+  --danger: #e5484d;
+  --danger-hover: #f2696d;
+  --success: #3dd68c;
+  --locked: #e5484d;
+  --unlocked: #3dd68c;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  color: var(--text);
+  overflow: hidden;
+}
+
+#app.hidden {
+  display: none;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------------------------------------------------------- */
+/* Interaction prompt (§8) - a small floating HUD badge, driven purely */
+/* by SendNUIMessage from client/main.lua. Never receives NUI focus,   */
+/* so pointer-events stays off to guarantee it can never intercept a   */
+/* click even if something goes wrong on the Lua side.                 */
+/* ---------------------------------------------------------------- */
+
+#prompt {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px 8px 8px;
+  background: rgba(12, 14, 20, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  z-index: 100;
+  animation: prompt-in 0.12s ease-out;
+}
+
+#prompt.hidden {
+  display: none;
+}
+
+#prompt[data-position="center"] {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#prompt[data-position="bottom-center"] {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#prompt[data-position="right-center"] {
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
+}
+
+@keyframes prompt-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.prompt-key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 6px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.prompt-label {
+  color: #f3f4f6;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.panel {
+  width: 920px;
+  max-width: 94vw;
+  max-height: 88vh;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel-alt);
+}
+
+.panel-header h1 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-actions input[type="text"] {
+  width: 220px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Buttons                                                            */
+/* ---------------------------------------------------------------- */
+
+button {
+  font-family: inherit;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--panel-alt);
+  color: var(--text);
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease;
+}
+
+button:hover {
+  background: #2a3140;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+button.primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+button.danger {
+  background: transparent;
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+button.danger:hover {
+  background: rgba(229, 72, 77, 0.12);
+  color: var(--danger-hover);
+}
+
+button.ghost {
+  background: transparent;
+}
+
+button.small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Inputs                                                             */
+/* ---------------------------------------------------------------- */
+
+input[type="text"],
+input[type="number"],
+select {
+  font-family: inherit;
+  font-size: 13px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 8px 10px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: var(--accent);
+}
+
+input:disabled {
+  opacity: 0.55;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+label.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+label.checkbox.small {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+label.checkbox input {
+  width: 16px;
+  height: 16px;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.mono {
+  font-family: 'Cascadia Code', Consolas, monospace;
+}
+
+/* ---------------------------------------------------------------- */
+/* List / table                                                       */
+/* ---------------------------------------------------------------- */
+
+#door-table-container {
+  overflow-y: auto;
+  padding: 0 20px;
+}
+
+.door-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 14px;
+}
+
+.door-table th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.door-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.door-table td.empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 30px;
+}
+
+.door-table .actions {
+  display: flex;
+  gap: 4px;
+}
+
+.door-table .actions button {
+  padding: 6px 9px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.pill.locked {
+  color: var(--locked);
+  border-color: var(--locked);
+  background: rgba(229, 72, 77, 0.1);
+}
+
+.pill.unlocked {
+  color: var(--unlocked);
+  border-color: var(--unlocked);
+  background: rgba(61, 214, 140, 0.1);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0 20px;
+  font-size: 13px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Modal                                                              */
+/* ---------------------------------------------------------------- */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 7, 12, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal {
+  width: 360px;
+  background: var(--panel-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.modal h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.modal p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Create / edit form                                                 */
+/* ---------------------------------------------------------------- */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  padding: 18px 20px 6px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 10px 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 8px 12px;
+  color: var(--text-muted);
+}
+
+.tab.active {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+
+.tab-body {
+  padding: 16px 20px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 220px;
+}
+
+.rule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.rule-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rule-row input[type="text"] {
+  flex: 2;
+}
+
+.rule-row input[type="number"] {
+  flex: 1;
+  width: 90px;
+}
+
+.dependency-builder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.dependency-builder select,
+.dependency-builder input {
+  flex: 1;
+  min-width: 140px;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 14px 20px;
+  border-top: 1px solid var(--border);
+  background: var(--panel-alt);
+}
+
+code {
+  background: var(--bg);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-family: 'Cascadia Code', Consolas, monospace;
+  font-size: 12px;
+}
+
+/* Scrollbars - keep them slim and consistent with the dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}

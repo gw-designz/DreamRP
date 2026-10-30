@@ -1,0 +1,306 @@
+[
+    {
+        "name": "weapon_assaultsmg",
+        "label": "Assault SMG"
+    },
+    {
+        "name": "weapon_hominglauncher",
+        "label": "Homing Launcher"
+    },
+    {
+        "name": "weapon_bullpuprifle_mk2",
+        "label": "Bullpup Rifle MK2"
+    },
+    {
+        "name": "weapon_advancedrifle",
+        "label": "Advanced Rifle"
+    },
+    {
+        "name": "weapon_gusenberg",
+        "label": "Gusenberg"
+    },
+    {
+        "name": "weapon_snowball",
+        "label": "Snowball"
+    },
+    {
+        "name": "weapon_snowlauncher",
+        "label": "Snowball Launcher"
+    },
+    {
+        "name": "weapon_golfclub",
+        "label": "Golf Club"
+    },
+    {
+        "name": "weapon_flare",
+        "label": "Flare"
+    },
+    {
+        "name": "weapon_ball",
+        "label": "Ball"
+    },
+    {
+        "name": "weapon_bat",
+        "label": "Baseball Bat"
+    },
+    {
+        "name": "weapon_assaultshotgun",
+        "label": "Assault Shotgun"
+    },
+    {
+        "name": "weapon_smokegrenade",
+        "label": "Tear Gas Grenade"
+    },
+    {
+        "name": "weapon_railgun",
+        "label": "Railgun"
+    },
+    {
+        "name": "weapon_smg",
+        "label": "SMG"
+    },
+    {
+        "name": "weapon_minismg",
+        "label": "Mini SMG"
+    },
+    {
+        "name": "weapon_carbinerifle",
+        "label": "Carbine Rifle"
+    },
+    {
+        "name": "weapon_revolver_mk2",
+        "label": "Revolver MK2"
+    },
+    {
+        "name": "weapon_compactrifle",
+        "label": "Compact Rifle"
+    },
+    {
+        "name": "weapon_grenade",
+        "label": "Grenade"
+    },
+    {
+        "name": "weapon_specialcarbine",
+        "label": "Special Carbine"
+    },
+    {
+        "name": "weapon_pumpshotgun",
+        "label": "Pump Shotgun"
+    },
+    {
+        "name": "weapon_heavysniper_mk2",
+        "label": "Heavy Sniper MK2"
+    },
+    {
+        "name": "weapon_pistol_mk2",
+        "label": "Pistol MK2"
+    },
+    {
+        "name": "weapon_crowbar",
+        "label": "Crowbar"
+    },
+    {
+        "name": "weapon_poolcue",
+        "label": "Pool Cue"
+    },
+    {
+        "name": "weapon_hammer",
+        "label": "Hammer"
+    },
+    {
+        "name": "weapon_doubleaction",
+        "label": "Double Action Revolver"
+    },
+    {
+        "name": "weapon_musket",
+        "label": "Musket"
+    },
+    {
+        "name": "weapon_mg",
+        "label": "MG"
+    },
+    {
+        "name": "weapon_molotov",
+        "label": "Molotov"
+    },
+    {
+        "name": "weapon_fireextinguisher",
+        "label": "Fire Extinguisher"
+    },
+    {
+        "name": "weapon_ceramicpistol",
+        "label": "Ceramic Pistol"
+    },
+    {
+        "name": "weapon_vintagepistol",
+        "label": "Vintage Pistol"
+    },
+    {
+        "name": "weapon_stone_hatchet",
+        "label": "Stone Hatchet"
+    },
+    {
+        "name": "weapon_pipebomb",
+        "label": "Pipe Bomb"
+    },
+    {
+        "name": "weapon_revolver",
+        "label": "Revolver"
+    },
+    {
+        "name": "weapon_combatshotgun",
+        "label": "Combat Shotgun"
+    },
+    {
+        "name": "weapon_sawnoffshotgun",
+        "label": "Sawnoff Shotgun"
+    },
+    {
+        "name": "weapon_appistol",
+        "label": "App Pistol"
+    },
+    {
+        "name": "weapon_bzgas",
+        "label": "BZ Gas"
+    },
+    {
+        "name": "weapon_combatpistol",
+        "label": "Combat Pistol"
+    },
+    {
+        "name": "weapon_heavyshotgun",
+        "label": "Heavy Shotgun"
+    },
+    {
+        "name": "weapon_combatmg",
+        "label": "Combat MG"
+    },
+    {
+        "name": "weapon_dagger",
+        "label": "Dagger"
+    },
+    {
+        "name": "weapon_machete",
+        "label": "Machete"
+    },
+    {
+        "name": "weapon_microsmg",
+        "label": "Micro SMG"
+    },
+    {
+        "name": "weapon_flashlight",
+        "label": "Flashlight"
+    },
+    {
+        "name": "weapon_bottle",
+        "label": "Broken Bottle"
+    },
+    {
+        "name": "weapon_battleaxe",
+        "label": "Battle Axe"
+    },
+    {
+        "name": "weapon_minigun",
+        "label": "Minigun"
+    },
+    {
+        "name": "weapon_machinepistol",
+        "label": "Machine Pistol"
+    },
+    {
+        "name": "weapon_pistol",
+        "label": "Pistol"
+    },
+    {
+        "name": "weapon_heavysniper",
+        "label": "Heavy Sniper"
+    },
+    {
+        "name": "weapon_rpg",
+        "label": "Rocket Launcher"
+    },
+    {
+        "name": "weapon_specialcarbine_mk2",
+        "label": "Special Carbine MK2"
+    },
+    {
+        "name": "weapon_heavypistol",
+        "label": "Heavy Pistol"
+    },
+    {
+        "name": "weapon_marksmanrifle",
+        "label": "Marksman Rifle"
+    },
+    {
+        "name": "weapon_nightstick",
+        "label": "Nightstick"
+    },
+    {
+        "name": "weapon_assaultrifle_mk2",
+        "label": "Assault Rifle MK2"
+    },
+    {
+        "name": "weapon_pistol50",
+        "label": "Pistol .50"
+    },
+    {
+        "name": "weapon_switchblade",
+        "label": "Switchblade"
+    },
+    {
+        "name": "weapon_navyrevolver",
+        "label": "Navy Revolver"
+    },
+    {
+        "name": "weapon_wrench",
+        "label": "Pipe Wrench"
+    },
+    {
+        "name": "weapon_knife",
+        "label": "Knife"
+    },
+    {
+        "name": "weapon_bullpupshotgun",
+        "label": "Bullpup Shotgun"
+    },
+    {
+        "name": "weapon_sniperrifle",
+        "label": "Sniper Rifle"
+    },
+    {
+        "name": "weapon_carbinerifle_mk2",
+        "label": "Carbine Rifle MK2"
+    },
+    {
+        "name": "weapon_pumpshotgun_mk2",
+        "label": "Pump Shotgun MK2"
+    },
+    {
+        "name": "weapon_hatchet",
+        "label": "Hatchet"
+    },
+    {
+        "name": "weapon_snspistol_mk2",
+        "label": "SNS Pistol MK2"
+    },
+    {
+        "name": "weapon_combatmg_mk2",
+        "label": "Combat MG MK2"
+    },
+    {
+        "name": "weapon_assaultrifle",
+        "label": "Assault Rifle"
+    },
+    {
+        "name": "weapon_combatpdw",
+        "label": "Combat PDW"
+    },
+    {
+        "name": "weapon_snspistol",
+        "label": "SNS Pistol"
+    },
+    {
+        "name": "weapon_smg_mk2",
+        "label": "SMG MK2"
+    }
+]

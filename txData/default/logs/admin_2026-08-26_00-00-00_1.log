@@ -1,0 +1,38 @@
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/26/2026, 2:34:23 PM
+================================================================
+================================================================
+======== Log Rotated - 8/26/2026, 2:34:27 PM                    
+================================================================
+[14:34:47][realscrp] logged in from 127.0.0.1 via cfxre auth
+[14:36:17][realscrp] executed "STOP SERVER"
+[14:36:17][realscrp] Config changes: server.dataPath
+[14:36:17][realscrp] Resetting server data settings.
+[14:36:33][realscrp] Config changes: server.dataPath
+[14:36:33][realscrp] Changing global/fxserver settings via setup stepper.
+[14:56:09][realscrp] Refreshed resources
+[14:56:11][realscrp] executed "RESTART SERVER"
+[15:36:39][realscrp] Ensured resource "prism_uipack"
+[15:40:18][realscrp] Refreshed resources
+[15:42:09][realscrp] Refreshed resources
+[15:42:17][realscrp] Ensured resource "nopixel_sounds"
+[15:42:19][realscrp] Ensured resource "nopixel4_emergency_sounds"
+[15:42:26][realscrp] Ensured resource "nikez_sounds"
+[15:43:28][realscrp] Ensured resource "nopixel4_vehicles_emergency"
+[15:43:31][realscrp] Ensured resource "nopixel4_vehicles_addon_polvstr"
+[15:45:20][realscrp] Ensured resource "nopixel4_vehicles_addon_polbuffalo4"
+[15:51:59][realscrp] Refreshed resources
+[15:52:02][realscrp] Ensured resource "ox_inventory"
+[15:52:10][realscrp] Ensured resource "qbx_ambulancejob"
+[15:52:11][realscrp] Ensured resource "sd-itemspawner"
+[15:52:14][realscrp] Ensured resource "ox_fuel"
+[15:53:30][realscrp] executed "RESTART SERVER"
+[15:55:26][realscrp] Refreshed resources
+[16:02:19][MONITOR] Restarting server: Server process close detected.
+[16:02:20][MONITOR] Restarting server: Server process close detected.
+[16:02:21][MONITOR] Restarting server: Server process close detected.
+================================================================
+======== txAdmin v8.1.1 atop fxserver 34629 Starting - 8/26/2026, 4:03:58 PM
+================================================================
+[16:05:53][realscrp] logged in from 127.0.0.1 via password auth
+[16:20:21][realscrp] Refreshed resources

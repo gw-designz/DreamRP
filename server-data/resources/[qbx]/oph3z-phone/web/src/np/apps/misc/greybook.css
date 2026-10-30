@@ -1,0 +1,139 @@
+.ngy {
+    --bg: #f3f5f6;
+    --accent: #1ba39c;
+}
+
+.ngy-head {
+    flex: 0 0 auto;
+    padding: 3.2em 1em 0.8em;
+    background: #fff;
+    border-bottom: 0.0625em solid #e1e4e6;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.ngy-head__row {
+    display: flex;
+    align-items: center;
+    gap: 0.55em;
+}
+
+.ngy-logo {
+    width: 2.1em;
+    height: 2.1em;
+    border-radius: 0.5em;
+    background: #e3f5f4;
+    color: #1ba39c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ngy-logo .fa-svg {
+    width: 1.1em !important;
+    height: 1.1em !important;
+}
+
+.ngy-head h1 {
+    flex: 1 1 auto;
+    margin: 0;
+    font-size: 1.35em;
+    font-weight: 800;
+}
+
+.ngy-edit {
+    padding: 0.35em 0.8em;
+    border-radius: 1em;
+    background: #1ba39c;
+    color: #fff !important;
+    font-size: 0.72em !important;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+}
+
+.ngy-edit .fa-svg {
+    width: 0.8em !important;
+    height: 0.8em !important;
+}
+
+.ngy-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7em;
+    margin-bottom: 0.5em;
+    padding: 0.75em 0.8em;
+    background: #fff;
+    border: 0.0625em solid #e1e4e6;
+    border-radius: 0.45em;
+}
+
+.ngy-av {
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+    background: #1ba39c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85em;
+    font-weight: 700;
+    flex: 0 0 auto;
+}
+
+.ngy-main {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.ngy-main b {
+    font-size: 0.9em;
+}
+
+.ngy-main em {
+    font-style: normal;
+    font-size: 0.72em;
+    font-weight: 600;
+    color: #1ba39c;
+}
+
+.ngy-main small {
+    font-size: 0.7em;
+    color: #555;
+    white-space: pre-wrap;
+}
+
+.ngy-actions {
+    display: flex;
+    gap: 0.35em;
+}
+
+.ngy-actions button {
+    width: 1.9em;
+    height: 1.9em;
+    border-radius: 50%;
+    background: #e3f5f4;
+    color: #1ba39c !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ngy-actions .fa-svg {
+    width: 0.8em !important;
+    height: 0.8em !important;
+}
+
+.ngy-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.82em;
+}

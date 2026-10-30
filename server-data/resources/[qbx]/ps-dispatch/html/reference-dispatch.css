@@ -1,0 +1,27 @@
+/* Reference layout: dark floating call cards with a blue leading edge. */
+.pd-panel { background: #090d15; border: 1px solid rgba(145,160,185,.18); border-radius: 9px; }
+.pd-panel.w-\[370px\] { width: min(720px, 46vw); max-width: 46vw; height: auto !important; max-height: 72vh; align-self: flex-start; margin-top: 10px; background: transparent; border: 0; box-shadow: none; overflow: visible; }
+.pd-panel.w-\[330px\] { width: 300px; max-width: 20vw; height: auto !important; max-height: 45vh; align-self: flex-end; margin-bottom: 20px; }
+.pd-panel.w-\[370px\] > .pd-head { background: #0b0e16; border: 1px solid rgba(145,160,185,.18); border-radius: 6px; padding: 8px 12px; margin-bottom: 6px; }
+.pd-panel.w-\[370px\] > .pd-scroll { overflow-y: auto; max-height: 62vh; padding: 0 4px; gap: 10px; }
+.pd-panel.w-\[370px\] .pd-tabs { margin: 0 4px 8px; padding: 0; background: #10131c; border-radius: 4px; }
+.pd-panel.w-\[370px\] .pd-tabs::before { display: none; }
+.pd-panel.w-\[370px\] .pd-tab { height: 28px; font-size: 11px; color: white; }
+.pd-panel.w-\[370px\] .pd-tab::before { transform: none; }
+.pd-panel.w-\[370px\] .pd-tab--active::before { background: #0877b5; box-shadow: none; }
+.pd-panel.w-\[370px\] [data-call-id], .pd-panel.w-\[330px\] [data-call-id] { background: #0b0e16; border-left: 3px solid #0877b5; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,.3); }
+.pd-row { background: #080b12; border: 0; border-radius: 0; padding: 12px; }
+.pd-row:hover, .pd-row--open { background: #0a0e16; }
+.pd-row-msg { font-size: 14px; }
+.pd-row .pd-icon, .pd-alert .pd-icon { width: 28px; height: 28px; font-size: 11px; background: rgba(8,119,181,.12); border: 1px solid rgba(8,119,181,.25); border-radius: 4px; }
+.pd-row .pd-icon::before, .pd-alert .pd-icon::before { display: none; }
+.pd-detail { margin: 0; padding: 10px 12px; border: 0; border-radius: 0; background: #12151e; }
+.pd-row .pd-badge, .pd-alert .pd-head > .pd-badge { display: none; }
+.pd-btn, .pd-ctl { background: rgba(255,255,255,.04); border: 1px solid rgba(145,160,185,.22); border-radius: 5px; }
+.pd-btn::before, .pd-ctl::before { display: none; }
+.pd-btn--green { background: #0877b5; color: white; }
+.pd-alert { width: 420px !important; max-width: 30vw; background: #0a0d13; border: 0; border-left: 4px solid #0877b5; border-radius: 10px; }
+.pd-alert .pd-head { padding: 10px 12px 4px; border: 0; gap: 8px; }
+.pd-alert .pd-title { font-size: 15px; font-weight: 700; }
+.pd-alert .pd-strip { background: transparent; border: 0; padding: 3px 0; }
+.pd-alert .pd-note { background: #20232b; border: 0; border-radius: 0; color: white; padding: 9px; }

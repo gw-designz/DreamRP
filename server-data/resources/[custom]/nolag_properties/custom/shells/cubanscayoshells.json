@@ -1,0 +1,26 @@
+{
+    "resourceName": "CUBANS_CAYO_1",
+    "creator": "Cubans Cayo Shells",
+    "interiors": {
+        "Cubans Cayo Shell": {
+            "label": "Cubans Beach Shell",
+            "doorOffset": {
+                "x": 0.827759,
+                "y": 22.909515,
+                "z": 1.888885,
+                "h": 98.05069,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 80000000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/bZTHZQFgddhUQAaeWZU2c/cubanscayoshell.png"
+                }
+            ],
+            "model": "cubansbeachhouse_shell"
+        }
+    }
+}

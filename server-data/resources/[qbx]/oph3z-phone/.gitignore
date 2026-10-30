@@ -1,0 +1,10 @@
+node_modules/
+
+data/*
+!data/.gitkeep
+!data/x
+!data/marketplace
+data/x/*
+!data/x/.gitkeep
+data/marketplace/*
+!data/marketplace/.gitkeep

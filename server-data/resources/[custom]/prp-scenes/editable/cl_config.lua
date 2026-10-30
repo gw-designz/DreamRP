@@ -1,0 +1,1 @@
+AccentColor = "#88E52B" -- Here you can change the accent color of the UI

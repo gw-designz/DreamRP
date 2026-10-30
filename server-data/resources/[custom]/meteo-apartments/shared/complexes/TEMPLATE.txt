@@ -1,0 +1,56 @@
+--[[
+    Complex Template
+
+    1. Copy this file and rename it (e.g., my_apartments.lua)
+    2. Fill in your coordinates and configuration
+    3. Add to shared/main.lua:
+       my_apartments = require 'shared.complexes.my_apartments',
+
+    Required: label, coords, elevator, rooms
+    Optional: blip, npc, garage, startingRoom, totalRooms, roomType, startingEnabled
+]]
+
+return {
+    label = 'My Apartment Complex',
+    coords = vec3(0.0, 0.0, 0.0),
+    startingRoom = 1,
+    totalRooms = 10,
+    roomType = 'modern',
+    startingEnabled = true,  -- If true, appears in spawn selectors for new players
+
+    blip = {
+        enabled = true,
+        sprite = 475,
+        color = 2,
+        scale = 0.7
+    },
+
+    npc = {
+        enabled = true,
+        coords = vec4(0.0, 0.0, 0.0, 0.0),
+        model = 'a_f_y_business_01',
+        scenario = 'WORLD_HUMAN_CLIPBOARD'
+    },
+
+    garage = {
+        id = 'my_complex',
+        vehicleClass = nil,
+        spawnPoint = vec4(0.0, 0.0, 0.0, 0.0),
+        ped = {
+            coords = vec4(0.0, 0.0, 0.0, 0.0),
+            model = 's_m_y_valet_01',
+            scenario = 'WORLD_HUMAN_CLIPBOARD'
+        },
+        parkZone = { coords = vec3(0.0, 0.0, 0.0), radius = 5.0 }
+    },
+
+    elevator = { -- You must add elevator locations here
+        { coords = vec4(0.0, 0.0, 0.0, 0.0), label = 'Lobby' },
+        { coords = vec4(0.0, 0.0, 0.0, 0.0), label = 'Floor 1' },
+        { coords = vec4(0.0, 0.0, 0.0, 0.0), label = 'Floor 2' },
+    },
+
+    rooms = {
+        -- This will generate automatically when you create room using /aptdev
+    }
+}

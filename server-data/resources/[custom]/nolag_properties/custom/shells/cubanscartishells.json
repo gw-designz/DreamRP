@@ -1,0 +1,26 @@
+{
+    "resourceName": "CUBANS_CARTI_1",
+    "creator": "Cubans Carti Shells",
+    "interiors": {
+        "Cubans Carti Shell": {
+            "label": "Cubans Carti Shell",
+            "doorOffset": {
+                "x": -12.782471,
+                "y": 1.862396,
+                "z": 1.011581,
+                "h": 355.171753,
+                "width": 2.0
+            },
+            "stash": {
+                "maxweight": 500000,
+                "slots": 120
+            },
+            "imgs": [
+                {
+                    "url": "https://r2.fivemanage.com/bZTHZQFgddhUQAaeWZU2c/CARTI.jpg"
+                }
+            ],
+            "model": "cubanseviljordan_shell"
+        }
+    }
+}

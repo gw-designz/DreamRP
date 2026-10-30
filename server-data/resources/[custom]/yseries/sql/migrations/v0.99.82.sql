@@ -1,0 +1,1 @@
+UPDATE `yphone_metadata` SET `dbVersion` = '0.99.82';
