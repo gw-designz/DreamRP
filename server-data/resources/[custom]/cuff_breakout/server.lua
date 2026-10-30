@@ -13,13 +13,14 @@ lib.callback.register('cuff_breakout:server:start', function(source)
     local profile = Config.CuffTypes[cuffType]
     if not profile then return false, 'cannot_break' end
 
+    local used = attempts[source] or 0
+    if Config.MaxAttempts > 0 and used >= Config.MaxAttempts then return false, 'no_attempts' end
+
     local now = os.time()
     if cooldowns[source] and cooldowns[source] > now then
         return false, 'cooldown', cooldowns[source] - now
     end
 
-    local used = attempts[source] or 0
-    if Config.MaxAttempts > 0 and used >= Config.MaxAttempts then return false, 'no_attempts' end
     attempts[source] = used + 1
 
     sessions[source] = { started = GetGameTimer(), cuffType = cuffType, profile = profile }

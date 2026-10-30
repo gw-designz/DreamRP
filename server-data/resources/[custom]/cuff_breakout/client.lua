@@ -143,9 +143,18 @@ RegisterCommand(Config.Command, attemptBreakout, false)
 -- Resist minigame while being cuffed, used by p_policejob's cuffGame hook.
 -- cb(true) = escaped the cuffs, cb(false) = got cuffed. Runs in its own thread so
 -- the caller can wait on it with a promise.
+local resists = 0 -- resist attempts since the player was last actually cuffed
+
 local function cuffGame(isHard, cuffType, cb)
     local base = Config.OnCuff[cuffType or 'cuffs']
     if active or not base then return cb(false) end
+
+    -- Out of resists: the cuffs go on automatically and the count starts over
+    if Config.OnCuff.MaxResists > 0 and resists >= Config.OnCuff.MaxResists then
+        resists = 0
+        return cb(false)
+    end
+    resists = resists + 1
 
     CreateThread(function()
         active = true
@@ -154,6 +163,7 @@ local function cuffGame(isHard, cuffType, cb)
 
         local result = runMinigame(profile, Config.Text.resist_title, Config.Text.resist_subtitle)
         active = false
+        if result ~= true then resists = 0 end
         cb(result == true)
     end)
 end
