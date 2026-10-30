@@ -44,8 +44,11 @@ Config.LockDifficulty = { 'easy', 'easy', 'medium' }
 
 Config.CanPickUnlockedDoors = false
 
+-- Only the sophisticated lockpick opens building doors. Keep this in step with
+-- buildingDoors in lockpick_minigame/config.lua. A door still has to have
+-- "lockpick" ticked in the /doorlock editor to be pickable at all.
 Config.LockpickItems = {
-    'lockpick'
+    'sophisticated_lockpick'
 }
 
 Config.NativeAudio = true

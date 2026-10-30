@@ -46,16 +46,25 @@ local function pickLock(entity)
 	lib.requestAnimDict('mp_common_heist')
 	TaskPlayAnim(cache.ped, 'mp_common_heist', 'pick_door', 3.0, 1.0, -1, 49, 0, true, true, true)
 
-	local success = lib.skillCheck(door.lockpickDifficulty or Config.LockDifficulty)
-	local rand = math.random(1, success and 100 or 5)
+	-- DreamRP: lockpick_minigame plays the tier's pin-tumbler game and rolls that
+	-- tier's own break chance on a failure, so the old break roll below only runs
+	-- on the lib.skillCheck fallback (lockpickDifficulty is ignored by the minigame).
+	local tier = GetResourceState('lockpick_minigame') == 'started' and exports.lockpick_minigame:GetBestTier('buildingDoors')
+	local success
+
+	if tier then
+		success = exports.lockpick_minigame:Start(tier)
+	else
+		success = lib.skillCheck(door.lockpickDifficulty or Config.LockDifficulty)
+
+		if math.random(1, success and 100 or 5) == 1 then
+			TriggerServerEvent('ox_doorlock:breakLockpick')
+			lib.notify({ type = 'error', description = locale('lockpick_broke') })
+		end
+	end
 
 	if success then
 		TriggerServerEvent('ox_doorlock:setState', door.id, door.state == 1 and 0 or 1, true)
-	end
-
-	if rand == 1 then
-		TriggerServerEvent('ox_doorlock:breakLockpick')
-		lib.notify({ type = 'error', description = locale('lockpick_broke') })
 	end
 
 	StopEntityAnim(cache.ped, 'pick_door', 'mp_common_heist', 0)
@@ -67,6 +76,11 @@ exports('pickClosestDoor', function()
 	if not ClosestDoor then return end
 
 	pickLock(ClosestDoor.entity)
+end)
+
+-- DreamRP: lets lockpick_minigame send a used lockpick here only when there's a door to pick
+exports('canPickClosestDoor', function()
+	return ClosestDoor and canPickLock(ClosestDoor.entity) or false
 end)
 
 local tempData = {}

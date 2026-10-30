@@ -100,10 +100,10 @@ return {
     -- alongside Smash Window, playing out on vice_hud's own GTA6-styled
     -- lockpick ring rather than LockpickDoor's ox_lib lib.skillCheck
     -- (client/functions.lua) -- that function, and the item-use event
-    -- (lockpicks:UseLockpick) that triggers it, are untouched and still
-    -- exist as a separate, unconnected path (no item currently fires it —
-    -- see items.lua's 'lockpick' entry). This is a second, parallel front
-    -- end for the same kind of theft, not a replacement.
+    -- (lockpicks:UseLockpick) that triggers it, are a separate path: using a
+    -- lockpick item fires it through lockpick_minigame, which also replaces
+    -- the lib.skillCheck there with its tiered pin-tumbler game. This is a
+    -- second, parallel front end for the same kind of theft, not a replacement.
     --
     -- Needs a lockpick or advancedlockpick item. Quieter than smashing (no
     -- alarm, lower alert chance) but costs the tool on a failed attempt,
