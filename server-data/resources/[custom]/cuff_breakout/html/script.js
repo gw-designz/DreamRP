@@ -7,6 +7,7 @@ const timerEl = document.getElementById('timer');
 const percentEl = document.getElementById('percent');
 const progressEl = document.getElementById('progress');
 const timeEl = document.getElementById('time');
+const keyEl = document.getElementById('key');
 
 let duration = 1;
 let hideTimeout = null;
@@ -44,6 +45,9 @@ window.addEventListener('message', ({ data }) => {
             titleEl.textContent = data.title;
             subtitleEl.textContent = data.subtitle;
             instructionEl.textContent = data.instruction;
+            // Officer counter-game shows a key instead of the mouse
+            keyEl.textContent = data.key || '';
+            plate.classList.toggle('counter', !!data.key);
             plate.classList.remove('success', 'fail', 'jolt');
             setProgress(0);
             setTime(0);
@@ -54,6 +58,10 @@ window.addEventListener('message', ({ data }) => {
             setProgress(data.progress);
             setTime(data.elapsed);
             if (data.shook) jolt();
+            break;
+
+        case 'tap':
+            jolt();
             break;
 
         case 'close':
