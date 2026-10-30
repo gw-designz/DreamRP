@@ -34,23 +34,30 @@ Config.CuffTypes = {
 -- MaxResists = resist minigames allowed before the cuffs go on automatically; the count
 -- resets once the player actually ends up cuffed. 0 = unlimited.
 Config.OnCuff = {
-    HardMultiplier = 1.5,
+    HardMultiplier = 1.15,    -- was 1.5, which made hard cuffs (the target-menu option) near impossible
     MaxResists = 3,
     cuffs      = { duration = 6000, shakes = 55, decay = 12 },
     cable_ties = { duration = 6500, shakes = 40, decay = 10 },
 }
 
 -- Counter-game for the officer who applied the cuffs: while the suspect resists being cuffed,
--- that officer mashes Key to knock the suspect's meter back. Only kicks in when the officer
--- is within Distance when the resist starts. The G breakout (slipping the cuffs) is never countered.
---   Max pushback = PushPerPress * MaxPressesPerSecond meter %/s (default 3.2%/s)
+-- that officer mashes Key to weaken the suspect's shakes. Only kicks in when the officer is
+-- within Distance when the resist starts. The G breakout (slipping the cuffs) is never countered.
+--
+-- Balance: a countered suspect needs ShakeMultiplier times the shakes, and each shake is worth
+-- (1 - MaxResistance * pressure), pressure = officer presses per second / FullPressureRate (max 1).
+--   Effort vs an uncountered resist = ShakeMultiplier / (1 - MaxResistance * pressure)
+--   Defaults: officer idle 0.80x, half pressure 0.89x, full pressure 1.00x
+-- So an officer who keeps up holds it at the normal difficulty, one who slacks gives ground.
+-- Raise MaxResistance to favour cops, lower it to favour suspects. Use Config.Debug to log results.
 Config.Counter = {
     Enabled = true,
     Key = 38,                 -- INPUT_PICKUP (E)
     KeyLabel = 'E',
     Distance = 8.0,
-    PushPerPress = 0.4,       -- meter % removed from the suspect per press
-    MaxPressesPerSecond = 8,  -- server-side cap so macros can't spam it
+    ShakeMultiplier = 0.8,
+    MaxResistance = 0.2,
+    FullPressureRate = 7,     -- presses/s for full pressure; faster (or macros) gives nothing extra
     RelayInterval = 250,      -- ms between network updates in both directions
 }
 

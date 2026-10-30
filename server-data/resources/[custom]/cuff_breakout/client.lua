@@ -1,6 +1,7 @@
 local active = false
 local countered = false -- the arresting officer is fighting this attempt
-local pushback = 0.0    -- meter % the officer has knocked off since the last frame
+local pressure = 0.0    -- 0..1, how hard the officer is mashing right now
+local pressureAt = 0    -- when the server last sent a pressure value
 local counter = nil     -- officer side: { suspect, duration, started, pending }
 
 local function notify(key, kind, ...)
@@ -23,14 +24,13 @@ local function canAttempt()
     return true
 end
 
--- Returns true (success), false (time ran out) or nil (cancelled)
+-- Returns true (success), false (time ran out) or nil (cancelled), plus the final meter %
 local function runMinigame(profile, title, subtitle)
     local startTime = GetGameTimer()
-    local gainPerShake = 100.0 / profile.shakes
     local progress = 0.0
     local lastUpdate = 0
     local lastRelay = 0
-    countered, pushback = false, 0.0
+    countered, pressure, pressureAt = false, 0.0, 0
     local axes = {
         { control = 1, dir = 0, travel = 0.0, since = startTime }, -- INPUT_LOOK_LR
         { control = 2, dir = 0, travel = 0.0, since = startTime }, -- INPUT_LOOK_UD
@@ -73,11 +73,18 @@ local function runMinigame(profile, title, subtitle)
         end
 
         if shook then
-            progress = progress + gainPerShake
+            -- Countered: fewer shakes needed, but each one is worth less the harder the officer mashes.
+            -- A full-pressure officer cancels the discount out exactly at the default config.
+            local gain = 100.0 / profile.shakes
+            if countered then
+                local live = now - pressureAt <= 500 and pressure or 0.0
+                gain = 100.0 / (profile.shakes * Config.Counter.ShakeMultiplier)
+                    * (1.0 - Config.Counter.MaxResistance * live)
+            end
+            progress = progress + gain
             ShakeGameplayCam('HAND_SHAKE', 0.4)
         end
-        progress = math.max(0.0, progress - profile.decay * GetFrameTime() - pushback)
-        pushback = 0.0
+        progress = math.max(0.0, progress - profile.decay * GetFrameTime())
 
         local elapsed = now - startTime
         local result
@@ -98,8 +105,8 @@ local function runMinigame(profile, title, subtitle)
                 successText = Config.Text.ui_success,
                 failText = Config.Text.ui_fail,
             })
-            if result == 'cancel' then return nil end
-            return result
+            if result == 'cancel' then return nil, progress end
+            return result, progress
         end
 
         if shook or now - lastUpdate >= 50 then
@@ -174,8 +181,8 @@ local function cuffGame(isHard, cuffType, cb)
         if isHard then profile.shakes = math.ceil(profile.shakes * Config.OnCuff.HardMultiplier) end
 
         TriggerServerEvent('cuff_breakout:server:resistStart', cuffType or 'cuffs')
-        local result = runMinigame(profile, Config.Text.resist_title, Config.Text.resist_subtitle)
-        TriggerServerEvent('cuff_breakout:server:resistEnd', result == true)
+        local result, finalProgress = runMinigame(profile, Config.Text.resist_title, Config.Text.resist_subtitle)
+        TriggerServerEvent('cuff_breakout:server:resistEnd', result == true, finalProgress)
         active = false
         if result ~= true then resists = 0 end
         cb(result == true)
@@ -187,8 +194,10 @@ RegisterNetEvent('cuff_breakout:client:counterActive', function()
     if active then countered = true end
 end)
 
-RegisterNetEvent('cuff_breakout:client:pushback', function(amount)
-    if active then pushback = pushback + (tonumber(amount) or 0) end
+RegisterNetEvent('cuff_breakout:client:pressure', function(value)
+    if not active then return end
+    pressure = math.max(0.0, math.min(1.0, tonumber(value) or 0.0))
+    pressureAt = GetGameTimer()
 end)
 
 -- Officer side: mash the key to push the suspect's meter back

@@ -1,7 +1,7 @@
 local sessions = {}  -- [source] = { started, cuffType, profile }
 local cooldowns = {} -- [source] = os.time() when allowed again
 local attempts = {}  -- [source] = attempts used this cuffing
-local counters = {}  -- [suspect] = { officer, started, presses } while the arresting officer is countering
+local counters = {}  -- [suspect] = { officer, started, presses, recent } while the arresting officer is countering
 
 local LATENCY_GRACE = 2000
 
@@ -16,16 +16,25 @@ local function startCounter(suspect, duration)
     local distance = #(GetEntityCoords(GetPlayerPed(suspect)) - GetEntityCoords(GetPlayerPed(officer)))
     if distance > Config.Counter.Distance then return end
 
-    counters[suspect] = { officer = officer, started = GetGameTimer(), presses = 0 }
+    counters[suspect] = { officer = officer, started = GetGameTimer(), presses = 0, recent = {} }
     TriggerClientEvent('cuff_breakout:client:counterStart', officer, suspect, duration)
     TriggerClientEvent('cuff_breakout:client:counterActive', suspect)
 end
 
-local function stopCounter(suspect, escaped)
+local function stopCounter(suspect, escaped, finalProgress)
     local counter = counters[suspect]
     if not counter then return end
     counters[suspect] = nil
     TriggerClientEvent('cuff_breakout:client:counterStop', counter.officer, escaped)
+
+    if Config.Debug then
+        local seconds = math.max(0.001, (GetGameTimer() - counter.started) / 1000)
+        local rate = counter.presses / seconds
+        print(('[cuff_breakout] resist %s vs officer %s: %s, meter %s%%, officer %.1f presses/s (%d%% pressure)'):format(
+            suspect, counter.officer, escaped and 'ESCAPED' or 'HELD',
+            finalProgress and math.floor(finalProgress) or '?',
+            rate, math.floor(math.min(1.0, rate / Config.Counter.FullPressureRate) * 100)))
+    end
 end
 
 lib.callback.register('cuff_breakout:server:start', function(source)
@@ -85,8 +94,8 @@ RegisterNetEvent('cuff_breakout:server:resistStart', function(cuffType)
     startCounter(src, profile.duration)
 end)
 
-RegisterNetEvent('cuff_breakout:server:resistEnd', function(escaped)
-    stopCounter(source, escaped == true)
+RegisterNetEvent('cuff_breakout:server:resistEnd', function(escaped, finalProgress)
+    stopCounter(source, escaped == true, tonumber(finalProgress))
 end)
 
 -- Suspect's meter, relayed so the officer can see how close they are to escaping
@@ -98,19 +107,30 @@ RegisterNetEvent('cuff_breakout:server:progress', function(progress, elapsed)
     TriggerClientEvent('cuff_breakout:client:counterUpdate', counter.officer, progress, elapsed)
 end)
 
--- Officer key presses, capped at MaxPressesPerSecond (plus a one-second burst) since the counter started
+-- Officer key presses. Pressure = presses in the last second / FullPressureRate, capped at 1,
+-- so mashing faster than FullPressureRate (or macroing) gives no extra advantage.
 RegisterNetEvent('cuff_breakout:server:counterPress', function(suspect, count)
     local counter = counters[suspect]
     if not counter or counter.officer ~= source then return end
 
     count = math.floor(tonumber(count) or 0)
-    local cap = Config.Counter.MaxPressesPerSecond
-    local allowed = math.floor((GetGameTimer() - counter.started) / 1000 * cap) + cap
-    local accepted = math.max(0, math.min(count, allowed - counter.presses))
-    if accepted == 0 then return end
+    if count <= 0 then return end
 
-    counter.presses = counter.presses + accepted
-    TriggerClientEvent('cuff_breakout:client:pushback', suspect, accepted * Config.Counter.PushPerPress)
+    local now = GetGameTimer()
+    local recent, inWindow = {}, count
+    for i = 1, #counter.recent do
+        local batch = counter.recent[i]
+        if now - batch.at < 1000 then
+            recent[#recent + 1] = batch
+            inWindow = inWindow + batch.count
+        end
+    end
+    recent[#recent + 1] = { at = now, count = count }
+    counter.recent = recent
+
+    local pressure = math.min(1.0, inWindow / Config.Counter.FullPressureRate)
+    counter.presses = counter.presses + count
+    TriggerClientEvent('cuff_breakout:client:pressure', suspect, pressure)
 end)
 
 -- Fresh attempts every time a player gets cuffed
