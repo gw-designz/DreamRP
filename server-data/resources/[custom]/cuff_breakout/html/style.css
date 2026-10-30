@@ -152,6 +152,9 @@ body {
     clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
 }
 .glyph .ico { width: 15px; height: 15px; animation: wiggle .3s ease-in-out infinite; }
+#key { display: none; font-family: var(--font-digits); font-style: normal; font-size: 14px; line-height: 1; }
+.plate.counter .glyph .ico { display: none; }
+.plate.counter #key { display: block; }
 #percent { margin-left: auto; font-family: var(--font-digits); font-style: normal; font-size: 15px; color: var(--c-grey); }
 
 /* time left, drawn as the accent line along the bottom edge like the key-hint bar */

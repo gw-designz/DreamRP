@@ -1,4 +1,7 @@
 local active = false
+local countered = false -- the arresting officer is fighting this attempt
+local pushback = 0.0    -- meter % the officer has knocked off since the last frame
+local counter = nil     -- officer side: { suspect, duration, started, pending }
 
 local function notify(key, kind, ...)
     lib.notify({ title = Config.Text.title, description = Config.Text[key]:format(...), type = kind or 'error' })
@@ -26,6 +29,8 @@ local function runMinigame(profile, title, subtitle)
     local gainPerShake = 100.0 / profile.shakes
     local progress = 0.0
     local lastUpdate = 0
+    local lastRelay = 0
+    countered, pushback = false, 0.0
     local axes = {
         { control = 1, dir = 0, travel = 0.0, since = startTime }, -- INPUT_LOOK_LR
         { control = 2, dir = 0, travel = 0.0, since = startTime }, -- INPUT_LOOK_UD
@@ -71,7 +76,8 @@ local function runMinigame(profile, title, subtitle)
             progress = progress + gainPerShake
             ShakeGameplayCam('HAND_SHAKE', 0.4)
         end
-        progress = math.max(0.0, progress - profile.decay * GetFrameTime())
+        progress = math.max(0.0, progress - profile.decay * GetFrameTime() - pushback)
+        pushback = 0.0
 
         local elapsed = now - startTime
         local result
@@ -84,6 +90,7 @@ local function runMinigame(profile, title, subtitle)
         end
 
         if result ~= nil then
+            countered = false
             StopGameplayCamShaking(true)
             SendNUIMessage({
                 action = 'close',
@@ -98,6 +105,11 @@ local function runMinigame(profile, title, subtitle)
         if shook or now - lastUpdate >= 50 then
             lastUpdate = now
             SendNUIMessage({ action = 'update', progress = math.min(progress, 100.0), elapsed = elapsed, shook = shook })
+        end
+
+        if countered and now - lastRelay >= Config.Counter.RelayInterval then
+            lastRelay = now
+            TriggerServerEvent('cuff_breakout:server:progress', math.min(progress, 100.0), elapsed)
         end
 
         Wait(0)
@@ -161,12 +173,87 @@ local function cuffGame(isHard, cuffType, cb)
         local profile = { duration = base.duration, shakes = base.shakes, decay = base.decay }
         if isHard then profile.shakes = math.ceil(profile.shakes * Config.OnCuff.HardMultiplier) end
 
+        TriggerServerEvent('cuff_breakout:server:resistStart', cuffType or 'cuffs')
         local result = runMinigame(profile, Config.Text.resist_title, Config.Text.resist_subtitle)
+        TriggerServerEvent('cuff_breakout:server:resistEnd', result == true)
         active = false
         if result ~= true then resists = 0 end
         cb(result == true)
     end)
 end
+
+-- Suspect side of the counter-game
+RegisterNetEvent('cuff_breakout:client:counterActive', function()
+    if active then countered = true end
+end)
+
+RegisterNetEvent('cuff_breakout:client:pushback', function(amount)
+    if active then pushback = pushback + (tonumber(amount) or 0) end
+end)
+
+-- Officer side: mash the key to push the suspect's meter back
+local function closeCounter(held)
+    if not counter then return end
+    if counter.pending > 0 then
+        TriggerServerEvent('cuff_breakout:server:counterPress', counter.suspect, counter.pending)
+    end
+    counter = nil
+    SendNUIMessage({
+        action = 'close',
+        success = held,
+        successText = Config.Text.counter_held,
+        failText = Config.Text.counter_escaped,
+    })
+end
+
+RegisterNetEvent('cuff_breakout:client:counterStart', function(suspect, duration)
+    if active or counter then return end
+
+    local this = { suspect = suspect, duration = duration, started = GetGameTimer(), pending = 0 }
+    counter = this
+
+    SendNUIMessage({
+        action = 'open',
+        duration = duration,
+        title = Config.Text.counter_title,
+        subtitle = Config.Text.counter_subtitle,
+        instruction = Config.Text.counter_instruction,
+        key = Config.Counter.KeyLabel,
+    })
+
+    CreateThread(function()
+        local lastSend = GetGameTimer()
+        while counter == this do
+            local now = GetGameTimer()
+            DisableControlAction(0, Config.Counter.Key, true)
+
+            if IsDisabledControlJustPressed(0, Config.Counter.Key) then
+                this.pending = this.pending + 1
+                SendNUIMessage({ action = 'tap' })
+            end
+
+            if this.pending > 0 and now - lastSend >= Config.Counter.RelayInterval then
+                lastSend = now
+                TriggerServerEvent('cuff_breakout:server:counterPress', suspect, this.pending)
+                this.pending = 0
+            end
+
+            -- Never heard back from the server, don't leave the UI up
+            if now - this.started > duration + 3000 then closeCounter(true) end
+
+            Wait(0)
+        end
+    end)
+end)
+
+RegisterNetEvent('cuff_breakout:client:counterUpdate', function(progress, elapsed)
+    if not counter then return end
+    SendNUIMessage({ action = 'update', progress = progress, elapsed = elapsed })
+end)
+
+RegisterNetEvent('cuff_breakout:client:counterStop', function(escaped)
+    closeCounter(not escaped)
+end)
 
 exports('CuffGame', cuffGame)
 exports('StartBreakout', attemptBreakout)

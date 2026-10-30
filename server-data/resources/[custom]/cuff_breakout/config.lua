@@ -24,8 +24,8 @@ Config.MinMsPerShake = 40
 --   duration = time limit (ms), shakes = shakes needed to fill the meter,
 --   decay    = meter % lost per second when not shaking
 Config.CuffTypes = {
-    cuffs      = { duration = 8000, shakes = 70, decay = 12 },
-    cable_ties = { duration = 9000, shakes = 44, decay = 8 },
+    cuffs      = { duration = 8000, shakes = 85, decay = 14 },
+    cable_ties = { duration = 9000, shakes = 55, decay = 10 },
 }
 
 -- Resisting while an officer is putting the cuffs on. p_policejob runs this through its
@@ -36,8 +36,22 @@ Config.CuffTypes = {
 Config.OnCuff = {
     HardMultiplier = 1.5,
     MaxResists = 3,
-    cuffs      = { duration = 6000, shakes = 39, decay = 10 },
-    cable_ties = { duration = 6500, shakes = 28, decay = 8 },
+    cuffs      = { duration = 6000, shakes = 55, decay = 12 },
+    cable_ties = { duration = 6500, shakes = 40, decay = 10 },
+}
+
+-- Counter-game for the officer who applied the cuffs: while the suspect resists being cuffed,
+-- that officer mashes Key to knock the suspect's meter back. Only kicks in when the officer
+-- is within Distance when the resist starts. The G breakout (slipping the cuffs) is never countered.
+--   Max pushback = PushPerPress * MaxPressesPerSecond meter %/s (default 3.2%/s)
+Config.Counter = {
+    Enabled = true,
+    Key = 38,                 -- INPUT_PICKUP (E)
+    KeyLabel = 'E',
+    Distance = 8.0,
+    PushPerPress = 0.4,       -- meter % removed from the suspect per press
+    MaxPressesPerSecond = 8,  -- server-side cap so macros can't spam it
+    RelayInterval = 250,      -- ms between network updates in both directions
 }
 
 Config.Text = {
@@ -48,6 +62,11 @@ Config.Text = {
     instruction = 'Shake your mouse',
     ui_success  = 'Free',
     ui_fail     = 'Too slow',
+    counter_title       = 'Hold Them Down',
+    counter_subtitle    = 'Suspect resisting',
+    counter_instruction = 'Mash to hold',
+    counter_held        = 'Held',
+    counter_escaped     = 'Escaped',
 
     success     = 'You broke free of your restraints!',
     fail        = 'You failed to break free',

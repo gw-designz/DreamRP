@@ -284,6 +284,9 @@ RegisterNetEvent("p_policejob/server/interactions/HandCuffs", function(data)
         end
     end
 
+    -- Arresting officer (server-only), used by cuff_breakout's counter-game
+    Player(data.player).state:set("cuffedBy", data.state and officerSource or nil, false)
+
     -- ---- Config callbacks ----
     if data.state then
         Config.Interactions.onCuff_Server(officerSource, data.player, data.type)
