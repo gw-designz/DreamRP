@@ -5,8 +5,8 @@ Config.Debug = false              -- prints stroke values in F8 to help tune Min
 Config.Command = 'breakcuffs'     -- also bound to Config.Key (players can rebind in Settings > Key Bindings > FiveM)
 Config.Key = 'G'
 
-Config.Cooldown = 60              -- seconds before another attempt after a failure
-Config.MaxAttempts = 3            -- attempts per cuffing (resets when the player is cuffed again), 0 = unlimited
+Config.Cooldown = 45              -- seconds before another attempt after a failure
+Config.MaxAttempts = 2            -- attempts per cuffing (resets when the player is cuffed again), 0 = unlimited
 
 Config.BlockWhileEscorted = true  -- can't attempt while being dragged / carried
 Config.BlockInVehicle = true
@@ -24,17 +24,20 @@ Config.MinMsPerShake = 40
 --   duration = time limit (ms), shakes = shakes needed to fill the meter,
 --   decay    = meter % lost per second when not shaking
 Config.CuffTypes = {
-    cuffs      = { duration = 6000, shakes = 70, decay = 12 },
-    cable_ties = { duration = 7000, shakes = 44, decay = 8 },
+    cuffs      = { duration = 8000, shakes = 70, decay = 12 },
+    cable_ties = { duration = 9000, shakes = 44, decay = 8 },
 }
 
 -- Resisting while an officer is putting the cuffs on. p_policejob runs this through its
 -- Config.Interactions.Cuffs.cuffGame hook (see modules/interactions/config.lua).
 -- Shorter window than a breakout, hard cuffs need HardMultiplier times the shakes.
+-- MaxResists = resist minigames allowed before the cuffs go on automatically; the count
+-- resets once the player actually ends up cuffed. 0 = unlimited.
 Config.OnCuff = {
     HardMultiplier = 1.5,
-    cuffs      = { duration = 3500, shakes = 39, decay = 10 },
-    cable_ties = { duration = 4000, shakes = 28, decay = 8 },
+    MaxResists = 3,
+    cuffs      = { duration = 6000, shakes = 39, decay = 10 },
+    cable_ties = { duration = 6500, shakes = 28, decay = 8 },
 }
 
 Config.Text = {
