@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="lockpick" class="hidden">
+        <div class="plate">
+            <div class="head">
+                <div class="badge"><span class="ico i-lock"></span></div>
+                <div class="titles">
+                    <span id="title">Pick the Lock</span>
+                    <span id="subtitle">Regular Lockpick</span>
+                </div>
+                <span id="timer">0.0</span>
+            </div>
+
+            <div class="pins" id="pins"></div>
+
+            <div class="track" id="track">
+                <div class="zone" id="zone"></div>
+                <div class="marker" id="marker"></div>
+            </div>
+
+            <div class="prompt">
+                <span class="glyph"><span id="key">E</span></span>
+                <span id="instruction">Set pin</span>
+                <span id="misses">Misses 0/2</span>
+            </div>
+
+            <div class="time-line"><div id="time"></div></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

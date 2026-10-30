@@ -1,0 +1,214 @@
+/* Same look as cuff_breakout / my-hud: graphite chamfered plates, Barlow Condensed italic, one neon red accent */
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('fonts/BarlowCondensed-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('fonts/BarlowCondensed-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('fonts/Rajdhani-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+:root {
+    --c-accent-rgb: 255, 36, 58;
+    --c-accent: rgb(var(--c-accent-rgb));
+    --c-text: #f2f3f5;
+    --c-grey: #8d929b;
+    --c-panel: rgba(8, 8, 10, .8);
+    --c-track: rgba(60, 63, 70, .45);
+    --c-bar: #e9ebee;
+    --c-glyph: #d9dce1;
+    --c-glyph-text: #0a0a0c;
+    --c-success: #e9ebee;
+    --c-crit: #ff2a3d;
+
+    --shadow: 0 1px 3px rgba(0, 0, 0, .7);
+    --font: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    --font-digits: 'Rajdhani', 'Inter', sans-serif;
+    --tracking: .015em;
+    --cut: 10px;
+    --ease: cubic-bezier(.2, .8, .2, 1);
+
+    /* set by script.js: 1 at 1080p */
+    --k: 1;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+    user-select: none;
+}
+
+body {
+    font-family: var(--font);
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: var(--tracking);
+    text-transform: uppercase;
+    color: var(--c-text);
+    text-shadow: var(--shadow);
+    -webkit-font-smoothing: antialiased;
+}
+
+.ico {
+    display: inline-block;
+    flex: none;
+    width: 22px;
+    height: 22px;
+    background-color: currentColor;
+    -webkit-mask: var(--icon) center / contain no-repeat;
+    mask: var(--icon) center / contain no-repeat;
+}
+.i-lock { --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round'%3E%3Crect x='4.5' y='10.5' width='15' height='11' rx='1.5'/%3E%3Cpath d='M8 10.5V7a4 4 0 0 1 8 0v3.5'/%3E%3Cpath d='M12 14.5v3'/%3E%3C/svg%3E"); }
+
+/* ---------- widget ---------- */
+
+#lockpick {
+    position: fixed;
+    left: 50%;
+    bottom: calc(110px * var(--k));
+    transform: translateX(-50%) scale(var(--k));
+    transform-origin: center bottom;
+    transition: opacity .35s var(--ease), transform .35s var(--ease);
+}
+#lockpick.hidden { opacity: 0; transform: translateX(-50%) translateY(12px) scale(var(--k)); }
+
+.plate {
+    position: relative;
+    width: 300px;
+    padding: 12px 14px 14px;
+    background: linear-gradient(90deg, rgba(var(--c-accent-rgb), .18), transparent 45%), var(--c-panel);
+    box-shadow: inset 2px 0 0 var(--c-accent);
+    clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
+}
+.plate.jolt { animation: jolt .12s linear; }
+
+.head { display: flex; align-items: center; gap: 10px; }
+.badge {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    color: var(--c-accent);
+    filter: drop-shadow(0 0 6px rgba(var(--c-accent-rgb), .55));
+}
+.badge .ico { width: 28px; height: 28px; }
+.titles { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+#title { font-size: 20px; line-height: 1; }
+#subtitle { font-size: 11px; font-weight: 600; line-height: 1; letter-spacing: .1em; color: var(--c-accent); }
+#timer {
+    margin-left: auto;
+    font-family: var(--font-digits);
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+}
+#timer.low { color: var(--c-crit); animation: blink .5s steps(1) infinite; }
+
+/* pins: one chamfered block per pin, filled once set */
+.pins { display: flex; gap: 5px; margin: 12px 0 8px; }
+.pin {
+    flex: 1;
+    height: 16px;
+    --cut: 4px;
+    background: var(--c-track);
+    clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
+    transition: background-color .15s linear;
+}
+.pin.active { background: rgba(var(--c-accent-rgb), .35); box-shadow: inset 0 -2px 0 var(--c-accent); }
+.pin.set { background: var(--c-bar); animation: seat .18s var(--ease); }
+.pin.dropped { animation: drop .3s var(--ease); }
+
+/* the track the marker sweeps along, with this pin's sweet spot lit */
+.track {
+    position: relative;
+    height: 10px;
+    margin-bottom: 10px;
+    background: var(--c-track);
+}
+.zone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(var(--zs, 0) * 100%);
+    width: calc(var(--zw, 0) * 100%);
+    background: rgba(var(--c-accent-rgb), .6);
+    box-shadow: 0 0 8px rgba(var(--c-accent-rgb), .6);
+    transition: left .12s var(--ease), width .12s var(--ease), background-color .12s linear;
+}
+.marker {
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    width: 3px;
+    left: calc(var(--m, 0) * 100%);
+    transform: translateX(-50%);
+    background: var(--c-bar);
+    box-shadow: 0 0 6px rgba(255, 255, 255, .6);
+}
+.track.hit .zone { background: var(--c-bar); box-shadow: 0 0 10px rgba(255, 255, 255, .7); }
+.track.miss { background: rgba(var(--c-accent-rgb), .25); }
+
+.prompt { display: flex; align-items: center; gap: 8px; font-size: 15px; line-height: 1; }
+.glyph {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    --cut: 4px;
+    background: var(--c-glyph);
+    color: var(--c-glyph-text);
+    clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
+}
+#key { font-family: var(--font-digits); font-style: normal; font-size: 14px; line-height: 1; }
+#misses { margin-left: auto; font-family: var(--font-digits); font-style: normal; font-size: 15px; color: var(--c-grey); }
+#misses.warn { color: var(--c-crit); }
+
+/* time left, drawn as the accent line along the bottom edge like the key-hint bar */
+.time-line { position: absolute; left: 0; right: 0; bottom: 0; height: 2px; }
+#time {
+    height: 100%;
+    background: rgba(var(--c-accent-rgb), .85);
+    transform-origin: left center;
+    transform: scaleX(var(--t, 1));
+}
+
+/* ---------- results ---------- */
+
+.plate.success { box-shadow: inset 2px 0 0 var(--c-success); background: linear-gradient(90deg, rgba(255, 255, 255, .14), transparent 45%), var(--c-panel); }
+.plate.success .badge { color: var(--c-success); filter: drop-shadow(0 0 6px rgba(255, 255, 255, .5)); }
+.plate.success #subtitle { color: var(--c-success); }
+.plate.success .marker, .plate.fail .marker { opacity: 0; }
+.plate.fail .zone { background: var(--c-track); box-shadow: none; }
+.plate.fail #instruction { color: var(--c-crit); }
+
+@keyframes blink { 50% { opacity: .15; } }
+@keyframes jolt {
+    33% { translate: -3px 0; }
+    66% { translate: 3px 0; }
+}
+@keyframes seat {
+    from { transform: translateY(-4px); }
+    to { transform: none; }
+}
+@keyframes drop {
+    from { background: var(--c-crit); transform: translateY(3px); }
+    to { transform: none; }
+}

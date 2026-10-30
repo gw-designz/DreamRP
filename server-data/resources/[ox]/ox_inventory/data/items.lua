@@ -122,13 +122,6 @@ return {
     close = true,
 },
 
-['lockpick'] = {
-    label = 'Lockpick',
-    weight = 100,
-    stack = false,
-    close = true,
-},
-
 ['body_cam'] = {
     label = 'Body Camera',
     weight = 500,
@@ -679,9 +672,29 @@ return {
 		}
 	},
 
+	-- The three lockpick tiers all play lockpick_minigame (difficulty per tier in its
+	-- config.lua). Using one from the inventory hands off to that resource, which picks
+	-- a building door (sophisticated only) or a vehicle. There used to be a second
+	-- 'lockpick' entry further up (p_policejob's items); this is the only one now.
 	['lockpick'] = {
-		label = 'Lockpick',
+		label = 'Regular Lockpick',
 		weight = 160,
+		description = 'Gets you into cars and out of cuffs. Hardest to work.',
+		client = { export = 'lockpick_minigame.useItem' },
+	},
+
+	['advancedlockpick'] = {
+		label = 'Advanced Lockpick',
+		weight = 160,
+		description = 'A better set of picks for cars and cuffs.',
+		client = { export = 'lockpick_minigame.useItem' },
+	},
+
+	['sophisticated_lockpick'] = {
+		label = 'Sophisticated Lockpick',
+		weight = 200,
+		description = 'Professional picks. Opens building doors as well as everything else.',
+		client = { image = 'advancedlockpick.png', export = 'lockpick_minigame.useItem' },
 	},
 
 	['phone'] = {

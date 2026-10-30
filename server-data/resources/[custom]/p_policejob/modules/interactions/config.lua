@@ -144,7 +144,13 @@ Config.Interactions = {
 
     ---@field LockpickCuffs: table [lockpicking handcuffs - { miniGame: function, animation: { enabled, dict, clip, flag } }]
     LockpickCuffs = {
+        -- DreamRP: lockpick_minigame with the tier of pick you carry (Config.AutoTierPreference
+        -- there decides best or worst). lib.skillCheck below is the fallback if it isn't running.
         miniGame = function()
+            if GetResourceState('lockpick_minigame') == 'started' then
+                local tier = exports.lockpick_minigame:GetBestTier()
+                return tier and exports.lockpick_minigame:Start(tier) or false
+            end
             return lib.skillCheck(
                 {
                     { areaSize = 30, speedMultiplier = 1.5 },
@@ -404,7 +410,10 @@ Config.Interactions = {
                 local s = cf.s
                 if s.draggedBy then return false end
                 if not s.isCuffed or s.cuffType == 'cable_ties' then return false end
+                -- any of the three lockpick tiers (lockpick_minigame)
                 return I.getItemCount(cf, 'lockpick') >= 1
+                    or I.getItemCount(cf, 'advancedlockpick') >= 1
+                    or I.getItemCount(cf, 'sophisticated_lockpick') >= 1
             end,
             onSelect = function(data)
                 local entity = type(data) == 'number' and data or data.entity

@@ -181,18 +181,19 @@ RegisterNetEvent('QBCore:Client:VehicleInfo', function(data)
     isTakingKeys = false
 end)
 
-RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
+-- Fired by lockpick_minigame when a lockpick item is used; tier picks its minigame difficulty
+RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced, tier)
     local vehicle = cache.vehicle
     if vehicle then
         if GetKeySearchEnabled() then
             DisableKeySearch()
-            Hotwire(vehicle, isAdvanced)
+            Hotwire(vehicle, isAdvanced, nil, tier)
             EnableKeySearch()
         else
-            Hotwire(vehicle, isAdvanced)
+            Hotwire(vehicle, isAdvanced, nil, tier)
         end
     else
-        LockpickDoor(isAdvanced)
+        LockpickDoor(isAdvanced, nil, nil, tier)
     end
 end)
 

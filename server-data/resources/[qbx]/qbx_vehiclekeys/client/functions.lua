@@ -264,6 +264,20 @@ local function breakLockpick(isAdvancedLockedpick, vehicle)
     end
 end
 
+---DreamRP: the lockpick items play lockpick_minigame instead of lib.skillCheck when
+---it's running. The vehicle class/model skillCheck entries still decide WHETHER a
+---vehicle can be picked ({} = never); how hard it is comes from the pick's tier.
+---@param tier string? lockpick_minigame tier, sent with lockpicks:UseLockpick
+---@param skillCheckConfig SkillCheckConfig
+---@return boolean isSuccess
+---@return boolean handledBreak the minigame already rolled the tier's break chance
+local function runLockpickChallenge(tier, skillCheckConfig)
+    if tier and GetResourceState('lockpick_minigame') == 'started' then
+        return exports.lockpick_minigame:Start(tier), true
+    end
+    return lib.skillCheck(skillCheckConfig.difficulty, skillCheckConfig.inputs), false
+end
+
 ---Will be executed when the lock opening is successful.
 ---@param vehicle number The entity number of the vehicle.
 local function lockpickSuccessCallback(vehicle)
@@ -276,7 +290,8 @@ end
 ---@param vehicle number The entity number of the vehicle.
 ---@param isAdvancedLockedpick boolean Determines whether an advanced lockpick was used.
 ---@param isSuccess boolean? Determines whether the lock has been successfully opened.
-local function lockpickCallback(vehicle, isAdvancedLockedpick, isSuccess)
+---@param handledBreak boolean? lockpick_minigame already rolled the break chance
+local function lockpickCallback(vehicle, isAdvancedLockedpick, isSuccess, handledBreak)
     if isSuccess then
         lockpickSuccessCallback(vehicle)
     else -- if player fails quickevent
@@ -287,7 +302,7 @@ local function lockpickCallback(vehicle, isAdvancedLockedpick, isSuccess)
         exports.qbx_core:Notify(locale('notify.failed_lockedpick'), 'error')
     end
 
-    breakLockpick(isAdvancedLockedpick, vehicle)
+    if not handledBreak then breakLockpick(isAdvancedLockedpick, vehicle) end
 end
 
 local islockpickingProcessLocked = false -- lock flag
@@ -295,7 +310,8 @@ local islockpickingProcessLocked = false -- lock flag
 ---@param isAdvancedLockedpick boolean Determines whether an advanced lockpick was used
 ---@param maxDistance number? The max distance to check.
 ---@param customChallenge boolean? lockpick challenge
-function LockpickDoor(isAdvancedLockedpick, maxDistance, customChallenge)
+---@param tier string? lockpick_minigame tier of the pick used
+function LockpickDoor(isAdvancedLockedpick, maxDistance, customChallenge, tier)
     maxDistance = maxDistance or 2
     local pedCoords = GetEntityCoords(cache.ped)
     local vehicle = lib.getClosestVehicle(pedCoords, maxDistance * 2, false) -- The difference between the door and the center of the vehicle
@@ -327,10 +343,13 @@ function LockpickDoor(isAdvancedLockedpick, maxDistance, customChallenge)
         if anim then
             lib.playAnim(cache.ped, anim.dict, anim.clip, 3.0, 3.0, -1, 16, 0, false, false, false) -- lock opening animation
         end
-        local isSuccess = customChallenge or lib.skillCheck(skillCheckConfig.difficulty, skillCheckConfig.inputs)
+        local isSuccess, handledBreak = customChallenge, false
+        if not isSuccess then
+            isSuccess, handledBreak = runLockpickChallenge(tier, skillCheckConfig)
+        end
 
         if getIsVehicleInRange(vehicle, maxDistance) then -- the action will be aborted if the opened vehicle is too far.
-            lockpickCallback(vehicle, isAdvancedLockedpick, isSuccess)
+            lockpickCallback(vehicle, isAdvancedLockedpick, isSuccess, handledBreak)
         end
 
         Wait(config.lockpickCooldown)
@@ -348,7 +367,8 @@ end
 ---@param vehicle number The entity number of the vehicle.
 ---@param isAdvancedLockedpick boolean Determines whether an advanced lockpick was used.
 ---@param isSuccess boolean? Determines whether the lock has been successfully opened.
-local function hotwireCallback(vehicle, isAdvancedLockedpick, isSuccess)
+---@param handledBreak boolean? lockpick_minigame already rolled the break chance
+local function hotwireCallback(vehicle, isAdvancedLockedpick, isSuccess, handledBreak)
     if isSuccess then
         hotwireSuccessCallback(vehicle)
     else -- if player fails quickevent
@@ -357,7 +377,7 @@ local function hotwireCallback(vehicle, isAdvancedLockedpick, isSuccess)
         exports.qbx_core:Notify(locale('notify.failed_lockedpick'), 'error')
     end
 
-    breakLockpick(isAdvancedLockedpick, vehicle)
+    if not handledBreak then breakLockpick(isAdvancedLockedpick, vehicle) end
 end
 
 local isHotwiringProcessLocked = false -- lock flag
@@ -365,7 +385,8 @@ local isHotwiringProcessLocked = false -- lock flag
 ---@param vehicle number The entity number of the vehicle.
 ---@param isAdvancedLockedpick boolean Determines whether an advanced lockpick was used
 ---@param customChallenge boolean? lockpick challenge
-function Hotwire(vehicle, isAdvancedLockedpick, customChallenge)
+---@param tier string? lockpick_minigame tier of the pick used
+function Hotwire(vehicle, isAdvancedLockedpick, customChallenge, tier)
     if cache.seat ~= -1 or GetIsVehicleAccessible(vehicle) then return end
     local skillCheckConfig = config.skillCheck[isAdvancedLockedpick and 'advancedHotwire' or 'hotwire']
 
@@ -382,9 +403,12 @@ function Hotwire(vehicle, isAdvancedLockedpick, customChallenge)
         if anim then
             lib.playAnim(cache.ped, anim.dict, anim.clip, 3.0, 3.0, -1, 16, 0, false, false, false) -- hotwire animation
         end
-        local isSuccess = customChallenge or lib.skillCheck(skillCheckConfig.difficulty, skillCheckConfig.inputs)
+        local isSuccess, handledBreak = customChallenge, false
+        if not isSuccess then
+            isSuccess, handledBreak = runLockpickChallenge(tier, skillCheckConfig)
+        end
 
-        hotwireCallback(vehicle, isAdvancedLockedpick, isSuccess)
+        hotwireCallback(vehicle, isAdvancedLockedpick, isSuccess, handledBreak)
 
         Wait(config.hotwireCooldown)
         isHotwiringProcessLocked = false -- end of the critical section
