@@ -1,0 +1,134 @@
+export interface Character {
+  cid?: number
+  slot?: number
+  citizenid: string
+  charinfo: {
+    firstname: string
+    lastname: string
+    gender?: number | string
+    birthdate?: string
+    nationality?: string
+  }
+  job?: {
+    name?: string
+    label: string
+    grade?: { name: string }
+  }
+  money?: {
+    cash: number
+    bank: number
+  }
+  last_played?: string
+  playtime?: number
+  scene_data?: {
+    poseId?: string
+    sceneId?: string
+    portrait?: string
+  }
+}
+
+export interface PosePreset {
+  id: string
+  label: string
+}
+
+export interface ScenePreset {
+  id: string
+  label: string
+}
+
+export interface FeatureFlags {
+  photoMode?: boolean
+  scenePoses?: boolean
+  spawnFilters?: boolean
+  portraits?: boolean
+}
+
+export interface AdminSlotEntry {
+  license: string
+  slots: number
+  source: string
+  updated_at?: string
+}
+
+export interface OnlinePlayerSlot {
+  source: number
+  name: string
+  license: string
+  slots: number
+}
+
+export interface CreationField {
+  name: string
+  label: string
+  type: 'text' | 'date' | 'select' | 'autocomplete'
+  required: boolean
+  options?: string[]
+}
+
+export interface SpawnLocation {
+  id: string
+  label: string
+  icon: string
+  description?: string
+  group?: 'last' | 'housing' | 'public' | 'job'
+  coords?: { x: number; y: number; z: number; w?: number }
+}
+
+/** Where a slot ped's head is, as fractions of the screen (from client/anchor.lua). */
+export interface PedAnchor {
+  x: number
+  y: number
+}
+
+/** On-screen heads, by slot; a slot missing here has no ped in view. */
+export type PedAnchors = Record<number, PedAnchor>
+
+export interface SpawnWorldInfo {
+  time: string
+  weather: 'clear' | 'clouds' | 'rain' | 'thunder' | 'fog' | 'snow' | 'halloween'
+}
+
+export interface UISounds {
+  enabled?: boolean
+  slotSelect?: string
+  transition?: string
+  confirm?: string
+  error?: string
+  volume?: number
+}
+
+export interface NameFilterConfig {
+  enabled?: boolean
+  blockedExact?: string[]
+  blockedPrefixes?: string[]
+  blockedContains?: string[]
+}
+
+export interface UITheme {
+  theme: string
+  serverName?: string
+  tip?: string
+  colors: {
+    primary: string
+    background: string
+    surface: string
+    border: string
+    text: string
+    textMuted: string
+    danger: string
+    success?: string
+    warning?: string
+  }
+  logo?: string
+  locale?: 'en' | 'es'
+  sounds?: UISounds
+}
+
+export type Screen = 'characterSelect' | 'creation' | 'spawnSelect' | 'deleteConfirm' | 'info' | 'adminSlots'
+
+export interface NuiMessage {
+  action: 'open' | 'close' | 'openAdmin' | 'closeAdmin'
+  screen?: Screen
+  data?: Record<string, unknown>
+}
