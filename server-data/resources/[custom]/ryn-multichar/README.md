@@ -1,0 +1,371 @@
+# ryn-multichar
+
+[![GitHub](https://img.shields.io/badge/GitHub-open%20source-blue?logo=github)](https://github.com/vmRyn/ryn-multichar)
+[![Version](https://img.shields.io/badge/version-1.0.0-green)](https://github.com/vmRyn/ryn-multichar)
+[![Frameworks](https://img.shields.io/badge/frameworks-QBox%20%7C%20QB%20%7C%20ESX-orange)](https://github.com/vmRyn/ryn-multichar)
+[![License](https://img.shields.io/badge/license-no%20redistribution-lightgrey)](LICENSE)
+
+A cinematic multicharacter and spawn selector for **QBox**, **QB-Core**, and **ESX**. One resource replaces the usual `qb-multicharacter` + `qb-spawn` stack with a single 3D scene, React NUI, and config-driven setup.
+
+**Free to download and use** on your own FiveM server — no purchase required. Redistribution is not allowed; get it from the official repo only.
+
+## Screenshots
+
+<p align="center">
+  <img src="docs/images/character-select.png" alt="Character select — 3D scene with character dock and info panel" width="100%" />
+  <br />
+  <em>Character select — live 3D previews, dock, and character info</em>
+</p>
+
+<p align="center">
+  <img src="docs/images/spawn-selector.png" alt="Spawn selector — pick a location with camera preview" width="100%" />
+  <br />
+  <em>Spawn selector — choose where to enter the world</em>
+</p>
+
+## Table of contents
+
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Quick start](#quick-start)
+- [Configuration](#configuration)
+- [Scene tuning](#scene-tuning)
+- [Commands](#commands)
+- [Tebex](#tebex)
+- [Exports](#exports)
+- [Events](#events)
+- [Project structure](#project-structure)
+- [Development](#development)
+- [Testing checklist](#testing-checklist)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [License](#license)
+
+---
+
+## Features
+
+- **3D character preview** — apartment and yacht scene presets with per-slot cameras and idle anims
+- **Full character flow** — select, create, delete (type name to confirm), info panel, spawn picker
+- **Framework bridge** — auto-detect or manual switch for QBox, QB, ESX
+- **Appearance support** — auto-detect illenium-appearance, fivem-appearance, qb-clothing, skinchanger
+- **Spawn options** — last location, public spawns, housing hooks (qb-houses, apartments, ps-housing)
+- **Slot management** — default limits, per-license overrides, Tebex, admin UI
+- **Photo mode** — orbit camera, hide UI for clean shots, switch scene + pose, save per character
+- **Scene poses** — standing / lean / prop presets (no sit/kneel), optional props
+- **Locales** — English + Spanish (NUI and server notifications)
+- **Optional** — Discord webhooks, playtime tracking, Kenney UI sounds
+
+---
+
+## Requirements
+
+| Required | Optional |
+|----------|----------|
+| [ox_lib](https://github.com/overextended/ox_lib) | Appearance script (illenium-appearance recommended) |
+| [oxmysql](https://github.com/overextended/oxmysql) | Housing scripts |
+| `qbx_core`, `qb-core`, or `es_extended` | [bob74_ipl](https://github.com/Bob74/bob74_ipl) (cleaner apartment IPL) |
+| | Weather sync, Discord, Tebex |
+
+---
+
+## Quick start
+
+### 1. Database
+
+Import the schema:
+
+```bash
+# Run on your MySQL server
+sql/install.sql
+```
+
+If upgrading an existing install, ensure the `ryn_multichar_tebex_pending` table exists (included in the latest `install.sql`).
+
+### 2. Install the resource
+
+```bash
+git clone https://github.com/vmRyn/ryn-multichar.git
+```
+
+Or download a ZIP from [github.com/vmRyn/ryn-multichar](https://github.com/vmRyn/ryn-multichar).
+
+1. Place this resource in your server's `resources` directory. **The folder name must match what you `ensure`** (official releases use `ryn-multichar`; this repo may be cloned as `ryn-spawn` — rename the folder or update `ensure` / export names to match).
+2. Pre-built NUI is in `web/dist/`. Rebuild only if you edit the React source:
+
+   ```bash
+   cd web
+   npm install
+   npm run build
+   ```
+
+   FiveM always serves `web/dist/` — source changes in `web/src/` do nothing until you rebuild.
+
+### 3. Server cfg
+
+```cfg
+ensure ox_lib
+ensure oxmysql
+ensure qbx_core          # or qb-core / es_extended
+ensure illenium-appearance
+ensure bob74_ipl         # optional — apartment scene
+ensure ryn-multichar
+```
+
+### 4. Framework config
+
+**QBox (recommended)**
+
+In `qbx_core` config, enable external characters:
+
+```lua
+useExternalCharacters = true
+```
+
+Disable conflicting resources (`qbx_spawn`, `qb-spawn`, built-in multichar).
+
+In `config/shared.lua`:
+
+```lua
+Config.Framework = 'qbox'   -- or 'auto'
+```
+
+**QB-Core** — disable `qb-multicharacter`, set `Config.Framework = 'qb'`.
+
+**ESX** — disable `esx_multicharacter`, set `Config.Framework = 'esx'`. Tune `Config.ESX.mode` if needed (`legacy` vs `minimal`).
+
+---
+
+## Configuration
+
+| File | Purpose |
+|------|---------|
+| `config/shared.lua` | Framework, slots, spawns, UI theme, locale, Discord |
+| `config/scenes.lua` | Scene preset (`apartment`, `yacht`) + slot layout |
+| `config/appearance.lua` | Appearance provider detection |
+| `config/premium.lua` | Photo mode, scene poses, admin panel, weather sync |
+| `config/nationalities.lua` | Creation form nationality list |
+
+Full reference: [CONFIG.md](CONFIG.md)
+
+### Common settings
+
+```lua
+-- config/shared.lua
+Config.Framework = 'auto'
+Config.UI.locale = 'en'   -- 'en' | 'es'
+Config.UI.serverName = 'RYN'  -- top-left brand; mark uses first letter
+
+Config.Slots = {
+    default = 3,
+    max = nil,  -- nil = unlimited
+    overrides = {
+        -- ['license2:abc...'] = 5,
+    },
+}
+
+Config.SpawnOptions = {
+    lastLocation = true,
+    publicSpawns = true,
+    housing = true,
+}
+```
+
+```lua
+-- config/scenes.lua
+Config.ActiveScene = 'yacht'   -- apartment | yacht
+```
+
+Add or edit presets under `Config.ScenePresets`. Each slot needs `ped`, `camera`, and optionally `idleAnim` (used when the character has no saved pose).
+
+---
+
+## Scene tuning
+
+Admins can capture in-game coordinates for custom slot layouts:
+
+| Command | Description |
+|---------|-------------|
+| `/ryn_scene_pos` | Copy ped `vector4` to clipboard |
+| `/ryn_scene_cam` | Copy camera pos/rot/fov block to clipboard |
+
+Requires `Config.SceneTools.enabled = true` (default). Paste values into `config/scenes.lua`.
+
+**Tips**
+
+- `coords` is the streaming anchor (hidden player). Slot `ped` is a `vector4`; camera should sit in front of the ped looking back at them.
+- In photo mode, players can switch between configured scenes; the live world updates without closing character select.
+- Apartment interiors stream farther apart per slot — keep cameras authored per room, not shared.
+
+---
+
+## Commands
+
+| Command | Permission | Description |
+|---------|------------|-------------|
+| `/relog` | Configurable (`user` / `admin` / `none`) | Return to character selection |
+| `/setslots [id] [amount]` | Admin | Set character slot limit |
+| `/addslots [id] [amount]` | Admin | Add slots to a player |
+| `/enablechar [id] [amount?]` | Admin | Enable extra slots (default +1) |
+| `/charslots` | Admin | Open DB-backed slot management UI |
+| `/ryn_scene_pos` | Admin | Copy ped position for scene config |
+| `/ryn_scene_cam` | Admin | Copy camera block for scene config |
+
+---
+
+## Tebex
+
+Map packages in `config/shared.lua`:
+
+```lua
+Config.Slots.tebex = {
+    enabled = true,
+    autoApplyOnConnect = true,
+    packages = {
+        ['YOUR_PACKAGE_ID'] = 2,
+    },
+}
+```
+
+**Tebex console commands** (package actions):
+
+```
+ryn_multichar_tebex {packageId} {license}
+ryn_multichar_slots {license} {slotCount}
+```
+
+**Online grant** (player connected):
+
+```
+ryn_multichar_tebex_player {playerId} {packageId}
+```
+
+---
+
+## Exports
+
+Use your installed resource name (usually `ryn-multichar`):
+
+```lua
+exports['ryn-multichar']:OpenCharacterSelect()
+exports['ryn-multichar']:OpenSpawnSelector(citizenid) -- or { citizenid = '...' }
+exports['ryn-multichar']:GetSlotLimit(source)
+exports['ryn-multichar']:SetSlotLimit(source, amount)
+exports['ryn-multichar']:AddTebexSlots(license, amount)
+exports['ryn-multichar']:GrantTebexPackage(license, packageId)
+exports['ryn-multichar']:GrantTebexPackageToPlayer(source, packageId)
+```
+
+---
+
+## Events
+
+| Event | Side | Description |
+|-------|------|-------------|
+| `ryn-multichar:client:open` | Client | Open character select |
+| `ryn-multichar:client:close` | Client | Close character select |
+| `ryn-multichar:client:spawnSelected` | Client | Player chose spawn location |
+| `ryn-multichar:server:characterLoaded` | Server | Character loaded into session |
+| `ryn-multichar:server:characterDeleted` | Server | Character permanently deleted |
+
+---
+
+## Project structure
+
+```
+ryn-multichar/
+├── config/          # Shared Lua configuration
+├── bridge/          # QB / ESX / QBox adapters
+├── client/          # Scene, camera, preview, photo, NUI callbacks
+├── server/          # Characters, slots, spawn, housing, Tebex
+├── shared/          # Utils + config validation
+├── web/             # React NUI (src + dist)
+├── sql/             # Database schema
+├── LICENSE
+├── README.md
+└── CONFIG.md
+```
+
+---
+
+## Development
+
+Run the NUI locally without FiveM:
+
+```bash
+cd web
+npm run dev
+```
+
+Open `http://localhost:5173/` and use the **Dev** panel (top-right) to switch screens.
+
+After UI changes, rebuild for the game client:
+
+```bash
+cd web && npm run build
+```
+
+---
+
+## Testing checklist
+
+Primary validation path is QBox; QB and ESX should follow the same flow after framework config.
+
+- [ ] SQL tables created
+- [ ] Resource starts; framework detected in console
+- [ ] Character select opens on connect
+- [ ] Slot switch updates 3D preview + camera (all slots, including apartment rooms 2/3)
+- [ ] Create → appearance → spawn → fade in as freemode ped
+- [ ] Cancel appearance removes the incomplete character
+- [ ] Public spawns work (and last location when `Config.SpawnOptions.lastLocation = true`)
+- [ ] Housing spawns appear (if applicable)
+- [ ] Failed spawn keeps the selector open
+- [ ] UI clears fully after spawn (no stuck toast/overlay)
+- [ ] Delete requires full name
+- [ ] Info panel: job, cash, bank, playtime
+- [ ] `/relog` returns to character select
+- [ ] Photo mode: orbit, hide UI, save pose, exit cleanly
+- [ ] Photo mode: switch yacht ↔ apartment, then save/exit (camera frames the ped)
+- [ ] Admin `/charslots` persists to DB
+- [ ] Discord webhooks (if enabled)
+
+---
+
+## Troubleshooting
+
+| Issue | Fix |
+|-------|-----|
+| No framework detected | Set `Config.Framework` manually in `config/shared.lua` |
+| UI blank / old | Run `cd web && npm run build`, restart resource |
+| Characters not loading (QBox) | Confirm `useExternalCharacters = true` in qbx_core |
+| Appearance not on preview ped | Check appearance resource is started; see `config/appearance.lua` |
+| Apartment black / unfinished | Start `bob74_ipl` or ensure the IPL loads; wait for interior streaming |
+| Slot camera looks at a wall | Re-author that slot with `/ryn_scene_cam`; focus is per-slot, not scene center |
+| Housing spawns missing | Verify housing script + DB tables match `server/housing.lua` queries |
+| Config warnings on start | Enable `Config.Debug = true` for details |
+
+---
+
+## Contributing
+
+Bug reports, feature requests, and pull requests are welcome on [GitHub](https://github.com/vmRyn/ryn-multichar).
+
+When opening a PR:
+
+1. Describe the framework you tested against (QBox, QB, or ESX).
+2. If you change the NUI, run `npm run build` in `web/` and include the updated `web/dist/` output.
+3. Keep config changes documented in [CONFIG.md](CONFIG.md) when adding new options.
+
+---
+
+## Credits
+
+- UI sound effects: [Kenney UI SFX Set](https://kenney.nl/assets/ui-audio) (CC0)
+
+---
+
+## License
+
+Free for personal and commercial use on **your own server(s)**. You may modify it for your server. **Redistribution is not permitted** — do not re-upload, mirror, or resell this resource. See [LICENSE](LICENSE) for full terms. Official source: [github.com/vmRyn/ryn-multichar](https://github.com/vmRyn/ryn-multichar).
